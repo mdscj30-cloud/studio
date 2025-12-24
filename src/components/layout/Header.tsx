@@ -20,7 +20,7 @@ export default function Header() {
           <span className="font-bold text-lg text-primary">N consulting</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex flex-1 items-center justify-center">
             <nav className="flex items-center space-x-6 text-sm font-medium">
             {NAV_LINKS.map((link) => (
                 <Link
