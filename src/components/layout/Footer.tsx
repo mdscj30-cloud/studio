@@ -9,7 +9,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-gradient-to-r from-primary to-secondary animate-gradient-x text-primary-foreground">
       <div className="container py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-2">
