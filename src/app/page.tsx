@@ -8,7 +8,7 @@ import WhyChooseUs from '@/components/home/WhyChooseUs';
 
 export default function Home() {
   return (
-    <>
+    <div className="pl-32">
       <Hero />
       <div id="services">
         <Services />
@@ -25,6 +25,6 @@ export default function Home() {
       <div id="testimonials">
         <Testimonials />
       </div>
-    </>
+    </div>
   );
 }

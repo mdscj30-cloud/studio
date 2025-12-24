@@ -41,7 +41,7 @@ export default function ServiceDetailPage({ params }: Props) {
   return (
     <>
       <section className="-mx-32 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
-        <div className="container py-16 md:py-24">
+        <div className="container mx-auto py-16 md:py-24">
             <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary-foreground/10 p-3 rounded-full">
                     <Icon className="w-10 h-10 text-primary-foreground" />
@@ -52,16 +52,18 @@ export default function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-              <div className="prose lg:prose-lg max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-primary mb-4">Service Details</h2>
-                <p>More detailed information about the {service.title} service will go here. This can include key features, benefits, case studies, or methodologies related to this specific offering. For now, this is placeholder content demonstrating the structure of a service detail page.</p>
-                <p>N consulting provides comprehensive {service.title} to help your startup achieve its goals. Our expert team works closely with you to develop tailored solutions that drive results.</p>
-             </div>
-      </section>
+      <div className="pl-32">
+        <section className="py-16 md:py-24">
+                <div className="prose lg:prose-lg max-w-4xl mx-auto">
+                  <h2 className="text-3xl font-bold text-primary mb-4">Service Details</h2>
+                  <p>More detailed information about the {service.title} service will go here. This can include key features, benefits, case studies, or methodologies related to this specific offering. For now, this is placeholder content demonstrating the structure of a service detail page.</p>
+                  <p>N consulting provides comprehensive {service.title} to help your startup achieve its goals. Our expert team works closely with you to develop tailored solutions that drive results.</p>
+              </div>
+        </section>
+      </div>
 
       <section className="-mx-32 bg-muted/50 py-16 md:py-24">
-        <div className="container text-center">
+        <div className="container mx-auto text-center">
              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to elevate your strategy with {service.title}?</h2>
              <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>
              <Button size="lg" asChild variant="accent">
