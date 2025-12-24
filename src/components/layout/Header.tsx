@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-16 items-center px-4 sm:px-6 lg:px-8 pl-32">
         <div className="flex-1 flex justify-start">
           <Link href="/" className="flex items-center">
             <span className="font-bold text-lg text-primary">N consulting</span>
@@ -23,20 +23,20 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex flex-1 items-center justify-center">
-            <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="flex items-center space-x-6 text-sm font-medium">
             {NAV_LINKS.map((link) => (
-                <Link
+              <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                    'transition-colors hover:text-primary',
-                    (pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))) ? 'text-primary' : 'text-foreground/60'
+                  'transition-colors hover:text-primary',
+                  (pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))) ? 'text-primary' : 'text-foreground/60'
                 )}
-                >
+              >
                 {link.label}
-                </Link>
+              </Link>
             ))}
-            </nav>
+          </nav>
         </div>
         
         <div className="hidden md:flex flex-1 items-center justify-end">
@@ -44,7 +44,6 @@ export default function Header() {
               <Button variant="accent">Request a Consultation</Button>
             </Link>
         </div>
-
 
         <div className="md:hidden ml-auto">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
