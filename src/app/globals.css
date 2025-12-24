@@ -14,24 +14,24 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 6% 18%; /* Dark Charcoal */
+    --primary: 180 30% 25%; /* Deep Teal */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 35 92% 55%; /* Golden Amber */
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 10 80% 60%; /* Coral */
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 35 92% 55%; /* Golden Amber */
-    --chart-1: 240 6% 18%;
-    --chart-2: 35 92% 55%;
-    --chart-3: 240 6% 38%;
-    --chart-4: 35 92% 65%;
-    --chart-5: 240 6% 58%;
+    --ring: 10 80% 60%; /* Coral */
+    --chart-1: 180 30% 25%;
+    --chart-2: 10 80% 60%;
+    --chart-3: 180 30% 45%;
+    --chart-4: 10 80% 70%;
+    --chart-5: 180 30% 65%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -49,7 +49,7 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 35 92% 55%; /* Golden Amber */
+    --primary: 10 80% 60%; /* Coral */
     --primary-foreground: 240 5.9% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -61,12 +61,12 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 35 92% 55%;
-    --chart-1: 35 92% 55%;
+    --ring: 10 80% 60%;
+    --chart-1: 10 80% 60%;
     --chart-2: 0 0% 98%;
-    --chart-3: 35 92% 65%;
+    --chart-3: 10 80% 70%;
     --chart-4: 0 0% 88%;
-    --chart-5: 35 92% 75%;
+    --chart-5: 10 80% 80%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
