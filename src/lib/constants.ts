@@ -120,7 +120,7 @@ const getsethomeImg = PlaceHolderImages.find(img => img.id === 'testimonial-gets
 
 export const TESTIMONIALS = [
   {
-    quote: "Bharati Advisors was pivotal in our seed round, providing strategic insights that sharpened our pitch and financial model. Their expertise was a game-changer.",
+    quote: "N consulting was pivotal in our seed round, providing strategic insights that sharpened our pitch and financial model. Their expertise was a game-changer.",
     company: 'Leading the way in sustainable packaging solutions.',
     name: 'Priya Sharma',
     title: 'CEO, EcoPack',
@@ -136,7 +136,7 @@ export const TESTIMONIALS = [
     avatarHint: kyariImg?.imageHint || '',
   },
   {
-    quote: 'The market entry strategy developed by Bharati Advisors was flawless. We launched in two new regions ahead of schedule and exceeded our initial sales targets.',
+    quote: 'The market entry strategy developed by N consulting was flawless. We launched in two new regions ahead of schedule and exceeded our initial sales targets.',
     company: 'A direct-to-consumer health and wellness brand.',
     name: 'Anika Reddy',
     title: 'Co-Founder, Nourish & Co.',

@@ -2,8 +2,8 @@ import { ContactForm } from './ContactForm';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Us | Bharati Advisors',
-  description: 'Request a consultation to discuss how Bharati Advisors can help your startup achieve its goals.',
+  title: 'Contact Us | N consulting',
+  description: 'Request a consultation to discuss how N consulting can help your startup achieve its goals.',
 };
 
 export default function ContactPage() {
@@ -50,7 +50,7 @@ export default function ContactPage() {
                         <Mail className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
                         <div>
                             <h4 className="font-semibold">Email</h4>
-                            <a href="mailto:contact@bharatiadvisors.com" className="text-sm text-foreground/80 hover:text-primary transition-colors">contact@bharatiadvisors.com</a>
+                            <a href="mailto:contact@nconsulting.com" className="text-sm text-foreground/80 hover:text-primary transition-colors">contact@nconsulting.com</a>
                         </div>
                     </li>
                     <li className="flex items-start">

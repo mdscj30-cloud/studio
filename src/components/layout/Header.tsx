@@ -17,7 +17,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
-          <span className="font-bold text-lg text-primary">Bharati Advisors</span>
+          <span className="font-bold text-lg text-primary">N consulting</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -52,7 +52,7 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex justify-between items-center mb-8">
                  <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-                    <span className="font-bold text-lg text-primary">Bharati Advisors</span>
+                    <span className="font-bold text-lg text-primary">N consulting</span>
                 </Link>
                 <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                     <X className="h-6 w-6" />

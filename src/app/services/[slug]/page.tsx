@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${service.title} | Bharati Advisors`,
+    title: `${service.title} | N consulting`,
     description: service.description,
   };
 }

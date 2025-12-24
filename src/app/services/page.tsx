@@ -1,7 +1,7 @@
 import Services from "@/components/home/ServicesOverview";
 
 export const metadata = {
-  title: 'Our Services | Bharati Advisors',
+  title: 'Our Services | N consulting',
   description: 'Explore our core consulting services for startups, including strategic planning, financial advisory, and operational excellence.',
 };
 

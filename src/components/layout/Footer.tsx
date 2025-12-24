@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Bharati Advisors</h3>
+            <h3 className="text-xl font-bold mb-4">N consulting</h3>
             <p className="text-sm text-primary-foreground/80 max-w-xs">
               Strategic consulting to help startups navigate challenges and achieve sustainable growth.
             </p>
@@ -58,7 +58,7 @@ export default function Footer() {
       <div className="bg-primary/80">
         <div className="container py-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-primary-foreground/70 mb-4 md:mb-0">
-            © {new Date().getFullYear()} Bharati Advisors. All Rights Reserved.
+            © {new Date().getFullYear()} N consulting. All Rights Reserved.
           </p>
           <div className="flex items-center space-x-4">
             <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">

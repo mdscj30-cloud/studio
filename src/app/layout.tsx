@@ -5,9 +5,9 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Bharati Advisors | Strategic Consulting for Startups',
-  description: 'Bharati Advisors provides expert consulting on strategy, finance, and operations to help startups scale and succeed.',
-  keywords: ['startup consulting', 'strategic advisory', 'financial consulting for startups', 'business strategy', 'Bharati Advisors']
+  title: 'N consulting | Strategic Consulting for Startups',
+  description: 'N consulting provides expert consulting on strategy, finance, and operations to help startups scale and succeed.',
+  keywords: ['startup consulting', 'strategic advisory', 'financial consulting for startups', 'business strategy', 'N consulting']
 };
 
 export default function RootLayout({
