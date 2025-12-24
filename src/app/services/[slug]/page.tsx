@@ -40,29 +40,37 @@ export default function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <section className="bg-muted/50 py-16 md:py-24">
+      <section className="bg-primary text-primary-foreground py-16 md:py-24">
         <div className="container">
-          <div className="grid md:grid-cols-3 items-center gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-4 mb-4">
-                <Icon className="w-12 h-12 text-accent" />
-                <h1 className="text-4xl md:text-5xl font-bold text-primary">{service.title}</h1>
-              </div>
-              <p className="text-lg md:text-xl text-foreground/80">{service.description}</p>
+            <div className="flex items-center gap-4 mb-4">
+                <div className="bg-primary-foreground/10 p-3 rounded-full">
+                    <Icon className="w-10 h-10 text-primary-foreground" />
+                </div>
+                <h1 className="text-4xl md:text-5xl font-bold">{service.title}</h1>
             </div>
-          </div>
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl">{service.description}</p>
         </div>
       </section>
 
-      <div className="container py-16 md:py-24">
-        <div className="text-center">
+      <section className="py-16 md:py-24">
+          <div className="container">
+              <div className="prose lg:prose-lg max-w-4xl mx-auto">
+                <h2 className="text-3xl font-bold text-primary mb-4">Service Details</h2>
+                <p>More detailed information about the {service.title} service will go here. This can include key features, benefits, case studies, or methodologies related to this specific offering. For now, this is placeholder content demonstrating the structure of a service detail page.</p>
+                <p>N consulting provides comprehensive {service.title} to help your startup achieve its goals. Our expert team works closely with you to develop tailored solutions that drive results.</p>
+             </div>
+          </div>
+      </section>
+
+      <section className="bg-muted/50 py-16 md:py-24">
+        <div className="container text-center">
              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to elevate your strategy with {service.title}?</h2>
              <p className="text-lg text-foreground/80 mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>
-             <Button size="lg" asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+             <Button size="lg" asChild>
                 <Link href="/contact">Request a Consultation</Link>
              </Button>
         </div>
-      </div>
+      </section>
     </>
   );
 }

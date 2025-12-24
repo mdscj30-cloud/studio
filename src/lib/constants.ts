@@ -16,6 +16,8 @@ import {
   HandCoins,
   FileCheck,
   Award,
+  Presentation,
+  Target,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -40,40 +42,52 @@ export const LOCATIONS = [
 
 export const SERVICES = [
   {
-    slug: 'strategic-planning',
+    slug: 'virtual-cfo',
+    icon: Briefcase,
+    title: 'Virtual CFO',
+    description: 'Pitch deck, MIS, Budgeting, KPI tracking, or fundraising support. We help you close timely due diligence, saving significant founder\'s time.',
+  },
+  {
+    slug: 'bookkeeping',
+    icon: BookUser,
+    title: 'Bookkeeping',
+    description: 'From early stage to growth stage companies, our tailored bookkeeping packages are suitable for all. Our experts can manage your complex accounts.',
+  },
+  {
+    slug: 'business-setup',
     icon: Building,
-    title: 'Strategic Planning',
-    description: 'Crafting actionable roadmaps for sustainable growth and market leadership.',
+    title: 'Business Setup Services',
+    description: 'Helping Indian or foreign individuals or companies set up business in India and handholding with applicable regulatory registrations.',
   },
   {
-    slug: 'financial-advisory',
-    icon: HandCoins,
-    title: 'Financial Advisory',
-    description: 'Optimizing financial health, from fundraising strategy to exit planning.',
-  },
-  {
-    slug: 'operations-consulting',
+    slug: 'regulatory-compliances',
     icon: FileCheck,
-    title: 'Operations Consulting',
-    description: 'Streamlining processes to improve efficiency and support scalability.',
+    title: 'Regulatory Compliances',
+    description: 'Provide timely and accurate compliances required for Direct Tax, Indirect Tax, Labor Law, Companies Act, FEMA Act, etc.',
   },
   {
-    slug: 'market-entry-strategy',
-    icon: LineChart,
-    title: 'Market Entry Strategy',
-    description: 'Developing data-driven strategies for successful new market penetration.',
-  },
-  {
-    slug: 'corporate-governance',
-    icon: Scale,
-    title: 'Corporate Governance',
-    description: 'Establishing robust governance frameworks for long-term stability.',
-  },
-  {
-    slug: 'due-diligence',
+    slug: 'investor-due-diligence',
     icon: Users,
-    title: 'Due Diligence Support',
-    description: 'Comprehensive support to prepare for and navigate investor scrutiny.',
+    title: 'Investor Due Diligence',
+    description: 'Conducting financial, secretarial, and legal due diligence for incubators, VC funds, and supporting companies with Data room.',
+  },
+  {
+    slug: 'pitch-deck-financial-modelling',
+    icon: Presentation,
+    title: 'Pitch deck and Financial Modelling',
+    description: 'Helping founders craft compelling pitch decks and simplified financial models and preparing them for investor reach out.',
+  },
+  {
+    slug: 'corporate-law',
+    icon: Scale,
+    title: 'Corporate Law',
+    description: 'Corporate advisory and drafting/vetting of legal contracts like Term Sheets, Shareholders, and Subscription agreements.',
+  },
+  {
+    slug: 'fundraising',
+    icon: HandCoins,
+    title: 'Fundraising',
+    description: 'Advisory for Venture Capital, Venture Debt, new-age financing options and M&A transactions.',
   },
 ];
 
@@ -141,7 +155,7 @@ export const DIFFERENTIATORS = [
   },
   {
     title: 'The most scalable',
-    description: 'Our team rapidly scales as your business scales, to ensure you never have to worry about your finances.',
+    description: 'Our team and technology led processes can rapidly scale as your business scales, to ensure you never have to worry about your finances.',
   },
 ];
 
@@ -155,28 +169,45 @@ const getsethomeImg = PlaceHolderImages.find(img => img.id === 'testimonial-gets
 
 export const TESTIMONIALS = [
   {
-    quote: "N consulting was pivotal in our seed round, providing strategic insights that sharpened our pitch and financial model. Their expertise was a game-changer.",
-    company: 'Leading the way in sustainable packaging solutions.',
-    name: 'Priya Sharma',
-    title: 'CEO, EcoPack',
+    quote: "Got Shark Tank India deal with N consulting's Bookkeeping and CFO services.",
+    company: 'Revolutionizing household cleaning by offering non-toxic products.',
+    name: 'Simran Khara',
+    title: 'Founder | Koparo',
     avatar: koparoImg?.imageUrl || '',
     avatarHint: koparoImg?.imageHint || '',
   },
   {
-    quote: 'Their operational consulting streamlined our processes, cutting costs by 20% and preparing us for a successful Series A.',
-    company: 'A fast-growing SaaS platform for remote team collaboration.',
-    name: 'Rohan Mehta',
-    title: 'Founder, ConnectSphere',
+    quote: 'Raised INR 5 cr with N consulting’s CFO, investment banking and due diligence services.',
+    company: 'Redefining decorating people’s home and offices with greenery.',
+    name: 'Aagam Choudhari',
+    title: 'Founder | Kyari',
     avatar: kyariImg?.imageUrl || '',
     avatarHint: kyariImg?.imageHint || '',
   },
   {
-    quote: 'The market entry strategy developed by N consulting was flawless. We launched in two new regions ahead of schedule and exceeded our initial sales targets.',
-    company: 'A direct-to-consumer health and wellness brand.',
-    name: 'Anika Reddy',
-    title: 'Co-Founder, Nourish & Co.',
+    quote: "Raised INR 15 cr with N consulting’s CFO, investment banking and due diligence services.",
+    company: 'India\'s best-personalized education programs with Industry-beating course completion rates.',
+    name: 'Rohit Jain',
+    title: 'Founder | Ufaber',
     avatar: ufaberImg?.imageUrl || '',
     avatarHint: ufaberImg?.imageHint || '',
+  },
+   {
+    quote: "Getting ready to raise pre-series A with N consulting's bookkeeping and CFO services.",
+    company: 'Integrating scientific research with play and creating eco-friendly toys.',
+    name: 'Meeta Sharma',
+    title: 'Founder | Shumee Toys',
+    stage: 'Pre- Series A',
+    avatar: shumeeImg?.imageUrl || '',
+    avatarHint: shumeeImg?.imageHint || '',
+  },
+   {
+    quote: "Raised INR 4 Cr with N consulting’s CFO and due diligence services.",
+    company: 'Simplifying the process of seeking quality rental homes.',
+    name: 'Junaid Shaikh',
+    title: 'Founder | GetSetHome',
+    avatar: getsethomeImg?.imageUrl || '',
+    avatarHint: getsethomeImg?.imageHint || '',
   },
 ];
 

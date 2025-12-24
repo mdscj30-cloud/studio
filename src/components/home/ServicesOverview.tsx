@@ -14,8 +14,8 @@ export default function Services() {
             We offer a suite of services designed to address the critical challenges faced by startups at every stage of their journey.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {SERVICES.map((service) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {SERVICES.slice(0, 8).map((service) => {
             const Icon = service.icon;
             return (
               <Link href={`/services/${service.slug}`} key={service.slug} className="group">
@@ -26,14 +26,14 @@ export default function Services() {
                         <div className="bg-accent/10 p-3 rounded-full">
                           <Icon className="w-6 h-6 text-accent" />
                         </div>
-                        <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
+                         <CardTitle className="text-lg text-primary">{service.title}</CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-foreground/70">{service.description}</p>
+                      <p className="text-sm text-foreground/70">{service.description}</p>
                     </CardContent>
                   </div>
-                  <div className="p-6 pt-0 mt-auto">
+                   <div className="p-6 pt-0 mt-auto">
                       <div className="text-sm font-semibold text-primary group-hover:text-accent flex items-center">
                         Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </div>
@@ -42,6 +42,11 @@ export default function Services() {
               </Link>
             );
           })}
+        </div>
+        <div className='text-center mt-12'>
+            <Button asChild size="lg">
+                <Link href="/services">View All Services</Link>
+            </Button>
         </div>
       </div>
     </section>

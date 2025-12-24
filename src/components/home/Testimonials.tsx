@@ -18,9 +18,9 @@ export default function Testimonials() {
     <section className="py-16 md:py-24 bg-muted/50">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">Success Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">Achieve bigger milestones with N consulting</h2>
           <p className="mt-4 text-lg text-foreground/80">
-            Hear from the ambitious founders we've partnered with.
+            We help founders move ahead faster with confidence.
           </p>
         </div>
         <Carousel
@@ -36,6 +36,7 @@ export default function Testimonials() {
                 <div className="p-1 h-full">
                   <Card className="h-full flex flex-col bg-background">
                     <CardContent className="flex flex-col p-6 flex-grow">
+                        <p className="text-sm text-foreground/70 mb-4">{testimonial.company}</p>
                         <blockquote className="text-base text-foreground/80 mb-4 border-l-4 border-accent pl-4 italic flex-grow">
                             "{testimonial.quote}"
                         </blockquote>
