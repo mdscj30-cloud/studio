@@ -33,7 +33,7 @@ export default function Process() {
               return (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
                   <div className="p-1 h-full">
-                    <Card className="h-full flex flex-col text-center bg-card shadow-sm border-transparent hover:border-accent hover:shadow-lg transition-all">
+                    <Card className="h-full flex flex-col text-center bg-card shadow-sm border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
                       <CardContent className="flex flex-col p-6 flex-grow">
                           <div className="flex justify-center mb-4">
                             <div className="bg-primary/10 p-4 rounded-full">

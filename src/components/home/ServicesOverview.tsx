@@ -19,7 +19,7 @@ export default function Services() {
             const Icon = service.icon;
             return (
               <Link href={`/services/${service.slug}`} key={service.slug} className="group">
-                <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300 border">
+                <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-all duration-300 border group-hover:scale-105">
                   <div>
                     <CardHeader>
                       <div className="flex items-center gap-4">

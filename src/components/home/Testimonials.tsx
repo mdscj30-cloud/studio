@@ -33,7 +33,7 @@ export default function Testimonials() {
             {TESTIMONIALS.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full flex flex-col bg-background">
+                  <Card className="h-full flex flex-col bg-background transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <CardContent className="flex flex-col p-6 flex-grow">
                         <p className="text-sm text-muted-foreground mb-4">{testimonial.company}</p>
                         <blockquote className="text-base text-foreground/80 mb-4 border-l-4 border-accent pl-4 italic flex-grow">

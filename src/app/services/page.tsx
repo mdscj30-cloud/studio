@@ -45,7 +45,7 @@ export default function ServicesPage() {
 
             {/* Virtual CFO & Bookkeeping */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-                <Card className="bg-muted/30">
+                <Card className="bg-muted/30 hover:scale-105 transition-transform duration-300">
                     <CardHeader>
                         <CardTitle className="text-3xl text-primary">Virtual CFO</CardTitle>
                         <CardDescription className="text-lg text-muted-foreground">Need help with Pitch deck, MIS, Budgeting, KPI tracking, or fundraising? Our CFO’s deploy simplified dashboards, deliver business insights, network with Investors, and help you close timely due diligence, saving significant founder's business time.</CardDescription>
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                         </div>
                     </CardContent>
                 </Card>
-                <Card className="bg-muted/30">
+                <Card className="bg-muted/30 hover:scale-105 transition-transform duration-300">
                     <CardHeader>
                         <CardTitle className="text-3xl text-primary">Bookkeeping</CardTitle>
                         <CardDescription className="text-lg text-muted-foreground">From early stage to growth stage companies, our tailored bookkeeping packages are suitable for all. Whether you are a team of 2 or 2000, our bookkeeping experts can manage your complex accounts and complete timely compliances.</CardDescription>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
                 const Icon = service.icon;
                 return (
                   <Link href={`/services/${service.slug}`} key={service.slug} className="group">
-                    <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300 border">
+                    <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-all duration-300 border group-hover:scale-105">
                       <div>
                         <CardHeader>
                           <div className="flex items-center gap-4">

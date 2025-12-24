@@ -37,7 +37,7 @@ export default function Portfolio() {
             {PORTFOLIO_COMPANIES.map((company) => (
               <CarouselItem key={company.name} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
                 <div className="p-2">
-                    <div className="flex items-center justify-center p-4 h-24 bg-card border rounded-lg shadow-sm transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 group" title={company.name}>
+                    <div className="flex items-center justify-center p-4 h-24 bg-card border rounded-lg shadow-sm transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:scale-105 group" title={company.name}>
                        <span className="text-lg text-center font-semibold text-muted-foreground transition-colors group-hover:text-accent">{company.name}</span>
                     </div>
                 </div>

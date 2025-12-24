@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
           {WHY_CHOOSE_US_POINTS.map((item) => {
             const Icon = item.icon;
             return (
-                <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all">
+                <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
                     <div className="flex items-center gap-4 mb-3">
                         <Icon className="w-8 h-8 text-accent shrink-0" />
                         <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
