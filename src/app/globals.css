@@ -9,28 +9,28 @@ body {
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 220 9% 26%;
+    --foreground: 220 13% 18%;
     --card: 0 0% 100%;
-    --card-foreground: 220 9% 26%;
+    --card-foreground: 220 13% 18%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 9% 26%;
+    --popover-foreground: 220 13% 18%;
     --primary: 220 13% 18%; /* Dark Charcoal */
-    --primary-foreground: 45 100% 98%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 220 9% 96%;
     --secondary-foreground: 220 13% 18%;
     --muted: 220 9% 96%;
     --muted-foreground: 220 9% 55%;
-    --accent: 38 92% 50%; /* Golden Amber */
-    --accent-foreground: 220 13% 18%;
+    --accent: 24 96% 53%; /* Saffron Orange */
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 38 92% 50%; /* Golden Amber */
+    --ring: 24 96% 53%; /* Saffron Orange */
     --chart-1: 220 13% 18%;
-    --chart-2: 38 92% 50%;
+    --chart-2: 24 96% 53%;
     --chart-3: 220 13% 48%;
-    --chart-4: 38 92% 70%;
+    --chart-4: 24 96% 73%;
     --chart-5: 220 13% 78%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
@@ -49,8 +49,8 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 220 13% 18%;
     --popover-foreground: 0 0% 98%;
-    --primary: 38 92% 50%; /* Golden Amber */
-    --primary-foreground: 220 13% 18%;
+    --primary: 24 96% 53%; /* Saffron Orange */
+    --primary-foreground: 220 13% 10%;
     --secondary: 220 13% 28%;
     --secondary-foreground: 0 0% 98%;
     --muted: 220 13% 28%;
@@ -61,12 +61,12 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 220 13% 28%;
     --input: 220 13% 28%;
-    --ring: 38 92% 50%;
-    --chart-1: 38 92% 50%;
+    --ring: 24 96% 53%;
+    --chart-1: 24 96% 53%;
     --chart-2: 0 0% 98%;
-    --chart-3: 38 92% 70%;
+    --chart-3: 24 96% 73%;
     --chart-4: 0 0% 88%;
-    --chart-5: 38 92% 90%;
+    --chart-5: 24 96% 93%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
