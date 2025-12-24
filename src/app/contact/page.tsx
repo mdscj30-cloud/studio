@@ -18,8 +18,8 @@ const locations = [
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16 md:py-24">
-        <div className="container text-center">
+      <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-16 xl:-mx-32 2xl:-mx-40">
+        <div className="container text-center py-16 md:py-24">
           <h1 className="text-4xl md:text-5xl font-bold">Contact Us</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
             We're ready to help you navigate your startup's journey. Reach out for a strategic consultation.
@@ -28,7 +28,6 @@ export default function ContactPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-3">
               <h2 className="text-3xl font-bold text-primary mb-2">Request a Consultation</h2>
@@ -75,7 +74,6 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );

@@ -8,8 +8,8 @@ export const metadata = {
 export default function AboutPage() {
     return (
         <>
-            <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16 md:py-24">
-                <div className="container text-center">
+            <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-16 xl:-mx-32 2xl:-mx-40">
+                <div className="container text-center py-16 md:py-24">
                     <h1 className="text-4xl md:text-5xl font-bold">About N consulting</h1>
                     <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
                         Your trusted partner in strategic growth.
@@ -17,9 +17,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <div className="container">
-                <WhyChooseUs />
-            </div>
+            <WhyChooseUs />
         </>
     );
 }

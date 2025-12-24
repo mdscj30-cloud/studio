@@ -3,7 +3,6 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { SidebarProvider, Sidebar, SidebarInset } from '@/components/ui/sidebar';
 
 export const metadata: Metadata = {
   title: 'N consulting | Strategic Consulting for Startups',
@@ -24,18 +23,15 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body className="antialiased bg-background text-foreground">
-        <SidebarProvider>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <div className="flex flex-1">
-               <div className="w-32 hidden md:block" />
-               <main className="flex-grow">
-                {children}
-              </main>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">
+            <div className="container">
+              {children}
             </div>
-            <Footer />
-          </div>
-        </SidebarProvider>
+          </main>
+          <Footer />
+        </div>
         <Toaster />
       </body>
     </html>
