@@ -15,7 +15,7 @@
     {
       "id": "feature-1",
       "description": "A seamless flow of data charts and graphs, representing an end-to-end financial solution.",
-      "imageUrl": "https://images.unsplash.com/photo-1765205361996-66c42e1c3967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2hhcnRzfGVufDB8fHx8MTc2NjUzNjUyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1765205361996-66c42e1c3967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2hhcnRzfGVufDB8fHx8fDE3NjY1MzY1MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data charts"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "testimonial-koparo",
       "description": "Portrait of Priya Sharma, CEO of EcoPack",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjUyNTk0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8fDE3NjY1MjU5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
@@ -59,6 +59,12 @@
       "description": "Portrait of the Founder of GetSetHome.",
       "imageUrl": "https://images.unsplash.com/photo-1607256703438-7e8d8b8f7d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjY1Nzg3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person headshot"
+    },
+    {
+      "id": "testimonial-greenscape",
+      "description": "Portrait of the Founder of GreenScape.",
+      "imageUrl": "https://images.unsplash.com/photo-1600783486418-d366cce3ccbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbnRyZXByZW5ldXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY1OTgwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "entrepreneur portrait"
     }
   ]
 }

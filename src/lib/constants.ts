@@ -165,6 +165,7 @@ const kyariImg = PlaceHolderImages.find(img => img.id === 'testimonial-kyari');
 const ufaberImg = PlaceHolderImages.find(img => img.id === 'testimonial-ufaber');
 const shumeeImg = PlaceHolderImages.find(img => img.id === 'testimonial-shumee');
 const getsethomeImg = PlaceHolderImages.find(img => img.id === 'testimonial-getsethome');
+const greenscapeImg = PlaceHolderImages.find(img => img.id === 'testimonial-greenscape');
 
 
 export const TESTIMONIALS = [
@@ -208,6 +209,15 @@ export const TESTIMONIALS = [
     title: 'Founder | GetSetHome',
     avatar: getsethomeImg?.imageUrl || '',
     avatarHint: getsethomeImg?.imageHint || '',
+  },
+  {
+    quote: "Their financial modeling was pivotal for our seed round. N Consulting brought clarity and confidence to our pitch.",
+    company: 'Sustainable urban farming solutions for modern cities.',
+    name: 'Aarav Patel',
+    title: 'CEO | GreenScape',
+    stage: 'Seed Stage',
+    avatar: greenscapeImg?.imageUrl || '',
+    avatarHint: greenscapeImg?.imageHint || '',
   },
 ];
 
