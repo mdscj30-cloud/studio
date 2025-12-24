@@ -41,6 +41,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-16 md:py-24 bg-background">
+        <div className="container">
             {/* Virtual CFO & Bookkeeping */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
                 <Card className="bg-muted/30 hover:scale-105 transition-transform duration-300">
@@ -131,6 +132,7 @@ export default function ServicesPage() {
                 );
               })}
             </div>
+        </div>
       </section>
     </>
   );
