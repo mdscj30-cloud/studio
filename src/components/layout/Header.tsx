@@ -36,9 +36,9 @@ export default function Header() {
         </nav>
         
         <div className="hidden md:flex items-center">
-            <Link href="/contact" passHref legacyBehavior>
-              <Button asChild><a>Request a Consultation</a></Button>
-            </Link>
+            <Button asChild>
+                <Link href="/contact">Request a Consultation</Link>
+            </Button>
         </div>
 
         <div className="md:hidden">
