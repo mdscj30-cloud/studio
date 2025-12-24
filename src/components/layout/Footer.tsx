@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
-      <div className="container py-12 px-4 sm:px-6 lg:px-8">
+      <div className="container py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
           <div className="col-span-2 md:col-span-2 flex flex-col items-start">
             <h3 className="text-xl font-bold mb-4 text-white">N consulting</h3>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-black/20">
-        <div className="container py-4 flex flex-col md:flex-row justify-between items-center text-left px-4 sm:px-6 lg:px-8">
+        <div className="container py-4 flex flex-col md:flex-row justify-between items-center text-left">
           <p className="text-sm text-primary-foreground/70 mb-4 md:mb-0">
             © {new Date().getFullYear()} N consulting. All Rights Reserved.
           </p>
