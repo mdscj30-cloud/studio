@@ -14,24 +14,24 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 158 44% 32%;
+    --primary: 240 6% 18%; /* Dark Charcoal */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 35 92% 55%;
+    --accent: 35 92% 55%; /* Golden Amber */
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 158 44% 32%;
-    --chart-1: 158 44% 32%;
+    --ring: 35 92% 55%; /* Golden Amber */
+    --chart-1: 240 6% 18%;
     --chart-2: 35 92% 55%;
-    --chart-3: 158 44% 42%;
+    --chart-3: 240 6% 38%;
     --chart-4: 35 92% 65%;
-    --chart-5: 158 44% 52%;
+    --chart-5: 240 6% 58%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -49,24 +49,24 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 158 44% 52%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 35 92% 55%; /* Golden Amber */
+    --primary-foreground: 240 5.9% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 35 92% 55%;
+    --accent: 0 0% 98%;
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 158 44% 42%;
-    --chart-1: 158 44% 52%;
-    --chart-2: 35 92% 55%;
-    --chart-3: 158 44% 62%;
-    --chart-4: 35 92% 65%;
-    --chart-5: 158 44% 72%;
+    --ring: 35 92% 55%;
+    --chart-1: 35 92% 55%;
+    --chart-2: 0 0% 98%;
+    --chart-3: 35 92% 65%;
+    --chart-4: 0 0% 88%;
+    --chart-5: 35 92% 75%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
