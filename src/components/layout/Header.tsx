@@ -37,7 +37,7 @@ export default function Header() {
         
         <div className="hidden md:flex items-center">
             <Link href="/contact" passHref>
-              <Button>Request a Consultation</Button>
+                <Button>Request a Consultation</Button>
             </Link>
         </div>
 
