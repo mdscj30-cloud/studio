@@ -32,7 +32,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="-mx-32 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
-        <div className="container text-center py-12 px-4 sm:px-6 lg:px-8 pl-32">
+        <div className="container text-center py-12 px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold">One Stop Solution</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
             A one-stop shop for all your financial operations, so you can use your time more efficiently, make smarter decisions, and hit your goals with a full suite of financial services.
