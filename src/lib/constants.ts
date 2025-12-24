@@ -21,6 +21,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/#process', label: 'Process' },
+  { href: '/#portfolio', label: 'Portfolio' },
   { href: '/about', label: 'About Us' },
   { href: '/#testimonials', label: 'Success Stories' },
   { href: '/contact', label: 'Contact' },
@@ -144,6 +146,18 @@ export const TESTIMONIALS = [
     avatarHint: ufaberImg?.imageHint || '',
   },
 ];
+
+export const PORTFOLIO_COMPANIES = [
+    { name: 'InnovateTech' },
+    { name: 'QuantumLeap' },
+    { name: 'NextGen AI' },
+    { name: 'BioHealth' },
+    { name: 'Fintech Solutions' },
+    { name: 'EcoPlanet' },
+    { name: 'SmartHome' },
+    { name: 'TravelPro' },
+];
+
 
 export const findImage = (id: string): ImagePlaceholder | undefined => {
     return PlaceHolderImages.find(img => img.id === id);

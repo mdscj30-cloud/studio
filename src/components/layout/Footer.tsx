@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-primary-foreground/90">Menu</h4>
             <ul className="space-y-2">
-              {NAV_LINKS.map((link) => (
+              {NAV_LINKS.filter(link => !['Process', 'Portfolio', 'Success Stories'].includes(link.label)).map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                     {link.label}
