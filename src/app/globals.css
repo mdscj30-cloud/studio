@@ -14,7 +14,7 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 180 30% 25%; /* Deep Teal */
+    --primary: 220 40% 20%; /* Dark Slate Blue */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -27,11 +27,11 @@ body {
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 10 80% 60%; /* Coral */
-    --chart-1: 180 30% 25%;
+    --chart-1: 220 40% 20%;
     --chart-2: 10 80% 60%;
-    --chart-3: 180 30% 45%;
+    --chart-3: 220 40% 40%;
     --chart-4: 10 80% 70%;
-    --chart-5: 180 30% 65%;
+    --chart-5: 220 40% 60%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
