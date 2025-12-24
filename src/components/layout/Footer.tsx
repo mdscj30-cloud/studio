@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { NAV_LINKS } from '@/lib/constants';
-import { Linkedin, Twitter } from 'lucide-react';
+import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
+import { Linkedin, Twitter, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const legalLinks = [
@@ -14,9 +14,17 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">N consulting</h3>
-            <p className="text-sm text-primary-foreground/80 max-w-xs">
+            <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
               Strategic consulting to help startups navigate challenges and achieve sustainable growth.
             </p>
+            <div className="flex items-center space-x-4">
+                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                  <Twitter className="w-5 h-5" />
+                </a>
+            </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4 text-primary-foreground/90">Menu</h4>
@@ -31,27 +39,34 @@ export default function Footer() {
             </ul>
           </div>
            <div>
-            <h4 className="font-semibold mb-4 text-primary-foreground/90">Legal</h4>
+            <h4 className="font-semibold mb-4 text-primary-foreground/90">Locations</h4>
             <ul className="space-y-2">
-              {legalLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
-                    {link.label}
-                  </Link>
+              {LOCATIONS.map((location) => (
+                <li key={location.name}>
+                  <p className="text-sm text-primary-foreground/80 flex items-center">
+                    <MapPin className="w-4 h-4 mr-2 inline-block" />
+                    {location.name}
+                  </p>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div className="col-span-2 md:col-span-1">
+             <h4 className="font-semibold mb-4 text-primary-foreground/90">Get in Touch</h4>
+             <ul className="space-y-2">
                 <li>
                   <Link href='/contact' className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                     Contact Us
                   </Link>
                 </li>
-            </ul>
-          </div>
-          <div className="col-span-2 md:col-span-1">
-             <h4 className="font-semibold mb-4 text-primary-foreground/90">Get in Touch</h4>
-             <p className="text-sm text-primary-foreground/80 mb-4">
-                Ready to scale your startup? Let's talk.
-             </p>
+                 {legalLinks.map((link) => (
+                    <li key={link.href}>
+                        <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+                        {link.label}
+                        </Link>
+                    </li>
+                 ))}
+             </ul>
           </div>
         </div>
       </div>
@@ -60,14 +75,6 @@ export default function Footer() {
           <p className="text-sm text-primary-foreground/70 mb-4 md:mb-0">
             © {new Date().getFullYear()} N consulting. All Rights Reserved.
           </p>
-          <div className="flex items-center space-x-4">
-            <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>

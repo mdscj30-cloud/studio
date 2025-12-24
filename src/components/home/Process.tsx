@@ -1,27 +1,4 @@
-import { FileText, Lightbulb, TrendingUp, Award } from 'lucide-react';
-
-const processSteps = [
-  {
-    icon: FileText,
-    title: '1. Discovery & Assessment',
-    description: 'We start with a deep dive into your business, market, and goals to understand your unique challenges and opportunities.',
-  },
-  {
-    icon: Lightbulb,
-    title: '2. Strategy Formulation',
-    description: 'Our team crafts a bespoke, data-driven strategy and actionable roadmap tailored to your specific objectives.',
-  },
-  {
-    icon: TrendingUp,
-    title: '3. Implementation Support',
-    description: 'We work alongside your team, providing hands-on support to ensure the strategy is executed flawlessly.',
-  },
-  {
-    icon: Award,
-    title: '4. Performance & Scaling',
-    description: 'We continuously monitor performance, making data-backed adjustments to drive growth and scale your success.',
-  },
-];
+import { PROCESS_STEPS } from '@/lib/constants';
 
 export default function Process() {
   return (
@@ -34,7 +11,7 @@ export default function Process() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {processSteps.map((step) => {
+          {PROCESS_STEPS.map((step) => {
             const Icon = step.icon;
             return (
               <div key={step.title} className="text-center p-6">
