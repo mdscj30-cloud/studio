@@ -9,29 +9,29 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
       <div className="container py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">N consulting</h3>
-            <p className="text-sm text-secondary-foreground/80 max-w-xs mb-4">
+            <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
               Strategic consulting to help startups navigate challenges and achieve sustainable growth.
             </p>
             <div className="flex items-center space-x-4">
-                <a href="#" className="text-secondary-foreground/70 hover:text-accent transition-colors">
+                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-secondary-foreground/70 hover:text-accent transition-colors">
+                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   <Twitter className="w-5 h-5" />
                 </a>
             </div>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 text-secondary-foreground/90">Menu</h4>
+            <h4 className="font-semibold mb-4 text-primary-foreground/90">Menu</h4>
             <ul className="space-y-2">
               {NAV_LINKS.filter(link => !['Process', 'Portfolio', 'Success Stories'].includes(link.label)).map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-secondary-foreground/80 hover:text-accent transition-colors">
+                  <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -39,11 +39,11 @@ export default function Footer() {
             </ul>
           </div>
            <div>
-            <h4 className="font-semibold mb-4 text-secondary-foreground/90">Locations</h4>
+            <h4 className="font-semibold mb-4 text-primary-foreground/90">Locations</h4>
             <ul className="space-y-2">
               {LOCATIONS.map((location) => (
                 <li key={location.name}>
-                  <p className="text-sm text-secondary-foreground/80 flex items-center">
+                  <p className="text-sm text-primary-foreground/80 flex items-center">
                     <MapPin className="w-4 h-4 mr-2 inline-block" />
                     {location.name}
                   </p>
@@ -52,16 +52,16 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-span-2 md:col-span-1">
-             <h4 className="font-semibold mb-4 text-secondary-foreground/90">Get in Touch</h4>
+             <h4 className="font-semibold mb-4 text-primary-foreground/90">Get in Touch</h4>
              <ul className="space-y-2">
                 <li>
-                  <Link href='/contact' className="text-sm text-secondary-foreground/80 hover:text-accent transition-colors">
+                  <Link href='/contact' className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                     Contact Us
                   </Link>
                 </li>
                  {legalLinks.map((link) => (
                     <li key={link.href}>
-                        <Link href={link.href} className="text-sm text-secondary-foreground/80 hover:text-accent transition-colors">
+                        <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                         {link.label}
                         </Link>
                     </li>
@@ -70,9 +70,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-secondary/80">
+      <div className="bg-black/20">
         <div className="container py-4 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-secondary-foreground/70 mb-4 md:mb-0">
+          <p className="text-sm text-primary-foreground/70 mb-4 md:mb-0">
             © {new Date().getFullYear()} N consulting. All Rights Reserved.
           </p>
         </div>
