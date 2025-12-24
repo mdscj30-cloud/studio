@@ -19,7 +19,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-16 xl:-mx-32 2xl:-mx-40 -ml-32">
-        <div className="container text-center py-16 md:py-24">
+        <div className="container text-center py-16 md:py-24 pl-32">
           <h1 className="text-4xl md:text-5xl font-bold">Contact Us</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
             We're ready to help you navigate your startup's journey. Reach out for a strategic consultation.
