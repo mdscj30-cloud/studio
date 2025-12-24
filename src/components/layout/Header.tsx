@@ -20,26 +20,29 @@ export default function Header() {
           <span className="font-bold text-lg text-primary">N consulting</span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                'transition-colors hover:text-primary',
-                (pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))) ? 'text-primary' : 'text-foreground/60'
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-        
-        <div className="hidden md:flex items-center">
-            <Link href="/contact">
-              <Button>Request a Consultation</Button>
-            </Link>
+        <div className="hidden md:flex items-center gap-6">
+            <nav className="flex items-center space-x-6 text-sm font-medium">
+            {NAV_LINKS.map((link) => (
+                <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                    'transition-colors hover:text-primary',
+                    (pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))) ? 'text-primary' : 'text-foreground/60'
+                )}
+                >
+                {link.label}
+                </Link>
+            ))}
+            </nav>
+            
+            <div className="items-center">
+                <Link href="/contact">
+                  <Button variant="accent">Request a Consultation</Button>
+                </Link>
+            </div>
         </div>
+
 
         <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -73,7 +76,7 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild className="mt-4">
+                <Button asChild className="mt-4" variant="accent">
                     <Link href="/contact" onClick={() => setIsOpen(false)}>Request a Consultation</Link>
                 </Button>
               </nav>
