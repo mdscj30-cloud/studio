@@ -40,7 +40,7 @@ export default function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
+      <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16 md:py-24">
         <div className="container">
             <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary-foreground/10 p-3 rounded-full">
