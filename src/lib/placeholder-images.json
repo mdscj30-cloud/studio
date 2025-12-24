@@ -7,6 +7,12 @@
       "imageHint": "abstract corporate"
     },
     {
+      "id": "hero-background-2",
+      "description": "Subtle, elegant geometric pattern with purple and gold tones for a professional background.",
+      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "imageHint": "geometric pattern"
+    },
+    {
       "id": "feature-1",
       "description": "A seamless flow of data charts and graphs, representing an end-to-end financial solution.",
       "imageUrl": "https://images.unsplash.com/photo-1765205361996-66c42e1c3967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2hhcnRzfGVufDB8fHx8MTc2NjUzNjUyMXww&ixlib=rb-4.1.0&q=80&w=1080",

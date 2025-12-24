@@ -17,7 +17,7 @@ const formSchema = z.object({
 
 
 export default function Hero() {
-  const heroImage = findImage('hero-background');
+  const heroImage = findImage('hero-background-2');
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -32,14 +32,14 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full overflow-hidden bg-primary/5">
+    <section className="relative w-full overflow-hidden bg-background">
       <div className="container grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
                 fill
-                className="object-cover opacity-10"
+                className="object-cover opacity-[0.03]"
                 priority
                 data-ai-hint={heroImage.imageHint}
             />
@@ -56,9 +56,9 @@ export default function Hero() {
             </Button>
         </div>
         <div className="relative z-10">
-            <Card className="max-w-md mx-auto">
+            <Card className="max-w-md mx-auto bg-card/80 backdrop-blur-sm border-primary/20">
                 <CardHeader>
-                    <CardTitle>Partner with Us</CardTitle>
+                    <CardTitle className="text-primary">Partner with Us</CardTitle>
                     <CardDescription>Fill out the form to start a conversation about your startup's future.</CardDescription>
                 </CardHeader>
                 <CardContent>
