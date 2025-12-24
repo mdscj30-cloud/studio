@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-black/20">
-        <div className="container py-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="container py-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-sm text-primary-foreground/70 mb-4 md:mb-0">
             © {new Date().getFullYear()} N consulting. All Rights Reserved.
           </p>
