@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
       <div className="container py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-          <div className="col-span-2 md:col-span-2 md:ml-12">
+          <div className="col-span-2 md:col-span-2">
             <h3 className="text-xl font-bold mb-4 text-white">N consulting</h3>
             <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
               Strategic consulting to help startups navigate challenges and achieve sustainable growth.

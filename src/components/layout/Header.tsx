@@ -52,7 +52,7 @@ export default function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] px-6">
               <div className="flex justify-between items-center mb-8">
                  <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
                     <span className="font-bold text-lg text-primary">N consulting</span>
