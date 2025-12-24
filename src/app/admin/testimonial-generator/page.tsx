@@ -16,7 +16,7 @@ export default function TestimonialGeneratorPage() {
           </p>
         </div>
       </div>
-      <div className="container mx-auto py-12 pl-32">
+      <div className="container mx-auto py-12">
         <GeneratorForm />
       </div>
     </>

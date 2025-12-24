@@ -27,7 +27,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 pl-32">
+      <section className="container py-16 md:py-24">
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-3">
               <h2 className="text-3xl font-bold text-primary mb-2">Request a Consultation</h2>

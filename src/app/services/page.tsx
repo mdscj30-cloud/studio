@@ -40,7 +40,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-background pl-32">
+      <section className="py-16 md:py-24 bg-background container">
         <div className="">
             {/* Virtual CFO & Bookkeeping */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">

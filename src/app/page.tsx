@@ -8,23 +8,25 @@ import WhyChooseUs from '@/components/home/WhyChooseUs';
 
 export default function Home() {
   return (
-    <div className="pl-32">
+    <>
       <Hero />
-      <div id="services">
-        <Services />
+      <div className="container">
+        <div id="services">
+            <Services />
+        </div>
+        <div id="process">
+            <Process />
+        </div>
+        <div id="portfolio">
+            <Portfolio />
+        </div>
+        <div id="why-us">
+            <WhyChooseUs />
+        </div>
+        <div id="testimonials">
+            <Testimonials />
+        </div>
       </div>
-       <div id="process">
-        <Process />
-      </div>
-       <div id="portfolio">
-        <Portfolio />
-      </div>
-       <div id="why-us">
-        <WhyChooseUs />
-      </div>
-      <div id="testimonials">
-        <Testimonials />
-      </div>
-    </div>
+    </>
   );
 }

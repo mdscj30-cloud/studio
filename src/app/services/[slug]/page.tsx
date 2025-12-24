@@ -52,7 +52,7 @@ export default function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <div className="pl-32">
+      <div className="container">
         <section className="py-16 md:py-24">
                 <div className="prose lg:prose-lg max-w-4xl mx-auto">
                   <h2 className="text-3xl font-bold text-primary mb-4">Service Details</h2>

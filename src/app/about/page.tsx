@@ -17,7 +17,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <div className="pl-32">
+            <div className="container">
                 <WhyChooseUs />
             </div>
         </>

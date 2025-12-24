@@ -32,7 +32,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full overflow-hidden bg-background -mx-32">
+    <section className="relative w-full overflow-hidden bg-background">
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
         {heroImage && (
             <Image
