@@ -222,14 +222,21 @@ export const TESTIMONIALS = [
 ];
 
 export const PORTFOLIO_COMPANIES = [
-    { name: 'Apex Solutions' },
-    { name: 'Nova Works' },
-    { name: 'Zenith Dynamics' },
-    { name: 'Fusion Corp' },
-    { name: 'Orion Systems' },
-    { name: 'Terra Nova' },
-    { name: 'Spectra Inc.' },
-    { name: 'Equinox Ventures' },
+    { name: 'QuantumLeap' },
+    { name: 'InnovateX' },
+    { name: 'Stellar Solutions' },
+    { name: 'Synergy Dynamics' },
+    { name: 'NextGen Systems' },
+    { name: 'Momentum Ventures' },
+    { name: 'Catalyst Corp' },
+    { name: 'Pinnacle Group' },
+    { name: 'Horizon Labs' },
+    { name: 'ZenithWorks' },
+    { name: 'EchoPoint' },
+    { name: 'Vertex Innovations' },
+    { name: 'Nimbus Tech' },
+    { name: 'Apex Industries' },
+    { name: 'Elysian Software' },
 ];
 
 
