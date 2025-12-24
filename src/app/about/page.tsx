@@ -8,7 +8,7 @@ export const metadata = {
 export default function AboutPage() {
     return (
         <>
-            <section className="bg-primary text-primary-foreground py-16 md:py-24">
+            <section className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16 md:py-24">
                 <div className="container text-center">
                     <h1 className="text-4xl md:text-5xl font-bold">About N consulting</h1>
                     <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
