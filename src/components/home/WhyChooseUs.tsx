@@ -1,5 +1,4 @@
 import { WHY_CHOOSE_US_POINTS } from '@/lib/constants';
-import { CheckCircle2 } from 'lucide-react';
 
 export default function WhyChooseUs() {
   return (

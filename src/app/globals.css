@@ -18,7 +18,7 @@ body {
     --primary-foreground: 0 0% 98%;
     --secondary: 240 5.9% 95%; /* Lighter gray for secondary elements */
     --secondary-foreground: 275 25% 15%;
-    --muted: 240 5.9% 95%; /* Lighter gray for muted elements */
+    --muted: 240 4.8% 95.9%;
     --muted-foreground: 275 15% 40%;
     --accent: 275 60% 65%; /* lighter purple */
     --accent-foreground: 0 0% 98%;
