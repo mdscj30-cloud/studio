@@ -160,64 +160,64 @@ export const DIFFERENTIATORS = [
 ];
 
 
-const koparoImg = PlaceHolderImages.find(img => img.id === 'testimonial-koparo');
-const kyariImg = PlaceHolderImages.find(img => img.id === 'testimonial-kyari');
-const ufaberImg = PlaceHolderImages.find(img => img.id === 'testimonial-ufaber');
-const shumeeImg = PlaceHolderImages.find(img => img.id === 'testimonial-shumee');
-const getsethomeImg = PlaceHolderImages.find(img => img.id === 'testimonial-getsethome');
-const greenscapeImg = PlaceHolderImages.find(img => img.id === 'testimonial-greenscape');
+const futureVerseImg = PlaceHolderImages.find(img => img.id === 'testimonial-futureverse');
+const quantumLeapImg = PlaceHolderImages.find(img => img.id === 'testimonial-quantum-leap');
+const bioGenImg = PlaceHolderImages.find(img => img.id === 'testimonial-biogen');
+const travelWiseImg = PlaceHolderImages.find(img => img.id === 'testimonial-travelwise');
+const ecoSolutionsImg = PlaceHolderImages.find(img => img.id === 'testimonial-ecosolutions');
+const artfulLivingImg = PlaceHolderImages.find(img => img.id === 'testimonial-artful-living');
 
 
 export const TESTIMONIALS = [
   {
-    quote: "Got Shark Tank India deal with N consulting's Bookkeeping and CFO services.",
-    company: 'Revolutionizing household cleaning by offering non-toxic products.',
-    name: 'Simran Khara',
-    title: 'Founder | Koparo',
-    avatar: koparoImg?.imageUrl || '',
-    avatarHint: koparoImg?.imageHint || '',
+    quote: "Their team's expertise in market analysis was crucial for our product launch. N consulting delivered results beyond our expectations.",
+    company: 'A VR/AR experiential platform.',
+    name: 'Aarav Sharma',
+    title: 'CEO | FutureVerse',
+    avatar: futureVerseImg?.imageUrl || '',
+    avatarHint: futureVerseImg?.imageHint || '',
   },
   {
-    quote: 'Raised INR 5 cr with N consulting’s CFO, investment banking and due diligence services.',
-    company: 'Redefining decorating people’s home and offices with greenery.',
-    name: 'Aagam Choudhari',
-    title: 'Founder | Kyari',
-    avatar: kyariImg?.imageUrl || '',
-    avatarHint: kyariImg?.imageHint || '',
+    quote: 'With N consulting, we optimized our supply chain and cut operational costs by 20%. Their impact was immediate and significant.',
+    company: 'An AI-driven logistics optimization startup.',
+    name: 'Zara Khan',
+    title: 'COO | QuantumLeap Logistics',
+    avatar: quantumLeapImg?.imageUrl || '',
+    avatarHint: quantumLeapImg?.imageHint || '',
   },
   {
-    quote: "Raised INR 15 cr with N consulting’s CFO, investment banking and due diligence services.",
-    company: 'India\'s best-personalized education programs with Industry-beating course completion rates.',
-    name: 'Rohit Jain',
-    title: 'Founder | Ufaber',
-    avatar: ufaberImg?.imageUrl || '',
-    avatarHint: ufaberImg?.imageHint || '',
+    quote: "The strategic roadmap they developed has become our north star. We're on track to double our user base this year.",
+    company: 'A biotech firm specializing in gene-editing.',
+    name: 'Dr. Rohan Mehra',
+    title: 'Chief Scientist | BioGen Innovations',
+    avatar: bioGenImg?.imageUrl || '',
+    avatarHint: bioGenImg?.imageHint || '',
   },
    {
-    quote: "Getting ready to raise pre-series A with N consulting's bookkeeping and CFO services.",
-    company: 'Integrating scientific research with play and creating eco-friendly toys.',
-    name: 'Meeta Sharma',
-    title: 'Founder | Shumee Toys',
-    stage: 'Pre- Series A',
-    avatar: shumeeImg?.imageUrl || '',
-    avatarHint: shumeeImg?.imageHint || '',
+    quote: "Navigating international regulations was a major hurdle. N consulting's legal team made the process seamless and efficient.",
+    company: 'A travel-tech startup for personalized itineraries.',
+    name: 'Ishaan Verma',
+    title: 'Founder | TravelWise',
+    stage: 'Growth Stage',
+    avatar: travelWiseImg?.imageUrl || '',
+    avatarHint: travelWiseImg?.imageHint || '',
   },
    {
-    quote: "Raised INR 4 Cr with N consulting’s CFO and due diligence services.",
-    company: 'Simplifying the process of seeking quality rental homes.',
-    name: 'Junaid Shaikh',
-    title: 'Founder | GetSetHome',
-    avatar: getsethomeImg?.imageUrl || '',
-    avatarHint: getsethomeImg?.imageHint || '',
+    quote: "Their financial modeling was top-notch, helping us secure a critical bridge round to extend our runway.",
+    company: 'A company developing biodegradable packaging.',
+    name: 'Priya Desai',
+    title: 'CEO | EcoSolutions',
+    avatar: ecoSolutionsImg?.imageUrl || '',
+    avatarHint: ecoSolutionsImg?.imageHint || '',
   },
   {
-    quote: "Their financial modeling was pivotal for our seed round. N Consulting brought clarity and confidence to our pitch.",
-    company: 'Sustainable urban farming solutions for modern cities.',
-    name: 'Aarav Patel',
-    title: 'CEO | GreenScape',
+    quote: "N consulting's brand strategy and marketing plan gave us the clarity we needed to connect with our target audience effectively.",
+    company: 'An online marketplace for independent artists.',
+    name: 'Sameer Ali',
+    title: 'Founder | Artful Living',
     stage: 'Seed Stage',
-    avatar: greenscapeImg?.imageUrl || '',
-    avatarHint: greenscapeImg?.imageHint || '',
+    avatar: artfulLivingImg?.imageUrl || '',
+    avatarHint: artfulLivingImg?.imageHint || '',
   },
 ];
 

@@ -31,40 +31,40 @@
       "imageHint": "dashboard tablet"
     },
     {
-      "id": "testimonial-koparo",
-      "description": "Portrait of Priya Sharma, CEO of EcoPack",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8fDE3NjY1MjU5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "id": "testimonial-data-driven",
+      "description": "Portrait of the CEO of DataDriven Inc.",
+      "imageUrl": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "male CEO"
     },
     {
-      "id": "testimonial-kyari",
-      "description": "Portrait of Rohan Mehta, Founder of ConnectSphere",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY1ODA2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "id": "testimonial-health-ai",
+      "description": "Portrait of the Founder of HealthAI.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "female founder"
     },
     {
-      "id": "testimonial-ufaber",
-      "description": "Portrait of Anika Reddy, Co-Founder of Nourish & Co.",
-      "imageUrl": "https://images.unsplash.com/photo-1573165850883-9b0e18c44bd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjY1MTc2OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional woman"
+      "id": "testimonial-edutech",
+      "description": "Portrait of the CTO of EduTech Innovations.",
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "female CTO"
     },
     {
-      "id": "testimonial-shumee",
-      "description": "Portrait of the Founder of Shumee Toys.",
-      "imageUrl": "https://images.unsplash.com/photo-1750926013469-9d8f680d8aff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmb3VuZGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY2NTkzNjA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "founder portrait"
+      "id": "testimonial-fintech-pioneers",
+      "description": "Portrait of the Founder of FinTech Pioneers.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "male founder"
     },
     {
-      "id": "testimonial-getsethome",
-      "description": "Portrait of the Founder of GetSetHome.",
-      "imageUrl": "https://images.unsplash.com/photo-1607256703438-7e8d8b8f7d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjY1Nzg3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person headshot"
+      "id": "testimonial-ecom-gurus",
+      "description": "Portrait of the CEO of eCom Gurus.",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "female CEO"
     },
     {
-      "id": "testimonial-greenscape",
-      "description": "Portrait of the Founder of GreenScape.",
-      "imageUrl": "https://images.unsplash.com/photo-1600783486418-d366cce3ccbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbnRyZXByZW5ldXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY1OTgwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "entrepreneur portrait"
+      "id": "testimonial-saas-innovators",
+      "description": "Portrait of the Founder of SaaS Innovators.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "male founder"
     }
   ]
 }
