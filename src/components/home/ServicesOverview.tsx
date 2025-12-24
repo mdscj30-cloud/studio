@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
   return (
-    <section className="py-16 md:py-24 bg-muted/50">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Core Consulting Services</h2>
@@ -19,7 +19,7 @@ export default function Services() {
             const Icon = service.icon;
             return (
               <Link href={`/services/${service.slug}`} key={service.slug} className="group">
-                <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300">
+                <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300 border">
                   <div>
                     <CardHeader>
                       <div className="flex items-center gap-4">

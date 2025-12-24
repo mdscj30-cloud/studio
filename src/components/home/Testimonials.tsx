@@ -15,7 +15,7 @@ import { Star } from 'lucide-react';
 
 export default function Testimonials() {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-16 md:py-24 bg-muted/50">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Success Stories</h2>
@@ -34,7 +34,7 @@ export default function Testimonials() {
             {TESTIMONIALS.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full flex flex-col bg-muted/30">
+                  <Card className="h-full flex flex-col bg-background">
                     <CardContent className="flex flex-col p-6 flex-grow">
                         <blockquote className="text-base text-foreground/80 mb-4 border-l-4 border-accent pl-4 italic flex-grow">
                             "{testimonial.quote}"
