@@ -106,7 +106,7 @@ export function GeneratorForm() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" size="lg" disabled={isLoading} className="w-full">
+              <Button type="submit" size="lg" variant="accent" disabled={isLoading} className="w-full">
                 {isLoading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />

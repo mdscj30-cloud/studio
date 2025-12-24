@@ -127,7 +127,7 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" size="lg" disabled={isLoading}>
+        <Button type="submit" size="lg" variant="accent" disabled={isLoading}>
           {isLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />

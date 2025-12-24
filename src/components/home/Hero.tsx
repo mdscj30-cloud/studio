@@ -51,7 +51,7 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
               We provide the expert advice and hands-on support you need to navigate challenges, accelerate growth, and achieve your vision.
             </p>
-            <Button size="lg" asChild>
+            <Button size="lg" asChild variant="accent">
                 <Link href="/contact">Request a Consultation</Link>
             </Button>
         </div>
@@ -88,7 +88,7 @@ export default function Hero() {
                             </FormItem>
                             )}
                         />
-                        <Button type="submit" className="w-full">
+                        <Button type="submit" className="w-full" variant="accent">
                             Submit
                         </Button>
                         </form>

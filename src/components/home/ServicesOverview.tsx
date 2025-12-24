@@ -44,7 +44,7 @@ export default function Services() {
           })}
         </div>
         <div className='text-center mt-12'>
-            <Button asChild size="lg">
+            <Button asChild size="lg" variant="accent">
                 <Link href="/services">View All Services</Link>
             </Button>
         </div>
