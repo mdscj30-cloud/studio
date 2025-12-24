@@ -1,4 +1,14 @@
+'use client';
+
 import { PROCESS_STEPS } from '@/lib/constants';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function Process() {
   return (
@@ -10,22 +20,38 @@ export default function Process() {
             A structured path to unlock your startup's full potential.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {PROCESS_STEPS.map((step) => {
-            const Icon = step.icon;
-            return (
-              <div key={step.title} className="text-center p-6">
-                <div className="flex justify-center mb-4">
-                  <div className="bg-primary/10 p-4 rounded-full">
-                    <Icon className="w-8 h-8 text-primary" />
+        <Carousel
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="w-full max-w-6xl mx-auto"
+        >
+          <CarouselContent>
+            {PROCESS_STEPS.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+                  <div className="p-1 h-full">
+                    <Card className="h-full flex flex-col text-center bg-card shadow-sm border-transparent hover:border-accent hover:shadow-lg transition-all">
+                      <CardContent className="flex flex-col p-6 flex-grow">
+                          <div className="flex justify-center mb-4">
+                            <div className="bg-primary/10 p-4 rounded-full">
+                              <Icon className="w-8 h-8 text-primary" />
+                            </div>
+                          </div>
+                          <h3 className="text-xl font-semibold text-primary mb-2">{step.title}</h3>
+                          <p className="text-muted-foreground flex-grow">{step.description}</p>
+                      </CardContent>
+                    </Card>
                   </div>
-                </div>
-                <h3 className="text-xl font-semibold text-primary mb-2">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
-              </div>
-            );
-          })}
-        </div>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   );
