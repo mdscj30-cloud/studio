@@ -40,7 +40,7 @@ export default function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <section className="-mx-32 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
+      <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
         <div className="container mx-auto py-16 md:py-24">
             <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary-foreground/10 p-3 rounded-full">
@@ -62,7 +62,7 @@ export default function ServiceDetailPage({ params }: Props) {
         </section>
       </div>
 
-      <section className="-mx-32 bg-muted/50 py-16 md:py-24">
+      <section className="-mx-container-padding bg-muted/50 py-16 md:py-24">
         <div className="container mx-auto text-center">
              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to elevate your strategy with {service.title}?</h2>
              <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>

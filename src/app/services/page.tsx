@@ -31,7 +31,7 @@ const BOOKKEEPING_FEATURES = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="-mx-32 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
+      <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
         <div className="container mx-auto text-center py-12 px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold">One Stop Solution</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
@@ -40,8 +40,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-background container">
-        <div className="">
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container">
             {/* Virtual CFO & Bookkeeping */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
                 <Card className="bg-muted/30 hover:scale-105 transition-transform duration-300">

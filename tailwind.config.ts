@@ -1,5 +1,7 @@
 import type {Config} from 'tailwindcss';
 
+const containerPadding = '2rem';
+
 export default {
   darkMode: ['class'],
   content: [
@@ -8,7 +10,17 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: containerPadding,
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
+      margin: {
+        'container-padding': `-${containerPadding}`
+      },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],

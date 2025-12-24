@@ -17,16 +17,18 @@ export default function Home() {
         <div id="process">
             <Process />
         </div>
+      </div>
         <div id="portfolio">
             <Portfolio />
         </div>
+      <div className="container">
         <div id="why-us">
             <WhyChooseUs />
         </div>
+      </div>
         <div id="testimonials">
             <Testimonials />
         </div>
-      </div>
     </>
   );
 }

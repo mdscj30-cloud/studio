@@ -8,7 +8,7 @@ export const metadata = {
 export default function TestimonialGeneratorPage() {
   return (
     <>
-      <div className="-mx-32 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16">
+      <div className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold">AI Success Story Generator</h1>
           <p className="mt-4 text-lg max-w-2xl mx-auto text-primary-foreground/80">

@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export default function Testimonials() {
   return (
-    <section className="py-16 md:py-24 bg-muted">
+    <section className="py-16 md:py-24 bg-muted -mx-container-padding">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Achieve bigger milestones with N consulting</h2>
