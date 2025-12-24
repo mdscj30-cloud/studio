@@ -6,7 +6,7 @@ export default function Portfolio() {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Portfolio</h2>
-          <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             We are proud to have partnered with innovative startups across various industries.
           </p>
         </div>

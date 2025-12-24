@@ -32,7 +32,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-3">
               <h2 className="text-3xl font-bold text-primary mb-2">Request a Consultation</h2>
-              <p className="text-foreground/70 mb-8">
+              <p className="text-muted-foreground mb-8">
                 Fill out the form below and one of our advisors will contact you to schedule a discussion.
               </p>
               <ContactForm />

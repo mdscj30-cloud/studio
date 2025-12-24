@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
       <div className="container">
         <div className="text-center mb-12">
            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Commitment</h2>
-           <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">We are dedicated to fostering growth and success through our core principles.</p>
+           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We are dedicated to fostering growth and success through our core principles.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {WHY_CHOOSE_US_POINTS.map((item) => {
@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
                         <Icon className="w-8 h-8 text-accent shrink-0" />
                         <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
                     </div>
-                    <p className="text-sm text-foreground/70">{item.description}</p>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
                 </div>
             )
           })}

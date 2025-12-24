@@ -25,7 +25,7 @@ export default function Features() {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Financial expertise you won't find anywhere else</h2>
-          <p className="mt-4 text-lg text-foreground/80">
+          <p className="mt-4 text-lg text-muted-foreground">
             Finance is one of the key drivers of your business growth, whether you realise early or in later stage of your business journey.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function Features() {
                  <div key={feature.title} className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${index % 2 !== 0 ? 'md:grid-flow-row-dense' : ''}`}>
                     <div className={index % 2 !== 0 ? 'md:col-start-2' : ''}>
                         <h3 className="text-2xl font-bold text-primary mb-4">{feature.title}</h3>
-                        <p className="text-foreground/80">{feature.description}</p>
+                        <p className="text-muted-foreground">{feature.description}</p>
                     </div>
                     {feature.image && (
                         <div className="rounded-lg overflow-hidden shadow-lg">

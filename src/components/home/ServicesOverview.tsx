@@ -10,7 +10,7 @@ export default function Services() {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Core Consulting Services</h2>
-          <p className="mt-4 text-lg text-foreground/80">
+          <p className="mt-4 text-lg text-muted-foreground">
             We offer a suite of services designed to address the critical challenges faced by startups at every stage of their journey.
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function Services() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-foreground/70">{service.description}</p>
+                      <p className="text-sm text-muted-foreground">{service.description}</p>
                     </CardContent>
                   </div>
                    <div className="p-6 pt-0 mt-auto">

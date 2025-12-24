@@ -65,7 +65,7 @@ export default function ServiceDetailPage({ params }: Props) {
       <section className="bg-muted/50 py-16 md:py-24">
         <div className="container text-center">
              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to elevate your strategy with {service.title}?</h2>
-             <p className="text-lg text-foreground/80 mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>
+             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>
              <Button size="lg" asChild>
                 <Link href="/contact">Request a Consultation</Link>
              </Button>

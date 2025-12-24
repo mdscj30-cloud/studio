@@ -48,7 +48,7 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-primary">
               Strategic Guidance for Ambitious Startups
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
               We provide the expert advice and hands-on support you need to navigate challenges, accelerate growth, and achieve your vision.
             </p>
             <Button size="lg" asChild>

@@ -48,7 +48,7 @@ export default function ServicesPage() {
                 <Card className="bg-muted/30">
                     <CardHeader>
                         <CardTitle className="text-3xl text-primary">Virtual CFO</CardTitle>
-                        <CardDescription className="text-lg">Need help with Pitch deck, MIS, Budgeting, KPI tracking, or fundraising? Our CFO’s deploy simplified dashboards, deliver business insights, network with Investors, and help you close timely due diligence, saving significant founder's business time.</CardDescription>
+                        <CardDescription className="text-lg text-muted-foreground">Need help with Pitch deck, MIS, Budgeting, KPI tracking, or fundraising? Our CFO’s deploy simplified dashboards, deliver business insights, network with Investors, and help you close timely due diligence, saving significant founder's business time.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="space-y-3 mb-6">
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                 <Card className="bg-muted/30">
                     <CardHeader>
                         <CardTitle className="text-3xl text-primary">Bookkeeping</CardTitle>
-                        <CardDescription className="text-lg">From early stage to growth stage companies, our tailored bookkeeping packages are suitable for all. Whether you are a team of 2 or 2000, our bookkeeping experts can manage your complex accounts and complete timely compliances.</CardDescription>
+                        <CardDescription className="text-lg text-muted-foreground">From early stage to growth stage companies, our tailored bookkeeping packages are suitable for all. Whether you are a team of 2 or 2000, our bookkeeping experts can manage your complex accounts and complete timely compliances.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="space-y-3 mb-6">
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                           </div>
                         </CardHeader>
                         <CardContent>
-                          <p className="text-foreground/70">{service.description}</p>
+                          <p className="text-muted-foreground">{service.description}</p>
                         </CardContent>
                       </div>
                        <div className="p-6 pt-0 mt-auto">

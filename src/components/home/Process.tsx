@@ -6,7 +6,7 @@ export default function Process() {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Process</h2>
-          <p className="mt-4 text-lg text-foreground/80 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             A structured path to unlock your startup's full potential.
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function Process() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-2">{step.title}</h3>
-                <p className="text-foreground/70">{step.description}</p>
+                <p className="text-muted-foreground">{step.description}</p>
               </div>
             );
           })}

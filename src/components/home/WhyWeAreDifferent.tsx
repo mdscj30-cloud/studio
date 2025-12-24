@@ -11,7 +11,7 @@ export default function WhyWeAreDifferent() {
           {DIFFERENTIATORS.map((item) => (
             <div key={item.title} className="p-6 bg-card rounded-lg border">
                 <h3 className="text-xl font-semibold text-primary mb-3">{item.title}</h3>
-                <p className="text-foreground/70">{item.description}</p>
+                <p className="text-muted-foreground">{item.description}</p>
             </div>
           ))}
         </div>

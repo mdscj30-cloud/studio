@@ -8,7 +8,7 @@ export default function WhatWeDo() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Leverage the Benefits of a Full-Stack Finance Team
           </h2>
-          <p className="text-lg text-foreground/80 mb-12">
+          <p className="text-lg text-muted-foreground mb-12">
             We are a process-driven and tech-enabled team of experts solving all your financial service needs, from incorporation to exit.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
