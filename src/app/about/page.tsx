@@ -17,7 +17,9 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <WhyChooseUs />
+            <div className="container">
+                <WhyChooseUs />
+            </div>
         </>
     );
 }

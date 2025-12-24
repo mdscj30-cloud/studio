@@ -3,5 +3,5 @@ export default function ServiceLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <div className="container">{children}</div>;
 }
