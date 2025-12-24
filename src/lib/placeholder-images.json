@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern and professional office meeting room with a large window overlooking a city skyline, conveying strategic expertise and a corporate environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1738767226467-451f602d2d69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvZmZpY2UlMjBjaXR5fGVufDB8fHx8MTc2NjUyMDk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office city"
+    },
+    {
+      "id": "about-us-main",
+      "description": "A diverse team of professionals collaborating around a table, representing partnership and experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NjY1MjQ3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team meeting"
+    },
+    {
+      "id": "leadership-1",
+      "description": "A professional headshot of a senior partner.",
+      "imageUrl": "https://images.unsplash.com/photo-1701096374092-bb70915fdc5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjY1MDU0NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "leadership-2",
+      "description": "A professional headshot of a managing director.",
+      "imageUrl": "https://images.unsplash.com/photo-1611432579402-7037e3e2c1e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY1MTQ3OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate portrait"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for a client testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBhdmF0YXJ8ZW58MHx8fHwxNzY2NTAwNzg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person avatar"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for a client testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1758598497192-15ffa411c3de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwYXZhdGFyfGVufDB8fHx8MTc2NjU4MjgxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional avatar"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for a client testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1580643375398-5174902ebcec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY1ODI4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceo portrait"
+    },
+    {
+      "id": "service-detail-banner",
+      "description": "An abstract image representing financial growth and strategy, like charts and graphs.",
+      "imageUrl": "https://images.unsplash.com/photo-1761735486601-a66c2c5be0a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHN0cmF0ZWd5fGVufDB8fHx8MTc2NjU4MjgxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance strategy"
+    },
+    {
+      "id": "contact-page-banner",
+      "description": "A professional handshake, symbolizing partnership and trust.",
+      "imageUrl": "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjY1ODI4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business handshake"
+    }
+  ]
 }
