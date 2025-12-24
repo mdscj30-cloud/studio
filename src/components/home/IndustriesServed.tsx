@@ -1,28 +1,55 @@
-import { INDUSTRIES } from '@/lib/constants';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
+import { findImage } from '@/lib/constants';
 
-export default function IndustriesServed() {
+const features = [
+    {
+        title: "End-to-end solution",
+        description: "Utilize the advantage of our in-house domain experts who collaborate seamlessly to manage every aspect from data processing to reporting to stakeholders, we have got it all covered. We take care of your book-keeping, compliance, data analytics, secretarial, and legal requirements along with due diligence, fundraising and M&A activities.",
+        image: findImage('feature-1')
+    },
+    {
+        title: "Your remote Finance office at one click",
+        description: "Outsourcing finance is not an easy decision. To make it transparent, we provide full visibility to your finance activities and access to data room at one click. Data security and confidentiality are our top priorities, so you can trust us and outsource with confidence.",
+        image: findImage('feature-2')
+    },
+    {
+        title: "Access your KPI’s - anytime, anywhere",
+        description: "You can access valuable data insights from anywhere. Our user-friendly dashboards help you understand your KPI’s effortlessly, managing your cashflows and enables you to make decisions backed by accurate data.",
+        image: findImage('feature-3')
+    }
+]
+
+export default function Features() {
   return (
     <section className="py-16 md:py-24 bg-muted/50">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">Industry-Specific Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">Financial expertise you won't find anywhere else</h2>
           <p className="mt-4 text-lg text-foreground/80">
-            We deliver tailored advisory services, leveraging deep insights into the unique challenges and opportunities of your sector.
+            Finance is one of the key drivers of your business growth, whether you realise early or in later stage of your business journey.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-          {INDUSTRIES.map((industry) => {
-            const Icon = industry.icon;
-            return (
-              <div key={industry.title} className="text-center group">
-                 <div className="flex items-center justify-center bg-card border rounded-lg h-28 w-full p-4 group-hover:bg-accent/10 group-hover:border-accent transition-all duration-300">
-                    <Icon className="w-12 h-12 text-primary group-hover:text-accent transition-colors duration-300" />
+        <div className="grid gap-12">
+            {features.map((feature, index) => (
+                 <div key={feature.title} className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${index % 2 !== 0 ? 'md:grid-flow-row-dense' : ''}`}>
+                    <div className={index % 2 !== 0 ? 'md:col-start-2' : ''}>
+                        <h3 className="text-2xl font-bold text-primary mb-4">{feature.title}</h3>
+                        <p className="text-foreground/80">{feature.description}</p>
+                    </div>
+                    {feature.image && (
+                        <div className="rounded-lg overflow-hidden shadow-lg">
+                             <Image 
+                                src={feature.image.imageUrl}
+                                alt={feature.image.description}
+                                width={600}
+                                height={400}
+                                className="w-full h-auto object-cover"
+                                data-ai-hint={feature.image.imageHint}
+                            />
+                        </div>
+                    )}
                  </div>
-                <h3 className="mt-4 font-semibold text-primary">{industry.title}</h3>
-              </div>
-            );
-          })}
+            ))}
         </div>
       </div>
     </section>

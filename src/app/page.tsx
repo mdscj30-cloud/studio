@@ -1,21 +1,22 @@
 import Hero from '@/components/home/Hero';
-import Introduction from '@/components/home/Introduction';
-import ServicesOverview from '@/components/home/ServicesOverview';
-import WhyChooseUs from '@/components/home/WhyChooseUs';
-import IndustriesServed from '@/components/home/IndustriesServed';
+import Services from '@/components/home/ServicesOverview';
 import Testimonials from '@/components/home/Testimonials';
-import HomeCTA from '@/components/home/HomeCTA';
+import WhyChooseUs from '@/components/home/WhyChooseUs';
+
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Introduction />
-      <ServicesOverview />
-      <WhyChooseUs />
-      <IndustriesServed />
-      <Testimonials />
-      <HomeCTA />
+      <div id="services">
+        <Services />
+      </div>
+       <div id="why-us">
+        <WhyChooseUs />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
     </>
   );
 }

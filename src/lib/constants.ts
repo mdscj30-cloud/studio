@@ -1,147 +1,147 @@
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
-  BriefcaseBusiness,
-  Landmark,
-  Calculator,
-  ClipboardCheck,
+  Briefcase,
+  FileText,
   ShieldCheck,
-  Rocket,
-  Factory,
-  Wrench,
-  Laptop,
-  Building2,
   Users,
-  CheckCircle,
+  LineChart,
+  Wallet,
+  Building,
+  Scale,
+  BookUser,
+  HeartHandshake,
+  Lightbulb,
+  TrendingUp,
+  Landmark,
+  HandCoins,
+  FileCheck,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
   { href: '/services', label: 'Services' },
+  { href: '/about', label: 'About Us' },
+  { href: '/#testimonials', label: 'Success Stories' },
   { href: '/contact', label: 'Contact' },
-  { href: '/admin/testimonial-generator', label: 'Admin' },
 ];
 
 export const SERVICES = [
   {
-    slug: 'business-strategic-advisory',
-    icon: BriefcaseBusiness,
-    title: 'Business & Strategic Advisory',
-    description: 'Guiding your enterprise through complex challenges with actionable strategies for sustainable growth.',
+    slug: 'strategic-planning',
+    icon: Building,
+    title: 'Strategic Planning',
+    description: 'Crafting actionable roadmaps for sustainable growth and market leadership.',
   },
   {
-    slug: 'tax-regulatory-consulting',
-    icon: Landmark,
-    title: 'Tax & Regulatory Consulting',
-    description: 'Navigating the Indian tax and regulatory landscape with precision, ensuring compliance and optimization.',
+    slug: 'financial-advisory',
+    icon: HandCoins,
+    title: 'Financial Advisory',
+    description: 'Optimizing financial health, from fundraising strategy to exit planning.',
   },
   {
-    slug: 'virtual-cfo-financial-advisory',
-    icon: Calculator,
-    title: 'Virtual CFO & Financial Advisory',
-    description: 'Providing high-level financial expertise to drive profitability and strategic decision-making.',
+    slug: 'operations-consulting',
+    icon: FileCheck,
+    title: 'Operations Consulting',
+    description: 'Streamlining processes to improve efficiency and support scalability.',
   },
   {
-    slug: 'accounting-compliance',
-    icon: ClipboardCheck,
-    title: 'Accounting & Compliance',
-    description: 'Ensuring robust financial reporting and unwavering adherence to statutory requirements.',
+    slug: 'market-entry-strategy',
+    icon: LineChart,
+    title: 'Market Entry Strategy',
+    description: 'Developing data-driven strategies for successful new market penetration.',
   },
   {
-    slug: 'risk-audit-due-diligence',
-    icon: ShieldCheck,
-    title: 'Risk, Audit & Due Diligence',
-    description: 'Safeguarding your assets and reputation through meticulous risk management and comprehensive audits.',
+    slug: 'corporate-governance',
+    icon: Scale,
+    title: 'Corporate Governance',
+    description: 'Establishing robust governance frameworks for long-term stability.',
   },
   {
-    slug: 'startup-msme-advisory',
-    icon: Rocket,
-    title: 'Startup & MSME Advisory',
-    description: 'Tailored guidance for emerging businesses, from incorporation and funding to scaling operations.',
-  },
-];
-
-export const WHY_CHOOSE_US = [
-  {
-    icon: CheckCircle,
-    title: 'Experienced Professionals',
-    description: 'Our team comprises seasoned consultants with deep domain expertise and a history of delivering results.',
-  },
-  {
-    title: 'Ethical & Compliant Advisory',
-    description: 'We operate with the highest standards of integrity, ensuring every recommendation is ethically sound and fully compliant.',
-  },
-  {
-    title: 'Practical, Implementable Solutions',
-    description: 'We provide strategic advice that is not only insightful but also grounded in operational reality for seamless execution.',
-  },
-  {
-    title: 'Deep Industry Understanding',
-    description: 'Our advisory is enriched by a nuanced understanding of the Indian market and its diverse industry verticals.',
-  },
-  {
-    title: 'Confidentiality & Accountability',
-    description: 'We are committed to absolute client confidentiality and take full ownership of our advisory role in your success.',
-  },
-];
-
-export const INDUSTRIES = [
-  {
-    icon: Rocket,
-    title: 'Startups & Emerging Businesses',
-    description: 'Strategic guidance to navigate growth from seed stage to market leadership.',
-  },
-  {
-    icon: Factory,
-    title: 'MSMEs',
-    description: 'Optimizing operations, finance, and compliance for the backbone of the Indian economy.',
-  },
-  {
-    icon: Wrench,
-    title: 'Manufacturing',
-    description: 'Enhancing efficiency, managing costs, and navigating the complex regulatory landscape.',
-  },
-  {
-    icon: Laptop,
-    title: 'Services & IT',
-    description: 'Financial and strategic advisory for the fast-paced technology and service sectors.',
-  },
-  {
-    icon: Building2,
-    title: 'Real Estate',
-    description: 'Expertise in project financing, RERA compliance, and tax structuring for developers.',
-  },
-  {
+    slug: 'due-diligence',
     icon: Users,
-    title: 'Professionals & Family Businesses',
-    description: 'Advisory on succession planning, wealth management, and corporate governance.',
+    title: 'Due Diligence Support',
+    description: 'Comprehensive support to prepare for and navigate investor scrutiny.',
   },
 ];
 
-const testimonialAvatars = PlaceHolderImages.filter(img => img.id.includes('testimonial-avatar'));
+export const DETAILED_SERVICES = [
+    { icon: FileText, title: 'Agreements' },
+    { icon: ShieldCheck, title: 'IP Protection' },
+    { icon: BookUser, title: 'Book-keeping' },
+    { icon: FileCheck, title: 'Compliances' },
+    { icon: Scale, title: 'Labor law' },
+    { icon: Landmark, title: 'FEMA' },
+    { icon: Wallet, title: 'Indirect Tax' },
+    { icon: Briefcase, title: 'Companies Act' },
+    { icon: Wallet, title: 'Direct tax' },
+]
+
+export const WHY_CHOOSE_US_POINTS = [
+    {
+        icon: Briefcase,
+        title: 'Professional Ethics',
+        description: 'We uphold the highest standards of integrity and confidentiality in all our client engagements, ensuring your trust is well-placed.',
+    },
+    {
+        icon: Lightbulb,
+        title: 'Structured Approach',
+        description: 'Our methodologies are data-driven and structured, providing clear, actionable insights to navigate complex business challenges.',
+    },
+    {
+        icon: HeartHandshake,
+        title: 'Client Partnership',
+        description: 'We believe in building long-term partnerships, acting as an extension of your team to drive collective success.',
+    },
+]
+
+export const DIFFERENTIATORS = [
+  {
+    title: 'The most tech-forward',
+    description: 'We are obsessed with technology. We deploy tech-driven processes to provide world-class service with startup suitable pricing structure.',
+  },
+  {
+    title: 'The most experienced',
+    description: "Our service processes are designed based on real-life problems and we curated an expert team experienced in meeting the founder's expectations.",
+  },
+  {
+    title: 'The most scalable',
+    description: 'Our team rapidly scales as your business scales, to ensure you never have to worry about your finances.',
+  },
+];
+
+
+const koparoImg = PlaceHolderImages.find(img => img.id === 'testimonial-koparo');
+const kyariImg = PlaceHolderImages.find(img => img.id === 'testimonial-kyari');
+const ufaberImg = PlaceHolderImages.find(img => img.id === 'testimonial-ufaber');
+const shumeeImg = PlaceHolderImages.find(img => img.id === 'testimonial-shumee');
+const getsethomeImg = PlaceHolderImages.find(img => img.id === 'testimonial-getsethome');
+
 
 export const TESTIMONIALS = [
   {
-    quote: "Bharati Advisors transformed our financial strategy, leading to a 25% increase in operational efficiency. Their virtual CFO service is indispensable for any growing startup.",
-    name: 'Aarav Patel',
-    title: 'CEO, TechNova Solutions',
-    avatar: testimonialAvatars.find(img => img.id === 'testimonial-avatar-1')?.imageUrl || '',
-    avatarHint: testimonialAvatars.find(img => img.id === 'testimonial-avatar-1')?.imageHint || '',
-  },
-  {
-    quote: "Navigating the complexities of GST and compliance was our biggest challenge. The team at Bharati Advisors provided clear, actionable guidance that saved us from significant potential liabilities.",
+    quote: "Bharati Advisors was pivotal in our seed round, providing strategic insights that sharpened our pitch and financial model. Their expertise was a game-changer.",
+    company: 'Leading the way in sustainable packaging solutions.',
     name: 'Priya Sharma',
-    title: 'Director, Nirmal Exports',
-    avatar: testimonialAvatars.find(img => img.id === 'testimonial-avatar-2')?.imageUrl || '',
-    avatarHint: testimonialAvatars.find(img => img.id === 'testimonial-avatar-2')?.imageHint || '',
+    title: 'CEO, EcoPack',
+    avatar: koparoImg?.imageUrl || '',
+    avatarHint: koparoImg?.imageHint || '',
   },
   {
-    quote: "Their due diligence process was incredibly thorough and uncovered critical insights during our acquisition. We operate with far greater confidence thanks to their risk advisory.",
+    quote: 'Their operational consulting streamlined our processes, cutting costs by 20% and preparing us for a successful Series A.',
+    company: 'A fast-growing SaaS platform for remote team collaboration.',
     name: 'Rohan Mehta',
-    title: 'CFO, Sterling Manufacturing Co.',
-    avatar: testimonialAvatars.find(img => img.id === 'testimonial-avatar-3')?.imageUrl || '',
-    avatarHint: testimonialAvatars.find(img => img.id === 'testimonial-avatar-3')?.imageHint || '',
+    title: 'Founder, ConnectSphere',
+    avatar: kyariImg?.imageUrl || '',
+    avatarHint: kyariImg?.imageHint || '',
+  },
+  {
+    quote: 'The market entry strategy developed by Bharati Advisors was flawless. We launched in two new regions ahead of schedule and exceeded our initial sales targets.',
+    company: 'A direct-to-consumer health and wellness brand.',
+    name: 'Anika Reddy',
+    title: 'Co-Founder, Nourish & Co.',
+    avatar: ufaberImg?.imageUrl || '',
+    avatarHint: ufaberImg?.imageHint || '',
   },
 ];
 

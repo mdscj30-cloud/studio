@@ -1,38 +1,100 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { findImage } from '@/lib/constants';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
+
+const formSchema = z.object({
+  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
+  email: z.string().email({ message: 'Please enter a valid email address.' }),
+});
+
 
 export default function Hero() {
   const heroImage = findImage('hero-background');
 
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+    },
+  });
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values);
+  }
+
   return (
-    <section className="relative h-[600px] md:h-[700px] w-full flex items-center justify-center text-white">
-      {heroImage && (
-         <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-      )}
-      <div className="absolute inset-0 bg-primary/70"></div>
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-          Strategic Counsel for India’s Ambitious Enterprises
-        </h1>
-        <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-8">
-          We provide disciplined business, finance, and tax advisory to empower Indian MSMEs and startups, transforming complex challenges into opportunities for sustainable growth.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/contact">Schedule a Consultation</Link>
-          </Button>
-          <Button size="lg" variant="outline" asChild className="border-accent text-accent hover:bg-accent/10">
-            <Link href="/services">Explore Our Services</Link>
-          </Button>
+    <section className="relative w-full overflow-hidden bg-primary/5">
+      <div className="container grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
+        {heroImage && (
+            <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="object-cover opacity-10"
+                priority
+                data-ai-hint={heroImage.imageHint}
+            />
+        )}
+        <div className="relative z-10 text-left">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-primary">
+              Strategic Guidance for Ambitious Startups
+            </h1>
+            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-8">
+              We provide the expert advice and hands-on support you need to navigate challenges, accelerate growth, and achieve your vision.
+            </p>
+            <Button size="lg" asChild>
+                <Link href="/contact">Request a Consultation</Link>
+            </Button>
+        </div>
+        <div className="relative z-10">
+            <Card className="max-w-md mx-auto">
+                <CardHeader>
+                    <CardTitle>Partner with Us</CardTitle>
+                    <CardDescription>Fill out the form to start a conversation about your startup's future.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                        <FormField
+                            control={form.control}
+                            name="name"
+                            render={({ field }) => (
+                            <FormItem>
+                                <FormControl>
+                                <Input placeholder="Your Name" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="email"
+                            render={({ field }) => (
+                            <FormItem>
+                                <FormControl>
+                                <Input placeholder="Your Business Email" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                            )}
+                        />
+                        <Button type="submit" className="w-full">
+                            Submit
+                        </Button>
+                        </form>
+                    </Form>
+                </CardContent>
+            </Card>
         </div>
       </div>
     </section>

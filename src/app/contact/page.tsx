@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 
 export const metadata = {
   title: 'Contact Us | Bharati Advisors',
-  description: 'Schedule a strategic consultation with Bharati Advisors. Reach out to our team of expert business, finance, and tax consultants in India.',
+  description: 'Request a consultation to discuss how Bharati Advisors can help your startup achieve its goals.',
 };
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
         <div className="container text-center">
           <h1 className="text-4xl md:text-5xl font-bold">Contact Us</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-            Initiate a conversation about your business objectives. We are ready to listen and provide strategic insights.
+            We're ready to help you navigate your startup's journey. Reach out for a strategic consultation.
           </p>
         </div>
       </section>
@@ -22,9 +22,9 @@ export default function ContactPage() {
         <div className="container">
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-3">
-              <h2 className="text-3xl font-bold text-primary mb-2">Send Us a Message</h2>
+              <h2 className="text-3xl font-bold text-primary mb-2">Request a Consultation</h2>
               <p className="text-foreground/70 mb-8">
-                Please use the form below for your inquiries. We treat all communication with the utmost confidentiality and aim to respond within one business day.
+                Fill out the form below and one of our advisors will contact you to schedule a discussion.
               </p>
               <ContactForm />
             </div>
@@ -35,8 +35,8 @@ export default function ContactPage() {
                     <li className="flex items-start">
                         <MapPin className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
                         <div>
-                            <h4 className="font-semibold">Office Location</h4>
-                            <p className="text-sm text-foreground/80">123 Business Avenue, Corporate Towers, New Delhi, India 110001</p>
+                            <h4 className="font-semibold">Our Office</h4>
+                            <p className="text-sm text-foreground/80">123 Business Avenue, Startup City, India 560102</p>
                         </div>
                     </li>
                     <li className="flex items-start">

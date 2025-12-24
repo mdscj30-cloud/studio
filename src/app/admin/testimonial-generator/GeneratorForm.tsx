@@ -37,15 +37,15 @@ export function GeneratorForm() {
       const result = await generateClientTestimonial(values);
       setOutput(result);
       toast({
-        title: "Testimonial Generated!",
-        description: "The AI has crafted a new client testimonial.",
+        title: "Success Story Generated!",
+        description: "The AI has crafted a new client success story.",
       });
     } catch (error) {
       console.error(error);
       toast({
         variant: "destructive",
         title: "Generation Failed",
-        description: "An error occurred while generating the testimonial. Please try again.",
+        description: "An error occurred while generating the story. Please try again.",
       });
     } finally {
       setIsLoading(false);
@@ -57,7 +57,7 @@ export function GeneratorForm() {
       navigator.clipboard.writeText(output.testimonial);
       toast({
         title: "Copied to Clipboard!",
-        description: "The testimonial text has been copied.",
+        description: "The success story text has been copied.",
       });
     }
   };
@@ -67,7 +67,7 @@ export function GeneratorForm() {
       <Card>
         <CardHeader>
           <CardTitle>Input Data</CardTitle>
-          <CardDescription>Provide the necessary data to generate the testimonial.</CardDescription>
+          <CardDescription>Provide the necessary data to generate the success story.</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -80,7 +80,7 @@ export function GeneratorForm() {
                     <FormLabel>Client Project Data</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="e.g., Client: Acme Inc, a D2C brand. Objective: Reduce customer acquisition cost. Solution: Implemented our financial modeling for marketing spend. Results: CAC reduced by 15% over 6 months, marketing ROI increased from 3.5x to 5.2x."
+                        placeholder="e.g., Client: InnovateTech, a B2B SaaS startup. Objective: Increase enterprise user adoption. Solution: Deployed strategic partnership model and revised pricing tiers. Results: Enterprise adoption increased by 40% in one quarter, ARR grew by 25%."
                         className="min-h-[200px]"
                         {...field}
                       />
@@ -97,7 +97,7 @@ export function GeneratorForm() {
                     <FormLabel>Industry Benchmarks</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="e.g., Average D2C CAC is $25. Typical marketing ROI is 3x. Industry-leading ROI is 5x+."
+                        placeholder="e.g., Average SaaS enterprise adoption rate is 15% YoY. Top-quartile ARR growth is 20% QoQ."
                         className="min-h-[100px]"
                         {...field}
                       />
@@ -115,7 +115,7 @@ export function GeneratorForm() {
                 ) : (
                   <>
                     <Sparkles className="mr-2 h-4 w-4" />
-                    Generate Testimonial
+                    Generate Success Story
                   </>
                 )}
               </Button>
@@ -128,7 +128,7 @@ export function GeneratorForm() {
         <CardHeader className="flex flex-row items-center justify-between">
             <div>
                 <CardTitle>Generated Output</CardTitle>
-                <CardDescription>Review the AI-generated testimonial below.</CardDescription>
+                <CardDescription>Review the AI-generated success story below.</CardDescription>
             </div>
              {output && (
                 <Button variant="ghost" size="icon" onClick={copyToClipboard}>
@@ -140,13 +140,13 @@ export function GeneratorForm() {
           {isLoading && (
             <div className="flex flex-col items-center justify-center h-full min-h-[300px]">
               <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
-              <p className="text-muted-foreground">AI is crafting the testimonial...</p>
+              <p className="text-muted-foreground">AI is crafting the story...</p>
             </div>
           )}
           {!isLoading && !output && (
              <div className="flex flex-col items-center justify-center h-full min-h-[300px] text-center">
                 <Sparkles className="h-10 w-10 text-muted-foreground mb-4" />
-                <p className="text-muted-foreground">Your generated testimonial will appear here.</p>
+                <p className="text-muted-foreground">Your generated success story will appear here.</p>
              </div>
           )}
           {output && (

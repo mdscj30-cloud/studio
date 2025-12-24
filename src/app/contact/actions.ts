@@ -28,7 +28,7 @@ export async function handleFormSubmission(values: z.infer<typeof formSchema>): 
   try {
     // In a real application, you would send this data to your CRM,
     // email service, or database.
-    console.log('New Contact Form Submission:', validatedFields.data);
+    console.log('New Consultation Request:', validatedFields.data);
 
     // Simulate network delay
     await new Promise(resolve => setTimeout(resolve, 1000));

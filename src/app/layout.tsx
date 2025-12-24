@@ -5,9 +5,9 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Bharati Advisors | Strategic Business, Finance & Tax Consulting',
-  description: 'Expert consulting for Indian MSMEs and startups. We provide strategic advisory, virtual CFO services, and tax & compliance solutions to drive sustainable growth.',
-  keywords: ['Business consulting services in India', 'Financial consulting firm', 'Tax and compliance advisory', 'CFO services for startups', 'MSME advisory India']
+  title: 'Bharati Advisors | Strategic Consulting for Startups',
+  description: 'Bharati Advisors provides expert consulting on strategy, finance, and operations to help startups scale and succeed.',
+  keywords: ['startup consulting', 'strategic advisory', 'financial consulting for startups', 'business strategy', 'Bharati Advisors']
 };
 
 export default function RootLayout({
