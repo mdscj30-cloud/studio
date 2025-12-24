@@ -222,14 +222,14 @@ export const TESTIMONIALS = [
 ];
 
 export const PORTFOLIO_COMPANIES = [
-    { name: 'InnovateTech' },
-    { name: 'QuantumLeap' },
-    { name: 'NextGen AI' },
-    { name: 'BioHealth' },
-    { name: 'Fintech Solutions' },
-    { name: 'EcoPlanet' },
-    { name: 'SmartHome' },
-    { name: 'TravelPro' },
+    { name: 'Apex Solutions' },
+    { name: 'Nova Works' },
+    { name: 'Zenith Dynamics' },
+    { name: 'Fusion Corp' },
+    { name: 'Orion Systems' },
+    { name: 'Terra Nova' },
+    { name: 'Spectra Inc.' },
+    { name: 'Equinox Ventures' },
 ];
 
 
