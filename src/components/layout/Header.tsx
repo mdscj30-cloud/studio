@@ -15,15 +15,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center px-4 sm:px-6 lg:px-8">
-        <div className="mr-auto flex-1 flex justify-start">
-          <Link href="/" className="flex items-center">
+      <div className="container flex h-16 items-center justify-between">
+        <Link href="/" className="flex items-center">
             <span className="font-bold text-lg text-primary">N consulting</span>
-          </Link>
-        </div>
+        </Link>
 
-        <div className="hidden md:flex flex-none items-center justify-center">
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -36,16 +33,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-          </nav>
-        </div>
+        </nav>
         
-        <div className="hidden md:flex flex-1 items-center justify-end ml-auto">
+        <div className="hidden md:flex items-center">
             <Link href="/contact">
               <Button variant="accent">Request a Consultation</Button>
             </Link>
         </div>
 
-        <div className="md:hidden ml-auto">
+        <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
