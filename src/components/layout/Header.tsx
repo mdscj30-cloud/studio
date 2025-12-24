@@ -15,8 +15,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center">
+      <div className="container flex h-16 items-center">
+        <Link href="/" className="mr-auto flex items-center">
           <span className="font-bold text-lg text-primary">N consulting</span>
         </Link>
 
@@ -35,16 +35,16 @@ export default function Header() {
                 </Link>
             ))}
             </nav>
-            
-            <div className="items-center">
-                <Link href="/contact">
-                  <Button variant="accent">Request a Consultation</Button>
-                </Link>
-            </div>
+        </div>
+        
+        <div className="hidden md:flex items-center ml-auto">
+            <Link href="/contact">
+              <Button variant="accent">Request a Consultation</Button>
+            </Link>
         </div>
 
 
-        <div className="md:hidden">
+        <div className="md:hidden ml-auto">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
