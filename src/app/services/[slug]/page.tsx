@@ -41,7 +41,7 @@ export default function ServiceDetailPage({ params }: Props) {
   return (
     <>
       <section className="-mx-32 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
-        <div className="container py-16 md:py-24 pl-32">
+        <div className="container py-16 md:py-24">
             <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary-foreground/10 p-3 rounded-full">
                     <Icon className="w-10 h-10 text-primary-foreground" />
@@ -61,7 +61,7 @@ export default function ServiceDetailPage({ params }: Props) {
       </section>
 
       <section className="-mx-32 bg-muted/50 py-16 md:py-24">
-        <div className="container text-center pl-32">
+        <div className="container text-center">
              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to elevate your strategy with {service.title}?</h2>
              <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>
              <Button size="lg" asChild variant="accent">
