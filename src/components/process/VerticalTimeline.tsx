@@ -29,6 +29,7 @@ function TimelineItem({ step, index }: { step: (typeof PROCESS_STEPS)[0], index:
 
         return () => {
             if (ref.current) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 observer.unobserve(ref.current);
             }
         };
@@ -46,14 +47,14 @@ function TimelineItem({ step, index }: { step: (typeof PROCESS_STEPS)[0], index:
           )}
         >
             {/* Timeline Dot with Step Number */}
-            <div className="absolute left-6 top-1 h-10 w-10 rounded-full bg-background border-2 border-primary flex items-center justify-center -translate-x-[calc(50%+1px)] md:left-1/2 font-bold text-primary">
+            <div className="absolute left-6 top-1 h-10 w-10 rounded-full bg-background border-2 border-primary flex items-center justify-center -translate-x-[calc(50%+1px)] md:left-1/2 font-bold text-primary z-10">
               {index + 1}
             </div>
 
             {/* Content */}
             <div className={`w-full ${isEven ? 'md:col-start-1 md:text-right' : 'md:col-start-2 md:text-left'}`}>
                 <div className={`pl-16 md:pl-0 md:pr-0 ${isEven ? 'md:pr-16' : 'md:pl-16'}`}>
-                    <div className={cn("flex items-center gap-4 mb-2 md:justify-start", isEven ? 'md:flex-row-reverse' : '')}>
+                    <div className={cn("flex items-center gap-4 mb-2", isEven ? 'md:flex-row-reverse' : 'md:flex-row')}>
                         <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border-2 border-primary/20 text-primary shrink-0">
                             <Icon className="w-6 h-6" />
                         </div>
