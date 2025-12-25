@@ -39,7 +39,8 @@ import {
   Factory,
   ShoppingBag,
   HeartPulse,
-  Banknote
+  Banknote,
+  GraduationCap
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
@@ -50,6 +51,7 @@ export const NAV_LINKS = [
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/resources', label: 'Resources' },
+  { href: '/about', label: 'About' },
 ];
 
 export const LOCATIONS = [
@@ -591,6 +593,33 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   ]
 };
 
+const teamCaImg = PlaceHolderImages.find(img => img.id === 'team-ca');
+const teamBig4Img = PlaceHolderImages.find(img => img.id === 'team-big4');
+const teamIitIimImg = PlaceHolderImages.find(img => img.id === 'team-iit-iim');
+
+export const TEAM_MEMBERS = [
+  {
+    category: 'Chartered Accountants',
+    description: 'Our core financial and accounting strategies are led by seasoned CAs with deep expertise in tax, audit, and corporate finance.',
+    icon: Award,
+    image: teamCaImg?.imageUrl || '',
+    imageHint: teamCaImg?.imageHint || '',
+  },
+  {
+    category: 'Big Four Consultants',
+    description: 'Our team includes consultants from top firms like Deloitte, PwC, EY, and KPMG, bringing world-class methodologies and strategic insights.',
+    icon: Briefcase,
+    image: teamBig4Img?.imageUrl || '',
+    imageHint: teamBig4Img?.imageHint || '',
+  },
+  {
+    category: 'IIT & IIM Graduates',
+    description: 'Infused with analytical rigor and business acumen from India’s premier institutions, our team excels at problem-solving and innovation.',
+    icon: GraduationCap,
+    image: teamIitIimImg?.imageUrl || '',
+    imageHint: teamIitIimImg?.imageHint || '',
+  }
+];
 
 
 const blog1Img = PlaceHolderImages.find(img => img.id === 'blog-1');

@@ -1,3 +1,4 @@
+import TeamSection from "@/components/about/TeamSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function AboutPage() {
 
             <div className="container">
                 <WhyChooseUs />
+                <TeamSection />
             </div>
         </>
     );
