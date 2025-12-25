@@ -29,9 +29,9 @@ export default function PrivacyPolicyPage() {
 
             <h2>1. Information We Collect</h2>
             <p>We may collect information about you in a variety of ways. The information we may collect on the Site includes:</p>
-            <h4>Personal Data</h4>
-            <p>Personally identifiable information, such as your name, email address, and telephone number, and other details that you voluntarily give to us when you fill out a contact form or the "Partner with Us" form on our website.</p>
-            <h4>Derivative Data</h4>
+            <h3>Personal Data</h3>
+            <p>Personally identifiable information, such as your name, email address, and telephone number, and other details that you voluntarily give to us when you fill out a contact form or other forms on our website.</p>
+            <h3>Derivative Data</h3>
             <p>Information our servers automatically collect when you access the Site, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Site. Our chatbot functionality may also store conversation history to improve user experience.</p>
             
             <h2>2. How We Use Your Information</h2>

@@ -43,10 +43,10 @@ export default function TermsAndConditionsPage() {
                 <li>Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;</li>
             </ul>
 
-            <h2>3. No warranties</h2>
+            <h2>3. No Warranties</h2>
             <p>This Website is provided "as is," with all faults, and N consulting expresses no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</p>
 
-            <h2>4. Limitation of liability</h2>
+            <h2>4. Limitation of Liability</h2>
             <p>In no event shall N consulting, nor any of its officers, directors, and employees, be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract. N consulting, including its officers, directors, and employees shall not be held liable for any indirect, consequential, or special liability arising out of or in any way related to your use of this Website.</p>
 
             <h2>5. Indemnification</h2>
