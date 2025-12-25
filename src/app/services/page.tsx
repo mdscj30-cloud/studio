@@ -10,7 +10,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { DIFFERENTIATORS } from '@/lib/constants';
+import { DIFFERENTIATORS, WHY_CHOOSE_US_POINTS } from '@/lib/constants';
 
 export const metadata = {
   title: 'Our Services | N consulting',
@@ -223,28 +223,25 @@ export default function ServicesPage() {
                 ))}
               </ol>
             </div>
-            <div className="md:col-span-3 bg-card p-8 rounded-lg border">
-              <h2 className="text-3xl font-bold text-primary mb-6 text-center">
-                Why Founders Choose Us
-              </h2>
-              <ul className="space-y-4 mb-8 grid sm:grid-cols-2 gap-4">
-                {whyChooseUs.map(item => (
-                  <li key={item} className="flex items-center text-lg">
-                    <CheckCircle className="w-6 h-6 text-accent mr-4 shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="pt-8 border-t">
-                <h3 className="text-2xl font-bold text-primary mb-4 text-center">
-                  Optional Add-On Services
-                </h3>
-                <ul className="space-y-3 text-center text-muted-foreground grid sm:grid-cols-2 gap-x-4 gap-y-2">
-                  {addOnServices.map(item => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="md:col-span-3">
+               <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-primary">Why Founders Choose Us</h2>
+                    <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We are dedicated to fostering growth and success through our core principles.</p>
+                </div>
+                <div className="grid grid-cols-1 gap-8">
+                {WHY_CHOOSE_US_POINTS.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                        <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
+                            <div className="flex items-center gap-4 mb-3">
+                                <Icon className="w-8 h-8 text-accent shrink-0" />
+                                <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
+                            </div>
+                            <p className="text-sm text-muted-foreground">{item.description}</p>
+                        </div>
+                    )
+                })}
+                </div>
             </div>
           </div>
         </div>
