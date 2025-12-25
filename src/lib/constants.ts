@@ -92,22 +92,22 @@ export const SERVICES = [
 export const PROCESS_STEPS = [
   {
     icon: FileText,
-    title: '1. Discovery & Assessment',
+    title: 'Discovery & Assessment',
     description: 'We start with a deep dive into your business, market, and goals to understand your unique challenges and opportunities.',
   },
   {
     icon: Lightbulb,
-    title: '2. Strategy Formulation',
+    title: 'Strategy Formulation',
     description: 'Our team crafts a bespoke, data-driven strategy and actionable roadmap tailored to your specific objectives.',
   },
   {
     icon: TrendingUp,
-    title: '3. Implementation Support',
+    title: 'Implementation Support',
     description: 'We work alongside your team, providing hands-on support to ensure the strategy is executed flawlessly.',
   },
   {
     icon: Award,
-    title: '4. Performance & Scaling',
+    title: 'Performance & Scaling',
     description: 'We continuously monitor performance, making data-backed adjustments to drive growth and scale your success.',
   },
 ];

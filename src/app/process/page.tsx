@@ -1,4 +1,4 @@
-import { VerticalProcessSlider } from '@/components/process/VerticalProcessSlider';
+import { DynamicTimeline } from '@/components/process/DynamicTimeline';
 import { Lightbulb } from 'lucide-react';
 
 export const metadata = {
@@ -22,7 +22,7 @@ export default function ProcessPage() {
       </section>
 
       <section className="container py-16 md:py-24">
-        <VerticalProcessSlider />
+        <DynamicTimeline />
       </section>
     </>
   );
