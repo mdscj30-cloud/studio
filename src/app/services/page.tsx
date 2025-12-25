@@ -1,4 +1,4 @@
-
+'use client';
 
 import Link from 'next/link';
 import {
@@ -12,12 +12,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS } from '@/lib/constants';
-
-export const metadata = {
-  title: 'Our Services | N consulting',
-  description:
-    'A one-stop shop for all your financial operations, so you can use your time more efficiently, make smarter decisions, and hit your goals.',
-};
+import { useState } from 'react';
+import { useCalendlyEventListener, PopupModal } from 'react-calendly';
 
 const serviceSections = [
   {
@@ -89,14 +85,16 @@ const howItWorks = [
   { title: 'Scale, optimize, or continue' },
 ];
 
-const addOnServices = [
-  'Fundraising & bank-ready financial models',
-  'Tax audit & assessment support',
-  'ESOP & equity accounting',
-  'Multi-location GST advisory',
-];
-
 export default function ServicesPage() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useCalendlyEventListener({
+    onEventScheduled: (e) => {
+        console.log(e.data.payload);
+        setIsOpen(false);
+    },
+  });
+
   return (
     <>
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
@@ -248,14 +246,19 @@ export default function ServicesPage() {
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             You focus on growth. We’ll handle the rest.
           </p>
-          <Button size="lg" asChild variant="accent">
-            <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/your-schedule-link" target="_blank">
+          <Button size="lg" variant="accent" onClick={() => setIsOpen(true)}>
               Book a Free Discovery Call{' '}
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
           </Button>
         </div>
       </section>
+
+       <PopupModal
+            url="https://calendly.com/nconsulting/30min"
+            onModalClose={() => setIsOpen(false)}
+            open={isOpen}
+            rootElement={typeof window !== 'undefined' ? document.getElementById("__next")! : null}
+        />
     </>
   );
 }
