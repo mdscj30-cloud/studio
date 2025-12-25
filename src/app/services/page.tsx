@@ -13,6 +13,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS } from '@/lib/constants';
+import { useEffect } from 'react';
+import Cal from "@calcom/embed-react";
 
 const serviceSections = [
   {
@@ -85,7 +87,14 @@ const howItWorks = [
 ];
 
 export default function ServicesPage() {
-    const googleCalendarLink = "https://calendar.google.com/calendar/u/0/selfsched?sstoken=YOUR_APPOINTMENT_SCHEDULE_LINK";
+    useEffect(() => {
+    (async function () {
+      const cal = await Cal({
+        "calLink": "nconsulting/15min",
+      });
+      cal("ui", {"styles":{"branding":{"brandColor":"#5A2D82"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, []);
 
   return (
     <>
@@ -238,11 +247,9 @@ export default function ServicesPage() {
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             You focus on growth. We’ll handle the rest.
           </p>
-          <Button asChild size="lg" variant="accent">
-              <Link href={googleCalendarLink} target="_blank">
-                Book a Free Discovery Call{' '}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+          <Button data-cal-link="nconsulting/15min" size="lg" variant="accent">
+              Book a Free Discovery Call{' '}
+              <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </section>
