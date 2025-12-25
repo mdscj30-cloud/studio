@@ -1,7 +1,6 @@
 
 'use client';
 
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PRICING_PLANS, PricingPlan, PRICING_ADDONS, PRICING_DRIVERS, SECTORS_SERVED } from '@/lib/constants';
@@ -9,12 +8,11 @@ import { CheckCircle, Star, ArrowRight, Factory } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
-
-const appointmentLink = "https://calendar.google.com/calendar/u/0/selfsched?sstoken=YOUR_APPOINTMENT_TOKEN_HERE";
+import { getCalApi } from '@calcom/embed-react';
 
 export function PricingClient() {
   const defaultSector = SECTORS_SERVED[0].id;
@@ -26,6 +24,13 @@ export function PricingClient() {
     if (value > 1 && value <= 5) return 'Growth';
     return 'Custom';
   }, [turnover]);
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {"styles":{"branding":{"brandColor":"#5A2D82"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, []);
 
   return (
     <div>
@@ -112,8 +117,8 @@ export function PricingClient() {
                         </ul>
                       </CardContent>
                       <CardFooter>
-                         <Button asChild className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg">
-                            <Link href={appointmentLink} target="_blank">Book a Discovery Call</Link>
+                         <Button className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg" data-cal-link="nconsulting/15min" data-cal-config='{"layout":"month_view"}'>
+                            Book a Discovery Call
                          </Button>
                       </CardFooter>
                     </Card>
@@ -169,8 +174,8 @@ export function PricingClient() {
        <div className="text-center mt-16 md:mt-24">
           <h3 className="text-2xl font-bold text-primary mb-4">Let's Build Your Custom Plan</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Every business is unique. Contact us for a free discovery call to get a personalized quote based on your specific needs.</p>
-          <Button asChild size="lg" variant="accent">
-            <Link href="/contact">Request a Consultation</Link>
+          <Button size="lg" variant="accent" data-cal-link="nconsulting/15min" data-cal-config='{"layout":"month_view"}'>
+            Request a Consultation
           </Button>
         </div>
     </div>
