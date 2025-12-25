@@ -9,6 +9,10 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
+import { useState } from 'react';
+import { handleHeroFormSubmission } from './actions';
+import { useToast } from '@/hooks/use-toast';
+import { Loader2 } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -17,6 +21,8 @@ const formSchema = z.object({
 
 
 export default function Hero() {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const heroImage = findImage('hero-background-2');
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -28,7 +34,23 @@ export default function Hero() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    setIsLoading(true);
+    const result = await handleHeroFormSubmission(values);
+    setIsLoading(false);
+
+    if (result.success) {
+      toast({
+        title: "Inquiry Sent!",
+        description: "Thank you for your interest. We will be in touch shortly.",
+      });
+      form.reset();
+    } else {
+      toast({
+        variant: "destructive",
+        title: "Submission Failed",
+        description: result.message || "An unexpected error occurred. Please try again.",
+      });
+    }
   }
 
   return (
@@ -88,8 +110,15 @@ export default function Hero() {
                             </FormItem>
                             )}
                         />
-                        <Button type="submit" className="w-full" variant="accent">
-                            Submit
+                        <Button type="submit" className="w-full" variant="accent" disabled={isLoading}>
+                           {isLoading ? (
+                            <>
+                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                              Submitting...
+                            </>
+                          ) : (
+                            'Submit'
+                          )}
                         </Button>
                         </form>
                     </Form>

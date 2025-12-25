@@ -8,9 +8,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const formSchema = z.object({
   name: z.string(),
   email: z.string().email(),
-  phone: z.string().optional(),
-  subject: z.string(),
-  message: z.string(),
 });
 
 type FormState = {
@@ -18,7 +15,7 @@ type FormState = {
   message?: string;
 };
 
-export async function handleFormSubmission(values: z.infer<typeof formSchema>): Promise<FormState> {
+export async function handleHeroFormSubmission(values: z.infer<typeof formSchema>): Promise<FormState> {
   const validatedFields = formSchema.safeParse(values);
 
   if (!validatedFields.success) {
@@ -29,25 +26,21 @@ export async function handleFormSubmission(values: z.infer<typeof formSchema>): 
   }
 
   try {
-    const { name, email, phone, subject, message } = validatedFields.data;
-    
+    const { name, email } = validatedFields.data;
+
     await resend.emails.send({
-        from: 'onboarding@resend.dev',
-        to: 'cachirag1@outlook.com',
-        subject: `New Contact Form Submission: ${subject}`,
-        html: `
-            <p>You have a new submission from the contact form on your website.</p>
+      from: 'onboarding@resend.dev',
+      to: 'cachirag1@outlook.com',
+      subject: 'New "Partner with Us" Submission',
+      html: `
+            <p>You have a new submission from the "Partner with Us" form on your homepage.</p>
             <ul>
                 <li><strong>Name:</strong> ${name}</li>
                 <li><strong>Email:</strong> ${email}</li>
-                <li><strong>Phone:</strong> ${phone || 'Not provided'}</li>
-                <li><strong>Subject:</strong> ${subject}</li>
-                <li><strong>Message:</strong></li>
             </ul>
-            <p>${message}</p>
-        `
+        `,
     });
-    
+
     return { success: true };
   } catch (error) {
     console.error('Error sending email:', error);
