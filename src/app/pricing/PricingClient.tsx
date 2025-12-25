@@ -9,11 +9,12 @@ import { CheckCircle, Star, ArrowRight, Factory } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
-import Cal from "@calcom/embed-react";
+
+const appointmentLink = "https://calendar.google.com/calendar/u/0/selfsched?sstoken=YOUR_APPOINTMENT_TOKEN_HERE";
 
 export function PricingClient() {
   const defaultSector = SECTORS_SERVED[0].id;
@@ -25,15 +26,6 @@ export function PricingClient() {
     if (value > 1 && value <= 5) return 'Growth';
     return 'Custom';
   }, [turnover]);
-
-  useEffect(() => {
-    (async function () {
-      const cal = await Cal({
-        calLink: "nconsulting/15min",
-      });
-      cal("ui", {"styles":{"branding":{"brandColor":"#5A2D82"}},"hideEventTypeDetails":false,"layout":"month_view"});
-    })();
-  }, []);
 
   return (
     <div>
@@ -120,8 +112,8 @@ export function PricingClient() {
                         </ul>
                       </CardContent>
                       <CardFooter>
-                         <Button data-cal-link="nconsulting/15min" className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg">
-                            Book a Discovery Call
+                         <Button asChild className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg">
+                            <Link href={appointmentLink} target="_blank">Book a Discovery Call</Link>
                          </Button>
                       </CardFooter>
                     </Card>
