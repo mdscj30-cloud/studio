@@ -37,6 +37,7 @@ export const NAV_LINKS = [
   { href: '/services', label: 'Services' },
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
+  { href: '/resources', label: 'Resources' },
 ];
 
 export const LOCATIONS = [
@@ -156,7 +157,7 @@ export const PROCESS_STEPS = [
     description: 'Utilize a live compliance calendar, automated reminders, and notice monitoring to track deadlines and alert founders of any risk exposure.',
   },
   {
-    icon: Power,
+    icon: RotateCcw,
     title: 'Renewal, Expansion, or Exit',
     description: 'Provide a compliance scorecard at renewal. For exits, ensure all filings are up-to-date and provide a complete handover checklist and access transfer.',
   }
@@ -455,3 +456,67 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
   ],
 };
+
+
+const blog1Img = PlaceHolderImages.find(img => img.id === 'blog-1');
+const blog2Img = PlaceHolderImages.find(img => img.id === 'blog-2');
+const blog3Img = PlaceHolderImages.find(img => img.id === 'blog-3');
+
+export const BLOG_POSTS = [
+  {
+    slug: 'mastering-saas-metrics',
+    title: 'Mastering SaaS Metrics: A Guide for Founders',
+    description: 'Understand the key metrics that drive growth and investor confidence in the SaaS space.',
+    author: 'Priya Sharma',
+    date: '2024-07-15',
+    category: 'SaaS',
+    image: blog1Img?.imageUrl || '',
+    imageHint: blog1Img?.imageHint || ''
+  },
+  {
+    slug: 'fintech-compliance-decoded',
+    title: 'FinTech Compliance Decoded: Navigating the Regulatory Maze',
+    description: 'A deep dive into the complex regulatory landscape for FinTech startups in India.',
+    author: 'Rohan Mehra',
+    date: '2024-06-28',
+    category: 'FinTech',
+    image: blog2Img?.imageUrl || '',
+    imageHint: blog2Img?.imageHint || ''
+  },
+  {
+    slug: 'ecommerce-cash-flow',
+    title: 'The Ultimate Guide to Cash Flow Management for E-commerce',
+    description: 'Learn how to manage your cash flow effectively to ensure the long-term success of your e-commerce business.',
+    author: 'Anjali Verma',
+    date: '2024-05-19',
+    category: 'E-commerce',
+    image: blog3Img?.imageUrl || '',
+    imageHint: blog3Img?.imageHint || ''
+  },
+];
+
+const caseStudy1Img = PlaceHolderImages.find(img => img.id === 'case-study-1');
+const caseStudy2Img = PlaceHolderImages.find(img => img.id === 'case-study-2');
+
+export const CASE_STUDIES = [
+  {
+    slug: 'quantumleap-logistics-growth',
+    client: 'QuantumLeap Logistics',
+    title: 'Scaling Operations: How QuantumLeap Logistics Grew 3x with Our Financial Strategy',
+    description: 'Discover how our virtual CFO services helped QuantumLeap Logistics optimize their finances, secure funding, and scale their operations threefold in just 18 months.',
+    industry: 'Logistics',
+    services: ['Virtual CFO', 'Fundraising', 'MIS & KPI Tracking'],
+    image: caseStudy1Img?.imageUrl || '',
+    imageHint: caseStudy1Img?.imageHint || ''
+  },
+  {
+    slug: 'innovatex-saas-success',
+    client: 'InnovateX',
+    title: 'From Seed to Series A: The InnovateX Success Story',
+    description: 'A look into how we guided InnovateX through their fundraising journey, from crafting the perfect pitch deck to navigating due diligence and closing their Series A round.',
+    industry: 'SaaS',
+    services: ['Pitch deck and Financial Modelling', 'Investor Due Diligence', 'Corporate Law'],
+    image: caseStudy2Img?.imageUrl || '',
+    imageHint: caseStudy2Img?.imageHint || ''
+  },
+];

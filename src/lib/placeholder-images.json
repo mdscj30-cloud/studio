@@ -31,40 +31,70 @@
       "imageHint": "dashboard tablet"
     },
     {
-      "id": "testimonial-data-driven",
-      "description": "Portrait of the CEO of DataDriven Inc.",
-      "imageUrl": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "male CEO"
+      "id": "testimonial-futureverse",
+      "description": "Portrait of the CEO of FutureVerse.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "male ceo"
     },
     {
-      "id": "testimonial-health-ai",
-      "description": "Portrait of the Founder of HealthAI.",
+      "id": "testimonial-quantum-leap",
+      "description": "Portrait of the COO of QuantumLeap Logistics.",
       "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "female coo"
+    },
+    {
+      "id": "testimonial-biogen",
+      "description": "Portrait of the Chief Scientist of BioGen Innovations.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "male scientist"
+    },
+    {
+      "id": "testimonial-travelwise",
+      "description": "Portrait of the Founder of TravelWise.",
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "female founder"
     },
     {
-      "id": "testimonial-edutech",
-      "description": "Portrait of the CTO of EduTech Innovations.",
-      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "female CTO"
-    },
-    {
-      "id": "testimonial-fintech-pioneers",
-      "description": "Portrait of the Founder of FinTech Pioneers.",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "male founder"
-    },
-    {
-      "id": "testimonial-ecom-gurus",
-      "description": "Portrait of the CEO of eCom Gurus.",
+      "id": "testimonial-ecosolutions",
+      "description": "Portrait of the CEO of EcoSolutions.",
       "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "female CEO"
+      "imageHint": "female ceo"
     },
     {
-      "id": "testimonial-saas-innovators",
-      "description": "Portrait of the Founder of SaaS Innovators.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": "testimonial-artful-living",
+      "description": "Portrait of the Founder of Artful Living.",
+      "imageUrl": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "male founder"
+    },
+    {
+      "id": "blog-1",
+      "description": "A close-up of a laptop screen showing complex financial charts and graphs for a SaaS business.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "financial charts"
+    },
+    {
+      "id": "blog-2",
+      "description": "A gavel and law books on a desk, symbolizing financial technology regulations.",
+      "imageUrl": "https://images.unsplash.com/photo-1589216532372-1c2a36790049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "law books"
+    },
+    {
+      "id": "blog-3",
+      "description": "A person using a calculator with stacks of coins and receipts, representing cash flow management.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d044b40a25e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "calculator coins"
+    },
+    {
+      "id": "case-study-1",
+      "description": "A warehouse with workers and packages, representing logistics and scaling operations.",
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-08dd6e781c7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "warehouse logistics"
+    },
+    {
+      "id": "case-study-2",
+      "description": "A rocket launching, symbolizing a startup's rapid growth from seed to Series A funding.",
+      "imageUrl": "https://images.unsplash.com/photo-1534185717343-b4e0ee16223c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "rocket launch"
     }
   ]
 }
