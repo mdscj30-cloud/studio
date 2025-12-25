@@ -249,7 +249,7 @@ export default function ServicesPage() {
             You focus on growth. We’ll handle the rest.
           </p>
           <Button size="lg" asChild variant="accent">
-            <Link href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Discovery+Call+with+N+consulting&details=A+15-minute+call+to+discuss+your+startup%27s+needs.&add=chiragjainrockcool@gmail.com&pli=1&sf=true&output=xml" target="_blank">
+            <Link href="https://calendly.com/nconsulting/15min" target="_blank">
               Book a Free Discovery Call{' '}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

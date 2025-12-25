@@ -112,7 +112,7 @@ export function PricingClient() {
                       </CardContent>
                       <CardFooter>
                         <Button asChild className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg">
-                          <Link href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Discovery+Call+with+N+consulting&details=A+15-minute+call+to+discuss+your+startup%27s+needs.&add=chiragjainrockcool@gmail.com&pli=1&sf=true&output=xml" target="_blank">Book a Discovery Call</Link>
+                          <Link href="https://calendly.com/nconsulting/15min" target="_blank">Book a Discovery Call</Link>
                         </Button>
                       </CardFooter>
                     </Card>
