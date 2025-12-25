@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import {
   Card,
@@ -19,16 +20,17 @@ export const metadata = {
 const serviceSections = [
   {
     id: "virtual-cfo",
-    title: "Virtual CFO & Finance Ops",
+    title: "Virtual CFO",
     description: "Clarity on numbers. Confidence in decisions.",
     details:
-      "We act as your extended finance leadership—managing daily finance operations while helping you plan for growth.",
+      "We act as your extended finance leadership—managing daily finance operations, cash flow, and investor reporting while helping you plan for growth.",
     handles: [
       "End-to-end accounting & monthly close",
       "P&L, Balance Sheet & Cash Flow reporting",
       "Budgeting, forecasting & variance analysis",
-      "Burn rate, runway & margin tracking",
-      "Founder-friendly dashboards & insights",
+      "13-week rolling cash flow forecasts",
+      "Monthly investor updates & board-ready slides",
+      "KPI storytelling & narratives",
     ],
     idealFor: "Startups, D2C brands, manufacturing SMEs",
   },
@@ -62,68 +64,16 @@ const serviceSections = [
   },
   {
     id: "roc",
-    title: "ROC & Statutory",
+    title: "ROC & Compliance",
     description: "Strong governance. Zero penalties.",
     details:
-      "We manage routine ROC filings and coordinate closely with Company Secretaries to ensure your entity stays compliant year-round.",
+      "We manage routine ROC filings, clean up past compliance gaps, and ensure your entity stays compliant year-round.",
     handles: [
       "Annual ROC filings (AOC-4, MGT-7 / 7A)",
-      "DIR-3 KYC",
-      "Event-based filings support",
+      "DIR-3 KYC & event-based filings",
+      "Accounting clean-ups & past filing reviews",
+      "Compliance gap analysis & risk assessment",
       "Compliance calendars & reminders",
-      "Documentation & approvals coordination",
-    ],
-  },
-  {
-    id: "payroll",
-    title: "Payroll & Labor",
-    description: "Reliable payroll. Fully compliant workforce.",
-    details:
-      "We ensure payroll runs smoothly while statutory obligations are met accurately.",
-    handles: [
-      "Payroll processing coordination",
-      "PF / ESI compliance support",
-      "Salary structure advisory",
-      "Payroll reconciliations",
-    ],
-  },
-  {
-    id: "cash-flow",
-    title: "Cash Flow Advisory",
-    description: "Always know where your cash is going.",
-    details:
-      "Especially critical for startups and manufacturing units with working capital cycles.",
-    handles: [
-      "13-week rolling cash flow forecasts",
-      "Vendor payment planning",
-      "Tax outflow visibility",
-      "Scenario & stress testing",
-    ],
-  },
-  {
-    id: "reporting",
-    title: "Investor Reporting",
-    description: "Investor-ready, every month.",
-    details:
-      "We help founders communicate financial performance clearly and confidently to investors, banks, and boards.",
-    handles: [
-      "Monthly investor updates",
-      "Board-ready financial slides",
-      "KPI storytelling & narratives",
-      "Data room financial support",
-    ],
-  },
-  {
-    id: "cleanup",
-    title: "Compliance Cleanup",
-    description: "Fix the past. Build forward with confidence.",
-    details:
-      "For businesses with delayed filings or messy books—we bring everything back on track.",
-    handles: [
-      "Accounting clean-ups",
-      "Past GST & tax filing reviews",
-      "Compliance gap analysis",
-      "Penalty & risk exposure assessment",
     ],
   },
 ];
@@ -176,7 +126,7 @@ export default function ServicesPage() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container">
           <Tabs defaultValue={serviceSections[0].id} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-8 h-auto mb-12">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto mb-12">
               {serviceSections.map((service) => (
                 <TabsTrigger
                   key={service.id}
