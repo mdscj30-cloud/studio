@@ -1,19 +1,11 @@
 import { ContactForm } from './ContactForm';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+import { LOCATIONS } from '@/lib/constants';
 
 export const metadata = {
   title: 'Contact Us | N consulting',
   description: 'Request a consultation to discuss how N consulting can help your startup achieve its goals.',
 };
-
-const locations = [
-    { name: 'Bangalore (HQ)', address: '123 Business Avenue, Startup City, Bangalore 560102' },
-    { name: 'Mumbai', address: '456 Commerce Drive, Financial District, Mumbai 400051' },
-    { name: 'Delhi', address: '789 Innovation Plaza, Tech Park, New Delhi 110001' },
-    { name: 'Indore', address: '101 Growth Street, Business Hub, Indore 452001' },
-    { name: 'Jaipur', address: '212 Heritage Lane, Pink City, Jaipur 302001' },
-    { name: 'Ahmedabad', address: '333 Enterprise Way, GIFT City, Ahmedabad 382355' },
-];
 
 export default function ContactPage() {
   return (
@@ -40,12 +32,11 @@ export default function ContactPage() {
               <div className="bg-muted/50 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-primary mb-6">Our Offices</h3>
                 <ul className="space-y-6">
-                    {locations.map(location => (
+                    {LOCATIONS.map(location => (
                         <li key={location.name} className="flex items-start">
                             <MapPin className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
                             <div>
                                 <h4 className="font-semibold">{location.name}</h4>
-                                <p className="text-sm text-foreground/80">{location.address}</p>
                             </div>
                         </li>
                     ))}
