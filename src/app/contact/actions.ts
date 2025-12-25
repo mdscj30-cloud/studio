@@ -32,9 +32,10 @@ export async function handleFormSubmission(values: z.infer<typeof formSchema>): 
     const { name, email, phone, subject, message } = validatedFields.data;
     
     await resend.emails.send({
-        from: 'onboarding@resend.dev',
+        from: 'noreply@nconsulting.com',
         to: 'cachirag1@outlook.com',
         subject: `New Contact Form Submission: ${subject}`,
+        reply_to: email,
         html: `
             <p>You have a new submission from the contact form on your website.</p>
             <ul>
