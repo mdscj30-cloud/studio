@@ -18,12 +18,14 @@ import {
   Award,
   Presentation,
   Target,
+  DollarSign
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/pricing', label: 'Pricing' },
   { href: '/#process', label: 'Process' },
   { href: '/#portfolio', label: 'Portfolio' },
   { href: '/about', label: 'About Us' },
@@ -243,3 +245,166 @@ export const PORTFOLIO_COMPANIES = [
 export const findImage = (id: string): ImagePlaceholder | undefined => {
     return PlaceHolderImages.find(img => img.id === id);
 }
+
+export type PricingPlan = {
+  title: string;
+  price: string;
+  description: string;
+  features: string[];
+  popular?: boolean;
+};
+
+export const PRICING_PLANS: Record<string, PricingPlan[]> = {
+  saas: [
+    {
+      title: 'Startup',
+      price: '₹15,000',
+      description: 'For early-stage SaaS startups building their MVP.',
+      features: [
+        'Monthly Bookkeeping',
+        'Payroll (up to 10 employees)',
+        'Basic MIS Reporting',
+        'GST & TDS Compliance'
+      ],
+    },
+    {
+      title: 'Growth',
+      price: '₹40,000',
+      description: 'For growing SaaS companies scaling their operations.',
+      popular: true,
+      features: [
+        'All Startup features',
+        'Virtual CFO Services (Lite)',
+        'SaaS Metrics Tracking (MRR, Churn)',
+        'Advanced MIS & KPI Dashboard',
+        'Budgeting & Forecasting',
+      ],
+    },
+    {
+      title: 'Enterprise',
+      price: 'Custom',
+      description: 'For established SaaS businesses requiring comprehensive financial strategy.',
+      features: [
+        'All Growth features',
+        'Dedicated Virtual CFO',
+        'Investor Relations & Reporting',
+        'Fundraising & Due Diligence Support',
+        'Custom Financial Modeling',
+      ],
+    },
+  ],
+  ecommerce: [
+    {
+      title: 'Starter',
+      price: '₹12,000',
+      description: 'For new e-commerce stores getting started.',
+      features: [
+        'Weekly Bookkeeping',
+        'Payment Gateway Reconciliation',
+        'GST Compliance',
+        'Inventory Accounting (Basic)',
+      ],
+    },
+    {
+      title: 'Professional',
+      price: '₹35,000',
+      description: 'For established online retailers managing higher volumes.',
+      popular: true,
+      features: [
+        'All Starter features',
+        'Marketplace Reconciliation (Amazon, Flipkart)',
+        'COGS & Margin Analysis',
+        'Cashflow Management',
+        'TDS & TCS Compliance',
+      ],
+    },
+    {
+      title: 'Scale',
+      price: 'Custom',
+      description: 'For large-scale e-commerce operations with complex needs.',
+      features: [
+        'All Professional features',
+        'Multi-channel Inventory Management',
+        'Virtual CFO Services',
+        'Supply Chain Finance Advisory',
+        'Valuation & M&A Support',
+      ],
+    },
+  ],
+  fintech: [
+    {
+      title: 'Pre-Seed',
+      price: '₹20,000',
+      description: 'For FinTech startups in the regulatory sandbox or pre-launch phase.',
+      features: [
+        'RBI & SEBI Compliance Advisory',
+        'Monthly Bookkeeping',
+        'Burn Rate Analysis',
+        'ESOP & Cap Table Management (Basic)',
+      ],
+    },
+    {
+      title: 'Series A',
+      price: '₹60,000',
+      description: 'For funded FinTech companies preparing to scale.',
+      popular: true,
+      features: [
+        'All Pre-Seed features',
+        'Virtual CFO for FinTech',
+        'Regulatory Reporting Automation',
+        'Financial Due Diligence Support',
+        'Advanced Cap Table Management',
+      ],
+    },
+    {
+      title: 'Growth',
+      price: 'Custom',
+      description: 'For mature FinTechs expanding products and markets.',
+      features: [
+        'All Series A features',
+        'Dedicated Finance & Compliance Team',
+        'M&A and IPO Readiness Advisory',
+        'Global Expansion Financial Strategy',
+        'Treasury Management',
+      ],
+    },
+  ],
+  healthtech: [
+    {
+      title: 'Innovator',
+      price: '₹18,000',
+      description: 'For HealthTech startups developing their core technology.',
+      features: [
+        'R&D Expense Tracking',
+        'Grant & Funding Utilization Reporting',
+        'Basic Bookkeeping & Compliance',
+        'HIPAA/DISHA Compliance Advisory',
+      ],
+    },
+    {
+      title: 'Clinical',
+      price: '₹50,000',
+      description: 'For companies in clinical trials or entering the market.',
+      popular: true,
+      features: [
+        'All Innovator features',
+        'Project-based Accounting for Trials',
+        'Virtual CFO Services',
+        'Revenue Recognition (Healthcare)',
+        'Investor & Board Reporting',
+      ],
+    },
+    {
+      title: 'Provider',
+      price: 'Custom',
+      description: 'For established HealthTech platforms serving hospitals and clinics.',
+      features: [
+        'All Clinical features',
+        'Comprehensive Financial Management',
+        'Strategic Partnership Finance',
+        'Medical Billing & Coding Financial Oversight',
+        'Full Due Diligence & M&A Support',
+      ],
+    },
+  ],
+};
