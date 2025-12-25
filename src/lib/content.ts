@@ -1,10 +1,11 @@
 
+
 export const DETAILED_BLOG_POSTS = [
   {
     slug: 'mastering-saas-metrics',
     title: 'Mastering SaaS Metrics: A Founder’s Ultimate Guide to Driving Growth',
     summary: 'Understand the key metrics that drive growth and investor confidence in the SaaS space, from MRR and Churn to LTV and CAC.',
-    author: 'Priya Sharma',
+    author: 'Amit Singh',
     date: '2024-07-15',
     category: 'SaaS',
     imageId: 'blog-1',
@@ -79,7 +80,7 @@ export const DETAILED_BLOG_POSTS = [
     slug: 'fintech-compliance-decoded',
     title: 'FinTech Compliance Decoded: Navigating the Indian Regulatory Maze',
     summary: 'A deep dive into the complex regulatory landscape for FinTech startups in India, covering RBI guidelines, data privacy, and more.',
-    author: 'Rohan Mehra',
+    author: 'Vikram Reddy',
     date: '2024-06-28',
     category: 'FinTech',
     imageId: 'blog-2',
@@ -153,7 +154,7 @@ export const DETAILED_BLOG_POSTS = [
     slug: 'ecommerce-cash-flow',
     title: 'The Ultimate Guide to Cash Flow Management for E-commerce Businesses',
     summary: 'Learn proven strategies to manage your cash flow effectively, optimize inventory, and ensure the long-term success of your business.',
-    author: 'Anjali Verma',
+    author: 'Sunita Nair',
     date: '2024-05-19',
     category: 'E-commerce',
     imageId: 'blog-3',
@@ -223,7 +224,7 @@ export const DETAILED_BLOG_POSTS = [
     slug: 'startup-fundraising-101',
     title: 'Startup Fundraising 101: From Pitch Deck to Term Sheet',
     summary: 'A step-by-step guide to preparing for your fundraising journey, crafting a winning pitch, and negotiating favorable terms.',
-    author: 'Vikram Singh',
+    author: 'Arjun Gupta',
     date: '2024-07-22',
     category: 'Fundraising',
     imageId: 'blog-4',
@@ -306,7 +307,7 @@ export const DETAILED_BLOG_POSTS = [
     slug: 'demystifying-cap-tables',
     title: 'Demystifying Cap Tables: A Founder’s Handbook to Equity',
     summary: 'Understand the importance of cap table management, common pitfalls to avoid, and how to use it as a strategic tool.',
-    author: 'Priya Sharma',
+    author: 'Amit Singh',
     date: '2024-06-10',
     category: 'Startup Finance',
     imageId: 'blog-5',
@@ -368,7 +369,7 @@ export const DETAILED_BLOG_POSTS = [
     slug: 'due-diligence-red-flags',
     title: 'Top 5 Due Diligence Red Flags That Can Derail Your Funding Round',
     summary: 'Prepare your startup for investor scrutiny by understanding the common red flags that can derail a funding round.',
-    author: 'Rohan Mehra',
+    author: 'Vikram Reddy',
     date: '2024-05-05',
     category: 'Due Diligence',
     imageId: 'blog-6',
@@ -659,3 +660,5 @@ export const DETAILED_CASE_STUDIES = [
 `
   }
 ];
+
+    
