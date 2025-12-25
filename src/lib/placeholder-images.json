@@ -85,6 +85,24 @@
       "imageHint": "calculator coins"
     },
     {
+      "id": "blog-4",
+      "description": "A person presenting a pitch deck to a group of investors in a modern office.",
+      "imageUrl": "https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "investor presentation"
+    },
+    {
+      "id": "blog-5",
+      "description": "A diagram showing the structure of a company's capitalization table on a whiteboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "whiteboard diagram"
+    },
+    {
+      "id": "blog-6",
+      "description": "A magnifying glass hovering over a legal document, symbolizing the due diligence process.",
+      "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "magnifying glass"
+    },
+    {
       "id": "case-study-1",
       "description": "A warehouse with workers and packages, representing logistics and scaling operations.",
       "imageUrl": "https://images.unsplash.com/photo-1586528116311-08dd6e781c7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -95,6 +113,18 @@
       "description": "A rocket launching, symbolizing a startup's rapid growth from seed to Series A funding.",
       "imageUrl": "https://images.unsplash.com/photo-1534185717343-b4e0ee16223c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "rocket launch"
+    },
+    {
+      "id": "case-study-3",
+      "description": "An illustration of a friendly robot assisting a doctor in a modern hospital setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1620712943543-aebc69232973?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "medical robot"
+    },
+    {
+      "id": "case-study-4",
+      "description": "A lifestyle shot of a customer happily unboxing a product from a modern D2C brand.",
+      "imageUrl": "https://images.unsplash.com/photo-1566576912301-407c72f7334a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "unboxing product"
     }
   ]
 }

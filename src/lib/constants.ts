@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -461,12 +462,15 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
 const blog1Img = PlaceHolderImages.find(img => img.id === 'blog-1');
 const blog2Img = PlaceHolderImages.find(img => img.id === 'blog-2');
 const blog3Img = PlaceHolderImages.find(img => img.id === 'blog-3');
+const blog4Img = PlaceHolderImages.find(img => img.id === 'blog-4');
+const blog5Img = PlaceHolderImages.find(img => img.id === 'blog-5');
+const blog6Img = PlaceHolderImages.find(img => img.id === 'blog-6');
 
 export const BLOG_POSTS = [
   {
     slug: 'mastering-saas-metrics',
     title: 'Mastering SaaS Metrics: A Guide for Founders',
-    description: 'Understand the key metrics that drive growth and investor confidence in the SaaS space.',
+    description: 'Understand the key metrics that drive growth and investor confidence in the SaaS space, from MRR and Churn to LTV and CAC.',
     author: 'Priya Sharma',
     date: '2024-07-15',
     category: 'SaaS',
@@ -476,7 +480,7 @@ export const BLOG_POSTS = [
   {
     slug: 'fintech-compliance-decoded',
     title: 'FinTech Compliance Decoded: Navigating the Regulatory Maze',
-    description: 'A deep dive into the complex regulatory landscape for FinTech startups in India.',
+    description: 'A deep dive into the complex regulatory landscape for FinTech startups in India, covering RBI guidelines, data privacy, and more.',
     author: 'Rohan Mehra',
     date: '2024-06-28',
     category: 'FinTech',
@@ -486,17 +490,50 @@ export const BLOG_POSTS = [
   {
     slug: 'ecommerce-cash-flow',
     title: 'The Ultimate Guide to Cash Flow Management for E-commerce',
-    description: 'Learn how to manage your cash flow effectively to ensure the long-term success of your e-commerce business.',
+    description: 'Learn proven strategies to manage your cash flow effectively, optimize inventory, and ensure the long-term success of your business.',
     author: 'Anjali Verma',
     date: '2024-05-19',
     category: 'E-commerce',
     image: blog3Img?.imageUrl || '',
     imageHint: blog3Img?.imageHint || ''
   },
+  {
+    slug: 'startup-fundraising-101',
+    title: 'Startup Fundraising 101: From Pitch Deck to Term Sheet',
+    description: 'A step-by-step guide to preparing for your fundraising journey, crafting a winning pitch, and negotiating favorable terms.',
+    author: 'Vikram Singh',
+    date: '2024-07-22',
+    category: 'Fundraising',
+    image: blog4Img?.imageUrl || '',
+    imageHint: blog4Img?.imageHint || ''
+  },
+  {
+    slug: 'demystifying-cap-tables',
+    title: 'Demystifying Cap Tables: A Founder\'s Handbook',
+    description: 'Understand the importance of cap table management, common pitfalls to avoid, and how to use it as a strategic tool.',
+    author: 'Priya Sharma',
+    date: '2024-06-10',
+    category: 'Startup Finance',
+    image: blog5Img?.imageUrl || '',
+    imageHint: blog5Img?.imageHint || ''
+  },
+  {
+    slug: 'due-diligence-red-flags',
+    title: 'Top 5 Due Diligence Red Flags for Investors',
+    description: 'Prepare your startup for investor scrutiny by understanding the common red flags that can derail a funding round.',
+    author: 'Rohan Mehra',
+    date: '2024-05-05',
+    category: 'Due Diligence',
+    image: blog6Img?.imageUrl || '',
+    imageHint: blog6Img?.imageHint || ''
+  },
 ];
 
 const caseStudy1Img = PlaceHolderImages.find(img => img.id === 'case-study-1');
 const caseStudy2Img = PlaceHolderImages.find(img => img.id === 'case-study-2');
+const caseStudy3Img = PlaceHolderImages.find(img => img.id === 'case-study-3');
+const caseStudy4Img = PlaceHolderImages.find(img => img.id === 'case-study-4');
+
 
 export const CASE_STUDIES = [
   {
@@ -518,5 +555,25 @@ export const CASE_STUDIES = [
     services: ['Pitch deck and Financial Modelling', 'Investor Due Diligence', 'Corporate Law'],
     image: caseStudy2Img?.imageUrl || '',
     imageHint: caseStudy2Img?.imageHint || ''
+  },
+  {
+    slug: 'medibot-healthtech-ai',
+    client: 'MediBot',
+    title: 'AI in HealthTech: MediBot\'s Path to Profitability',
+    description: 'We provided comprehensive financial modeling and compliance advisory, enabling MediBot to secure FDA clearance and achieve profitability within two years of launch.',
+    industry: 'HealthTech',
+    services: ['Virtual CFO', 'Regulatory Compliances', 'Financial Modelling'],
+    image: caseStudy3Img?.imageUrl || '',
+    imageHint: caseStudy3Img?.imageHint || ''
+  },
+  {
+    slug: 'urban-roots-d2c-brand',
+    client: 'Urban Roots',
+    title: 'Cultivating Growth: Urban Roots\' D2C E-commerce Expansion',
+    description: 'Our team streamlined inventory management and implemented a robust financial reporting system, resulting in a 40% reduction in costs and a 200% increase in online sales.',
+    industry: 'D2C / E-commerce',
+    services: ['Bookkeeping', 'Inventory Management', 'MIS & KPI Tracking'],
+    image: caseStudy4Img?.imageUrl || '',
+    imageHint: caseStudy4Img?.imageHint || ''
   },
 ];
