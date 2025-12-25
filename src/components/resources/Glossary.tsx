@@ -1,3 +1,4 @@
+
 'use client';
 
 import { GLOSSARY_DATA_BY_LETTER, type GlossaryTerm } from '@/lib/glossary-data';
@@ -31,8 +32,10 @@ export function Glossary() {
     const lettersWithContent = alphabet.filter(letter => GLOSSARY_DATA_BY_LETTER[letter]);
     if (lettersWithContent.length > 0) {
       const firstLetter = lettersWithContent[0];
-      setVisibleLetters([firstLetter]);
-      loadLetter(firstLetter);
+      if (!visibleLetters.includes(firstLetter)) {
+        setVisibleLetters([firstLetter]);
+        loadLetter(firstLetter);
+      }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loadLetter]);
@@ -43,8 +46,10 @@ export function Glossary() {
       const nextIndex = visibleLetters.length;
       if (nextIndex < lettersWithContent.length) {
         const nextLetter = lettersWithContent[nextIndex];
-        setVisibleLetters(prev => [...prev, nextLetter]);
-        loadLetter(nextLetter);
+        if (!visibleLetters.includes(nextLetter)) {
+          setVisibleLetters(prev => [...prev, nextLetter]);
+          loadLetter(nextLetter);
+        }
       }
     }
   }, [inView, visibleLetters, loadLetter]);
@@ -58,7 +63,7 @@ export function Glossary() {
                 const items = loadedData[letter];
                 if (!items) {
                     return (
-                        <div key={letter} className="space-y-4">
+                        <div key={`${letter}-loading`} className="space-y-4">
                             <Skeleton className="h-16 w-full rounded-lg" />
                         </div>
                     );
