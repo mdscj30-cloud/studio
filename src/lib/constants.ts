@@ -18,7 +18,17 @@ import {
   Award,
   Presentation,
   Target,
-  DollarSign
+  DollarSign,
+  Phone,
+  ClipboardList,
+  FileSignature,
+  LogIn,
+  RefreshCw,
+  CalendarCheck,
+  BarChart3,
+  FileStack,
+  Power,
+  RotateCcw
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -91,26 +101,67 @@ export const SERVICES = [
 
 export const PROCESS_STEPS = [
   {
-    icon: FileText,
-    title: 'Discovery & Assessment',
-    description: 'We start with a deep dive into your business, market, and goals to understand your unique challenges and opportunities.',
+    icon: Phone,
+    title: 'Discovery Call – Compliance Included',
+    description: 'Identify statutory exposure early, covering GST, Income Tax, TDS, ROC, Payroll, and PF/ESI status. Output: Compliance risk assessment & draft filing calendar.',
   },
   {
-    icon: Lightbulb,
-    title: 'Strategy Formulation',
-    description: 'Our team crafts a bespoke, data-driven strategy and actionable roadmap tailored to your specific objectives.',
+    icon: ClipboardList,
+    title: 'Finance Scope Definition',
+    description: 'Define a clear scope for monthly bookkeeping, GST/TDS filing, tax support, and ROC compliance to avoid ambiguity. Output: Finance + Compliance RACI matrix.',
+  },
+  {
+    icon: FileSignature,
+    title: 'Proposal, Agreement & Controls',
+    description: 'Contractually define filing responsibilities, timelines, data dependencies, and penalty clauses to protect compliance. Output: Signed MSA + Finance & Compliance SOW.',
+  },
+  {
+    icon: LogIn,
+    title: 'Finance & Compliance Onboarding',
+    description: 'Collect credentials and prior returns for GST, Income Tax, and ROC to set an accurate statutory base. Output: Opening compliance review sign-off.',
+  },
+  {
+    icon: RefreshCw,
+    title: 'Monthly Finance & GST Cycle',
+    description: 'Monthly accounting, reconciliation, GST return filing (GSTR-1 & 3B), liability computation, and challan payment. Output: Filed GST returns & reconciliation statement.',
+  },
+  {
+    icon: HandCoins,
+    title: 'TDS & Payroll Filings',
+    description: 'Handle monthly TDS calculation and challan payments, and file quarterly TDS returns (24Q, 26Q), providing Form 16/16A.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Monthly Finance Report & Review',
+    description: 'Review P&L, Balance Sheet, cash flow, GST position, and tax summary. Discuss variances and plan for upcoming tax deadlines.',
+  },
+  {
+    icon: CalendarCheck,
+    title: 'Quarterly Compliance & Reporting',
+    description: 'Manage quarterly GST (QRMP), ROC/Company filings (AOC-4, MGT-7), and advance tax computations and payments.',
   },
   {
     icon: TrendingUp,
-    title: 'Implementation Support',
-    description: 'We work alongside your team, providing hands-on support to ensure the strategy is executed flawlessly.',
+    title: 'Quarterly Finance & Strategy Review',
+    description: 'Focus on budget vs. actuals, tax outflow trends, runway analysis, and compliance health score. Output: Updated forecasts & action items.',
   },
   {
-    icon: Award,
-    title: 'Performance & Scaling',
-    description: 'We continuously monitor performance, making data-backed adjustments to drive growth and scale your success.',
+    icon: FileStack,
+    title: 'Annual Income Tax & Year-End Filings',
+    description: 'Finalize tax computation, file income tax returns (ITR), manage tax audits (if applicable), and prepare annual GST returns and financial statements.',
   },
+  {
+    icon: ShieldCheck,
+    title: 'Ongoing Compliance & Risk Alerts',
+    description: 'Utilize a live compliance calendar, automated reminders, and notice monitoring to track deadlines and alert founders of any risk exposure.',
+  },
+  {
+    icon: Power,
+    title: 'Renewal, Expansion, or Exit',
+    description: 'Provide a compliance scorecard at renewal. For exits, ensure all filings are up-to-date and provide a complete handover checklist and access transfer.',
+  }
 ];
+
 
 export const DETAILED_SERVICES = [
     { icon: FileText, title: 'Agreements' },
