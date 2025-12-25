@@ -1,3 +1,4 @@
+
 import { PricingClient } from './PricingClient';
 import { DollarSign } from 'lucide-react';
 
@@ -14,9 +15,9 @@ export default function PricingPage() {
             <div className="inline-block bg-primary-foreground/10 p-4 rounded-full mb-4">
                 <DollarSign className="w-10 h-10 text-primary-foreground" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold">Transparent Pricing</h1>
+            <h1 className="text-4xl md:text-5xl font-bold">Transparent, Value-Based Pricing</h1>
             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-              Find the perfect plan for your startup. We offer tailored financial services for every stage and industry.
+              For less than the cost of a junior hire, you get a full finance & compliance team—without dependency risk.
             </p>
         </div>
       </section>
