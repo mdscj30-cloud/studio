@@ -1,105 +1,106 @@
 
-import Link from "next/link";
+import Link from 'next/link';
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
   CardDescription,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, CheckCircle } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { DIFFERENTIATORS } from '@/lib/constants';
 
 export const metadata = {
-  title: "Our Services | N consulting",
+  title: 'Our Services | N consulting',
   description:
-    "A one-stop shop for all your financial operations, so you can use your time more efficiently, make smarter decisions, and hit your goals.",
+    'A one-stop shop for all your financial operations, so you can use your time more efficiently, make smarter decisions, and hit your goals.',
 };
 
 const serviceSections = [
   {
-    id: "virtual-cfo",
-    title: "Virtual CFO",
-    description: "Clarity on numbers. Confidence in decisions.",
+    id: 'virtual-cfo',
+    title: 'Virtual CFO',
+    description: 'Clarity on numbers. Confidence in decisions.',
     details:
-      "We act as your extended finance leadership—managing daily finance operations, cash flow, and investor reporting while helping you plan for growth.",
+      'We act as your extended finance leadership—managing daily finance operations while helping you plan for growth, manage cash flow, and handle investor reporting.',
+    idealFor: 'Startups, D2C brands, manufacturing SMEs',
     handles: [
-      "End-to-end accounting & monthly close",
-      "P&L, Balance Sheet & Cash Flow reporting",
-      "Budgeting, forecasting & variance analysis",
-      "13-week rolling cash flow forecasts",
-      "Monthly investor updates & board-ready slides",
-      "KPI storytelling & narratives",
-    ],
-    idealFor: "Startups, D2C brands, manufacturing SMEs",
-  },
-  {
-    id: "gst",
-    title: "GST & Indirect Tax",
-    description: "Compliant by default. Optimized by design.",
-    details:
-      "From filings to reconciliations, we manage your GST compliance seamlessly—so there are no last-minute scrambles or surprise notices.",
-    handles: [
-      "GSTR-1 & GSTR-3B filings (Monthly / Quarterly)",
-      "Sales, purchase & ITC reconciliations",
-      "GST liability computation & challans",
-      "ITC optimization & mismatch resolution",
-      "Ongoing GST compliance monitoring",
+      'End-to-end accounting & monthly close',
+      'P&L, Balance Sheet & Cash Flow reporting',
+      'Budgeting, forecasting & variance analysis',
+      '13-week rolling cash flow forecasts',
+      'Monthly investor updates & board-ready slides',
+      'KPI storytelling & narratives',
     ],
   },
   {
-    id: "income-tax",
-    title: "Income Tax & TDS",
-    description: "No missed deadlines. No unnecessary tax leakage.",
+    id: 'gst',
+    title: 'GST & Indirect Tax',
+    description: 'Compliant by default. Optimized by design.',
     details:
-      "We ensure your direct tax obligations are handled accurately and on time—while keeping cash planning in mind.",
+      'From filings to reconciliations, we manage your GST compliance seamlessly—so there are no last-minute scrambles or surprise notices.',
     handles: [
-      "Monthly TDS calculations & challans",
-      "Quarterly TDS returns (24Q, 26Q)",
-      "Form 16 / 16A issuance",
-      "Advance tax planning & tracking",
-      "Annual income tax return filing",
+      'GSTR-1 & GSTR-3B filings (Monthly / Quarterly)',
+      'Sales, purchase & ITC reconciliations',
+      'GST liability computation & challans',
+      'ITC optimization & mismatch resolution',
+      'Ongoing GST compliance monitoring',
     ],
   },
   {
-    id: "roc",
-    title: "ROC & Compliance",
-    description: "Strong governance. Zero penalties.",
+    id: 'income-tax',
+    title: 'Income Tax & TDS',
+    description: 'No missed deadlines. No unnecessary tax leakage.',
     details:
-      "We manage routine ROC filings, clean up past compliance gaps, and ensure your entity stays compliant year-round.",
+      'We ensure your direct tax obligations are handled accurately and on time—while keeping cash planning in mind.',
     handles: [
-      "Annual ROC filings (AOC-4, MGT-7 / 7A)",
-      "DIR-3 KYC & event-based filings",
-      "Accounting clean-ups & past filing reviews",
-      "Compliance gap analysis & risk assessment",
-      "Compliance calendars & reminders",
+      'Monthly TDS calculations & challans',
+      'Quarterly TDS returns (24Q, 26Q)',
+      'Form 16 / 16A issuance',
+      'Advance tax planning & tracking',
+      'Annual income tax return filing',
+    ],
+  },
+  {
+    id: 'roc',
+    title: 'ROC & Compliance',
+    description: 'Strong governance. Zero penalties.',
+    details:
+      'We manage routine ROC filings, clean up past compliance gaps, and ensure your entity stays compliant year-round.',
+    handles: [
+      'Annual ROC filings (AOC-4, MGT-7 / 7A)',
+      'DIR-3 KYC & event-based filings',
+      'Accounting clean-ups & past filing reviews',
+      'Compliance gap analysis & risk assessment',
+      'Compliance calendars & reminders',
     ],
   },
 ];
 
 const howItWorks = [
-  { title: "Discovery & compliance assessment" },
-  { title: "Scope definition & retainer setup" },
-  { title: "Finance & compliance onboarding" },
-  { title: "Monthly execution & filings" },
-  { title: "Quarterly review & planning" },
-  { title: "Scale, optimize, or continue" },
+  { title: 'Discovery & compliance assessment' },
+  { title: 'Scope definition & retainer setup' },
+  { title: 'Finance & compliance onboarding' },
+  { title: 'Monthly execution & filings' },
+  { title: 'Quarterly review & planning' },
+  { title: 'Scale, optimize, or continue' },
 ];
 
 const whyChooseUs = [
-  "Built for startups & manufacturing businesses",
-  "Fixed monthly retainers—no surprises",
-  "Clear ownership & accountability",
-  "Proactive compliance tracking",
-  "Clear communication, no jargon",
+  'Built for startups & manufacturing businesses',
+  'Fixed monthly retainers—no surprises',
+  'Clear ownership & accountability',
+  'Proactive compliance tracking',
+  'Clear communication, no jargon',
 ];
 
 const addOnServices = [
-  "Fundraising & bank-ready financial models",
-  "Tax audit & assessment support",
-  "ESOP & equity accounting",
-  "Multi-location GST advisory",
+  'Fundraising & bank-ready financial models',
+  'Tax audit & assessment support',
+  'ESOP & equity accounting',
+  'Multi-location GST advisory',
 ];
 
 export default function ServicesPage() {
@@ -127,7 +128,7 @@ export default function ServicesPage() {
         <div className="container">
           <Tabs defaultValue={serviceSections[0].id} className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto mb-12">
-              {serviceSections.map((service) => (
+              {serviceSections.map(service => (
                 <TabsTrigger
                   key={service.id}
                   value={service.id}
@@ -137,7 +138,7 @@ export default function ServicesPage() {
                 </TabsTrigger>
               ))}
             </TabsList>
-            {serviceSections.map((service) => (
+            {serviceSections.map(service => (
               <TabsContent key={service.id} value={service.id}>
                 <Card className="border-accent bg-muted/20">
                   <div className="grid md:grid-cols-2">
@@ -148,15 +149,13 @@ export default function ServicesPage() {
                       <p className="text-lg font-semibold text-accent mb-4">
                         {service.description}
                       </p>
-                      <p className="text-muted-foreground">
-                        {service.details}
-                      </p>
+                      <p className="text-muted-foreground">{service.details}</p>
                       {service.idealFor && (
                         <div className="mt-4 pt-4 border-t">
                           <p className="text-sm text-muted-foreground">
                             <span className="font-semibold text-primary">
                               Ideal for:
-                            </span>{" "}
+                            </span>{' '}
                             {service.idealFor}
                           </p>
                         </div>
@@ -167,7 +166,7 @@ export default function ServicesPage() {
                         What we handle
                       </h3>
                       <ul className="space-y-3 text-sm text-muted-foreground">
-                        {service.handles.map((item) => (
+                        {service.handles.map(item => (
                           <li key={item} className="flex items-start">
                             <CheckCircle className="w-4 h-4 text-accent mr-3 mt-1 shrink-0" />
                             <span>{item}</span>
@@ -181,7 +180,29 @@ export default function ServicesPage() {
             ))}
           </Tabs>
 
-          <div className="mt-24 grid md:grid-cols-5 gap-12 items-start">
+          <section className="py-16 md:py-24">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+                Your Strategic Finance Partner
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                We go beyond compliance to provide the strategic insights that
+                drive growth.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              {DIFFERENTIATORS.map(item => (
+                <div key={item.title} className="p-6 bg-card rounded-lg border">
+                  <h3 className="text-xl font-semibold text-primary mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div className="grid md:grid-cols-5 gap-12 items-start">
             <div className="md:col-span-2 bg-muted/50 p-8 rounded-lg">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">
                 How We Work
@@ -207,7 +228,7 @@ export default function ServicesPage() {
                 Why Founders Choose Us
               </h2>
               <ul className="space-y-4 mb-8 grid sm:grid-cols-2 gap-4">
-                {whyChooseUs.map((item) => (
+                {whyChooseUs.map(item => (
                   <li key={item} className="flex items-center text-lg">
                     <CheckCircle className="w-6 h-6 text-accent mr-4 shrink-0" />
                     <span>{item}</span>
@@ -219,7 +240,7 @@ export default function ServicesPage() {
                   Optional Add-On Services
                 </h3>
                 <ul className="space-y-3 text-center text-muted-foreground grid sm:grid-cols-2 gap-x-4 gap-y-2">
-                  {addOnServices.map((item) => (
+                  {addOnServices.map(item => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
@@ -239,7 +260,7 @@ export default function ServicesPage() {
           </p>
           <Button size="lg" asChild variant="accent">
             <Link href="/contact">
-              Book a Free Discovery Call{" "}
+              Book a Free Discovery Call{' '}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
