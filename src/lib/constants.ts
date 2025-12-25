@@ -1,4 +1,5 @@
 
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -386,7 +387,7 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   saas: [
     {
       title: 'Foundation',
-      price: '₹25k',
+      price: 'From ₹25k',
       description: 'For early-stage SaaS with up to ₹1 Cr annual turnover.',
       features: [
         'Monthly accounting & close',
@@ -398,8 +399,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
     {
       title: 'Growth',
-      price: '₹50k',
-      description: 'For scaling SaaS with ₹1 Cr - ₹10 Cr annual turnover.',
+      price: 'From ₹50k',
+      description: 'For scaling SaaS with ₹1 Cr - ₹5 Cr annual turnover.',
       popular: true,
       features: [
         'Everything in Foundation',
@@ -411,9 +412,9 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
       ],
     },
     {
-      title: 'Scale',
-      price: '₹1L',
-      description: 'For funded SaaS with over ₹10 Cr annual turnover.',
+      title: 'Custom',
+      price: 'Let\'s Talk',
+      description: 'For funded SaaS with over ₹5 Cr annual turnover.',
       features: [
         'Everything in Growth',
         'Virtual CFO advisory',
@@ -427,8 +428,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   d2c: [
      {
       title: 'Foundation',
-      price: '₹30k',
-      description: 'For new D2C brands with up to ₹2 Cr annual turnover.',
+      price: 'From ₹30k',
+      description: 'For new D2C brands with up to ₹1 Cr annual turnover.',
       features: [
         'Monthly accounting & close',
         'GST filings for 1 state',
@@ -439,8 +440,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
     {
       title: 'Growth',
-      price: '₹60k',
-      description: 'For growing brands with ₹2 Cr - ₹15 Cr annual turnover.',
+      price: 'From ₹60k',
+      description: 'For growing brands with ₹1 Cr - ₹5 Cr annual turnover.',
       popular: true,
       features: [
         'Everything in Foundation',
@@ -452,9 +453,9 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
       ],
     },
     {
-      title: 'Scale',
-      price: '₹1.2L',
-      description: 'For large operators with over ₹15 Cr annual turnover.',
+      title: 'Custom',
+      price: 'Let\'s Talk',
+      description: 'For large operators with over ₹5 Cr annual turnover.',
       features: [
         'Everything in Growth',
         'Virtual CFO advisory',
@@ -468,8 +469,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   fintech: [
      {
       title: 'Foundation',
-      price: '₹40k',
-      description: 'For early-stage FinTechs (pre-license) with up to ₹50L turnover.',
+      price: 'From ₹40k',
+      description: 'For early-stage FinTechs (pre-license) with up to ₹1 Cr turnover.',
       features: [
         'Monthly accounting with compliance focus',
         'Basic GST & TDS compliance',
@@ -480,8 +481,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
     {
       title: 'Growth',
-      price: '₹75k',
-      description: 'For licensed FinTechs with up to ₹5 Cr turnover.',
+      price: 'From ₹75k',
+      description: 'For licensed FinTechs with ₹1 Cr - ₹5 Cr turnover.',
       popular: true,
       features: [
         'Everything in Foundation',
@@ -493,8 +494,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
       ],
     },
     {
-      title: 'Scale',
-      price: '₹1.5L',
+      title: 'Custom',
+      price: 'Let\'s Talk',
       description: 'For funded FinTechs with over ₹5 Cr annual turnover.',
       features: [
         'Everything in Growth',
@@ -509,8 +510,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   healthtech: [
       {
       title: 'Foundation',
-      price: '₹35k',
-      description: 'For HealthTechs in R&D phase with up to ₹50L turnover.',
+      price: 'From ₹35k',
+      description: 'For HealthTechs in R&D phase with up to ₹1 Cr turnover.',
       features: [
         'Monthly accounting & compliance',
         'R&D expense & grant utilization tracking',
@@ -521,8 +522,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
     {
       title: 'Growth',
-      price: '₹70k',
-      description: 'For post-launch HealthTechs with up to ₹5 Cr turnover.',
+      price: 'From ₹70k',
+      description: 'For post-launch HealthTechs with ₹1 Cr - ₹5 Cr turnover.',
       popular: true,
       features: [
         'Everything in Foundation',
@@ -534,8 +535,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
       ],
     },
     {
-      title: 'Scale',
-      price: '₹1.4L',
+      title: 'Custom',
+      price: 'Let\'s Talk',
       description: 'For scaling HealthTechs with over ₹5 Cr annual turnover.',
       features: [
         'Everything in Growth',
@@ -550,8 +551,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   manufacturing: [
      {
       title: 'Foundation',
-      price: '₹35k',
-      description: 'For small units with up to ₹2 Cr annual turnover.',
+      price: 'From ₹35k',
+      description: 'For small units with up to ₹1 Cr annual turnover.',
       features: [
         'Monthly accounting & close',
         'GST & TDS compliance',
@@ -562,8 +563,8 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
     {
       title: 'Growth',
-      price: '₹70k',
-      description: 'For growing SMEs with ₹2 Cr - ₹15 Cr annual turnover.',
+      price: 'From ₹70k',
+      description: 'For growing SMEs with ₹1 Cr - ₹5 Cr annual turnover.',
       popular: true,
       features: [
         'Everything in Foundation',
@@ -575,9 +576,9 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
       ],
     },
     {
-      title: 'Scale',
-      price: '₹1.4L',
-      description: 'For complex units with over ₹15 Cr annual turnover.',
+      title: 'Custom',
+      price: 'Let\'s Talk',
+      description: 'For complex units with over ₹5 Cr annual turnover.',
       features: [
         'Everything in Growth',
         'Virtual CFO advisory',

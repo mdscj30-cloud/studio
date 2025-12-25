@@ -9,21 +9,53 @@ import { CheckCircle, Star, ArrowRight, Factory } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState, useMemo } from 'react';
+import { Slider } from '@/components/ui/slider';
+import { Badge } from '@/components/ui/badge';
 
 
 export function PricingClient() {
   const defaultSector = SECTORS_SERVED[0].id;
+  const [turnover, setTurnover] = useState([1]);
+
+  const recommendedPlan = useMemo(() => {
+    const value = turnover[0];
+    if (value <= 1) return 'Foundation';
+    if (value > 1 && value <= 5) return 'Growth';
+    return 'Custom';
+  }, [turnover]);
 
   return (
     <div>
-       <div className="max-w-3xl mx-auto text-center mb-16">
+       <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
             Find Your Fit
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We offer tiered monthly retainers designed to scale with you. Select your industry to see tailored plans.
+            We offer tiered monthly retainers designed to scale with you. Adjust the slider to find your recommended plan, then select your industry to see tailored features.
           </p>
         </div>
+
+        <Card className="max-w-2xl mx-auto mb-16 p-6 shadow-lg">
+          <CardContent className="pt-6">
+            <div className='text-center mb-4'>
+              <FormLabel className="text-lg font-semibold text-primary">What is your Annual Turnover?</FormLabel>
+              <p className="text-2xl font-bold text-accent mt-2">₹ {turnover[0]} Crore</p>
+            </div>
+            <Slider
+              defaultValue={turnover}
+              onValueChange={setTurnover}
+              max={10}
+              step={0.5}
+            />
+            <div className="flex justify-between text-xs text-muted-foreground mt-2">
+              <span>₹0 Cr</span>
+              <span>₹5 Cr</span>
+              <span>₹10 Cr+</span>
+            </div>
+          </CardContent>
+        </Card>
+
 
         <Tabs defaultValue={defaultSector} className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto mb-12">
@@ -44,26 +76,28 @@ export function PricingClient() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                   {PRICING_PLANS[sector.id]?.map((plan: PricingPlan) => (
                     <Card key={plan.title} className={cn(
-                      "flex flex-col transition-transform duration-300 hover:scale-105",
-                      plan.popular ? "border-accent border-2 shadow-lg" : "border"
+                      "flex flex-col transition-all duration-300 transform-gpu",
+                      recommendedPlan === plan.title ? "border-accent border-2 shadow-xl scale-105" : "border"
                     )}>
-                      {plan.popular && (
-                        <div className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider text-center py-1.5 rounded-t-lg flex items-center justify-center gap-2">
-                          <Star className="w-4 h-4" />
-                          Most Popular
-                        </div>
-                      )}
-                      <CardHeader className="pt-6">
+                      <div className="relative">
+                        {recommendedPlan === plan.title && (
+                          <Badge variant="accent" className="absolute -top-3 left-1/2 -translate-x-1/2">Recommended</Badge>
+                        )}
+                        {plan.popular && recommendedPlan !== plan.title && (
+                          <div className="bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider text-center py-1.5 rounded-t-lg flex items-center justify-center gap-2">
+                            <Star className="w-4 h-4" />
+                            Most Popular
+                          </div>
+                        )}
+                      </div>
+                      <CardHeader className="pt-8">
                         <CardTitle className="text-2xl text-primary">{plan.title}</CardTitle>
                         <CardDescription>{plan.description}</CardDescription>
                       </CardHeader>
                       <CardContent className="flex-grow">
                         <div className="mb-6">
-                          <span className="text-sm text-muted-foreground">Starts from</span>
-                          <div className="flex items-baseline">
-                              <span className="text-4xl font-bold">{plan.price}</span>
-                              <span className="text-muted-foreground">/month</span>
-                          </div>
+                           <span className="text-4xl font-bold">{plan.price}</span>
+                           {plan.title !== 'Custom' && <span className="text-muted-foreground">/month</span>}
                         </div>
                         <p className='text-sm font-semibold text-primary mb-3'>Key Features:</p>
                         <ul className="space-y-3 text-sm text-muted-foreground">
@@ -76,7 +110,7 @@ export function PricingClient() {
                         </ul>
                       </CardContent>
                       <CardFooter>
-                        <Button asChild className="w-full" variant={plan.popular ? 'accent' : 'default'} size="lg">
+                        <Button asChild className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg">
                           <Link href="/contact">Book a Discovery Call</Link>
                         </Button>
                       </CardFooter>
