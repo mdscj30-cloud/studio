@@ -11,24 +11,24 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A method of comparing two versions of a webpage or app against each other to determine which one performs better. It is a key practice in D2C and SaaS for optimizing conversion rates.'
     },
     {
+        term: 'Accelerated Depreciation',
+        definition: 'A method of depreciation that allows for larger deductions in the early years of an asset\'s life and smaller deductions in later years.'
+    },
+    {
+        term: 'Accountant',
+        definition: 'A professional who performs accounting functions such as analysis of financial records, audits, or financial statement analysis.'
+    },
+    {
         term: 'Accounting',
         definition: 'The systematic recording, reporting, and analysis of financial transactions of a business.'
     },
     {
+        term: 'Accounting Period',
+        definition: 'The time period over which financial statements are prepared, such as a month, quarter, or year.'
+    },
+    {
         term: 'Accounting Standard (AS)',
         definition: 'A set of principles and guidelines for financial accounting and reporting, issued by the Institute of Chartered Accountants of India (ICAI). Applicable to certain classes of companies.'
-    },
-    {
-        term: 'Accrual Basis Accounting',
-        definition: 'An accounting method where revenue or expenses are recorded when a transaction occurs rather than when payment is received or made. This is the standard for most businesses.'
-    },
-    {
-        term: 'Accrued Expense',
-        definition: 'An expense that has been incurred but not yet paid. It is recorded as a liability on the balance sheet.'
-    },
-    {
-        term: 'Accumulated Depreciation',
-        definition: 'The cumulative depreciation of an asset up to a single point in its life. It is a contra-asset account, meaning its natural balance is a credit.'
     },
     {
         term: 'Accounts Payable (AP)',
@@ -39,8 +39,32 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The amount of money owed to a company by its customers for goods and services sold on credit.'
     },
     {
+        term: 'Accrual Basis Accounting',
+        definition: 'An accounting method where revenue or expenses are recorded when a transaction occurs rather than when payment is received or made. This is the standard for most businesses.'
+    },
+    {
+        term: 'Accrued Expense',
+        definition: 'An expense that has been incurred but not yet paid. It is recorded as a liability on the balance sheet.'
+    },
+    {
+        term: 'Accrued Revenue',
+        definition: 'Revenue that has been earned by providing a good or service, but for which no cash has been received.'
+    },
+    {
+        term: 'Accumulated Depreciation',
+        definition: 'The cumulative depreciation of an asset up to a single point in its life. It is a contra-asset account, meaning its natural balance is a credit.'
+    },
+    {
+        term: 'Acquisition',
+        definition: 'A corporate action in which one company purchases most or all of another company\'s shares to gain control of that company.'
+    },
+    {
         term: 'Advance Tax',
         definition: 'Income tax paid in installments throughout the year instead of a lump-sum payment at year-end. It is mandatory for individuals and businesses with a tax liability exceeding a certain threshold.'
+    },
+    {
+        term: 'Advisor Shares',
+        definition: 'Equity granted to advisors in exchange for their guidance and expertise. Typically vests over a one or two-year period.'
     },
     {
         term: 'Amortization',
@@ -63,8 +87,20 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A key metric for SaaS and subscription businesses, representing the value of the recurring revenue of a business\'s term subscriptions normalized for a single calendar year. Calculated as MRR * 12.'
     },
     {
+        term: 'Annuity',
+        definition: 'A series of equal payments made at regular intervals over a specified period of time.'
+    },
+    {
+        term: 'Anti-Dilution Provision',
+        definition: 'A clause in an option or a convertible security that protects an investor from their ownership stake being diluted in future financing rounds at a lower valuation.'
+    },
+    {
         term: 'API (Application Programming Interface)',
         definition: 'A set of rules and protocols that allows different software applications to communicate with each other. Crucial for FinTech and SaaS integrations.'
+    },
+    {
+        term: 'Articles of Association (AoA)',
+        definition: 'A document that specifies the regulations for a company\'s operations and defines the company\'s purpose. It is a mandatory document for incorporation.'
     },
     {
         term: 'Assets',
@@ -93,6 +129,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     
     // B
     {
+        term: 'B2B (Business-to-Business)',
+        definition: 'A business model where companies sell products or services to other businesses.'
+    },
+    {
+        term: 'B2C (Business-to-Consumer)',
+        definition: 'A business model where companies sell products or services directly to individual consumers.'
+    },
+    {
         term: 'Balance Sheet',
         definition: 'A financial statement that reports a company\'s assets, liabilities, and shareholder equity at a specific point in time. It follows the formula: Assets = Liabilities + Equity.'
     },
@@ -105,8 +149,16 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A unit of measure used in finance to describe the percentage change in the value or rate of a financial instrument. One basis point is equivalent to 0.01%.'
     },
     {
+        term: 'Bill of Lading',
+        definition: 'A legal document issued by a carrier to a shipper that details the type, quantity, and destination of the goods being carried.'
+    },
+    {
         term: 'Bill of Materials (BOM)',
         definition: 'A comprehensive list of raw materials, components, and assemblies required to construct, manufacture, or repair a product. Essential for manufacturing businesses.'
+    },
+    {
+        term: 'Book Value',
+        definition: 'The value of an asset according to its balance sheet account balance. For assets, the value is based on the original cost of the asset less any depreciation, amortization, or impairment costs made against the asset.'
     },
     {
         term: 'Bookkeeping',
@@ -139,6 +191,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'Financial assets or the financial value of assets, such as cash and machinery. It is the money or wealth needed to produce goods and services.'
     },
     {
+        term: 'Capital Asset',
+        definition: 'Property of any kind held by an assessee, whether or not connected with their business or profession. It can be short-term or long-term.'
+    },
+    {
+        term: 'Capital Budgeting',
+        definition: 'The process a business undertakes to evaluate potential major projects or investments, such as building a new plant or investing in a long-term venture.'
+    },
+    {
         term: 'Capital Expenditure (CapEx)',
         definition: 'Funds used by a company to acquire, upgrade, and maintain physical assets such as property, buildings, an industrial plant, technology, or equipment.'
     },
@@ -167,6 +227,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A financial statement that provides aggregate data regarding all cash inflows a company receives from its ongoing operations and external investment sources, as well as all cash outflows.'
     },
     {
+        term: 'Challan',
+        definition: 'A form used for payment of taxes or fees to the government in India. For example, TDS challan or GST challan.'
+    },
+    {
         term: 'Chart of Accounts (COA)',
         definition: 'A financial organizational tool that provides a complete listing of every account in an accounting system.'
     },
@@ -179,6 +243,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A period at the beginning of a vesting schedule during which an employee or founder does not earn any equity. A common structure is a 1-year cliff, after which 25% of the total equity vests.'
     },
     {
+        term: 'Common Stock',
+        definition: 'A security that represents ownership in a corporation. Holders of common stock elect the board of directors and vote on corporate policies.'
+    },
+    {
         term: 'Compliance',
         definition: 'Adhering to a rule, such as a specification, policy, standard, or law. In business, this refers to following all applicable tax, labor, and corporate laws.'
     },
@@ -187,16 +255,52 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A simplified GST scheme for small taxpayers. Businesses with a turnover below a certain threshold can opt-in to pay GST at a fixed rate, with fewer compliance requirements.'
     },
     {
+        term: 'Compound Annual Growth Rate (CAGR)',
+        definition: 'The mean annual growth rate of an investment over a specified period of time longer than one year.'
+    },
+    {
+        term: 'Contra Account',
+        definition: 'An account in the general ledger that is used to reduce the value of a related account. An example is the accumulated depreciation account.'
+    },
+    {
+        term: 'Contribution Margin',
+        definition: 'The revenue left over to cover fixed costs after considering variable costs. Calculated as (Sales Revenue - Variable Costs) / Sales Revenue.'
+    },
+    {
         term: 'Convertible Note',
         definition: 'A form of short-term debt issued by a startup that converts into equity at a later date, typically during a future funding round.'
+    },
+    {
+        term: 'Cost Accounting',
+        definition: 'An accounting method that aims to capture a company\'s costs of production by assessing the input costs of each step of production as well as fixed costs.'
     },
     {
         term: 'Cost of Goods Sold (COGS)',
         definition: 'The direct costs of producing the goods sold by a company. This includes the cost of materials and labor directly used to create the good.'
     },
     {
+        term: 'Credit Note',
+        definition: 'A document issued by a seller to a buyer, reducing the amount that the buyer owes. Often issued for returns or goods damaged on arrival.'
+    },
+    {
+        term: 'Crowdfunding',
+        definition: 'The practice of funding a project or venture by raising small amounts of money from a large number of people, typically via the Internet.'
+    },
+    {
+        term: 'Current Assets',
+        definition: 'All the assets of a company that are expected to be sold or used as a result of standard business operations over the next year.'
+    },
+    {
+        term: 'Current Liabilities',
+        definition: 'A company\'s short-term financial obligations that are due within one year or within a normal operating cycle.'
+    },
+    {
         term: 'Customer Acquisition Cost (CAC)',
         definition: 'The total cost of sales and marketing efforts needed to acquire a single new customer. Calculated as (Total Sales & Marketing Spend) / (Number of New Customers).'
+    },
+    {
+        term: 'Customer Lifetime Value (LTV or CLV)',
+        definition: 'A prediction of the net profit attributed to the entire future relationship with a customer. A critical metric for subscription and e-commerce businesses.'
     },
     
     // D
@@ -207,6 +311,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Data Room',
         definition: 'A secure online repository for storing and sharing sensitive company documents during fundraising, M&A, or audits. Key for due diligence.'
+    },
+    {
+        term: 'Debenture',
+        definition: 'A type of debt instrument that is not secured by physical assets or collateral. Debentures are backed only by the general creditworthiness and reputation of the issuer.'
+    },
+    {
+        term: 'Debit Note',
+        definition: 'A document issued by a buyer to a seller to request a credit note, typically for returned goods.'
     },
     {
         term: 'Debt Financing',
@@ -241,8 +353,20 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A tax, such as income tax, which is levied on the income or profits of the person who pays it, rather than on goods or services.'
     },
     {
+        term: 'Dividend',
+        definition: 'A distribution of a portion of a company\'s earnings, decided by the board of directors, to a class of its shareholders.'
+    },
+    {
         term: 'Double-Entry Bookkeeping',
         definition: 'A fundamental accounting principle stating that every financial transaction has equal and opposite effects in at least two different accounts. It is used to satisfy the equation Assets = Liabilities + Equity.'
+    },
+    {
+        term: 'Down Round',
+        definition: 'A round of financing where a company sells shares at a lower valuation than in the previous round. It is often a negative signal to the market.'
+    },
+    {
+        term: 'Drag-Along Rights',
+        definition: 'A right that enables a majority shareholder to force a minority shareholder to join in the sale of a company.'
     },
     {
         term: 'Due Diligence',
@@ -250,6 +374,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     },
     
     // E
+    {
+        term: 'EBIT (Earnings Before Interest and Taxes)',
+        definition: 'A measure of a firm\'s profit that includes all expenses except interest and income tax expenses.'
+    },
     {
         term: 'EBITDA',
         definition: 'Earnings Before Interest, Taxes, Depreciation, and Amortization. A metric used to evaluate a company\'s operating performance without factoring in financing decisions, accounting decisions, or tax rates.'
@@ -261,6 +389,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'E-invoicing',
         definition: 'The electronic generation and reporting of B2B invoices to the GST portal. Mandatory for businesses in India with turnover exceeding a specified threshold.'
+    },
+    {
+        term: 'Employee Provident Fund (EPF)',
+        definition: 'A retirement benefit scheme available to all salaried employees in India, managed by the Employees\' Provident Fund Organisation of India (EPFO).'
+    },
+    {
+        term: 'Employees\' State Insurance (ESI)',
+        definition: 'A self-financing social security and health insurance scheme for Indian workers.'
     },
     {
         term: 'Equalisation Levy',
@@ -282,6 +418,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         term: 'E-way Bill',
         definition: 'An electronic document required under the GST regime for the movement of goods of a certain value from one place to another, either inter-state or intra-state.'
     },
+    {
+        term: 'Exit Strategy',
+        definition: 'A founder\'s and investor\'s plan for liquidating their stake in a company. Common exits include an IPO or an acquisition.'
+    },
+    {
+        term: 'Expansion Revenue',
+        definition: 'The additional monthly recurring revenue generated from existing customers through upgrades, cross-sells, or add-ons. A key driver of negative churn.'
+    },
     
     // F
     {
@@ -295,6 +439,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'FEMA (Foreign Exchange Management Act)',
         definition: 'An act that governs cross-border transactions, foreign investments, and management of foreign exchange in India.'
+    },
+    {
+        term: 'FIFO (First-In, First-Out)',
+        definition: 'An inventory valuation method in which the first goods purchased are assumed to be the first ones sold.'
     },
     {
         term: 'Financial Model',
@@ -317,6 +465,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A long-term tangible piece of property or equipment that a firm owns and uses in its operations to generate income. Not expected to be consumed or converted into cash within a year.'
     },
     {
+        term: 'Fixed Cost',
+        definition: 'A cost that does not change with an increase or decrease in the amount of goods or services produced or sold.'
+    },
+    {
         term: 'Form 16',
         definition: 'A certificate issued by an employer in India that provides details of the salary paid to an employee and the Tax Deducted at Source (TDS) from that salary.'
     },
@@ -327,6 +479,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Founder Vesting',
         definition: 'A mechanism where founders earn their equity over a period of time, typically 4 years with a 1-year cliff. It protects the company if a founder leaves early.'
+    },
+    {
+        term: 'Franchise',
+        definition: 'A business model where an individual (franchisee) is granted the right to market a company\'s goods or services under the company\'s name (franchisor).'
     },
     {
         term: 'Fundraising',
@@ -351,8 +507,20 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'An indirect tax used in India on the supply of goods and services. It is a comprehensive, multistage, destination-based tax that has replaced many indirect taxes.'
     },
     {
+        term: 'Goodwill',
+        definition: 'An intangible asset that arises when a buyer acquires an existing business. It represents assets that are not separately identifiable, such as brand reputation.'
+    },
+    {
         term: 'Gross Margin',
         definition: 'The difference between revenue and Cost of Goods Sold (COGS), divided by revenue. A key indicator of a company\'s profitability at the product level.'
+    },
+    {
+        term: 'Gross Profit',
+        definition: 'The profit a company makes after deducting the costs associated with making and selling its products, or the costs associated with providing its services.'
+    },
+    {
+        term: 'Gross Revenue',
+        definition: 'The total amount of sales recognized for a reporting period, prior to any deductions such as sales returns and allowances.'
     },
     {
         term: 'GSTR-1',
@@ -381,11 +549,23 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The use of technology (databases, applications, mobiles, wearables) to improve the delivery, payment, and/or consumption of care and increase the development and commercialization of medicinal products.'
     },
     {
+        term: 'Hedge Fund',
+        definition: 'A limited partnership of private investors whose money is managed by professional fund managers who use a wide range of strategies to earn active returns.'
+    },
+    {
+        term: 'Holding Company',
+        definition: 'A company that owns a controlling interest in another company, called the subsidiary.'
+    },
+    {
         term: 'HSN Code (Harmonized System of Nomenclature)',
         definition: 'A standardized international system of names and numbers to classify traded products. Used in GST to classify goods for taxation purposes.'
     },
     
     // I
+    {
+        term: 'Impairment',
+        definition: 'A permanent reduction in the value of a company\'s asset, typically a fixed asset or an intangible asset.'
+    },
     {
         term: 'Income Statement',
         definition: 'Also known as the Profit and Loss (P&L) statement, it reports a company\'s financial performance over a specific period, showing revenues, expenses, and resulting profit or loss.'
@@ -403,6 +583,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The legal process used to form a corporate entity or company. A corporation is a separate legal entity from its owners.'
     },
     {
+        term: 'Incubator',
+        definition: 'An organization that helps startup companies develop by providing services such as management training, office space, and venture capital financing.'
+    },
+    {
         term: 'Ind AS (Indian Accounting Standards)',
         definition: 'The accounting standards adopted by companies in India and issued under the supervision of the Accounting Standards Board (ASB). Converged with IFRS.'
     },
@@ -411,8 +595,16 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A tax collected by an intermediary (e.g., a retailer) from the person who bears the ultimate economic burden of the tax (e.g., the consumer). GST is the primary indirect tax in India.'
     },
     {
+        term: 'Initial Public Offering (IPO)',
+        definition: 'The process of offering shares of a private corporation to the public in a new stock issuance. It is a common exit strategy for startups.'
+    },
+    {
         term: 'Input Tax Credit (ITC)',
         definition: 'Under GST, it is the tax that a business pays on a purchase and that it can use to reduce its tax liability when it makes a sale.'
+    },
+    {
+        term: 'InsurTech',
+        definition: 'The use of technology innovations designed to wring savings and efficiency from the current insurance industry model.'
     },
     {
         term: 'Intangible Asset',
@@ -423,18 +615,38 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'Creations of the mind, such as inventions, literary and artistic works, designs, symbols, names, and images used in commerce. Protecting IP is crucial for startups.'
     },
     {
+        term: 'Internal Controls',
+        definition: 'The mechanisms, rules, and procedures implemented by a company to ensure the integrity of financial and accounting information, promote accountability, and prevent fraud.'
+    },
+    {
         term: 'Inventory',
         definition: 'The raw materials, work-in-process goods, and completely finished goods that are considered to be the portion of a business\'s assets that are ready or will be ready for sale.'
+    },
+    {
+        term: 'Inventory Turnover',
+        definition: 'A ratio showing how many times a company has sold and replaced inventory during a given period.'
     },
     {
         term: 'Inverted Duty Structure',
         definition: 'A situation in GST where the tax rate on inputs is higher than the tax rate on output supplies, leading to an accumulation of input tax credit.'
     },
+    {
+        term: 'Invoice Discounting',
+        definition: 'A form of short-term borrowing often used by businesses to improve their working capital and cash flow. The business sells its unpaid invoices to a third party at a discount.'
+    },
     
     // J
     {
+        term: 'Job Costing',
+        definition: 'A cost accounting method that involves tracking the costs of a specific job or project.'
+    },
+    {
         term: 'Job Work',
         definition: 'Under GST, job work means processing or working on goods supplied by another registered person (the principal). Specific compliance rules apply.'
+    },
+    {
+        term: 'Joint Venture',
+        definition: 'A business arrangement in which two or more parties agree to pool their resources for the purpose of accomplishing a specific task.'
     },
     {
         term: 'Journal Entry',
@@ -461,16 +673,48 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The total cost of a product once it has arrived at the buyer\'s door. Includes the original cost of the item, all brokerage and logistics fees, shipping costs, customs duties, taxes, insurance, and any other costs.'
     },
     {
+        term: 'Lead Investor',
+        definition: 'The venture capital firm or investor that leads a funding round. They typically invest the largest amount and are responsible for negotiating the terms.'
+    },
+    {
+        term: 'Lean Startup',
+        definition: 'A methodology for developing businesses and products that aims to shorten product development cycles by adopting a combination of business-hypothesis-driven experimentation and iterative product releases.'
+    },
+    {
+        term: 'Letter of Intent (LOI)',
+        definition: 'A document outlining the preliminary understanding between two or more parties before a definitive agreement is finalized. Similar to a term sheet.'
+    },
+    {
+        term: 'Leverage',
+        definition: 'The use of borrowed capital to finance assets. Companies use leverage to increase their return on equity.'
+    },
+    {
         term: 'Liabilities',
         definition: 'A company\'s legal financial debts or obligations that arise during the course of business operations. Can be current (due within a year) or long-term.'
     },
     {
-        term: 'Lifetime Value (LTV or CLV)',
-        definition: 'A prediction of the net profit attributed to the entire future relationship with a customer. A critical metric for subscription and e-commerce businesses.'
+        term: 'LIFO (Last-In, First-Out)',
+        definition: 'An inventory valuation method where the most recently produced items are recorded as sold first. Not permitted under Ind AS.'
+    },
+    {
+        term: 'Limited Liability Partnership (LLP)',
+        definition: 'A partnership in which some or all partners have limited liabilities. It is a corporate structure that provides the benefits of limited liability but allows its members the flexibility of organizing their internal structure as a partnership.'
+    },
+    {
+        term: 'Liquidation',
+        definition: 'The process of winding up a company by selling its assets to pay off its debts.'
     },
     {
         term: 'Liquidation Preference',
         definition: 'A clause in a contract that dictates the payout order in case of a corporate liquidation or sale. It gives preferred stockholders the right to be paid before common stockholders.'
+    },
+    {
+        term: 'Liquidity',
+        definition: 'The ease with which an asset, or security, can be converted into ready cash without affecting its market price.'
+    },
+    {
+        term: 'Listing',
+        definition: 'The process of having a company\'s shares available for trading on a stock exchange.'
     },
     
     // M
@@ -481,6 +725,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Manufacturing',
         definition: 'The process of converting raw materials, components, or parts into finished goods that meet a customer\'s expectations or specifications.'
+    },
+    {
+        term: 'Market Capitalization (Market Cap)',
+        definition: 'The total market value of a company\'s outstanding shares of stock. Calculated as (Share Price) x (Total Number of Shares).'
     },
     {
         term: 'Marketplace Reconciliation',
@@ -495,6 +743,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The consolidation of companies or assets through various types of financial transactions, including mergers, acquisitions, consolidations, and tender offers.'
     },
     {
+        term: 'Minimum Viable Product (MVP)',
+        definition: 'A version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.'
+    },
+    {
+        term: 'MIS Report',
+        definition: 'Management Information System report. A report used by management for decision-making, covering various financial and operational KPIs.'
+    },
+    {
         term: 'Monthly Recurring Revenue (MRR)',
         definition: 'The predictable revenue that a business can expect to receive on a monthly basis. It is the single most important metric for SaaS and subscription companies.'
     },
@@ -503,6 +759,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Negative Churn',
         definition: 'Occurs when the expansion revenue from existing customers (upgrades, cross-sells) is greater than the revenue lost from cancellations and downgrades. The holy grail for SaaS businesses.'
+    },
+    {
+        term: 'Net Asset Value (NAV)',
+        definition: 'The value per share of a mutual fund or an exchange-traded fund (ETF).'
     },
     {
         term: 'Net Profit',
@@ -519,6 +779,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     
     // O
     {
+        term: 'One Person Company (OPC)',
+        definition: 'A type of company in India that can be formed by a single person. It has the benefits of a sole proprietorship and a company.'
+    },
+    {
         term: 'Operating Expense (OpEx)',
         definition: 'The expenses a business incurs through its normal business operations. Often abbreviated as OpEx, these expenses include rent, equipment, inventory costs, marketing, payroll, etc.'
     },
@@ -527,14 +791,26 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A block of common stock reserved for issuance to employees and advisors of a company. It is a key tool for attracting and retaining talent.'
     },
     {
+        term: 'Outward Supply',
+        definition: 'Under GST, this refers to the sale, transfer, barter, exchange, license, rental, lease, or disposal of goods or services.'
+    },
+    {
         term: 'Overhead',
         definition: 'The ongoing business expenses not directly attributed to creating a product or service. Examples include rent, utilities, and administrative staff salaries.'
     },
 
     // P
     {
+        term: 'Paid-up Capital',
+        definition: 'The amount of money a company has received from shareholders in exchange for shares of stock.'
+    },
+    {
         term: 'Payment Aggregator (PA)',
         definition: 'Entities that facilitate e-commerce sites and merchants to accept various payment instruments from customers for completion of their payment obligations without the need for merchants to create a separate payment integration system of their own. Regulated by RBI.'
+    },
+    {
+        term: 'Payment Gateway (PG)',
+        definition: 'A merchant service provided by an e-commerce application service provider that authorizes credit card or direct payments processing for e-businesses, online retailers, etc.'
     },
     {
         term: 'PAN (Permanent Account Number)',
@@ -545,8 +821,17 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The total amount of wages and salaries paid by a company to its employees. Also refers to the process of calculating and distributing these wages.'
     },
     {
+        term: 'PE Ratio (Price-to-Earnings Ratio)',
+        definition: 'A ratio for valuing a company that measures its current share price relative to its per-share earnings.'
+    },
+
+    {
         term: 'Pitch Deck',
         definition: 'A brief presentation, often created using presentation software, used to provide an audience with a quick overview of a business plan. Essential for fundraising.'
+    },
+    {
+        term: 'Pivot',
+        definition: 'A significant change in a startup\'s strategy to test a new business model or product hypothesis, usually after receiving feedback from the market.'
     },
     {
         term: 'Place of Supply',
@@ -569,8 +854,20 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'Instruments that facilitate purchase of goods and services against the value stored on them. Includes digital wallets. Regulated by RBI.'
     },
     {
+        term: 'Private Equity (PE)',
+        definition: 'Investment funds, generally organized as limited partnerships, that buy and restructure companies that are not publicly traded.'
+    },
+    {
+        term: 'Private Limited Company',
+        definition: 'A type of privately held small business entity, in which owner liability is limited to their shares, the number of shareholders is limited, and shares are prohibited from being publicly traded.'
+    },
+    {
         term: 'Profit and Loss (P&L) Statement',
         definition: 'A financial statement that summarizes the revenues, costs, and expenses incurred during a specified period. Also known as the Income Statement.'
+    },
+    {
+        term: 'Pro-forma',
+        definition: 'A method of calculating financial results using certain projections or presumptions. A pro-forma financial statement is a forecast.'
     },
     {
         term: 'Pro-rata Rights',
@@ -589,12 +886,32 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     
     // R
     {
+        term: 'R&D (Research and Development)',
+        definition: 'Activities companies undertake to innovate and introduce new products and services.'
+    },
+    {
+        term: 'Recapitalization',
+        definition: 'Restructuring a company\'s debt and equity mixture, often to make its capital structure more stable or optimal.'
+    },
+    {
         term: 'Registrar of Companies (ROC)',
         definition: 'An office under the Indian Ministry of Corporate Affairs responsible for the administration of the Companies Act and regulating companies.'
     },
     {
+        term: 'Return on Ad Spend (ROAS)',
+        definition: 'A marketing metric that measures the amount of revenue your business earns for each dollar it spends on advertising.'
+    },
+    {
+        term: 'Return on Equity (ROE)',
+        definition: 'A measure of financial performance calculated by dividing net income by shareholders\' equity.'
+    },
+    {
         term: 'Return on Investment (ROI)',
         definition: 'A performance measure used to evaluate the efficiency or profitability of an investment. Calculated as (Net Profit / Cost of Investment) * 100.'
+    },
+    {
+        term: 'Revenue',
+        definition: 'The total amount of income generated by the sale of goods or services related to the company\'s primary operations.'
     },
     {
         term: 'Revenue Recognition',
@@ -603,6 +920,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Reverse Charge Mechanism (RCM)',
         definition: 'A mechanism under GST where the liability to pay tax is on the recipient of the supply of goods or services instead of the supplier.'
+    },
+    {
+        term: 'Right of First Refusal (ROFR)',
+        definition: 'A contractual right that gives its holder the option to enter into a business transaction with the owner of something, according to specified terms, before the owner is entitled to enter into that transaction with a third party.'
     },
     {
         term: 'Runway',
@@ -621,6 +942,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'SAFE (Simple Agreement for Future Equity)',
         definition: 'An agreement between an investor and a company that provides rights to the investor for future equity in the company, similar to a convertible note but without a maturity date or interest.'
+    },
+    {
+        term: 'Sales Funnel',
+        definition: 'A marketing concept that maps the journey a customer goes through when making any kind of purchase.'
     },
     {
         term: 'Seed Round',
@@ -643,18 +968,38 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'Businesses whose revenue, assets, or number of employees fall below certain limits. A key segment for many SaaS and service companies.'
     },
     {
+        term: 'Sole Proprietorship',
+        definition: 'An unincorporated business with a single owner who pays personal income tax on profits earned from the business.'
+    },
+    {
         term: 'Startup',
         definition: 'A young company founded by entrepreneurs to develop a unique product or service and bring it to market, with a business model that is typically not fully proven.'
+    },
+    {
+        term: 'Stock Option',
+        definition: 'A benefit in the form of an option given by a company to an employee to buy stock in the company at a discounted price.'
     },
     {
         term: 'Subscription Agreement',
         definition: 'A legal agreement between an investor and a company, where the investor agrees to purchase a certain number of shares at a specific price.'
     },
+    {
+        term: 'Subsidiary',
+        definition: 'A company that is owned or controlled by another company, which is called the parent company or holding company.'
+    },
     
     // T
     {
+        term: 'Tag-Along Rights',
+        definition: 'A contractual obligation used to protect a minority shareholder. If a majority shareholder sells his or her stake, then the minority shareholder has the right to join the transaction and sell their minority stake in the company.'
+    },
+    {
         term: 'TAN (Tax Deduction and Collection Account Number)',
         definition: 'A 10-digit alphanumeric number required for all persons who are responsible for deducting or collecting tax at source in India.'
+    },
+    {
+        term: 'Tangible Asset',
+        definition: 'An asset that has a physical form. Tangible assets include things like machinery, buildings, and land.'
     },
     {
         term: 'Tax Audit',
@@ -673,6 +1018,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The total revenue opportunity that is available to a product or service if 100% market share was achieved. Investors use it to gauge the potential scale of a startup.'
     },
     {
+        term: 'Trademark',
+        definition: 'A symbol, word, or words legally registered or established by use as representing a company or product.'
+    },
+    {
         term: 'Trial Balance',
         definition: 'A bookkeeping worksheet in which the balance of all ledgers is compiled into debit and credit account column totals that are equal. It is used to check for arithmetic errors.'
     },
@@ -681,6 +1030,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Unit Economics',
         definition: 'A business\'s revenues and costs on a per-unit basis. For example, in SaaS, the unit is a customer, and the unit economics are LTV and CAC.'
+    },
+    {
+        term: 'Unsecured Loan',
+        definition: 'A loan that is not protected by any collateral. If the borrower defaults, the lender must initiate a lawsuit to collect the debt.'
     },
     
     // V
@@ -691,6 +1044,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Valuation Cap',
         definition: 'A term used in convertible notes or SAFEs that sets the maximum valuation at which the investment can convert into equity.'
+    },
+    {
+        term: 'Variable Cost',
+        definition: 'A corporate expense that changes in proportion to production output. Variable costs increase or decrease depending on a company\'s production volume.'
     },
     {
         term: 'Venture Capital (VC)',
@@ -705,14 +1062,41 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The process by which an employee or founder earns their equity over time. A standard vesting schedule is 4 years with a 1-year cliff.'
     },
     {
+        term: 'Vesting Schedule',
+        definition: 'A timeline over which an employee or founder earns the right to their granted equity.'
+    },
+    {
         term: 'Virtual CFO (vCFO)',
         definition: 'An outsourced service provider offering high-level financial expertise and strategic guidance to a company on a part-time or project basis.'
     },
     
     // W
     {
+        term: 'Warrants',
+        definition: 'A security that entitles the holder to buy the underlying stock of the issuing company at a fixed price called exercise price until the expiry date.'
+    },
+    {
         term: 'Working Capital',
         definition: 'The difference between a company\'s current assets (like cash, AR, inventory) and its current liabilities (like AP). It is a measure of a company\'s short-term liquidity. Formula: Current Assets - Current Liabilities.'
+    },
+    {
+        term: 'Write-down',
+        definition: 'Reducing the book value of an asset because it is overvalued compared to the market value.'
+    },
+    {
+        term: 'Write-off',
+        definition: 'Reducing the value of an asset to zero and removing it from the balance sheet entirely.'
+    },
+
+    // Y
+    {
+        term: 'Yield',
+        definition: 'The income return on an investment, such as the interest or dividends received from holding a particular security.'
+    },
+    // Z
+    {
+        term: 'Zero-Based Budgeting',
+        definition: 'A method of budgeting in which all expenses must be justified for each new period. Every function within an organization is analyzed for its needs and costs.'
     }
 ];
 
