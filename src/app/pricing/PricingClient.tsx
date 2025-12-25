@@ -92,7 +92,7 @@ export function PricingClient() {
             <div className="grid md:grid-cols-2 gap-12 items-start">
                 <div className="bg-card p-8 rounded-lg border">
                     <h2 className="text-2xl font-bold text-primary mb-4">Our Pricing Philosophy</h2>
-                    <p className="text-muted-foreground mb-6">We price on complexity, not just revenue. Two companies with the same turnover can have vastly different financial needs. Our pricing is designed to be fair, transparent, and aligned with the value we provide.</p>
+                    <p className="text-muted-foreground mb-6">While turnover provides a starting point, our final pricing is based on complexity. Two companies with the same revenue can have vastly different financial needs. Our goal is to align our fee with the value and effort required.</p>
                     <h3 className="font-semibold text-foreground mb-4">Key Pricing Drivers:</h3>
                      <ul className="space-y-3 text-sm text-muted-foreground">
                         {PRICING_DRIVERS.map((driver) => (
