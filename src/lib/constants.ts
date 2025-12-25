@@ -34,7 +34,11 @@ import {
   Zap,
   Check,
   Eye,
-  Rocket
+  Rocket,
+  Factory,
+  ShoppingBag,
+  HeartPulse,
+  Banknote
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
@@ -389,6 +393,34 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
     },
   ]
 };
+
+export const SECTORS_SERVED = [
+  {
+    icon: Rocket,
+    title: 'SaaS',
+    description: 'Navigating the complexities of recurring revenue, churn, and SaaS metrics.'
+  },
+  {
+    icon: ShoppingBag,
+    title: 'D2C & E-commerce',
+    description: 'Mastering inventory management, channel profitability, and cash flow in retail.'
+  },
+  {
+    icon: Banknote,
+    title: 'FinTech',
+    description: 'Ensuring rigorous compliance with RBI, SEBI, and data privacy regulations.'
+  },
+  {
+    icon: HeartPulse,
+    title: 'HealthTech',
+    description: 'Managing long R&D cycles and navigating complex medical compliance.'
+  },
+  {
+    icon: Factory,
+    title: 'Manufacturing',
+    description: 'Handling inventory costing, BOM tracking, and job work accounting intricacies.'
+  }
+];
 
 
 const blog1Img = PlaceHolderImages.find(img => img.id === 'blog-1');

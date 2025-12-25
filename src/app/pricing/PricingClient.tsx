@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { PRICING_PLANS, PricingPlan, PRICING_ADDONS, PRICING_DRIVERS } from '@/lib/constants';
+import { PRICING_PLANS, PricingPlan, PRICING_ADDONS, PRICING_DRIVERS, SECTORS_SERVED } from '@/lib/constants';
 import { CheckCircle, Star, PlusCircle, Factory, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -65,10 +65,32 @@ export function PricingClient() {
           </Card>
         ))}
       </div>
+      
+      <section className="py-16 md:py-24">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Sectors We Serve</h2>
+            <p className="mt-4 text-lg text-muted-foreground">We have deep expertise in the unique financial landscapes of these industries.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+            {SECTORS_SERVED.map(sector => {
+                const Icon = sector.icon;
+                return (
+                    <div key={sector.title} className="text-center p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div className="inline-block bg-accent/10 p-3 rounded-full mb-4">
+                            <Icon className="w-8 h-8 text-accent" />
+                        </div>
+                        <h3 className="text-lg font-semibold text-primary mb-2">{sector.title}</h3>
+                        <p className="text-sm text-muted-foreground">{sector.description}</p>
+                    </div>
+                );
+            })}
+        </div>
+      </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-muted/30 -mx-4 px-4">
+          <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-start">
-                <div className="bg-muted/50 p-8 rounded-lg">
+                <div className="bg-card p-8 rounded-lg border">
                     <h2 className="text-2xl font-bold text-primary mb-4">Our Pricing Philosophy</h2>
                     <p className="text-muted-foreground mb-6">We price on complexity, not just revenue. Two companies with the same turnover can have vastly different financial needs. Our pricing is designed to be fair, transparent, and aligned with the value we provide.</p>
                     <h3 className="font-semibold text-foreground mb-4">Key Pricing Drivers:</h3>
@@ -105,9 +127,10 @@ export function PricingClient() {
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
-       <div className="text-center mt-8">
+       <div className="text-center mt-16 md:mt-24">
           <h3 className="text-2xl font-bold text-primary mb-4">Let's Build Your Custom Plan</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Every business is unique. Contact us for a free discovery call to get a personalized quote based on your specific needs.</p>
           <Button asChild size="lg" variant="accent">
