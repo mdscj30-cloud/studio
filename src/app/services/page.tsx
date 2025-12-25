@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -12,8 +13,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS } from '@/lib/constants';
-import { useState } from 'react';
-import { useCalendlyEventListener, PopupModal } from 'react-calendly';
 
 const serviceSections = [
   {
@@ -86,14 +85,7 @@ const howItWorks = [
 ];
 
 export default function ServicesPage() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useCalendlyEventListener({
-    onEventScheduled: (e) => {
-        console.log(e.data.payload);
-        setIsOpen(false);
-    },
-  });
+    const googleCalendarLink = "https://calendar.google.com/calendar/u/0/selfsched?sstoken=YOUR_APPOINTMENT_SCHEDULE_LINK";
 
   return (
     <>
@@ -246,19 +238,14 @@ export default function ServicesPage() {
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             You focus on growth. We’ll handle the rest.
           </p>
-          <Button size="lg" variant="accent" onClick={() => setIsOpen(true)}>
-              Book a Free Discovery Call{' '}
-              <ArrowRight className="ml-2 h-4 w-4" />
+          <Button asChild size="lg" variant="accent">
+              <Link href={googleCalendarLink} target="_blank">
+                Book a Free Discovery Call{' '}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
           </Button>
         </div>
       </section>
-
-       <PopupModal
-            url="https://calendly.com/nconsulting/30min"
-            onModalClose={() => setIsOpen(false)}
-            open={isOpen}
-            rootElement={typeof window !== 'undefined' ? document.getElementById("__next")! : null}
-        />
     </>
   );
 }

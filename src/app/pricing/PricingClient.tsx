@@ -13,27 +13,19 @@ import { useState, useMemo } from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
-import { useCalendlyEventListener, PopupModal } from "react-calendly";
-
 
 export function PricingClient() {
   const defaultSector = SECTORS_SERVED[0].id;
   const [turnover, setTurnover] = useState([1]);
-  const [isOpen, setIsOpen] = useState(false);
-
-   useCalendlyEventListener({
-    onEventScheduled: (e) => {
-        console.log(e.data.payload);
-        setIsOpen(false);
-    },
-  });
-
+  
   const recommendedPlan = useMemo(() => {
     const value = turnover[0];
     if (value <= 1) return 'Foundation';
     if (value > 1 && value <= 5) return 'Growth';
     return 'Custom';
   }, [turnover]);
+
+  const googleCalendarLink = "https://calendar.google.com/calendar/u/0/selfsched?sstoken=YOUR_APPOINTMENT_SCHEDULE_LINK";
 
   return (
     <div>
@@ -120,9 +112,9 @@ export function PricingClient() {
                         </ul>
                       </CardContent>
                       <CardFooter>
-                        <Button className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg" onClick={() => setIsOpen(true)}>
-                          Book a Discovery Call
-                        </Button>
+                         <Button asChild className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg">
+                            <Link href={googleCalendarLink} target="_blank">Book a Discovery Call</Link>
+                         </Button>
                       </CardFooter>
                     </Card>
                   ))}
@@ -181,13 +173,6 @@ export function PricingClient() {
             <Link href="/contact">Request a Consultation</Link>
           </Button>
         </div>
-
-        <PopupModal
-            url="https://calendly.com/nconsulting/30min"
-            onModalClose={() => setIsOpen(false)}
-            open={isOpen}
-            rootElement={typeof window !== 'undefined' ? document.getElementById("__next")! : null}
-        />
     </div>
   );
 }
