@@ -15,12 +15,20 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The systematic recording, reporting, and analysis of financial transactions of a business.'
     },
     {
+        term: 'Accounting Standard (AS)',
+        definition: 'A set of principles and guidelines for financial accounting and reporting, issued by the Institute of Chartered Accountants of India (ICAI). Applicable to certain classes of companies.'
+    },
+    {
         term: 'Accrual Basis Accounting',
         definition: 'An accounting method where revenue or expenses are recorded when a transaction occurs rather than when payment is received or made. This is the standard for most businesses.'
     },
     {
         term: 'Accrued Expense',
         definition: 'An expense that has been incurred but not yet paid. It is recorded as a liability on the balance sheet.'
+    },
+    {
+        term: 'Accumulated Depreciation',
+        definition: 'The cumulative depreciation of an asset up to a single point in its life. It is a contra-asset account, meaning its natural balance is a credit.'
     },
     {
         term: 'Accounts Payable (AP)',
@@ -41,6 +49,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Angel Investor',
         definition: 'An affluent individual who provides capital for a business start-up, usually in exchange for convertible debt or ownership equity.'
+    },
+    {
+        term: 'Angel Tax',
+        definition: 'A tax levied on the capital raised by unlisted companies via issue of shares, where the share price is seen as in excess of the fair market value. Governed by Section 56(2)(viib) of the Income Tax Act.'
     },
     {
         term: 'Annual General Meeting (AGM)',
@@ -71,6 +83,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'An official inspection of an organization\'s accounts, typically by an independent body, to ensure accuracy and compliance.'
     },
     {
+        term: 'Authorized Share Capital',
+        definition: 'The maximum amount of share capital that a company is authorized by its constitutional documents to issue to shareholders.'
+    },
+    {
         term: 'Average Order Value (AOV)',
         definition: 'A key D2C e-commerce metric calculated by dividing total revenue by the number of orders. Increasing AOV is a common growth strategy.'
     },
@@ -83,6 +99,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Bank Reconciliation',
         definition: 'The process of matching the balances in a company\'s accounting records for a cash account to the corresponding information on a bank statement.'
+    },
+    {
+        term: 'Basis Point (BPS)',
+        definition: 'A unit of measure used in finance to describe the percentage change in the value or rate of a financial instrument. One basis point is equivalent to 0.01%.'
     },
     {
         term: 'Bill of Materials (BOM)',
@@ -155,6 +175,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The percentage of subscribers to a service who discontinue their subscriptions within a given time period. A critical metric for SaaS and other subscription businesses.'
     },
     {
+        term: 'Cliff Vesting',
+        definition: 'A period at the beginning of a vesting schedule during which an employee or founder does not earn any equity. A common structure is a 1-year cliff, after which 25% of the total equity vests.'
+    },
+    {
         term: 'Compliance',
         definition: 'Adhering to a rule, such as a specification, policy, standard, or law. In business, this refers to following all applicable tax, labor, and corporate laws.'
     },
@@ -191,6 +215,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Deduction (Income Tax)',
         definition: 'An amount that can be subtracted from your gross income to lower the amount of income that is subject to tax. Common examples in India are Section 80C, 80D.'
+    },
+    {
+        term: 'Deferred Revenue',
+        definition: 'Revenue that has been collected but has not yet been earned. It is a liability on the balance sheet, common in subscription businesses where payment is received upfront for a service to be delivered over time.'
     },
     {
         term: 'Depreciation',
@@ -231,6 +259,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'The buying and selling of goods or services using the internet, and the transfer of money and data to execute these transactions.'
     },
     {
+        term: 'E-invoicing',
+        definition: 'The electronic generation and reporting of B2B invoices to the GST portal. Mandatory for businesses in India with turnover exceeding a specified threshold.'
+    },
+    {
+        term: 'Equalisation Levy',
+        definition: 'A tax aimed at taxing the digital transactions of foreign e-commerce companies that have a significant economic presence in India but no physical presence.'
+    },
+    {
         term: 'Equity',
         definition: 'The value of an ownership interest in a company, representing the stake held by shareholders. It is the amount of money that would be returned to shareholders if all assets were liquidated and all debts repaid.'
     },
@@ -248,6 +284,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     },
     
     // F
+    {
+        term: 'Fair Market Value (FMV)',
+        definition: 'The price an asset would sell for on the open market. It is a key concept in tax and valuation, particularly for Angel Tax calculations.'
+    },
+    {
+        term: 'FDI (Foreign Direct Investment)',
+        definition: 'An investment made by a firm or individual from one country into business interests located in another country. Governed by FEMA and specific sectoral caps.'
+    },
     {
         term: 'FEMA (Foreign Exchange Management Act)',
         definition: 'An act that governs cross-border transactions, foreign investments, and management of foreign exchange in India.'
@@ -284,8 +328,16 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         term: 'Founder Vesting',
         definition: 'A mechanism where founders earn their equity over a period of time, typically 4 years with a 1-year cliff. It protects the company if a founder leaves early.'
     },
-    
+    {
+        term: 'Fundraising',
+        definition: 'The process of seeking and gathering voluntary financial contributions by engaging individuals, businesses, charitable foundations, or governmental agencies.'
+    },
+
     // G
+    {
+        term: 'GAAP (Generally Accepted Accounting Principles)',
+        definition: 'A common set of accounting principles, standards, and procedures that companies must follow when they compile their financial statements.'
+    },
     {
         term: 'General Ledger (GL)',
         definition: 'A master accounting document providing a complete record of all financial transactions over the life of a company.'
@@ -307,12 +359,20 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A monthly or quarterly return filed by registered GST taxpayers in India that contains the details of all outward supplies (sales) made during the period.'
     },
     {
+        term: 'GSTR-2A/2B',
+        definition: 'GSTR-2A is a dynamic statement showing purchases from suppliers. GSTR-2B is a static statement for a given period that helps in claiming Input Tax Credit (ITC).'
+    },
+    {
         term: 'GSTR-3B',
         definition: 'A self-declared summary GST return filed monthly (or quarterly for QRMP) that contains summarized details of outward and inward supplies, input tax credit, and tax liability.'
     },
     {
         term: 'GSTR-9',
         definition: 'The annual GST return that must be filed by all registered taxpayers. It is a consolidation of all the monthly/quarterly returns filed during that financial year.'
+    },
+    {
+        term: 'GSTIN (Goods and Services Tax Identification Number)',
+        definition: 'A unique 15-digit PAN-based identification number assigned to every registered person under GST.'
     },
     
     // H
@@ -339,12 +399,24 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A form in which taxpayers file a report of their annual income, expenses, deductions, and tax liability to the Income Tax Department.'
     },
     {
+        term: 'Incorporation',
+        definition: 'The legal process used to form a corporate entity or company. A corporation is a separate legal entity from its owners.'
+    },
+    {
+        term: 'Ind AS (Indian Accounting Standards)',
+        definition: 'The accounting standards adopted by companies in India and issued under the supervision of the Accounting Standards Board (ASB). Converged with IFRS.'
+    },
+    {
         term: 'Indirect Tax',
         definition: 'A tax collected by an intermediary (e.g., a retailer) from the person who bears the ultimate economic burden of the tax (e.g., the consumer). GST is the primary indirect tax in India.'
     },
     {
         term: 'Input Tax Credit (ITC)',
         definition: 'Under GST, it is the tax that a business pays on a purchase and that it can use to reduce its tax liability when it makes a sale.'
+    },
+    {
+        term: 'Intangible Asset',
+        definition: 'An asset that is not physical in nature. Examples include patents, trademarks, copyrights, and goodwill.'
     },
     {
         term: 'Intellectual Property (IP)',
@@ -429,6 +501,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     
     // N
     {
+        term: 'Negative Churn',
+        definition: 'Occurs when the expansion revenue from existing customers (upgrades, cross-sells) is greater than the revenue lost from cancellations and downgrades. The holy grail for SaaS businesses.'
+    },
+    {
         term: 'Net Profit',
         definition: 'The actual profit after working expenses not included in the calculation of gross profit have been paid.'
     },
@@ -446,7 +522,15 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         term: 'Operating Expense (OpEx)',
         definition: 'The expenses a business incurs through its normal business operations. Often abbreviated as OpEx, these expenses include rent, equipment, inventory costs, marketing, payroll, etc.'
     },
-    
+    {
+        term: 'Option Pool',
+        definition: 'A block of common stock reserved for issuance to employees and advisors of a company. It is a key tool for attracting and retaining talent.'
+    },
+    {
+        term: 'Overhead',
+        definition: 'The ongoing business expenses not directly attributed to creating a product or service. Examples include rent, utilities, and administrative staff salaries.'
+    },
+
     // P
     {
         term: 'Payment Aggregator (PA)',
@@ -467,6 +551,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Place of Supply',
         definition: 'A key concept in GST that determines which tax (CGST, SGST, or IGST) should be charged on a transaction.'
+    },
+    {
+        term: 'Post-money Valuation',
+        definition: 'The value of a company after an investment has been made. It is the pre-money valuation plus the amount of new equity injected.'
+    },
+    {
+        term: 'Preferred Stock',
+        definition: 'A class of ownership in a corporation that has a higher claim on its assets and earnings than common stock. Typically issued to investors.'
     },
     {
         term: 'Pre-money Valuation',
@@ -527,6 +619,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A classification system for services developed by the Service Tax department in India. Used in GST to classify services for taxation purposes.'
     },
     {
+        term: 'SAFE (Simple Agreement for Future Equity)',
+        definition: 'An agreement between an investor and a company that provides rights to the investor for future equity in the company, similar to a convertible note but without a maturity date or interest.'
+    },
+    {
         term: 'Seed Round',
         definition: 'The first official equity funding stage for a new company. It is the first money that a business venture raises from investors.'
     },
@@ -573,6 +669,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
         definition: 'A non-binding agreement setting forth the basic terms and conditions under which an investment will be made. It serves as a template for developing more detailed legal documents.'
     },
     {
+        term: 'Total Addressable Market (TAM)',
+        definition: 'The total revenue opportunity that is available to a product or service if 100% market share was achieved. Investors use it to gauge the potential scale of a startup.'
+    },
+    {
         term: 'Trial Balance',
         definition: 'A bookkeeping worksheet in which the balance of all ledgers is compiled into debit and credit account column totals that are equal. It is used to check for arithmetic errors.'
     },
@@ -587,6 +687,10 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
     {
         term: 'Valuation',
         definition: 'The process of determining the economic worth of a business or asset. Startups are typically valued based on their growth potential, market size, team, and traction.'
+    },
+    {
+        term: 'Valuation Cap',
+        definition: 'A term used in convertible notes or SAFEs that sets the maximum valuation at which the investment can convert into equity.'
     },
     {
         term: 'Venture Capital (VC)',
@@ -614,5 +718,3 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
 
 // Sort glossary data alphabetically by term
 GLOSSARY_DATA.sort((a, b) => a.term.localeCompare(b.term));
-
-    
