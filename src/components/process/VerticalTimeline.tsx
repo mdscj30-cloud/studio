@@ -60,7 +60,7 @@ const TimelineItem = ({
       {/* Timeline Dot with Step Number or Checkmark */}
       <div
         className={cn(
-          'absolute left-6 top-1 h-10 w-10 rounded-full border-2 flex items-center justify-center -translate-x-[calc(50%+1px)] z-10 transition-all duration-300',
+          'absolute left-6 top-1 h-10 w-10 rounded-full border-2 flex items-center justify-center -translate-x-[calc(50%+1px)] md:left-1/2 z-10 transition-all duration-300',
           isPassed
             ? 'bg-accent border-accent text-accent-foreground'
             : isActive
@@ -77,19 +77,21 @@ const TimelineItem = ({
 
       {/* Content */}
       <div
-        className={`w-full ${
-          isEven ? 'md:col-start-1 md:text-right' : 'md:col-start-2 md:text-left'
-        }`}
+        className={cn(
+          'w-full',
+          isEven ? 'md:col-start-2 md:text-left' : 'md:col-start-1 md:text-right'
+        )}
       >
         <div
-          className={`pl-16 md:pl-0 md:pr-0 ${
-            isEven ? 'md:pr-16' : 'md:pl-16'
-          }`}
+          className={cn(
+            'pl-16 md:pl-0',
+            isEven ? 'md:pl-16' : 'md:pr-16'
+          )}
         >
           <div
             className={cn(
               'flex items-center gap-4 mb-2',
-              isEven ? 'md:flex-row-reverse' : 'md:flex-row'
+              isEven ? 'md:flex-row' : 'md:flex-row-reverse'
             )}
           >
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border-2 border-primary/20 text-primary shrink-0">
@@ -116,7 +118,7 @@ export function VerticalTimeline() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const index = itemRefs.current.indexOf(entry.target as HTMLLIElement);
+            const index = parseInt(entry.target.getAttribute('data-index') || '0', 10);
             setActiveStep(index);
           }
         });
@@ -128,12 +130,13 @@ export function VerticalTimeline() {
       }
     );
 
-    itemRefs.current.forEach((ref) => {
+    const refs = itemRefs.current;
+    refs.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      itemRefs.current.forEach((ref) => {
+      refs.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
@@ -161,6 +164,9 @@ export function VerticalTimeline() {
           {PROCESS_STEPS.map((step, index) => (
             <TimelineItem
               key={step.title}
+              ref={el => itemRefs.current[index] = el}
+              // @ts-ignore
+              data-index={index}
               step={step}
               index={index}
               isActive={index === activeStep}
