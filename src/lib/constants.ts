@@ -349,78 +349,247 @@ export const PRICING_ADDONS = [
     { service: 'Multi-state GST', pricingApproach: 'Priced as a per-state monthly add-on.' },
 ];
 
+export const SECTORS_SERVED = [
+  {
+    id: 'saas',
+    icon: Rocket,
+    title: 'SaaS',
+    description: 'Navigating recurring revenue, churn, and SaaS metrics.'
+  },
+  {
+    id: 'd2c',
+    icon: ShoppingBag,
+    title: 'D2C & E-commerce',
+    description: 'Mastering inventory, channel profitability, and cash flow.'
+  },
+  {
+    id: 'fintech',
+    icon: Banknote,
+    title: 'FinTech',
+    description: 'Ensuring rigorous compliance with RBI, SEBI, and data privacy.'
+  },
+  {
+    id: 'healthtech',
+    icon: HeartPulse,
+    title: 'HealthTech',
+    description: 'Managing R&D cycles and complex medical compliance.'
+  },
+  {
+    id: 'manufacturing',
+    icon: Factory,
+    title: 'Manufacturing',
+    description: 'Handling inventory costing, BOM tracking, and job work.'
+  }
+];
+
 export const PRICING_PLANS: Record<string, PricingPlan[]> = {
-  tiers: [
+  saas: [
     {
       title: 'Foundation',
       price: '₹25k',
-      description: 'For early-stage startups & small manufacturers.',
+      description: 'For early-stage SaaS startups (pre-seed/bootstrapped).',
       features: [
         'Monthly accounting & close',
-        'Basic GST filings',
-        'TDS compliance',
-        'Monthly financial reports',
+        'GST & TDS compliance',
+        'Basic financial reports',
+        'Revenue recognition setup (accrual)',
         'Email + monthly call support',
       ],
     },
     {
       title: 'Growth',
       price: '₹50k',
-      description: 'For scaling startups & growing manufacturing units.',
+      description: 'For scaling SaaS startups (seed/Series A).',
       popular: true,
       features: [
         'Everything in Foundation',
-        'Advanced GST reconciliation & ITC review',
-        'Payroll compliance support',
+        'SaaS metrics tracking (MRR, Churn, LTV:CAC)',
         'Budget vs actuals analysis',
-        'Cash flow forecasting',
+        'Cash flow forecasting & runway',
+        'Payroll support',
         'Monthly review call',
       ],
     },
     {
       title: 'Scale',
       price: '₹1L',
-      description: 'For funded startups & complex manufacturing operations.',
+      description: 'For funded SaaS companies needing strategic finance.',
       features: [
         'Everything in Growth',
-        'End-to-end finance ownership',
         'Virtual CFO advisory',
-        'Investor / lender reporting',
-        'Working capital optimization',
+        'Investor & board reporting',
+        'Cohort analysis & retention tracking',
+        'Pricing strategy support',
         'Quarterly strategy sessions',
-        'Priority support',
+      ],
+    },
+  ],
+  d2c: [
+     {
+      title: 'Foundation',
+      price: '₹30k',
+      description: 'For new D2C brands & e-commerce stores.',
+      features: [
+        'Monthly accounting & close',
+        'GST filings for 1 state',
+        'TDS compliance',
+        'Channel-wise revenue reporting',
+        'Email + monthly call support',
+      ],
+    },
+    {
+      title: 'Growth',
+      price: '₹60k',
+      description: 'For growing D2C brands with multi-channel sales.',
+      popular: true,
+      features: [
+        'Everything in Foundation',
+        'Inventory valuation & tracking',
+        'COGS & gross margin analysis per SKU',
+        'Marketplace reconciliation (Amazon, etc.)',
+        'Cash flow forecasting',
+        'Monthly review call',
+      ],
+    },
+    {
+      title: 'Scale',
+      price: '₹1.2L',
+      description: 'For large D2C operators with complex supply chains.',
+      features: [
+        'Everything in Growth',
+        'Virtual CFO advisory',
+        'Landed cost tracking for imports',
+        'Working capital optimization',
+        'Channel & marketing ROI analysis',
+        'Quarterly strategy sessions',
+      ],
+    },
+  ],
+  fintech: [
+     {
+      title: 'Foundation',
+      price: '₹40k',
+      description: 'For early-stage FinTechs building an MVP.',
+      features: [
+        'Monthly accounting with compliance focus',
+        'Basic GST & TDS compliance',
+        'Support for regulatory correspondence',
+        'Expense tracking for burn reports',
+        'Email + monthly call support',
+      ],
+    },
+    {
+      title: 'Growth',
+      price: '₹75k',
+      description: 'For FinTechs post-license or with banking partners.',
+      popular: true,
+      features: [
+        'Everything in Foundation',
+        'Advanced compliance support (RBI/SEBI)',
+        'Transaction reconciliation',
+        'Escrow/nodal account reporting support',
+        'Financials for regulatory reporting',
+        'Monthly review call',
+      ],
+    },
+    {
+      title: 'Scale',
+      price: '₹1.5L',
+      description: 'For funded FinTechs scaling their user base.',
+      features: [
+        'Everything in Growth',
+        'Virtual CFO advisory on compliance & strategy',
+        'Data room management for audits',
+        'Unit economics (cost per transaction)',
+        'Investor & board reporting',
+        'Quarterly strategy sessions',
+      ],
+    },
+  ],
+  healthtech: [
+      {
+      title: 'Foundation',
+      price: '₹35k',
+      description: 'For HealthTechs in the R&D or pre-launch phase.',
+      features: [
+        'Monthly accounting & compliance',
+        'R&D expense tracking',
+        'Grant utilization reporting',
+        'Burn rate & runway management',
+        'Email + monthly call support',
+      ],
+    },
+    {
+      title: 'Growth',
+      price: '₹70k',
+      description: 'For HealthTechs post-launch or with early pilots.',
+      popular: true,
+      features: [
+        'Everything in Foundation',
+        'HIPAA/DISHA compliance support for financials',
+        'Project-based accounting for trials',
+        'Budget vs actuals for R&D projects',
+        'Cash flow forecasting',
+        'Monthly review call',
+      ],
+    },
+    {
+      title: 'Scale',
+      price: '₹1.4L',
+      description: 'For scaling HealthTechs with commercial contracts.',
+      features: [
+        'Everything in Growth',
+        'Virtual CFO advisory',
+        'Revenue recognition for healthcare contracts',
+        'Investor & board reporting',
+        'Financial modeling for new ventures',
+        'Quarterly strategy sessions',
+      ],
+    },
+  ],
+  manufacturing: [
+     {
+      title: 'Foundation',
+      price: '₹35k',
+      description: 'For small manufacturing units and job workers.',
+      features: [
+        'Monthly accounting & close',
+        'GST & TDS compliance',
+        'Basic inventory tracking',
+        'Standard financial reports',
+        'Email + monthly call support',
+      ],
+    },
+    {
+      title: 'Growth',
+      price: '₹70k',
+      description: 'For growing SMEs with expanding operations.',
+      popular: true,
+      features: [
+        'Everything in Foundation',
+        'Advanced inventory costing (FIFO/Weighted Avg)',
+        'Bill of Materials (BOM) & COGS analysis',
+        'Job work reconciliation',
+        'Working capital analysis',
+        'Monthly review call',
+      ],
+    },
+    {
+      title: 'Scale',
+      price: '₹1.4L',
+      description: 'For complex manufacturing with multi-state operations.',
+      features: [
+        'Everything in Growth',
+        'Virtual CFO advisory',
+        'Standard costing & variance analysis',
+        'Factory overhead allocation',
+        'Lender & board reporting',
+        'Quarterly strategy sessions',
       ],
     },
   ]
 };
 
-export const SECTORS_SERVED = [
-  {
-    icon: Rocket,
-    title: 'SaaS',
-    description: 'Navigating the complexities of recurring revenue, churn, and SaaS metrics.'
-  },
-  {
-    icon: ShoppingBag,
-    title: 'D2C & E-commerce',
-    description: 'Mastering inventory management, channel profitability, and cash flow in retail.'
-  },
-  {
-    icon: Banknote,
-    title: 'FinTech',
-    description: 'Ensuring rigorous compliance with RBI, SEBI, and data privacy regulations.'
-  },
-  {
-    icon: HeartPulse,
-    title: 'HealthTech',
-    description: 'Managing long R&D cycles and navigating complex medical compliance.'
-  },
-  {
-    icon: Factory,
-    title: 'Manufacturing',
-    description: 'Handling inventory costing, BOM tracking, and job work accounting intricacies.'
-  }
-];
 
 
 const blog1Img = PlaceHolderImages.find(img => img.id === 'blog-1');
@@ -457,3 +626,4 @@ export const CASE_STUDIES = DETAILED_CASE_STUDIES.map(study => ({
   image: PlaceHolderImages.find(img => img.id === study.imageId)?.imageUrl || '',
   imageHint: PlaceHolderImages.find(img => img.id === study.imageId)?.imageHint || ''
 }));
+

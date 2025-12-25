@@ -5,12 +5,14 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PRICING_PLANS, PricingPlan, PRICING_ADDONS, PRICING_DRIVERS, SECTORS_SERVED } from '@/lib/constants';
-import { CheckCircle, Star, PlusCircle, Factory, ArrowRight } from 'lucide-react';
+import { CheckCircle, Star, ArrowRight, Factory } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+
 
 export function PricingClient() {
-  const plans = PRICING_PLANS['tiers'];
+  const defaultSector = SECTORS_SERVED[0].id;
 
   return (
     <div>
@@ -19,75 +21,73 @@ export function PricingClient() {
             Find Your Fit
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We offer tiered monthly retainers designed to scale with you. Final pricing depends on your specific complexity and scope.
+            We offer tiered monthly retainers designed to scale with you. Select your industry to see tailored plans.
           </p>
         </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-        {plans.map((plan: PricingPlan) => (
-          <Card key={plan.title} className={cn(
-            "flex flex-col transition-transform duration-300 hover:scale-105",
-            plan.popular ? "border-accent border-2 shadow-lg" : "border"
-          )}>
-            {plan.popular && (
-              <div className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider text-center py-1.5 rounded-t-lg flex items-center justify-center gap-2">
-                <Star className="w-4 h-4" />
-                Most Popular
-              </div>
-            )}
-            <CardHeader className="pt-6">
-              <CardTitle className="text-2xl text-primary">{plan.title}</CardTitle>
-              <CardDescription>{plan.description}</CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <div className="mb-6">
-                <span className="text-sm text-muted-foreground">Starts from</span>
-                <div className="flex items-baseline">
-                    <span className="text-4xl font-bold">{plan.price}</span>
-                    <span className="text-muted-foreground">/month</span>
-                </div>
-              </div>
-              <p className='text-sm font-semibold text-primary mb-3'>Includes:</p>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-            <CardFooter>
-              <Button asChild className="w-full" variant={plan.popular ? 'accent' : 'default'} size="lg">
-                <Link href="/contact">Book a Discovery Call</Link>
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
-      
-      <section className="py-16 md:py-24">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Sectors We Serve</h2>
-            <p className="mt-4 text-lg text-muted-foreground">We have deep expertise in the unique financial landscapes of these industries.</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-            {SECTORS_SERVED.map(sector => {
-                const Icon = sector.icon;
-                return (
-                    <div key={sector.title} className="text-center p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                        <div className="inline-block bg-accent/10 p-3 rounded-full mb-4">
-                            <Icon className="w-8 h-8 text-accent" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-primary mb-2">{sector.title}</h3>
-                        <p className="text-sm text-muted-foreground">{sector.description}</p>
-                    </div>
-                );
-            })}
-        </div>
-      </section>
+        <Tabs defaultValue={defaultSector} className="w-full">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto mb-12">
+              {SECTORS_SERVED.map(sector => (
+                <TabsTrigger
+                  key={sector.id}
+                  value={sector.id}
+                  className="text-xs sm:text-sm flex items-center gap-2"
+                >
+                  <sector.icon className="w-4 h-4" />
+                  {sector.title}
+                </TabsTrigger>
+              ))}
+            </TabsList>
 
-        <section className="py-16 md:py-24 bg-muted/30 -mx-4 px-4">
+            {SECTORS_SERVED.map(sector => (
+              <TabsContent key={sector.id} value={sector.id}>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+                  {PRICING_PLANS[sector.id]?.map((plan: PricingPlan) => (
+                    <Card key={plan.title} className={cn(
+                      "flex flex-col transition-transform duration-300 hover:scale-105",
+                      plan.popular ? "border-accent border-2 shadow-lg" : "border"
+                    )}>
+                      {plan.popular && (
+                        <div className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider text-center py-1.5 rounded-t-lg flex items-center justify-center gap-2">
+                          <Star className="w-4 h-4" />
+                          Most Popular
+                        </div>
+                      )}
+                      <CardHeader className="pt-6">
+                        <CardTitle className="text-2xl text-primary">{plan.title}</CardTitle>
+                        <CardDescription>{plan.description}</CardDescription>
+                      </CardHeader>
+                      <CardContent className="flex-grow">
+                        <div className="mb-6">
+                          <span className="text-sm text-muted-foreground">Starts from</span>
+                          <div className="flex items-baseline">
+                              <span className="text-4xl font-bold">{plan.price}</span>
+                              <span className="text-muted-foreground">/month</span>
+                          </div>
+                        </div>
+                        <p className='text-sm font-semibold text-primary mb-3'>Key Features:</p>
+                        <ul className="space-y-3 text-sm text-muted-foreground">
+                          {plan.features.map((feature) => (
+                            <li key={feature} className="flex items-start">
+                              <CheckCircle className="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                      <CardFooter>
+                        <Button asChild className="w-full" variant={plan.popular ? 'accent' : 'default'} size="lg">
+                          <Link href="/contact">Book a Discovery Call</Link>
+                        </Button>
+                      </CardFooter>
+                    </Card>
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
+        </Tabs>
+      
+        <section className="py-16 md:py-24 bg-muted/30 -mx-4 px-4 mt-16">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-start">
                 <div className="bg-card p-8 rounded-lg border">
