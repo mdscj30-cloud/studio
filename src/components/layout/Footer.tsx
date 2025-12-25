@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
 import { Linkedin, Twitter, MapPin } from 'lucide-react';
-import { PartnerWithUs } from './PartnerWithUs';
+import { RequestConsultation } from './RequestConsultation';
 
 export default function Footer() {
   const legalLinks = [
@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <>
-      <PartnerWithUs />
+      <RequestConsultation />
       <footer className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
         <div className="container py-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
