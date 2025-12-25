@@ -51,6 +51,7 @@ export const NAV_LINKS = [
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/resources', label: 'Resources' },
+  { href: '/resources/glossary', label: 'Glossary' },
   { href: '/about', label: 'About' },
 ];
 
@@ -254,7 +255,7 @@ export const TESTIMONIALS = [
   {
     quote: "Their team's expertise in market analysis was crucial for our product launch. N consulting delivered results beyond our expectations.",
     company: 'A VR/AR experiential platform.',
-    name: 'Rohan Mehta',
+    name: 'Rohan M.',
     title: 'CEO | FutureVerse',
     avatar: futureVerseImg?.imageUrl || '',
     avatarHint: futureVerseImg?.imageHint || '',
@@ -262,7 +263,7 @@ export const TESTIMONIALS = [
   {
     quote: 'With N consulting, we optimized our supply chain and cut operational costs by 20%. Their impact was immediate and significant.',
     company: 'An AI-driven logistics optimization startup.',
-    name: 'Aisha Khan',
+    name: 'Aisha K.',
     title: 'COO | QuantumLeap Logistics',
     avatar: quantumLeapImg?.imageUrl || '',
     avatarHint: quantumLeapImg?.imageHint || '',
@@ -270,7 +271,7 @@ export const TESTIMONIALS = [
   {
     quote: "The strategic roadmap they developed has become our north star. We're on track to double our user base this year.",
     company: 'A biotech firm specializing in gene-editing.',
-    name: 'Dr. Anand Sharma',
+    name: 'Dr. Anand S.',
     title: 'Chief Scientist | BioGen Innovations',
     avatar: bioGenImg?.imageUrl || '',
     avatarHint: bioGenImg?.imageHint || '',
@@ -278,7 +279,7 @@ export const TESTIMONIALS = [
    {
     quote: "Navigating international regulations was a major hurdle. N consulting's legal team made the process seamless and efficient.",
     company: 'A travel-tech startup for personalized itineraries.',
-    name: 'Priya Sharma',
+    name: 'Priya S.',
     title: 'Founder | TravelWise',
     stage: 'Growth Stage',
     avatar: travelWiseImg?.imageUrl || '',
@@ -287,7 +288,7 @@ export const TESTIMONIALS = [
    {
     quote: "Their financial modeling was top-notch, helping us secure a critical bridge round to extend our runway.",
     company: 'A company developing biodegradable packaging.',
-    name: 'Vikram Singh',
+    name: 'Vikram S.',
     title: 'CEO | EcoSolutions',
     avatar: ecoSolutionsImg?.imageUrl || '',
     avatarHint: ecoSolutionsImg?.imageHint || '',
@@ -295,7 +296,7 @@ export const TESTIMONIALS = [
   {
     quote: "N consulting's brand strategy and marketing plan gave us the clarity we needed to connect with our target audience effectively.",
     company: 'An online marketplace for independent artists.',
-    name: 'Sameer Verma',
+    name: 'Sameer V.',
     title: 'Founder | Artful Living',
     stage: 'Seed Stage',
     avatar: artfulLivingImg?.imageUrl || '',

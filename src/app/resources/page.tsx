@@ -1,6 +1,7 @@
 import { BlogSection } from '@/components/resources/BlogSection';
 import { CaseStudiesSection } from '@/components/resources/CaseStudiesSection';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Library } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Resources | N consulting',
@@ -23,6 +24,20 @@ export default function ResourcesPage() {
       </section>
 
       <div className="container py-16 md:py-24 space-y-24">
+        <section id="glossary-link" className="bg-muted -mx-container-padding px-container-padding py-16">
+            <div className="text-center">
+                <div className="inline-block bg-primary/10 p-4 rounded-full mb-4">
+                    <Library className="w-10 h-10 text-primary" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary">Financial Glossary</h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Your comprehensive guide to financial, tax, and startup terminology.
+                </p>
+                <Link href="/resources/glossary" className="mt-6 inline-block bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold hover:bg-accent/90 transition-colors">
+                    Explore the Glossary
+                </Link>
+            </div>
+        </section>
         <BlogSection />
         <CaseStudiesSection />
       </div>
