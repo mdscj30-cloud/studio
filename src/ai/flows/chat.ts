@@ -45,9 +45,6 @@ Here is the user's latest message:
 - user: {{{message}}}
 
 Provide a helpful response.`,
-  config: {
-    model: 'groq/llama3-70b-8192',
-  }
 });
 
 const chatFlow = ai.defineFlow(
