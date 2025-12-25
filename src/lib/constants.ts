@@ -25,6 +25,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
 ];
 

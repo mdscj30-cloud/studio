@@ -1,7 +1,6 @@
 'use client';
 
 import Hero from '@/components/home/Hero';
-import Process from '@/components/home/Process';
 import Portfolio from '@/components/home/Portfolio';
 import Services from '@/components/home/ServicesOverview';
 import Testimonials from '@/components/home/Testimonials';
@@ -15,9 +14,6 @@ export default function Home() {
       <div className="container">
         <div id="services">
             <Services />
-        </div>
-        <div id="process">
-            <Process />
         </div>
       </div>
         <div id="portfolio">
