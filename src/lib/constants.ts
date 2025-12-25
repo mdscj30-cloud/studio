@@ -382,6 +382,12 @@ export const SECTORS_SERVED = [
     icon: Factory,
     title: 'Manufacturing',
     description: 'Handling inventory costing, BOM tracking, and job work.'
+  },
+  {
+    id: 'smb',
+    icon: Building,
+    title: 'SMB Business',
+    description: 'Core financial services for small & medium businesses.'
   }
 ];
 
@@ -590,7 +596,46 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
         'Quarterly strategy sessions with vCFO',
       ],
     },
-  ]
+  ],
+  smb: [
+    {
+     title: 'Foundation',
+     price: 'From ₹25k',
+     description: 'For small businesses with up to ₹1 Cr annual turnover.',
+     features: [
+       'Monthly accounting & bookkeeping',
+       'GST & TDS return filing',
+       'Basic financial statements (P&L, Balance Sheet)',
+       'Email & chat support',
+     ],
+   },
+   {
+     title: 'Growth',
+     price: 'From ₹50k',
+     description: 'For growing businesses with ₹1 Cr - ₹5 Cr annual turnover.',
+     popular: true,
+     features: [
+       'Everything in Foundation',
+       'Payroll processing for up to 25 employees',
+       'Advanced financial reporting & MIS',
+       'Budget preparation & variance analysis',
+       'Monthly review call with a dedicated account manager',
+     ],
+   },
+   {
+     title: 'Custom',
+     price: 'Let\'s Talk',
+     description: 'For established SMBs with over ₹5 Cr annual turnover.',
+     features: [
+       'Everything in Growth',
+       'Virtual CFO services',
+       'Customized KPI dashboards',
+       'Working capital management',
+       'Support for bank financing & reporting',
+       'Quarterly strategic business reviews',
+     ],
+   },
+ ]
 };
 
 const teamCaImg = PlaceHolderImages.find(img => img.id === 'team-ca');

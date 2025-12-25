@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useState, useMemo } from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
-import { Label as FormLabel } from '@/components/ui/label';
+import { Label } from '@/components/ui/label';
 
 
 export function PricingClient() {
@@ -40,7 +40,7 @@ export function PricingClient() {
         <Card className="max-w-2xl mx-auto mb-16 p-6 shadow-lg">
           <CardContent className="pt-6">
             <div className='text-center mb-4'>
-              <FormLabel className="text-lg font-semibold text-primary">What is your Annual Turnover?</FormLabel>
+              <Label className="text-lg font-semibold text-primary">What is your Annual Turnover?</Label>
               <p className="text-2xl font-bold text-accent mt-2">₹ {turnover[0]} Crore</p>
             </div>
             <Slider
@@ -59,7 +59,7 @@ export function PricingClient() {
 
 
         <Tabs defaultValue={defaultSector} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto mb-12">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 h-auto mb-12">
               {SECTORS_SERVED.map(sector => (
                 <TabsTrigger
                   key={sector.id}
