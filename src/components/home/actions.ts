@@ -29,7 +29,7 @@ export async function handleHeroFormSubmission(values: z.infer<typeof formSchema
     const { name, email } = validatedFields.data;
 
     await resend.emails.send({
-      from: 'noreply@nconsulting.com',
+      from: 'cachirag1@outlook.com',
       to: 'cachirag1@outlook.com',
       subject: 'New "Partner with Us" Submission',
       reply_to: email,
