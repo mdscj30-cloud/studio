@@ -26,11 +26,6 @@ export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/#process', label: 'Process' },
-  { href: '/#portfolio', label: 'Portfolio' },
-  { href: '/about', label: 'About Us' },
-  { href: '/#testimonials', label: 'Success Stories' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 export const LOCATIONS = [
