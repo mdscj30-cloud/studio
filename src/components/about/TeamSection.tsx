@@ -1,5 +1,4 @@
 import { TEAM_MEMBERS } from '@/lib/constants';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 
 export default function TeamSection() {
@@ -16,26 +15,23 @@ export default function TeamSection() {
           {TEAM_MEMBERS.map((member) => {
             const Icon = member.icon;
             return (
-              <Card key={member.category} className="flex flex-col text-center transition-all duration-300 border hover:border-accent hover:shadow-xl hover:scale-105">
-                 <div className="relative aspect-video w-full rounded-t-lg overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.category}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={member.imageHint}
-                    />
+              <div key={member.category} className="group relative rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                <Image
+                  src={member.image}
+                  alt={member.category}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-ai-hint={member.imageHint}
+                />
+                <div className="relative z-20 flex flex-col justify-end h-full p-6 text-white">
+                  <div className="bg-accent/80 p-3 rounded-full mb-4 w-fit group-hover:bg-accent transition-colors">
+                      <Icon className="w-8 h-8" />
                   </div>
-                <CardHeader>
-                    <div className="mx-auto bg-accent/10 p-3 rounded-full mb-2 w-fit">
-                        <Icon className="w-8 h-8 text-accent" />
-                    </div>
-                  <CardTitle className="text-xl text-primary">{member.category}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{member.description}</p>
-                </CardContent>
-              </Card>
+                  <h3 className="text-xl font-bold">{member.category}</h3>
+                  <p className="text-sm text-white/80 mt-2">{member.description}</p>
+                </div>
+              </div>
             );
           })}
         </div>
