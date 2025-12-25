@@ -33,7 +33,7 @@ export async function handleFormSubmission(values: z.infer<typeof formSchema>): 
     
     await resend.emails.send({
         from: 'onboarding@resend.dev',
-        to: 'delivered@resend.dev',
+        to: 'chiragjainrockcool@gmail.com',
         subject: `New Contact Form Submission: ${subject}`,
         reply_to: email,
         html: `
