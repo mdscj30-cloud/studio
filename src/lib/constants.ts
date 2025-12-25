@@ -29,7 +29,12 @@ import {
   BarChart3,
   FileStack,
   Power,
-  RotateCcw
+  RotateCcw,
+  Clock,
+  Zap,
+  Check,
+  Eye,
+  Rocket
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
@@ -193,6 +198,24 @@ export const WHY_CHOOSE_US_POINTS = [
         icon: HeartHandshake,
         title: 'Client Partnership',
         description: 'We believe in building long-term partnerships, acting as an extension of your team to drive collective success.',
+    },
+]
+
+export const REAL_LIFE_HELP_POINTS = [
+    {
+        icon: Clock,
+        title: 'Reclaim Your Founder Time',
+        description: 'Stop drowning in spreadsheets and compliance worries. We take complete ownership of your finance and tax operations, freeing you to focus on what you do best: building your product, talking to customers, and leading your team.',
+    },
+    {
+        icon: Eye,
+        title: 'Achieve Financial Clarity',
+        description: 'Move beyond confusing financial statements. We provide you with simple, founder-friendly dashboards and monthly reports that give you a clear view of your burn rate, runway, and profitability, so you can make confident, data-driven decisions.',
+    },
+    {
+        icon: Rocket,
+        title: 'Become Investor-Ready, Always',
+        description: 'Fundraising is a marathon, not a sprint. We build a rock-solid financial and compliance foundation from day one, ensuring your data room is always up-to-date and you\'re prepared to talk to investors with confidence, whenever the opportunity arises.',
     },
 ]
 

@@ -10,7 +10,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { DIFFERENTIATORS, WHY_CHOOSE_US_POINTS } from '@/lib/constants';
+import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS } from '@/lib/constants';
 
 export const metadata = {
   title: 'Our Services | N consulting',
@@ -86,14 +86,6 @@ const howItWorks = [
   { title: 'Monthly execution & filings' },
   { title: 'Quarterly review & planning' },
   { title: 'Scale, optimize, or continue' },
-];
-
-const whyChooseUs = [
-  'Built for startups & manufacturing businesses',
-  'Fixed monthly retainers—no surprises',
-  'Clear ownership & accountability',
-  'Proactive compliance tracking',
-  'Clear communication, no jargon',
 ];
 
 const addOnServices = [
@@ -225,11 +217,11 @@ export default function ServicesPage() {
             </div>
             <div className="md:col-span-3">
                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-primary">Why Founders Choose Us</h2>
-                    <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We are dedicated to fostering growth and success through our core principles.</p>
+                    <h2 className="text-3xl font-bold text-primary">How We Give You Leverage</h2>
+                    <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We provide real-life help so you can build your business with confidence.</p>
                 </div>
                 <div className="grid grid-cols-1 gap-8">
-                {WHY_CHOOSE_US_POINTS.map((item) => {
+                {REAL_LIFE_HELP_POINTS.map((item) => {
                     const Icon = item.icon;
                     return (
                         <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
