@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { SERVICES } from '@/lib/constants';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
   return (
@@ -14,34 +12,22 @@ export default function Services() {
             We offer a suite of services designed to address the critical challenges faced by startups at every stage of their journey.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {SERVICES.slice(0, 8).map((service) => {
-            const Icon = service.icon;
-            return (
-              <Link href={`/services/${service.slug}`} key={service.slug} className="group">
-                <Card className="flex flex-col justify-between h-full hover:shadow-lg transition-all duration-300 border group-hover:scale-105">
-                  <div>
-                    <CardHeader>
-                      <div className="flex items-center gap-4">
-                        <div className="bg-accent/10 p-3 rounded-full">
-                          <Icon className="w-6 h-6 text-accent" />
+        <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+            {SERVICES.slice(0, 8).map((service) => {
+                const Icon = service.icon;
+                return (
+                <Link href={`/services/${service.slug}`} key={service.slug} className="group">
+                    <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                        <div className="flex-shrink-0 bg-accent/10 p-3 rounded-full">
+                            <Icon className="w-6 h-6 text-accent" />
                         </div>
-                         <CardTitle className="text-lg text-primary">{service.title}</CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{service.description}</p>
-                    </CardContent>
-                  </div>
-                   <div className="p-6 pt-0 mt-auto">
-                      <div className="text-sm font-semibold text-primary group-hover:text-accent flex items-center">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </div>
-                  </div>
-                </Card>
-              </Link>
-            );
-          })}
+                        <h3 className="font-semibold text-primary group-hover:text-accent transition-colors">{service.title}</h3>
+                    </div>
+                </Link>
+                );
+            })}
+            </div>
         </div>
         <div className='text-center mt-12'>
             <Button asChild size="lg" variant="accent">
