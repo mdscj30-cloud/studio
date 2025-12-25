@@ -1,3 +1,5 @@
+'use client';
+
 import Hero from '@/components/home/Hero';
 import Process from '@/components/home/Process';
 import Portfolio from '@/components/home/Portfolio';
