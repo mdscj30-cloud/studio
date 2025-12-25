@@ -29,7 +29,7 @@ export function PricingClient() {
   useEffect(() => {
     (async function () {
       const cal = await Cal({
-        "calLink": "nconsulting/15min",
+        calLink: "nconsulting/15min",
       });
       cal("ui", {"styles":{"branding":{"brandColor":"#5A2D82"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
