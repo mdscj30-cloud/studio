@@ -4,7 +4,7 @@ export type GlossaryTerm = {
   definition: string;
 };
 
-export const GLOSSARY_DATA: GlossaryTerm[] = [
+const ALL_GLOSSARY_DATA: GlossaryTerm[] = [
     // A
     {
         term: 'A/B Testing',
@@ -2558,4 +2558,14 @@ export const GLOSSARY_DATA: GlossaryTerm[] = [
 ];
 
 // Sort glossary data alphabetically by term
-GLOSSARY_DATA.sort((a, b) => a.term.localeCompare(b.term));
+ALL_GLOSSARY_DATA.sort((a, b) => a.term.localeCompare(b.term));
+
+// Pre-group data by letter to avoid doing this on the client
+export const GLOSSARY_DATA_BY_LETTER = ALL_GLOSSARY_DATA.reduce((acc, item) => {
+    const letter = item.term[0].toUpperCase();
+    if (!acc[letter]) {
+        acc[letter] = [];
+    }
+    acc[letter].push(item);
+    return acc;
+}, {} as Record<string, GlossaryTerm[]>);

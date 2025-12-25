@@ -1,60 +1,68 @@
 'use client';
 
-import { GLOSSARY_DATA } from '@/lib/glossary-data';
+import { GLOSSARY_DATA_BY_LETTER, type GlossaryTerm } from '@/lib/glossary-data';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useInView } from 'react-intersection-observer';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 
-export function Glossary() {
-  const groupedByLetter = GLOSSARY_DATA.reduce((acc, item) => {
-    const letter = item.term[0].toUpperCase();
-    if (!acc[letter]) {
-      acc[letter] = [];
-    }
-    acc[letter].push(item);
-    return acc;
-  }, {} as Record<string, typeof GLOSSARY_DATA>);
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  const [loadedLetters, setLoadedLetters] = useState<string[]>([]);
+export function Glossary() {
+  const [loadedData, setLoadedData] = useState<Record<string, GlossaryTerm[]>>({});
+  const [visibleLetters, setVisibleLetters] = useState<string[]>([]);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
   });
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const loadLetter = useCallback(async (letter: string) => {
+    if (loadedData[letter] || !GLOSSARY_DATA_BY_LETTER[letter]) {
+      return;
+    }
+    
+    // Simulate dynamic import for demonstration; in a real scenario this could be an API call
+    // or dynamic import() if data was split into separate files.
+    const items = GLOSSARY_DATA_BY_LETTER[letter] as GlossaryTerm[];
+    setLoadedData(prev => ({ ...prev, [letter]: items }));
+  }, [loadedData]);
 
   useEffect(() => {
-    // Load the first letter initially
-    if (alphabet.length > 0) {
-        setLoadedLetters([alphabet[0]]);
-        setCurrentIndex(1);
+    const lettersWithContent = alphabet.filter(letter => GLOSSARY_DATA_BY_LETTER[letter]);
+    if (lettersWithContent.length > 0) {
+      const firstLetter = lettersWithContent[0];
+      setVisibleLetters([firstLetter]);
+      loadLetter(firstLetter);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [loadLetter]);
 
   useEffect(() => {
-    if (inView && currentIndex < alphabet.length) {
-      const nextIndex = currentIndex + 1;
-      const nextLetter = alphabet[currentIndex];
-      
-      // Check if the next letter has glossary items before adding it
-      if (groupedByLetter[nextLetter]) {
-        setTimeout(() => {
-            setLoadedLetters(prev => [...prev, nextLetter]);
-        }, 200); // Small delay to create a smooth loading effect
+    if (inView) {
+      const lettersWithContent = alphabet.filter(letter => GLOSSARY_DATA_BY_LETTER[letter]);
+      const nextIndex = visibleLetters.length;
+      if (nextIndex < lettersWithContent.length) {
+        const nextLetter = lettersWithContent[nextIndex];
+        setVisibleLetters(prev => [...prev, nextLetter]);
+        loadLetter(nextLetter);
       }
-      setCurrentIndex(nextIndex);
     }
-  }, [inView, currentIndex, alphabet, groupedByLetter]);
-
+  }, [inView, visibleLetters, loadLetter]);
+  
+  const lettersWithContent = alphabet.filter(letter => GLOSSARY_DATA_BY_LETTER[letter]);
 
   return (
     <div className="max-w-4xl mx-auto">
         <Accordion type="multiple" className="w-full space-y-4">
-            {loadedLetters.map(letter => {
-                const items = groupedByLetter[letter];
-                if (!items) return null;
+            {visibleLetters.map(letter => {
+                const items = loadedData[letter];
+                if (!items) {
+                    return (
+                        <div key={letter} className="space-y-4">
+                            <Skeleton className="h-16 w-full rounded-lg" />
+                        </div>
+                    );
+                }
 
                 return (
                     <AccordionItem value={letter} key={letter} className="border-b-0">
@@ -76,8 +84,7 @@ export function Glossary() {
             })}
         </Accordion>
         
-        {/* Intersection observer target and skeleton loaders */}
-        {currentIndex < alphabet.length && (
+        {visibleLetters.length < lettersWithContent.length && (
              <div ref={ref} className="mt-8 space-y-4">
                 <Skeleton className="h-16 w-full rounded-lg" />
                 <Skeleton className="h-16 w-full rounded-lg" />
