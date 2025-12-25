@@ -12,7 +12,7 @@ import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 
 const ChatInputSchema = z.object({
-  message: z.string().describe('The user\'s message.'),
+  message: z.string().describe("The user's message."),
   history: z
     .array(z.object({ role: z.enum(['user', 'model']), content: z.string() }))
     .describe('The conversation history.'),
@@ -20,7 +20,7 @@ const ChatInputSchema = z.object({
 export type ChatInput = z.infer<typeof ChatInputSchema>;
 
 const ChatOutputSchema = z.object({
-  response: z.string().describe('The AI\'s response.'),
+  response: z.string().describe("The AI's response."),
 });
 export type ChatOutput = z.infer<typeof ChatOutputSchema>;
 
@@ -45,6 +45,9 @@ Here is the user's latest message:
 - user: {{{message}}}
 
 Provide a helpful response.`,
+  config: {
+    model: 'groq/llama3-70b-8192',
+  }
 });
 
 const chatFlow = ai.defineFlow(
