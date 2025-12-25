@@ -249,7 +249,7 @@ export default function ServicesPage() {
             You focus on growth. We’ll handle the rest.
           </p>
           <Button size="lg" asChild variant="accent">
-            <Link href="https://calendly.com/nconsulting/30min" target="_blank">
+            <Link href="https://meet.google.com/new" target="_blank">
               Book a Free Discovery Call{' '}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
