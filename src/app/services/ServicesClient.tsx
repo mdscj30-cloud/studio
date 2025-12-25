@@ -245,7 +245,7 @@ export function ServicesClient() {
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             You focus on growth. We’ll handle the rest.
           </p>
-          <Button size="lg" variant="accent" data-cal-link="nconsulting/15min" data-cal-config='{"layout":"month_view"}'>
+          <Button size="lg" variant="accent" data-cal-link="chirag-jain/15min" data-cal-config='{"layout":"month_view"}'>
             Book a Free Discovery Call{' '}
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>

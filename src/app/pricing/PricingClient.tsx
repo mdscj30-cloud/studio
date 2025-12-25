@@ -117,7 +117,7 @@ export function PricingClient() {
                         </ul>
                       </CardContent>
                       <CardFooter>
-                         <Button className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg" data-cal-link="nconsulting/15min" data-cal-config='{"layout":"month_view"}'>
+                         <Button className="w-full" variant={recommendedPlan === plan.title ? 'accent' : 'default'} size="lg" data-cal-link="chirag-jain/15min" data-cal-config='{"layout":"month_view"}'>
                             Book a Discovery Call
                          </Button>
                       </CardFooter>
@@ -174,7 +174,7 @@ export function PricingClient() {
        <div className="text-center mt-16 md:mt-24">
           <h3 className="text-2xl font-bold text-primary mb-4">Let's Build Your Custom Plan</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Every business is unique. Contact us for a free discovery call to get a personalized quote based on your specific needs.</p>
-          <Button size="lg" variant="accent" data-cal-link="nconsulting/15min" data-cal-config='{"layout":"month_view"}'>
+          <Button size="lg" variant="accent" data-cal-link="chirag-jain/15min" data-cal-config='{"layout":"month_view"}'>
             Request a Consultation
           </Button>
         </div>
