@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
@@ -49,34 +49,37 @@ export default function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] px-6">
-              <div className="flex justify-between items-center mb-8">
-                 <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-                    <span className="font-bold text-lg text-primary">N consulting</span>
-                </Link>
-                <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-                    <X className="h-6 w-6" />
-                    <span className="sr-only">Close Menu</span>
-                </Button>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] px-0">
+                <SheetHeader className="p-6 flex-row justify-between items-center space-y-0 mb-2">
+                    <SheetTitle className='sr-only'>Navigation Menu</SheetTitle>
+                    <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+                        <span className="font-bold text-lg text-primary">N consulting</span>
+                    </Link>
+                    <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
+                        <X className="h-6 w-6" />
+                        <span className="sr-only">Close Menu</span>
+                    </Button>
+                </SheetHeader>
+              <div className="px-6">
+                <nav className="flex flex-col space-y-4">
+                    {NAV_LINKS.map((link) => (
+                    <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className={cn(
+                        'text-lg font-medium transition-colors hover:text-primary',
+                        (pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))) ? 'text-primary' : 'text-foreground/80'
+                        )}
+                    >
+                        {link.label}
+                    </Link>
+                    ))}
+                    <Button asChild className="mt-4" variant="accent">
+                        <Link href="/contact" onClick={() => setIsOpen(false)}>Request a Consultation</Link>
+                    </Button>
+                </nav>
               </div>
-              <nav className="flex flex-col space-y-4">
-                {NAV_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setIsOpen(false)}
-                    className={cn(
-                      'text-lg font-medium transition-colors hover:text-primary',
-                      (pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))) ? 'text-primary' : 'text-foreground/80'
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <Button asChild className="mt-4" variant="accent">
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>Request a Consultation</Link>
-                </Button>
-              </nav>
             </SheetContent>
           </Sheet>
         </div>
