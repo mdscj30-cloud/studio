@@ -601,7 +601,7 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
   smb: [
     {
      title: 'Foundation',
-     price: 'From ₹25k',
+     price: 'From ₹15k',
      description: 'For small businesses with up to ₹1 Cr annual turnover.',
      features: [
        'Monthly accounting & bookkeeping',
@@ -612,7 +612,7 @@ export const PRICING_PLANS: Record<string, PricingPlan[]> = {
    },
    {
      title: 'Growth',
-     price: 'From ₹50k',
+     price: 'From ₹40k',
      description: 'For growing businesses with ₹1 Cr - ₹5 Cr annual turnover.',
      popular: true,
      features: [
