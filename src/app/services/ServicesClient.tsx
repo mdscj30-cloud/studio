@@ -34,6 +34,34 @@ const serviceSections = [
     ],
   },
   {
+    id: 'bookkeeping',
+    title: 'Bookkeeping',
+    description: 'Accurate books, on time, every time.',
+    details: 'From early-stage to growth-stage companies, our tailored bookkeeping packages are suitable for all. Our experts can manage your complex accounts, ensuring your financials are always clean and audit-ready.',
+    idealFor: 'Any business needing reliable accounting',
+    handles: [
+        'Daily transaction recording',
+        'Bank & credit card reconciliation',
+        'Accounts payable & receivable management',
+        'Month-end closing procedures',
+        'Financial statement preparation',
+    ]
+  },
+  {
+    id: 'business-setup',
+    title: 'Business Setup',
+    description: 'Launch your venture on a solid legal footing.',
+    details: 'We help Indian or foreign individuals and companies set up their business in India, providing end-to-end support with all applicable regulatory registrations and corporate structure decisions.',
+    idealFor: 'New entrepreneurs and foreign companies entering India',
+    handles: [
+        'Entity selection (Pvt Ltd, LLP, etc.)',
+        'Company incorporation & registration',
+        'PAN, TAN, and GST registration',
+        'Bank account opening assistance',
+        'Initial compliance setup',
+    ]
+  },
+  {
     id: 'gst',
     title: 'GST & Indirect Tax',
     description: 'Compliant by default. Optimized by design.',
@@ -117,7 +145,7 @@ export function ServicesClient() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container">
           <Tabs defaultValue={serviceSections[0].id} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto mb-12">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-auto mb-12">
               {serviceSections.map(service => (
                 <TabsTrigger
                   key={service.id}
