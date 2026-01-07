@@ -8,7 +8,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Loader2, MessageSquare, Send, X } from 'lucide-react';
 import { chat, ChatInput } from '@/ai/flows/chat';
 import { cn } from '@/lib/utils';
-import { Avatar, AvatarFallback } from '../ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
 type Message = {
   role: 'user' | 'model';
@@ -83,7 +83,7 @@ export default function Chatbot() {
                     >
                       {message.role === 'model' && (
                         <Avatar className="w-8 h-8">
-                           {/* LOGO GOES HERE */}
+                           <AvatarImage src="/nexa.jpg" alt="Nexa Consultancy Logo" />
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                       )}
@@ -107,6 +107,7 @@ export default function Chatbot() {
                   {isLoading && (
                      <div className="flex items-start gap-3 justify-start">
                         <Avatar className="w-8 h-8">
+                           <AvatarImage src="/nexa.jpg" alt="Nexa Consultancy Logo" />
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                         <div className="p-3 rounded-lg bg-muted">
