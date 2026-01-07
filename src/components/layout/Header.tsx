@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -25,7 +26,7 @@ export default function Header() {
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Nexa.png"
+            src="/Nexalogo.png"
             alt="Nexa Consultancy Logo"
             width={224}
             height={56}
@@ -74,7 +75,7 @@ export default function Header() {
                 <div onClick={() => setIsOpen(false)} className="mb-8">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/Nexa.png"
+                      src="/Nexalogo.png"
                       alt="Nexa Consultancy Logo"
                       width={224}
                       height={56}
