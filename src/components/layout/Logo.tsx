@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Logo({ variant = 'dark' }: { variant?: 'dark' | 'light' }) {
-  const logoSrc = variant === 'dark' ? '/logo.png' : '/logo-white.png';
+  const logoSrc = variant === 'dark' ? '/nexa.jpg' : '/logo-white.png';
   return (
     <Link href="/" className="flex items-center gap-2">
       <Image
