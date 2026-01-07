@@ -1,4 +1,4 @@
-import { ContactForm } from './ContactForm';
+
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import { LOCATIONS } from '@/lib/constants';
 
@@ -20,18 +20,10 @@ export default function ContactPage() {
       </section>
 
       <section className="container py-16 md:py-24">
-          <div className="grid md:grid-cols-5 gap-12">
-            <div className="md:col-span-3">
-              <h2 className="text-3xl font-bold text-primary mb-2">Request a Consultation</h2>
-              <p className="text-muted-foreground mb-8">
-                Fill out the form below and one of our advisors will contact you to schedule a discussion.
-              </p>
-              <ContactForm />
-            </div>
-            <div className="md:col-span-2">
+          <div className="max-w-4xl mx-auto">
               <div className="bg-muted/50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold text-primary mb-6">Our Offices</h3>
-                <ul className="space-y-6">
+                <h3 className="text-2xl font-bold text-primary mb-6 text-center">Our Offices & Information</h3>
+                <ul className="grid sm:grid-cols-2 gap-8">
                     {LOCATIONS.map(location => (
                         <li key={location.name} className="flex items-start">
                             <MapPin className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
@@ -54,16 +46,17 @@ export default function ContactPage() {
                             <a href="mailto:contact@nconsulting.com" className="text-sm text-foreground/80 hover:text-primary transition-colors">contact@nconsulting.com</a>
                         </div>
                     </li>
-                    <li className="flex items-start">
-                        <Clock className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
-                        <div>
-                            <h4 className="font-semibold">Business Hours</h4>
-                            <p className="text-sm text-foreground/80">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                    <li className="flex items-start col-span-1 sm:col-span-2 justify-center">
+                        <div className="flex items-start">
+                            <Clock className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
+                            <div>
+                                <h4 className="font-semibold">Business Hours</h4>
+                                <p className="text-sm text-foreground/80">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
               </div>
-            </div>
           </div>
       </section>
     </>

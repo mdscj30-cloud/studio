@@ -8,7 +8,8 @@ import Chatbot from '@/components/chatbot/Chatbot';
 export const metadata: Metadata = {
   title: 'Nexa Consultancy | Strategic Consulting for Startups',
   description: 'Nexa Consultancy provides expert consulting on strategy, finance, and operations to help startups scale and succeed.',
-  keywords: ['startup consulting', 'strategic advisory', 'financial consulting for startups', 'business strategy', 'Nexa Consultancy']
+  keywords: ['startup consulting', 'strategic advisory', 'financial consulting for startups', 'business strategy', 'Nexa Consultancy'],
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({

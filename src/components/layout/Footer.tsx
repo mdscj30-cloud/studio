@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
 import { Linkedin, Twitter, MapPin } from 'lucide-react';
-import { RequestConsultation } from './RequestConsultation';
+import { Button } from '../ui/button';
 
 export default function Footer() {
   const legalLinks = [
@@ -12,7 +12,19 @@ export default function Footer() {
 
   return (
     <>
-      <RequestConsultation />
+      <section className="bg-muted/50 py-16 md:py-24 -mx-container-padding px-container-padding">
+        <div className="container">
+            <div className="max-w-3xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-primary">Ready to discuss your startup's future?</h2>
+                <p className="text-muted-foreground mt-2 max-w-lg mx-auto mb-6">
+                    Request a confidential, no-obligation consultation with our experts.
+                </p>
+                <Button asChild variant="accent" size="lg">
+                    <Link href="/contact">Get In Touch</Link>
+                </Button>
+            </div>
+        </div>
+      </section>
       <footer className="bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
         <div className="container py-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">

@@ -2,56 +2,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { findImage } from '@/lib/constants';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
-import { useState } from 'react';
-import { handleHeroFormSubmission } from './actions';
-import { useToast } from '@/hooks/use-toast';
-import { Loader2 } from 'lucide-react';
-
-const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-});
-
 
 export default function Hero() {
-  const { toast } = useToast();
-  const [isLoading, setIsLoading] = useState(false);
   const heroImage = findImage('hero-background-2');
-
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: '',
-      email: '',
-    },
-  });
-
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsLoading(true);
-    const result = await handleHeroFormSubmission(values);
-    setIsLoading(false);
-
-    if (result.success) {
-      toast({
-        title: "Inquiry Sent!",
-        description: "Thank you for your interest. We will be in touch shortly.",
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Submission Failed",
-        description: result.message || "An unexpected error occurred. Please try again.",
-      });
-    }
-  }
 
   return (
     <section className="relative w-full overflow-hidden bg-background">
@@ -66,64 +21,16 @@ export default function Hero() {
                 data-ai-hint={heroImage.imageHint}
             />
         )}
-        <div className="relative z-10 text-left">
+        <div className="relative z-10 text-left md:col-span-2 text-center">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-primary">
               Strategic Guidance for Ambitious Startups
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               We provide the expert advice and hands-on support you need to navigate challenges, accelerate growth, and achieve your vision.
             </p>
             <Button size="lg" asChild variant="accent">
                 <Link href="/contact">Request a Consultation</Link>
             </Button>
-        </div>
-        <div className="relative z-10">
-            <Card className="max-w-md mx-auto bg-card/80 backdrop-blur-sm border-primary/20">
-                <CardHeader>
-                    <CardTitle className="text-primary">Partner with Us</CardTitle>
-                    <CardDescription>Fill out the form to start a conversation about your startup's future.</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                        <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                            <FormItem>
-                                <FormControl>
-                                <Input placeholder="Your Name" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="email"
-                            render={({ field }) => (
-                            <FormItem>
-                                <FormControl>
-                                <Input placeholder="Your Business Email" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                            )}
-                        />
-                        <Button type="submit" className="w-full" variant="accent" disabled={isLoading}>
-                           {isLoading ? (
-                            <>
-                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                              Submitting...
-                            </>
-                          ) : (
-                            'Submit'
-                          )}
-                        </Button>
-                        </form>
-                    </Form>
-                </CardContent>
-            </Card>
         </div>
       </div>
     </section>
