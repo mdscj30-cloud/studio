@@ -9,6 +9,7 @@ import { Loader2, MessageSquare, Send, X } from 'lucide-react';
 import { chat, ChatInput } from '@/ai/flows/chat';
 import { cn } from '@/lib/utils';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import Image from 'next/image';
 
 type Message = {
   role: 'user' | 'model';
@@ -83,7 +84,7 @@ export default function Chatbot() {
                     >
                       {message.role === 'model' && (
                         <Avatar className="w-8 h-8">
-                           <AvatarImage src="/nexa.jpg" alt="Nexa Consultancy Logo" />
+                           <AvatarImage src="/Nexa.png" alt="Nexa Consultancy Logo" />
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                       )}
@@ -107,7 +108,7 @@ export default function Chatbot() {
                   {isLoading && (
                      <div className="flex items-start gap-3 justify-start">
                         <Avatar className="w-8 h-8">
-                           <AvatarImage src="/nexa.jpg" alt="Nexa Consultancy Logo" />
+                           <AvatarImage src="/Nexa.png" alt="Nexa Consultancy Logo" />
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                         <div className="p-3 rounded-lg bg-muted">

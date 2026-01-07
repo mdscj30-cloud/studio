@@ -32,7 +32,7 @@ export default function Footer() {
               <div className="mb-4">
                 <Link href="/" className="flex items-center gap-2">
                   <Image
-                    src="/Nexa.jpg"
+                    src="/Nexa.png"
                     alt="Nexa Consultancy Logo"
                     width={192}
                     height={48}
