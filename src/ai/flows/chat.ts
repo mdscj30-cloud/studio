@@ -33,7 +33,7 @@ const chatPrompt = ai.definePrompt({
   input: { schema: ChatInputSchema },
   output: { schema: ChatOutputSchema },
   model: 'googleai/gemini-pro',
-  prompt: `You are a friendly and helpful customer support assistant for N consulting, a firm that provides strategic consulting for startups.
+  prompt: `You are a friendly and helpful customer support assistant for Nexa Consultancy, a firm that provides strategic consulting for startups.
 
 Your goal is to answer user questions about the company, its services, and provide support. Be concise and helpful.
 

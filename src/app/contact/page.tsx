@@ -3,8 +3,8 @@ import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import { LOCATIONS } from '@/lib/constants';
 
 export const metadata = {
-  title: 'Contact Us | N consulting',
-  description: 'Request a consultation to discuss how N consulting can help your startup achieve its goals.',
+  title: 'Contact Us | Nexa Consultancy',
+  description: 'Request a consultation to discuss how Nexa Consultancy can help your startup achieve its goals.',
 };
 
 export default function ContactPage() {

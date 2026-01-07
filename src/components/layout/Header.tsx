@@ -17,7 +17,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
-            <span className="font-bold text-lg text-primary">N consulting</span>
+            <span className="font-bold text-lg text-primary">Nexa Consultancy</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -49,18 +49,14 @@ export default function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] px-0">
-                <SheetHeader className="p-6 flex-row justify-between items-center space-y-0 mb-2">
-                    <SheetTitle className='sr-only'>Navigation Menu</SheetTitle>
-                    <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-                        <span className="font-bold text-lg text-primary">N consulting</span>
-                    </Link>
-                    <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-                        <X className="h-6 w-6" />
-                        <span className="sr-only">Close Menu</span>
-                    </Button>
-                </SheetHeader>
-              <div className="px-6">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetHeader>
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              </SheetHeader>
+              <div className="p-6">
+                <Link href="/" className="flex items-center mb-8" onClick={() => setIsOpen(false)}>
+                    <span className="font-bold text-lg text-primary">Nexa Consultancy</span>
+                </Link>
                 <nav className="flex flex-col space-y-4">
                     {NAV_LINKS.map((link) => (
                     <Link

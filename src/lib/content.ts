@@ -72,7 +72,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Focus on Ratios:</strong> Individual metrics are useful, but ratios like LTV:CAC provide the most strategic insight into the health and scalability of your business.</li>
     <li><strong>Tell Your Story:</strong> When speaking with investors, use these metrics to build a compelling narrative about your growth, efficiency, and long-term potential.</li>
   </ul>
-  <p>At N consulting, we specialize in helping SaaS founders move beyond the numbers to build robust financial strategies. From setting up your metrics dashboard to crafting your fundraising narrative, we provide the expertise you need to turn data into a competitive advantage.</p>
+  <p>At Nexa Consultancy, we specialize in helping SaaS founders move beyond the numbers to build robust financial strategies. From setting up your metrics dashboard to crafting your fundraising narrative, we provide the expertise you need to turn data into a competitive advantage.</p>
 </article>
 `
   },
@@ -146,7 +146,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Leverage the Sandbox:</strong> The RBI's Regulatory Sandbox provides a framework for testing innovative products in a live but controlled environment without the full burden of regulations. This is an excellent way to validate your model before a full-scale launch.</li>
     <li><strong>Stay Informed:</strong> Regulations are not static. The RBI and other bodies regularly issue new circulars and guidelines. Subscribe to updates, join industry forums, and make compliance an ongoing part of your business operations.</li>
   </ol>
-  <p>Building a FinTech in India is a marathon, not a sprint. While speed and innovation are crucial, a strong foundation of compliance is what will ultimately determine your longevity and success. At N consulting, we help FinTech founders navigate this complex maze, ensuring their innovative ideas are built on a rock-solid regulatory foundation.</p>
+  <p>Building a FinTech in India is a marathon, not a sprint. While speed and innovation are crucial, a strong foundation of compliance is what will ultimately determine your longevity and success. At Nexa Consultancy, we help FinTech founders navigate this complex maze, ensuring their innovative ideas are built on a rock-solid regulatory foundation.</p>
 </article>
 `
   },
@@ -216,7 +216,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Line of Credit:</strong> A flexible solution from a bank that allows you to draw cash as needed up to a certain limit. Ideal for managing seasonal inventory peaks.</li>
     <li><strong>Revenue-Based Financing:</strong> A modern financing option where you receive a lump sum of cash in exchange for a percentage of your future daily or weekly revenue. It's fast, flexible, and doesn't require personal guarantees or equity dilution.</li>
   </ul>
-  <p>Managing e-commerce cash flow is an ongoing process of analysis, optimization, and strategic decision-making. By implementing these strategies, you move from being reactive to proactive, building a business that not only survives but thrives. At N consulting, our virtual CFO services for e-commerce businesses are designed to give you the financial clarity and strategic guidance needed to turn your cash flow into a powerful engine for growth.</p>
+  <p>Managing e-commerce cash flow is an ongoing process of analysis, optimization, and strategic decision-making. By implementing these strategies, you move from being reactive to proactive, building a business that not only survives but thrives. At Nexa Consultancy, our virtual CFO services for e-commerce businesses are designed to give you the financial clarity and strategic guidance needed to turn your cash flow into a powerful engine for growth.</p>
 </article>
 `
   },
@@ -299,7 +299,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Pro-rata Rights:</strong> The right for an investor to maintain their percentage ownership in future funding rounds.</li>
   </ul>
   <p><strong>Always have a good lawyer review your term sheet.</strong> The details here will have long-lasting implications for your company.</p>
-  <p>Fundraising is a grueling but ultimately rewarding process. A successful fundraise is not the end goal; it's the fuel that allows you to continue building your vision. At N consulting, we partner with founders throughout this journey, from refining your financial model to navigating term sheet negotiations, ensuring you are in the strongest possible position to succeed.</p>
+  <p>Fundraising is a grueling but ultimately rewarding process. A successful fundraise is not the end goal; it's the fuel that allows you to continue building your vision. At Nexa Consultancy, we partner with founders throughout this journey, from refining your financial model to navigating term sheet negotiations, ensuring you are in the strongest possible position to succeed.</p>
 </article>
 `
   },
@@ -361,7 +361,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Fundraising Strategy:</strong> Modeling future rounds allows you to set fundraising goals. You can see how much you need to grow the company's valuation to offset the dilution from raising more capital.</li>
     <li><strong>Investor Relations:</strong> A clean, professional cap table managed on a dedicated platform signals to investors that you are a sophisticated founder who understands the financial mechanics of building a company.</li>
   </ul>
-  <p>Your cap table is more than an administrative burden; it's a foundational element of your startup's financial health. By giving it the attention it deserves from the very beginning, you build a solid foundation for growth, avoid costly mistakes, and maintain strategic control over your company's destiny. At N consulting, we help founders set up and manage their cap tables, ensuring they have the clarity and tools needed to make the best decisions for their company's future.</p>
+  <p>Your cap table is more than an administrative burden; it's a foundational element of your startup's financial health. By giving it the attention it deserves from the very beginning, you build a solid foundation for growth, avoid costly mistakes, and maintain strategic control over your company's destiny. At Nexa Consultancy, we help founders set up and manage their cap tables, ensuring they have the clarity and tools needed to make the best decisions for their company's future.</p>
 </article>
 `
   },
@@ -433,8 +433,8 @@ export const DETAILED_CASE_STUDIES = [
     <li><strong>Founder Burnout:</strong> The founders were bogged down in day-to-day financial management instead of focusing on growth.</li>
   </ul>
   
-  <h3>The Solution: N consulting's Virtual CFO Engagement</h3>
-  <p>QuantumLeap engaged N consulting for our Virtual CFO services. Our goal was to transform their finance function from a reactive administrative burden into a proactive, strategic engine for growth. Our engagement was structured in three phases:</p>
+  <h3>The Solution: Nexa Consultancy's Virtual CFO Engagement</h3>
+  <p>QuantumLeap engaged Nexa Consultancy for our Virtual CFO services. Our goal was to transform their finance function from a reactive administrative burden into a proactive, strategic engine for growth. Our engagement was structured in three phases:</p>
 
   <h4>Phase 1: Diagnosis and Stabilization (Months 1-3)</h4>
   <p>Our first priority was to get a clear picture of the company's financial health and stabilize the immediate cash flow crisis.</p>
@@ -469,7 +469,7 @@ export const DETAILED_CASE_STUDIES = [
     <li><strong>Reduced Cash Conversion Cycle:</strong> The CCC was reduced from 65 days to under 30 days, creating a sustainable working capital cycle.</li>
     <li><strong>Founder Time Reclaimed:</strong> The founders were able to reclaim over 20 hours per week, shifting their focus from financial administration to strategic growth and customer relationships.</li>
   </ul>
-  <p>The QuantumLeap Logistics story is a testament to the power of strategic financial management. By partnering with N consulting, they transformed their finance function from a liability into a core competitive advantage, enabling them to achieve their ambitious growth targets and solidify their position as a leader in the logistics tech space.</p>
+  <p>The QuantumLeap Logistics story is a testament to the power of strategic financial management. By partnering with Nexa Consultancy, they transformed their finance function from a liability into a core competitive advantage, enabling them to achieve their ambitious growth targets and solidify their position as a leader in the logistics tech space.</p>
 </article>
 `
   },
@@ -497,7 +497,7 @@ export const DETAILED_CASE_STUDIES = [
   </ul>
   
   <h3>The Solution: A Fundraising-as-a-Service Engagement</h3>
-  <p>InnovateX engaged N consulting to manage their fundraising process from end to end. We acted as their interim strategic finance team, focusing on positioning the company for a successful Series A.</p>
+  <p>InnovateX engaged Nexa Consultancy to manage their fundraising process from end to end. We acted as their interim strategic finance team, focusing on positioning the company for a successful Series A.</p>
 
   <h4>Phase 1: Building the Foundation (Weeks 1-4)</h4>
   <p>We started by rebuilding their investment materials from the ground up, focusing on telling a story that would resonate with VCs.</p>
@@ -524,14 +524,14 @@ export const DETAILED_CASE_STUDIES = [
   </ul>
 
   <h3>The Results: A Successful Series A and a Foundation for Growth</h3>
-  <p>N consulting's structured approach completely changed the trajectory of InnovateX's fundraising efforts.</p>
+  <p>Nexa Consultancy's structured approach completely changed the trajectory of InnovateX's fundraising efforts.</p>
   <ul>
     <li><strong>Successful ₹40 Crore Series A:</strong> InnovateX closed a ₹40 crore Series A round led by a top-tier B2B SaaS investor.</li>
     <li><strong>Favorable Terms:</strong> The founders secured a deal with a clean 1x, non-participating liquidation preference and retained significant control of the company and board.</li>
     <li><strong>Efficient Process:</strong> The entire fundraising process was completed in just 16 weeks, from engagement to money in the bank.</li>
     <li><strong>Founder Empowerment:</strong> The founders emerged from the process not only with capital but with a deep understanding of their financials and the confidence to lead their company through its next phase of growth.</li>
   </ul>
-  <p>By partnering with N consulting, InnovateX was able to successfully translate their product vision into a compelling investment opportunity. Our a-la-carte services in pitch deck creation, financial modeling, and due diligence support provided the strategic financial layer they needed to close their round and accelerate their mission.</p>
+  <p>By partnering with Nexa Consultancy, InnovateX was able to successfully translate their product vision into a compelling investment opportunity. Our a-la-carte services in pitch deck creation, financial modeling, and due diligence support provided the strategic financial layer they needed to close their round and accelerate their mission.</p>
 </article>
 `
   },
@@ -559,7 +559,7 @@ export const DETAILED_CASE_STUDIES = [
   </ul>
   
   <h3>The Solution: An Integrated Finance and Compliance Strategy</h3>
-  <p>MediBot engaged N consulting for a unique blend of our Virtual CFO and Regulatory Compliance services. Our approach was to build an integrated strategy where the financial plan and the regulatory roadmap informed each other.</p>
+  <p>MediBot engaged Nexa Consultancy for a unique blend of our Virtual CFO and Regulatory Compliance services. Our approach was to build an integrated strategy where the financial plan and the regulatory roadmap informed each other.</p>
 
   <h4>Phase 1: Mapping the Journey (Months 1-4)</h4>
   <p>We began by creating a detailed, milestone-driven plan that covered both regulatory and financial tracks.</p>
@@ -593,7 +593,7 @@ export const DETAILED_CASE_STUDIES = [
     <li><strong>Maintained Investor Confidence:</strong> Transparent, milestone-driven reporting kept investors engaged and supportive throughout the long R&D phase, making a follow-on funding round a smooth process.</li>
     <li><strong>Profitability Achieved:</strong> MediBot reached operational profitability within two years of commercial launch, a remarkable achievement in the HealthTech industry.</li>
   </ul>
-  <p>MediBot's journey highlights the critical need for a specialized, integrated approach in the HealthTech sector. By combining deep regulatory expertise with strategic financial management, N consulting provided the foundation MediBot needed to turn a life-saving technology into a commercially successful and compliant business.</p>
+  <p>MediBot's journey highlights the critical need for a specialized, integrated approach in the HealthTech sector. By combining deep regulatory expertise with strategic financial management, Nexa Consultancy provided the foundation MediBot needed to turn a life-saving technology into a commercially successful and compliant business.</p>
 </article>
 `
   },
@@ -621,7 +621,7 @@ export const DETAILED_CASE_STUDIES = [
   </ul>
   
   <h3>The Solution: Building a Financial Foundation for a D2C Brand</h3>
-  <p>Urban Roots engaged N consulting to bring order to their financial chaos. We focused on implementing the fundamental systems and reporting necessary to run a modern D2C business effectively.</p>
+  <p>Urban Roots engaged Nexa Consultancy to bring order to their financial chaos. We focused on implementing the fundamental systems and reporting necessary to run a modern D2C business effectively.</p>
 
   <h4>Phase 1: Clean-Up and System Implementation (Months 1-2)</h4>
   <p>The first step was to move away from spreadsheets and build a single source of truth.</p>
@@ -655,7 +655,7 @@ export const DETAILED_CASE_STUDIES = [
     <li><strong>15% Improvement in Gross Margin:</strong> Strategic pricing adjustments and a focus on profitable channels led to a direct improvement in the bottom line.</li>
     <li><strong>90% Reduction in Time Spent on Financial Admin:</strong> Automation of bookkeeping and reconciliation freed the founder to focus on product development, brand building, and customer engagement.</li>
   </ul>
-  <p>The Urban Roots story shows that for a D2C brand, operational excellence is just as important as a great product. By implementing robust bookkeeping, inventory management, and reporting systems, N consulting provided the financial clarity and control the founder needed to take her brand to the next level.</p>
+  <p>The Urban Roots story shows that for a D2C brand, operational excellence is just as important as a great product. By implementing robust bookkeeping, inventory management, and reporting systems, Nexa Consultancy provided the financial clarity and control the founder needed to take her brand to the next level.</p>
 </article>
 `
   }

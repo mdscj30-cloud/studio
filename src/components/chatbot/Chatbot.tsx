@@ -20,7 +20,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'model',
-      content: "Hello! I'm the support assistant for N consulting. How can I help you today?",
+      content: "Hello! I'm the support assistant for Nexa Consultancy. How can I help you today?",
     },
   ]);
   const [input, setInput] = useState('');
@@ -68,7 +68,7 @@ export default function Chatbot() {
           <Card className="w-[350px] h-[500px] flex flex-col shadow-2xl">
             <CardHeader>
               <CardTitle className='text-primary'>Support Assistant</CardTitle>
-              <CardDescription>Ask me anything about N consulting.</CardDescription>
+              <CardDescription>Ask me anything about Nexa Consultancy.</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow overflow-hidden">
               <ScrollArea className="h-full pr-4">

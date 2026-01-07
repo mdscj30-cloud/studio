@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="container py-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
-              <h3 className="text-xl font-bold mb-4 text-white">N consulting</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Nexa Consultancy</h3>
               <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
                 Strategic consulting to help startups navigate challenges and achieve sustainable growth.
               </p>
@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="bg-black/20">
           <div className="container py-4 flex flex-col md:flex-row justify-between items-center text-left">
             <p className="text-sm text-primary-foreground/70 mb-4 md:mb-0">
-              © {new Date().getFullYear()} N consulting. All Rights Reserved.
+              © {new Date().getFullYear()} Nexa Consultancy. All Rights Reserved.
             </p>
           </div>
         </div>

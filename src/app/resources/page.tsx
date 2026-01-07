@@ -4,7 +4,7 @@ import { BookOpen, Library } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Resources | N consulting',
+  title: 'Resources | Nexa Consultancy',
   description: 'Explore our insights, case studies, and articles on startup strategy, finance, and growth.',
 };
 

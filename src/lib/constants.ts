@@ -253,7 +253,7 @@ const artfulLivingImg = PlaceHolderImages.find(img => img.id === 'testimonial-ar
 
 export const TESTIMONIALS = [
   {
-    quote: "Their team's expertise in market analysis was crucial for our product launch. N consulting delivered results beyond our expectations.",
+    quote: "Their team's expertise in market analysis was crucial for our product launch. Nexa Consultancy delivered results beyond our expectations.",
     company: 'A VR/AR experiential platform.',
     name: 'Rohan M.',
     title: 'CEO | FutureVerse',
@@ -261,7 +261,7 @@ export const TESTIMONIALS = [
     avatarHint: futureVerseImg?.imageHint || '',
   },
   {
-    quote: 'With N consulting, we optimized our supply chain and cut operational costs by 20%. Their impact was immediate and significant.',
+    quote: 'With Nexa Consultancy, we optimized our supply chain and cut operational costs by 20%. Their impact was immediate and significant.',
     company: 'An AI-driven logistics optimization startup.',
     name: 'Aisha K.',
     title: 'COO | QuantumLeap Logistics',
@@ -277,7 +277,7 @@ export const TESTIMONIALS = [
     avatarHint: bioGenImg?.imageHint || '',
   },
    {
-    quote: "Navigating international regulations was a major hurdle. N consulting's legal team made the process seamless and efficient.",
+    quote: "Navigating international regulations was a major hurdle. Nexa Consultancy's legal team made the process seamless and efficient.",
     company: 'A travel-tech startup for personalized itineraries.',
     name: 'Priya S.',
     title: 'Founder | TravelWise',
@@ -294,7 +294,7 @@ export const TESTIMONIALS = [
     avatarHint: ecoSolutionsImg?.imageHint || '',
   },
   {
-    quote: "N consulting's brand strategy and marketing plan gave us the clarity we needed to connect with our target audience effectively.",
+    quote: "Nexa Consultancy's brand strategy and marketing plan gave us the clarity we needed to connect with our target audience effectively.",
     company: 'An online marketplace for independent artists.',
     name: 'Sameer V.',
     title: 'Founder | Artful Living',

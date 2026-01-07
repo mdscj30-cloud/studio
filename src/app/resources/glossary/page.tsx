@@ -3,7 +3,7 @@ import { Glossary } from '@/components/resources/Glossary';
 import { Library } from 'lucide-react';
 
 export const metadata = {
-  title: 'Financial Glossary | N consulting',
+  title: 'Financial Glossary | Nexa Consultancy',
   description: 'A comprehensive glossary of terms related to accounting, tax, finance, and startups for founders and business owners.',
 };
 

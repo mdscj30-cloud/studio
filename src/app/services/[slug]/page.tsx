@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${service.title} | N consulting`,
+    title: `${service.title} | Nexa Consultancy`,
     description: service.description,
   };
 }
@@ -57,7 +57,7 @@ export default function ServiceDetailPage({ params }: Props) {
                 <div className="prose lg:prose-lg max-w-4xl mx-auto">
                   <h2 className="text-3xl font-bold text-primary mb-4">Service Details</h2>
                   <p>More detailed information about the {service.title} service will go here. This can include key features, benefits, case studies, or methodologies related to this specific offering. For now, this is placeholder content demonstrating the structure of a service detail page.</p>
-                  <p>N consulting provides comprehensive {service.title} to help your startup achieve its goals. Our expert team works closely with you to develop tailored solutions that drive results.</p>
+                  <p>Nexa Consultancy provides comprehensive {service.title} to help your startup achieve its goals. Our expert team works closely with you to develop tailored solutions that drive results.</p>
               </div>
         </section>
       </div>

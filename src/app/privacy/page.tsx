@@ -2,8 +2,8 @@
 import { Shield } from 'lucide-react';
 
 export const metadata = {
-  title: 'Privacy Policy | N consulting',
-  description: 'Learn how N consulting collects, uses, and protects your personal data when you use our website and services.',
+  title: 'Privacy Policy | Nexa Consultancy',
+  description: 'Learn how Nexa Consultancy collects, uses, and protects your personal data when you use our website and services.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
         <div className="prose lg:prose-lg max-w-4xl mx-auto">
             <p className="lead text-lg text-muted-foreground">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
             
-            <p>N consulting ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+            <p>Nexa Consultancy ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
 
             <h2>1. Information We Collect</h2>
             <p>We may collect information about you in a variety of ways. The information we may collect on the Site includes:</p>
@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
             <h2>8. Contact Us</h2>
             <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
             <p>
-                <strong>N consulting</strong><br />
+                <strong>Nexa Consultancy</strong><br />
                 Email: <a href="mailto:privacy@nconsulting.com">privacy@nconsulting.com</a>
             </p>
         </div>

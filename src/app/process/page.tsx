@@ -2,7 +2,7 @@ import { VerticalTimeline } from '@/components/process/VerticalTimeline';
 import { Lightbulb } from 'lucide-react';
 
 export const metadata = {
-  title: 'Our Process | N consulting',
+  title: 'Our Process | Nexa Consultancy',
   description: 'A structured path to unlock your startup\'s full potential.',
 };
 

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${post.title} | N consulting`,
+    title: `${post.title} | Nexa Consultancy`,
     description: post.summary,
   };
 }

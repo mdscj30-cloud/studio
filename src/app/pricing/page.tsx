@@ -3,7 +3,7 @@ import { PricingClient } from './PricingClient';
 import { DollarSign } from 'lucide-react';
 
 export const metadata = {
-  title: 'Pricing Plans | N consulting',
+  title: 'Pricing Plans | Nexa Consultancy',
   description: 'Find the perfect plan for your startup. Transparent pricing for SaaS, E-commerce, FinTech, and HealthTech industries.',
 };
 
