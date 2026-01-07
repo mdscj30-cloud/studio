@@ -4,7 +4,6 @@ import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
 import { Linkedin, Twitter, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import Logo from './Logo';
 
 export default function Footer() {
   const legalLinks = [
@@ -32,7 +31,15 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
               <div className="mb-4">
-                <Logo variant="light" />
+                <Link href="/" className="flex items-center gap-2">
+                  <Image
+                    src="/logo-white.png"
+                    alt="Nexa Consultancy Logo"
+                    width={40}
+                    height={40}
+                    className="h-10 w-auto"
+                  />
+                </Link>
               </div>
               <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
                 Strategic consulting to help startups navigate challenges and achieve sustainable growth.
