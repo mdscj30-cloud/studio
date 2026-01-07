@@ -30,9 +30,8 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
               <div className="mb-4">
-                <Link href="/" className="flex items-center gap-2">
-                  <span className="font-bold text-xl text-white">Nexa Consultancy</span>
-                </Link>
+                <div className="flex items-center gap-2">
+                </div>
               </div>
               <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
                 Strategic consulting to help startups navigate challenges and achieve sustainable growth.
