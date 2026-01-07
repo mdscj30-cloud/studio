@@ -11,9 +11,6 @@ export default function Logo() {
         height={40}
         className="h-10 w-auto"
       />
-      <span className="text-xl font-bold text-primary hidden sm:inline-block">
-        Nexa Consultancy
-      </span>
     </Link>
   );
 }
