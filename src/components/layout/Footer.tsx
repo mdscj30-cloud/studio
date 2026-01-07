@@ -31,6 +31,7 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
               <div className="mb-4">
                 <div className="flex items-center gap-2">
+                  {/* LOGO GOES HERE */}
                 </div>
               </div>
               <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">

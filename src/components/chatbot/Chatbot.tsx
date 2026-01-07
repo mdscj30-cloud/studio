@@ -83,6 +83,7 @@ export default function Chatbot() {
                     >
                       {message.role === 'model' && (
                         <Avatar className="w-8 h-8">
+                           {/* LOGO GOES HERE */}
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                       )}

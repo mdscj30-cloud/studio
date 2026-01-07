@@ -22,8 +22,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
-        </div>
+        <Link href="/" className="flex items-center gap-2">
+          {/* LOGO GOES HERE */}
+        </Link>
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {NAV_LINKS.map((link) => (
@@ -64,6 +65,7 @@ export default function Header() {
               <div className="p-6">
                 <div onClick={() => setIsOpen(false)} className="mb-8">
                   <div className="flex items-center gap-2">
+                    {/* LOGO GOES HERE */}
                   </div>
                 </div>
                 <nav className="flex flex-col space-y-4">
