@@ -11,6 +11,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetTrigger,
 } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
