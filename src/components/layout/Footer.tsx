@@ -33,7 +33,7 @@ export default function Footer() {
                 <Link href="/" className="flex items-center gap-2">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/logo-white.png"
+                    src={`/logo-white.png?t=${new Date().getTime()}`}
                     alt="Nexa Consultancy Logo"
                     className="h-10 w-auto"
                   />

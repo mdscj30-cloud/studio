@@ -25,7 +25,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/nexa.jpg"
+            src={`/nexa.jpg?t=${new Date().getTime()}`}
             alt="Nexa Consultancy Logo"
             className="h-10 w-auto"
           />
@@ -72,7 +72,7 @@ export default function Header() {
                   <Link href="/" className="flex items-center gap-2">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/nexa.jpg"
+                      src={`/nexa.jpg?t=${new Date().getTime()}`}
                       alt="Nexa Consultancy Logo"
                       className="h-10 w-auto"
                     />
