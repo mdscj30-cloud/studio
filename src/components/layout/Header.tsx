@@ -14,7 +14,6 @@ import {
 } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,24 +83,21 @@ export default function Header() {
                     <Link
                       key={link.href}
                       href={link.href}
-                      onClick={() => setIsOpen(false)}
                       className={cn(
                         'text-lg font-medium transition-colors hover:text-primary',
-                        pathname === link.href ||
-                          (link.href !== '/' && pathname.startsWith(link.href))
-                          ? 'text-primary'
-                          : 'text-foreground/80'
+                        pathname === link.href ? 'text-primary' : 'text-foreground/60'
                       )}
+                      onClick={() => setIsOpen(false)}
                     >
                       {link.label}
                     </Link>
                   ))}
-                  <Button asChild className="mt-4" variant="accent">
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>
-                      Request a Consultation
-                    </Link>
-                  </Button>
                 </nav>
+                <div className="mt-8">
+                    <Link href="/contact" onClick={() => setIsOpen(false)}>
+                        <Button variant="accent" className="w-full">Request a Consultation</Button>
+                    </Link>
+                </div>
               </div>
             </SheetContent>
           </Sheet>
