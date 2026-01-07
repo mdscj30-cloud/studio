@@ -24,7 +24,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nexa.jpg" alt="Nexa Consultancy Logo" className="h-10 w-auto" />
+          <img src="/Nexa.jpg" alt="Nexa Consultancy Logo" className="h-10 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -67,7 +67,7 @@ export default function Header() {
                 <div onClick={() => setIsOpen(false)} className="mb-8">
                   <div className="flex items-center gap-2">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/nexa.jpg" alt="Nexa Consultancy Logo" className="h-10 w-auto" />
+                    <img src="/Nexa.jpg" alt="Nexa Consultancy Logo" className="h-10 w-auto" />
                   </div>
                 </div>
                 <nav className="flex flex-col space-y-4">
