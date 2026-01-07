@@ -22,14 +22,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/Nexa.jpg"
             alt="Nexa Consultancy Logo"
-            width={160}
-            height={48}
-            className="h-12 w-auto"
+            width={224}
+            height={56}
+            className="h-14 w-auto"
             priority
           />
         </Link>
@@ -76,9 +76,9 @@ export default function Header() {
                     <Image
                       src="/Nexa.jpg"
                       alt="Nexa Consultancy Logo"
-                      width={160}
-                      height={48}
-                      className="h-12 w-auto"
+                      width={224}
+                      height={56}
+                      className="h-14 w-auto"
                     />
                   </div>
                 </div>
