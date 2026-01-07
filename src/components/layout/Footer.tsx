@@ -32,11 +32,10 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
               <div className="mb-4">
                 <Link href="/" className="flex items-center gap-2">
-                  <Image
+                   {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src="/logo-white.png"
                     alt="Nexa Consultancy Logo"
-                    width={120}
-                    height={40}
                     className="h-10 w-auto"
                   />
                 </Link>

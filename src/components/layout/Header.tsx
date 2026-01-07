@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
@@ -24,13 +24,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/nexa.jpg"
             alt="Nexa Consultancy Logo"
-            width={120}
-            height={40}
             className="h-10 w-auto"
-            priority
           />
         </Link>
 
@@ -73,11 +71,10 @@ export default function Header() {
               <div className="p-6">
                 <div onClick={() => setIsOpen(false)} className="mb-8">
                   <Link href="/" className="flex items-center gap-2">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src="/nexa.jpg"
                       alt="Nexa Consultancy Logo"
-                      width={120}
-                      height={40}
                       className="h-10 w-auto"
                     />
                   </Link>
