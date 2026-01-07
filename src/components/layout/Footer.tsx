@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
 import { Linkedin, Twitter, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
-import Image from 'next/image';
 
 export default function Footer() {
   const legalLinks = [
@@ -32,12 +31,7 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
               <div className="mb-4">
                 <Link href="/" className="flex items-center gap-2">
-                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/logo-white.png"
-                    alt="Nexa Consultancy Logo"
-                    className="h-10 w-auto"
-                  />
+                  <span className="font-bold text-xl text-white">Nexa Consultancy</span>
                 </Link>
               </div>
               <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">

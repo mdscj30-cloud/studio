@@ -14,7 +14,6 @@ import {
 } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +23,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/nexa.jpg"
-            alt="Nexa Consultancy Logo"
-            className="h-10 w-auto"
-          />
+          <span className="font-bold text-lg text-primary">Nexa Consultancy</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -71,12 +65,7 @@ export default function Header() {
               <div className="p-6">
                 <div onClick={() => setIsOpen(false)} className="mb-8">
                   <Link href="/" className="flex items-center gap-2">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/nexa.jpg"
-                      alt="Nexa Consultancy Logo"
-                      className="h-10 w-auto"
-                    />
+                    <span className="font-bold text-lg text-primary">Nexa Consultancy</span>
                   </Link>
                 </div>
                 <nav className="flex flex-col space-y-4">
