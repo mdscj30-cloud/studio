@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
 import { Linkedin, Twitter, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
+import Image from 'next/image';
 
 export default function Footer() {
   const legalLinks = [
@@ -29,7 +30,10 @@ export default function Footer() {
         <div className="container py-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
             <div className="col-span-2 md:col-span-2 flex flex-col items-start">
-              <h3 className="text-xl font-bold mb-4 text-white">Nexa Consultancy</h3>
+              <Link href="/" className="flex items-center gap-2 mb-4">
+                  <Image src="/logo-white.png" alt="Nexa Consultancy Logo" width={40} height={40} />
+                  <span className="text-xl font-bold text-white">Nexa Consultancy</span>
+              </Link>
               <p className="text-sm text-primary-foreground/80 max-w-xs mb-4">
                 Strategic consulting to help startups navigate challenges and achieve sustainable growth.
               </p>

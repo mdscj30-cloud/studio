@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
+import Logo from './Logo';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +23,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center text-2xl font-bold text-primary">
-          Nexa Consultancy
-        </Link>
+        <Logo />
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {NAV_LINKS.map((link) => (
@@ -64,13 +62,9 @@ export default function Header() {
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               </SheetHeader>
               <div className="p-6">
-                <Link
-                  href="/"
-                  className="flex items-center mb-8 text-2xl font-bold text-primary"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Nexa Consultancy
-                </Link>
+                <div onClick={() => setIsOpen(false)} className="mb-8">
+                  <Logo />
+                </div>
                 <nav className="flex flex-col space-y-4">
                   {NAV_LINKS.map((link) => (
                     <Link
