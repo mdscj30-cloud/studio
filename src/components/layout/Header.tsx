@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
-            <span className="font-bold text-lg text-primary">Nexa Consultancy</span>
+            <Image src="/logo.png" alt="Nexa Consultancy Logo" width={150} height={40} priority />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -55,7 +56,7 @@ export default function Header() {
               </SheetHeader>
               <div className="p-6">
                 <Link href="/" className="flex items-center mb-8" onClick={() => setIsOpen(false)}>
-                    <span className="font-bold text-lg text-primary">Nexa Consultancy</span>
+                    <Image src="/logo.png" alt="Nexa Consultancy Logo" width={150} height={40} priority />
                 </Link>
                 <nav className="flex flex-col space-y-4">
                     {NAV_LINKS.map((link) => (
