@@ -3,7 +3,7 @@ import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
 import { NAV_LINKS, SERVICES } from '@/lib/constants'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = 'https://www.nconsulting.com'
+  const siteUrl = 'https://nexaconsultancy.com'
 
   const staticPages = NAV_LINKS
     .filter(link => !link.href.includes('#')) // Exclude anchor links
