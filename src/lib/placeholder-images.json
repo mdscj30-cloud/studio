@@ -179,6 +179,96 @@
       "description": "A diverse group of graduates in a campus setting, representing IITs and IIMs.",
       "imageUrl": "https://images.unsplash.com/photo-1760111085279-6c4b6d831acc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudHMlMjBjYW1wdXN8ZW58MHx8fHwxNzY2Njg1NTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "students campus"
+    },
+    {
+      "id": "blog-13",
+      "description": "A checklist on a desk with a pen and coffee, symbolizing an accounting setup.",
+      "imageUrl": "https://images.unsplash.com/photo-1692158961562-cb06d93fb63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2OTEwNjA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "accounting checklist"
+    },
+    {
+      "id": "blog-14",
+      "description": "Two books on a scale, one labeled 'Bookkeeping' and the other 'Accounting'.",
+      "imageUrl": "https://images.unsplash.com/photo-1753955900083-b62ee8d97805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29ra2VlcGluZyUyMGFjY291bnRpbmd8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bookkeeping accounting"
+    },
+    {
+      "id": "blog-15",
+      "description": "A split image showing cash on one side and a calendar with transactions on the other, representing cash vs accrual.",
+      "imageUrl": "https://images.unsplash.com/photo-1603940516962-4976f0d44a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNoJTIwYWNjcnVhbHxlbnwwfHx8fDE3NjkxMDYwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cash accrual"
+    },
+    {
+      "id": "blog-16",
+      "description": "A clean, modern dashboard on a tablet showing key financial MIS reports like P&L and cash flow.",
+      "imageUrl": "https://images.unsplash.com/photo-1640451859877-1374a1155215?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNpYWwlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial dashboard"
+    },
+    {
+      "id": "blog-17",
+      "description": "A crumbling piggy bank with coins falling out, symbolizing how poor bookkeeping kills value.",
+      "imageUrl": "https://images.unsplash.com/photo-1744818561373-b21480e1b218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb29yJTIwZmluYW5jZXxlbnwwfHx8fDE3NjkxMDYwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "poor finance"
+    },
+    {
+      "id": "blog-18",
+      "description": "A yearly calendar with key compliance dates like 'GST Filing' and 'ITR Due Date' circled.",
+      "imageUrl": "https://images.unsplash.com/photo-1606482512676-255bf02be7cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wbGlhbmNlJTIwY2FsZW5kYXJ8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "compliance calendar"
+    },
+    {
+      "id": "blog-19",
+      "description": "A financial document with several red flags pinned to it, highlighting common accounting errors.",
+      "imageUrl": "https://images.unsplash.com/photo-1649209979970-f01d950cc5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwZXJyb3JzfGVufDB8fHx8MTc2OTEwNjA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "accounting errors"
+    },
+    {
+      "id": "blog-20",
+      "description": "A small plant growing into a large, strong tree, symbolizing a scalable accounting system.",
+      "imageUrl": "https://images.unsplash.com/photo-1764113697577-b5899b9a339d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2FsYWJsZSUyMHN5c3RlbXxlbnwwfHx8fDE3NjkxMDYwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scalable system"
+    },
+    {
+      "id": "blog-21",
+      "description": "Logos of popular accounting software like Zoho Books and Tally on a laptop screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb2Z0d2FyZSUyMGNvbXBhcmlzb258ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software comparison"
+    },
+    {
+      "id": "blog-22",
+      "description": "A person standing at a fork in the road, with one path leading to 'Hire Accountant' and the other to 'DIY'.",
+      "imageUrl": "https://images.unsplash.com/photo-1758520144563-a2a0d43e4af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoaXJpbmclMjBkZWNpc2lvbnxlbnwwfHx8fDE3NjkxMDYwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hiring decision"
+    },
+    {
+      "id": "blog-23",
+      "description": "Complex financial charts and graphs with question marks over them, representing challenges for funded startups.",
+      "imageUrl": "https://images.unsplash.com/photo-1642043175009-5997b3a078d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhY2NvdW50aW5nJTIwY2hhbGxlbmdlc3xlbnwwfHx8fDE3NjkxMDYwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "accounting challenges"
+    },
+    {
+      "id": "blog-24",
+      "description": "A magnifying glass closely examining a balance sheet, symbolizing due diligence.",
+      "imageUrl": "https://images.unsplash.com/photo-1768839720567-e8bd39b38396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkdWUlMjBkaWxpZ2VuY2V8ZW58MHx8fHwxNzY5MTA2MDU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "due diligence"
+    },
+    {
+      "id": "blog-25",
+      "description": "A hockey stick growth chart made of gold coins, symbolizing how clean books help raise funds.",
+      "imageUrl": "https://images.unsplash.com/photo-1634757439914-23b8acb9d411?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyYWlzZSUyMGZ1bmRpbmd8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "raise funding"
+    },
+    {
+      "id": "blog-26",
+      "description": "A person carefully planting seeds in a small pot, representing bootstrapped finance.",
+      "imageUrl": "https://images.unsplash.com/photo-1623460445294-064b6b6c1e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib290c3RyYXBwZWQlMjBmaW5hbmNlfGVufDB8fHx8MTc2OTEwNjA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bootstrapped finance"
+    },
+    {
+      "id": "blog-27",
+      "description": "A spreadsheet with several cells highlighted with red warning signs, representing investor red flags.",
+      "imageUrl": "https://images.unsplash.com/photo-1579054060927-7dcdbbe0fca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbnZlc3RvciUyMHJlZCUyMGZsYWdzfGVufDB8fHx8MTc2OTEwNjA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "investor red flags"
     }
   ]
 }
