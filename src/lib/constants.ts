@@ -52,7 +52,7 @@ export const NAV_LINKS = [
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/resources', label: 'Resources' },
-  { href: '/resources/glossary', label: 'Glossary' },
+  { href: '/startup-finance-glossary', label: 'Glossary' },
   { href: '/about', label: 'About' },
 ];
 

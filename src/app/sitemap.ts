@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
 import { NAV_LINKS, SERVICES } from '@/lib/constants'
+import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://nexaconsultancy.com'
@@ -43,18 +44,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${siteUrl}/resources/glossary`,
+      url: `${siteUrl}/startup-finance-glossary`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     }
   ];
 
+  const glossaryTerms = ALL_GLOSSARY_TERMS.map(term => ({
+    url: `${siteUrl}/glossary/${term.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'yearly' as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticPages,
     ...servicePages,
     ...blogPosts,
     ...caseStudies,
-    ...otherResourcePages
+    ...otherResourcePages,
+    ...glossaryTerms
   ];
 }

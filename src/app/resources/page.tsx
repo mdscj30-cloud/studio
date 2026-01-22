@@ -29,11 +29,11 @@ export default function ResourcesPage() {
                 <div className="inline-block bg-primary/10 p-4 rounded-full mb-4">
                     <Library className="w-10 h-10 text-primary" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-primary">Financial Glossary</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary">Startup & Finance Glossary</h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                     Your comprehensive guide to financial, tax, and startup terminology.
                 </p>
-                <Link href="/resources/glossary" className="mt-6 inline-block bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold hover:bg-accent/90 transition-colors">
+                <Link href="/startup-finance-glossary" className="mt-6 inline-block bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold hover:bg-accent/90 transition-colors">
                     Explore the Glossary
                 </Link>
             </div>

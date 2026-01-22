@@ -2,9 +2,13 @@
 export type GlossaryTerm = {
   term: string;
   definition: string;
+  slug: string;
 };
 
-const ALL_GLOSSARY_DATA: GlossaryTerm[] = [
+const slugify = (term: string) => `what-is-${term.toLowerCase().replace(/\(.*\)/g, '').trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')}`;
+
+
+const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     // A
     {
         term: 'A/B Testing',
@@ -2557,11 +2561,15 @@ const ALL_GLOSSARY_DATA: GlossaryTerm[] = [
     }
 ];
 
-// Sort glossary data alphabetically by term
-ALL_GLOSSARY_DATA.sort((a, b) => a.term.localeCompare(b.term));
+export const ALL_GLOSSARY_TERMS: GlossaryTerm[] = ALL_GLOSSARY_DATA_RAW
+  .map(item => ({
+    ...item,
+    slug: slugify(item.term)
+  }))
+  .sort((a, b) => a.term.localeCompare(b.term));
 
 // Pre-group data by letter to avoid doing this on the client
-export const GLOSSARY_DATA_BY_LETTER = ALL_GLOSSARY_DATA.reduce((acc, item) => {
+export const GLOSSARY_DATA_BY_LETTER = ALL_GLOSSARY_TERMS.reduce((acc, item) => {
     const letter = item.term[0].toUpperCase();
     if (!acc[letter]) {
         acc[letter] = [];
