@@ -2747,7 +2747,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Working Capital',
-        definition: 'The difference between a company\'s current assets (like cash, AR, inventory) and its current liabilities (like AP). It is a measure of a company\'s short-term liquidity. Formula: Current Assets - Current Liabilities.'
+        definition: 'The difference between a company\'s current assets (like cash, AR, inventory) and its current liabilities (like AP). It is a measure of a company\'s short-term liquidity and operational efficiency. Formula: Current Assets - Current Liabilities.'
     },
     {
         term: 'Working Capital for Pre-Seed Startups',
