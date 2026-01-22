@@ -311,7 +311,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Burn Rate',
-        definition: 'The rate at which a company is losing money, particularly relevant for startups before they become profitable. It is often quoted as a monthly figure (e.g., "Net Burn is ₹10 Lakhs per month").'
+        definition: 'The rate at which a startup is losing money before it becomes profitable, measuring the net cash outflow. For example, if your startup has monthly expenses of ₹15 Lakhs and revenue of ₹5 Lakhs, your Net Burn Rate is ₹10 Lakhs per month. Effectively managing this is a core focus of our Virtual CFO services.'
     },
     {
         term: 'Business Model Canvas',
@@ -543,11 +543,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Customer Acquisition Cost (CAC)',
-        definition: 'The total cost of sales and marketing efforts needed to acquire a single new customer. Calculated as (Total Sales & Marketing Spend) / (Number of New Customers).'
+        definition: 'The total cost of sales and marketing efforts needed to acquire a single new customer, including ad spend and team salaries. For example, if a startup spent ₹5 Lakhs on sales and marketing in a month and acquired 50 new customers, its CAC is ₹10,000. Optimizing CAC is a key focus of our Virtual CFO services.'
     },
     {
         term: 'Customer Lifetime Value (LTV or CLV)',
-        definition: 'A prediction of the net profit attributed to the entire future relationship with a customer. A critical metric for subscription and e-commerce businesses.'
+        definition: 'The total revenue a business can reasonably expect from a single customer throughout their entire relationship with the company. For a SaaS startup, if a customer pays ₹2,000/month and the average customer stays for 3 years, the LTV is ₹72,000. A healthy business model requires an LTV significantly higher than the CAC, which our financial modeling services help determine.'
     },
     {
         term: 'Customer Relationship Management (CRM)',
@@ -1056,7 +1056,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Gross Margin',
-        definition: 'The difference between revenue and Cost of Goods Sold (COGS), divided by revenue. A key indicator of a company\'s profitability at the product level.'
+        definition: 'The percentage of revenue left after subtracting the Cost of Goods Sold (COGS), measuring the profitability of each sale. For example, if a D2C brand sells a product for ₹1,000 and the direct costs are ₹400, the gross margin is 60%. This 60% must cover all other operating costs. Improving gross margin is a core focus of our bookkeeping and accounting services.'
     },
     {
         term: 'Gross Profit',
@@ -2043,7 +2043,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Runway',
-        definition: 'How long a company can operate before it runs out of cash. Calculated as (Current Cash Balance) / (Monthly Net Burn Rate).'
+        definition: 'The number of months a startup can continue operating before running out of cash. It is calculated by dividing your current cash balance by your net burn rate. For example, if you have ₹1 Crore in the bank and a net burn rate of ₹10 Lakhs per month, your runway is 10 months. This is a critical metric for knowing when to begin your next fundraising process.'
     },
     
     // S
@@ -3077,3 +3077,4 @@ export const GLOSSARY_DATA_BY_LETTER = ALL_GLOSSARY_TERMS.reduce((acc, item) => 
     acc[letter].push(item);
     return acc;
 }, {} as Record<string, GlossaryTerm[]>);
+
