@@ -48,6 +48,7 @@ import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/finance-for-startups-india', label: 'Startup Finance Guide' },
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/resources', label: 'Resources' },
