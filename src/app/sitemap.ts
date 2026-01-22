@@ -3,6 +3,7 @@ import { MetadataRoute } from 'next'
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
 import { SERVICES } from '@/lib/constants'
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
+import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://nexaconsultancy.com'
@@ -37,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/resources/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'weekly' as const,
-    priority: 0.9,
+    priority: 0.7,
   }));
 
   const blogIndexPage = {
@@ -51,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/resources/case-studies/${study.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.9,
+    priority: 0.7,
   }));
 
   const glossaryTerms = ALL_GLOSSARY_TERMS.map(term => ({
@@ -61,12 +62,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const programmaticPages = PROGRAMMATIC_PAGES_DATA.map(page => ({
+    url: `${siteUrl}/solutions/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
+
   return [
     ...mainPages,
     ...servicePages,
     blogIndexPage,
     ...blogPosts,
     ...caseStudies,
-    ...glossaryTerms
+    ...glossaryTerms,
+    ...programmaticPages
   ];
 }
+
