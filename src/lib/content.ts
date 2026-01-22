@@ -72,7 +72,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Focus on Ratios:</strong> Individual metrics are useful, but ratios like LTV:CAC provide the most strategic insight into the health and scalability of your business.</li>
     <li><strong>Tell Your Story:</strong> When speaking with investors, use these metrics to build a compelling narrative about your growth, efficiency, and long-term potential.</li>
   </ul>
-  <p>At Nexa Consultancy, we specialize in helping SaaS founders move beyond the numbers to build robust financial strategies. From setting up your metrics dashboard to crafting your fundraising narrative, we provide the expertise you need to turn data into a competitive advantage.</p>
+  <p>At Nexa Consultancy, we specialize in helping SaaS founders move beyond the numbers to build robust <a href="/finance-for-startups-india">financial strategies</a>. Our <a href="/services/virtual-cfo">Virtual CFO services</a> help you set up your metrics dashboard, while our <a href="/services/pitch-deck-financial-modelling">fundraising advisory</a> helps you craft a compelling narrative to turn your data into a competitive advantage.</p>
 </article>
 `
   },
@@ -146,7 +146,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Leverage the Sandbox:</strong> The RBI's Regulatory Sandbox provides a framework for testing innovative products in a live but controlled environment without the full burden of regulations. This is an excellent way to validate your model before a full-scale launch.</li>
     <li><strong>Stay Informed:</strong> Regulations are not static. The RBI and other bodies regularly issue new circulars and guidelines. Subscribe to updates, join industry forums, and make compliance an ongoing part of your business operations.</li>
   </ol>
-  <p>Building a FinTech in India is a marathon, not a sprint. While speed and innovation are crucial, a strong foundation of compliance is what will ultimately determine your longevity and success. At Nexa Consultancy, we help FinTech founders navigate this complex maze, ensuring their innovative ideas are built on a rock-solid regulatory foundation.</p>
+  <p>Building a FinTech in India is a marathon, not a sprint. While speed and innovation are crucial, a strong foundation of compliance is what will ultimately determine your longevity and success. At Nexa Consultancy, our <a href="/services/regulatory-compliances">comprehensive compliance services</a> help FinTech founders navigate this complex maze, ensuring their innovative ideas are built on a rock-solid regulatory foundation.</p>
 </article>
 `
   },
@@ -216,7 +216,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Line of Credit:</strong> A flexible solution from a bank that allows you to draw cash as needed up to a certain limit. Ideal for managing seasonal inventory peaks.</li>
     <li><strong>Revenue-Based Financing:</strong> A modern financing option where you receive a lump sum of cash in exchange for a percentage of your future daily or weekly revenue. It's fast, flexible, and doesn't require personal guarantees or equity dilution.</li>
   </ul>
-  <p>Managing e-commerce cash flow is an ongoing process of analysis, optimization, and strategic decision-making. By implementing these strategies, you move from being reactive to proactive, building a business that not only survives but thrives. At Nexa Consultancy, our virtual CFO services for e-commerce businesses are designed to give you the financial clarity and strategic guidance needed to turn your cash flow into a powerful engine for growth.</p>
+  <p>Managing e-commerce cash flow is an ongoing process of analysis, optimization, and strategic decision-making. By implementing these strategies, you move from being reactive to proactive, building a business that not only survives but thrives. At Nexa Consultancy, our <a href="/services/virtual-cfo">virtual CFO services</a> for e-commerce businesses are designed to give you the financial clarity and strategic guidance needed to turn your cash flow into a powerful engine for growth.</p>
 </article>
 `
   },
@@ -299,7 +299,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Pro-rata Rights:</strong> The right for an investor to maintain their percentage ownership in future funding rounds.</li>
   </ul>
   <p><strong>Always have a good lawyer review your term sheet.</strong> The details here will have long-lasting implications for your company.</p>
-  <p>Fundraising is a grueling but ultimately rewarding process. A successful fundraise is not the end goal; it's the fuel that allows you to continue building your vision. At Nexa Consultancy, we partner with founders throughout this journey, from refining your financial model to navigating term sheet negotiations, ensuring you are in the strongest possible position to succeed.</p>
+  <p>Fundraising is a grueling but ultimately rewarding process. A successful fundraise is not the end goal; it's the fuel that allows you to continue building your vision. At Nexa Consultancy, we partner with founders throughout this journey. Our services include <a href="/services/pitch-deck-financial-modelling">refining your financial model</a> and <a href="/services/corporate-law">navigating term sheet negotiations</a>, ensuring you are in the strongest possible position to succeed.</p>
 </article>
 `
   },
@@ -361,7 +361,7 @@ export const DETAILED_BLOG_POSTS = [
     <li><strong>Fundraising Strategy:</strong> Modeling future rounds allows you to set fundraising goals. You can see how much you need to grow the company's valuation to offset the dilution from raising more capital.</li>
     <li><strong>Investor Relations:</strong> A clean, professional cap table managed on a dedicated platform signals to investors that you are a sophisticated founder who understands the financial mechanics of building a company.</li>
   </ul>
-  <p>Your cap table is more than an administrative burden; it's a foundational element of your startup's financial health. By giving it the attention it deserves from the very beginning, you build a solid foundation for growth, avoid costly mistakes, and maintain strategic control over your company's destiny. At Nexa Consultancy, we help founders set up and manage their cap tables, ensuring they have the clarity and tools needed to make the best decisions for their company's future.</p>
+  <p>Your cap table is more than an administrative burden; it's a foundational element of your startup's financial health. By giving it the attention it deserves from the very beginning, you build a solid foundation for growth, avoid costly mistakes, and maintain strategic control over your company's destiny. Our <a href="/services/corporate-law">Corporate Law</a> and <a href="/services/virtual-cfo">Virtual CFO</a> services at Nexa Consultancy can help you set up and manage your cap table, ensuring you have the clarity and tools needed to make the best decisions for your company's future.</p>
 </article>
 `
   },
@@ -403,7 +403,7 @@ export const DETAILED_BLOG_POSTS = [
   <p><strong>The Red Flag:</strong> The metrics in your pitch deck don't match the raw data in your financials. Your financial model is based on wildly optimistic, "hockey stick" assumptions that you can't back up with a clear, data-driven go-to-market plan.</p>
   <p><strong>Why It Matters:</strong> This is another trust-breaker. It suggests either a lack of attention to detail or an attempt to mislead. Investors know projections are just educated guesses, but they need to be grounded in reality. They are testing your understanding of your business's drivers. A model that projects exponential growth without a credible plan for achieving it shows a lack of strategic depth.</p>
   <p><strong>How to Avoid It:</strong> Ensure your financial statements are accurate and have a clear audit trail. Every number in your pitch deck should be easily traceable to your core financial documents. Build your financial model from the bottom up, based on clear, defensible assumptions about your sales funnel, conversion rates, and market size. Be prepared to defend every single one of those assumptions.</p>
-  <p>Due diligence is a rite of passage for any funded startup. By preparing for it proactively and addressing these common red flags, you can streamline the process, build immense trust with your potential investors, and significantly increase your chances of closing the round and securing the fuel for your next stage of growth.</p>
+  <p>Due diligence is a rite of passage for any funded startup. By preparing for it proactively and addressing these common red flags, you can streamline the process, build immense trust with your potential investors, and significantly increase your chances of closing the round. Explore how our <a href="/services/investor-due-diligence">Investor Due Diligence services</a> can help you secure the fuel for your next stage of growth.</p>
 </article>
 `
   },
