@@ -110,7 +110,6 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         term: 'Amortization',
         definition: 'The practice of spreading an intangible asset\'s cost over the asset\'s useful life. Similar to depreciation for tangible assets.'
     },
-
     {
         term: 'Angel Investor',
         definition: 'An affluent individual who provides capital for a business start-up, usually in exchange for convertible debt or ownership equity.'
@@ -118,6 +117,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Angel Tax',
         definition: 'A tax levied on the capital raised by unlisted companies via issue of shares, where the share price is seen as in excess of the fair market value. Governed by Section 56(2)(viib) of the Income Tax Act.'
+    },
+    {
+        term: 'Angel Tax Notice Handling',
+        definition: '<p>Receiving a notice from the tax department regarding Angel Tax (Section 56(2)(viib)) can be daunting. It means the officer believes your startup was overvalued. Handling it requires submitting a strong valuation report (from a Merchant Banker) and a detailed justification for your share premium.</p><p><b>Startup Example:</b> A startup receives a notice questioning its ₹10 Crore valuation in its seed round. The founder, with the help of a CA, must respond with documentation proving the valuation was fair based on market standards and future projections.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> helps set realistic valuations to minimize this risk.</p>'
     },
     {
         term: 'Annual General Meeting (AGM)',
@@ -320,6 +323,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         <p>Understanding and managing this burn rate is critical for survival and is a core component of our <a href="/services/virtual-cfo">Virtual CFO services</a>.</p>`
     },
     {
+        term: 'Burn Rate for Seed Startups',
+        definition: '<p>For a seed-stage startup, burn rate is not just a metric; it\'s the countdown clock. It dictates the runway and how long the company has to achieve product-market fit before needing to raise the next round.</p><p><b>Startup Example:</b> A seed-funded startup has ₹4 Crores in the bank. Their net burn is ₹20 Lakhs/month. Their runway is 20 months. They know they need to show significant traction and start their Series A fundraising process in about 12-14 months.</p><p>Managing this is the primary focus of our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn rate management guides</a>.</p>'
+    },
+    {
         term: 'Business Model Canvas',
         definition: 'A strategic management template for developing new or documenting existing business models. It is a visual chart with elements describing a firm\'s value proposition, infrastructure, customers, and finances.'
     },
@@ -360,6 +367,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Capitalization Table (Cap Table)',
         definition: 'A spreadsheet or table that shows the equity capitalization for a company, detailing who owns what, how much they own, and at what valuation.'
+    },
+    {
+        term: 'Cap Table Complexity for Series A',
+        definition: '<p>By Series A, a startup\'s cap table is no longer simple. It includes founders, an ESOP pool, angel investors, and now a lead institutional investor with specific rights (like liquidation preference).</p><p><b>Startup Example:</b> A Series A investor gets "1x participating preferred" shares. This means in a sale, they get their money back first AND get their pro-rata share of the remaining proceeds. Understanding this complexity is vital for founders.</p><p>We help founders navigate this during a fundraise with our <a href="/services/corporate-law">Corporate Law</a> advisory.</p>'
     },
     {
         term: 'Cash Basis Accounting',
@@ -441,6 +452,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Companies Act, 2013',
         definition: 'The primary legislation that governs the incorporation of a company, responsibilities of a company, directors, and dissolution of a company in India.'
+    },
+    {
+        term: 'Companies (Share Capital and Debentures) Rules',
+        definition: '<p>A set of rules issued under the Companies Act, 2013 that govern the issue, allotment, and transfer of shares and debentures. This includes rules for private placements, rights issues, and ESOPs.</p><p><b>Startup Example:</b> A startup wants to issue shares to a new investor. It must follow the procedure laid out in these rules, including valuation requirements and filings with the ROC.</p><p>Our <a href="/services/corporate-law">Corporate Law</a> team ensures full compliance with these rules.</p>'
     },
     {
         term: 'Compliance',
@@ -577,12 +592,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'A business model where a brand or manufacturer sells its products directly to end customers, bypassing traditional retail intermediaries like distributors or wholesalers.'
     },
     {
+        term: 'D2C Contribution Margin Analysis',
+        definition: '<p>For a D2C brand, contribution margin is the revenue from a sale minus all variable costs associated with that sale (COGS, payment gateway fees, shipping, packaging, and marketing). It shows the true profitability of each order.</p><p><b>Startup Example:</b> A D2C brand sells a product for ₹2000. COGS is ₹500, shipping is ₹100, and marketing cost per order is ₹400. The contribution margin is ₹1000. This shows how much is left to cover fixed costs like salaries and rent.</p><p>This analysis is central to our work with <a href="/industry-finance/gst-for-d2c-brands-india">D2C brands</a>.</p>'
+    },
+    {
         term: 'Data Localization for Payment Aggregators',
         definition: '<p>A mandate by the Reserve Bank of India (RBI) that requires all licensed Payment Aggregators (PAs) and Payment Gateways (PGs) to store all payment data they handle exclusively on servers located within India.</p><p><b>Startup Example:</b> A FinTech startup operating as a Payment Aggregator cannot process a transaction on AWS servers in Singapore. The entire end-to-end transaction data, from collection to settlement, must reside on servers physically present in India.</p><p>This is a critical aspect of our advisory for <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech startups</a>.</p>'
     },
     {
         term: 'Data Room',
         definition: 'A secure online repository for storing and sharing sensitive company documents during fundraising, M&A, or audits. Key for due diligence.'
+    },
+    {
+        term: 'Dealing with high customer churn',
+        definition: '<p>High churn is a symptom of a deeper problem, usually related to product-market fit, poor onboarding, or bad customer service. The solution involves deep customer interviews to understand why they are leaving, and then allocating product and engineering resources to fix those core issues.</p><p><b>Startup Example:</b> A SaaS startup sees a 10% monthly churn. After interviewing churned customers, they realize the onboarding process is too confusing. They reallocate two engineers to build a better onboarding flow, which reduces churn to 4% within three months.</p><p>Analyzing churn is a key metric our <a href="/solutions/virtual-cfo-for-saas-startups">SaaS vCFOs</a> focus on.</p>'
     },
     {
         term: 'Debenture',
@@ -677,6 +700,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'A valuation method used to estimate the value of an investment based on its expected future cash flows.'
     },
     {
+        term: 'Dispute with a co-founder over equity',
+        definition: '<p>Equity disputes between co-founders are common and can destroy a startup. They often arise from a lack of clear, documented agreements at the outset.</p><p><b>Startup Example:</b> Two founders agree on a 60/40 split verbally. The 40% partner leaves after 6 months and demands their full 40%. With no founder agreement or vesting schedule, the company faces a legal battle. This highlights the need for a strong Shareholders\' Agreement (SHA).</p><p>Drafting robust founder agreements is a key part of our <a href="/services/corporate-law">Corporate Law</a> services.</p>'
+    },
+    {
         term: 'Disruptive Innovation',
         definition: 'An innovation that creates a new market and value network and eventually disrupts an existing market and value network, displacing established market-leading firms, products, and alliances.'
     },
@@ -719,6 +746,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Due Diligence',
         definition: 'An investigation, audit, or review performed to confirm the facts of a matter under consideration. In finance, it\'s the process investors undertake before funding a company.'
+    },
+    {
+        term: 'Due Diligence Readiness for Seed Stage',
+        definition: '<p>Even for a seed round, investors will conduct due diligence. While less intense than for a Series A, founders need to have their basic corporate documents, financial projections, and key contracts organized.</p><p><b>Startup Example:</b> A pre-seed startup gets a term sheet. The angel investor asks for their incorporation documents, founder agreements, and financial model. Having these ready in a clean data room speeds up the process and builds trust.</p><p>Our <a href="/services/investor-due-diligence">due diligence services</a> help startups prepare at every stage.</p>'
     },
     {
         term: 'D-U-N-S Number',
@@ -835,6 +866,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'A plan that gives employees the right to buy a certain number of shares in the company at a predetermined price, after a vesting period. Used to attract and retain talent.'
     },
     {
+        term: 'ESOP Pool Sizing for Seed Round',
+        definition: '<p>When raising a seed round, investors will typically require the startup to create an Employee Stock Option Pool (ESOP) of 10-15%. This pool is usually created before the new investment, diluting the existing shareholders (i.e., the founders).</p><p><b>Startup Example:</b> A startup with a pre-money valuation of ₹20 Crores needs to create a 10% option pool. This 10% is carved out of the pre-money valuation, effectively reducing the founders\' valuation to ₹18 Crores before the new investment comes in.</p><p>We help model these scenarios in our <a href="/services/fundraising">fundraising advisory</a>.</p>'
+    },
+    {
         term: 'ESOP Taxation in India',
         definition: '<p>The taxation of ESOPs in India occurs at two points: 1) At the time of exercise, the difference between the Fair Market Value (FMV) and the exercise price is taxed as a perquisite (salary income). 2) At the time of sale, the difference between the sale price and the FMV (at exercise) is taxed as capital gains.</p><p><b>Startup Example:</b> An employee is granted options at ₹10. She exercises them when the FMV is ₹100. The ₹90 difference is taxable as salary. She later sells the shares at ₹500. The ₹400 difference is taxable as capital gains.</p><p>We provide advisory on structuring tax-efficient <a href="/services/corporate-law">ESOP policies</a>.</p>'
     },
@@ -925,6 +960,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'A tool, typically built in a spreadsheet, used to forecast a business\'s financial performance. It includes assumptions, calculations, and outputs like projected financial statements.'
     },
     {
+        term: 'Financial Modeling for Pre-Seed Startups',
+        definition: '<p>At the pre-seed stage, a financial model isn\'t about predicting revenue; it\'s about showing you understand the drivers of your business. It\'s a story about your assumptions.</p><p><b>Startup Example:</b> A pre-seed founder builds a model based not on revenue, but on assumed user acquisition costs, conversion rates, and server costs. It shows investors how they plan to use the initial capital to validate these core assumptions.</p><p>We help founders build their first investor-ready model as part of our <a href="/services/pitch-deck-financial-modelling">fundraising prep services</a>.</p>'
+    },
+    {
         term: 'Financial Planner',
         definition: 'A qualified investment professional who helps individuals and corporations meet their long-term financial objectives.'
     },
@@ -943,6 +982,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'FinTech Compliance Reporting',
         definition: '<p>The mandatory reporting FinTech companies must do to regulators like the RBI and SEBI. This can include periodic financial statements, data on transaction volumes, compliance status with KYC/AML norms, and specific reports related to their license (e.g., Payment Aggregator reports).</p><p><b>Startup Example:</b> A P2P lending platform must submit quarterly statements to the RBI detailing its loan portfolio, borrower and lender details, and compliance with prudential norms.</p><p>Our <a href="/solutions/virtual-cfo-for-fintech-startups">Virtual CFO for FinTechs</a> service manages all regulatory reporting.</p>'
+    },
+    {
+        term: 'FinTech Nodal Account Reconciliation',
+        definition: '<p>Payment aggregators must use a Nodal Account to hold customer funds before settling them to merchants. Reconciling the funds received, funds settled, and fees deducted in this account on a daily basis is a critical and complex compliance requirement.</p><p><b>Startup Example:</b> A FinTech PA processes 10,000 transactions a day. Their finance team must reconcile every single transaction from the gateway, through the nodal account, to the final merchant settlement, ensuring no funds are misplaced.</p><p>Our <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech vCFO service</a> specializes in this process.</p>'
     },
     {
         term: 'Firmware',
@@ -1355,6 +1398,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Investment Banker',
         definition: 'An individual who works in a financial institution and is primarily concerned with raising capital for corporations, governments, or other entities.'
+    },
+    {
+        term: 'Investor Reporting for Series A',
+        definition: '<p>After raising a Series A, reporting requirements become more formal. Institutional VCs will expect a monthly MIS pack including detailed financial statements, KPI dashboards, and a budget vs. actuals analysis.</p><p><b>Startup Example:</b> A Series A startup now prepares a monthly board pack that includes their SaaS metrics dashboard, P&L, balance sheet, cash flow statement, and a summary of progress against the goals set during the fundraise.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">vCFOs</a> handle all investor reporting for our clients.</p>'
     },
     {
         term: 'Invoice',
@@ -2227,6 +2274,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'The regulator for the securities and commodity market in India under the jurisdiction of the Ministry of Finance.'
     },
     {
+        term: 'Section 194J - TDS on Professional Fees',
+        definition: '<p>A section of the Indian Income Tax Act that mandates deducting tax at source (TDS) at 10% on payments made for professional or technical services, if the total payment in a year exceeds ₹30,000.</p><p><b>Startup Example:</b> A startup pays a marketing consultant ₹50,000 for their services. The startup must deduct ₹5,000 (10%) as TDS, pay the consultant ₹45,000, and deposit the ₹5,000 with the government.</p><p>This is a common compliance item handled by our <a href="/services/regulatory-compliances">compliance team</a>.</p>'
+    },
+    {
+        term: 'Section 194C - TDS on Contracts',
+        definition: '<p>A section of the Indian Income Tax Act that mandates deducting tax at source (TDS) on payments made to contractors. The rate is 1% for individuals/HUFs and 2% for others.</p><p><b>Startup Example:</b> A startup pays a web development agency (a company) ₹1,00,000 for building their website. The startup must deduct ₹2,000 (2%) as TDS before making the payment.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> cover all forms of TDS.</p>'
+    },
+    {
         term: 'Section 44ADA of Income Tax Act',
         definition: '<p>A presumptive taxation scheme for small professionals in India. Eligible professionals can declare 50% of their gross receipts as their income, and this is taxed. It simplifies tax compliance as detailed books of accounts are not required.</p><p><b>Startup Example:</b> A freelance consultant with gross annual receipts of ₹40 Lakhs can opt for this scheme. She can declare ₹20 Lakhs (50%) as her taxable income without needing to maintain detailed expense records.</p><p>Our <a href="/services/regulatory-compliances">tax services</a> help freelancers and consultants leverage such schemes.</p>'
     },
@@ -2555,6 +2610,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'A business\'s revenues and costs on a per-unit basis. For example, in SaaS, the unit is a customer, and the unit economics are LTV and CAC.'
     },
     {
+        term: 'Unit Economics for Seed Startups',
+        definition: '<p>At the seed stage, you may not be profitable, but you must prove you have profitable unit economics. This means showing that your Customer Lifetime Value (LTV) is significantly higher than your Customer Acquisition Cost (CAC).</p><p><b>Startup Example:</b> A seed-stage D2C brand shows investors that while they are currently burning cash to grow, their LTV:CAC ratio is 3.5:1. This proves that as they scale, the business model will become profitable.</p><p>Analyzing unit economics is a key part of our <a href="/services/virtual-cfo">Virtual CFO</a> engagements.</p>'
+    },
+    {
         term: 'Unrealized Gain/Loss',
         definition: 'A profit or loss that has occurred on paper but the transaction has not been completed, so the gain or loss is not yet actual.'
     },
@@ -2691,6 +2750,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'The difference between a company\'s current assets (like cash, AR, inventory) and its current liabilities (like AP). It is a measure of a company\'s short-term liquidity. Formula: Current Assets - Current Liabilities.'
     },
     {
+        term: 'Working Capital for Pre-Seed Startups',
+        definition: '<p>For pre-seed startups, working capital is all about cash runway. It\'s not about complex inventory or receivables management, but simply ensuring the cash in the bank can cover the monthly burn for as long as possible.</p><p><b>Startup Example:</b> A pre-seed founder with ₹50 Lakhs from friends and family and a burn of ₹5 Lakhs/month has 10 months of runway. Their entire working capital focus is on extending this runway by managing costs or generating early revenue.</p><p>Our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn management guides</a> are essential for this stage.</p>'
+    },
+    {
         term: 'Working Capital Management',
         definition: 'A business strategy designed to monitor and utilize the two components of working capital, current assets, and current liabilities, to ensure the most financially efficient operation of the company.'
     },
@@ -2705,6 +2768,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Write-off',
         definition: 'Reducing the value of an asset to zero and removing it from the balance sheet entirely.'
+    },
+    {
+        term: 'What to do when runway is short',
+        definition: '<p>When runway is short (e.g., less than 6 months), founders have limited options: drastically cut costs (reduce burn), raise a bridge round (from existing investors), or attempt a quick acquisition. The key is to act decisively and not wait until the last minute.</p><p><b>Startup Example:</b> A startup has 3 months of runway left. The founder immediately cuts all non-essential marketing spend and asks the team to take a temporary pay cut, while simultaneously negotiating a small bridge loan from their lead seed investor to extend the runway by another 6 months.</p><p>Our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn management guides</a> offer strategies for this scenario.</p>'
     },
 
     // Y
@@ -2730,85 +2797,354 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         term: 'Zero-Coupon Bond',
         definition: 'A debt security that does not pay interest but is traded at a deep discount, rendering profit at maturity when the bond is redeemed for its full face value.'
     },
-
-    // Dimension 3: Startup Stage-Specific Terms
+    // New 100 terms
     {
-        term: 'Burn Rate for Seed Startups',
-        definition: '<p>For a seed-stage startup, burn rate is not just a metric; it\'s the countdown clock. It dictates the runway and how long the company has to achieve product-market fit before needing to raise the next round.</p><p><b>Startup Example:</b> A seed-funded startup has ₹4 Crores in the bank. Their net burn is ₹20 Lakhs/month. Their runway is 20 months. They know they need to show significant traction and start their Series A fundraising process in about 12-14 months.</p><p>Managing this is the primary focus of our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn rate management guides</a>.</p>'
+        term: 'Consequences of not filing GSTR-1',
+        definition: '<p>Failure to file GSTR-1 by the due date has a cascading effect. It prevents the recipient of the goods/services from claiming Input Tax Credit (ITC) in their GSTR-2B, leading to business disputes. It also attracts a late filing fee and prevents you from filing your GSTR-3B for the same period.</p><p><b>Startup Example:</b> A SaaS startup fails to file its GSTR-1 for June. Its enterprise client cannot see the invoice in their GSTR-2B and therefore cannot claim the GST paid as ITC, leading to a blocked working capital for the client and a strained relationship.</p><p>Timely filing is a core component of our <a href="/services/regulatory-compliances">GST compliance</a> services.</p>'
     },
     {
-        term: 'Cap Table Complexity for Series A',
-        definition: '<p>By Series A, a startup\'s cap table is no longer simple. It includes founders, an ESOP pool, angel investors, and now a lead institutional investor with specific rights (like liquidation preference).</p><p><b>Startup Example:</b> A Series A investor gets "1x participating preferred" shares. This means in a sale, they get their money back first AND get their pro-rata share of the remaining proceeds. Understanding this complexity is vital for founders.</p><p>We help founders navigate this during a fundraise with our <a href="/services/corporate-law">Corporate Law</a> advisory.</p>'
+        term: 'Penalty for late filing of GSTR-3B',
+        definition: '<p>Late filing of GSTR-3B attracts a penalty of ₹50 per day of delay (₹20 for nil returns) per GSTIN. Additionally, interest at 18% per annum is payable on the outstanding tax liability from the due date until the date of payment.</p><p><b>Startup Example:</b> A D2C startup in Delhi has a tax liability of ₹1,00,000 for July but files its GSTR-3B 30 days late. It will incur a late fee of ₹50 * 30 = ₹1,500, plus interest of (₹1,00,000 * 18% * 30/365) = ₹1,479.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> ensure your data is ready for timely GST filing.</p>'
     },
     {
-        term: 'Due Diligence Readiness for Seed Stage',
-        definition: '<p>Even for a seed round, investors will conduct due diligence. While less intense than for a Series A, founders need to have their basic corporate documents, financial projections, and key contracts organized.</p><p><b>Startup Example:</b> A pre-seed startup gets a term sheet. The angel investor asks for their incorporation documents, founder agreements, and financial model. Having these ready in a clean data room speeds up the process and builds trust.</p><p>Our <a href="/services/investor-due-diligence">due diligence services</a> help startups prepare at every stage.</p>'
+        term: 'Consequences of non-deduction of TDS',
+        definition: '<p>If a business fails to deduct Tax at Source (TDS) where required, it faces two major consequences: 1) Disallowance of 30% of the corresponding expense while computing taxable income. 2) Levy of interest at 1% per month from the date the tax was deductible to the date it is actually deducted.</p><p><b>Startup Example:</b> A startup pays a consultant ₹5 Lakhs but forgets to deduct TDS. The Income Tax department can disallow 30% of this expense (₹1.5 Lakhs), effectively increasing the startup\'s taxable profit by that amount, leading to a higher tax bill, plus interest.</p><p>Our <a href="/solutions/tds-on-foreign-payments-startups">TDS compliance solutions</a> prevent such costly errors.</p>'
     },
     {
-        term: 'Financial Modeling for Pre-Seed Startups',
-        definition: '<p>At the pre-seed stage, a financial model isn\'t about predicting revenue; it\'s about showing you understand the drivers of your business. It\'s a story about your assumptions.</p><p><b>Startup Example:</b> A pre-seed founder builds a model based not on revenue, but on assumed user acquisition costs, conversion rates, and server costs. It shows investors how they plan to use the initial capital to validate these core assumptions.</p><p>We help founders build their first investor-ready model as part of our <a href="/services/pitch-deck-financial-modelling">fundraising prep services</a>.</p>'
+        term: 'Due date for payment of Advance Tax',
+        definition: '<p>Advance tax must be paid in four installments by specific due dates for individuals and corporates. The due dates are: 15th June (15%), 15th September (45%), 15th December (75%), and 15th March (100% of total tax liability).</p><p><b>Startup Example:</b> A profitable startup estimates its total tax liability for the financial year to be ₹20 Lakhs. It must pay at least ₹3 Lakhs by June 15th, a cumulative total of ₹9 Lakhs by September 15th, and so on.</p><p>Our <a href="/services/virtual-cfo">Virtual CFOs</a> manage cash flow to ensure timely advance tax payments.</p>'
     },
     {
-        term: 'Unit Economics for Seed Startups',
-        definition: '<p>At the seed stage, you may not be profitable, but you must prove you have profitable unit economics. This means showing that your Customer Lifetime Value (LTV) is significantly higher than your Customer Acquisition Cost (CAC).</p><p><b>Startup Example:</b> A seed-stage D2C brand shows investors that while they are currently burning cash to grow, their LTV:CAC ratio is 3.5:1. This proves that as they scale, the business model will become profitable.</p><p>Analyzing unit economics is a key part of our <a href="/services/virtual-cfo">Virtual CFO</a> engagements.</p>'
+        term: 'Penalty for non-payment of Advance Tax',
+        definition: '<p>Failure to pay advance tax or paying less than the required amount by the due dates attracts penal interest under sections 234B and 234C of the Income Tax Act. Interest is levied at 1% per month on the shortfall.</p><p><b>Startup Example:</b> A startup fails to pay its advance tax installments correctly. At the end of the year, the tax department calculates the shortfall for each quarter and applies interest, leading to a significantly higher total tax outgo.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed-startups">guides</a> emphasize the importance of early tax planning.</p>'
     },
     {
-        term: 'Investor Reporting for Series A',
-        definition: '<p>After raising a Series A, reporting requirements become more formal. Institutional VCs will expect a monthly MIS pack including detailed financial statements, KPI dashboards, and a budget vs. actuals analysis.</p><p><b>Startup Example:</b> A Series A startup now prepares a monthly board pack that includes their SaaS metrics dashboard, P&L, balance sheet, cash flow statement, and a summary of progress against the goals set during the fundraise.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">vCFOs</a> handle all investor reporting for our clients.</p>'
+        term: 'Consequences of non-filing of Income Tax Return',
+        definition: '<p>Not filing your Income Tax Return (ITR) by the due date can lead to a late filing fee of up to ₹5,000, interest on the tax due, and an inability to carry forward business losses to future years. In severe cases, it can lead to prosecution.</p><p><b>Startup Example:</b> A startup incurs a business loss in a year but fails to file its ITR. It cannot carry forward this loss to offset profits in the next year, resulting in a higher tax liability in the future.</p><p>We ensure all <a href="/services/regulatory-compliances">annual compliances</a>, including ITR filing, are met.</p>'
     },
     {
-        term: 'ESOP Pool Sizing for Seed Round',
-        definition: '<p>When raising a seed round, investors will typically require the startup to create an Employee Stock Option Pool (ESOP) of 10-15%. This pool is usually created before the new investment, diluting the existing shareholders (i.e., the founders).</p><p><b>Startup Example:</b> A startup with a pre-money valuation of ₹20 Crores needs to create a 10% option pool. This 10% is carved out of the pre-money valuation, effectively reducing the founders\' valuation to ₹18 Crores before the new investment comes in.</p><p>We help model these scenarios in our <a href="/services/fundraising">fundraising advisory</a>.</p>'
+        term: 'Due date for filing DIR-3 KYC',
+        definition: '<p>Every individual holding a Director Identification Number (DIN) must file the e-form DIR-3 KYC with the Registrar of Companies (ROC) on or before 30th September of every financial year.</p><p><b>Startup Example:</b> A founder who is a director must complete this annual KYC filing by Sept 30th. It\'s a simple but mandatory compliance step.</p><p>Our <a href="/services/corporate-law">Corporate Law</a> services include managing all director-related compliances.</p>'
     },
     {
-        term: 'Working Capital for Pre-Seed Startups',
-        definition: '<p>For pre-seed startups, working capital is all about cash runway. It\'s not about complex inventory or receivables management, but simply ensuring the cash in the bank can cover the monthly burn for as long as possible.</p><p><b>Startup Example:</b> A pre-seed founder with ₹50 Lakhs from friends and family and a burn of ₹5 Lakhs/month has 10 months of runway. Their entire working capital focus is on extending this runway by managing costs or generating early revenue.</p><p>Our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn management guides</a> are essential for this stage.</p>'
-    },
-
-    // Dimension 4: Industry-Specific Terms
-    {
-        term: 'D2C Contribution Margin Analysis',
-        definition: '<p>For a D2C brand, contribution margin is the revenue from a sale minus all variable costs associated with that sale (COGS, payment gateway fees, shipping, packaging, and marketing). It shows the true profitability of each order.</p><p><b>Startup Example:</b> A D2C brand sells a product for ₹2000. COGS is ₹500, shipping is ₹100, and marketing cost per order is ₹400. The contribution margin is ₹1000. This shows how much is left to cover fixed costs like salaries and rent.</p><p>This analysis is central to our work with <a href="/industry-finance/gst-for-d2c-brands-india">D2C brands</a>.</p>'
+        term: 'Penalty for not filing DIR-3 KYC',
+        definition: '<p>If a director fails to file their DIR-3 KYC form by the due date, their DIN will be marked as "deactivated due to non-filing of DIR-3 KYC". To reactivate it, a fee of ₹5,000 must be paid.</p><p><b>Startup Example:</b> A startup director misses the September 30th deadline. Their DIN is deactivated, preventing them from signing any company forms or resolutions until the ₹5,000 penalty is paid and the form is filed.</p><p>Our compliance reminders prevent such avoidable penalties.</p>'
     },
     {
-        term: 'FinTech Nodal Account Reconciliation',
-        definition: '<p>Payment aggregators must use a Nodal Account to hold customer funds before settling them to merchants. Reconciling the funds received, funds settled, and fees deducted in this account on a daily basis is a critical and complex compliance requirement.</p><p><b>Startup Example:</b> A FinTech PA processes 10,000 transactions a day. Their finance team must reconcile every single transaction from the gateway, through the nodal account, to the final merchant settlement, ensuring no funds are misplaced.</p><p>Our <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech vCFO service</a> specializes in this process.</p>'
-    },
-
-    // Dimension 5: Regulatory & Legal Terms
-    {
-        term: 'Section 194J - TDS on Professional Fees',
-        definition: '<p>A section of the Indian Income Tax Act that mandates deducting tax at source (TDS) at 10% on payments made for professional or technical services, if the total payment in a year exceeds ₹30,000.</p><p><b>Startup Example:</b> A startup pays a marketing consultant ₹50,000 for their services. The startup must deduct ₹5,000 (10%) as TDS, pay the consultant ₹45,000, and deposit the ₹5,000 with the government.</p><p>This is a common compliance item handled by our <a href="/services/regulatory-compliances">compliance team</a>.</p>'
+        term: 'Consequences of not holding an AGM',
+        definition: '<p>Failure to hold the Annual General Meeting (AGM) within the prescribed time (within 6 months from the end of the financial year) is a violation of the Companies Act, 2013. The company and its officers can be subject to significant penalties.</p><p><b>Startup Example:</b> A startup fails to hold its AGM by September 30th. The company could be fined up to ₹1 Lakh, and each defaulting officer could be fined up to ₹25,000.</p><p>We help startups with all <a href="/services/corporate-law">secretarial and compliance matters</a>.</p>'
     },
     {
-        term: 'Section 194C - TDS on Contracts',
-        definition: '<p>A section of the Indian Income Tax Act that mandates deducting tax at source (TDS) on payments made to contractors. The rate is 1% for individuals/HUFs and 2% for others.</p><p><b>Startup Example:</b> A startup pays a web development agency (a company) ₹1,00,000 for building their website. The startup must deduct ₹2,000 (2%) as TDS before making the payment.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> cover all forms of TDS.</p>'
+        term: 'Penalty for not appointing a first auditor',
+        definition: '<p>If the Board of Directors fails to appoint the first statutory auditor within 30 days of incorporation, the company must inform the members, who must then appoint an auditor within 90 days at an Extraordinary General Meeting (EGM). Failure is a non-compliance that attracts penalties.</p><p><b>Startup Example:</b> A startup\'s board misses the 30-day deadline. They now have to incur the additional cost and administrative effort of calling an EGM to appoint the auditor.</p><p>Our <a href="/services/business-setup">Business Setup</a> service ensures this first critical compliance is met.</p>'
     },
     {
-        term: 'Companies (Share Capital and Debentures) Rules',
-        definition: '<p>A set of rules issued under the Companies Act, 2013 that govern the issue, allotment, and transfer of shares and debentures. This includes rules for private placements, rights issues, and ESOPs.</p><p><b>Startup Example:</b> A startup wants to issue shares to a new investor. It must follow the procedure laid out in these rules, including valuation requirements and filings with the ROC.</p><p>Our <a href="/services/corporate-law">Corporate Law</a> team ensures full compliance with these rules.</p>'
-    },
-
-    // Dimension 6: Founder-Problem Terms (GOLD)
-    {
-        term: 'Angel Tax Notice Handling',
-        definition: '<p>Receiving a notice from the tax department regarding Angel Tax (Section 56(2)(viib)) can be daunting. It means the officer believes your startup was overvalued. Handling it requires submitting a strong valuation report (from a Merchant Banker) and a detailed justification for your share premium.</p><p><b>Startup Example:</b> A startup receives a notice questioning its ₹10 Crore valuation in its seed round. The founder, with the help of a CA, must respond with documentation proving the valuation was fair based on market standards and future projections.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> helps set realistic valuations to minimize this risk.</p>'
+        term: 'Consequences of non-compliance with POSH Act',
+        definition: '<p>Non-compliance with the Prevention of Sexual Harassment (POSH) Act, such as failing to form an Internal Complaints Committee (ICC) or not conducting awareness sessions, can lead to a penalty of up to ₹50,000. Repeated non-compliance can lead to cancellation of the business license.</p><p><b>Startup Example:</b> A 15-person startup without an ICC faces an inquiry. The authorities impose a penalty for non-compliance, causing financial and reputational damage.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> help you set up all necessary internal policies.</p>'
     },
     {
-        term: 'Dispute with a co-founder over equity',
-        definition: '<p>Equity disputes between co-founders are common and can destroy a startup. They often arise from a lack of clear, documented agreements at the outset.</p><p><b>Startup Example:</b> Two founders agree on a 60/40 split verbally. The 40% partner leaves after 6 months and demands their full 40%. With no founder agreement or vesting schedule, the company faces a legal battle. This highlights the need for a strong Shareholders\' Agreement (SHA).</p><p>Drafting robust founder agreements is a key part of our <a href="/services/corporate-law">Corporate Law</a> services.</p>'
+        term: 'Penalty for late filing of MSME Form 1',
+        definition: '<p>If a company required to file MSME Form 1 (for overdue payments to MSMEs) fails to do so, it can face a penalty of up to ₹25,000. Additionally, every officer in default can be imprisoned for up to 6 months or fined between ₹25,000 and ₹3 Lakhs.</p><p><b>Startup Example:</b> A startup has overdue payments to an MSME vendor but fails to report it in MSME Form 1. This exposes the founders/directors to severe personal liability and penalties.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> help track vendor payments accurately.</p>'
     },
     {
-        term: 'How to correct a messy cap table',
-        definition: '<p>Correcting a messy cap table is a complex legal and financial process. It often involves getting legal releases from people with verbal promises, formalizing past grants, and potentially performing a "clean-up" round of financing to reset ownership.</p><p><b>Startup Example:</b> Before a Series A, a startup discovers multiple errors in its spreadsheet cap table and several unrecorded verbal promises. They must engage lawyers to fix all documentation before an investor will even consider due diligence.</p><p>Our <a href="/services/investor-due-diligence">due diligence readiness service</a> is designed to identify and fix these issues.</p>'
+        term: 'Consequences of incorrect e-invoicing',
+        definition: '<p>An invoice that does not comply with e-invoicing rules (where applicable) is considered an invalid invoice. This means the buyer cannot claim Input Tax Credit (ITC) on it, and the seller may face penalties for non-compliance, equivalent to 100% of the tax due or ₹10,000, whichever is higher.</p><p><b>Startup Example:</b> A startup with a turnover of ₹25 crores issues a B2B invoice without generating an Invoice Reference Number (IRN) from the GST portal. The invoice is invalid, and the startup faces penalties.</p><p>We help automate <a href="/services/regulatory-compliances">GST compliance</a>, including e-invoicing.</p>'
     },
     {
-        term: 'What to do when runway is short',
-        definition: '<p>When runway is short (e.g., less than 6 months), founders have limited options: drastically cut costs (reduce burn), raise a bridge round (from existing investors), or attempt a quick acquisition. The key is to act decisively and not wait until the last minute.</p><p><b>Startup Example:</b> A startup has 3 months of runway left. The founder immediately cuts all non-essential marketing spend and asks the team to take a temporary pay cut, while simultaneously negotiating a small bridge loan from their lead seed investor to extend the runway by another 6 months.</p><p>Our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn management guides</a> offer strategies for this scenario.</p>'
+        term: 'Due date for filing GSTR-9 and GSTR-9C',
+        definition: '<p>The due date for filing the annual GST return (GSTR-9) and the reconciliation statement (GSTR-9C) is the 31st of December of the year following the relevant financial year.</p><p><b>Startup Example:</b> For the financial year 2023-24 (April 1, 2023 to March 31, 2024), the due date for filing GSTR-9 and GSTR-9C is December 31, 2024.</p><p>Our team handles all <a href="/services/regulatory-compliances">annual filings</a> for our clients.</p>'
     },
     {
-        term: 'Dealing with high customer churn',
-        definition: '<p>High churn is a symptom of a deeper problem, usually related to product-market fit, poor onboarding, or bad customer service. The solution involves deep customer interviews to understand why they are leaving, and then allocating product and engineering resources to fix those core issues.</p><p><b>Startup Example:</b> A SaaS startup sees a 10% monthly churn. After interviewing churned customers, they realize the onboarding process is too confusing. They reallocate two engineers to build a better onboarding flow, which reduces churn to 4% within three months.</p><p>Analyzing churn is a key metric our <a href="/solutions/virtual-cfo-for-saas-startups">SaaS vCFOs</a> focus on.</p>'
+        term: 'Penalty for mismatch in GSTR-1 and GSTR-3B',
+        definition: '<p>If the tax liability declared in GSTR-1 (sales) is higher than the tax paid in GSTR-3B, the GST department will issue a notice to recover the difference along with interest. This mismatch is a major red flag for tax authorities.</p><p><b>Startup Example:</b> A startup reports sales of ₹10 Lakhs in GSTR-1 but, due to a calculation error, only pays tax on ₹9 Lakhs in GSTR-3B. They will receive a notice for the ₹1 Lakh shortfall plus interest.</p><p>Our <a href="/services/bookkeeping">reconciliation services</a> prevent such mismatches.</p>'
+    },
+    {
+        term: 'Consequences of incorrect Place of Supply in GST',
+        definition: '<p>Charging the wrong type of GST (e.g., charging CGST/SGST instead of IGST) due to an incorrect determination of Place of Supply leads to a situation where you have paid tax to the wrong government. You will have to pay the correct tax (e.g., IGST) and then claim a refund for the tax paid incorrectly, leading to a blocked working capital.</p><p><b>Startup Example:</b> A consultant in Maharashtra provides a service to a client in Karnataka but wrongly charges CGST/SGST. They must now pay IGST on the transaction and go through a refund process for the wrongly paid tax.</p><p>Our <a href="/solutions/gst-compliance-for-export-startups">GST advisory services</a> help determine the correct Place of Supply.</p>'
+    },
+    {
+        term: 'Penalty for not maintaining proper books of accounts',
+        definition: '<p>Failure to maintain proper books of accounts as required by the Companies Act or Income Tax Act can lead to penalties, prosecution, and difficulty in getting financial statements audited. It can completely derail a due diligence process.</p><p><b>Startup Example:</b> A startup approaching investors has poorly maintained books. The investors are unable to verify the financial claims and decide to pass on the investment opportunity.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> build a clean, auditable financial foundation.</p>'
+    },
+    {
+        term: 'Consequences of violating FEMA regulations for FDI',
+        definition: '<p>Non-compliance with FEMA regulations, such as not reporting foreign investment within the stipulated time, can lead to heavy penalties that can be a percentage of the transaction amount. The company may have to go through a "compounding" process with the RBI to settle the contravention.</p><p><b>Startup Example:</b> A startup receives $500,000 from a US investor but files the required Form FC-GPR 60 days late. They will have to apply for compounding and pay a significant penalty calculated by the RBI.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> includes managing FEMA compliance.</p>'
+    },
+    {
+        term: 'Penalty for delayed reporting of foreign investment (FC-GPR)',
+        definition: '<p>Form FC-GPR must be filed within 30 days of issuing shares to a foreign investor. Delay in filing is a contravention of FEMA and requires compounding with the RBI, which involves paying a penalty. The penalty amount is not fixed and is determined by the RBI.</p><p><b>Startup Example:</b> A startup delays its FC-GPR filing for its seed round. During its Series A due diligence, the new investors flag this as a major compliance lapse, delaying the funding until the compounding process is complete.</p><p>Our <a href="/services/corporate-law">corporate law services</a> ensure timely filings.</p>'
+    },
+    {
+        term: 'Consequences of not complying with Equalisation Levy provisions',
+        definition: '<p>If a business fails to deduct and pay the Equalisation Levy on payments to foreign digital companies, the entire expense can be disallowed for income tax purposes, leading to a higher tax liability. Interest and penalties also apply.</p><p><b>Startup Example:</b> A startup spends ₹50 Lakhs on Google ads but fails to pay the 6% Equalisation Levy. The Income Tax department could disallow the entire ₹50 Lakhs as a business expense.</p><p>We guide startups on <a href="/solutions/tds-on-foreign-payments-startups">TDS and other foreign payment compliances</a>.</p>'
+    },
+    {
+        term: 'Due date for TDS payment',
+        definition: '<p>Tax Deducted at Source (TDS) must be deposited with the government by the 7th of the following month. For the month of March, the due date is April 30th.</p><p><b>Startup Example:</b> A startup deducts TDS on salaries for the month of July. It must deposit this amount with the government on or before August 7th.</p><p>Timely TDS payment is a key part of our <a href="/services/regulatory-compliances">compliance services</a>.</p>'
+    },
+    {
+        term: 'Interest on late payment of TDS',
+        definition: '<p>If TDS is deducted but not paid to the government by the due date, interest at 1.5% per month (or part of a month) is levied from the date of deduction to the date of payment.</p><p><b>Startup Example:</b> A startup deducts ₹50,000 TDS in July but deposits it in September (a delay of 2 months). It will have to pay interest of ₹50,000 * 1.5% * 2 = ₹1,500.</p><p>We help startups avoid these interest costs through our <a href="/services/regulatory-compliances">compliance management</a>.</p>'
+    },
+    {
+        term: 'Penalty for non-issuance of Form 16/16A',
+        definition: '<p>Failure to issue TDS certificates (Form 16 for salary, Form 16A for other payments) by the due date attracts a penalty of ₹100 per day of default for each certificate.</p><p><b>Startup Example:</b> A startup with 20 employees fails to issue Form 16 by the due date of June 15th. It could face a penalty of ₹100 * 20 employees * number of days of delay.</p><p>Our payroll and TDS services ensure all forms are issued on time.</p>'
+    },
+    {
+        term: 'Consequences of non-compliance with Section 194R (TDS on benefits)',
+        definition: '<p>Section 194R requires deduction of TDS at 10% on any benefit or perquisite provided to a resident arising from their business or profession, if the value exceeds ₹20,000 in a year. Non-compliance leads to disallowance of the expense and penalties.</p><p><b>Startup Example:</b> A company sends a social media influencer on an all-expenses-paid trip worth ₹1 Lakh for promotion. It must deduct TDS of ₹10,000 on the value of this benefit.</p><p>We provide guidance on complex TDS provisions like Section 194R.</p>'
+    },
+    {
+        term: 'Due date for filing quarterly TDS returns',
+        definition: '<p>Quarterly TDS returns (Form 24Q for salaries, 26Q for other payments) are due by the last day of the month following the end of the quarter. For the last quarter (Jan-Mar), the due date is May 31st.</p><p><b>Startup Example:</b> For the quarter ending June 30th, the TDS return must be filed by July 31st.</p><p>Our <a href="/services/regulatory-compliances">compliance calendar</a> keeps track of all such deadlines.</p>'
+    },
+    {
+        term: 'Penalty for incorrect details in TDS returns',
+        definition: '<p>Providing incorrect information in a TDS return, such as wrong PAN details, can lead to a penalty ranging from ₹10,000 to ₹1,00,000.</p><p><b>Startup Example:</b> A startup incorrectly enters the PAN of a vendor in its TDS return. It receives a notice from the tax department and may have to pay a penalty if the error is not rectified.</p><p>Our process includes verification of PAN details to avoid such errors.</p>'
+    },
+    {
+        term: 'Consequences of not deducting TDS on rent (Section 194-I)',
+        definition: '<p>If a business paying rent exceeding ₹2,40,000 per year fails to deduct TDS, it faces disallowance of 30% of the rent expense, plus interest and penalties for non-deduction.</p><p><b>Startup Example:</b> A startup pays office rent of ₹50,000 per month but doesn\'t deduct TDS. It risks having ₹1,80,000 (30% of ₹6 Lakhs annual rent) disallowed as an expense.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> flag all TDS-applicable payments.</p>'
+    },
+    {
+        term: 'Consequences of not deducting TDS on commission (Section 194H)',
+        definition: '<p>Failing to deduct TDS on commission or brokerage payments exceeding ₹15,000 in a year can lead to disallowance of 30% of the expense for tax purposes, plus interest and penalties.</p><p><b>Startup Example:</b> A D2C startup pays ₹1 Lakh in commission to a sales agent but fails to deduct TDS at 5%. This can lead to a disallowance of ₹30,000 as an expense.</p><p>Our services ensure comprehensive <a href="/services/regulatory-compliances">TDS compliance</a>.</p>'
+    },
+    {
+        term: 'Consequences of not obtaining a DIN',
+        definition: '<p>An individual cannot be appointed as a director of a company in India without obtaining a Director Identification Number (DIN). Acting as a director without a DIN is a violation of the Companies Act and can lead to penalties.</p><p><b>Startup Example:</b> Founders of a new startup must apply for and obtain DINs as part of the company incorporation process before they can be officially appointed as directors.</p><p>We handle the entire <a href="/services/business-setup">incorporation process</a>, including DIN application.</p>'
+    },
+    {
+        term: 'Penalty for not having a registered office',
+        definition: '<p>Every company must have a registered office from the date of incorporation. The company and every officer in default can be fined ₹1,000 for every day the default continues, up to a maximum of ₹1 Lakh.</p><p><b>Startup Example:</b> A startup incorporates but fails to file its registered office address with the ROC within 30 days. It starts incurring a daily penalty until the compliance is met.</p><p>Our <a href="/services/business-setup">Business Setup</a> services ensure all initial filings are completed.</p>'
+    },
+    {
+        term: 'Consequences of not maintaining statutory registers',
+        definition: '<p>Companies are required to maintain various statutory registers, such as the Register of Members, Register of Directors, etc. Failure to do so can lead to a penalty of up to ₹3 Lakhs on the company and ₹50,000 on each officer in default.</p><p><b>Startup Example:</b> During due diligence, an investor asks to see the startup\'s statutory registers, and the founder is unable to produce them. This is a major red flag indicating poor corporate governance.</p><p>Our <a href="/services/corporate-law">secretarial services</a> include the maintenance of all statutory registers.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with board meeting requirements',
+        definition: '<p>Failure to hold the minimum number of board meetings (4 per year, with a gap of no more than 120 days between two meetings) is a violation of the Companies Act. The company and every officer in default are liable for penalties.</p><p><b>Startup Example:</b> A startup holds board meetings irregularly, with a 150-day gap between two meetings. This non-compliance would be pointed out in their secretarial audit and can attract penalties from the ROC.</p><p>We help startups schedule and conduct compliant board meetings.</p>'
+    },
+    {
+        term: 'Consequences of violating related party transaction rules',
+        definition: '<p>Entering into a related party transaction without proper board or shareholder approval can render the contract voidable. The defaulting director may have to indemnify the company for any loss incurred and can face penalties.</p><p><b>Startup Example:</b> A founder, without board approval, awards a large contract to a company owned by their spouse. This transaction can be cancelled by the board, and the founder can be held liable for any losses.</p><p>Our <a href="/services/corporate-law">advisory services</a> guide startups on proper governance.</p>'
+    },
+    {
+        term: 'Penalty for accepting deposits from the public',
+        definition: '<p>A private limited company is prohibited from accepting deposits from the public. Violating this rule can lead to heavy penalties on the company (minimum ₹1 Crore or twice the amount of deposits, whichever is lower) and imprisonment for officers in default.</p><p><b>Startup Example:</b> A founder takes "loans" from multiple friends who are not directors or relatives, without following the proper procedures. This could be treated as illegal public deposits, attracting severe penalties.</p><p>We advise on <a href="/services/fundraising">compliant ways to raise capital</a>.</p>'
+    },
+    {
+        term: 'Due date for PF and ESI payments',
+        definition: '<p>The due date for payment of Provident Fund (PF) and Employees\' State Insurance (ESI) contributions is the 15th of the following month.</p><p><b>Startup Example:</b> For salaries paid for the month of July, the PF and ESI contributions deducted from employees and the employer\'s contribution must be paid by August 15th.</p><p>Our <a href="/services/regulatory-compliances">payroll compliance services</a> manage these payments.</p>'
+    },
+    {
+        term: 'Penalty for late payment of PF/ESI contributions',
+        definition: '<p>Late payment of PF and ESI contributions attracts damages and interest. For PF, damages can range from 5% to 25% per annum depending on the delay. For ESI, interest is charged at 12% per annum.</p><p><b>Startup Example:</b> A startup delays its PF payment by 3 months. It will be liable to pay the contribution plus interest and damages, significantly increasing the cost.</p><p>We ensure timely <a href="/services/regulatory-compliances">payroll compliance</a> to avoid these penalties.</p>'
+    },
+    {
+        term: 'Consequences of not registering under Shops and Establishment Act',
+        definition: '<p>Most states in India require businesses (including offices) to register under the local Shops and Establishment Act. Failure to register can lead to fines and penalties imposed by the local municipal or labor authorities.</p><p><b>Startup Example:</b> A startup opens a new office in Bangalore but fails to obtain a Shops and Establishment registration. A surprise inspection by a labor inspector could result in a penalty.</p><p>Our <a href="/services/business-setup">Business Setup</a> services cover all initial registrations.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with Labour Laws',
+        definition: '<p>Non-compliance with various labor laws (like minimum wage, working hours, leave policies) can result in penalties, legal disputes with employees, and reputational damage. The penalties vary significantly depending on the specific law and state.</p><p><b>Startup Example:</b> A startup fails to pay overtime wages to its employees as per the law. This can lead to a claim from the employees and penalties from the labor department.</p><p>We advise startups on setting up compliant <a href="/services/corporate-law">HR policies</a>.</p>'
+    },
+    {
+        term: 'Penalty for incorrect valuation for rights issue',
+        definition: '<p>If a company issues shares through a rights issue at a price that is not supported by a proper valuation report (from a registered valuer), it can be challenged by the tax authorities under the Angel Tax provisions if the price is deemed to be above fair market value.</p><p><b>Startup Example:</b> A startup does a rights issue to existing shareholders at a very high price without a valuation report. This could attract scrutiny from the income tax department.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> includes guidance on valuation.</p>'
+    },
+    {
+        term: 'Consequences of not obtaining a No-Objection Certificate for registered office',
+        definition: '<p>When using a rented property as a registered office, a No-Objection Certificate (NOC) from the property owner is mandatory for company incorporation. Without it, the registration application will be rejected. It also serves as proof of the right to use the premises.</p><p><b>Startup Example:</b> A founder tries to register their company using their rented apartment address but forgets to get an NOC from the landlord. The ROC rejects the application, delaying the incorporation process.</p><p>Our <a href="/services/business-setup">Business Setup</a> checklist ensures all documents are in place.</p>'
+    },
+    {
+        term: 'Due date for payment of Professional Tax',
+        definition: '<p>Professional Tax is a state-level tax. The due dates for payment and filing of returns vary from state to state. It is typically a monthly or quarterly compliance for the employer and an annual compliance for the employee.</p><p><b>Startup Example:</b> In Maharashtra, the employer must deduct professional tax from the employee\'s salary monthly and pay it by the last day of that month.</p><p>We handle multi-state <a href="/services/regulatory-compliances">payroll compliances</a>.</p>'
+    },
+    {
+        term: 'Penalty for non-payment of Professional Tax',
+        definition: '<p>Late payment or non-payment of Professional Tax attracts interest and penalties, which vary by state. The penalties can be a percentage of the tax due or a fixed amount.</p><p><b>Startup Example:</b> A startup in Karnataka fails to pay its professional tax on time. It will be liable for the tax amount plus interest at 1.25% per month and a penalty of up to 150% of the tax due.</p><p>Our services ensure all state-level compliances are met.</p>'
+    },
+    {
+        term: 'Consequences of non-compliance with data privacy laws (DPDP Act)',
+        definition: '<p>Non-compliance with the Digital Personal Data Protection (DPDP) Act, 2023 can lead to severe penalties. Penalties for data breaches or failure to take reasonable security safeguards can be as high as ₹250 crore.</p><p><b>Startup Example:</b> A health-tech startup suffers a data breach exposing sensitive patient data. If it is found that they did not have adequate security measures in place, they could face a massive penalty from the Data Protection Board of India.</p><p>Our <a href="/services/corporate-law">legal advisory</a> helps startups understand and prepare for DPDP compliance.</p>'
+    },
+    {
+        term: 'Penalty for data breaches under DPDP Act',
+        definition: '<p>Under India\'s DPDP Act, 2023, penalties for data breaches are significant and can go up to ₹250 crore. The penalty depends on the nature, gravity, and duration of the breach, the type of data involved, and the number of affected users.</p><p><b>Startup Example:</b> A fintech startup with millions of users experiences a data breach. The Data Protection Board could levy a penalty running into several crores, potentially crippling the company.</p><p>We advise on the importance of building robust systems as part of our <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech advisory</a>.</p>'
+    },
+    {
+        term: 'Consequences of not having a privacy policy',
+        definition: '<p>Not having a clear, accessible privacy policy on your website or app is a major compliance failure. Under laws like the DPDP Act, it can lead to penalties. It also erodes user trust and can be a red flag for investors during due diligence.</p><p><b>Startup Example:</b> An e-commerce startup collects user data but does not have a privacy policy explaining how the data is used. This is a violation of data protection laws and makes the company look unprofessional to customers and investors.</p><p>Drafting terms of service and privacy policies is part of our <a href="/services/corporate-law">legal services</a>.</p>'
+    },
+    {
+        term: 'Due date for filing patent/trademark renewals',
+        definition: '<p>Patents and trademarks are not perpetual and require renewal. A patent in India must be renewed annually after the second year. A trademark must be renewed every 10 years. Failure to renew by the due date can lead to the lapse of these valuable IP assets.</p><p><b>Startup Example:</b> A startup forgets to renew its trademark. A competitor can then potentially register a similar mark, causing brand confusion and legal disputes.</p><p>Our <a href="/services/corporate-law">IP advisory services</a> can help manage your IP portfolio.</p>'
+    },
+    {
+        term: 'Penalty for infringing on a trademark',
+        definition: '<p>Trademark infringement can lead to a civil lawsuit where the infringer may have to pay damages to the trademark owner and stop using the mark. In some cases, it can also lead to criminal proceedings with imprisonment and fines.</p><p><b>Startup Example:</b> A new startup uses a brand name that is deceptively similar to an established competitor. The competitor sues them for infringement, forcing the startup to undergo a costly rebranding exercise and pay damages.</p><p>We advise on trademark searches as part of our <a href="/services/business-setup">Business Setup</a> process.</p>'
+    },
+    {
+        term: 'Consequences of not having proper employment contracts',
+        definition: '<p>Not having clear, written employment contracts can lead to disputes regarding salary, job roles, confidentiality, and intellectual property ownership. Verbal agreements are difficult to enforce and create significant legal risks for the startup.</p><p><b>Startup Example:</b> A startup fires an employee for poor performance. The employee, who never signed a contract with a clear IP assignment clause, claims ownership of the code they wrote, leading to a legal battle.</p><p>We help draft robust employment contracts as part of our <a href="/services/corporate-law">Corporate Law</a> services.</p>'
+    },
+    {
+        term: 'Penalty for misclassifying employees as independent contractors',
+        definition: '<p>Misclassifying employees as "consultants" or "freelancers" to avoid payroll taxes (PF, ESI) and other employee benefits is illegal. If caught, the company can be liable for all past unpaid contributions, along with heavy penalties and interest.</p><p><b>Startup Example:</b> A startup has a team of 20 people all on "consultant" agreements. A labor inspection reveals they function as employees. The startup is forced to pay years of back-dated PF contributions plus penalties.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed-startups">compliance guides</a> cover correct employee classification.</p>'
+    },
+    {
+        term: 'Consequences of violating lock-in periods for shares',
+        definition: '<p>Shares issued to promoters or investors in certain situations (like an IPO or before a funding round) can be subject to a lock-in period, during which they cannot be sold. Violating this is a breach of contract and securities law, leading to penalties and legal action.</p><p><b>Startup Example:</b> A founder sells some of their shares to an outside party during a lock-in period agreed upon in a shareholder agreement. This breach could trigger default clauses and legal action from their investors.</p><p>We advise on and draft SHAs with clear <a href="/services/corporate-law">lock-in clauses</a>.</p>'
+    },
+    {
+        term: 'Due date for payment of GST under Reverse Charge Mechanism',
+        definition: '<p>The tax liability under the Reverse Charge Mechanism (RCM) must be paid in cash (not by using ITC) by the due date of filing the GSTR-3B for that month, which is typically the 20th of the next month.</p><p><b>Startup Example:</b> A startup receives legal services from a lawyer in July. It must pay the GST on this service under RCM by August 20th.</p><p>Our <a href="/services/regulatory-compliances">GST services</a> handle all RCM calculations and payments.</p>'
+    },
+    {
+        term: 'Interest on delayed payment of GST under RCM',
+        definition: '<p>If a business fails to pay the GST liability under Reverse Charge by the due date, it is liable to pay interest at 18% per annum for the period of delay.</p><p><b>Startup Example:</b> A startup pays its RCM liability for July in October. It will have to pay interest for the delay of two months on the tax amount.</p><p>Timely compliance is key to avoiding these extra costs.</p>'
+    },
+    {
+        term: 'Consequences of wrongful claim of Input Tax Credit (ITC)',
+        definition: '<p>Claiming ITC that you are not eligible for (e.g., on blocked credits like food and beverages, or on fake invoices) is a serious offense. It will result in the reversal of the ITC along with interest at 24% per annum and penalties that can go up to 100% of the tax amount.</p><p><b>Startup Example:</b> A startup claims ITC on invoices from a supplier who did not actually supply any goods. During a GST audit, this is identified as a fraudulent claim, leading to ITC reversal and heavy penalties.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> ensure ITC is claimed only on eligible invoices.</p>'
+    },
+    {
+        term: 'Penalty for fraudulent claim of ITC',
+        definition: '<p>For fraudulent claims of Input Tax Credit (ITC), the penalty can be 100% of the tax amount involved. In serious cases involving large amounts, it can also lead to arrest and prosecution under GST law.</p><p><b>Startup Example:</b> A founder is found to be part of a network using fake invoices to claim ITC. This can lead to criminal proceedings, apart from the financial penalty.</p><p>We advocate for and ensure 100% <a href="/services/regulatory-compliances">compliant practices</a>.</p>'
+    },
+    {
+        term: 'Due date for filing GSTR-8 by e-commerce operators',
+        definition: '<p>E-commerce operators who are required to collect Tax at Source (TCS) must file Form GSTR-8 by the 10th of the following month, detailing the supplies made through their platform and the TCS collected.</p><p><b>Startup Example:</b> A marketplace startup must file its GSTR-8 for July, detailing all sales made by vendors on its platform, by August 10th.</p><p>Our services for <a href="/industry-finance/gst-for-d2c-brands-india">e-commerce</a> cover all specific compliance needs.</p>'
+    },
+    {
+        term: 'Consequences of TCS non-compliance for e-commerce operators',
+        definition: '<p>If an e-commerce operator fails to collect Tax at Source (TCS) or fails to file GSTR-8, they are liable for the tax amount, plus interest and penalties. It also creates a reconciliation problem for the vendors on their platform.</p><p><b>Startup Example:</b> A marketplace platform forgets to deduct TCS. It becomes liable to pay the TCS amount out of its own pocket to the government, directly impacting its profitability.</p><p>We provide end-to-end <a href="/industry-finance/gst-for-d2c-brands-india">compliance for marketplaces</a>.</p>'
+    },
+    {
+        term: 'Penalty for not having a proper refund policy for D2C brands',
+        definition: '<p>Under the Consumer Protection (E-Commerce) Rules, all e-commerce entities must have a clear and accessible refund, return, and exchange policy. Not having one, or not adhering to the stated policy, can lead to consumer complaints and penalties from consumer courts.</p><p><b>Startup Example:</b> A D2C brand has a vague refund policy. A customer files a complaint for a refused refund, leading to a consumer court case and negative publicity.</p><p>Our <a href="/services/corporate-law">legal advisory</a> helps draft compliant e-commerce policies.</p>'
+    },
+    {
+        term: 'Consequences of violating Legal Metrology Act for e-commerce packaging',
+        definition: '<p>The Legal Metrology (Packaged Commodities) Rules mandate specific declarations on packaged goods sold online, such as MRP, manufacturing date, and country of origin. Non-compliance can lead to seizure of goods and penalties.</p><p><b>Startup Example:</b> A D2C brand sells a cosmetic product online but fails to display the "Best Before" date on the product listing page. This is a violation and can attract penalties from the Legal Metrology department.</p><p>We guide <a href="/industry-finance/gst-for-d2c-brands-india">D2C brands</a> on these specific compliance needs.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with FSSAI regulations for food startups',
+        definition: '<p>Food startups must comply with the Food Safety and Standards Act (FSSAI). Non-compliance, such as selling unsafe food or mislabeling products, can lead to severe penalties, including fines up to ₹10 Lakhs and imprisonment.</p><p><b>Startup Example:</b> A cloud kitchen startup operates without an FSSAI license. An inspection leads to the immediate shutdown of the kitchen and heavy penalties.</p><p>Our <a href="/services/business-setup">setup services</a> help in obtaining all necessary licenses.</p>'
+    },
+    {
+        term: 'Consequences of not obtaining CDSCO license for HealthTech devices',
+        definition: '<p>Manufacturing or importing medical devices in India without a valid license from the Central Drugs Standard Control Organisation (CDSCO) is a serious offense. It can lead to imprisonment for up to 5 years and fines.</p><p><b>Startup Example:</b> A HealthTech startup imports a diagnostic device and starts selling it without getting an import license from CDSCO. They face legal action and seizure of their products.</p><p>Our <a href="/industry-finance/finance-for-fintech-startups-india">HealthTech advisory</a> stresses the importance of regulatory compliance.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with medical device rules',
+        definition: '<p>The Medical Device Rules, 2017, govern the manufacturing, import, and sale of medical devices in India. Non-compliance with aspects like labeling, quality control, and post-market surveillance can lead to suspension of license, fines, and imprisonment.</p><p><b>Startup Example:</b> A medical device startup fails to report an adverse event associated with its product to the authorities. This can lead to the cancellation of their manufacturing license.</p><p>We guide startups through the <a href="/industry-finance/finance-for-fintech-startups-india">complex regulatory landscape</a>.</p>'
+    },
+    {
+        term: 'Consequences of violating payment aggregator/gateway guidelines',
+        definition: '<p>The RBI\'s guidelines for Payment Aggregators (PAs) are strict. Violations related to net worth, fund flow management, data localization, or KYC can lead to heavy penalties and even revocation of the PA license.</p><p><b>Startup Example:</b> A licensed PA is found to be co-mingling customer funds from the nodal account with its own funds. This is a severe violation and can lead to the RBI revoking their license to operate.</p><p>Our <a href="/solutions/virtual-cfo-for-fintech-startups">Virtual CFO for FinTechs</a> ensures adherence to these guidelines.</p>'
+    },
+    {
+        term: 'Penalty for fund flow violations in digital lending',
+        definition: '<p>The RBI\'s digital lending guidelines mandate that loan funds must flow directly from the lender\'s (NBFC) account to the borrower\'s account. If a lending service provider (LSP) handles the funds, it\'s a major violation that can lead to the partner NBFC facing RBI action and the LSP being blacklisted.</p><p><b>Startup Example:</b> A lending startup, in an attempt to manage disbursements, routes loan amounts through its own bank account instead of the partner NBFC\'s. This is a direct violation and can shut down their entire business.</p><p>We help structure <a href="/solutions/virtual-cfo-for-fintech-startups">compliant fund flows</a> for lending startups.</p>'
+    },
+    {
+        term: 'Consequences of not providing Key Fact Statement (KFS) in lending',
+        definition: '<p>As per RBI\'s digital lending guidelines, all lenders must provide a standardized Key Fact Statement (KFS) to the borrower before the loan is sanctioned, detailing all costs and terms. Failure to do so is a compliance violation and can lead to penalties.</p><p><b>Startup Example:</b> A digital lending app does not show the all-inclusive Annual Percentage Rate (APR) in a KFS. This is a violation of transparency norms and can attract regulatory action.</p><p>Our <a href="/industry-finance/finance-for-fintech-startups-india">FinTech compliance services</a> cover these requirements.</p>'
+    },
+    {
+        term: 'Penalty for AML non-compliance',
+        definition: '<p>Failure to comply with Anti-Money Laundering (AML) regulations, such as not conducting proper customer due diligence or not reporting suspicious transactions, can lead to severe penalties from regulators like the RBI and FIU-IND, including fines and imprisonment for the principal officers.</p><p><b>Startup Example:</b> A FinTech platform fails to report a series of suspicious transactions to the FIU-IND. They are found to be non-compliant during an audit and face heavy penalties.</p><p>We advise on setting up robust <a href="/solutions/virtual-cfo-for-fintech-startups">AML processes</a>.</p>'
+    },
+    {
+        term: 'Consequences of KYC failures',
+        definition: '<p>Inadequate Know Your Customer (KYC) processes can expose a FinTech company to fraud and money laundering. From a regulatory perspective, it can lead to penalties from the RBI or SEBI for not adhering to the KYC Master Directions.</p><p><b>Startup Example:</b> A P2P lending platform has weak KYC checks, allowing a fraudulent borrower to get onboarded. This leads to a default and exposes the platform to regulatory action for its failed process.</p><p>Robust KYC is a non-negotiable for any <a href="/industry-finance/finance-for-fintech-startups-india">FinTech</a>.</p>'
+    },
+    {
+        term: 'Consequences of tax evasion vs. tax avoidance',
+        definition: '<p>Tax avoidance is the legal use of tax laws to reduce one\'s tax burden. Tax evasion is the illegal act of not paying taxes that are rightfully due. While tax avoidance is a legitimate part of financial planning, tax evasion leads to penalties, interest, and even imprisonment.</p><p><b>Startup Example:</b> Using Section 80-IAC tax holiday is tax avoidance. Hiding revenue to pay less tax is tax evasion. The former is smart planning; the latter is a crime.</p><p>Our <a href="/services/regulatory-compliances">tax services</a> focus on legal tax planning and avoidance, not evasion.</p>'
+    },
+    {
+        term: 'Penalty for issuing invoices without supplying goods/services',
+        definition: '<p>Issuing "fake invoices" to pass on fraudulent Input Tax Credit (ITC) is a serious crime under GST. It can lead to arrest, prosecution, and penalties equivalent to 100% of the tax evaded.</p><p><b>Startup Example:</b> A founder is lured into a scheme where they receive fake invoices to reduce their GST liability. When caught, they face criminal proceedings and severe financial penalties, destroying the company.</p><p>We strictly advise against any such fraudulent practices.</p>'
+    },
+    {
+        term: 'Consequences of not reversing ITC for non-payment to suppliers within 180 days',
+        definition: '<p>If a business claims Input Tax Credit (ITC) on an invoice but fails to pay the supplier within 180 days, it must reverse that ITC and add it to its output tax liability, along with interest. The ITC can be reclaimed once the payment is made.</p><p><b>Startup Example:</b> A startup claims ITC of ₹18,000 on a purchase but doesn\'t pay the supplier for 7 months. It must pay back the ₹18,000 to the government with interest for the period of delay.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> track payables to manage this compliance.</p>'
+    },
+    {
+        term: 'Due date for applying for GST registration after crossing threshold',
+        definition: '<p>A business must apply for GST registration within 30 days from the date it becomes liable for registration (i.e., the date its turnover exceeds the prescribed threshold).</p><p><b>Startup Example:</b> A service startup\'s turnover crosses ₹20 Lakhs on August 10th. It must apply for GST registration on or before September 9th.</p><p>Our <a href="/services/business-setup">Business Setup</a> services handle this process.</p>'
+    },
+    {
+        term: 'Penalty for not obtaining GST registration when required',
+        definition: '<p>If a business is liable for GST registration but fails to obtain it, it can be liable for a penalty of 100% of the tax due or ₹10,000, whichever is higher. They will also be liable to pay the entire tax liability from the date they were supposed to be registered.</p><p><b>Startup Example:</b> A startup crosses the GST threshold but continues to operate without registration for a year. When caught, they have to pay the entire year\'s GST liability plus a matching penalty.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed-startups">pre-seed guide</a> covers this critical first step.</p>'
+    },
+    {
+        term: 'Consequences of business closure without surrendering GST registration',
+        definition: '<p>If a business closes down but fails to apply for cancellation of its GST registration, it is still required to file GST returns. Failure to file "NIL" returns will lead to the accumulation of late fees and penalties.</p><p><b>Startup Example:</b> A founder shuts down their startup but doesn\'t cancel the GSTIN. A year later, they receive a notice for accumulated late fees of thousands of rupees for non-filing of returns.</p><p>We assist with all <a href="/services/corporate-law">closure and winding-up formalities</a>.</p>'
+    },
+    {
+        term: 'Penalty for not displaying GSTIN on signboards and invoices',
+        definition: '<p>Registered persons under GST are required to display their GST Identification Number (GSTIN) on their name boards at their principal place of business and on all tax invoices. Failure to do so can attract a general penalty of up to ₹25,000.</p><p><b>Startup Example:</b> A newly registered startup forgets to add its GSTIN to its invoices. This is a compliance lapse and can be pointed out during a GST inspection.</p><p>Our <a href="/services/regulatory-compliances">compliance checklist</a> includes these small but important details.</p>'
+    },
+    {
+        term: 'Consequences of mismatch in E-way bill and actual goods transported',
+        definition: '<p>If there is a major discrepancy between the details in the E-way bill (like quantity or HSN code) and the actual goods being transported, tax officers can detain the vehicle and seize the goods. It can lead to penalties equivalent to 200% of the tax payable.</p><p><b>Startup Example:</b> A D2C brand\'s transport is stopped for inspection. The E-way bill shows 100 units, but the truck is carrying 150 units. The entire consignment can be seized, and a heavy penalty imposed.</p><p>Our <a href="/industry-finance/gst-for-d2c-brands-india">D2C compliance services</a> cover E-way bill generation.</p>'
+    },
+    {
+        term: 'Penalty for expiry of E-way bill during transit',
+        definition: '<p>An E-way bill has a specific validity period based on the distance to be traveled. If the goods are in transit after the E-way bill has expired, it is considered a violation. The goods can be detained, and penalties can be levied.</p><p><b>Startup Example:</b> A truck carrying a startup\'s goods breaks down, and the transit is delayed. If the E-way bill expires during this time and is not extended, the shipment is at risk of being penalized if inspected.</p><p>We advise on proper logistics and <a href="/services/regulatory-compliances">E-way bill management</a>.</p>'
+    },
+    {
+        term: 'Consequences of not maintaining records at the principal place of business',
+        definition: '<p>Under the Companies Act and GST Act, a company is required to maintain its books of accounts and records at its registered office. Failure to do so can attract penalties during an inspection.</p><p><b>Startup Example:</b> A startup has its registered office in one city but its finance team and all records are in another city. This is a non-compliance unless proper procedures are followed to declare an "additional place of business".</p><p>Our <a href="/services/corporate-law">corporate law services</a> ensure correct statutory compliance.</p>'
+    },
+    {
+        term: 'Penalty for destruction of accounting records before the statutory period',
+        definition: '<p>Under the Companies Act, books of accounts must be preserved for at least 8 financial years. Under GST, records must be kept for 72 months from the due date of filing the annual return. Premature destruction of records can lead to penalties and adverse inferences during assessments.</p><p><b>Startup Example:</b> A startup disposes of its invoices and expense vouchers after 3 years. During a tax audit 5 years later, they are unable to produce the required documents, leading to disallowance of expenses and penalties.</p><p>Our <a href="/services/bookkeeping">services</a> include digital record-keeping for long-term archival.</p>'
+    },
+    {
+        term: 'Consequences of non-compliance with CSR provisions',
+        definition: '<p>Companies meeting certain thresholds of net worth, turnover, or profit are required to spend 2% of their average net profits on Corporate Social Responsibility (CSR). Non-compliance can lead to penalties on the company and its officers.</p><p><b>Startup Example:</b> A fast-growing, profitable startup crosses the CSR threshold but fails to constitute a CSR committee or make the required spending. They face penalties and reputational risk.</p><p>We help growing startups identify and comply with these advanced <a href="/services/regulatory-compliances">regulatory requirements</a>.</p>'
+    },
+    {
+        term: 'Due date for filing Form CSR-2',
+        definition: '<p>Every company covered under CSR rules is required to file a report on Corporate Social Responsibility in Form CSR-2 with the Registrar of Companies for the preceding financial year.</p><p><b>Startup Example:</b> A profitable Series B startup must file Form CSR-2 detailing its CSR activities for FY 23-24 as an addendum to its annual ROC filing.</p><p>Our <a href="/services/corporate-law">secretarial services</a> handle all ROC form filings.</p>'
+    },
+    {
+        term: 'Penalty for failure to spend CSR amount',
+        definition: '<p>If a company fails to spend the required CSR amount, it must transfer the unspent amount to a specified government fund. Failure to do so can result in a penalty of twice the unspent amount or ₹1 crore, whichever is less, on the company, and penalties on the officers.</p><p><b>Startup Example:</b> A company fails to spend its CSR budget of ₹10 Lakhs and also fails to transfer it. It could face a penalty of up to ₹20 Lakhs.</p><p>We provide comprehensive <a href="/services/regulatory-compliances">compliance management</a> for scaling startups.</p>'
+    },
+    {
+        term: 'Consequences of making cash transactions above the prescribed limit',
+        definition: '<p>Section 269ST of the Income Tax Act prohibits receiving an amount of ₹2 Lakhs or more in cash from a person in a single day, for a single transaction, or in relation to a single event. Violation attracts a penalty equal to the amount received.</p><p><b>Startup Example:</b> A startup sells goods worth ₹3 Lakhs to a customer and accepts the entire payment in cash. The startup is liable for a penalty of ₹3 Lakhs.</p><p>Our <a href="/services/bookkeeping">accounting services</a> help track and flag such transactions.</p>'
+    },
+    {
+        term: 'Penalty for accepting cash loans above ₹20,000',
+        definition: '<p>Under Section 269SS of the Income Tax Act, no person can accept a loan or deposit of ₹20,000 or more in cash. Violation can lead to a penalty equal to 100% of the loan amount.</p><p><b>Startup Example:</b> A founder takes a "loan" of ₹50,000 in cash from a friend to put into the business. This is a violation and can attract a penalty of ₹50,000.</p><p>We advise on <a href="/services/fundraising">compliant methods of financing</a>.</p>'
+    },
+    {
+        term: 'Consequences of non-compliance with significant beneficial owner (SBO) rules',
+        definition: '<p>Companies are required to identify and report their Significant Beneficial Owners (individuals who hold significant influence or control). Failure to do so can result in heavy penalties on the company, its officers, and the SBO themselves.</p><p><b>Startup Example:</b> A startup has a complex holding structure through multiple entities. It fails to identify and report the ultimate individual owner. This is a serious corporate governance lapse.</p><p>Our <a href="/services/corporate-law">Corporate Law</a> team can help navigate SBO compliance.</p>'
+    },
+    {
+        term: 'Due date for filing BEN-2 form for SBO',
+        definition: '<p>A company must file Form BEN-2 with the ROC within 30 days of receiving a declaration from a Significant Beneficial Owner (SBO) in Form BEN-1.</p><p><b>Startup Example:</b> An individual acquires a controlling stake in a startup and declares themselves as an SBO. The startup must report this to the ROC by filing Form BEN-2 within 30 days.</p><p>We manage all event-based <a href="/services/corporate-law">ROC filings</a>.</p>'
+    },
+    {
+        term: 'Penalty for non-reporting of SBO',
+        definition: '<p>Failure to file Form BEN-2 for reporting Significant Beneficial Owners can lead to a penalty of ₹10 Lakhs on the company, which can extend up to ₹50 Lakhs. Officers in default also face heavy penalties and potential imprisonment.</p><p><b>Startup Example:</b> A startup with a complex shareholding fails to undertake the SBO identification process and file BEN-2. This exposes the company and its directors to crippling penalties.</p><p>This is a critical part of our <a href="/services/corporate-law">corporate governance advisory</a>.</p>'
+    },
+    {
+        term: 'Consequences of not having D&O insurance',
+        definition: '<p>While not legally mandatory for all private companies, not having Directors and Officers (D&O) liability insurance is a major risk. It protects directors from personal liability in case of lawsuits related to their decisions. Most VCs will insist on the company taking a D&O policy after they invest.</p><p><b>Startup Example:</b> A director is sued by a disgruntled ex-employee. Without D&O insurance, the director has to bear the entire cost of litigation personally.</p><p>We advise on risk mitigation as part of our <a href="/services/virtual-cfo">vCFO services</a>.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with Factory Act',
+        definition: '<p>For manufacturing startups, non-compliance with the Factory Act, 1948 (related to worker health, safety, and welfare) can lead to fines and imprisonment for the "occupier" of the factory (often the director).</p><p><b>Startup Example:</b> A manufacturing startup fails to provide adequate safety equipment, leading to an accident. The directors can be held personally liable and face criminal proceedings.</p><p>Our advisory for <a href="/industry-finance/finance-for-manufacturing-startups-india">manufacturing startups</a> includes highlighting these critical compliance areas.</p>'
     }
 ];
 
