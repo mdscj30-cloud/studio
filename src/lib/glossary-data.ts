@@ -311,7 +311,9 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Burn Rate',
-        definition: 'The rate at which a startup is losing money before it becomes profitable, measuring the net cash outflow. For example, if your startup has monthly expenses of ₹15 Lakhs and revenue of ₹5 Lakhs, your Net Burn Rate is ₹10 Lakhs per month. Effectively managing this is a core focus of our Virtual CFO services.'
+        definition: `<p>The rate at which a startup is spending its venture capital to finance overhead before generating positive cash flow from operations. It is a measure of negative cash flow.</p>
+        <p><b>Startup Example:</b> An early-stage SaaS startup has ₹1 Crore in the bank from a seed round. Its monthly expenses (salaries, rent, marketing) are ₹15 Lakhs, and its initial revenue is ₹5 Lakhs per month. Its <strong>Net Burn Rate</strong> is ₹10 Lakhs/month (₹15L expenses - ₹5L revenue). </p>
+        <p>Understanding and managing this burn rate is critical for survival and is a core component of our <a href="/services/virtual-cfo">Virtual CFO services</a>.</p>`
     },
     {
         term: 'Business Model Canvas',
@@ -543,11 +545,15 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Customer Acquisition Cost (CAC)',
-        definition: 'The total cost of sales and marketing efforts needed to acquire a single new customer, including ad spend and team salaries. For example, if a startup spent ₹5 Lakhs on sales and marketing in a month and acquired 50 new customers, its CAC is ₹10,000. Optimizing CAC is a key focus of our Virtual CFO services.'
+        definition: `<p>The total cost of sales and marketing efforts required to acquire a single new customer.</p>
+        <p><b>Startup Example:</b> A D2C startup spends ₹2 Lakhs on Instagram ads and ₹1 Lakh on marketing salaries in a month. If they acquire 300 new customers in that month, their CAC is (₹2L + ₹1L) / 300 = ₹1,000 per customer.</p>
+        <p>Understanding and optimizing CAC is fundamental to building a profitable business, a process we guide through our <a href="/services/bookkeeping">bookkeeping and MIS services</a>.</p>`
     },
     {
         term: 'Customer Lifetime Value (LTV or CLV)',
-        definition: 'The total revenue a business can reasonably expect from a single customer throughout their entire relationship with the company. For a SaaS startup, if a customer pays ₹2,000/month and the average customer stays for 3 years, the LTV is ₹72,000. A healthy business model requires an LTV significantly higher than the CAC, which our financial modeling services help determine.'
+        definition: `<p>The total revenue a business can reasonably expect from a single customer throughout their entire relationship with the company.</p>
+        <p><b>Startup Example:</b> A subscription box startup charges ₹1,500/month. On average, a customer stays subscribed for 8 months. The LTV of a customer is ₹1,500 * 8 = ₹12,000. This LTV must be significantly higher than the CAC for a sustainable business model.</p>
+        <p>Our <a href="/services/pitch-deck-financial-modelling">financial modeling services</a> help startups project and analyze their LTV:CAC ratio for investors.</p>`
     },
     {
         term: 'Customer Relationship Management (CRM)',
@@ -1056,7 +1062,9 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Gross Margin',
-        definition: 'The percentage of revenue left after subtracting the Cost of Goods Sold (COGS), measuring the profitability of each sale. For example, if a D2C brand sells a product for ₹1,000 and the direct costs are ₹400, the gross margin is 60%. This 60% must cover all other operating costs. Improving gross margin is a core focus of our bookkeeping and accounting services.'
+        definition: `<p>The portion of revenue left after subtracting the Cost of Goods Sold (COGS). It measures the profitability of each unit sold.</p>
+        <p><b>Startup Example:</b> A D2C brand sells a t-shirt for ₹1,000. The cost to manufacture and ship the t-shirt (COGS) is ₹400. The Gross Profit is ₹600, and the <strong>Gross Margin</strong> is (₹600 / ₹1,000) = 60%. This 60% must cover all other business expenses like marketing, salaries, and rent.</p>
+        <p>Improving Gross Margin is a primary goal of our <a href="/services/bookkeeping">bookkeeping and accounting services</a> for D2C brands.</p>`
     },
     {
         term: 'Gross Profit',
@@ -2043,7 +2051,9 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Runway',
-        definition: 'The number of months a startup can continue operating before running out of cash. It is calculated by dividing your current cash balance by your net burn rate. For example, if you have ₹1 Crore in the bank and a net burn rate of ₹10 Lakhs per month, your runway is 10 months. This is a critical metric for knowing when to begin your next fundraising process.'
+        definition: `<p>The number of months a startup can operate before running out of cash, assuming current income and expenses remain constant.</p>
+        <p><b>Startup Example:</b> Your startup has ₹1 Crore in the bank and a net burn rate of ₹10 Lakhs per month. Your <strong>Runway</strong> is 10 months (₹1 Crore / ₹10 Lakhs). This is the most critical metric for knowing when you need to start your next fundraising process.</p>
+        <p>Calculating and extending runway is a core part of our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn rate management strategies</a> for startups.</p>`
     },
     
     // S
@@ -2560,504 +2570,100 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         definition: 'A debt security that does not pay interest but is traded at a deep discount, rendering profit at maturity when the bond is redeemed for its full face value.'
     },
     {
-        term: 'Net Burn vs. Gross Burn',
-        definition: 'A distinction between the total cash spent (Gross Burn) and the net cash lost after accounting for incoming revenue (Net Burn). Net Burn is the true measure of a startup\'s cash runway.'
+        term: 'GST on Subscription Model',
+        definition: '<p>GST is applicable on SaaS and other subscription services. The primary challenge is determining the Place of Supply to apply the correct tax (IGST for inter-state/export or CGST/SGST for intra-state).</p><p><b>Startup Example:</b> An Indian SaaS startup sells a subscription to a customer in the US. This is considered an export of service and is a zero-rated supply. The startup can export without paying IGST by filing a Letter of Undertaking (LUT). For a customer in a different Indian state, the startup must charge IGST.</p><p>Navigating these scenarios is a core part of our <a href="/services/regulatory-compliances">GST compliance services</a>.</p>'
     },
     {
-        term: 'Customer Acquisition Cost Payback Period',
-        definition: 'The number of months it takes for a company to earn back the money it spent to acquire a customer. A shorter payback period indicates a more efficient business model.'
-    },
-    {
-        term: 'Rule of 40 (SaaS)',
-        definition: 'A common benchmark for SaaS companies that states the sum of the revenue growth rate and the profit margin should exceed 40%. It balances growth and profitability.'
-    },
-    {
-        term: 'Magic Number (SaaS)',
-        definition: 'A sales efficiency metric that measures the return on sales and marketing spend in terms of new recurring revenue. A Magic Number above 0.75 is generally considered good.'
-    },
-    {
-        term: 'Revenue per Employee',
-        definition: 'A measure of a company\'s efficiency, calculated by dividing total revenue by the number of full-time employees.'
-    },
-    {
-        term: 'Cash Runway',
-        definition: 'The number of months a startup can operate before running out of money, assuming current income and expenses remain constant. Calculated as (Cash Balance / Net Burn Rate).'
-    },
-    {
-        term: 'Months to Recover CAC',
-        definition: 'Another term for the CAC Payback Period, measuring the time needed for a customer to generate enough profit to cover their acquisition cost.'
-    },
-    {
-        term: 'Contribution Margin per Customer',
-        definition: 'The revenue from a single customer minus the variable costs associated with that customer. It shows the profitability of an individual customer.'
-    },
-    {
-        term: 'Customer Engagement Score',
-        definition: 'A composite metric created to measure how engaged a customer is with a product or service. It combines factors like usage frequency, feature adoption, and session duration.'
-    },
-    {
-        term: 'Daily Active Users (DAU)',
-        definition: 'The number of unique users who engage with a product on a single day.'
-    },
-    {
-        term: 'Monthly Active Users (MAU)',
-        definition: 'The number of unique users who engage with a product over a 30-day period.'
-    },
-    {
-        term: 'DAU/MAU Ratio',
-        definition: 'A metric that measures user stickiness by dividing Daily Active Users by Monthly Active Users. A higher ratio indicates more frequent user engagement.'
-    },
-    {
-        term: 'Stickiness Ratio',
-        definition: 'Another name for the DAU/MAU ratio, used to gauge how often users return to a product.'
-    },
-    {
-        term: 'Quick Ratio (SaaS)',
-        definition: 'A measure of a SaaS company\'s growth efficiency, calculated as (New MRR + Expansion MRR) / (Churned MRR + Downgrade MRR). It shows the ability to grow despite churn.'
-    },
-    {
-        term: 'Net Dollar Retention (NDR)',
-        definition: 'The percentage of recurring revenue retained from existing customers over a period, including expansion revenue and churn. An NDR over 100% means the business grows even without new customers.'
-    },
-    {
-        term: 'Gross Dollar Retention (GDR)',
-        definition: 'The percentage of recurring revenue retained from existing customers, excluding any expansion revenue. It is a true measure of customer retention.'
-    },
-    {
-        term: 'Committed Annual Recurring Revenue (CARR)',
-        definition: 'A forward-looking metric that includes current ARR plus the ARR from new and expansion bookings that are contractually committed but not yet live.'
-    },
-    {
-        term: 'Bookings vs. Billings vs. Revenue',
-        definition: 'Bookings are the value of a contract signed with a customer. Billings are the invoices sent to the customer. Revenue is the amount recognized over the service period as per accounting standards.'
-    },
-    {
-        term: 'Average Revenue Per User (ARPU)',
-        definition: 'A measure of the revenue generated per user or unit. Calculated as Total Revenue / Number of Users.'
-    },
-    {
-        term: 'Average Revenue Per Account (ARPA)',
-        definition: 'Similar to ARPU, but calculated on a per-account basis, which may include multiple users. Calculated as MRR / Total Number of Accounts.'
-    },
-    {
-        term: 'Capital Efficiency Ratio',
-        definition: 'A measure of how efficiently a company uses its capital to generate revenue. A common calculation is ARR / Total Capital Raised.'
-    },
-    {
-        term: 'Hype Ratio',
-        definition: 'A metric that compares the amount of capital raised to the amount of ARR generated. A lower ratio is better, indicating less hype and more substance.'
-    },
-    {
-        term: 'ARR per Employee',
-        definition: 'A measure of productivity, calculated as Annual Recurring Revenue divided by the number of full-time employees.'
-    },
-    {
-        term: 'Gross Margin Adjusted Payback Period',
-        definition: 'A more accurate version of the CAC Payback Period that uses the gross margin from a customer instead of just revenue, showing how long it takes to recover the acquisition cost in terms of profit.'
-    },
-    {
-        term: 'SaaS Cash Conversion Cycle',
-        definition: 'The time it takes for a SaaS company to convert its investment in sales and marketing into cash received from customers. It can be complex due to deferred revenue and long sales cycles.'
-    },
-    {
-        term: 'GST on Advance Payments',
-        definition: 'In GST, tax is liable to be paid on advance payments received for the supply of services, but generally not for the supply of goods.'
-    },
-    {
-        term: 'GST on Subscription Models',
-        definition: 'GST is applicable on SaaS and other subscription services. The place of supply rules determine whether IGST or CGST/SGST is applicable, which can be complex for international customers.'
-    },
-    {
-        term: 'TDS on SaaS Subscriptions',
-        definition: 'Payments for SaaS subscriptions can be classified as royalties or technical services, attracting TDS under Section 194J or 195 of the Income Tax Act.'
-    },
-    {
-        term: 'GST on Cross-Charge Transactions',
-        definition: 'When a head office provides services to its branches with different GSTINs, it must issue a tax invoice and charge GST, a concept known as cross-charge.'
-    },
-    {
-        term: 'Input Tax Credit on Employee Benefits',
-        definition: 'Claiming ITC on expenses like employee health insurance or free food is a contentious area under GST law, with specific conditions and restrictions.'
-    },
-    {
-        term: 'GST implications for ESOPs',
-        definition: 'The issuance of stock options to employees is generally not considered a supply under GST, and therefore not subject to GST.'
-    },
-    {
-        term: 'Taxability of Drop-shipping transactions',
-        definition: 'In a drop-shipping model, the tax liability can be complex, involving multiple parties and locations. The place of supply and invoicing rules are critical.'
-    },
-    {
-        term: 'GST on E-commerce Operator services',
-        definition: 'E-commerce operators are liable to collect Tax Collected at Source (TCS) on the net value of taxable supplies made through them by other suppliers.'
+        term: 'TDS on SaaS Payments',
+        definition: '<p>Payments made by an Indian company to a foreign SaaS provider (like AWS, Google Workspace, or HubSpot) can be considered a payment for royalty or technical services.</p><p><b>Startup Example:</b> An Indian startup pays $1,000 to a US-based SaaS company. The startup may be required to deduct TDS under Section 195 of the Income Tax Act. The rate depends on the Double Taxation Avoidance Agreement (DTAA) with the US. Failure to do so can result in disallowance of the expense.</p><p>Our <a href="/solutions/tds-on-foreign-payments-startups">TDS on foreign payments solution</a> helps startups stay compliant.</p>'
     },
     {
         term: 'Reverse Charge on Import of Services',
-        definition: 'When a business in India imports services, it is liable to pay GST on a reverse charge basis, meaning the recipient pays the tax directly to the government.'
+        definition: '<p>When a business in India receives services from a person outside India, the liability to pay GST falls on the recipient of the service under the Reverse Charge Mechanism (RCM).</p><p><b>Startup Example:</b> A startup in Bangalore hires a freelance developer from the UK for a project. The startup receives an invoice without GST. However, the Indian startup is liable to pay IGST on the invoice value directly to the government and can later claim it as Input Tax Credit.</p><p>Handling RCM is a key part of our <a href="/services/regulatory-compliances">GST services</a>.</p>'
     },
     {
         term: 'Equalisation Levy on Digital Advertising',
-        definition: 'A tax levied on payments made to non-resident tech companies (like Google, Facebook) for online advertising services by Indian residents.'
-    },
-    {
-        term: 'TDS on Payments to Influencers',
-        definition: 'Payments made to social media influencers are subject to TDS, typically under Section 194J (professional fees) or 194C (contract work).'
+        definition: '<p>A tax levied on payments made to non-resident technology companies for online advertising and related services.</p><p><b>Startup Example:</b> A D2C startup in India spends ₹1 Lakh on Facebook and Google ads. Since these are non-resident companies, the startup is required to deduct an Equalisation Levy (currently 6%) on this payment and deposit it with the government.</p><p>This is a critical compliance point covered in our <a href="/services/regulatory-compliances">tax compliance services</a>.</p>'
     },
     {
         term: 'GST for Multi-State Operations',
-        definition: 'A business operating in multiple states must obtain a separate GST registration for each state and comply with inter-state transaction rules (IGST).'
+        definition: '<p>A business with offices or warehouses in multiple states must obtain a separate GST registration for each state.</p><p><b>Startup Example:</b> A D2C brand has its main office in Delhi but uses a fulfillment center (warehouse) in Maharashtra. It must get a GST registration in both Delhi and Maharashtra. When transferring goods from Delhi to the Maharashtra warehouse, it must issue a tax invoice for the stock transfer and charge IGST.</p><p>We provide expert guidance on <a href="/industry-finance/gst-for-d2c-brands-india">multi-state GST compliance</a>.</p>'
     },
     {
-        term: 'Filing Letter of Undertaking (LUT) for Exports',
-        definition: 'Exporters can export goods or services without paying IGST by filing an LUT with the GST department, which is a declaration that they will fulfill all export obligations.'
-    },
-    {
-        term: 'GST refund on Inverted Duty Structure',
-        definition: 'If the GST rate on inputs is higher than the rate on outputs, a business can claim a refund of the unutilized Input Tax Credit.'
-    },
-    {
-        term: 'Tax implications of Angel Investment',
-        definition: 'Investments received from angel investors at a premium may be subject to Angel Tax under Section 56(2)(viib) if the valuation is not properly justified.'
-    },
-    {
-        term: 'Section 54F for Startup Investors',
-        definition: 'An income tax provision allowing individuals to claim exemption on long-term capital gains from selling an asset if the proceeds are invested in the equity shares of a startup.'
-    },
-    {
-        term: 'Tax treatment of Convertible Notes',
-        definition: 'The conversion of a convertible note into equity is a taxable event, and the capital gains are calculated based on the fair market value of the shares at the time of conversion.'
-    },
-    {
-        term: 'Carry Forward of Business Losses',
-        definition: 'Startups can carry forward business losses to offset against future profits for up to 8 years, but conditions related to the continuity of shareholding apply.'
-    },
-    {
-        term: 'Presumptive Taxation for Professionals',
-        definition: 'A simplified taxation scheme under Section 44ADA for specified professionals, where income is presumed to be 50% of gross receipts, reducing compliance burden.'
-    },
-    {
-        term: 'Section 80-IAC Tax Holiday for Startups',
-        definition: 'A tax incentive providing a 100% tax deduction on profits for 3 consecutive years out of the first 10 years for eligible startups recognized by DPIIT.'
-    },
-    {
-        term: 'TDS on Cryptocurrency transactions',
-        definition: 'A 1% TDS is applicable under Section 194S of the Income Tax Act on the transfer of Virtual Digital Assets (VDAs) like cryptocurrency in India.'
-    },
-    {
-        term: 'GST on director\'s remuneration',
-        definition: 'The applicability of GST on salaries paid to directors is a complex issue, depending on whether the director is an employee or providing services in an independent capacity.'
-    },
-    {
-        term: 'Place of Supply for IT services',
-        definition: 'Determining the place of supply for IT and IT-enabled services is crucial for charging the correct GST (IGST for inter-state/export, CGST/SGST for intra-state).'
-    },
-    {
-        term: 'GST implications of free samples',
-        definition: 'Distributing goods as free samples requires the reversal of the Input Tax Credit that was claimed on the purchase of those goods.'
+        term: 'TDS on Payments to Influencers',
+        definition: '<p>Payments made to social media influencers for marketing services are subject to Tax Deducted at Source (TDS).</p><p><b>Startup Example:</b> A startup pays an influencer ₹50,000 for a promotional post. This payment is considered a fee for professional services, and the startup must deduct TDS at 10% under Section 194J before paying the influencer.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> ensure you handle all TDS obligations correctly.</p>'
     },
     {
         term: 'Tax Audit under Section 44AB',
-        definition: 'A mandatory audit of accounts for businesses and professionals whose turnover or gross receipts exceed a specified threshold in a financial year.'
+        definition: '<p>A mandatory audit of accounts by a Chartered Accountant for businesses whose total sales, turnover, or gross receipts exceed a certain threshold (e.g., ₹10 crore for most digital businesses) in a financial year.</p><p><b>Startup Example:</b> A bootstrapped SaaS startup crosses ₹10 crore in annual revenue. They are now required to get their accounts audited under Section 44AB and file the tax audit report with their income tax return.</p><p>We facilitate and manage the <a href="/services/regulatory-compliances">tax audit process</a> for our clients.</p>'
     },
     {
-        term: 'KYC for P2P Lending Platforms',
-        definition: 'Peer-to-Peer lending platforms in India are regulated as NBFC-P2P and must adhere to stringent KYC and AML guidelines issued by the RBI.'
+        term: 'Filing Letter of Undertaking (LUT) for Exports',
+        definition: '<p>Exporters of goods or services can export without paying IGST by filing a Letter of Undertaking (LUT) with the GST department. This is a declaration that they will fulfill all export obligations.</p><p><b>Startup Example:</b> A service-based startup providing software development to US clients wants to invoice them without adding 18% IGST. By filing an LUT online, they can legally issue export invoices with zero tax, significantly improving their cash flow.</p><p>Our <a href="/solutions/gst-compliance-for-export-startups">GST for exporters solution</a> includes LUT filing.</p>'
+    },
+    {
+        term: 'Angel Tax under Section 56(2)(viib)',
+        definition: '<p>A tax levied on the capital raised by unlisted private companies from an Indian resident, to the extent that the issue price of the shares is in excess of their Fair Market Value (FMV).</p><p><b>Startup Example:</b> A startup raises ₹1 Crore from an angel investor at a valuation of ₹10 Crore. If the tax officer assesses the Fair Market Value to be only ₹5 Crore, the excess premium of ₹50 Lakhs could be taxed as "Income from Other Sources" in the hands of the startup.</p><p>Proper valuation is key to avoiding this, a core part of our <a href="/services/fundraising">fundraising advisory</a>.</p>'
+    },
+    {
+        term: 'Section 80-IAC Tax Holiday for Startups',
+        definition: '<p>A tax incentive for eligible startups recognized by the Department for Promotion of Industry and Internal Trade (DPIIT), providing a 100% tax deduction on profits for any 3 consecutive years out of the first 10 years of incorporation.</p><p><b>Startup Example:</b> A recognized startup becomes profitable in its 4th year. It can choose to claim a tax holiday for years 4, 5, and 6, paying zero income tax on its profits for that period.</p><p>We help startups with <a href="/services/business-setup">DPIIT recognition</a> to avail such benefits.</p>'
+    },
+    {
+        term: 'TDS on Cryptocurrency transactions (VDA)',
+        definition: '<p>A 1% Tax Deducted at Source (TDS) is applicable under Section 194S of the Income Tax Act on the payment for the transfer of Virtual Digital Assets (VDAs), like cryptocurrency, if the aggregate payment exceeds a certain threshold in a year.</p><p><b>Startup Example:</b> A Web3 startup in India pays ₹1 Lakh in crypto to a freelance developer for their services. The startup is required to deduct 1% TDS (i.e., ₹1,000) before making the payment.</p><p>Navigating VDA taxation is a part of our specialized <a href="/services/regulatory-compliances">tax compliance</a>.</p>'
     },
     {
         term: 'Data Localization for Payment Aggregators',
-        definition: 'The RBI mandates that all licensed Payment Aggregators must store all payment data they handle exclusively on servers located within India.'
+        definition: '<p>A mandate by the Reserve Bank of India (RBI) that requires all licensed Payment Aggregators (PAs) and Payment Gateways (PGs) to store all payment data they handle exclusively on servers located within India.</p><p><b>Startup Example:</b> A FinTech startup operating as a Payment Aggregator cannot process a transaction on AWS servers in Singapore. The entire end-to-end transaction data, from collection to settlement, must reside on servers physically present in India.</p><p>This is a critical aspect of our advisory for <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech startups</a>.</p>'
     },
     {
         term: 'ROC Compliance for Board Meetings',
-        definition: 'The Companies Act mandates a minimum of four board meetings per year, with a gap of not more than 120 days between two consecutive meetings.'
-    },
-    {
-        term: 'Secretarial Audit for Private Companies',
-        definition: 'While not mandatory for all private companies, a secretarial audit is required for larger private companies exceeding certain turnover or borrowing thresholds, to ensure compliance with corporate laws.'
-    },
-    {
-        term: 'Filing of Form DPT-3 for Deposits',
-        definition: 'All companies (except government companies) must file this form with the ROC annually, detailing any money received, whether classified as a deposit or not.'
-    },
-    {
-        term: 'Compliance for Issuing Debentures',
-        definition: 'Issuing debentures involves compliance with the Companies Act and SEBI regulations, including filing forms with the ROC and creating a debenture redemption reserve.'
+        definition: '<p>The Companies Act, 2013 mandates that every company must hold a minimum of four board meetings each year, with a gap of not more than 120 days between two consecutive meetings.</p><p><b>Startup Example:</b> A startup holds a board meeting on Jan 15th. The next board meeting must be held on or before May 15th. Proper minutes for each meeting must be maintained.</p><p>Ensuring this is part of our <a href="/services/corporate-law">Corporate Law & Compliance</a> services.</p>'
     },
     {
         term: 'Director\'s KYC (DIR-3 KYC)',
-        definition: 'Every individual who holds a Director Identification Number (DIN) must file form DIR-3-KYC with the ROC annually to update their personal details.'
-    },
-    {
-        term: 'Compliance for a Dormant Company',
-        definition: 'A company can apply to the ROC to be declared a "dormant company" if it has no significant transactions, reducing its compliance burden.'
-    },
-    {
-        term: 'Striking Off a Company Name',
-        definition: 'A defunct company can apply to the ROC to have its name struck off from the register of companies, which is a simpler alternative to a formal winding-up process.'
-    },
-    {
-        term: 'Process of a Rights Issue',
-        definition: 'When a company issues new shares to its existing shareholders in proportion to their holding, it must follow the procedure laid out in the Companies Act, including sending a letter of offer.'
-    },
-    {
-        term: 'Compliance for a Bonus Share Issue',
-        definition: 'Issuing bonus shares (free shares to existing shareholders) requires board and shareholder approval and adherence to specific provisions of the Companies Act.'
+        definition: '<p>An annual compliance requirement where every individual who holds a Director Identification Number (DIN) must file form DIR-3-KYC with the Registrar of Companies (ROC) to update their personal details like phone number and email.</p><p><b>Startup Example:</b> A founder who is a director in her company must file this form every year by September 30th. Failure to do so results in the deactivation of the DIN and a penalty of ₹5,000.</p><p>We manage all <a href="/services/regulatory-compliances">ROC compliances</a> for our clients.</p>'
     },
     {
         term: 'FEMA compliance for Foreign Investment',
-        definition: 'Receiving foreign investment requires compliance with FEMA regulations, including reporting the transaction to the RBI within 30 days through Form FC-GPR.'
-    },
-    {
-        term: 'Reporting Foreign Assets and Liabilities',
-        definition: 'Indian companies with foreign assets or liabilities must file an annual return on Foreign Liabilities and Assets (FLA) with the RBI.'
-    },
-    {
-        term: 'Compliance for Inter-Corporate Loans',
-        definition: 'Providing loans or guarantees to other companies is regulated by Section 185 and 186 of the Companies Act, with specific limits and approval requirements.'
+        definition: '<p>When an Indian startup receives equity investment from a person resident outside India, it must comply with Foreign Exchange Management Act (FEMA) regulations.</p><p><b>Startup Example:</b> A startup receives $100,000 from a US-based angel investor. It must report this transaction to the RBI within 30 days of issuing shares by filing Form FC-GPR (Foreign Collaboration - General Permission Route) through an authorized dealer bank.</p><p>This is a key step in our <a href="/services/fundraising">fundraising support services</a>.</p>'
     },
     {
         term: 'Related Party Transaction Compliance',
-        definition: 'Transactions between a company and its related parties (like directors or their relatives) require disclosure and, in many cases, approval from the board or shareholders.'
+        definition: '<p>Transactions between a company and its related parties (such as directors, their relatives, or other companies they control) are regulated by Section 188 of the Companies Act.</p><p><b>Startup Example:</b> A startup wants to take an unsecured loan from one of its directors. This is a related party transaction. Depending on the amount, it may require approval from the Board of Directors and, in some cases, a special resolution from shareholders.</p><p>Managing these complexities is part of our <a href="/services/corporate-law">Corporate Law advisory</a>.</p>'
     },
     {
         term: 'POSH Act Compliance for Startups',
-        definition: 'The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH) mandates that every company with 10 or more employees must form an Internal Complaints Committee (ICC).'
-    },
-    {
-        term: 'Data Protection Officer (DPO) Appointment',
-        definition: 'Under the DPDP Act, certain entities classified as "Significant Data Fiduciaries" are required to appoint a Data Protection Officer based in India.'
-    },
-    {
-        term: 'Digital Personal Data Protection (DPDP) Act Consent',
-        definition: 'The DPDP Act requires companies to obtain clear, specific, and freely given consent from individuals before collecting or processing their personal data, and to provide an easy way to withdraw that consent.'
-    },
-    {
-        term: 'Consequences of Non-filing of AOC-4/MGT-7',
-        definition: 'Failure to file the annual financial statements (AOC-4) and annual return (MGT-7) with the ROC on time results in hefty daily penalties.'
-    },
-    {
-        term: 'Shop and Establishment Act Registration',
-        definition: 'A mandatory state-level registration for most businesses, including startups, that governs working hours, leave policies, and other employment conditions.'
-    },
-    {
-        term: 'Change in Registered Office Compliance',
-        definition: 'Changing a company\'s registered office requires passing a board resolution and filing the relevant form (INC-22) with the ROC within 30 days.'
+        definition: '<p>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH) is a mandatory compliance for all organizations in India, including startups with 10 or more employees.</p><p><b>Startup Example:</b> A tech startup grows to 12 employees. It is now legally required to constitute an Internal Complaints Committee (ICC), draft a POSH policy, and conduct regular awareness sessions for its employees.</p><p>We assist startups in setting up their <a href="/services/regulatory-compliances">statutory compliances</a>, including POSH.</p>'
     },
     {
         term: 'Appointment of First Auditor',
-        definition: 'A new company must appoint its first statutory auditor within 30 days of incorporation by passing a board resolution.'
-    },
-    {
-        term: 'Compliance for Increase in Authorized Capital',
-        definition: 'To issue more shares beyond the current limit, a company must first increase its authorized share capital by passing a shareholder resolution and filing Form SH-7 with the ROC.'
-    },
-    {
-        term: 'Filing of Form PAS-3 for Allotment of Shares',
-        definition: 'Whenever a company allots new shares, it must file a Return of Allotment in Form PAS-3 with the ROC within 30 days of the allotment.'
+        definition: '<p>As per the Companies Act, 2013, the Board of Directors of a newly incorporated company must appoint its first statutory auditor, a practicing Chartered Accountant, within 30 days of incorporation.</p><p><b>Startup Example:</b> A startup is incorporated on June 1st. Its founders (the initial directors) must hold a board meeting and pass a resolution to appoint an auditor on or before June 30th.</p><p>This is one of the first post-incorporation steps we manage for new ventures under our <a href="/services/business-setup">Business Setup services</a>.</p>'
     },
     {
         term: 'MSME Form 1 Compliance',
-        definition: 'Specified companies must file this half-yearly return with the ROC detailing any outstanding payments due to Micro and Small Enterprises for more than 45 days.'
+        definition: '<p>A half-yearly return that must be filed by "Specified Companies" detailing any outstanding payments due to Micro and Small Enterprises (MSMEs) for more than 45 days.</p><p><b>Startup Example:</b> A startup procures services from a vendor who is registered as a Micro Enterprise. If the startup fails to pay the vendor\'s invoice within 45 days, it must report this overdue amount in its next MSME Form 1 filing with the ROC.</p><p>Tracking payables is a key feature of our <a href="/services/bookkeeping">bookkeeping services</a>.</p>'
     },
     {
-        term: 'Customer Health Score',
-        definition: 'A predictive metric used by SaaS companies to gauge the likelihood of a customer to churn, renew, or be a candidate for upselling. It combines factors like product usage, support tickets, and NPS.'
+        term: 'Late TDS filing consequences',
+        definition: '<p>Failure to file TDS returns by the due date attracts a late filing fee under Section 234E of the Income Tax Act, which is ₹200 per day until the return is filed, subject to the total TDS amount. It can also lead to penalties and prosecution.</p><p><b>Startup Example:</b> A startup deducts TDS for salaries in June but files the TDS return for that quarter in October instead of by the July 31st due date. It will incur a daily penalty for the delay.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> ensure timely filings to avoid such penalties.</p>'
     },
     {
-        term: 'Feature Adoption Rate',
-        definition: 'The percentage of users who are actively using a particular feature of a product. It helps product managers understand which features are providing value.'
+        term: 'ROC non-compliance penalties',
+        definition: '<p>Failure to comply with the Companies Act, such as late filing of annual returns (AOC-4, MGT-7), not holding board meetings, or not maintaining statutory registers, leads to significant penalties. For late filing of annual returns, the penalty is ₹100 per day per form.</p><p><b>Startup Example:</b> A private limited company fails to file its AOC-4 and MGT-7 for a year. It would face a penalty of ₹100 x 2 forms x 365 days = ₹73,000, plus penalties on the company and its directors.</p><p>We provide comprehensive <a href="/services/corporate-law">ROC compliance services</a> to avoid these steep costs.</p>'
     },
     {
-        term: 'Product Stickiness',
-        definition: 'A measure of how frequently users return to a product. Often measured by the DAU/MAU ratio.'
+        term: 'Missing GST filing penalty',
+        definition: '<p>Failure to file GST returns (like GSTR-1 and GSTR-3B) by the due date results in a late fee, which is typically ₹50 per day (₹20 for nil returns) per return, per GSTIN, plus interest at 18% per annum on the outstanding tax amount.</p><p><b>Startup Example:</b> A startup with operations in two states misses the GSTR-3B filing for one month. It will incur a late fee of ₹50 x 30 days x 2 GSTINs = ₹3,000, in addition to interest on the unpaid tax.</p><p>Timely filing is a cornerstone of our <a href="/services/regulatory-compliances">GST services</a>.</p>'
     },
     {
-        term: 'Viral Coefficient',
-        definition: 'A metric that measures the organic, word-of-mouth growth of a product. A coefficient greater than 1 indicates exponential growth.'
+        term: 'GST on E-commerce Operator services',
+        definition: '<p>Under Section 52 of the CGST Act, e-commerce operators like Amazon and Flipkart are required to collect Tax Collected at Source (TCS) at 1% on the net value of taxable supplies made through them by other suppliers.</p><p><b>Startup Example:</b> A D2C brand sells a product worth ₹1,000 through Flipkart. Flipkart will deduct TCS at 1% (i.e., ₹10) on the net taxable value before remitting the payment. The D2C brand can later claim this TCS as a credit in its electronic cash ledger.</p><p>Marketplace reconciliation is a key part of our <a href="/industry-finance/gst-for-d2c-brands-india">D2C finance services</a>.</p>'
     },
     {
-        term: 'Net Revenue Churn',
-        definition: 'The percentage of revenue lost from existing customers in a period, after accounting for any expansion revenue from upgrades or cross-sells. Can be negative.'
-    },
-    {
-        term: 'Gross Revenue Churn',
-        definition: 'The total revenue lost from existing customers due to cancellations and downgrades, without being offset by expansion revenue. It shows the raw revenue leakage.'
-    },
-    {
-        term: 'Expansion MRR Rate',
-        definition: 'The percentage increase in Monthly Recurring Revenue from existing customers, driven by upsells, cross-sells, and add-ons.'
-    },
-    {
-        term: 'Downgrade MRR',
-        definition: 'The reduction in Monthly Recurring Revenue from existing customers who have moved to a lower-priced plan.'
-    },
-    {
-        term: 'Reactivation MRR',
-        definition: 'The Monthly Recurring Revenue generated from previously churned customers who have returned and subscribed again.'
-    },
-    {
-        term: 'Average Contract Value (ACV)',
-        definition: 'The average annual contract value of a customer subscription. It is a key metric for B2B SaaS companies.'
-    },
-    {
-        term: 'Total Contract Value (TCV)',
-        definition: 'The total value of a contract, including both recurring fees and any one-time charges. It represents the total commitment from the customer.'
-    },
-    {
-        term: 'Committed Monthly Recurring Revenue (CMRR)',
-        definition: 'A forward-looking metric that includes the current MRR plus the MRR from new and expansion bookings that are contractually committed but not yet live.'
-    },
-    {
-        term: 'SaaS Quick Ratio',
-        definition: 'Measures a SaaS company\'s ability to grow its recurring revenue despite churn. Calculated as (New MRR + Expansion MRR) / (Downgrade MRR + Churned MRR).'
-    },
-    {
-        term: 'Lead Velocity Rate (LVR)',
-        definition: 'The growth rate of qualified leads on a month-over-month basis. It is a key indicator of future sales pipeline and revenue growth.'
-    },
-    {
-        term: 'Customer Concentration Risk',
-        definition: 'The risk posed by having a large portion of your revenue come from a small number of customers. High concentration is a red flag for investors.'
-    },
-    {
-        term: 'Cost of Service (COS) for SaaS',
-        definition: 'The direct costs associated with delivering the SaaS product, including hosting, third-party data providers, and customer support. Used to calculate Gross Margin.'
-    },
-    {
-        term: 'Time to Value (TTV)',
-        definition: 'The amount of time it takes for a new customer to realize the value proposition of your product. A shorter TTV is critical for reducing early churn.'
-    },
-    {
-        term: 'User Onboarding Success Rate',
-        definition: 'The percentage of new users who successfully complete the key steps in your onboarding process, which is a strong predictor of long-term retention.'
-    },
-    {
-        term: 'Free Trial Conversion Rate',
-        definition: 'The percentage of free trial users who convert into paying customers.'
-    },
-    {
-        term: 'Demo-to-Close Ratio',
-        definition: 'A B2B sales metric that measures the percentage of qualified product demonstrations that result in a closed deal.'
-    },
-    {
-        term: 'First Contact Resolution (FCR) Rate',
-        definition: 'A customer service metric that measures the percentage of support inquiries that are resolved in the first interaction.'
-    },
-    {
-        term: 'Customer Effort Score (CES)',
-        definition: 'A customer satisfaction metric that measures how much effort a customer had to exert to get an issue resolved, a request fulfilled, or a question answered.'
-    },
-    {
-        term: 'Session Duration',
-        definition: 'An analytics metric that measures the average amount of time users spend on a website or application during a single session.'
-    },
-    {
-        term: 'Screen Flow',
-        definition: 'A user behavior analysis tool that visualizes the paths users take through an application, showing which screens they visit and in what order.'
-    },
-    {
-        term: 'Technical Debt Ratio',
-        definition: 'A measure of the cost to fix existing issues in a codebase versus the cost to develop new features. A high ratio can slow down future development.'
-    },
-    {
-        term: 'Post-Money SAFE vs. Pre-Money SAFE',
-        definition: 'A key difference in how founder dilution is calculated. A pre-money SAFE is more founder-friendly as the investment converts based on the pre-money valuation, while a post-money SAFE provides investors with a fixed ownership percentage.'
-    },
-    {
-        term: 'Valuation Cap on Convertible Notes',
-        definition: 'A ceiling on the valuation at which a convertible note will convert into equity. It protects early investors from being diluted if the next funding round is at a very high valuation.'
-    },
-    {
-        term: 'Discount Rate on Convertible Notes',
-        definition: 'A discount on the price per share paid by later investors that is offered to convertible note holders as a reward for investing early. Typically 20%.'
-    },
-    {
-        term: 'Pari Passu Liquidation Preference',
-        definition: 'A term meaning "on equal footing." In a liquidation context, it means all series of preferred stock with this term will be treated equally and share proceeds proportionally.'
-    },
-    {
-        term: 'Participating vs. Non-Participating Preferred Stock',
-        definition: 'Non-participating preferred stock allows an investor to receive their liquidation preference OR convert to common stock. Participating preferred stock allows them to receive their preference AND a pro-rata share of the remaining proceeds.'
-    },
-    {
-        term: 'Broad-Based vs. Narrow-Based Anti-Dilution',
-        definition: 'Types of weighted-average anti-dilution protection. Broad-based is more founder-friendly as it includes all common stock equivalents in the calculation, resulting in less dilution.'
-    },
-    {
-        term: 'Pay-to-Play Provision',
-        definition: 'A term in a financing agreement that requires existing investors to participate in future funding rounds to avoid having their preferred shares converted into common stock or losing certain rights.'
-    },
-    {
-        term: 'No-Shop Clause in Term Sheet',
-        definition: 'A provision that prevents a company from soliciting offers from other potential investors for a specified period after signing a term sheet, giving the lead investor exclusivity.'
-    },
-    {
-        term: 'Employee Stock Option Pool (ESOP) Shuffle',
-        definition: 'The process of determining whether the new option pool is created before (pre-money) or after (post-money) the new investment. A pre-money option pool increase is more dilutive for existing shareholders.'
-    },
-    {
-        term: 'Secondary Sale in a Funding Round',
-        definition: 'A transaction where existing shareholders (like founders or early employees) sell some of their shares to new or existing investors, allowing them to get some personal liquidity.'
-    },
-    {
-        term: 'Warrants in a Debt Deal',
-        definition: 'A security that entitles the holder (often a venture debt lender) to buy a certain number of shares at a specific price. They are offered as a "sweetener" to make the debt deal more attractive.'
-    },
-    {
-        term: 'Capital Call for LPs',
-        definition: 'When a venture capital fund finds an investment opportunity, it issues a capital call to its Limited Partners (LPs) to provide their pro-rata share of the investment capital.'
-    },
-    {
-        term: 'Dry Powder (VC)',
-        definition: 'The amount of committed but unallocated capital a venture capital fund has available to make new investments.'
-    },
-    {
-        term: 'Management Fee (VC)',
-        definition: 'An annual fee, typically 2% of the total fund size, that Limited Partners pay to the General Partners of a VC fund to cover the fund\'s operating expenses.'
-    },
-    {
-        term: 'Carried Interest (VC)',
-        definition: 'The share of the profits of a venture capital fund (typically 20%) that the General Partners receive as compensation, after returning all the capital to the Limited Partners.'
-    },
-    {
-        term: 'Internal Rate of Return (IRR) for VCs',
-        definition: 'The annualized rate of return generated by a venture capital fund. It is a key performance metric for LPs.'
-    },
-    {
-        term: 'Multiple on Invested Capital (MOIC)',
-        definition: 'A simple metric to measure the performance of an investment, calculated as (Realized Value + Unrealized Value) / Total Invested Capital.'
-    },
-    {
-        term: 'Founder Dilution Modeling',
-        definition: 'The process of creating a spreadsheet model to project how a founder\'s ownership percentage will be diluted over multiple future funding rounds.'
-    },
-    {
-        term: 'Exit Waterfall Analysis',
-        definition: 'A financial model that shows how the proceeds from a company sale (an "exit") would be distributed among all shareholders, accounting for liquidation preferences and other terms.'
-    },
-    {
-        term: 'Tear Sheet (VC)',
-        definition: 'A one-page summary of a startup, providing a quick overview of its business, team, traction, and financials. Often requested by VCs.'
-    },
-    {
-        term: 'Full Ratchet Anti-Dilution',
-        definition: 'A type of anti-dilution protection that is very investor-friendly. In a down round, it reprices the protected shares to the same price as the new round, causing significant dilution for founders.'
-    },
-    {
-        term: 'Drag-Along Threshold',
-        definition: 'The percentage of shareholder votes required to trigger the drag-along rights, which force minority shareholders to participate in a sale of the company.'
-    },
-    {
-        term: 'Redemption Rights for Investors',
-        definition: 'A provision that allows investors to force the company to buy back their shares after a certain period, providing a potential exit if an IPO or acquisition doesn\'t happen.'
-    },
-    {
-        term: 'Protective Provisions in Term Sheet',
-        definition: 'A set of rights that give preferred stockholders a veto over certain major corporate actions, such as selling the company, even if they don\'t have a majority stake.'
-    },
-    {
-        term: 'Break-up Fee in M&A',
-        definition: 'A penalty paid by the seller to the buyer in an acquisition deal if the seller backs out of the deal for a reason other than a breach by the buyer.'
+        term: 'Taxability of Drop-shipping transactions',
+        definition: '<p>In a drop-shipping model, the tax liability can be complex. Typically, there are two transactions: the sale from the supplier to the retailer, and the sale from the retailer to the end customer. GST must be correctly applied to both legs of the transaction based on the place of supply.</p><p><b>Startup Example:</b> A D2C brand in Delhi gets an order from a customer in Mumbai. It instructs its supplier in Gujarat to ship the product directly to Mumbai. The supplier bills the D2C brand (B2B transaction), and the D2C brand bills the end customer (B2C transaction). Both invoices must have the correct GST applied.</p><p>We help e-commerce businesses navigate these complex <a href="/services/regulatory-compliances">GST scenarios</a>.</p>'
     }
 ];
 
@@ -3077,4 +2683,5 @@ export const GLOSSARY_DATA_BY_LETTER = ALL_GLOSSARY_TERMS.reduce((acc, item) => 
     acc[letter].push(item);
     return acc;
 }, {} as Record<string, GlossaryTerm[]>);
+
 
