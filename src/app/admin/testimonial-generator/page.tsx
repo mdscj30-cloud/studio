@@ -3,6 +3,10 @@ import { GeneratorForm } from './GeneratorForm';
 export const metadata = {
   title: 'Client Success Story Generator | Admin',
   description: 'Generate persuasive client success stories using AI.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function TestimonialGeneratorPage() {
