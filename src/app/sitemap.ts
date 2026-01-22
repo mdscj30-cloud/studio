@@ -1,26 +1,36 @@
 
 import { MetadataRoute } from 'next'
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
-import { NAV_LINKS, SERVICES } from '@/lib/constants'
+import { SERVICES } from '@/lib/constants'
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://nexaconsultancy.com'
 
-  const staticPages = NAV_LINKS
-    .filter(link => !link.href.includes('#')) // Exclude anchor links
-    .map(link => ({
-      url: `${siteUrl}${link.href}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: link.href === '/' ? 1 : 0.8,
-    }));
+  const mainPages = [
+    '/',
+    '/services',
+    '/finance-for-startups-india',
+    '/process',
+    '/pricing',
+    '/resources',
+    '/startup-finance-glossary',
+    '/about',
+    '/contact',
+    '/terms',
+    '/privacy',
+  ].map(route => ({
+    url: `${siteUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: route === '/' ? 1.0 : route.startsWith('/finance') ? 0.9 : 0.8,
+  }));
 
   const servicePages = SERVICES.map(service => ({
     url: `${siteUrl}/services/${service.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   const blogPosts = DETAILED_BLOG_POSTS.map(post => ({
@@ -30,6 +40,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const blogIndexPage = {
+    url: `${siteUrl}/resources/blog`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  };
+
   const caseStudies = DETAILED_CASE_STUDIES.map(study => ({
     url: `${siteUrl}/resources/case-studies/${study.slug}`,
     lastModified: new Date(),
@@ -37,46 +54,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const otherResourcePages = [
-    {
-      url: `${siteUrl}/resources`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/resources/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/startup-finance-glossary`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/finance-for-startups-india`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    }
-  ];
-
   const glossaryTerms = ALL_GLOSSARY_TERMS.map(term => ({
     url: `${siteUrl}/startup-finance-glossary/${term.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'yearly' as const,
+    changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
 
   return [
-    ...staticPages,
+    ...mainPages,
     ...servicePages,
+    blogIndexPage,
     ...blogPosts,
     ...caseStudies,
-    ...otherResourcePages,
     ...glossaryTerms
   ];
 }
