@@ -5,6 +5,8 @@ import { SERVICES } from '@/lib/constants'
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
 import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data'
+import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data'
+
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://nexaconsultancy.com'
@@ -16,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/process',
     '/pricing',
     '/resources',
+    '/resources/blog',
     '/startup-finance-glossary',
     '/about',
     '/contact',
@@ -34,13 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));
-
-  const blogIndexPage = {
-    url: `${siteUrl}/resources/blog`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  };
 
   const blogPosts = DETAILED_BLOG_POSTS.map(post => ({
     url: `${siteUrl}/resources/blog/${post.slug}`,
@@ -77,15 +73,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const startupGuidePages = STAGE_PROBLEM_PAGES.map(page => ({
+    url: `${siteUrl}/startup-guides/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
 
   return [
     ...mainPages,
     ...servicePages,
-    blogIndexPage,
     ...blogPosts,
     ...caseStudies,
     ...glossaryTerms,
     ...programmaticPages,
-    ...locationServicePages
+    ...locationServicePages,
+    ...startupGuidePages,
   ];
 }
