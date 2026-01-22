@@ -1,3 +1,4 @@
+
 import { MetadataRoute } from 'next'
 import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
 import { NAV_LINKS, SERVICES } from '@/lib/constants'
@@ -41,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/resources`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${siteUrl}/resources/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {

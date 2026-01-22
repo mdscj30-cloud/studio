@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { BLOG_POSTS } from '@/lib/constants';
@@ -7,6 +8,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 export function BlogSection() {
+  const postsToShow = BLOG_POSTS.slice(0, 3);
+
   return (
     <section id="blog">
       <div className="max-w-4xl mx-auto text-center mb-12">
@@ -16,7 +19,7 @@ export function BlogSection() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {BLOG_POSTS.map((post) => (
+        {postsToShow.map((post) => (
           <Link href={`/resources/blog/${post.slug}`} key={post.slug} className="group">
             <Card className="h-full flex flex-col transition-all duration-300 border group-hover:border-accent group-hover:shadow-xl group-hover:scale-105">
               <CardHeader>
@@ -43,6 +46,13 @@ export function BlogSection() {
             </Card>
           </Link>
         ))}
+      </div>
+       <div className="text-center mt-12">
+          <Button asChild variant="outline" size="lg">
+            <Link href="/resources/blog">
+              View All Posts <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
       </div>
     </section>
   );
