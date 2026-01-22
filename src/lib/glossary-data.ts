@@ -2797,7 +2797,6 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         term: 'Zero-Coupon Bond',
         definition: 'A debt security that does not pay interest but is traded at a deep discount, rendering profit at maturity when the bond is redeemed for its full face value.'
     },
-    // New 100 terms
     {
         term: 'Consequences of not filing GSTR-1',
         definition: '<p>Failure to file GSTR-1 by the due date has a cascading effect. It prevents the recipient of the goods/services from claiming Input Tax Credit (ITC) in their GSTR-2B, leading to business disputes. It also attracts a late filing fee and prevents you from filing your GSTR-3B for the same period.</p><p><b>Startup Example:</b> A SaaS startup fails to file its GSTR-1 for June. Its enterprise client cannot see the invoice in their GSTR-2B and therefore cannot claim the GST paid as ITC, leading to a blocked working capital for the client and a strained relationship.</p><p>Timely filing is a core component of our <a href="/services/regulatory-compliances">GST compliance</a> services.</p>'
@@ -3293,6 +3292,114 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Consequences of not having a Shareholders Agreement',
         definition: '<p>Operating without a Shareholders\' Agreement (SHA) is one of the biggest risks for a startup. It means there are no rules for decision-making, share transfers, what happens if a founder leaves, or how to resolve disputes. It can lead to deadlock and legal battles that can destroy the company.</p><p><b>Startup Example:</b> Two 50/50 co-founders have a major disagreement. Without an SHA detailing a dispute resolution mechanism, the company is paralyzed and unable to make any decisions. No investor will touch a company in this state.</p><p>We consider drafting an SHA the most critical first step in our <a href="/services/corporate-law">legal services</a>.</p>'
+    },
+    {
+        term: 'DTAA with Singapore',
+        definition: '<p>The Double Taxation Avoidance Agreement (DTAA) between India and Singapore is critical for startups using services from Singaporean companies (e.g., SaaS tools). It specifies lower TDS rates on payments for royalties and technical services, typically 10%.</p><p><b>Startup Example:</b> An Indian startup pays a Singapore-based SaaS company. By obtaining the Singaporean company\'s Tax Residency Certificate, the startup can deduct TDS at 10% under the DTAA, instead of the higher default rate under the Income Tax Act.</p><p>Navigating DTAAs is a key part of our <a href="/solutions/tds-on-foreign-payments-startups">foreign payment compliance</a> solution.</p>'
+    },
+    {
+        term: 'DTAA with USA',
+        definition: '<p>The India-USA DTAA helps prevent double taxation and determines which country has the right to tax income. For startups paying for US-based software or consultants, it often caps the TDS rate on royalties and fees for technical services at 15%.</p><p><b>Startup Example:</b> A startup pays an American consultant. The payment is considered a Fee for Technical Services. Under the DTAA, the startup can withhold TDS at 15% (provided the consultant furnishes a Tax Residency Certificate), which is lower than the default rate.</p><p>Our <a href="/solutions/tds-on-foreign-payments-startups">foreign TDS advisory</a> helps apply the correct treaty benefits.</p>'
+    },
+    {
+        term: 'Transfer Pricing for Startups',
+        definition: '<p>Transfer Pricing regulations apply when a startup has transactions with its associated enterprises abroad (e.g., a foreign parent or subsidiary company). All such transactions must be at "arm\'s length price," as if they were with an unrelated party, to prevent shifting profits to lower-tax countries.</p><p><b>Startup Example:</b> An Indian subsidiary of a US startup provides development services to its parent company. The price charged must be comparable to what an independent company would charge. If not, the Indian tax authorities can adjust the price and levy taxes and penalties.</p><p>Our <a href="/services/virtual-cfo">Virtual CFOs</a> help scaling startups manage transfer pricing risks.</p>'
+    },
+    {
+        term: 'Advance Pricing Agreement (APA)',
+        definition: '<p>An APA is an agreement between a taxpayer and the tax authority (CBDT in India) to pre-determine the pricing methodology for international transactions with associated enterprises for a specified period. It provides certainty and avoids future transfer pricing disputes.</p><p><b>Startup Example:</b> A SaaS startup with a significant volume of transactions with its US parent company enters into an APA with the CBDT. This locks in the method for calculating their service fees for the next 5 years, providing tax certainty.</p><p>We advise on advanced tax strategies as part of our <a href="/services/regulatory-compliances">tax compliance</a> services.</p>'
+    },
+    {
+        term: 'Form 3CEB',
+        definition: '<p>This is a mandatory report to be filed by every person who has entered into an international transaction or specified domestic transaction with an associated enterprise. It must be certified by a Chartered Accountant.</p><p><b>Startup Example:</b> An Indian startup that pays its US parent for management fees must file Form 3CEB along with its income tax return, detailing all such international transactions for the year.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> include the preparation and filing of Form 3CEB.</p>'
+    },
+    {
+        term: 'Penalty for not filing Form 3CEB',
+        definition: '<p>Failure to file the transfer pricing report (Form 3CEB) by the due date can attract a hefty penalty of up to 2% of the value of each international transaction, in addition to penalties for not maintaining proper documentation.</p><p><b>Startup Example:</b> A startup fails to file Form 3CEB for international transactions worth ₹5 Crore. It could face a penalty of up to ₹10 Lakhs.</p><p>Timely and accurate filing is critical, a core part of our <a href="/services/regulatory-compliances">compliance retainers</a>.</p>'
+    },
+    {
+        term: 'Minimum Alternate Tax (MAT) for Startups',
+        definition: '<p>MAT is a tax levied on companies that show high profits in their books but have low taxable income due to various exemptions and deductions. The tax is calculated on the "book profit". However, DPIIT-recognized startups are often exempt from MAT for a certain period.</p><p><b>Startup Example:</b> A profitable startup has a low taxable income due to high depreciation claims. It may still be liable to pay MAT on its book profits unless it is eligible for specific startup exemptions.</p><p>Our <a href="/services/regulatory-compliances">tax planning services</a> help startups evaluate MAT applicability.</p>'
+    },
+    {
+        term: 'MAT Credit',
+        definition: '<p>If a company pays MAT in a year because the MAT amount is higher than its regular tax liability, the excess amount paid can be carried forward as a "MAT credit". This credit can be used to set off regular tax liability in future years for up to 15 years.</p><p><b>Startup Example:</b> A company pays ₹5 Lakhs as MAT while its regular tax was only ₹3 Lakhs. It gets a MAT credit of ₹2 Lakhs, which it can use to reduce its tax payment in a future year when its regular tax is higher than MAT.</p><p>We help in optimizing <a href="/services/regulatory-compliances">tax liabilities</a> using all available credits.</p>'
+    },
+    {
+        term: 'Book Profit vs. Taxable Profit',
+        definition: '<p>Book profit is the profit calculated as per the company\'s books of accounts (following accounting standards). Taxable profit is the profit calculated as per the provisions of the Income Tax Act. The two are often different due to items like depreciation rates and disallowed expenses.</p><p><b>Startup Example:</b> A startup may book depreciation in its P&L at 20%, but the Income Tax Act may only allow 15%. This difference leads to a variation between book profit and taxable profit.</p><p>Our <a href="/services/bookkeeping">accounting services</a> include preparing a reconciliation of the two.</p>'
+    },
+    {
+        term: 'Taxation of Dividends in hands of Shareholders',
+        definition: '<p>Since the abolition of Dividend Distribution Tax (DDT), dividends are now taxed in the hands of the shareholders at their applicable income tax slab rates.</p><p><b>Startup Example:</b> A profitable startup declares a dividend. A founder who receives this dividend and is in the 30% tax bracket will have to pay tax on this dividend income accordingly.</p><p>Our <a href="/services/regulatory-compliances">tax advisory services</a> cover personal tax planning for founders.</p>'
+    },
+    {
+        term: 'Section 115BAA',
+        definition: '<p>This section of the Income Tax Act gives domestic companies the option to pay tax at a concessional rate of 22% (plus surcharge and cess), provided they do not claim certain specified deductions and exemptions.</p><p><b>Startup Example:</b> A profitable startup evaluates whether to opt for the new 22% tax rate under 115BAA or continue with the old regime and claim benefits like accelerated depreciation. This is a one-time, irreversible decision.</p><p>We help startups make this crucial decision as part of our <a href="/services/regulatory-compliances">tax planning</a>.</p>'
+    },
+    {
+        term: 'Carried Interest for VC funds',
+        definition: '<p>Carried interest is the share of profits (typically 20%) that the general partners of a venture capital fund receive as compensation, after returning the invested capital to the limited partners. Its tax treatment is a complex area of finance.</p><p><b>Startup Example:</b> A VC fund raises ₹100 Crore and exits its investments for ₹300 Crore. After returning the ₹100 Crore to LPs, the GPs receive 20% of the ₹200 Crore profit (i.e., ₹40 Crore) as carried interest.</p><p>Understanding VC economics is key for our <a href="/services/fundraising">fundraising advisory</a>.</p>'
+    },
+    {
+        term: 'Hurdle Rate in VC funds',
+        definition: '<p>The hurdle rate is the minimum rate of return that a VC fund must achieve before its general partners can start receiving carried interest. It ensures that the fund managers are rewarded only after delivering a baseline return to their investors (LPs).</p><p><b>Startup Example:</b> A VC fund has an 8% hurdle rate. It must provide an 8% annualized return to its investors before the fund managers can claim their 20% profit share.</p><p>This is a key term in understanding the <a href="/services/fundraising">fundraising ecosystem</a>.</p>'
+    },
+    {
+        term: 'Grossing up of TDS',
+        definition: '<p>When a contract requires a payment to be made "free and clear of any taxes," the payer must "gross up" the payment. This means calculating the TDS on an amount such that the net payment to the recipient equals the agreed-upon sum.</p><p><b>Startup Example:</b> A startup agrees to pay a foreign consultant $10,000 net of taxes. If the TDS rate is 10%, the startup must calculate the payment on a grossed-up basis ($10,000 / (1 - 0.10) = $11,111), deduct $1,111 as TDS, and pay the consultant $10,000.</p><p>We handle these complex calculations in our <a href="/solutions/tds-on-foreign-payments-startups">foreign payment services</a>.</p>'
+    },
+    {
+        term: 'Section 206AB',
+        definition: '<p>This section mandates a higher rate of TDS for payments made to "specified persons" who have not filed their income tax returns for the previous two years and whose aggregate TDS is ₹50,000 or more in each of those years.</p><p><b>Startup Example:</b> A startup needs to pay a vendor who has not filed their ITRs. The startup must check the government\'s compliance portal and, if the vendor is a "specified person," deduct TDS at twice the normal rate.</p><p>This is a critical part of our enhanced <a href="/services/regulatory-compliances">TDS compliance checks</a>.</p>'
+    },
+    {
+        term: 'Due diligence on ESOP schemes',
+        definition: '<p>During due diligence, investors will scrutinize a startup\'s ESOP scheme to ensure it is properly documented, compliant with the Companies Act, and that all grants have been made correctly. Any inconsistencies can delay a funding round.</p><p><b>Startup Example:</b> An investor finds that a startup has been granting ESOPs without passing the necessary board and shareholder resolutions. The funding is put on hold until this compliance gap is rectified.</p><p>Our <a href="/services/investor-due-diligence">due diligence readiness</a> service includes a full review of ESOP compliance.</p>'
+    },
+    {
+        term: 'ESOP pool replenishment',
+        definition: '<p>As a startup grows and hires more employees, its initial ESOP pool gets depleted. Replenishing the pool means creating more options, which requires shareholder approval and results in dilution for all existing shareholders, including earlier employees.</p><p><b>Startup Example:</b> A Series A startup has used up its 10% ESOP pool. To attract senior talent before its Series B, it needs to get approval from its board and shareholders (including its seed investors) to increase the pool to 15%.</p><p>We help manage cap tables and model the impact of such decisions.</p>'
+    },
+    {
+        term: 'ESOP buyback taxation',
+        definition: '<p>When a company buys back vested ESOPs from employees, the gains for the employee are typically taxed as capital gains. The tax treatment depends on whether the shares are listed or unlisted and the holding period.</p><p><b>Startup Example:</b> A late-stage startup conducts an ESOP buyback program. An employee who sells shares they have held for more than 24 months will be taxed under long-term capital gains.</p><p>We provide tax advisory for such <a href="/services/corporate-law">corporate actions</a>.</p>'
+    },
+    {
+        term: 'Phantom Stocks vs. ESOPs',
+        definition: '<p>Phantom stocks are a type of employee benefit that mimics the value of company stock but does not grant actual ownership. The employee receives a cash bonus based on the increase in the stock\'s value. ESOPs, on the other hand, grant the right to buy actual shares.</p><p><b>Startup Example:</b> A startup wants to incentivize a key employee without diluting its cap table. It grants them phantom stocks tied to the company\'s valuation, which pays out a cash bonus upon an exit event.</p><p>We help structure various <a href="/services/corporate-law">employee incentive schemes</a>.</p>'
+    },
+    {
+        term: 'Stock Appreciation Rights (SARs)',
+        definition: '<p>SARs are a form of bonus compensation where the employee receives a cash payment equal to the appreciation of the company\'s stock price over a specified period. It\'s a way to provide equity-like upside without issuing shares.</p><p><b>Startup Example:</b> An employee is granted 100 SARs when the stock price is ₹50. When they exercise the SARs, the price is ₹250. They receive a cash bonus of (₹250 - ₹50) * 100 = ₹20,000.</p><p>This is another tool we explore in our <a href="/services/corporate-law">compensation advisory</a>.</p>'
+    },
+    {
+        term: 'Taxation of SARs',
+        definition: '<p>The cash bonus received from exercising Stock Appreciation Rights (SARs) is fully taxable as a perquisite, which means it is added to the employee\'s salary income and taxed at their applicable slab rate in the year of receipt.</p><p><b>Startup Example:</b> An employee receives a ₹50,000 cash bonus from their SARs. This entire amount is added to their taxable salary for the year.</p><p>Our <a href="/services/regulatory-compliances">payroll services</a> can help manage the taxation of such benefits.</p>'
+    },
+    {
+        term: 'Founder lock-in period after IPO',
+        definition: '<p>After an Initial Public Offering (IPO), founders and key shareholders are typically subject to a lock-in period (e.g., 6 months to a year) during which they cannot sell their shares. This is to ensure stability and prevent a sudden stock price drop.</p><p><b>Startup Example:</b> A successful SaaS startup goes public. Its founders, who own 30% of the company, are prohibited by SEBI regulations and underwriter agreements from selling any of their shares for the first 18 months post-IPO.</p><p>We provide advisory for companies on the path to an <a href="/services/fundraising">IPO</a>.</p>'
+    },
+    {
+        term: 'Right of First Offer (ROFO) vs ROFR',
+        definition: '<p>A Right of First Refusal (ROFR) lets a holder match an offer from a third party. A Right of First Offer (ROFO) requires a selling shareholder to first offer the shares to the holder before seeking third-party offers. ROFR is generally more favorable to the holder.</p><p><b>Startup Example:</b> An SHA has a ROFO clause. If a founder wants to sell their shares, they must first offer them to the other co-founders at a price they determine. If the co-founders refuse, the founder can then sell to a third party at that price or higher.</p><p>These clauses are critical components of a <a href="/services/corporate-law">Shareholders\' Agreement</a>.</p>'
+    },
+    {
+        term: 'Deadlock resolution mechanism in SHA',
+        definition: '<p>A clause in a Shareholders\' Agreement that specifies what happens if the shareholders (especially in a 50/50 venture) cannot agree on a major decision. Mechanisms can include mediation, arbitration, or a "buy-sell" provision (also known as a Texas Shootout).</p><p><b>Startup Example:</b> Two 50/50 co-founders have a deadlock. Their SHA triggers a buy-sell clause, where one founder must name a price, and the other has the option to either buy the first founder\'s shares at that price or sell their own shares at that same price.</p><p>We help draft SHAs with practical <a href="/services/corporate-law">dispute resolution</a> clauses.</p>'
+    },
+    {
+        term: 'Conditions Precedent vs. Conditions Subsequent',
+        definition: '<p>In an investment agreement, Conditions Precedent (CPs) are conditions that must be fulfilled *before* the investor wires the money (e.g., getting a key license). Conditions Subsequent (CSs) are conditions that must be fulfilled *after* the investment is made (e.g., appointing a new board member).</p><p><b>Startup Example:</b> An investor\'s term sheet lists "obtaining FSSAI license" as a CP. The startup must get this license before the deal can close. "Hiring a CFO" is listed as a CS, which must be done within 6 months of funding.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> helps negotiate these terms.</p>'
+    },
+    {
+        term: 'Indemnification clause in SHA',
+        definition: '<p>An indemnification clause is a "hold harmless" provision. In a Shareholders\' Agreement, it typically means that the founders promise to reimburse the investors for any losses incurred due to a breach of the representations and warranties made by the founders (e.g., about taxes being paid or owning the IP).</p><p><b>Startup Example:</b> After funding, an investor discovers the startup had a large, undisclosed tax liability. The indemnification clause allows the investor to recover the financial loss from the founders personally.</p><p>We help founders understand and negotiate these crucial <a href="/services/corporate-law">legal clauses</a>.</p>'
+    },
+    {
+        term: 'Representations and Warranties',
+        definition: '<p>These are statements of fact and promises made by the founders to the investors in a funding agreement. They cover aspects like the company being duly incorporated, owning its IP, and having paid all its taxes. A breach of these can lead to serious legal and financial consequences.</p><p><b>Startup Example:</b> In an SHA, founders warrant that the company has no pending lawsuits. If a major lawsuit was undisclosed, this is a breach of warranty, and the investors can sue the founders for damages.</p><p>Our <a href="/services/investor-due-diligence">due diligence readiness</a> service ensures all representations are accurate.</p>'
     }
 ];
 
