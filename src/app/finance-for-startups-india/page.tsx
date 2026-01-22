@@ -1,8 +1,11 @@
 
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, Rocket, Factory, Briefcase, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data';
+import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data';
+
 
 export const metadata = {
   title: 'Finance for Startups in India – End to End | Nexa Consultancy',
@@ -10,82 +13,52 @@ export const metadata = {
 };
 
 const pillarSections = [
-  {
-    id: 'accounting-for-startups',
-    title: 'Accounting for Startups',
-    description: 'Accurate books, on time, every time. We establish a rock-solid financial foundation for your startup, ensuring your books are clean, compliant, and decision-ready from day one.',
-    serviceSlug: 'bookkeeping',
-    features: [
-      'End-to-end accounting & monthly close',
-      'Daily transaction recording & reconciliation',
-      'Accounts payable & receivable management',
-      'Financial statement preparation (P&L, Balance Sheet)',
-    ],
-  },
-  {
-    id: 'virtual-cfo',
-    title: 'Virtual CFO',
-    description: 'Clarity on numbers, confidence in decisions. We act as your strategic finance partner, helping you plan for growth, manage cash flow, and handle investor reporting.',
-    serviceSlug: 'virtual-cfo',
-    features: [
-        'Budgeting, forecasting & variance analysis',
-        '13-week rolling cash flow forecasts',
-        'KPI tracking and MIS dashboard',
-        'Monthly investor updates & board-ready slides',
-    ],
-  },
-  {
-    id: 'gst-for-startups',
-    title: 'GST for Startups',
-    description: 'Compliant by default, optimized by design. We manage your GST compliance seamlessly—from filings to reconciliations—so there are no last-minute scrambles or surprise notices.',
-    serviceSlug: 'regulatory-compliances',
-    features: [
-        'GSTR-1 & GSTR-3B filings (Monthly / QRMP)',
-        'Sales, purchase & ITC reconciliations',
-        'ITC optimization & mismatch resolution',
-        'E-invoicing and E-way bill compliance',
-    ],
-  },
-  {
-    id: 'income-tax-tds',
-    title: 'Income Tax & TDS',
-    description: 'No missed deadlines, no unnecessary tax leakage. We ensure your direct tax obligations are handled accurately and on time, while keeping cash planning in mind.',
-    serviceSlug: 'regulatory-compliances',
-    features: [
-        'Monthly TDS calculations & challan payments',
-        'Quarterly TDS returns (24Q, 26Q)',
-        'Advance tax planning & tracking',
-        'Annual income tax return filing for company',
-    ],
-  },
-  {
-    id: 'roc-compliance',
-    title: 'ROC & Compliance',
-    description: 'Strong governance, zero penalties. We manage routine ROC filings, clean up past compliance gaps, and ensure your entity stays compliant year-round.',
-    serviceSlug: 'corporate-law',
-    features: [
-        'Annual ROC filings (AOC-4, MGT-7)',
-        'DIR-3 KYC & event-based filings',
-        'Maintenance of statutory registers',
-        'Compliance calendars & reminders',
-    ],
-  },
-  {
-    id: 'fundraising-readiness',
-    title: 'Fundraising Readiness',
-    description: 'From pitch deck to term sheet. We prepare you for every stage of the fundraising journey, ensuring you approach investors with confidence and a compelling story.',
-    serviceSlug: 'fundraising',
-    features: [
-        'Investor-grade financial modeling',
-        'Crafting a compelling pitch deck narrative',
-        'Cap table management and scenario analysis',
-        'Due diligence data room preparation',
-    ],
-  },
+    {
+        id: 'accounting-for-startups',
+        title: 'Accounting & Bookkeeping',
+        description: 'Accurate books, on time, every time. A rock-solid financial foundation.',
+        serviceSlug: 'bookkeeping',
+    },
+    {
+        id: 'virtual-cfo',
+        title: 'Virtual CFO',
+        description: 'Clarity on numbers, confidence in decisions. Your strategic finance partner.',
+        serviceSlug: 'virtual-cfo',
+    },
+    {
+        id: 'gst-compliance',
+        title: 'GST & Indirect Tax',
+        description: 'Compliant by default, optimized by design. No surprise notices.',
+        serviceSlug: 'regulatory-compliances',
+    },
+    {
+        id: 'direct-tax',
+        title: 'Income Tax & TDS',
+        description: 'No missed deadlines, no unnecessary tax leakage. Direct tax handled.',
+        serviceSlug: 'regulatory-compliances',
+    },
+    {
+        id: 'roc-compliance',
+        title: 'ROC & Corporate Law',
+        description: 'Strong governance, zero penalties. From routine filings to legal agreements.',
+        serviceSlug: 'corporate-law',
+    },
+    {
+        id: 'fundraising-readiness',
+        title: 'Fundraising Readiness',
+        description: 'From pitch deck to term sheet. Approach investors with confidence.',
+        serviceSlug: 'fundraising',
+    },
 ];
 
+export default function FinanceHubPage() {
+  
+  const representativeStageGuides = STAGE_PROBLEM_PAGES.filter(p => [
+    'basic-compliance-for-pre-seed-startups', 
+    'fundraising-prep-for-seed-startups',
+    'burn-rate-management-for-series-a-startups'
+  ].includes(p.slug));
 
-export default function PillarPage() {
   return (
     <>
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
@@ -97,49 +70,85 @@ export default function PillarPage() {
         </div>
       </section>
 
-      <div className="container py-16 md:py-24">
-        <div className="grid md:grid-cols-4 gap-8">
-            <aside className="md:col-span-1 md:sticky top-24 self-start">
-                <h2 className="text-xl font-semibold text-primary mb-4">On This Page</h2>
-                <ul className="space-y-2">
-                    {pillarSections.map(section => (
-                        <li key={section.id}>
-                            <Link href={`#${section.id}`} className="text-muted-foreground hover:text-accent transition-colors">
-                                {section.title}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </aside>
+      <div className="container py-16 md:py-24 space-y-24">
+        <section id="core-pillars">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Core Financial Pillars</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              The essential services every startup needs for a strong financial foundation.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {pillarSections.map(pillar => (
+              <Link href={`/services/${pillar.serviceSlug}`} key={pillar.id} className="group">
+                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent">
+                  <CardHeader>
+                    <CardTitle className="text-primary group-hover:text-accent transition-colors">{pillar.title}</CardTitle>
+                    <CardDescription className="pt-2">{pillar.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-            <main className="md:col-span-3 space-y-16">
-                 {pillarSections.map(section => (
-                    <section key={section.id} id={section.id} className="scroll-mt-20">
-                        <Card className="border-accent bg-muted/20">
-                            <CardHeader>
-                                <CardTitle className="text-3xl text-primary">{section.title}</CardTitle>
-                                <CardDescription className="text-lg !text-foreground/80 pt-2">{section.description}</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <ul className="space-y-3 my-6">
-                                    {section.features.map(feature => (
-                                        <li key={feature} className="flex items-start">
-                                            <CheckCircle className="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0" />
-                                            <span className="text-muted-foreground">{feature}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                                <Button asChild variant="link" className="p-0 h-auto text-accent">
-                                    <Link href={`/services/${section.serviceSlug}`}>
-                                        Learn more about {section.title} <ArrowRight className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-                            </CardContent>
-                        </Card>
-                    </section>
-                ))}
-            </main>
-        </div>
+        <section id="industry-guides">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Guides by Industry</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Tailored financial strategies and compliance guidance for your specific industry.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+             {INDUSTRY_FINANCE_PAGES.map(page => {
+                const Icon = page.Icon;
+                return (
+                  <Link href={`/industry-finance/${page.slug}`} key={page.slug} className="group">
+                    <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                      <CardHeader>
+                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
+                            <Icon className="w-8 h-8 text-primary" />
+                        </div>
+                        <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.industry}</CardTitle>
+                      </CardHeader>
+                       <CardContent>
+                            <p className="text-sm text-muted-foreground">{page.description.substring(0, 100)}...</p>
+                        </CardContent>
+                    </Card>
+                  </Link>
+                )
+             })}
+          </div>
+        </section>
+
+        <section id="stage-guides">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Guides by Startup Stage</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Solving the right financial problems at the right time in your startup journey.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {representativeStageGuides.map(page => {
+                const Icon = page.problem.Icon;
+                return (
+                  <Link href={`/startup-guides/${page.slug}`} key={page.slug} className="group">
+                    <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                      <CardHeader>
+                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
+                            <Icon className="w-8 h-8 text-primary" />
+                        </div>
+                        <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground">{page.description.substring(0, 120)}...</p>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                )
+            })}
+          </div>
+        </section>
       </div>
     </>
   );
