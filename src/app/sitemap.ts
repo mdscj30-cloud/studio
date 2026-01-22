@@ -23,7 +23,7 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
   
   switch(id) {
     case 'main':
-      return [
+      const mainPages = [
         '/',
         '/services',
         '/finance-for-startups-india',
@@ -36,12 +36,22 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
         '/contact',
         '/terms',
         '/privacy',
-      ].map(route => ({
-        url: `${siteUrl}${route}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: route === '/' ? 1.0 : route.startsWith('/finance') ? 0.9 : 0.8,
-      }));
+      ];
+      const hubPages = ['/services', '/finance-for-startups-india', '/resources', '/startup-finance-glossary'];
+      const lowPriorityPages = ['/terms', '/privacy'];
+
+      return mainPages.map(route => {
+        const priority = route === '/' ? 1.0 :
+                         hubPages.includes(route) ? 0.9 :
+                         lowPriorityPages.includes(route) ? 0.7 :
+                         0.8;
+        return {
+          url: `${siteUrl}${route}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: priority,
+        }
+      });
 
     case 'services':
       return SERVICES.map(service => ({
