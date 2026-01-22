@@ -6,6 +6,7 @@ import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
 import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data'
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data'
+import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data'
 
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -80,6 +81,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const industryFinancePages = INDUSTRY_FINANCE_PAGES.map(page => ({
+    url: `${siteUrl}/industry-finance/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
 
   return [
     ...mainPages,
@@ -90,5 +98,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...programmaticPages,
     ...locationServicePages,
     ...startupGuidePages,
+    ...industryFinancePages,
   ];
 }
