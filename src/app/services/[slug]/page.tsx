@@ -2,6 +2,8 @@ import { SERVICES } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { ArrowLeft, CheckCircle } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 type Props = {
   params: { slug: string };
@@ -46,20 +48,50 @@ export default function ServiceDetailPage({ params }: Props) {
                 <div className="bg-primary-foreground/10 p-3 rounded-full">
                     <Icon className="w-10 h-10 text-primary-foreground" />
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold">{service.title}</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">{service.h1}</h1>
             </div>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl">{service.description}</p>
+             <Button asChild variant="link" className="text-primary-foreground/80 hover:text-white transition-colors p-0 mt-6">
+                <Link href="/finance-for-startups-india">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Startup Finance Guide
+                </Link>
+            </Button>
         </div>
       </section>
 
       <div className="container">
-        <section className="py-16 md:py-24">
-                <div className="prose lg:prose-lg max-w-4xl mx-auto">
-                  <h2 className="text-3xl font-bold text-primary mb-4">Service Details</h2>
-                  <p>More detailed information about the {service.title} service will go here. This can include key features, benefits, case studies, or methodologies related to this specific offering. For now, this is placeholder content demonstrating the structure of a service detail page.</p>
-                  <p>Nexa Consultancy provides comprehensive {service.title} to help your startup achieve its goals. Our expert team works closely with you to develop tailored solutions that drive results.</p>
-              </div>
-        </section>
+        <div className="grid md:grid-cols-3 gap-12 py-16 md:py-24">
+            <div className="md:col-span-2">
+                <div className="prose lg:prose-lg max-w-none">
+                    <h2 className="text-3xl font-bold text-primary mb-4">Service Overview</h2>
+                    <p>{service.details}</p>
+
+                    <h3 className="text-2xl font-bold text-primary mt-12 mb-4">Who Needs This Service?</h3>
+                    <div className="bg-muted/50 border-l-4 border-accent p-6 rounded-r-lg">
+                        <p className="!my-0">{service.whoNeedsThis}</p>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-primary mt-12 mb-4">Our Pricing Approach</h3>
+                    <p>{service.pricingApproach}</p>
+                </div>
+            </div>
+            <aside className="md:col-span-1">
+                 <div className="sticky top-24">
+                    <h3 className="text-2xl font-bold text-primary mb-4">Frequently Asked Questions</h3>
+                    <Accordion type="single" collapsible className="w-full">
+                        {service.faqs.map((faq, index) => (
+                             <AccordionItem value={`item-${index}`} key={index}>
+                                <AccordionTrigger className="font-semibold text-left">{faq.question}</AccordionTrigger>
+                                <AccordionContent className="text-muted-foreground">
+                                    {faq.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                 </div>
+            </aside>
+        </div>
       </div>
 
       <section className="-mx-container-padding bg-muted/50 py-16 md:py-24">
