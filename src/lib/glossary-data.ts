@@ -3145,6 +3145,154 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Penalty for non-compliance with Factory Act',
         definition: '<p>For manufacturing startups, non-compliance with the Factory Act, 1948 (related to worker health, safety, and welfare) can lead to fines and imprisonment for the "occupier" of the factory (often the director).</p><p><b>Startup Example:</b> A manufacturing startup fails to provide adequate safety equipment, leading to an accident. The directors can be held personally liable and face criminal proceedings.</p><p>Our advisory for <a href="/industry-finance/finance-for-manufacturing-startups-india">manufacturing startups</a> includes highlighting these critical compliance areas.</p>'
+    },
+    {
+        term: 'Consequences of not filing Form DPT-3',
+        definition: '<p>Every company (except government companies) must file Form DPT-3 with the ROC to report details of deposits and outstanding loans or monies not considered as deposits. Non-filing can attract a penalty of up to ₹1 crore and penalties on officers.</p><p><b>Startup Example:</b> A startup takes an unsecured loan from another company. It must report this in its annual DPT-3 filing. Failure to do so is a compliance breach and can be a red flag during due diligence.</p><p>Our <a href="/services/corporate-law">ROC compliance services</a> cover this annual filing.</p>'
+    },
+    {
+        term: 'Penalty for not obtaining Commencement of Business certificate',
+        definition: '<p>A newly incorporated company cannot commence business or exercise any borrowing powers unless it files a declaration (Form INC-20A) for commencement of business within 180 days of incorporation. Failure can lead to a penalty of ₹50,000 on the company and ₹1,000 per day on officers, and the ROC may even strike off the company name.</p><p><b>Startup Example:</b> A startup incorporates but delays opening its bank account and bringing in share capital. It misses the 180-day deadline for filing INC-20A and faces heavy penalties and the risk of being shut down.</p><p>Our <a href="/services/business-setup">Business Setup service</a> ensures this is filed on time.</p>'
+    },
+    {
+        term: 'Consequences of not attaching board report to financial statements',
+        definition: '<p>The Board\'s Report is a mandatory part of the annual report. Failure to prepare it or attach it to the financial statements filed with the ROC is a non-compliance under the Companies Act, attracting penalties on the company and its officers.</p><p><b>Startup Example:</b> A startup files its annual financial statements (AOC-4) but omits the Board\'s Report. The filing is incomplete and will attract penalties.</p><p>We help draft and finalize Board Reports as part of our <a href="/services/corporate-law">annual compliance services</a>.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with Secretarial Standards',
+        definition: '<p>Companies are required to comply with Secretarial Standards (SS-1 for Board Meetings, SS-2 for General Meetings) issued by the ICSI. Non-compliance can lead to penalties on the company and its officers, as auditors are required to report on it.</p><p><b>Startup Example:</b> A startup\'s board meeting minutes do not contain all the details required by SS-1. The company secretary or auditor will flag this as a non-compliance.</p><p>Our <a href="/services/corporate-law">secretarial services</a> are fully compliant with these standards.</p>'
+    },
+    {
+        term: 'Consequences of a forged Digital Signature Certificate (DSC)',
+        definition: '<p>Using a forged DSC or misusing someone else\'s DSC for filing forms with government authorities is a serious criminal offense under the Information Technology Act, 2000. It can lead to imprisonment for up to 3 years and a fine of up to ₹1 Lakh.</p><p><b>Startup Example:</b> A person uses a founder\'s DSC without their permission to file an incorrect form with the ROC. This is a cybercrime with severe consequences.</p><p>We ensure utmost security in handling <a href="/services/business-setup">digital signatures</a>.</p>'
+    },
+    {
+        term: 'Due date for filing Form PAS-3 (Return of Allotment)',
+        definition: '<p>Whenever a company makes an allotment of shares (e.g., after a funding round), it must file Form PAS-3 with the Registrar of Companies within 30 days of the allotment.</p><p><b>Startup Example:</b> A startup allots shares to a new investor on June 1st. It must file Form PAS-3 with the list of allottees and other details by June 30th.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> ensures all post-funding compliances are met.</p>'
+    },
+    {
+        term: 'Penalty for late filing of Form PAS-3',
+        definition: '<p>Late filing of Form PAS-3 attracts an ad-valorem penalty based on the number of days of delay. The penalties can become substantial very quickly, making timely filing crucial after any share allotment.</p><p><b>Startup Example:</b> A startup delays filing its PAS-3 by 90 days after a large funding round. It will face significant additional government fees as penalties.</p><p>We manage all event-based <a href="/services/corporate-law">ROC filings</a> to avoid these costs.</p>'
+    },
+    {
+        term: 'Consequences of not passing a Special Resolution for certain actions',
+        definition: '<p>Certain actions under the Companies Act, like changing the company name, altering the Articles of Association, or related party transactions above a certain limit, require a Special Resolution (passed by a 75% majority of shareholders). Taking these actions with only a normal Board Resolution is invalid and a non-compliance.</p><p><b>Startup Example:</b> A startup wants to increase its authorized share capital. This requires a special resolution at a general meeting. Just passing a board resolution is not enough.</p><p>Our <a href="/services/corporate-law">Corporate Law</a> team advises on the correct procedures for all corporate actions.</p>'
+    },
+    {
+        term: 'Penalty for non-compliance with Form MGT-14',
+        definition: '<p>Form MGT-14 is used to file certain special resolutions and other agreements with the ROC. Failure to file this form within 30 days of passing the resolution attracts significant penalties on the company and its officers.</p><p><b>Startup Example:</b> A startup passes a special resolution to adopt a new set of Articles of Association but fails to file Form MGT-14 with the ROC. The resolution is not effective, and the company is in non-compliance.</p><p>We ensure all necessary resolutions are filed with the ROC.</p>'
+    },
+    {
+        term: 'Consequences of not maintaining the Minutes Book',
+        definition: '<p>Every company must maintain a Minutes Book for all board and general meetings. It is the official record of the decisions taken. Failure to maintain it properly can lead to penalties and is a major red flag during due diligence.</p><p><b>Startup Example:</b> During a due diligence, an investor\'s lawyer asks to inspect the Minutes Book. The startup only has scattered notes, which raises serious concerns about its corporate governance.</p><p>Our <a href="/services/corporate-law">secretarial services</a> include the preparation and maintenance of the Minutes Book.</p>'
+    },
+    {
+        term: 'Due date for filing Form AOC-4 and MGT-7',
+        definition: '<p>Form AOC-4 (for financial statements) and Form MGT-7 (annual return) must be filed with the ROC within 30 and 60 days, respectively, from the date of the Annual General Meeting (AGM).</p><p><b>Startup Example:</b> A startup holds its AGM on September 30th. It must file AOC-4 by October 30th and MGT-7 by November 29th.</p><p>We manage all <a href="/services/regulatory-compliances">annual ROC filings</a> for our clients.</p>'
+    },
+    {
+        term: 'Consequences of non-filing of AOC-4 and MGT-7',
+        definition: '<p>Failure to file the annual financial statements (AOC-4) and annual return (MGT-7) by the due date results in a late filing fee of ₹100 per day, per form. Prolonged non-filing can lead to the company being struck off and the directors being disqualified.</p><p><b>Startup Example:</b> A startup neglects its annual filings for a year. It faces a penalty of (₹100 * 2 forms * 365 days) = ₹73,000, plus the risk of director disqualification.</p><p>Our <a href="/services/regulatory-compliances">compliance retainers</a> cover all these critical filings.</p>'
+    },
+    {
+        term: 'Penalty for director disqualification',
+        definition: '<p>A director can be disqualified for reasons like non-filing of a company\'s financial statements for three consecutive years. A disqualified director cannot be appointed as a director in any other company for a period of 5 years.</p><p><b>Startup Example:</b> A founder of a failed startup that didn\'t complete its filings gets disqualified. They are now legally barred from becoming a director in their new venture for five years, creating a major roadblock.</p><p>Properly winding up old ventures is as important as starting new ones.</p>'
+    },
+    {
+        term: 'Consequences of a Strike-Off notice from ROC',
+        definition: '<p>If a company has not been carrying on any business and has failed to file its annual returns, the Registrar of Companies (ROC) can issue a notice to strike off the company\'s name from the register. This leads to the company ceasing to exist as a legal entity.</p><p><b>Startup Example:</b> A dormant startup fails to do its annual filings for two years. The ROC issues a strike-off notice. If they don\'t respond, the company will be dissolved, and its bank account may be frozen.</p><p>We can help with <a href="/services/corporate-law">reviving struck-off companies</a> or managing a proper winding-up.</p>'
+    },
+    {
+        term: 'GST treatment of Bad Debts',
+        definition: '<p>If a business has already paid GST on an invoice but the customer defaults on the payment (bad debt), the GST law does not provide a direct mechanism to claim a refund of the GST paid. However, specific accounting entries and documentation are required to write off the debt correctly.</p><p><b>Startup Example:</b> A service startup pays GST on an invoice of ₹1 Lakh. The client goes bankrupt and doesn\'t pay. The startup cannot simply reverse the GST paid. It must follow the procedure for writing off bad debts in its books.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> manage these complex scenarios.</p>'
+    },
+    {
+        term: 'Applicability of GST on advances received',
+        definition: '<p>Under GST law, for services, tax is payable when the invoice is issued or when the payment is received, whichever is earlier. This means if you receive an advance payment from a customer, you are liable to pay GST on that advance in the month you receive it.</p><p><b>Startup Example:</b> A SaaS startup receives a ₹12 Lakh advance for an annual contract in April. It must pay GST on the entire ₹12 Lakhs in its April GST return, even though the service will be provided over a year.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">SaaS CFOs</a> help manage the cash flow implications of this rule.</p>'
+    },
+    {
+        term: 'GST on services provided to foreign clients',
+        definition: '<p>Services provided to a client located outside India, where the payment is received in convertible foreign exchange, are treated as an "export of service". Exports are zero-rated supplies under GST, meaning no tax is charged to the client. The exporter can claim a refund of the input tax credit (ITC) accumulated on their expenses.</p><p><b>Startup Example:</b> An Indian startup provides software development services to a US client. It can issue an invoice without GST by filing a Letter of Undertaking (LUT) and can later claim a refund of the GST it paid on its office rent and other inputs.</p><p>We specialize in <a href="/solutions/gst-compliance-for-export-startups">GST for exporters</a>.</p>'
+    },
+    {
+        term: 'GST treatment of free samples and gifts',
+        definition: '<p>Under GST, Input Tax Credit (ITC) is not available for goods lost, stolen, destroyed, written off, or disposed of by way of gift or free samples. If you have already claimed ITC on the purchase of such goods, you must reverse it.</p><p><b>Startup Example:</b> A D2C brand uses products from its stock for a promotional giveaway. It must reverse the ITC it had claimed when it purchased those products.</p><p>Our <a href="/industry-finance/gst-for-d2c-brands-india">D2C finance services</a> cover these nuances.</p>'
+    },
+    {
+        term: 'TDS on Salary vs. TDS on Professional Fees',
+        definition: '<p>TDS on salary (Section 192) is deducted based on the employee\'s applicable income tax slab rates after considering their declarations for deductions. TDS on professional fees (Section 194J) is deducted at a flat rate of 10%. Misclassifying an employee as a consultant can lead to incorrect TDS deduction and penalties.</p><p><b>Startup Example:</b> A startup pays a full-time designer ₹80,000/month but treats them as a consultant and deducts 10% TDS. The tax authorities can reclassify this as a salary, leading to penalties for incorrect deduction.</p><p>We provide clarity on <a href="/services/regulatory-compliances">payroll and TDS compliance</a>.</p>'
+    },
+    {
+        term: 'TDS on Work under Section 194C',
+        definition: '<p>"Work" under Section 194C for TDS on contracts has a wide definition. It includes advertising, broadcasting, catering, carriage of goods, and manufacturing or supplying a product according to the customer\'s specification.</p><p><b>Startup Example:</b> A startup pays an agency to run an advertising campaign. This payment falls under the definition of "work" and is subject to TDS under Section 194C.</p><p>Our <a href="/services/regulatory-compliances">TDS services</a> cover all categories of payments.</p>'
+    },
+    {
+        term: 'TDS on Insurance Commission (Section 194D)',
+        definition: '<p>TDS must be deducted at 5% on insurance commission payments if the total payment to a resident exceeds ₹15,000 in a financial year.</p><p><b>Startup Example:</b> An InsurTech startup that works with individual agents must deduct TDS on the commission it pays out to them, once the annual payment to an agent crosses the threshold.</p><p>Our services are tailored for the <a href="/industry-finance/finance-for-fintech-startups-india">FinTech and InsurTech</a> industries.</p>'
+    },
+    {
+        term: 'TDS on Sale of Immovable Property (Section 194-IA)',
+        definition: '<p>The buyer of an immovable property (other than agricultural land) worth ₹50 Lakhs or more is required to deduct TDS at 1% from the payment made to the seller.</p><p><b>Startup Example:</b> A startup purchases an office space for ₹1 Crore. It must deduct ₹1 Lakh as TDS before paying the seller and deposit this amount with the government.</p><p>We advise on all high-value transactions.</p>'
+    },
+    {
+        term: 'TDS on Rent of Plant & Machinery vs Building',
+        definition: '<p>Under Section 194-I, the TDS rate on rent is different for different assets. For rent of plant, machinery, or equipment, the rate is 2%. For rent of land, building, or furniture, the rate is 10%.</p><p><b>Startup Example:</b> A manufacturing startup rents both a factory building and the machinery inside from the same owner under separate agreements. It must deduct TDS at 10% on the building rent and 2% on the machinery rent.</p><p>Our expertise covers the <a href="/industry-finance/finance-for-manufacturing-startups-india">manufacturing sector</a>.</p>'
+    },
+    {
+        term: 'Lower Deduction Certificate (Form 13)',
+        definition: '<p>A person can apply to the Income Tax officer for a certificate authorizing them to receive payments with a lower rate of TDS or no TDS, if their estimated final tax liability is low. This is done by filing Form 13.</p><p><b>Startup Example:</b> A consulting startup has significant expenses and expects to have a low profit for the year. It can apply for a lower deduction certificate so that its clients deduct TDS at a lower rate (e.g., 2% instead of 10%), improving its cash flow.</p><p>Our <a href="/services/regulatory-compliances">tax planning services</a> can help with this process.</p>'
+    },
+    {
+        term: 'Consequences of quoting wrong PAN in TDS return',
+        definition: '<p>If the deductor quotes an incorrect PAN of the deductee in the TDS return, the deductee will not get credit for the tax deducted. This leads to disputes and requires filing a revised TDS return, which is a cumbersome process.</p><p><b>Startup Example:</b> A startup makes a typo in a vendor\'s PAN while filing its TDS return. The vendor complains that the tax credit is not appearing in their Form 26AS. The startup has to go through the process of rectifying and re-filing the return.</p><p>We ensure PAN verification to prevent these errors.</p>'
+    },
+    {
+        term: 'How to revise a TDS return',
+        definition: '<p>A TDS return can be corrected by filing a revised return (a correction statement). This is required for changes in PAN details, tax amounts, challan details, etc. It is done through the TRACES portal.</p><p><b>Startup Example:</b> A startup needs to correct a TDS return. Their CA prepares a correction statement file and uploads it to the portal to rectify the original mistake.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> include handling TDS return revisions.</p>'
+    },
+    {
+        term: 'TDS on payments to non-residents (Section 195) deep dive',
+        definition: '<p>Section 195 requires anyone making a payment to a non-resident to deduct TDS. The key challenges are determining if the income is taxable in India and what the correct rate is, which depends on the nature of payment and the DTAA with the non-resident\'s country.</p><p><b>Startup Example:</b> A startup pays a US-based marketing consultant. It must determine if this is a "fee for technical services" under the India-US DTAA, obtain the consultant\'s tax residency certificate, and deduct TDS at the applicable treaty rate before making the payment.</p><p>This is a core focus of our <a href="/solutions/tds-on-foreign-payments-startups">solution for foreign payments</a>.</p>'
+    },
+    {
+        term: 'TDS on online gaming (Section 194BA)',
+        definition: '<p>A new provision requires online gaming platforms to deduct TDS at 30% on the "net winnings" of a user at the time of withdrawal or at the end of the financial year.</p><p><b>Startup Example:</b> A real-money gaming startup must implement a system to track each user\'s net winnings and correctly deduct and deposit TDS before processing any withdrawals. This is a complex technical and compliance challenge.</p><p>We provide specialized advisory for new-age digital businesses.</p>'
+    },
+    {
+        term: 'ESOP pool creation at Seed Stage',
+        definition: '<p>When raising a seed round, investors typically insist that a startup create an Employee Stock Option Pool (ESOP) of 10-15%. Crucially, they usually require this pool to be created from the pre-money valuation, diluting the founders before the investment.</p><p><b>Startup Example:</b> A startup is valued at ₹20 crore pre-money. To create a 10% ESOP pool, the founders\' stake is first diluted to create this pool, and only then does the new investment come in. Understanding this "pre-money pool" is vital for founders.</p><p>We help model these fundraising scenarios in our <a href="/services/fundraising">advisory services</a>.</p>'
+    },
+    {
+        term: 'Due diligence readiness for Series A',
+        definition: '<p>Due diligence for a Series A round is far more rigorous than for a seed round. Investors will scrutinize everything: your financial statements, customer contracts, employee agreements, IP ownership documents, and all statutory compliance filings.</p><p><b>Startup Example:</b> A startup entering Series A diligence needs to have a well-organized virtual data room containing audited financials for the past 2 years, signed customer contracts, and proof of all ROC and tax filings. Any gaps can delay or kill the deal.</p><p>Our <a href="/services/investor-due-diligence">due diligence readiness service</a> prepares you for this scrutiny.</p>'
+    },
+    {
+        term: 'Importance of clean MIS for Series B',
+        definition: '<p>By the time a startup is raising a Series B, investors expect a high degree of financial sophistication. They will want to see detailed cohort analysis, accurate unit economics (LTV:CAC), and a predictable financial forecast. A clean, automated Management Information System (MIS) is no longer a nice-to-have; it\'s a prerequisite.</p><p><b>Startup Example:</b> A Series B investor asks for the LTV:CAC ratio broken down by different customer acquisition channels. A startup with a strong MIS can provide this data immediately, demonstrating a deep understanding of its business.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">Virtual CFO service</a> focuses on building these sophisticated reporting systems.</p>'
+    },
+    {
+        term: 'Revenue recognition for EdTech platforms',
+        definition: '<p>EdTech platforms often have complex revenue models (e.g., live classes, pre-recorded courses, hybrid models). Revenue must be recognized as the service is delivered. For a 12-month course, revenue should be recognized monthly over the 12 months, not all upfront.</p><p><b>Startup Example:</b> An EdTech startup sells a 6-month live course for ₹60,000. It must recognize ₹10,000 of revenue each month for 6 months. The unearned portion is kept on the balance sheet as "Deferred Revenue".</p><p>We specialize in <a href="/services/bookkeeping">complex revenue recognition</a> for tech businesses.</p>'
+    },
+    {
+        term: 'GST on game development services',
+        definition: '<p>Game development services provided to a foreign client are considered an export of service and are zero-rated under GST (if conditions are met). For domestic clients, GST is applicable. The classification of the service under the correct SAC code is important.</p><p><b>Startup Example:</b> A game development studio in India builds a game for a US-based publisher. By filing an LUT, they can invoice the US client without charging GST and claim a refund on the GST paid on their inputs (like software licenses).</p><p>Our <a href="/solutions/gst-compliance-for-export-startups">GST for exporters service</a> covers the gaming industry.</p>'
+    },
+    {
+        term: 'Compliance for HealthTech data storage',
+        definition: '<p>In India, the Digital Personal Data Protection (DPDP) Act, and specific regulations for healthcare data, impose strict rules on the storage and processing of Sensitive Personal Information, like patient health records. Startups must ensure data is stored securely and with explicit consent.</p><p><b>Startup Example:</b> A HealthTech app that stores patient data on the cloud must use servers that are compliant with Indian law, have strong encryption, and have a clear policy on data access and usage, to avoid massive penalties under the DPDP Act.</p><p>Our <a href="/industry-finance/finance-for-fintech-startups-india">HealthTech advisory</a> covers these critical compliance aspects.</p>'
+    },
+    {
+        term: 'What to do when a co-founder leaves',
+        definition: '<p>A co-founder\'s departure can be disruptive. The first step is to refer to the Shareholders\' Agreement (SHA). A well-drafted SHA will have clauses on vesting, which determine how many shares the departing founder gets to keep, and clauses on share buyback, which may give the company the right to repurchase those shares.</p><p><b>Startup Example:</b> A co-founder with 30% equity leaves after 1.5 years of a 4-year vesting schedule with a 1-year cliff. They are vested in their cliff shares (25% of 30%) plus 6 months of monthly vesting. The company has the right to buy back the unvested shares for a nominal price.</p><p>Having a strong SHA is critical, a key part of our <a href="/services/corporate-law">Corporate Law</a> services.</p>'
+    },
+    {
+        term: 'How to handle a tax notice for the first time',
+        definition: '<p>Receiving your first tax notice can be stressful. Do not ignore it. The first step is to read it carefully to understand what the tax officer is asking for (e.g., more information, explanation for a discrepancy). Then, consult a qualified Chartered Accountant to draft a formal, point-by-point reply with supporting documents.</p><p><b>Startup Example:</b> A startup receives a notice for a mismatch between their Form 26AS and their declared income. Their CA prepares a reconciliation statement explaining the difference and files it with the tax department.</p><p>We handle all <a href="/services/regulatory-compliances">tax notice representations</a> for our clients.</p>'
+    },
+    {
+        term: 'Consequences of not having a Shareholders Agreement',
+        definition: '<p>Operating without a Shareholders\' Agreement (SHA) is one of the biggest risks for a startup. It means there are no rules for decision-making, share transfers, what happens if a founder leaves, or how to resolve disputes. It can lead to deadlock and legal battles that can destroy the company.</p><p><b>Startup Example:</b> Two 50/50 co-founders have a major disagreement. Without an SHA detailing a dispute resolution mechanism, the company is paralyzed and unable to make any decisions. No investor will touch a company in this state.</p><p>We consider drafting an SHA the most critical first step in our <a href="/services/corporate-law">legal services</a>.</p>'
     }
 ];
 
