@@ -103,6 +103,42 @@
       "imageHint": "magnifying glass"
     },
     {
+      "id": "blog-7",
+      "description": "A bustling view of Bangalore's skyline with a focus on modern office buildings, representing the city's startup ecosystem.",
+      "imageUrl": "https://images.unsplash.com/photo-1596796679119-7cf1a9e5448b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxCYW5nYWxvcmUlMjBza3lsaW5lfGVufDB8fHx8MTc2OTA4MDUzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Bangalore skyline"
+    },
+    {
+      "id": "blog-8",
+      "description": "The iconic sea link bridge in Mumbai, representing the financial maze and opportunities for D2C startups.",
+      "imageUrl": "https://images.unsplash.com/photo-1601693115878-9223922e4eea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxNdW1iYWklMjBzZWFsaW5rfGVufDB8fHx8MTc2OTA4MDUzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mumbai sealink"
+    },
+    {
+      "id": "blog-9",
+      "description": "A modern office building in Delhi-NCR, reflecting the region's B2B SaaS boom.",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1576485436509-a7d286952b65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEZWxoaSUyMG9mZmljZXxlbnwwfHx8fDE3NjkwODA1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Delhi office"
+    },
+    {
+      "id": "blog-10",
+      "description": "An automated factory floor, symbolizing the manufacturing prowess of Ahmedabad.",
+      "imageUrl": "https://images.unsplash.com/photo-1582190506824-ef3bd95a956e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjdG9yeSUyMG1hbnVmYWN0dXJpbmd8ZW58MHx8fHwxNzY5MDgwNTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "factory manufacturing"
+    },
+    {
+      "id": "blog-11",
+      "description": "A view of Jaipur's iconic Hawa Mahal, representing the blend of culture and emerging tech.",
+      "imageUrl": "https://images.unsplash.com/photo-1712653654273-14f724c63eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxKYWlwdXIlMjBIYXdhTWFoYWx8ZW58MHx8fHwxNzY5MDgwNTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Jaipur HawaMahal"
+    },
+    {
+      "id": "blog-12",
+      "description": "A consultant working on a laptop in a cafe in Indore, symbolizing modern service businesses.",
+      "imageUrl": "https://picsum.photos/seed/blog12/800/450",
+      "imageHint": "Indore professional"
+    },
+    {
       "id": "case-study-1",
       "description": "A warehouse with workers and packages, representing logistics and scaling operations.",
       "imageUrl": "https://images.unsplash.com/photo-1586528116311-08dd6e781c7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

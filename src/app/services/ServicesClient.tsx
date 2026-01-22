@@ -10,9 +10,9 @@ import {
   CardDescription,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS } from '@/lib/constants';
+import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS, LOCATIONS } from '@/lib/constants';
 import { useEffect } from 'react';
 import { getCalApi } from "@calcom/embed-react";
 
@@ -266,6 +266,27 @@ export function ServicesClient() {
       </section>
 
       <section className="-mx-container-padding bg-muted/50 py-16 md:py-24">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary">Serving Startups Across India</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              From the bustling tech parks of Bangalore to the financial hub of Mumbai, we provide expert financial and compliance services to startups in India's most dynamic cities.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+              {LOCATIONS.map(location => (
+                <div key={location.name} className="bg-card p-4 rounded-lg border flex items-center justify-center gap-2">
+                  <MapPin className="w-5 h-5 text-accent" />
+                  <span className="font-semibold">{location.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="-mx-container-padding bg-background py-16 md:py-24">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
             Let’s Simplify Finance & Compliance

@@ -8,7 +8,7 @@ export default function TeamSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">Meet Our Expert Team</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            We are a blend of financial experts, strategic thinkers, and tech innovators from the country's most prestigious institutions and firms.
+            We are a blend of financial experts, strategic thinkers, and tech innovators from the country's most prestigious institutions and firms, with a distributed team across India's key startup hubs including Bangalore, Mumbai, Delhi, Ahmedabad, Jaipur, and Indore.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
