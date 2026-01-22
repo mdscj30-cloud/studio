@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const glossaryTerms = ALL_GLOSSARY_TERMS.map(term => ({
-    url: `${siteUrl}/glossary/${term.slug}`,
+    url: `${siteUrl}/startup-finance-glossary/${term.slug}`,
     lastModified: new Date(),
     changeFrequency: 'yearly' as const,
     priority: 0.6,

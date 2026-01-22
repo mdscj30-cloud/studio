@@ -53,7 +53,7 @@ export default function StartupFinanceGlossaryPage() {
                 <ul className="columns-1 md:columns-2 lg:columns-3 gap-x-8">
                   {GLOSSARY_DATA_BY_LETTER[letter].map(item => (
                     <li key={item.term} className="mb-3">
-                      <Link href={`/glossary/${item.slug}`} className="text-muted-foreground hover:text-accent hover:underline">
+                      <Link href={`/startup-finance-glossary/${item.slug}`} className="text-muted-foreground hover:text-accent hover:underline">
                         {item.term}
                       </Link>
                     </li>
