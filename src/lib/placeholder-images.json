@@ -139,48 +139,6 @@
       "imageHint": "Indore professional"
     },
     {
-      "id": "case-study-1",
-      "description": "A warehouse with workers and packages, representing logistics and scaling operations.",
-      "imageUrl": "https://images.unsplash.com/photo-1586528116311-08dd6e781c7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "warehouse logistics"
-    },
-    {
-      "id": "case-study-2",
-      "description": "A rocket launching, symbolizing a startup's rapid growth from seed to Series A funding.",
-      "imageUrl": "https://images.unsplash.com/photo-1518365050014-70fe7232897f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cm9ja2V0JTIwbGF1bmNofGVufDB8fHx8MTc2NjU4NjkzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rocket launch"
-    },
-    {
-      "id": "case-study-3",
-      "description": "An illustration of a friendly robot assisting a doctor in a modern hospital setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1620712943543-aebc69232973?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "medical robot"
-    },
-    {
-      "id": "case-study-4",
-      "description": "A lifestyle shot of a customer happily unboxing a product from a modern D2C brand.",
-      "imageUrl": "https://images.unsplash.com/photo-1566576912301-407c72f7334a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "unboxing product"
-    },
-    {
-      "id": "team-ca",
-      "description": "A professional Chartered Accountant working at a desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1639300505533-9921527d6a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhY2NvdW50YW50JTIwd29ya2luZ3xlbnwwfHx8fDE3NjY2ODU1Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "accountant working"
-    },
-    {
-      "id": "team-big4",
-      "description": "Consultants in a modern office, representing Big Four experience.",
-      "imageUrl": "https://images.unsplash.com/photo-1713461983836-de0a45009424?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0YW50cyUyMG9mZmljZXxlbnwwfHx8fDE3NjY2ODU1NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "consultants office"
-    },
-    {
-      "id": "team-iit-iim",
-      "description": "A diverse group of graduates in a campus setting, representing IITs and IIMs.",
-      "imageUrl": "https://images.unsplash.com/photo-1760111085279-6c4b6d831acc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudHMlMjBjYW1wdXN8ZW58MHx8fHwxNzY2Njg1NTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "students campus"
-    },
-    {
       "id": "blog-13",
       "description": "A checklist on a desk with a pen and coffee, symbolizing an accounting setup.",
       "imageUrl": "https://images.unsplash.com/photo-1692158961562-cb06d93fb63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2OTEwNjA1OXww&ixlib=rb-4.1.0&q=80&w=1080",

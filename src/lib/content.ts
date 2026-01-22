@@ -1,6 +1,5 @@
 
 
-
 export const DETAILED_BLOG_POSTS = [
   {
     slug: 'accounting-setup-checklist-indian-startups',
