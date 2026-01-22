@@ -4,6 +4,7 @@ import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
 import { SERVICES } from '@/lib/constants'
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
+import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = 'https://nexaconsultancy.com'
@@ -34,19 +35,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogPosts = DETAILED_BLOG_POSTS.map(post => ({
-    url: `${siteUrl}/resources/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }));
-
   const blogIndexPage = {
     url: `${siteUrl}/resources/blog`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   };
+
+  const blogPosts = DETAILED_BLOG_POSTS.map(post => ({
+    url: `${siteUrl}/resources/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
 
   const caseStudies = DETAILED_CASE_STUDIES.map(study => ({
     url: `${siteUrl}/resources/case-studies/${study.slug}`,
@@ -69,6 +70,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const locationServicePages = LOCATION_SERVICE_PAGES.map(page => ({
+    url: `${siteUrl}/india-services/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
 
   return [
     ...mainPages,
@@ -77,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogPosts,
     ...caseStudies,
     ...glossaryTerms,
-    ...programmaticPages
+    ...programmaticPages,
+    ...locationServicePages
   ];
 }
-
