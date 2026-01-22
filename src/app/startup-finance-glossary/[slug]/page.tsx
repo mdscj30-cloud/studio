@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export async function generateStaticParams() {
   return ALL_GLOSSARY_TERMS.map((term) => ({
@@ -52,6 +53,32 @@ export default function GlossaryTermPage({ params }: { params: { slug: string } 
                             Back to Full Glossary
                         </Link>
                     </Button>
+                </div>
+                 <div className="max-w-4xl mx-auto mt-16 border-t pt-8">
+                    <h3 className="text-2xl font-bold text-primary mb-4">Explore Our Services</h3>
+                    <p className="text-muted-foreground mb-6">Learn how Nexa Consultancy can help you navigate complex financial challenges.</p>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                        <Link href="/services/virtual-cfo" className="group">
+                            <Card className="h-full transition-all duration-300 border group-hover:border-accent group-hover:shadow-lg">
+                                <CardHeader>
+                                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">Virtual CFO Services</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-sm text-muted-foreground">Strategic financial guidance for scaling startups.</p>
+                                </CardContent>
+                            </Card>
+                        </Link>
+                        <Link href="/solutions/virtual-cfo-for-saas-startups" className="group">
+                            <Card className="h-full transition-all duration-300 border group-hover:border-accent group-hover:shadow-lg">
+                                <CardHeader>
+                                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">CFO for SaaS Startups</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-sm text-muted-foreground">Specialized financial strategy for the SaaS business model.</p>
+                                </CardContent>
+                            </Card>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>

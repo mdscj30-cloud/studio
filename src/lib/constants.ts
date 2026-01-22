@@ -75,6 +75,7 @@ export const SERVICES = [
     details: 'Our Virtual CFO service goes beyond basic accounting. We act as your strategic financial partner, providing high-level expertise in financial planning, KPI tracking, cash flow management, and investor relations to help you make data-driven decisions and achieve sustainable growth.',
     whoNeedsThis: 'Early-stage to growth-stage startups that need strategic financial guidance for scaling, fundraising, and improving profitability but are not yet ready for the cost of a full-time CFO.',
     pricingApproach: 'Our Virtual CFO services are offered on a flexible monthly retainer model. Pricing is customized based on the stage of your startup, transaction volume, complexity of operations, and the level of strategic involvement required.',
+    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-burn-rate'],
     faqs: [
       {
         question: 'What is the difference between a Virtual CFO and an accountant?',
@@ -107,6 +108,7 @@ export const SERVICES = [
     details: 'Our tech-enabled bookkeeping service ensures your financial records are always clean, up-to-date, and compliant. We handle everything from daily transaction recording and bank reconciliation to month-end closing, giving you peace of mind and reliable data.',
     whoNeedsThis: 'Startups, small businesses, and D2C brands that need accurate, compliant, and timely financial records but lack the in-house resources for a dedicated accounting team.',
     pricingApproach: 'We offer tiered monthly packages based on your monthly transaction volume and business complexity. This ensures you only pay for what you need, with predictable pricing that scales as you grow.',
+    relatedGlossaryTerms: ['what-is-bookkeeping', 'what-is-balance-sheet'],
     faqs: [
       {
         question: 'Why can\'t I just use accounting software myself?',
@@ -139,6 +141,7 @@ export const SERVICES = [
     details: 'Launching a new venture requires a solid legal foundation. We guide you through the entire process, from choosing the right entity structure (Private Limited, LLP, OPC) to handling all the necessary registrations like PAN, TAN, and GST, ensuring your business is set up for success from day one.',
     whoNeedsThis: 'Aspiring entrepreneurs, foreign companies entering the Indian market, and freelancers looking to formalize their operations with a proper legal structure.',
     pricingApproach: 'We offer fixed-fee packages for different types of company incorporation. Our pricing is transparent and all-inclusive, covering government fees, stamp duty, and our professional charges.',
+    relatedGlossaryTerms: ['what-is-incorporation', 'what-is-articles-of-association-aoa'],
     faqs: [
         {
             question: 'What is the best legal structure for my startup?',
@@ -171,6 +174,7 @@ export const SERVICES = [
     details: 'Stay compliant without the headache. We manage all your regulatory filings, from monthly GST and TDS returns to annual income tax and ROC filings. Our proactive approach ensures you never miss a deadline and avoid penalties.',
     whoNeedsThis: 'Businesses of all sizes that need to ensure they are fully compliant with India\'s complex and ever-changing tax and corporate laws (GST, TDS, Income Tax, ROC).',
     pricingApproach: 'Our compliance services are bundled into our monthly accounting retainers. We also offer standalone compliance packages with fixed monthly or quarterly fees based on the scope of work.',
+    relatedGlossaryTerms: ['what-is-compliance', 'what-is-roc-registrar-of-companies'],
     faqs: [
         {
             question: 'What are the main compliances for a private limited company?',
@@ -203,6 +207,7 @@ export const SERVICES = [
     details: 'Due diligence is a critical, high-stakes phase of fundraising. We help you prepare for and navigate this process seamlessly. Our team assists in setting up a clean, professional data room, vetting all financial and legal documents, and responding to investor queries, ensuring you build trust and close your round faster.',
     whoNeedsThis: 'Startups that are actively fundraising or have just received a term sheet and are about to enter the financial and legal due diligence process with investors.',
     pricingApproach: 'Due diligence support is typically offered as a one-time project-based fee. The cost depends on the complexity of your business and the state of your existing financial records and documentation.',
+    relatedGlossaryTerms: ['what-is-due-diligence', 'what-is-data-room'],
     faqs: [
         {
             question: 'What is due diligence?',
@@ -235,6 +240,7 @@ export const SERVICES = [
     details: 'A compelling pitch deck and a solid financial model are the two most important assets in your fundraising toolkit. We work with you to craft a powerful narrative that resonates with investors and back it up with a sophisticated, driver-based financial model that proves the viability and scalability of your business.',
     whoNeedsThis: 'Early-stage founders who are preparing to raise their first round of funding (Seed or Series A) and need help creating professional, investor-ready materials.',
     pricingApproach: 'This is a project-based service with a fixed fee. The engagement includes deep-dive sessions to understand your business, followed by the creation of the pitch deck narrative and the financial model.',
+    relatedGlossaryTerms: ['what-is-pitch-deck', 'what-is-financial-model'],
     faqs: [
         {
             question: 'What makes a good pitch deck?',
@@ -267,6 +273,7 @@ export const SERVICES = [
     details: 'Navigate the complexities of corporate law with confidence. Our legal advisory services cover everything from drafting and vetting critical agreements (Shareholders\', ESOP, client contracts) to providing strategic advice on corporate governance, structuring, and M&A transactions.',
     whoNeedsThis: 'Startups and established companies that require expert legal support for contracts, corporate structuring, governance, and transactional matters.',
     pricingApproach: 'We offer both hourly rates for specific tasks and project-based fixed fees for larger engagements like drafting a full set of fundraising documents. Retainer models are also available for ongoing advisory.',
+    relatedGlossaryTerms: ['what-is-corporate-governance', 'what-is-shareholders-agreement'],
     faqs: [
         {
             question: 'What is a Shareholders\' Agreement (SHA)?',
@@ -299,6 +306,7 @@ export const SERVICES = [
     details: 'Raising capital is a strategic process. We provide end-to-end advisory for your fundraising journey. From identifying the right type of capital (Venture Capital, Venture Debt, Revenue-Based Financing) to making strategic introductions and helping you negotiate terms, we act as your trusted partner in securing the fuel for your growth.',
     whoNeedsThis: 'Founders who are ready to raise external capital and are looking for strategic guidance, process management, and access to a network of investors.',
     pricingApproach: 'Fundraising advisory is a high-touch service. It is typically structured as a combination of a monthly retainer and a success fee (a percentage of the capital raised). This model aligns our incentives with yours.',
+    relatedGlossaryTerms: ['what-is-fundraising', 'what-is-term-sheet'],
     faqs: [
         {
             question: 'What is the difference between Venture Capital and Venture Debt?',

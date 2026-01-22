@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { STAGE_PROBLEM_PAGES, StageProblemPage } from '@/lib/startup-stage-data';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 import { SERVICES } from '@/lib/constants';
@@ -85,6 +85,12 @@ export default function StartupGuidePage({ params }: Props) {
                 <h1 className="text-4xl md:text-5xl font-bold">{page.h1}</h1>
             </div>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl">{page.description}</p>
+             <Button asChild variant="link" className="text-primary-foreground/80 hover:text-white transition-colors p-0 mt-6">
+                <Link href="/finance-for-startups-india">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Startup Finance Guide
+                </Link>
+            </Button>
         </div>
       </section>
 

@@ -3,8 +3,9 @@ import { LOCATION_SERVICE_PAGES, LocationService } from '@/lib/location-service-
 import { SERVICES } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
 
 type Props = {
   params: { slug: string };
@@ -57,6 +58,12 @@ export default function LocationServicePage({ params }: Props) {
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl">
             Specialized {page.service.title} for startups and growing businesses in {page.city}. We provide expert financial guidance to help you navigate compliance and scale effectively.
           </p>
+            <Button asChild variant="link" className="text-primary-foreground/80 hover:text-white transition-colors p-0 mt-6">
+                <Link href="/finance-for-startups-india">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Startup Finance Guide
+                </Link>
+            </Button>
         </div>
       </section>
 
@@ -117,6 +124,28 @@ export default function LocationServicePage({ params }: Props) {
                   </Button>
                 </CardContent>
               </Card>
+              {mainService && mainService.relatedGlossaryTerms && mainService.relatedGlossaryTerms.length > 0 && (
+                <Card>
+                    <CardHeader>
+                        <CardTitle>Related Glossary Terms</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="space-y-3">
+                            {mainService.relatedGlossaryTerms.map(slug => {
+                                const term = ALL_GLOSSARY_TERMS.find(t => t.slug === slug);
+                                if (!term) return null;
+                                return (
+                                    <li key={slug}>
+                                        <Link href={`/startup-finance-glossary/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                                            {term.term}
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </CardContent>
+                </Card>
+               )}
             </div>
           </aside>
         </div>

@@ -2,11 +2,12 @@
 import { notFound } from 'next/navigation';
 import { PROGRAMMATIC_PAGES_DATA, ProgrammaticPage } from '@/lib/programmatic-pages-data';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 import { SERVICES } from '@/lib/constants';
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
+import { Button } from '@/components/ui/button';
 
 type Props = {
   params: { slug: string };
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default function SolutionPage({ params }: Props) {
   const { slug } = params;
-  const page = PROGRAMMATIC_PAGES_DATA.find((p) => p.slug === slug);
+  const page = PROGRAMMATIC_PAGES_DATA.find((p) => p.slug === params.slug);
 
   if (!page) {
     notFound();
@@ -54,6 +55,12 @@ export default function SolutionPage({ params }: Props) {
                 <h1 className="text-4xl md:text-5xl font-bold">{page.h1}</h1>
             </div>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl">{page.description}</p>
+             <Button asChild variant="link" className="text-primary-foreground/80 hover:text-white transition-colors p-0 mt-6">
+                <Link href="/finance-for-startups-india">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Startup Finance Guide
+                </Link>
+            </Button>
         </div>
       </section>
 
@@ -138,4 +145,5 @@ export default function SolutionPage({ params }: Props) {
     </>
   );
 }
+
 

@@ -2,8 +2,10 @@ import { SERVICES } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 type Props = {
   params: { slug: string };
@@ -77,18 +79,42 @@ export default function ServiceDetailPage({ params }: Props) {
                 </div>
             </div>
             <aside className="md:col-span-1">
-                 <div className="sticky top-24">
-                    <h3 className="text-2xl font-bold text-primary mb-4">Frequently Asked Questions</h3>
-                    <Accordion type="single" collapsible className="w-full">
-                        {service.faqs.map((faq, index) => (
-                             <AccordionItem value={`item-${index}`} key={index}>
-                                <AccordionTrigger className="font-semibold text-left">{faq.question}</AccordionTrigger>
-                                <AccordionContent className="text-muted-foreground">
-                                    {faq.answer}
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
+                 <div className="sticky top-24 space-y-8">
+                    <div>
+                        <h3 className="text-2xl font-bold text-primary mb-4">Frequently Asked Questions</h3>
+                        <Accordion type="single" collapsible className="w-full">
+                            {service.faqs.map((faq, index) => (
+                                <AccordionItem value={`item-${index}`} key={index}>
+                                    <AccordionTrigger className="font-semibold text-left">{faq.question}</AccordionTrigger>
+                                    <AccordionContent className="text-muted-foreground">
+                                        {faq.answer}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
+                        </Accordion>
+                    </div>
+                    {service.relatedGlossaryTerms && service.relatedGlossaryTerms.length > 0 && (
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Related Glossary Terms</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <ul className="space-y-3">
+                                    {service.relatedGlossaryTerms.map(slug => {
+                                        const term = ALL_GLOSSARY_TERMS.find(t => t.slug === slug);
+                                        if (!term) return null;
+                                        return (
+                                            <li key={slug}>
+                                                <Link href={`/startup-finance-glossary/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                                                    {term.term}
+                                                </Link>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </CardContent>
+                        </Card>
+                    )}
                  </div>
             </aside>
         </div>
