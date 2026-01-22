@@ -895,6 +895,9 @@ export const BLOG_POSTS = DETAILED_BLOG_POSTS.map(post => ({
   imageHint: PlaceHolderImages.find(img => img.id === post.imageId)?.imageHint || ''
 }));
 
+const allCategories = BLOG_POSTS.map(post => post.category);
+export const BLOG_CATEGORIES = [...new Set(allCategories)];
+
 const caseStudy1Img = PlaceHolderImages.find(img => img.id === 'case-study-1');
 const caseStudy2Img = PlaceHolderImages.find(img => img.id === 'case-study-2');
 const caseStudy3Img = PlaceHolderImages.find(img => img.id === 'case-study-3');

@@ -1,12 +1,41 @@
-import { BlogSection } from '@/components/resources/BlogSection';
+
 import { CaseStudiesSection } from '@/components/resources/CaseStudiesSection';
-import { BookOpen, Library } from 'lucide-react';
+import { BookOpen, Library, HandCoins, Rocket, ShieldCheck, DollarSign } from 'lucide-react';
 import Link from 'next/link';
+import { BlogSection } from '@/components/resources/BlogSection';
+import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 export const metadata = {
   title: 'Resources | Nexa Consultancy',
   description: 'Explore our insights, case studies, and articles on startup strategy, finance, and growth.',
 };
+
+const topicClusters = [
+    {
+        title: 'Startup Fundraising',
+        description: 'Navigate the complex world of raising capital, from pitch decks to term sheets.',
+        icon: HandCoins,
+        href: '/resources/blog?category=Fundraising'
+    },
+    {
+        title: 'SaaS Strategy',
+        description: 'Master the metrics and strategies to build a high-growth SaaS business.',
+        icon: Rocket,
+        href: '/resources/blog?category=SaaS'
+    },
+    {
+        title: 'Compliance & Due Diligence',
+        description: 'Stay ahead of regulations and prepare for investor scrutiny with our expert guides.',
+        icon: ShieldCheck,
+        href: '/resources/blog?category=Due%20Diligence'
+    },
+    {
+        title: 'Startup Finance',
+        description: 'From cap tables to cash flow, get the financial essentials for your startup.',
+        icon: DollarSign,
+        href: '/resources/blog?category=Startup%20Finance'
+    }
+];
 
 export default function ResourcesPage() {
   return (
@@ -38,6 +67,36 @@ export default function ResourcesPage() {
                 </Link>
             </div>
         </section>
+
+        <section id="topic-clusters">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary">Explore by Topic</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                    Dive deep into subjects that matter most for your startup's success.
+                </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {topicClusters.map((cluster) => {
+                    const Icon = cluster.icon;
+                    return (
+                        <Link href={cluster.href} key={cluster.title} className="group">
+                            <Card className="h-full flex flex-col transition-all duration-300 border group-hover:border-accent group-hover:shadow-xl group-hover:scale-105">
+                                <CardHeader className="flex-row items-center gap-4">
+                                    <div className="p-3 bg-primary/10 rounded-full">
+                                        <Icon className="w-8 h-8 text-primary"/>
+                                    </div>
+                                    <div>
+                                        <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors">{cluster.title}</CardTitle>
+                                        <CardDescription className="pt-1">{cluster.description}</CardDescription>
+                                    </div>
+                                </CardHeader>
+                            </Card>
+                        </Link>
+                    );
+                })}
+            </div>
+        </section>
+
         <BlogSection />
         <CaseStudiesSection />
       </div>
