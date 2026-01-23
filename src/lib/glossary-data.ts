@@ -1337,7 +1337,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Go-to-Market (GTM) Strategy',
-        definition: 'An action plan that specifies how a company will reach target customers and achieve competitive advantage.',
+        definition: '<p>A Go-to-Market (GTM) strategy is an action plan that specifies how a company will reach its target customers and achieve a competitive advantage. It encompasses pricing, sales channels, marketing, and branding.</p><p><b>Base Term for Startups:</b> A clear GTM strategy is a critical part of any pitch deck. It shows investors that the founder has a credible plan for acquiring customers and isn\'t just focused on building a product. The strategy should be tailored to the target customer (e.g., product-led for SMBs, sales-led for enterprise).</p><p><b>Base Term for SaaS:</b> Common GTM strategies for SaaS include Product-Led Growth (PLG), Sales-Led Growth (SLG), and channel sales (selling through partners). The choice of strategy heavily influences the company\'s cost structure and key metrics like CAC.</p><p><b>Base Term Example:</b> A SaaS startup\'s GTM strategy is to target mid-market companies through a combination of content marketing to generate inbound leads and an inside sales team to close deals.</p>',
         cluster: 'Startup Finance Fundamentals'
     },
     {
@@ -3222,7 +3222,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Vesting',
-        definition: 'The process by which an employee or founder earns their equity over time. A standard vesting schedule is 4 years with a 1-year cliff.',
+        definition: 'The process by which an employee or founder earns their equity over time, typically 4 years with a 1-year cliff.',
         cluster: 'ESOP & Employee Structuring'
     },
     {
@@ -3553,7 +3553,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Penalty for data breaches under DPDP Act',
-        definition: '<p>Under India\'s DPDP Act, 2023, penalties for data breaches are significant and can go up to ₹250 crore. The penalty depends on the nature, gravity, and duration of the breach, the type of data involved, and the number of affected users.</p><p><b>Startup Example:</b> A fintech startup with millions of users experiences a data breach. The Data Protection Board could levy a penalty running into several crores, potentially crippling the company.</p><p>We advise on the importance of building robust systems as part of our <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech advisory</a>.</p>',
+        definition: '<p>Under India\'s DPDP Act, 2023, penalties for data breaches are significant and can go up to ₹250 crore. The penalty depends on the nature, gravity, and duration of the breach, the type of data involved, and the number of affected users.</p><p><b>Startup Example:</b> A fintech startup with millions of users experiences a data breach. The Data Protection Board could levy a penalty running into several crores, potentially crippling the company.</p><p>We advise on building robust systems as part of our <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech advisory</a>.</p>',
         cluster: 'Founder Problems & Penalties'
     },
     {
@@ -4487,11 +4487,6 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         cluster: 'Startup Finance Fundamentals'
     },
     {
-        term: 'Go-to-Market (GTM) Strategy',
-        definition: '<p>A Go-to-Market (GTM) strategy is an action plan that specifies how a company will reach its target customers and achieve a competitive advantage. It encompasses pricing, sales channels, marketing, and branding.</p><p><b>Base Term for Startups:</b> A clear GTM strategy is a critical part of any pitch deck. It shows investors that the founder has a credible plan for acquiring customers and isn\'t just focused on building a product. The strategy should be tailored to the target customer (e.g., product-led for SMBs, sales-led for enterprise).</p><p><b>Base Term for SaaS:</b> Common GTM strategies for SaaS include Product-Led Growth (PLG), Sales-Led Growth (SLG), and channel sales (selling through partners). The choice of strategy heavily influences the company\'s cost structure and key metrics like CAC.</p><p><b>Base Term Example:</b> A SaaS startup\'s GTM strategy is to target mid-market companies through a combination of content marketing to generate inbound leads and an inside sales team to close deals.</p>',
-        cluster: 'Startup Finance Fundamentals'
-    },
-    {
         term: 'Network Effects',
         definition: '<p>Network Effects occur when a product or service becomes more valuable as more people use it. This creates a powerful competitive advantage and a virtuous cycle of growth.</p><p><b>Base Term for Startups:</b> Startups with built-in network effects are highly attractive to investors because they have the potential for explosive, defensible growth. The challenge is reaching a critical mass of users to kickstart the effect.</p><p><b>Base Term for SaaS/Platforms:</b> Social networks (like Facebook), marketplaces (like Airbnb), and collaboration tools (like Slack) are classic examples. For a marketplace, more sellers attract more buyers, which in turn attracts more sellers.</p><p><b>Base Term Example:</b> The first person with a telephone had no one to call, making it useless. As more people got telephones, the value of the network increased for every single user, demonstrating a powerful network effect.</p>',
         cluster: 'Startup Finance Fundamentals'
@@ -4669,6 +4664,7 @@ export const GLOSSARY_DATA_BY_CLUSTER = ALL_GLOSSARY_TERMS.reduce((acc, item) =>
     acc[cluster].push(item);
     return acc;
 }, {} as Record<string, GlossaryTerm[]>);
+
 
 
 
