@@ -1,4 +1,5 @@
-import { GLOSSARY_DATA_BY_LETTER } from '@/lib/glossary-data';
+
+import { GLOSSARY_DATA_BY_CLUSTER, GLOSSARY_CLUSTERS } from '@/lib/glossary-data';
 import { Library } from 'lucide-react';
 import Link from 'next/link';
 
@@ -8,7 +9,6 @@ export const metadata = {
 };
 
 export default function StartupFinanceGlossaryPage() {
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   
   return (
     <>
@@ -19,7 +19,7 @@ export default function StartupFinanceGlossaryPage() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold">Startup & Finance Glossary</h1>
             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
-              Your A-Z guide to understanding the language of business, finance, and compliance.
+              Your guide to the language of Indian startups. Organized by topic to help you build your financial literacy.
             </p>
         </div>
       </section>
@@ -27,31 +27,25 @@ export default function StartupFinanceGlossaryPage() {
       <section className="container py-16 md:py-24">
         <div className="max-w-5xl mx-auto">
           <div className="flex justify-center flex-wrap gap-2 mb-12">
-            {alphabet.map(letter => (
-              GLOSSARY_DATA_BY_LETTER[letter] ? (
+            {GLOSSARY_CLUSTERS.map(cluster => (
                 <a
-                  key={letter}
-                  href={`#${letter}`}
-                  className="w-10 h-10 flex items-center justify-center rounded-md bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground font-bold transition-colors"
+                  key={cluster}
+                  href={`#${cluster.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="py-2 px-4 rounded-full bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground font-semibold transition-colors text-sm"
                 >
-                  {letter}
+                  {cluster}
                 </a>
-              ) : (
-                <span key={letter} className="w-10 h-10 flex items-center justify-center rounded-md bg-muted/50 text-muted-foreground/50 cursor-not-allowed">
-                  {letter}
-                </span>
-              )
             ))}
           </div>
 
           <div className="space-y-12">
-            {Object.keys(GLOSSARY_DATA_BY_LETTER).map(letter => (
-              <div key={letter} id={letter} className="scroll-mt-24">
+            {GLOSSARY_CLUSTERS.map(cluster => (
+              <div key={cluster} id={cluster.toLowerCase().replace(/\s+/g, '-')} className="scroll-mt-24">
                 <h2 className="text-3xl font-bold text-primary border-b-2 border-accent pb-2 mb-6">
-                  {letter}
+                  {cluster}
                 </h2>
                 <ul className="columns-1 md:columns-2 lg:columns-3 gap-x-8">
-                  {GLOSSARY_DATA_BY_LETTER[letter].map(item => (
+                  {GLOSSARY_DATA_BY_CLUSTER[cluster]?.map(item => (
                     <li key={item.term} className="mb-3">
                       <Link href={`/startup-finance-glossary/${item.slug}`} className="text-muted-foreground hover:text-accent hover:underline">
                         {item.term}
