@@ -2895,21 +2895,6 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         cluster: 'Startup Finance Fundamentals'
     },
     {
-        term: 'Series A, B, C Funding',
-        definition: 'Terms referring to stages in the capital-raising process for a startup as it matures. Series A is the first venture capital round, followed by B and C as the company scales.',
-        cluster: 'Fundraising & Valuation'
-    },
-    {
-        term: 'Serviceable Addressable Market (SAM)',
-        definition: 'The segment of the TAM targeted by your products and services which is within your geographical reach.',
-        cluster: 'Virtual CFO & Financial Management'
-    },
-    {
-        term: 'Serviceable Obtainable Market (SOM)',
-        definition: 'The portion of SAM that you can capture.',
-        cluster: 'Virtual CFO & Financial Management'
-    },
-    {
         term: 'SGST (State Goods and Services Tax)',
         definition: 'The component of GST levied by the State Government on intra-state supplies of goods and services.',
         cluster: 'GST & Indirect Tax'
@@ -4245,6 +4230,106 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         term: 'Representations and Warranties',
         definition: '<p>These are statements of fact and promises made by the founders to the investors in a funding agreement. They cover aspects like the company being duly incorporated, owning its IP, and having paid all its taxes. A breach of these can lead to serious legal and financial consequences.</p><p><b>Startup Example:</b> In an SHA, founders warrant that the company has no pending lawsuits. If a major lawsuit was undisclosed, this is a breach of warranty, and the investors can sue the founders for damages.</p><p>Our <a href="/services/investor-due-diligence">due diligence readiness</a> service ensures all representations are accurate.</p>',
         cluster: 'Fundraising & Valuation'
+    },
+        {
+        term: 'Net Burn vs Gross Burn',
+        definition: '<p>Gross Burn is the total amount of cash a startup spends in a month. Net Burn is the true measure of cash depletion, calculated as cash spent minus cash received.</p><p><b>For Startups:</b> This is the most critical operational metric. It directly impacts your runway and survival. While investors look at Gross Burn to understand operational costs, they manage the business based on Net Burn.</p><p><b>For SaaS:</b> In a SaaS context, Net Burn is especially crucial as upfront annual contract payments can temporarily mask a high Gross Burn, giving a false sense of security. Tracking both provides a clearer picture of cash flow health.</p><p><b>Calculation:</b> Net Burn = (Cash at Start of Month - Cash at End of Month)</p><p><b>Example:</b> A startup spends ₹20 Lakhs (Gross Burn) and earns ₹5 Lakhs in a month. Its Net Burn is ₹15 Lakhs.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Runway Calculation',
+        definition: '<p>Runway is the number of months a startup can survive before running out of money. It\'s the ultimate measure of a pre-profitability startup\'s viability and dictates the timeline for its next fundraising round.</p><p><b>For Startups:</b> For an early-stage startup, a runway of 18-24 months post-funding is considered healthy. This provides enough time to hit significant milestones before needing to raise more capital. A runway under 6 months is a critical danger zone.</p><p><b>For SaaS:</b> SaaS startups must factor in the timing of large annual renewals into their runway calculation. A single large churn event can dramatically shorten the runway unexpectedly.</p><p><b>Calculation:</b> Runway (in months) = Total Cash Balance / Monthly Net Burn</p><p><b>Example:</b> A startup with ₹2 Crore in the bank and a monthly Net Burn of ₹10 Lakhs has a runway of 20 months.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'LTV:CAC Ratio',
+        definition: '<p>The LTV:CAC ratio is a critical SaaS metric that measures the relationship between the Lifetime Value (LTV) of a customer and the Cost of Acquiring (CAC) that customer. It is the ultimate indicator of the long-term profitability and scalability of a SaaS business.</p><p><b>For Startups:</b> Proving a healthy LTV:CAC ratio is essential for raising venture capital. It shows investors that the business has a viable model where each new customer generates more value than they cost to acquire.</p><p><b>For SaaS:</b> A ratio of 3:1 is considered a healthy benchmark. A ratio below 1:1 is unsustainable. A ratio above 5:1 might indicate underinvestment in marketing.</p><p><b>Calculation:</b> LTV:CAC Ratio = Customer Lifetime Value / Customer Acquisition Cost</p><p><b>Example:</b> If a customer\'s LTV is ₹30,000 and the CAC is ₹10,000, the LTV:CAC ratio is 3:1.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'ARR vs MRR',
+        definition: '<p>Annual Recurring Revenue (ARR) and Monthly Recurring Revenue (MRR) are the lifeblood metrics of a SaaS business. MRR is the predictable revenue a company expects to receive in a given month, while ARR is the annualized version.</p><p><b>For Startups:</b> Early-stage startups typically focus on MRR as it provides a more granular, month-over-month view of growth and momentum. As the business scales and contract values increase, ARR becomes the more common metric for discussing scale with investors.</p><p><b>For SaaS:</b> These metrics must only include committed recurring revenue. One-time setup fees or professional services should be excluded to maintain the integrity of the metric.</p><p><b>Calculation:</b> ARR = MRR * 12</p><p><b>Example:</b> A SaaS company with an MRR of ₹50 Lakhs has an ARR of ₹6 Crore.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Net Dollar Retention (NDR)',
+        definition: '<p>Net Dollar Retention (NDR) is a SaaS metric that measures the change in recurring revenue from a cohort of customers over a period, taking into account revenue expansion (upgrades, cross-sells) and revenue churn (downgrades, cancellations). It is also known as Net Revenue Retention (NRR).</p><p><b>For Startups:</b> An NDR over 100% is the "holy grail" for SaaS startups. It means the business would grow even if it didn\'t acquire any new customers, a powerful signal of a sticky product with strong value.</p><p><b>For SaaS:</b> Top-tier public SaaS companies often have NDRs of 120% or more, indicating strong upselling and cross-selling motions.</p><p><b>Calculation:</b> NDR = (Starting MRR + Expansion - Churn) / Starting MRR</p><p><b>Example:</b> A cohort starts with ₹1 Lakh MRR, adds ₹20,000 in expansion, and loses ₹10,000 to churn. The ending MRR is ₹1.1 Lakh. The NDR is 110%.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Capital Efficiency',
+        definition: '<p>Capital efficiency measures how effectively a company uses its capital (equity and debt) to generate revenue. It is a key indicator of a startup\'s operational discipline and the sustainability of its growth.</p><p><b>For Startups:</b> In a tight funding market, capital efficiency becomes paramount. Investors look for startups that can achieve significant growth without burning through excessive amounts of cash. A common measure is the "burn multiple" (cash burned / net new ARR).</p><p><b>For SaaS:</b> Capital-efficient SaaS businesses often have a low CAC payback period and a high LTV:CAC ratio, indicating a strong, organic growth engine.</p><p><b>Calculation:</b> A simple measure is Annual Revenue / Total Equity + Debt Raised</p><p><b>Example:</b> A startup generating ₹5 Crore in ARR after raising ₹10 Crore has a capital efficiency ratio of 0.5x.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'SaaS Magic Number',
+        definition: '<p>The SaaS Magic Number is a metric used to measure the efficiency of a company\'s sales and marketing spend. It answers the question: for every rupee spent on S&M, how many rupees of new annual recurring revenue are generated?</p><p><b>For Startups:</b> It helps founders and investors understand if and when to increase sales and marketing spend. A Magic Number above 0.75 generally indicates that the GTM strategy is working and it\'s time to scale investment.</p><p><b>For SaaS:</b> This metric is particularly useful for B2B SaaS companies with a dedicated sales team, as it directly measures the productivity of that investment.</p><p><b>Calculation:</b> Magic Number = (Current Quarter\'s Revenue - Previous Quarter\'s Revenue) * 4 / Previous Quarter\'s S&M Spend</p><p><b>Example:</b> If a company grew revenue by ₹25 Lakhs in a quarter after spending ₹20 Lakhs on S&M, its Magic Number is (25*4)/20 = 5.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Three Financial Statements',
+        definition: '<p>The three core financial statements provide a complete picture of a company\'s financial health. They are the Income Statement, the Balance Sheet, and the Cash Flow Statement.</p><p><b>For Startups:</b> Investors require all three statements for due diligence. The Income Statement shows profitability, the Balance Sheet provides a snapshot of assets and liabilities, and the Cash Flow Statement reveals how cash is moving through the company—often the most critical of the three for a startup.</p><p><b>For SaaS:</b> Accrual-based accounting is essential. The Balance Sheet will show Deferred Revenue as a liability, and the Cash Flow Statement will show the actual cash collected from customers, which can differ significantly from the revenue recognized on the Income Statement.</p><p><b>Example:</b> A SaaS startup may be profitable on its Income Statement but have negative cash flow because it\'s investing heavily in growth.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Driver-Based Financial Modeling',
+        definition: '<p>Driver-based financial modeling is a forecasting technique that builds projections from the ground up based on the key operational drivers of the business, rather than high-level assumptions.</p><p><b>For Startups:</b> This is the only credible way to build a financial model for investors. Instead of just projecting "20% monthly revenue growth," a driver-based model would forecast growth based on drivers like marketing spend, website traffic, conversion rates, and churn rates.</p><p><b>For SaaS:</b> Key drivers in a SaaS model include new customer acquisition, average revenue per account (ARPA), expansion revenue rate, and logo churn rate.</p><p><b>Example:</b> A model where changing the "customer churn rate" assumption from 2% to 3% automatically updates the entire P&L and cash flow forecast is a driver-based model.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Pre-Money vs Post-Money Valuation',
+        definition: '<p>Pre-money valuation is the value of a company before it receives new investment. Post-money valuation is the value after the investment is made. Understanding the difference is crucial for calculating shareholder dilution.</p><p><b>For Startups:</b> A common pitfall is not clarifying if the ESOP pool is part of the pre-money or post-money valuation. Investors typically require the pool to be created from the pre-money valuation, which further dilutes the founders.</p><p><b>Calculation:</b> Post-Money Valuation = Pre-Money Valuation + Investment Amount</p><p><b>Example:</b> A startup raises ₹5 Crore at a ₹20 Crore pre-money valuation. The post-money valuation is ₹25 Crore. The new investor owns 20% of the company (₹5 Cr / ₹25 Cr).</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+     {
+        term: 'Variable Costs vs Fixed Costs',
+        definition: '<p>Fixed costs are expenses that do not change with the level of production or sales (e.g., rent, salaries). Variable costs are expenses that fluctuate directly with production or sales volume (e.g., raw materials, shipping).</p><p><b>For Startups:</b> Understanding this distinction is key to calculating the contribution margin and breakeven point. A high ratio of variable to fixed costs can mean lower risk but also lower operating leverage.</p><p><b>For SaaS:</b> For a pure SaaS business, variable costs are typically low (e.g., server costs, payment gateway fees), leading to very high gross margins. For a hardware startup, variable costs (cost of goods sold) are much higher.</p><p><b>Example:</b> For a D2C brand, the cost of the product is a variable cost, while the rent for its office is a fixed cost.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Contribution Margin',
+        definition: '<p>Contribution margin represents the revenue from a sale that is left over to cover fixed costs. It is calculated by subtracting all variable costs associated with a unit from its selling price.</p><p><b>For Startups:</b> A positive contribution margin is a prerequisite for a viable business model. It means that each sale is helping to pay down fixed costs and eventually contribute to profit. A negative contribution margin means you lose money on every sale.</p><p><b>For SaaS:</b> SaaS businesses typically have a very high contribution margin, as the variable costs per customer are low.</p><p><b>Calculation:</b> Contribution Margin per Unit = Selling Price per Unit - Variable Cost per Unit</p><p><b>Example:</b> A product sells for ₹100 and has variable costs of ₹40. The contribution margin is ₹60.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Breakeven Analysis',
+        definition: '<p>Breakeven analysis determines the point at which total revenue equals total costs (both fixed and variable), resulting in zero profit or loss. It is a crucial tool for understanding the sales volume needed to achieve profitability.</p><p><b>For Startups:</b> For a pre-revenue startup, breakeven analysis helps set initial sales targets. For a growing startup, it informs pricing decisions and cost management strategies. Investors use it to assess the viability and risk of a business plan.</p><p><b>Calculation:</b> Breakeven Point (in Units) = Total Fixed Costs / Contribution Margin per Unit</p><p><b>Example:</b> A company with ₹1,00,000 in fixed costs and a contribution margin of ₹50 per unit needs to sell 2,000 units to break even.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Working Capital Cycle',
+        definition: '<p>The working capital cycle (also known as the cash conversion cycle) is the time it takes for a company to convert its investments in inventory and other resources into cash. It measures the liquidity and operational efficiency of a business.</p><p><b>For Startups:</b> For businesses that hold inventory (like D2C or hardware), managing the working capital cycle is critical. A long cycle can tie up significant cash, even for a profitable business, creating a cash flow crisis.</p><p><b>Calculation:</b> Cycle = Days Inventory Outstanding + Days Sales Outstanding - Days Payable Outstanding</p><p><b>Example:</b> A D2C brand takes 60 days to sell inventory, 3 days to receive payment, and has 30 days to pay its suppliers. Its working capital cycle is 33 days.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Cohort Analysis',
+        definition: '<p>Cohort analysis is a behavioral analytics tool that breaks down data into groups of people with common characteristics over time. In SaaS, this typically means grouping customers by their sign-up month to track their behavior.</p><p><b>For Startups:</b> It helps answer critical questions like "Are customers from our new marketing channel churning faster than older cohorts?" or "Is our product getting stickier over time?".</p><p><b>For SaaS:</b> Cohort analysis is essential for truly understanding churn and retention. It helps distinguish between a problem with the product (all cohorts churn at a high rate) and a problem with a specific acquisition channel (a recent cohort churns much faster).</p><p><b>Example:</b> A chart showing the retention rate of the "January 2023" cohort of users over the subsequent 12 months is a cohort analysis.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'SaaS Quick Ratio',
+        definition: '<p>The SaaS Quick Ratio is a measure of a company\'s growth efficiency. It compares the revenue gained from new and expanding customers to the revenue lost from churned and downgrading customers.</p><p><b>For Startups:</b> It provides a quick snapshot of a SaaS company\'s health. A high ratio indicates sustainable, efficient growth, which is highly attractive to investors.</p><p><b>For SaaS:</b> A common benchmark is a Quick Ratio of 4 or higher, which means the company is adding at least ₹4 in new revenue for every ₹1 it loses.</p><p><b>Calculation:</b> Quick Ratio = (New MRR + Expansion MRR) / (Churned MRR + Contraction MRR)</p><p><b>Example:</b> A company adds ₹1 Lakh in new MRR and ₹20,000 in expansion, while losing ₹30,000 to churn. Its Quick Ratio is (100k + 20k) / 30k = 4.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Rule of 40',
+        definition: '<p>The Rule of 40 is a popular benchmark for SaaS companies that balances growth and profitability. It states that a healthy SaaS company\'s growth rate plus its profit margin should be equal to or greater than 40%.</p><p><b>For Startups:</b> Early-stage startups are expected to be unprofitable, so they must have a very high growth rate to meet the Rule of 40. As the company matures, its growth will slow, and it will need to become more profitable.</p><p><b>For SaaS:</b> This metric forces founders to make strategic trade-offs between investing in growth (which reduces profit) and managing for profitability (which may slow growth).</p><p><b>Calculation:</b> Rule of 40 = Revenue Growth Rate (%) + EBITDA Margin (%)</p><p><b>Example:</b> A company growing at 60% with a -10% EBITDA margin has a Rule of 40 score of 50%, which is considered healthy.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Top-Down vs Bottom-Up Forecasting',
+        definition: '<p>These are two methods for building a financial forecast. A top-down approach starts with the total market size (TAM) and estimates a percentage the company can capture. A bottom-up approach builds the forecast based on internal drivers like sales team capacity, marketing spend, and conversion rates.</p><p><b>For Startups:</b> While a top-down analysis is useful for showing the market potential, investors will only believe a bottom-up forecast. A bottom-up model demonstrates that the founder has a deep, operational understanding of how to achieve their revenue goals.</p><p><b>Example:</b> A top-down forecast might say "We will capture 1% of a ₹1000 Crore market." A bottom-up forecast would say "We will hire 5 salespeople who can each close 10 deals a month at an average contract value of ₹50,000."</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Capital Intensity',
+        definition: '<p>Capital intensity refers to the amount of fixed or real capital (machinery, equipment) required to produce a unit of output. Businesses with high capital intensity, like manufacturing or infrastructure, require significant investment to grow.</p><p><b>For Startups:</b> Understanding capital intensity is crucial for financial planning. A software startup is "capital-light," while a hardware or D2C startup is more "capital-intensive" and will require more funding to scale.</p><p><b>For SaaS:</b> SaaS businesses are prized by investors precisely because of their low capital intensity. They can scale revenue dramatically without a proportional increase in capital expenditure.</p><p><b>Example:</b> A car manufacturer has a very high capital intensity, while a SaaS company has a very low one.</p>',
+        cluster: 'Startup Finance Fundamentals'
+    },
+    {
+        term: 'Seed Funding',
+        definition: '<p>Seed funding is the first official equity funding stage. It typically follows a pre-seed or angel round and is the first money a startup raises from institutional investors (Venture Capital funds).</p><p><b>For Startups:</b> The goal of a seed round is to achieve product-market fit and build out the initial team. The amount raised is typically designed to provide 18-24 months of runway.</p><p><b>Fundraising:</b> To raise a seed round, a startup usually needs to show early traction in the form of a working product, initial customers, and some revenue. The process involves creating a pitch deck, building a financial model, and pitching to a curated list of seed-stage VCs.</p><p><b>Example:</b> A startup raises a ₹15 Crore seed round to hire its first 10 employees and acquire its first 1,000 paying customers.</p>',
+        cluster: 'Startup Finance Fundamentals'
     }
 ];
 
@@ -4264,4 +4349,5 @@ export const GLOSSARY_DATA_BY_CLUSTER = ALL_GLOSSARY_TERMS.reduce((acc, item) =>
     acc[cluster].push(item);
     return acc;
 }, {} as Record<string, GlossaryTerm[]>);
+
 
