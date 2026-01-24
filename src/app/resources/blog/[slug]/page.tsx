@@ -5,10 +5,14 @@ import { DETAILED_BLOG_POSTS } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 
 type Props = {
   params: { slug: string };
 };
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
+
 
 export async function generateStaticParams() {
   return DETAILED_BLOG_POSTS.map((post) => ({
@@ -42,8 +46,16 @@ export default function BlogPostPage({ params }: Props) {
   const image = PlaceHolderImages.find(img => img.id === post.imageId);
   const authorImage = PlaceHolderImages.find(img => img.id.includes('testimonial'));
 
+  const breadcrumbItems = [
+    { name: 'Home', item: `${siteUrl}` },
+    { name: 'Resources', item: `${siteUrl}/resources` },
+    { name: 'Blog', item: `${siteUrl}/resources/blog` },
+    { name: post.title, item: `${siteUrl}/resources/blog/${post.slug}` },
+  ];
+
   return (
     <>
+      <Breadcrumbs items={breadcrumbItems} className="py-8" />
       <section className="-mx-container-padding bg-muted/50 py-12 md:py-20">
         <div className="container max-w-4xl mx-auto">
           <Badge variant="secondary" className="mb-4">{post.category}</Badge>
@@ -72,7 +84,6 @@ export default function BlogPostPage({ params }: Props) {
                     alt={post.title}
                     fill
                     className="object-cover"
-                    priority
                     data-ai-hint={image.imageHint}
                 />
             </div>

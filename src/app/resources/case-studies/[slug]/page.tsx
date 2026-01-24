@@ -4,11 +4,13 @@ import Image from 'next/image';
 import { DETAILED_CASE_STUDIES } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle } from 'lucide-react';
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 
 type Props = {
   params: { slug: string };
 };
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
 
 export async function generateStaticParams() {
   return DETAILED_CASE_STUDIES.map((study) => ({
@@ -41,8 +43,16 @@ export default function CaseStudyPage({ params }: Props) {
 
   const image = PlaceHolderImages.find(img => img.id === study.imageId);
 
+  const breadcrumbItems = [
+    { name: 'Home', item: `${siteUrl}` },
+    { name: 'Resources', item: `${siteUrl}/resources` },
+    { name: 'Case Studies', item: `${siteUrl}/resources/case-studies` },
+    { name: study.title, item: `${siteUrl}/resources/case-studies/${study.slug}` },
+  ];
+
   return (
     <>
+      <Breadcrumbs items={breadcrumbItems} className="py-8" />
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16 md:py-24">
         <div className="container max-w-5xl mx-auto">
           <p className="text-lg font-semibold text-accent-foreground/80 mb-2">{study.client} - {study.industry}</p>
@@ -67,7 +77,6 @@ export default function CaseStudyPage({ params }: Props) {
                         alt={study.title}
                         fill
                         className="object-cover"
-                        priority
                         data-ai-hint={image.imageHint}
                     />
                 </div>

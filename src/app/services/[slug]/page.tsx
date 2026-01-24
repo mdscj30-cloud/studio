@@ -7,10 +7,15 @@ import { ArrowLeft } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { FaqSchema } from '@/components/layout/FaqSchema';
+
 
 type Props = {
   params: { slug: string };
 };
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
 
 export async function generateStaticParams() {
   return SERVICES.map((service) => ({
@@ -43,8 +48,16 @@ export default function ServiceDetailPage({ params }: Props) {
 
   const Icon = service.icon;
 
+  const breadcrumbItems = [
+    { name: 'Home', item: `${siteUrl}` },
+    { name: 'Services', item: `${siteUrl}/services` },
+    { name: service.title, item: `${siteUrl}/services/${service.slug}` },
+  ];
+
   return (
     <>
+      <FaqSchema faqs={service.faqs} />
+      <Breadcrumbs items={breadcrumbItems} className="py-8" />
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
         <div className="container mx-auto py-16 md:py-24">
             <div className="flex items-center gap-4 mb-4">

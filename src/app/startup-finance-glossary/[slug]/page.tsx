@@ -1,3 +1,4 @@
+
 import { ALL_GLOSSARY_TERMS, GlossaryTerm } from '@/lib/glossary-data';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, BookText, Building, Calendar, Link as LinkIcon, Scale } from 'lucide-react';
@@ -5,12 +6,17 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { SERVICES } from '@/lib/constants';
+import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { FaqSchema } from '@/components/layout/FaqSchema';
+
 
 export async function generateStaticParams() {
   return ALL_GLOSSARY_TERMS.map((term) => ({
     slug: term.slug,
   }));
 }
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
     const term = ALL_GLOSSARY_TERMS.find((p) => p.slug === params.slug);
@@ -64,8 +70,23 @@ export default function GlossaryTermPage({ params }: { params: { slug: string } 
         return ALL_GLOSSARY_TERMS.find(t => t.slug === slug);
     }).filter(Boolean) as GlossaryTerm[] | undefined;
 
+    const breadcrumbItems = [
+      { name: 'Home', item: `${siteUrl}` },
+      { name: 'Glossary', item: `${siteUrl}/startup-finance-glossary` },
+      { name: term.term, item: `${siteUrl}/startup-finance-glossary/${term.slug}` },
+    ];
+    
+    const faqItems = [
+      {
+        question: `What is ${term.term}?`,
+        answer: term.definition
+      }
+    ];
+
     return (
         <>
+            <FaqSchema faqs={faqItems} />
+            <Breadcrumbs items={breadcrumbItems} className="py-8" />
             <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
                 <div className="container mx-auto py-16 md:py-24">
                     <h1 className="text-4xl md:text-5xl font-bold">What is {term.term}?</h1>

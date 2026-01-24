@@ -1,10 +1,13 @@
 'use client';
 
 import Hero from '@/components/home/Hero';
-import Portfolio from '@/components/home/Portfolio';
-import Services from '@/components/home/ServicesOverview';
-import Testimonials from '@/components/home/Testimonials';
-import WhyChooseUs from '@/components/home/WhyChooseUs';
+import dynamic from 'next/dynamic';
+
+// Lazy load components that are below the fold
+const Services = dynamic(() => import('@/components/home/ServicesOverview'));
+const Portfolio = dynamic(() => import('@/components/home/Portfolio'));
+const WhyChooseUs = dynamic(() => import('@/components/home/WhyChooseUs'));
+const Testimonials = dynamic(() => import('@/components/home/Testimonials'));
 
 
 export default function Home() {
