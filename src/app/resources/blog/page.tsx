@@ -1,7 +1,9 @@
 
+
 import { BLOG_POSTS, BLOG_CATEGORIES } from '@/lib/constants';
 import { Newspaper } from 'lucide-react';
 import { BlogFilter } from '@/components/resources/BlogFilter';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Blog | Nexa Consultancy',
@@ -19,6 +21,9 @@ export default function BlogIndexPage() {
           <h1 className="text-4xl md:text-5xl font-bold">Nexa Insights</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
             Our expert analysis on startup finance, strategy, and sustainable growth.
+          </p>
+          <p className="mt-2 text-md max-w-3xl mx-auto text-primary-foreground/70">
+            Explore all our content, including case studies and our finance glossary, in the main <Link href="/resources" className="underline hover:text-white">Resources Hub</Link>.
           </p>
         </div>
       </section>
