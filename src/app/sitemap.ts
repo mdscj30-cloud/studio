@@ -2,11 +2,24 @@
 import { MetadataRoute } from 'next'
 import { getDetailedBlogPosts, getDetailedCaseStudies } from '@/lib/content'
 import { SERVICES } from '@/lib/constants'
-import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
+import { ALL_GLOSSARY_TERMS, GlossaryTerm } from '@/lib/glossary-data'
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
 import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data'
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data'
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data'
+
+const getGlossaryPriority = (term: GlossaryTerm): number => {
+  switch (term.tier) {
+    case 1:
+      return 0.7; // High priority for top-tier terms
+    case 2:
+      return 0.6; // Medium priority
+    case 3:
+      return 0.5; // Low priority, but still indexed
+    default:
+      return 0.5;
+  }
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
@@ -29,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const lowPriorityPages = ['/terms', '/privacy'];
        const priority = route === '/' ? 1.0 :
                          hubPages.includes(route) ? 0.9 :
-                         lowPriorityPages.includes(route) ? 0.7 :
+                         lowPriorityPages.includes(route) ? 0.3 : // Lowered priority
                          0.8;
       return {
           url: `${siteUrl}${route}`,
@@ -60,11 +73,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const glossaryPages: MetadataRoute.Sitemap = ALL_GLOSSARY_TERMS.map(term => ({
-    url: `${siteUrl}/startup-finance-glossary/${term.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.6,
+  const glossaryPages: MetadataRoute.Sitemap = ALL_GLOSSARY_TERMS
+    .filter(term => term.tier !== 3) // Exclude tier 3 from sitemap
+    .map(term => ({
+      url: `${siteUrl}/startup-finance-glossary/${term.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: getGlossaryPriority(term),
   }));
 
   const solutionsPages: MetadataRoute.Sitemap = PROGRAMMATIC_PAGES_DATA.map(page => ({
