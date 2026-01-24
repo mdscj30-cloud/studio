@@ -227,6 +227,132 @@
       "description": "A spreadsheet with several cells highlighted with red warning signs, representing investor red flags.",
       "imageUrl": "https://images.unsplash.com/photo-1579054060927-7dcdbbe0fca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbnZlc3RvciUyMHJlZCUyMGZsYWdzfGVufDB8fHx8MTc2OTEwNjA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "investor red flags"
+    },
+    {
+      "id": "blog-28",
+      "description": "A team in a meeting room looking at financial charts on a large screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1758518727734-98f0a55983b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNpYWwlMjByZXZpZXd8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial review"
+    },
+    {
+      "id": "blog-29",
+      "description": "A piggy bank with visible cracks, symbolizing an impending cash crunch.",
+      "imageUrl": "https://images.unsplash.com/photo-1590625848451-07c54b56a680?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXNoJTIwY3J1bmNofGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cash crunch"
+    },
+    {
+      "id": "blog-30",
+      "description": "A single person planting a flag on a small hill, representing a bootstrapped startup.",
+      "imageUrl": "https://images.unsplash.com/photo-1581631059833-17c59be479d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib290c3RyYXBwZWQlMjBzdGFydHVwfGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bootstrapped startup"
+    },
+    {
+      "id": "blog-31",
+      "description": "A crystal ball next to an old-fashioned abacus, symbolizing forecasting vs accounting.",
+      "imageUrl": "https://images.unsplash.com/photo-1753955900083-b62ee8d97805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmb3JlY2FzdGluZyUyMGFjY291bnRpbmd8ZW58MHx8fHwxNzY5MjY5MzIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "forecasting accounting"
+    },
+    {
+      "id": "blog-32",
+      "description": "A toolbox filled with icons representing financial tools like calculators and charts.",
+      "imageUrl": "https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwdG9vbHN8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance tools"
+    },
+    {
+      "id": "blog-33",
+      "description": "A person looking at a complex financial chart with a confused expression.",
+      "imageUrl": "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjb25mdXNpb258ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial confusion"
+    },
+    {
+      "id": "blog-34",
+      "description": "A pie chart broken into different segments representing various business costs.",
+      "imageUrl": "https://images.unsplash.com/photo-1763621587984-68065752ba6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3N0JTIwYW5hbHlzaXN8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cost analysis"
+    },
+    {
+      "id": "blog-35",
+      "description": "A seesaw balancing a block labeled 'FIXED' and several smaller blocks labeled 'VARIABLE'.",
+      "imageUrl": "https://picsum.photos/seed/blog35/800/450",
+      "imageHint": "fixed variable"
+    },
+    {
+      "id": "blog-36",
+      "description": "A scale with 'Revenue' on one side and 'Costs' on the other, perfectly balanced.",
+      "imageUrl": "https://images.unsplash.com/photo-1637933929216-5d06f59ee448?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmVhayUyMGV2ZW58ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "break even"
+    },
+    {
+      "id": "blog-37",
+      "description": "A calendar with certain dates circled for 'Monthly Review' and 'Quarterly Review'.",
+      "imageUrl": "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjByZXZpZXdzfGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial reviews"
+    },
+    {
+      "id": "blog-38",
+      "description": "A small paper boat labeled 'Startup' sinking in a puddle.",
+      "imageUrl": "https://images.unsplash.com/photo-1690383921891-3f0a7567d815?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdGFydHVwJTIwZmFpbHVyZXxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "startup failure"
+    },
+    {
+      "id": "blog-39",
+      "description": "A seesaw balancing a piggy bank (discipline) and a rocket ship (growth).",
+      "imageUrl": "https://images.unsplash.com/photo-1769095206270-09c3d233a2bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBkaXNjaXBsaW5lfGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "growth discipline"
+    },
+    {
+      "id": "blog-40",
+      "description": "Water flowing through a person's hands into a potted plant, symbolizing careful cash management.",
+      "imageUrl": "https://images.unsplash.com/photo-1759375498334-6327d54b8c5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXNoJTIwbWFuYWdlbWVudHxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cash management"
+    },
+    {
+      "id": "blog-41",
+      "description": "A simple line graph showing a startup's valuation increasing over time through funding rounds.",
+      "imageUrl": "https://images.unsplash.com/photo-1660970781103-ba6749cb9ce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RhcnR1cCUyMHZhbHVhdGlvbnxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "startup valuation"
+    },
+    {
+      "id": "blog-42",
+      "description": "A leaky pipe with water dripping out, representing revenue leakage.",
+      "imageUrl": "https://picsum.photos/seed/blog42/800/450",
+      "imageHint": "revenue leakage"
+    },
+    {
+      "id": "blog-43",
+      "description": "A document with the title 'Standard Operating Procedures' being signed.",
+      "imageUrl": "https://images.unsplash.com/photo-1580027609553-d1ee7aa70d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjBTT1B8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial SOP"
+    },
+    {
+      "id": "blog-44",
+      "description": "A budget document with a red pen striking through certain high-cost items.",
+      "imageUrl": "https://images.unsplash.com/photo-1693027305183-acba0aea6d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleHBlbnNlJTIwY29udHJvbHxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "expense control"
+    },
+    {
+      "id": "blog-45",
+      "description": "An open book with the title 'Startup Accounting Myths' on the cover.",
+      "imageUrl": "https://images.unsplash.com/photo-1675242314995-034d11bac319?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwbXl0aHN8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "accounting myths"
+    },
+    {
+      "id": "blog-46",
+      "description": "A person neatly organizing files and documents into a box labeled 'Audit Prep'.",
+      "imageUrl": "https://images.unsplash.com/photo-1768839721719-c5ed97c1fd58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBhdWRpdHxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial audit"
+    },
+    {
+      "id": "blog-47",
+      "description": "A bank vault overflowing with cash, symbolizing the challenge of managing post-fundraise capital.",
+      "imageUrl": "https://images.unsplash.com/photo-1762427354220-ee06e69ee817?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5hZ2luZyUyMGNhc2h8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "managing cash"
+    },
+    {
+      "id": "blog-48",
+      "description": "A road sign that says 'DANGER: Founder Minefield Ahead', representing first-year mistakes.",
+      "imageUrl": "https://picsum.photos/seed/blog48/800/450",
+      "imageHint": "founder mistakes"
     }
   ]
 }
