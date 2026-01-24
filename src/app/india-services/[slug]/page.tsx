@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
+import { CITY_DATA } from '@/lib/city-data';
+import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
 
 type Props = {
   params: { slug: string };
@@ -35,6 +37,15 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
+const serviceToBlogCategory: Record<string, string[]> = {
+  'virtual-cfo': ['saas', 'virtual cfo', 'startup finance'],
+  'gst-consultant': ['gst & indirect tax', 'e-commerce'],
+  'income-tax': ['income tax & direct tax'],
+  'bookkeeping': ['accounting'],
+  'roc-compliance': ['roc, company law & fema', 'due diligence'],
+};
+
+
 export default function LocationServicePage({ params }: Props) {
   const page = LOCATION_SERVICE_PAGES.find((p) => p.slug === params.slug);
 
@@ -44,6 +55,18 @@ export default function LocationServicePage({ params }: Props) {
 
   const mainService = SERVICES.find(s => s.slug === page.service.slug);
   const Icon = page.service.Icon;
+
+  const citySlug = page.city.toLowerCase().replace(/\s+/g, '-');
+  const cityData = CITY_DATA[citySlug];
+
+  const relatedCategories = serviceToBlogCategory[page.service.key] || [];
+  const relatedBlog = DETAILED_BLOG_POSTS.find(post => 
+    relatedCategories.some(cat => post.category.toLowerCase().includes(cat))
+  );
+
+  const relatedCaseStudy = DETAILED_CASE_STUDIES.find(study => 
+    study.services.some(s => s.toLowerCase().includes(page.service.title.toLowerCase().replace(' services', '')))
+  );
 
   return (
     <>
@@ -71,14 +94,22 @@ export default function LocationServicePage({ params }: Props) {
         <div className="grid md:grid-cols-3 gap-12 py-16 md:py-24">
           <div className="md:col-span-2">
             <div className="prose lg:prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-primary mb-4">Why Choose Nexa Consultancy for {page.service.title} in {page.city}?</h2>
-              <p>
-                Operating a startup in {page.city} presents unique opportunities and challenges. At Nexa Consultancy, we combine deep domain expertise with local market understanding to provide services that are not just compliant, but also strategic. We help you focus on your core business while we handle the financial complexities.
-              </p>
+              <h2 className="text-3xl font-bold text-primary mb-4">Why Choose Nexa for {page.service.title} in {page.city}?</h2>
+              
+              {cityData ? (
+                <>
+                  <p>{cityData.ecosystem}</p>
+                  <p>{cityData.industries}</p>
+                </>
+              ) : (
+                <p>
+                  Operating a startup in {page.city} presents unique opportunities and challenges. At Nexa Consultancy, we combine deep domain expertise with local market understanding to provide services that are not just compliant, but also strategic. We help you focus on your core business while we handle the financial complexities.
+                </p>
+              )}
               
               {mainService && (
                 <>
-                  <h3 className="text-2xl font-bold text-primary mt-12 mb-4">Our {mainService.title} Services Include:</h3>
+                  <h3 className="text-2xl font-bold text-primary mt-12 mb-4">Our {mainService.title} Services in {page.city}</h3>
                    <ul className="space-y-3 !pl-0">
                         {mainService.faqs[0] && (
                             <li className="flex items-start !pl-0">
@@ -101,10 +132,17 @@ export default function LocationServicePage({ params }: Props) {
                    </ul>
                    <Button asChild variant="link" className="p-0 mt-4 text-accent">
                         <Link href={`/services/${mainService.slug}`}>
-                            Learn more about our {mainService.title} services <ArrowRight className="ml-2 h-4 w-4" />
+                            Learn more about our core {mainService.title} services <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                     </Button>
                 </>
+              )}
+
+              {cityData?.complianceNote && (
+                  <div className="mt-12 bg-muted/50 border-l-4 border-accent p-6 rounded-r-lg">
+                      <h4 className="font-semibold text-primary not-prose text-xl mb-2">Local Compliance Note for {page.city}</h4>
+                      <p className="!my-0">{cityData.complianceNote}</p>
+                  </div>
               )}
             </div>
           </div>
@@ -124,6 +162,29 @@ export default function LocationServicePage({ params }: Props) {
                   </Button>
                 </CardContent>
               </Card>
+
+              {(relatedBlog || relatedCaseStudy) && (
+                 <Card>
+                    <CardHeader>
+                        <CardTitle>Explore Our Insights</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        {relatedBlog && (
+                            <Link href={`/resources/blog/${relatedBlog.slug}`} className="group block">
+                                <p className="font-semibold text-primary group-hover:text-accent transition-colors">Blog Post</p>
+                                <p className="text-sm text-muted-foreground">{relatedBlog.title}</p>
+                            </Link>
+                        )}
+                        {relatedCaseStudy && (
+                            <Link href={`/resources/case-studies/${relatedCaseStudy.slug}`} className="group block">
+                                <p className="font-semibold text-primary group-hover:text-accent transition-colors">Case Study</p>
+                                <p className="text-sm text-muted-foreground">{relatedCaseStudy.title}</p>
+                            </Link>
+                        )}
+                    </CardContent>
+                </Card>
+              )}
+
               {mainService && mainService.relatedGlossaryTerms && mainService.relatedGlossaryTerms.length > 0 && (
                 <Card>
                     <CardHeader>
