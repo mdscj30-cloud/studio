@@ -1,8 +1,23 @@
 
 
+export function getDetailedBlogPosts() {
+    return DETAILED_BLOG_POSTS;
+}
+
+export function getBlogPostBySlug(slug: string) {
+    return DETAILED_BLOG_POSTS.find(p => p.slug === slug);
+}
+
+export function getDetailedCaseStudies() {
+    return DETAILED_CASE_STUDIES;
+}
+
+export function getCaseStudyBySlug(slug: string) {
+    return DETAILED_CASE_STUDIES.find(p => p.slug === slug);
+}
 
 
-export const DETAILED_BLOG_POSTS = [
+const DETAILED_BLOG_POSTS = [
   {
     slug: 'accounting-setup-checklist-indian-startups',
     title: 'Accounting Setup Checklist for Indian Startups from Day One',
@@ -1357,7 +1372,7 @@ export const DETAILED_BLOG_POSTS = [
   }
 ];
 
-export const DETAILED_CASE_STUDIES = [
+const DETAILED_CASE_STUDIES = [
   {
     slug: 'quantumleap-logistics-growth',
     client: 'QuantumLeap Logistics',

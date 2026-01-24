@@ -1,6 +1,6 @@
 
 import { MetadataRoute } from 'next'
-import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content'
+import { getDetailedBlogPosts, getDetailedCaseStudies } from '@/lib/content'
 import { SERVICES } from '@/lib/constants'
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data'
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
@@ -46,14 +46,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = DETAILED_BLOG_POSTS.map(post => ({
+  const blogPages: MetadataRoute.Sitemap = getDetailedBlogPosts().map(post => ({
     url: `${siteUrl}/resources/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'weekly',
     priority: 0.7,
   }));
 
-  const caseStudyPages: MetadataRoute.Sitemap = DETAILED_CASE_STUDIES.map(study => ({
+  const caseStudyPages: MetadataRoute.Sitemap = getDetailedCaseStudies().map(study => ({
     url: `${siteUrl}/resources/case-studies/${study.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',

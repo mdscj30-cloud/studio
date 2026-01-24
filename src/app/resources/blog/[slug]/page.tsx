@@ -1,7 +1,7 @@
 
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { DETAILED_BLOG_POSTS } from '@/lib/content';
+import { getDetailedBlogPosts, getBlogPostBySlug } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -15,13 +15,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com
 
 
 export async function generateStaticParams() {
-  return DETAILED_BLOG_POSTS.map((post) => ({
+  const posts = getDetailedBlogPosts();
+  return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props) {
-  const post = DETAILED_BLOG_POSTS.find((p) => p.slug === params.slug);
+  const post = getBlogPostBySlug(params.slug);
 
   if (!post) {
     return {
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default function BlogPostPage({ params }: Props) {
   const { slug } = params;
-  const post = DETAILED_BLOG_POSTS.find((p) => p.slug === slug);
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     notFound();

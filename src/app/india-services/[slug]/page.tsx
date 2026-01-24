@@ -1,3 +1,4 @@
+
 import { notFound } from 'next/navigation';
 import { LOCATION_SERVICE_PAGES, LocationService } from '@/lib/location-service-data';
 import { SERVICES } from '@/lib/constants';
@@ -7,7 +8,7 @@ import { CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
 import { CITY_DATA } from '@/lib/city-data';
-import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
+import { getDetailedBlogPosts, getDetailedCaseStudies } from '@/lib/content';
 
 type Props = {
   params: { slug: string };
@@ -60,11 +61,11 @@ export default function LocationServicePage({ params }: Props) {
   const cityData = CITY_DATA[citySlug];
 
   const relatedCategories = serviceToBlogCategory[page.service.key] || [];
-  const relatedBlog = DETAILED_BLOG_POSTS.find(post => 
+  const relatedBlog = getDetailedBlogPosts().find(post => 
     relatedCategories.some(cat => post.category.toLowerCase().includes(cat))
   );
 
-  const relatedCaseStudy = DETAILED_CASE_STUDIES.find(study => 
+  const relatedCaseStudy = getDetailedCaseStudies().find(study => 
     study.services.some(s => s.toLowerCase().includes(page.service.title.toLowerCase().replace(' services', '')))
   );
 

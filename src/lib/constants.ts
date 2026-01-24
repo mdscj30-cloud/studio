@@ -2,6 +2,7 @@
 
 
 
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -45,7 +46,7 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { DETAILED_BLOG_POSTS, DETAILED_CASE_STUDIES } from '@/lib/content';
+import { getDetailedBlogPosts, getDetailedCaseStudies } from '@/lib/content';
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -894,7 +895,7 @@ const blog4Img = PlaceHolderImages.find(img => img.id === 'blog-4');
 const blog5Img = PlaceHolderImages.find(img => img.id === 'blog-5');
 const blog6Img = PlaceHolderImages.find(img => img.id === 'blog-6');
 
-export const BLOG_POSTS = DETAILED_BLOG_POSTS.map(post => ({
+export const BLOG_POSTS = getDetailedBlogPosts().map(post => ({
   slug: post.slug,
   title: post.title,
   description: post.summary,
@@ -916,7 +917,7 @@ const caseStudy3Img = PlaceHolderImages.find(img => img.id === 'case-study-3');
 const caseStudy4Img = PlaceHolderImages.find(img => img.id === 'case-study-4');
 
 
-export const CASE_STUDIES = DETAILED_CASE_STUDIES.map(study => ({
+export const CASE_STUDIES = getDetailedCaseStudies().map(study => ({
   slug: study.slug,
   client: study.client,
   title: study.title,
@@ -928,4 +929,5 @@ export const CASE_STUDIES = DETAILED_CASE_STUDIES.map(study => ({
 }));
 
     
+
 

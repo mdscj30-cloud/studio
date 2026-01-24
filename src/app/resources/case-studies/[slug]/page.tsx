@@ -1,7 +1,7 @@
 
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { DETAILED_CASE_STUDIES } from '@/lib/content';
+import { getDetailedCaseStudies, getCaseStudyBySlug } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Badge } from '@/components/ui/badge';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
@@ -13,13 +13,14 @@ type Props = {
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
 
 export async function generateStaticParams() {
-  return DETAILED_CASE_STUDIES.map((study) => ({
+  const studies = getDetailedCaseStudies();
+  return studies.map((study) => ({
     slug: study.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props) {
-  const study = DETAILED_CASE_STUDIES.find((p) => p.slug === params.slug);
+  const study = getCaseStudyBySlug(params.slug);
 
   if (!study) {
     return {
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default function CaseStudyPage({ params }: Props) {
   const { slug } = params;
-  const study = DETAILED_CASE_STUDIES.find((p) => p.slug === slug);
+  const study = getCaseStudyBySlug(slug);
 
   if (!study) {
     notFound();
