@@ -1,5 +1,6 @@
 
 
+
 export const DETAILED_BLOG_POSTS = [
   {
     slug: 'accounting-setup-checklist-indian-startups',
@@ -130,7 +131,7 @@ export const DETAILED_BLOG_POSTS = [
   <ol>
     <li><strong>Legal Compliance:</strong> Section 128 of the Companies Act, 2013, requires all companies to maintain their books of account on an accrual basis and according to the double-entry system of accounting. Non-compliance can lead to penalties.</li>
     <li><strong>Investor Expectations:</strong> No serious investor will evaluate a startup based on cash-basis financials. They need to see your true MRR, profitability, and liabilities, which only accrual accounting can provide. Financials prepared on a cash basis are an immediate red flag during <a href="/services/investor-due-diligence">due diligence</a>.</li>
-    <li><strong>Accurate Performance Measurement:</strong> Accrual accounting allows you to accurately measure your performance. For a SaaS startup, it's the only way to correctly implement <a href="/glossary/what-is-saas-revenue-recognition">revenue recognition</a>, where an annual contract paid upfront is recognized as revenue monthly over the contract term.</li>
+    <li><strong>Accurate Performance Measurement:</strong> Accrual accounting allows you to accurately measure your performance. For a SaaS startup, it's the only way to correctly implement <a href="/startup-finance-glossary/what-is-revenue-recognition">revenue recognition</a>, where an annual contract paid upfront is recognized as revenue monthly over the contract term.</li>
   </ol>
   
   <h3>The Bottom Line</h3>
@@ -949,4 +950,5 @@ export const DETAILED_CASE_STUDIES = [
   }
 ];
 
+    
     
