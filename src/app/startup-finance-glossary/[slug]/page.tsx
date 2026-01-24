@@ -31,7 +31,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-const getIcon = (relatedServiceSlug: GlossaryTerm['relatedServiceSlug']) => {
+const getIcon = (relatedServiceSlug?: GlossaryTerm['relatedServiceSlug']) => {
+    if (!relatedServiceSlug) return <BookText className="w-5 h-5 text-accent" />;
+    
+    const service = SERVICES.find(s => s.slug === relatedServiceSlug);
+    if (service) {
+        const Icon = service.icon;
+        return <Icon className="w-5 h-5 text-accent" />;
+    }
+    
+    // Fallback icons
     switch(relatedServiceSlug) {
         case 'virtual-cfo': return <BookText className="w-5 h-5 text-accent" />;
         case 'bookkeeping': return <BookText className="w-5 h-5 text-accent" />;
