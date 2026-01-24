@@ -5,12 +5,12 @@ import { useState, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BLOG_POSTS } from '@/lib/constants';
+import type { BlogPostSummary } from '@/lib/constants';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
-type Post = typeof BLOG_POSTS[0];
+type Post = BlogPostSummary;
 
 function BlogFilterComponent({ posts, categories }: { posts: Post[], categories: string[] }) {
   const searchParams = useSearchParams();

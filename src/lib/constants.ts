@@ -1,6 +1,7 @@
 
 
 
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -904,6 +905,8 @@ export const BLOG_POSTS = DETAILED_BLOG_POSTS.map(post => ({
   imageHint: PlaceHolderImages.find(img => img.id === post.imageId)?.imageHint || ''
 }));
 
+export type BlogPostSummary = (typeof BLOG_POSTS)[0];
+
 const allCategories = BLOG_POSTS.map(post => post.category);
 export const BLOG_CATEGORIES = [...new Set(allCategories)];
 
@@ -925,3 +928,4 @@ export const CASE_STUDIES = DETAILED_CASE_STUDIES.map(study => ({
 }));
 
     
+
