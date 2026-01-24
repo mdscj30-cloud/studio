@@ -353,6 +353,120 @@
       "description": "A road sign that says 'DANGER: Founder Minefield Ahead', representing first-year mistakes.",
       "imageUrl": "https://picsum.photos/seed/blog48/800/450",
       "imageHint": "founder mistakes"
+    },
+    {
+      "id": "blog-49",
+      "description": "An hourglass with money slowly flowing from top to bottom, symbolizing deferred revenue being recognized over time.",
+      "imageUrl": "https://images.unsplash.com/photo-1633857816537-95caafa8f794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZWZlcnJlZCUyMHJldmVudWV8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "deferred revenue"
+    },
+    {
+      "id": "blog-50",
+      "description": "A calendar with future dates marked with a dollar sign, representing prepaid expenses.",
+      "imageUrl": "https://images.unsplash.com/photo-1763872849312-67984fbf5f68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcmVwYWlkJTIwZXhwZW5zZXN8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "prepaid expenses"
+    },
+    {
+      "id": "blog-51",
+      "description": "A set of guardrails along a winding road, symbolizing financial controls.",
+      "imageUrl": "https://images.unsplash.com/photo-1734417795018-a16c7f18076d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBjb250cm9sc3xlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial controls"
+    },
+    {
+      "id": "blog-52",
+      "description": "A car dashboard with multiple gauges for KPIs like MRR, Churn, and LTV.",
+      "imageUrl": "https://images.unsplash.com/photo-1758876020300-76a782ca51c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwS1BJc3xlbnwwfHx8fDE3NjkyODAzMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance KPIs"
+    },
+    {
+      "id": "blog-53",
+      "description": "A document comparing a 'Budget' column with an 'Actuals' column, showing variances.",
+      "imageUrl": "https://picsum.photos/seed/blog53/800/450",
+      "imageHint": "budget actual"
+    },
+    {
+      "id": "blog-54",
+      "description": "A pair of scissors trimming a dollar bill, representing cost optimization.",
+      "imageUrl": "https://images.unsplash.com/photo-1764344815160-0e2afc6939a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb3N0JTIwb3B0aW1pemF0aW9ufGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cost optimization"
+    },
+    {
+      "id": "blog-55",
+      "description": "A circular diagram showing the flow of cash from inventory to sales to receivables and back.",
+      "imageUrl": "https://images.unsplash.com/photo-1650772131759-a9e28f06557f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXNoJTIwY3ljbGV8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cash cycle"
+    },
+    {
+      "id": "blog-56",
+      "description": "A stack of invoices being paid in an organized manner.",
+      "imageUrl": "https://images.unsplash.com/photo-1727329522300-c56e0ebe7437?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2ZW5kb3IlMjBwYXltZW50c3xlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vendor payments"
+    },
+    {
+      "id": "blog-57",
+      "description": "A small plant growing into a large tree with financial charts on its leaves.",
+      "imageUrl": "https://images.unsplash.com/photo-1614787296891-d1b2b1aced36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY2FsaW5nJTIwZmluYW5jZXxlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scaling finance"
+    },
+    {
+      "id": "blog-58",
+      "description": "A person being added to a company org chart, with dollar signs flowing out.",
+      "imageUrl": "https://images.unsplash.com/photo-1762330464720-d77f2614f1b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaXJpbmclMjBpbXBhY3R8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hiring impact"
+    },
+    {
+      "id": "blog-59",
+      "description": "A rulebook with the title 'Startup Expense Policy'.",
+      "imageUrl": "https://images.unsplash.com/photo-1727072206145-bf6f47befe9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleHBlbnNlJTIwcG9saWN5fGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "expense policy"
+    },
+    {
+      "id": "blog-60",
+      "description": "A person meditating in a zen garden made of coins, symbolizing financial discipline.",
+      "imageUrl": "https://images.unsplash.com/photo-1764231467896-73f0ef4438aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBkaXNjaXBsaW5lfGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial discipline"
+    },
+    {
+      "id": "blog-61",
+      "description": "A compass pointing towards a goal labeled 'Financial Plan'.",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial planning"
+    },
+    {
+      "id": "blog-62",
+      "description": "A tightrope walker balancing over a canyon, representing financial risk.",
+      "imageUrl": "https://images.unsplash.com/photo-1760738999539-ea1257b5da78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjByaXNrfGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial risk"
+    },
+    {
+      "id": "blog-63",
+      "description": "A clear piggy bank, showing the exact amount of cash inside, symbolizing cash flow clarity.",
+      "imageUrl": "https://images.unsplash.com/photo-1593672715438-d88a70629abe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXNoJTIwZmxvd3xlbnwwfHx8fDE3NjkxNzU5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cash flow"
+    },
+    {
+      "id": "blog-64",
+      "description": "A calendar with the last day of the month circled, labeled 'Month-End Close'.",
+      "imageUrl": "https://picsum.photos/seed/blog64/800/450",
+      "imageHint": "monthly close"
+    },
+    {
+      "id": "blog-65",
+      "description": "A checklist with items like 'Clean Cap Table' and 'Financial Model Ready' for fundraising.",
+      "imageUrl": "https://images.unsplash.com/photo-1578091436046-ecd3f4fe6992?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdW5kcmFpc2luZyUyMGNoZWNrbGlzdHxlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fundraising checklist"
+    },
+    {
+      "id": "blog-66",
+      "description": "A person choosing between two paths, one labeled 'Guesswork' and the other 'Forecasting'.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwZm9yZWNhc3Rpbmd8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "startup forecasting"
+    },
+    {
+      "id": "blog-67",
+      "description": "A diagram showing a finance stack evolving from a simple spreadsheet to integrated software.",
+      "imageUrl": "https://images.unsplash.com/photo-1744818561373-b21480e1b218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwc3RhY2t8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance stack"
     }
   ]
 }
