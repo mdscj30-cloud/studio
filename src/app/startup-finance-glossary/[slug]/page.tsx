@@ -1,9 +1,10 @@
-import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
+import { ALL_GLOSSARY_TERMS, GlossaryTerm } from '@/lib/glossary-data';
 import { notFound } from 'next/navigation';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, BookText, Building, Calendar, Link as LinkIcon, Scale } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { SERVICES } from '@/lib/constants';
 
 export async function generateStaticParams() {
   return ALL_GLOSSARY_TERMS.map((term) => ({
@@ -18,11 +19,29 @@ export async function generateMetadata({ params }: { params: { slug: string } })
             title: 'Term Not Found',
         };
     }
+    
+    const robots = term.tier === 3 
+        ? { index: false, follow: true } 
+        : { index: true, follow: true };
+
     return {
         title: `What is ${term.term}? | Nexa Consultancy Glossary`,
-        description: `Definition of ${term.term}: ${term.definition.substring(0, 160)}...`,
+        description: `Definition of ${term.term}: ${term.definition.replace(/<[^>]+>/g, '').substring(0, 160)}...`,
+        robots,
     };
 }
+
+const getIcon = (relatedServiceSlug: GlossaryTerm['relatedServiceSlug']) => {
+    switch(relatedServiceSlug) {
+        case 'virtual-cfo': return <BookText className="w-5 h-5 text-accent" />;
+        case 'bookkeeping': return <BookText className="w-5 h-5 text-accent" />;
+        case 'business-setup': return <Building className="w-5 h-5 text-accent" />;
+        case 'regulatory-compliances': return <Scale className="w-5 h-5 text-accent" />;
+        case 'fundraising': return <BookText className="w-5 h-5 text-accent" />;
+        default: return <BookText className="w-5 h-5 text-accent" />;
+    }
+}
+
 
 export default function GlossaryTermPage({ params }: { params: { slug: string } }) {
     const term = ALL_GLOSSARY_TERMS.find((p) => p.slug === params.slug);
@@ -30,6 +49,11 @@ export default function GlossaryTermPage({ params }: { params: { slug: string } 
     if (!term) {
         notFound();
     }
+    
+    const relatedService = SERVICES.find(s => s.slug === term.relatedServiceSlug);
+    const comparisonTerms = term.comparisonSlugs?.map(slug => {
+        return ALL_GLOSSARY_TERMS.find(t => t.slug === slug);
+    }).filter(Boolean) as GlossaryTerm[] | undefined;
 
     return (
         <>
@@ -43,51 +67,63 @@ export default function GlossaryTermPage({ params }: { params: { slug: string } 
             </section>
 
             <div className="container py-16 md:py-24">
-                <div className="max-w-4xl mx-auto">
-                    <div className="prose lg:prose-lg" dangerouslySetInnerHTML={{__html: term.definition}}>
-                    </div>
-                    <Button asChild variant="link" className="p-0 mt-12 text-accent">
-                        <Link href="/startup-finance-glossary">
-                            <ArrowLeft className="mr-2 h-4 w-4" />
-                            Back to Full Glossary
-                        </Link>
-                    </Button>
-                </div>
-                 <div className="max-w-4xl mx-auto mt-16 border-t pt-8">
-                    <h3 className="text-2xl font-bold text-primary mb-4">Explore Related Content</h3>
-                    <p className="text-muted-foreground mb-6">Learn how Nexa Consultancy can help you navigate complex financial challenges.</p>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <Link href="/services/regulatory-compliances" className="group">
-                            <Card className="h-full transition-all duration-300 border group-hover:border-accent group-hover:shadow-lg">
-                                <CardHeader>
-                                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">Core Service: Compliance</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-sm text-muted-foreground">Ensure your startup stays compliant with GST, TDS, and ROC filings.</p>
-                                </CardContent>
-                            </Card>
-                        </Link>
-                        <Link href="/solutions/tds-on-foreign-payments-startups" className="group">
-                            <Card className="h-full transition-all duration-300 border group-hover:border-accent group-hover:shadow-lg">
-                                <CardHeader>
-                                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">Solution: Foreign TDS</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-sm text-muted-foreground">Manage withholding tax on global SaaS tools and consultants.</p>
-                                </CardContent>
-                            </Card>
-                        </Link>
-                         <Link href="/startup-guides/compliance-for-pre-seed-startups" className="group">
-                            <Card className="h-full transition-all duration-300 border group-hover:border-accent group-hover:shadow-lg">
-                                <CardHeader>
-                                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">Guide: Pre-Seed Compliance</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-sm text-muted-foreground">Learn the essential first compliance steps for your new venture.</p>
-                                </CardContent>
-                            </Card>
-                        </Link>
-                    </div>
+                <div className="grid md:grid-cols-3 gap-12">
+                   <div className="md:col-span-2">
+                        <div className="prose lg:prose-lg max-w-none" dangerouslySetInnerHTML={{__html: term.definition}}>
+                        </div>
+                        <Button asChild variant="link" className="p-0 mt-12 text-accent">
+                            <Link href="/startup-finance-glossary">
+                                <ArrowLeft className="mr-2 h-4 w-4" />
+                                Back to Full Glossary
+                            </Link>
+                        </Button>
+                   </div>
+                   <aside className="md:col-span-1">
+                     <div className="sticky top-24 space-y-8">
+                        <Card className="bg-muted/30">
+                            <CardHeader>
+                                <CardTitle>Context & Relevance</CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-4">
+                                {term.stageRelevance && (
+                                    <div className="flex items-start gap-3">
+                                        <Calendar className="w-5 h-5 text-accent mt-1 shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold">Stage Relevance</h4>
+                                            <p className="text-sm text-muted-foreground">{term.stageRelevance} startups.</p>
+                                        </div>
+                                    </div>
+                                )}
+                                {relatedService && (
+                                    <div className="flex items-start gap-3">
+                                        {getIcon(term.relatedServiceSlug)}
+                                        <div>
+                                            <h4 className="font-semibold">Related Service</h4>
+                                            <Link href={`/services/${relatedService.slug}`} className="text-sm text-accent hover:underline">{relatedService.title}</Link>
+                                        </div>
+                                    </div>
+                                )}
+                                {comparisonTerms && comparisonTerms.length > 0 && (
+                                    <div className="flex items-start gap-3">
+                                        <LinkIcon className="w-5 h-5 text-accent mt-1 shrink-0" />
+                                        <div>
+                                            <h4 className="font-semibold">Compare With</h4>
+                                            <ul className="space-y-1 mt-1">
+                                                {comparisonTerms.map(ct => (
+                                                    <li key={ct.slug}>
+                                                        <Link href={`/startup-finance-glossary/${ct.slug}`} className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                                                            {ct.term}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                )}
+                            </CardContent>
+                        </Card>
+                     </div>
+                   </aside>
                 </div>
             </div>
         </>

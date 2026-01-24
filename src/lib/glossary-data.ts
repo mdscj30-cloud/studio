@@ -1,9 +1,12 @@
-
 export type GlossaryTerm = {
   term: string;
   definition: string;
   slug: string;
   cluster: string;
+  stageRelevance?: 'Pre-Seed' | 'Seed' | 'Growth' | 'All Stages';
+  relatedServiceSlug?: 'virtual-cfo' | 'bookkeeping' | 'business-setup' | 'regulatory-compliances' | 'investor-due-diligence' | 'pitch-deck-financial-modelling' | 'corporate-law' | 'fundraising';
+  comparisonSlugs?: string[];
+  tier?: 1 | 2 | 3;
 };
 
 const slugify = (term: string) => `what-is-${term.toLowerCase().replace(/\(.*\)/g, '').trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')}`;
@@ -25,63 +28,86 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     // A
     {
         term: 'A/B Testing',
-        definition: 'A method of comparing two versions of a webpage or app against each other to determine which one performs better. It is a key practice in D2C and SaaS for optimizing conversion rates.',
-        cluster: 'Virtual CFO & Financial Management'
+        definition: '<p>A/B Testing is a method of comparing two versions of a webpage, app feature, or marketing campaign against each other to determine which one performs better. It is a fundamental practice in product management and marketing for making data-driven decisions to optimize user experience and conversion rates.</p><p><b>For Startups:</b> For startups, A/B testing is a cost-effective way to improve key metrics without relying on guesswork. It can be used to optimize pricing pages, call-to-action buttons, email subject lines, and user onboarding flows, leading to higher engagement, better conversion rates, and increased revenue.</p><p><b>For SaaS:</b> In SaaS, A/B testing is crucial for optimizing the user journey, from initial sign-up to feature adoption and eventual upgrade. For example, a SaaS company might test two different onboarding tutorials to see which one leads to a higher activation rate.</p><p><b>Example:</b> A D2C startup tests two versions of its product page: Version A has a green "Buy Now" button, and Version B has an orange one. After running the test on 10,000 visitors, they find that the orange button results in a 15% higher conversion rate.</p>',
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        tier: 2
     },
     {
         term: 'Accelerated Depreciation',
         definition: 'A method of depreciation that allows for larger deductions in the early years of an asset\'s life and smaller deductions in later years.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-straight-line-depreciation'],
+        tier: 3
     },
     {
         term: 'Accelerated Vesting',
         definition: '<p>Accelerated Vesting is a provision in a stock option agreement or employment contract that allows an employee or founder to have their unvested shares vest immediately upon the occurrence of a specific event, most commonly an acquisition or change of control of the company.</p><p><b>Base Term for Startups:</b> This is a key provision to negotiate. It protects founders and key employees from being terminated by an acquirer before their shares have fully vested, which would cause them to lose out on a significant portion of their potential payout from the sale.</p><p><b>Types:</b> There are two main types: "Single Trigger" acceleration (vesting happens immediately upon acquisition) and "Double Trigger" acceleration (vesting happens only if the employee is terminated *without cause* within a certain period *after* an acquisition). Double trigger is more common and founder-friendly.</p><p><b>Base Term Example:</b> A founder has double trigger acceleration. Their company is acquired, and they are terminated by the new parent company 6 months later. The remainder of their unvested shares vests immediately upon their termination.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-vesting-cliff', 'what-is-founder-vesting-schedule'],
+        tier: 2
     },
     {
         term: 'Accountant',
         definition: 'A professional who performs accounting functions such as analysis of financial records, audits, or financial statement analysis.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Accounting',
         definition: 'The systematic recording, reporting, and analysis of financial transactions of a business.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Accounting Cycle',
         definition: 'The collective process of identifying, analyzing, and recording the accounting events of a company. It is a standard 8-step process that begins when a transaction occurs and ends with its inclusion in the financial statements.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Accounting Equation',
         definition: 'The fundamental formula of accounting: Assets = Liabilities + Equity. It forms the foundation of the balance sheet.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Accounting Period',
         definition: 'The time period over which financial statements are prepared, such as a month, quarter, or year.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Accounting Standard (AS)',
         definition: 'A set of principles and guidelines for financial accounting and reporting, issued by the Institute of Chartered Accountants of India (ICAI). Applicable to certain classes of companies.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Accounts Payable (AP)',
         definition: 'The amount of money a company owes to its suppliers for goods and services purchased on credit.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Accounts Payable Turnover Ratio',
         definition: '<p>The Accounts Payable Turnover Ratio is a short-term liquidity metric that measures how quickly a company pays off its suppliers. It indicates the number of times a company pays its accounts payable during a period.</p><p><b>For Startups:</b> A low turnover ratio can indicate that a startup is effectively using the credit extended by its suppliers to manage its working capital. However, a very low ratio might signal that the company is struggling to pay its bills on time, which could be a sign of financial distress.</p><p><b>For Businesses:</b> This ratio is often analyzed in conjunction with Days Payable Outstanding (DPO). The goal is to manage payments efficiently without damaging crucial supplier relationships.</p><p><b>Calculation:</b> AP Turnover = Total Supplier Purchases / Average Accounts Payable</p><p><b>Example:</b> A company made ₹50 Lakhs in purchases during a year and had an average accounts payable balance of ₹5 Lakhs. Its AP Turnover Ratio is 10, meaning it paid its entire accounts payable balance 10 times during the year.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-dpo', 'what-is-cash-conversion-cycle-ccc'],
+        tier: 2
     },
     {
         term: 'Accounts Receivable (AR)',
         definition: 'The amount of money owed to a company by its customers for goods and services sold on credit.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Accounts Receivable Turnover Ratio',
@@ -91,32 +117,43 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Accredited Investor',
         definition: '<p>An "accredited investor" is a classification used by securities regulators (like the SEC in the US or SEBI in India) to identify individuals or entities who are financially sophisticated and have a reduced need for the protection provided by regulatory disclosure filings. They are legally eligible to invest in high-risk, unregistered securities like startup equity.</p><p><b>Base Term for Startups:</b> Most venture capital and angel investments are limited to accredited investors only. This is because startup investments are highly risky and illiquid, and regulators want to ensure that only those who can afford to lose their entire investment are participating.</p><p><b>Criteria:</b> The criteria vary by country but are typically based on high thresholds for net worth (e.g., over $1 million, excluding primary residence) or annual income (e.g., over $200,000 annually).</p><p><b>Base Term Example:</b> A startup raising a seed round can only accept investment from individuals who meet the legal definition of an accredited investor, as they are selling unregistered securities.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        tier: 2
     },
     {
         term: 'Accrual Basis Accounting',
         definition: 'An accounting method where revenue or expenses are recorded when a transaction occurs rather than when payment is received or made. This is the standard for most businesses.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-cash-basis-accounting', 'what-is-revenue-recognition'],
+        tier: 1
     },
     {
         term: 'Accrued Expense',
         definition: 'An expense that has been incurred but not yet paid. It is recorded as a liability on the balance sheet.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Accrued Interest',
         definition: 'Interest that has been earned on a loan or investment but has not yet been paid or received.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Accrued Revenue',
         definition: 'Revenue that has been earned by providing a good or service, but for which no cash has been received.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Accumulated Depreciation',
         definition: 'The cumulative depreciation of an asset up to a single point in its life. It is a contra-asset account, meaning its natural balance is a credit.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Acid-Test Ratio (Quick Ratio)',
@@ -131,7 +168,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Activation Rate',
         definition: '<p>Activation Rate is a key performance indicator that measures the percentage of new users who complete a specific, critical action that signifies they have started to receive the core value of a product. This action is often called the "Aha! moment".</p><p><b>For Startups:</b> Activation is a more meaningful metric than just tracking sign-ups. It helps distinguish between users who are just "kicking the tires" and those who are genuinely engaged. A low activation rate can signal problems with the product\'s onboarding or its core value proposition.</p><p><b>For SaaS:</b> For a SaaS product, the activation event could be "creating the first project," "inviting a teammate," or "integrating with another app." Improving the activation rate is often the first step in improving long-term retention.</p><p><b>Calculation:</b> Activation Rate = (Number of Users Who Completed a Key Action / Total Number of New Users) * 100</p><p><b>Example:</b> If 1,000 users sign up for a project management tool and 300 of them create their first project within 24 hours, the activation rate is 30%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-dau-mau-ratio', 'what-is-churn-rate'],
+        tier: 1
     },
     {
         term: 'Active Income',
@@ -166,7 +207,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Amortization',
         definition: 'The practice of spreading an intangible asset\'s cost over the asset\'s useful life. Similar to depreciation for tangible assets.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Angel Investor',
@@ -186,7 +228,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Annual Contract Value (ACV)',
         definition: '<p>Average Contract Value (ACV) is a metric that represents the average revenue generated from a single customer contract over a one-year period. It is a key metric for B2B and SaaS businesses to understand the typical size of their deals.</p><p><b>For Startups:</b> Tracking ACV helps a startup understand its target market and sales efficiency. A growing ACV can indicate that the company is successfully moving upmarket and selling to larger customers, or that it is effectively upselling and cross-selling to its existing customer base.</p><p><b>For SaaS:</b> ACV is often looked at in conjunction with Customer Acquisition Cost (CAC). A high ACV can justify a longer and more expensive sales process (e.g., enterprise sales), while a low ACV necessitates a low-touch, more automated sales model.</p><p><b>Calculation:</b> ACV = Total Value of Contracts / Number of Contracts</p><p><b>Example:</b> A SaaS company signs 10 new contracts in a year with a total value of ₹50 Lakhs. Its ACV is ₹5 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-annual-recurring-revenue-arr', 'what-is-customer-lifetime-value-ltv-or-clv'],
+        tier: 2
     },
     {
         term: 'Annual General Meeting (AGM)',
@@ -196,12 +242,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Annual Recurring Revenue (ARR)',
         definition: '<p>Annual Recurring Revenue (ARR) is a key metric for SaaS and other subscription-based businesses. It represents the total value of all recurring revenue from subscriptions over a year. ARR provides a high-level view of a company\'s predictable revenue stream, making it a crucial indicator of financial health and growth potential.</p><p><b>For Startups:</b> For startups, tracking ARR is essential for understanding growth trends, forecasting future revenue, and communicating the company’s scale to investors. A consistently growing ARR signals a strong product-market fit and a scalable business model, which is highly attractive to venture capitalists.</p><p><b>For SaaS:</b> In the SaaS industry, ARR is a standard metric for valuation. It helps in assessing the company\'s performance against competitors and industry benchmarks. Companies often focus on increasing ARR by acquiring new customers, upselling to existing ones, and minimizing churn.</p><p><b>Calculation:</b> ARR is typically calculated by multiplying the Monthly Recurring Revenue (MRR) by 12. For example, if a company has an MRR of ₹10 Lakhs, its ARR would be ₹1.2 Crore.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-monthly-recurring-revenue-mrr', 'what-is-bookings-vs-revenue'],
+        tier: 1
     },
     {
         term: 'Annuity',
         definition: 'A series of equal payments made at regular intervals over a specified period of time.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Anti-Dilution Provision',
@@ -211,7 +262,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'API (Application Programming Interface)',
         definition: 'A set of rules and protocols that allows different software applications to communicate with each other. Crucial for FinTech and SaaS integrations.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Appointment of First Auditor',
@@ -221,17 +273,23 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Appreciation',
         definition: 'An increase in the value of an asset over time.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Arbitrage',
         definition: 'The simultaneous purchase and sale of an asset to profit from a difference in the price. It is a trade that profits by exploiting the price differences of identical or similar financial instruments on different markets or in different forms.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'ARR vs MRR',
         definition: '<p>Annual Recurring Revenue (ARR) and Monthly Recurring Revenue (MRR) are the lifeblood metrics of a SaaS business. MRR is the predictable revenue a company expects to receive in a given month, while ARR is the annualized version.</p><p><b>For Startups:</b> Early-stage startups typically focus on MRR as it provides a more granular, month-over-month view of growth and momentum. As the business scales and contract values increase, ARR becomes the more common metric for discussing scale with investors.</p><p><b>For SaaS:</b> These metrics must only include committed recurring revenue. One-time setup fees or professional services should be excluded to maintain the integrity of the metric.</p><p><b>Calculation:</b> ARR = MRR * 12</p><p><b>Example:</b> A SaaS company with an MRR of ₹50 Lakhs has an ARR of ₹6 Crore.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-annual-recurring-revenue-arr', 'what-is-monthly-recurring-revenue-mrr', 'what-is-bookings-vs-revenue'],
+        tier: 1
     },
     {
         term: 'Articles of Association (AoA)',
@@ -241,7 +299,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Asset Allocation',
         definition: 'An investment strategy that aims to balance risk and reward by apportioning a portfolio\'s assets according to an individual\'s goals, risk tolerance, and investment horizon.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Asset Management',
@@ -256,12 +315,16 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Asset-Light Business Model',
         definition: '<p>An asset-light business model is a strategy where a company has a relatively low amount of fixed assets on its balance sheet. Instead of owning assets, the company often relies on partnerships, outsourcing, or technology platforms to deliver its services.</p><p><b>Base Term for Startups:</b> An asset-light model is highly attractive to investors because it typically requires less capital to start and scale. This leads to higher capital efficiency and potentially higher returns on investment.</p><p><b>Base Term for SaaS/Platforms:</b> SaaS companies are inherently asset-light as they don\'t sell physical products. Marketplace platforms like Airbnb (which doesn\'t own hotels) and Uber (which doesn\'t own cars) are classic examples of highly successful asset-light businesses.</p><p><b>Base Term Example:</b> A cloud kitchen startup that partners with existing restaurants to use their kitchen space during off-peak hours is employing an asset-light model, as it avoids the high capital expenditure of building its own kitchens.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-capital-intensity'],
+        tier: 2
     },
     {
         term: 'Assets',
         definition: 'Economic resources owned by a business that have future economic value. Can be current (cash, inventory) or non-current (property, equipment).',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Assessee',
@@ -276,12 +339,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Audit',
         definition: 'An official inspection of an organization\'s accounts, typically by an independent body, to ensure accuracy and compliance.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Auditor\'s Report',
         definition: 'A formal opinion, or disclaimer thereof, issued by either an internal auditor or an independent external auditor as a result of an internal or external audit.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Authorized Share Capital',
@@ -298,42 +363,55 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'B2B (Business-to-Business)',
         definition: 'A business model where companies sell products or services to other businesses.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'B2C (Business-to-Consumer)',
         definition: 'A business model where companies sell products or services directly to individual consumers.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Back Office',
         definition: 'The portion of a company made up of administration and support personnel who are not client-facing.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Bad Debt',
         definition: 'A receivable that is no longer collectible because the customer is unable to fulfill their obligation to pay. It is written off as an expense.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Balance Sheet',
         definition: 'A financial statement that reports a company\'s assets, liabilities, and shareholder equity at a specific point in time. It follows the formula: Assets = Liabilities + Equity.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-income-statement', 'what-is-cash-flow-statement'],
+        tier: 1
     },
     {
         term: 'Balanced Fund',
         definition: 'A mutual fund that contains a mix of stocks and bonds, offering a balance of growth and income.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Bank Guarantee',
         definition: 'A promise from a bank that the liabilities of a debtor will be met. In other words, if the debtor fails to settle a debt, the bank will cover it.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Bank Reconciliation',
         definition: 'The process of matching the balances in a company\'s accounting records for a cash account to the corresponding information on a bank statement.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        tier: 1
     },
     {
         term: 'Bankruptcy',
@@ -343,12 +421,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Basis Point (BPS)',
         definition: 'A unit of measure used in finance to describe the percentage change in the value or rate of a financial instrument. One basis point is equivalent to 0.01%.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Bear Market',
         definition: 'A market condition in which the prices of securities are falling, and widespread pessimism causes the negative sentiment to be self-sustaining.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Benchmarking',
@@ -358,37 +438,47 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Beneficiary',
         definition: 'A person who derives advantage from something, especially a trust, will, or life insurance policy.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Beta',
         definition: 'A measure of a stock\'s volatility in relation to the overall market. A beta of 1 indicates the stock moves with the market; a beta > 1 is more volatile.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Bill of Lading',
         definition: 'A legal document issued by a carrier to a shipper that details the type, quantity, and destination of the goods being carried.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Bill of Materials (BOM)',
         definition: 'A comprehensive list of raw materials, components, and assemblies required to construct, manufacture, or repair a product. Essential for manufacturing businesses.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Blended CAC',
         definition: '<p>Blended Customer Acquisition Cost (CAC) is the total sales and marketing spend divided by the total number of new customers acquired across all channels (both paid and organic). It provides an overall average cost to acquire a customer.</p><p><b>For Startups:</b> While easy to calculate, Blended CAC can be a "vanity metric" if not used carefully. It can hide inefficiencies in paid marketing channels, as a strong influx of organic or word-of-mouth customers can artificially lower the blended average.</p><p><b>For Marketing:</b> Savvy marketers and investors prefer to look at "Paid CAC," which only includes the customers acquired through paid channels, as this gives a true measure of the efficiency of marketing spend. Analyzing CAC by channel is even more insightful.</p><p><b>Calculation:</b> Blended CAC = Total Sales & Marketing Spend / Total New Customers (from all channels)</p><p><b>Example:</b> A company spends ₹1 Lakh on marketing and acquires 100 new customers (50 from paid ads, 50 from organic search). Its Blended CAC is ₹1,000.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-customer-acquisition-cost-cac', 'what-is-ltvcac-ratio'],
+        tier: 2
     },
     {
         term: 'Blockchain',
         definition: 'A distributed database that is shared among the nodes of a computer network. Best known for its crucial role in cryptocurrency systems for maintaining a secure and decentralized record of transactions.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Blue Chip Stock',
         definition: 'The stock of a large, well-established, and financially sound company that has operated for many years.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Board of Directors',
@@ -398,7 +488,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Board of Directors Composition',
         definition: '<p>The Board of Directors is the governing body of a corporation, elected by shareholders to oversee the management and make major strategic decisions. Its composition (who is on the board) is a key aspect of corporate governance.</p><p><b>Base Term for Startups:</b> In the early days, the board may just consist of the founders. After a seed or Series A round, the lead investor will typically take a board seat. The ideal board size for a startup is small, usually 3 to 5 members.</p><p><b>Structure:</b> A typical Series A startup board might have: 2 founders, 1 lead investor, and 1 independent director (a neutral industry expert). This provides a balance of founder control, investor oversight, and external expertise.</p><p><b>Base Term Example:</b> A startup\'s term sheet specifies that upon closing the investment, the board will be reconstituted to consist of two founders and one director appointed by the new lead investor.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-corporate-governance'],
+        tier: 2
     },
     {
         term: 'Bond',
@@ -408,12 +502,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Book Value',
         definition: 'The value of an asset according to its balance sheet account balance. For assets, the value is based on the original cost of the asset less any depreciation, amortization, or impairment costs made against the asset.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Bookings vs Revenue',
         definition: '<p>Bookings and Revenue are two distinct and critical metrics for a SaaS business that are often confused. Bookings represent the total value of all new contracts signed in a period. Revenue, under accrual accounting, is the portion of that booking that is recognized as the service is delivered.</p><p><b>For Startups:</b> Bookings are a forward-looking indicator of growth and sales team performance. Investors will look at bookings growth to gauge future revenue potential. Revenue is a backward-looking measure of what has been earned.</p><p><b>For SaaS:</b> The distinction is vital due to the subscription model. A large annual contract is a booking in one month, but the revenue from it is recognized over the next twelve months.</p><p><b>Example:</b> A SaaS company signs a new 1-year contract worth ₹1,20,000 in January. The booking for January is ₹1,20,000. However, the revenue recognized in January is only ₹10,000. The remaining ₹1,10,000 is recorded as Deferred Revenue on the balance sheet.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-deferred-revenue', 'what-is-revenue-recognition'],
+        tier: 1
     },
     {
         term: 'Bookkeeping',
@@ -433,17 +532,25 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Bottom of Funnel (BOFU)',
         definition: '<p>Bottom of Funnel (BOFU) is the final stage of the buyer\'s journey, where a qualified prospect is ready to make a purchase decision. Marketing and sales efforts at this stage are focused on conversion.</p><p><b>Base Term for Startups:</b> At the BOFU stage, you are actively trying to close the deal. The prospect is convinced they need a solution like yours; you just need to convince them that your product is the right choice.</p><p><b>Base Term for B2B/SaaS:</b> Common BOFU activities include free trials, product demos, implementation consultations, and providing detailed pricing quotes. This is where the sales team is most heavily involved.</p><p><b>Base Term Example:</b> A Sales Qualified Lead (SQL) who has seen a demo is now offered a 14-day free trial of the premium version of the product to test it with their team. This is a BOFU offer designed to lead to a final purchase.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-top-of-funnel-tofu', 'what-is-middle-of-funnel-mofu', 'what-is-sales-qualified-lead-sql'],
+        tier: 2
     },
     {
         term: 'Brand Equity',
         definition: 'The value premium that a company generates from a product with a recognizable name when compared to a generic equivalent.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Breakeven Analysis',
         definition: '<p>Breakeven analysis determines the point at which total revenue equals total costs (both fixed and variable), resulting in zero profit or loss. It is a crucial tool for understanding the sales volume needed to achieve profitability.</p><p><b>For Startups:</b> For a pre-revenue startup, breakeven analysis helps set initial sales targets. For a growing startup, it informs pricing decisions and cost management strategies. Investors use it to assess the viability and risk of a business plan.</p><p><b>Calculation:</b> Breakeven Point (in Units) = Total Fixed Costs / Contribution Margin per Unit</p><p><b>Example:</b> A company with ₹1,00,000 in fixed costs and a contribution margin of ₹50 per unit needs to sell 2,000 units to break even.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-contribution-margin', 'what-is-fixed-costs', 'what-is-variable-costs-vs-fixed-costs'],
+        tier: 1
     },
     {
         term: 'Breakeven Point',
@@ -463,12 +570,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Bull Market',
         definition: 'A market condition in which the prices of securities are rising or are expected to rise.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Burn Rate',
         definition: '<p>Burn rate is the rate at which a company is losing money. It is especially critical for startups and early-stage companies that are not yet profitable. Burn rate helps in determining the company\'s runway, which is the amount of time it can continue to operate before it runs out of cash.</p><p><b>For Startups:</b> Founders and investors closely monitor the burn rate to ensure the company has enough cash to reach its next milestone, such as launching a product or securing the next funding round. A high burn rate can be a red flag if it is not justified by significant growth or strategic investments.</p><p><b>For SaaS:</b> SaaS companies often have a high initial burn rate due to significant upfront investments in product development and customer acquisition. The focus is on ensuring that the burn rate leads to a substantial increase in Monthly Recurring Revenue (MRR) and a strong LTV:CAC ratio.</p><p><b>Calculation:</b> Net Burn Rate = (Cash at the beginning of the period - Cash at the end of the period) / Number of months in the period. For instance, if a company\'s cash balance drops from ₹1 Crore to ₹70 Lakhs in a quarter, its monthly net burn rate is ₹10 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-runway', 'what-is-net-burn-vs-gross-burn'],
+        tier: 1
     },
     {
         term: 'Burn Rate for Seed Startups',
@@ -478,12 +590,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Business Model Canvas',
         definition: 'A strategic management template for developing new or documenting existing business models. It is a visual chart with elements describing a firm\'s value proposition, infrastructure, customers, and finances.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Business Plan',
         definition: '<p>A business plan is a formal written document containing a company\'s goals, the methods for attaining those goals, and the timeframe for the achievement of the goals. It provides a roadmap for the business.</p><p><b>Base Term for Startups:</b> While detailed, 100-page business plans are less common now, the process of thinking through the components of a business plan is still critical. For modern startups, the business plan is often distilled into a concise pitch deck and a detailed financial model.</p><p><b>For Founders:</b> The main value of a business plan is not the document itself, but the process of creating it. It forces founders to think critically about their market, competition, operations, and financial projections.</p><p><b>Base Term Example:</b> A founder preparing for a bank loan would create a detailed business plan that includes market analysis, operational plans, and 5-year financial projections to prove the viability of the venture to the lender.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Pre-Seed',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-pitch-deck', 'what-is-financial-model'],
+        tier: 2
     },
     {
         term: 'Buyback',
@@ -495,7 +612,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'CAC Payback Period',
         definition: '<p>The CAC Payback Period is the number of months it takes for a company to earn back the money it spent to acquire a customer. This metric is a crucial indicator of a SaaS company\'s capital efficiency and the effectiveness of its customer acquisition strategy.</p><p><b>For Startups:</b> A shorter payback period is highly desirable as it means the company can reinvest its capital more quickly to fuel further growth. For startups pitching to investors, a payback period of under 12 months is often seen as a strong benchmark for a healthy B2B SaaS business.</p><p><b>For SaaS:</b> This metric is closely tied to both LTV:CAC and churn. High churn will make it difficult to ever reach the payback period, while a high ARPA (Average Revenue Per Account) will shorten it.</p><p><b>Calculation:</b> CAC Payback Period (in months) = Customer Acquisition Cost (CAC) / (Average MRR per Customer * Gross Margin)</p><p><b>Example:</b> If CAC is ₹12,000, average MRR is ₹2,000, and gross margin is 80%, the payback period is ₹12,000 / (₹2,000 * 0.80) = 7.5 months.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-customer-acquisition-cost-cac', 'what-is-ltvcac-ratio'],
+        tier: 1
     },
     {
         term: 'Call Option',
@@ -505,7 +626,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Capital',
         definition: 'Financial assets or the financial value of assets, such as cash and machinery. It is the money or wealth needed to produce goods and services.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Capital Asset',
@@ -520,12 +642,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Capital Efficiency',
         definition: '<p>Capital efficiency measures how effectively a company uses its capital (equity and debt) to generate revenue. It is a key indicator of a startup\'s operational discipline and the sustainability of its growth.</p><p><b>For Startups:</b> In a tight funding market, capital efficiency becomes paramount. Investors look for startups that can achieve significant growth without burning through excessive amounts of cash. A common measure is the "burn multiple" (cash burned / net new ARR).</p><p><b>For SaaS:</b> Capital-efficient SaaS businesses often have a low CAC payback period and a high LTV:CAC ratio, indicating a strong, organic growth engine.</p><p><b>Calculation:</b> A simple measure is Annual Revenue / Total Equity + Debt Raised</p><p><b>Example:</b> A startup generating ₹5 Crore in ARR after raising ₹10 Crore has a capital efficiency ratio of 0.5x.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-burn-rate', 'what-is-ltvcac-ratio'],
+        tier: 2
     },
     {
         term: 'Capital Expenditure (CapEx)',
         definition: 'Funds used by a company to acquire, upgrade, and maintain physical assets such as property, buildings, an industrial plant, technology, or equipment.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Capital Gains Tax',
@@ -535,12 +662,16 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Capital Intensity',
         definition: '<p>Capital intensity refers to the amount of fixed or real capital (machinery, equipment) required to produce a unit of output. Businesses with high capital intensity, like manufacturing or infrastructure, require significant investment to grow.</p><p><b>For Startups:</b> Understanding capital intensity is crucial for financial planning. A software startup is "capital-light," while a hardware or D2C startup is more "capital-intensive" and will require more funding to scale.</p><p><b>For SaaS:</b> SaaS businesses are prized by investors precisely because of their low capital intensity. They can scale revenue dramatically without a proportional increase in capital expenditure.</p><p><b>Example:</b> A car manufacturer has a very high capital intensity, while a SaaS company has a very low one.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-asset-light-business-model'],
+        tier: 3
     },
     {
         term: 'Capital Lease',
         definition: 'A contract entitling a renter to the temporary use of an asset, which has the economic characteristics of asset ownership for accounting purposes.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Capitalization Table (Cap Table)',
@@ -560,17 +691,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Cash Basis Accounting',
         definition: 'An accounting method in which revenue is recognized when cash is received, and expenses are recognized when cash is paid out. Simpler but less accurate for most businesses.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'Pre-Seed',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-accrual-basis-accounting'],
+        tier: 2
     },
     {
         term: 'Cash Conversion Cycle (CCC)',
         definition: '<p>The Cash Conversion Cycle (CCC) is a metric that measures the time it takes for a company to convert its investments in inventory and other resources into cash flows from sales. A shorter CCC indicates better working capital management and liquidity.</p><p><b>For Startups:</b> Startups, especially in the e-commerce and manufacturing sectors, need to manage their CCC carefully to avoid cash flow problems. A long CCC can tie up significant capital in inventory and receivables, hindering the company\'s ability to invest in growth.</p><p><b>For SaaS:</b> SaaS companies generally have a negative CCC because they collect cash from customers upfront for subscriptions before providing the service over time. This is a significant advantage as it provides them with upfront cash to fund operations and growth.</p><p><b>Calculation:</b> CCC = Days of Inventory Outstanding (DIO) + Days Sales Outstanding (DSO) - Days Payable Outstanding (DPO).</p><p><b>Example:</b> If a company takes 45 days to sell inventory, 30 days to collect receivables, and 40 days to pay its suppliers, its CCC is 35 days.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-working-capital', 'what-is-dso', 'what-is-dpo'],
+        tier: 2
     },
     {
         term: 'Cash Cow',
         definition: 'A business, product, or asset that, once it is acquired and paid for, produces steady, reliable cash flow over its lifespan.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Cash Flow',
@@ -580,22 +720,38 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Cash Flow from Financing (CFF)',
         definition: '<p>Cash Flow from Financing (CFF) is a section of the Cash Flow Statement that shows the net flow of cash used to fund the company. It includes transactions involving debt, equity, and dividends.</p><p><b>For Startups:</b> For a venture-backed startup, the CFF section is where the cash received from issuing shares in a funding round is recorded. It will show a large positive cash flow after a successful fundraise. Repayment of debt would be shown as a cash outflow.</p><p><b>For Mature Companies:</b> For more mature companies, CFF also includes activities like paying dividends to shareholders or buying back the company\'s own stock, both of which are cash outflows.</p><p><b>Calculation:</b> CFF = Cash Inflow from Issuing Equity/Debt - Cash Paid as Dividends/Repayment of Debt</p><p><b>Example:</b> A startup raises a ₹10 Crore Series A round. This will be recorded as a ₹10 Crore positive cash flow from financing activities.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-cash-flow-statement', 'what-is-cash-flow-from-operating-cfo', 'what-is-cash-flow-from-investing-cfi'],
+        tier: 2
     },
     {
         term: 'Cash Flow from Investing (CFI)',
         definition: '<p>Cash Flow from Investing (CFI) is a section of the Cash Flow Statement that shows the cash generated or spent from a company\'s investment activities. It includes the purchase and sale of long-term assets, such as property, plant, and equipment (PP&E), as well as investments in other companies.</p><p><b>For Startups:</b> A negative CFI is common and expected for growing startups, as it reflects investment in the infrastructure needed for growth (e.g., buying servers, building an office). A large positive CFI might indicate the company is selling off assets, which could be a red flag.</p><p><b>For Businesses:</b> CFI provides insight into a company\'s capital expenditure (CapEx) strategy and its long-term investment plans.</p><p><b>Calculation:</b> CFI = Cash from Sale of Assets - Cash for Purchase of Assets</p><p><b>Example:</b> A manufacturing startup spends ₹1 Crore on new machinery. This would be shown as a ₹1 Crore cash outflow in the Cash Flow from Investing section.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-cash-flow-statement', 'what-is-capital-expenditure-capex'],
+        tier: 2
     },
     {
         term: 'Cash Flow from Operations (CFO)',
         definition: '<p>Cash Flow from Operations (CFO), or Operating Cash Flow (OCF), is a section of the Cash Flow Statement that shows the amount of cash a company generates from its regular, day-to-day business activities. It is a key indicator of a company\'s ability to generate sufficient cash to maintain and grow its operations.</p><p><b>For Startups:</b> While a startup might be unprofitable on its Income Statement due to non-cash expenses like depreciation, it could still be cash flow positive from operations. A positive CFO is a strong sign of financial health and sustainability.</p><p><b>For SaaS:</b> SaaS companies often have strong CFO because they collect cash from annual subscriptions upfront, while the revenue is recognized over time. This upfront cash collection is a major advantage of the SaaS business model.</p><p><b>Calculation:</b> CFO starts with Net Income, adds back non-cash expenses (like depreciation), and adjusts for changes in working capital.</p><p><b>Example:</b> A startup has a net loss but generated positive cash flow from operations because of a large increase in deferred revenue from new annual contracts.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-cash-flow-statement', 'what-is-net-working-capital'],
+        tier: 1
     },
     {
         term: 'Cash Flow Statement',
         definition: 'A financial statement that provides aggregate data regarding all cash inflows a company receives from its ongoing operations and external investment sources, as well as all cash outflows.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-income-statement', 'what-is-balance-sheet'],
+        tier: 1
     },
     {
         term: 'Cess',
@@ -610,17 +766,23 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Challan',
         definition: 'A form used for payment of taxes or fees to the government in India. For example, TDS challan or GST challan.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Chart of Accounts (COA)',
         definition: 'A financial organizational tool that provides a complete listing of every account in an accounting system.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Churn Rate',
         definition: '<p>Churn rate is the percentage of customers who stop using a company\'s product or service over a specific period. It is a critical metric for subscription-based businesses, as high churn can severely impact revenue and growth.</p><p><b>For Startups:</b> For startups, a high churn rate can be a sign of poor product-market fit, inadequate customer support, or a flawed pricing model. Reducing churn is often more cost-effective than acquiring new customers and is crucial for long-term survival.</p><p><b>For SaaS:</b> In the SaaS industry, there are two types of churn: customer churn (logo churn) and revenue churn. Revenue churn, which includes downgrades, is often considered more important as it directly reflects the financial impact. A low churn rate, especially negative revenue churn (where expansion revenue from existing customers exceeds lost revenue), is a strong indicator of a healthy SaaS business.</p><p><b>Calculation:</b> Customer Churn Rate = (Number of customers lost in a period / Number of customers at the start of the period) * 100. For instance, if a company loses 10 out of 200 customers in a month, the monthly churn rate is 5%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-net-dollar-retention-ndr', 'what-is-logo-retention-vs-net-dollar-retention'],
+        tier: 1
     },
     {
         term: 'Cliff Vesting',
@@ -630,12 +792,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Closing Balance',
         definition: 'The balance of an account at the end of an accounting period.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Cloud Computing',
         definition: 'The delivery of different services through the Internet, including data storage, servers, databases, networking, and software. The backbone of SaaS.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Clubbing of Income',
@@ -645,7 +809,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Cohort Analysis',
         definition: '<p>Cohort analysis is a behavioral analytics tool that breaks down data into groups of people with common characteristics over time. In SaaS, this typically means grouping customers by their sign-up month to track their behavior.</p><p><b>For Startups:</b> It helps answer critical questions like "Are customers from our new marketing channel churning faster than older cohorts?" or "Is our product getting stickier over time?".</p><p><b>For SaaS:</b> Cohort analysis is essential for truly understanding churn and retention. It helps distinguish between a problem with the product (all cohorts churn at a high rate) and a problem with a specific acquisition channel (a recent cohort churns much faster).</p><p><b>Example:</b> A chart showing the retention rate of the "January 2023" cohort of users over the subsequent 12 months is a cohort analysis.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-churn-rate', 'what-is-logo-retention-vs-net-dollar-retention'],
+        tier: 2
     },
     {
         term: 'Collateral',
@@ -660,12 +828,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Commission',
         definition: 'A service charge assessed by a broker or investment advisor in return for providing investment advice or handling the purchase or sale of a security.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Committed MRR (CMRR)',
         definition: '<p>Committed Monthly Recurring Revenue (CMRR) is a forward-looking SaaS metric that combines the current MRR with the guaranteed MRR from new bookings and expansion, and subtracts any known upcoming churn or downgrades. It provides a more accurate forecast of what MRR will look like in the near future.</p><p><b>For Startups:</b> CMRR is a powerful metric for internal planning and for communicating with investors. It provides a more stable and predictable view of the business than simple MRR, as it accounts for both positive and negative changes that are already known.</p><p><b>For SaaS:</b> It helps the finance team provide a more accurate revenue forecast and allows the management team to understand the true momentum of the business, beyond the fluctuations of daily new business.</p><p><b>Calculation:</b> CMRR = Current MRR + New Bookings MRR + Expansion MRR - Known Churn MRR</p><p><b>Example:</b> A company has ₹10 Lakh MRR. It signed ₹1 Lakh in new deals and has a customer who has given notice to churn their ₹50,000 contract next month. The CMRR is ₹10L + ₹1L - ₹50k = ₹10.5 Lakh.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-monthly-recurring-revenue-mrr', 'what-is-bookings-vs-revenue'],
+        tier: 2
     },
     {
         term: 'Common Stock',
@@ -685,7 +858,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Compliance',
         definition: 'Adhering to a rule, such as a specification, policy, standard, or law. In business, this refers to following all applicable tax, labor, and corporate laws.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Composition Scheme',
@@ -700,7 +874,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Compound Interest',
         definition: 'The interest on a loan or deposit calculated based on both the initial principal and the accumulated interest from previous periods.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Consequences of a Strike-Off notice from ROC',
@@ -890,17 +1065,23 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Contingent Liability',
         definition: 'A potential liability that may occur depending on the outcome of an uncertain future event. It is recorded in the footnotes of the financial statements.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Contra Account',
         definition: 'An account in the general ledger that is used to reduce the value of a related account. An example is the accumulated depreciation account.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Contribution Margin',
         definition: '<p>Contribution margin represents the revenue from a sale that is left over to cover fixed costs. It is calculated by subtracting all variable costs associated with a unit from its selling price.</p><p><b>For Startups:</b> A positive contribution margin is a prerequisite for a viable business model. It means that each sale is helping to pay down fixed costs and eventually contribute to profit. A negative contribution margin means you lose money on every sale.</p><p><b>For SaaS:</b> SaaS businesses typically have a very high contribution margin, as the variable costs per customer are low.</p><p><b>Calculation:</b> Contribution Margin per Unit = Selling Price per Unit - Variable Cost per Unit</p><p><b>Example:</b> A product sells for ₹100 and has variable costs of ₹40. The contribution margin is ₹60.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-gross-margin', 'what-is-unit-economics'],
+        tier: 1
     },
     {
         term: 'Conversion Rate',
@@ -935,22 +1116,31 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Cost Accounting',
         definition: 'An accounting method that aims to capture a company\'s costs of production by assessing the input costs of each step of production as well as fixed costs.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Cost of Capital',
         definition: '<p>The Cost of Capital is the required rate of return a company must earn on an investment or project to justify the risk. It is a weighted average of the company\'s cost of debt and cost of equity, known as the Weighted Average Cost of Capital (WACC).</p><p><b>For Startups:</b> Startups typically have a high cost of capital due to their high-risk nature. This means they need to pursue projects and strategies that offer very high potential returns to be attractive to investors.</p><p><b>For SaaS:</b> For a SaaS company, the cost of capital is a key input in valuation models like the Discounted Cash Flow (DCF) analysis. A lower cost of capital, often achieved as the company matures and becomes less risky, leads to a higher valuation.</p><p><b>Calculation:</b> WACC = (E/V * Re) + (D/V * Rd * (1-Tc)), where E is market value of equity, D is market value of debt, V is total value (E+D), Re is cost of equity, Rd is cost of debt, and Tc is the corporate tax rate.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        comparisonSlugs: ['what-is-discount-rate-in-dcf', 'what-is-weighted-average-cost-of-capital-wacc'],
+        tier: 3
     },
     {
         term: 'Cost of Goods Sold (COGS)',
         definition: 'The direct costs of producing the goods sold by a company. This includes the cost of materials and labor directly used to create the good.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Cost of Revenue',
         definition: '<p>Cost of Revenue, often used interchangeably with Cost of Goods Sold (COGS), represents the direct costs associated with generating a company\'s revenue. However, for service and software companies, it can be a broader term.</p><p><b>For Startups:</b> Understanding Cost of Revenue is essential for calculating Gross Profit and Gross Margin, which are key indicators of a startup\'s core profitability and efficiency.</p><p><b>For SaaS:</b> In a SaaS context, Cost of Revenue typically includes expenses like hosting fees (e.g., AWS costs), third-party software licenses embedded in the product, and the salaries of the customer support and implementation teams. R&D costs are usually considered an Operating Expense, not part of Cost of Revenue.</p><p><b>Calculation:</b> Gross Profit = Revenue - Cost of Revenue</p><p><b>Example:</b> A SaaS company has ₹1 Crore in revenue. Its hosting costs are ₹10 Lakhs and customer support salaries are ₹5 Lakhs. Its Cost of Revenue is ₹15 Lakhs, and its Gross Profit is ₹85 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-cost-of-goods-sold-cogs', 'what-is-gross-margin'],
+        tier: 2
     },
     {
         term: 'Cost-Plus Pricing',
@@ -965,12 +1155,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Credit Bureau',
         definition: 'A company that collects and researches individual credit information and sells it to creditors for a fee, so they can make decisions on granting loans. CIBIL is a major credit bureau in India.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Credit Note',
         definition: 'A document issued by a seller to a buyer, reducing the amount that the buyer owes. Often issued for returns or goods damaged on arrival.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Credit Rating',
@@ -980,7 +1172,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Credit Score',
         definition: 'A number between 300–850 that depicts a consumer\'s creditworthiness. The higher the score, the better a borrower looks to potential lenders.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Crowdfunding',
@@ -990,12 +1183,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Current Assets',
         definition: 'All the assets of a company that are expected to be sold or used as a result of standard business operations over the next year.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Current Liabilities',
         definition: 'A company\'s short-term financial obligations that are due within one year or within a normal operating cycle.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Current Ratio',
@@ -1005,22 +1200,34 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Customer Acquisition Cost (CAC)',
         definition: '<p>Customer Acquisition Cost (CAC) is the total cost of sales and marketing efforts required to acquire a new customer. It is a crucial metric for evaluating the efficiency of a company\'s go-to-market strategy.</p><p><b>For Startups:</b> Startups need to carefully track and optimize their CAC to ensure their business model is sustainable. A high CAC can quickly burn through cash reserves, so it is essential to find scalable and cost-effective acquisition channels.</p><p><b>For SaaS:</b> In SaaS, CAC is typically compared with the Customer Lifetime Value (LTV) to determine the long-term profitability of acquiring a customer. A healthy LTV:CAC ratio (often cited as 3:1 or higher) is a key indicator of a viable SaaS business.</p><p><b>Calculation:</b> CAC = Total Sales and Marketing Costs / Number of New Customers Acquired. For example, if a company spends ₹5 Lakhs on sales and marketing in a quarter and acquires 500 new customers, its CAC is ₹1,000.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-customer-lifetime-value-ltv-or-clv', 'what-is-ltvcac-ratio', 'what-is-blended-cac'],
+        tier: 1
     },
     {
         term: 'Customer Concentration',
         definition: '<p>Customer Concentration measures the percentage of a company\'s total revenue that comes from its single largest customer or a small group of large customers. It is a key risk metric that investors scrutinize during due diligence.</p><p><b>For Startups:</b> While landing a large enterprise customer can feel like a huge win, high customer concentration creates significant risk. If that one large customer decides to leave, it could cripple the startup\'s revenue overnight.</p><p><b>For B2B/Enterprise SaaS:</b> A general rule of thumb is that no single customer should account for more than 10-20% of total revenue. A high concentration is a red flag for investors, as it indicates a fragile and non-diversified revenue base.</p><p><b>Calculation:</b> Customer Concentration % = (Revenue from a Single Customer / Total Revenue) * 100</p><p><b>Example:</b> A startup has a total annual revenue of ₹5 Crore. Its largest customer accounts for ₹2 Crore of that revenue. The customer concentration is 40%, which is considered very high and risky.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'investor-due-diligence',
+        tier: 2
     },
     {
         term: 'Customer Lifetime Value (LTV)',
         definition: '<p>Customer Lifetime Value (LTV or CLV) is a metric that represents the total net profit a company can expect to generate from a single customer throughout their entire relationship with the company.</p><p><b>For Startups:</b> LTV helps startups understand the long-term value of their customers, which is crucial for making informed decisions about sales, marketing, and customer support investments. A high LTV indicates a sticky product and loyal customers.</p><p><b>For SaaS:</b> For SaaS businesses, LTV is a critical component of unit economics. It is often calculated by taking the average revenue per account (ARPA) and dividing it by the customer churn rate. A high LTV allows a SaaS company to have a higher, yet sustainable, Customer Acquisition Cost (CAC).</p><p><b>Calculation:</b> A simple LTV calculation is (Average Revenue Per User * Gross Margin) / Churn Rate. For example, if a customer generates ₹2,000 in monthly revenue with a 75% gross margin, and the monthly churn rate is 2%, the LTV is (₹2,000 * 0.75) / 0.02 = ₹75,000.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-customer-acquisition-cost-cac', 'what-is-ltvcac-ratio'],
+        tier: 1
     },
     {
         term: 'Customer Relationship Management (CRM)',
         definition: 'Technology for managing all your company’s relationships and interactions with customers and potential customers.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Customs Duty',
@@ -1032,7 +1239,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'D2C (Direct-to-Consumer)',
         definition: 'A business model where a brand or manufacturer sells its products directly to end customers, bypassing traditional retail intermediaries like distributors or wholesalers.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'D2C Contribution Margin Analysis',
@@ -1052,7 +1260,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'DAU/MAU Ratio',
         definition: '<p>The DAU/MAU ratio is a key metric for measuring user engagement and product stickiness. It is the ratio of Daily Active Users (DAU) to Monthly Active Users (MAU), expressed as a percentage.</p><p><b>For Startups:</b> This ratio helps founders understand how frequently their users are engaging with the product. A high DAU/MAU ratio indicates that users are forming a habit around the product and returning frequently, which is a strong predictor of long-term retention.</p><p><b>For Consumer Apps:</b> A benchmark for a "good" DAU/MAU ratio is often cited as 20% or higher, while world-class products like Facebook can have ratios above 50%. The benchmark varies significantly by industry and product type.</p><p><b>Calculation:</b> DAU/MAU Ratio = (Daily Active Users / Monthly Active Users) * 100</p><p><b>Example:</b> A mobile app has 10,000 DAU and 50,000 MAU. Its DAU/MAU ratio is 20%, meaning the average user is active on 6 days out of a 30-day month (20% of 30 days).</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-monthly-active-users-mau', 'what-is-activation-rate'],
+        tier: 2
     },
     {
         term: 'Dealing with high customer churn',
@@ -1067,7 +1279,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Debit Note',
         definition: 'A document issued by a buyer to a seller to request a credit note, typically for returned goods.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Debt Financing',
@@ -1077,7 +1290,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Debt Service Coverage Ratio (DSCR)',
         definition: '<p>The Debt Service Coverage Ratio (DSCR) is a measure of a company\'s available cash flow to pay its current debt obligations. It is a key ratio used by lenders to assess the creditworthiness of a borrower.</p><p><b>Base Term for Startups:</b> While most early-stage startups don\'t have significant debt, this ratio becomes critical for more mature startups or those in capital-intensive industries (like manufacturing) that are seeking bank loans or venture debt.</p><p><b>For Businesses:</b> A DSCR of less than 1 indicates that the company has negative cash flow and may not be able to service its debt without drawing on outside sources. Lenders typically require a DSCR of 1.25x or higher.</p><p><b>Base Term Calculation:</b> DSCR = Net Operating Income / Total Debt Service</p><p><b>Base Term Example:</b> A company has a net operating income of ₹25 Lakhs and its total annual debt payments (principal and interest) are ₹20 Lakhs. Its DSCR is 1.25, indicating it has just enough cash flow to satisfy the lender\'s requirement.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        comparisonSlugs: ['what-is-debt-to-equity-ratio', 'what-is-interest-coverage-ratio'],
+        tier: 3
     },
     {
         term: 'Debt-to-Equity Ratio',
@@ -1097,7 +1313,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Deferred Revenue',
         definition: 'Revenue that has been collected but has not yet been earned. It is a liability on the balance sheet, common in subscription businesses where payment is received upfront for a service to be delivered over time.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-revenue-recognition', 'what-is-accrual-basis-accounting'],
+        tier: 1
     },
     {
         term: 'Deferred Tax',
@@ -1106,13 +1326,18 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Defensibility (or Moat)',
-        definition: '<p>Defensibility, often called an economic "moat," refers to a company\'s ability to maintain a sustainable competitive advantage over its rivals in the long term. This allows it to protect its market share and profitability.</p><p><b>Base Term for Startups:</b> Investors are not just looking for a good idea; they are looking for a defensible business. A startup must be able to articulate what will prevent a larger, better-funded competitor from simply copying their idea and out-executing them.</p><p><b>Types of Moats:</b> Sources of defensibility include network effects, high switching costs for customers, proprietary technology (patents), strong brand identity, and economies of scale.</p><p><b>Base Term Example:</b> High switching costs create a moat for a SaaS accounting software. Once a company has all its financial data in one system, the pain and cost of migrating to a competitor are immense, making them a very sticky customer.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        definition: '<p>Defensibility, often called an economic "moat," refers to a company\'s ability to maintain a sustainable competitive advantage over its rivals in the long term. This allows it to protect its market share and profitability.</p><p><b>Base Term for Startups:</b> Investors are not just looking for a good idea; they are looking for a defensible business. A startup must be able to articulate what will prevent a larger, better-funded competitor from simply copying their idea and out-executing them.</p><p><b>Types of Moats:</b> Sources of defensibility include network effects, high switching costs for customers, proprietary technology (patents), strong brand identity, and economies of scale.</p><p><b>Base Term Example:</b> High switching costs create a moat for a SaaS accounting software. Once a company has all its financial data in one system, the pain and cost of migrating to a new competitor are immense, making them a very sticky customer.</p>',
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-network-effects', 'what-is-switching-costs'],
+        tier: 2
     },
     {
         term: 'Deflation',
         definition: 'A general decline in prices for goods and services, typically associated with a contraction in the supply of money and credit in the economy.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Dematerialization (Demat)',
@@ -1122,12 +1347,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Depletion',
         definition: 'An accrual accounting technique used to allocate the cost of extracting natural resources such as timber, minerals, and oil from the earth.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Derivative',
         definition: 'A financial security with a value that is reliant upon or derived from an underlying asset or group of assets—a benchmark. The derivative itself is a contract between two or more parties.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Digital Signature Certificate (DSC)',
@@ -1162,12 +1389,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Disbursement',
         definition: 'The act of paying out or disbursing money, such as a loan disbursement.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Disclaimer',
         definition: 'A statement that denies something, especially responsibility.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Discount Rate',
@@ -1177,7 +1406,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Discount Rate in DCF',
         definition: '<p>The Discount Rate is a critical input in a Discounted Cash Flow (DCF) valuation model. It represents the rate of return required by an investor to compensate for the risk associated with the investment\'s future cash flows. A higher discount rate signifies higher risk and results in a lower present value (and thus, a lower valuation).</p><p><b>For Startups:</b> Startups are inherently risky, so investors apply a very high discount rate when valuing them using a DCF model. A typical discount rate for an early-stage startup can be anywhere from 30% to 60% or even higher.</p><p><b>For Valuation:</b> The choice of discount rate is one of the most subjective but important parts of a valuation. It is often based on the company\'s stage, market risk, and the investor\'s own required rate of return.</p><p><b>Example:</b> An investor valuing a startup might use a 40% discount rate to calculate the present value of its projected future cash flows, reflecting the high risk that those cash flows may not materialize.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-discounted-cash-flow-dcf', 'what-is-cost-of-capital'],
+        tier: 2
     },
     {
         term: 'Discounted Cash Flow (DCF)',
@@ -1192,12 +1425,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Disruptive Innovation',
         definition: 'An innovation that creates a new market and value network and eventually disrupts an existing market and value network, displacing established market-leading firms, products, and alliances.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Diversification',
         definition: 'A risk management strategy that mixes a wide variety of investments within a portfolio.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Divestment',
@@ -1217,7 +1452,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Double-Entry Bookkeeping',
         definition: 'A fundamental accounting principle stating that every financial transaction has equal and opposite effects in at least two different accounts. It is used to satisfy the equation Assets = Liabilities + Equity.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Down Round',
@@ -1232,22 +1468,35 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'DPO',
         definition: '<p>Days Payable Outstanding (DPO) is a financial ratio that measures the average number of days it takes for a company to pay its own invoices to its suppliers. It is a key component of working capital management.</p><p><b>For Startups:</b> A higher DPO is generally favorable, as it means the company is effectively using the credit extended by its suppliers to finance its operations and is holding onto its cash for a longer period. However, stretching payments too long can damage supplier relationships and lead to supply chain disruptions.</p><p><b>For Businesses:</b> The goal is to optimize DPO—paying as late as possible without incurring penalties or harming relationships. This needs to be balanced against potential benefits like early payment discounts.</p><p><b>Calculation:</b> DPO = (Ending Accounts Payable / Cost of Goods Sold) * Number of Days in Period</p><p><b>Example:</b> A company has ₹5 Lakhs in accounts payable and a COGS of ₹30 Lakhs in a quarter (90 days). Its DPO is (5L / 30L) * 90 = 15 days.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-dso', 'what-is-cash-conversion-cycle-ccc'],
+        tier: 2
     },
     {
         term: 'Drag-Along Rights',
         definition: '<p>Drag-Along Rights are a provision in a shareholders\' agreement that allows a majority shareholder (or a group of majority shareholders) to force a minority shareholder to join in the sale of a company. This ensures that a potential acquirer can buy 100% of the company.</p><p><b>Base Term for Startups:</b> This is a crucial clause for ensuring a clean exit. Without it, a single small shareholder could potentially block an acquisition that is favored by the founders and majority investors.</p><p><b>For Investors & Founders:</b> Both founders and lead investors typically want this clause to prevent minority shareholders from holding a deal hostage.</p><p><b>Base Term Example:</b> The founders and investors, who collectively own 80% of a startup, approve a sale to Google. The drag-along clause forces the remaining 20% of shareholders to sell their shares under the same terms, allowing the acquisition to proceed smoothly.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-tag-along-rights'],
+        tier: 2
     },
     {
         term: 'Dropshipping',
         definition: 'A retail fulfillment method where a store doesn\'t keep the products it sells in stock. Instead, when a store sells a product, it purchases the item from a third party and has it shipped directly to the customer.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'DSO',
         definition: '<p>Days Sales Outstanding (DSO) is a financial ratio that measures the average number of days it takes for a company to collect payment from its customers after a sale has been made. It is a key component of the cash conversion cycle.</p><p><b>For Startups:</b> A high DSO can signal a cash flow problem, as it means a company\'s cash is tied up in accounts receivable. Startups, especially those selling to large enterprises with long payment cycles, must manage their DSO carefully to maintain liquidity.</p><p><b>For B2B Businesses:</b> Reducing DSO is a constant focus for finance and collections teams. Strategies include offering early payment discounts, implementing stricter credit policies, and having a systematic follow-up process for overdue invoices.</p><p><b>Calculation:</b> DSO = (Accounts Receivable / Total Credit Sales) * Number of Days in Period</p><p><b>Example:</b> A company has ₹10 Lakhs in accounts receivable and total credit sales of ₹50 Lakhs in a quarter (90 days). Its DSO is (10L / 50L) * 90 = 18 days.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-dpo', 'what-is-cash-conversion-cycle-ccc'],
+        tier: 2
     },
     {
         term: 'DTAA with Singapore',
@@ -1337,7 +1586,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'D-U-N-S Number',
         definition: 'A unique nine-digit identifier for businesses, managed by Dun & Bradstreet. Often required for international trade and contracts.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'DuPont Analysis',
@@ -1349,12 +1599,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Early-Stage Startup',
         definition: 'A startup in the initial phase of its lifecycle, typically pre-seed or seed stage, focused on product development and finding product-market fit.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Earmarking',
         definition: 'To set aside funds for a specific purpose, project, or recipient.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Earnings Per Share (EPS)',
@@ -1374,17 +1626,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'E-commerce',
         definition: 'The buying and selling of goods or services using the internet, and the transfer of money and data to execute these transactions.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Economic Moat',
         definition: 'A distinct advantage a company has over its competitors which allows it to protect its market share and profitability. Coined by Warren Buffett.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Economies of Scale',
         definition: 'The cost advantages that enterprises obtain due to their scale of operation, with cost per unit of output decreasing with increasing scale.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'EdTech Content Amortization',
@@ -1399,7 +1654,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Efficiency Ratios',
         definition: '<p>Efficiency Ratios, also known as activity ratios, are used to measure how well a company is utilizing its assets and liabilities internally. They can evaluate the management of inventory, accounts receivable, and accounts payable.</p><p><b>Base Term for Startups:</b> For startups, these ratios are crucial for optimizing operations and improving cash flow. Key efficiency ratios include Inventory Turnover, Accounts Receivable Turnover, and Accounts Payable Turnover.</p><p><b>Base Term for SaaS:</b> While inventory turnover is irrelevant, Accounts Receivable Turnover is very important for B2B SaaS companies that invoice enterprise clients and need to manage their collection period (DSO).</p><p><b>Base Term Calculation:</b> Inventory Turnover = Cost of Goods Sold / Average Inventory</p><p><b>Base Term Example:</b> A D2C startup with a high inventory turnover ratio is selling its products quickly and efficiently, minimizing the cash tied up in inventory.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-inventory-turnover-ratio', 'what-is-accounts-payable-turnover-ratio'],
+        tier: 3
     },
     {
         term: 'E-invoicing',
@@ -1414,7 +1673,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Emerging Market',
         definition: 'A nation\'s economy that is progressing toward becoming more advanced, as shown by some liquidity in local debt and equity markets and the existence of some form of market exchange and regulatory body.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Employee Provident Fund (EPF)',
@@ -1424,7 +1684,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Employee Stock Option Pool (ESOP)',
         definition: '<p>An Employee Stock Option Pool (ESOP) is a block of common stock that a company reserves for issuance to its employees and advisors. It is the primary tool used by startups to attract, motivate, and retain talent when they cannot compete with the high cash salaries offered by larger corporations.</p><p><b>Base Term for Startups:</b> Creating an ESOP is a standard practice for any startup that plans to hire a team. The size of the pool is typically 10-20% of the company\'s total equity.</p><p><b>How it Works:</b> Employees are granted "options," which are the right to buy a certain number of shares at a predetermined, fixed price (the "strike price") after a vesting period. If the company\'s value increases, the employee can buy the shares at the low strike price and sell them at the higher market price, realizing a profit.</p><p><b>Base Term Example:</b> A startup creates an ESOP pool of 15% of its shares to attract its first five key engineering hires.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-esop-employee-stock-option-plan', 'what-is-vesting', 'what-is-strike-price'],
+        tier: 1
     },
     {
         term: 'Employees\' State Insurance (ESI)',
@@ -1439,7 +1703,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Enterprise Resource Planning (ERP)',
         definition: 'A type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Enterprise Value (EV)',
@@ -1449,7 +1714,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Entrepreneur',
         definition: 'An individual who creates a new business, bearing most of the risks and enjoying most of the rewards.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Equalisation Levy',
@@ -1514,7 +1780,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Evergreen Content',
         definition: 'SEO content that is continually relevant and stays "fresh" for readers over a long period of time.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Ex-gratia Payment',
@@ -1524,7 +1791,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Exercise of Stock Options',
         definition: '<p>Exercising a stock option is the act of an employee purchasing shares of the company\'s stock at the predetermined "strike price" granted to them in their option agreement. This can only be done after the options have vested.</p><p><b>Base Term for Startups:</b> The decision of when to exercise options can have significant tax implications for an employee. It converts the "option" into actual "shares," making the employee a legal shareholder in the company.</p><p><b>Process:</b> The employee notifies the company of their intent to exercise, pays the total strike price for the number of shares they are purchasing, and then receives the shares. In India, the difference between the Fair Market Value (FMV) at the time of exercise and the strike price is taxed as a perquisite (salary income).</p><p><b>Base Term Example:</b> An employee has vested options to buy 1,000 shares at a strike price of ₹10. They decide to exercise them. They pay the company ₹10,000 and become the owner of 1,000 shares.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-strike-price', 'what-is-vesting'],
+        tier: 2
     },
     {
         term: 'Exit Strategy',
@@ -1586,12 +1857,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Fiduciary',
         definition: 'A person or organization that acts on behalf of another person or persons, putting their clients\' interests ahead of their own, with a duty to preserve good faith and trust.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'FIFO (First-In, First-Out)',
         definition: 'An inventory valuation method in which the first goods purchased are assumed to be the first ones sold.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Filing Letter of Undertaking (LUT) for Exports',
@@ -1601,27 +1874,37 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Financial Accounting Standards Board (FASB)',
         definition: 'The primary standard-setting body for financial accounting and reporting in the U.S.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Financial Due Diligence',
         definition: '<p>Financial Due Diligence is the process through which an investor or acquirer investigates the financial health and performance of a target company. The goal is to verify the accuracy of the company\'s financial statements and to identify any potential risks, liabilities, or inconsistencies.</p><p><b>Base Term for Startups:</b> This is a critical and intense phase of any funding round. A startup must be prepared to provide detailed historical financials, bank statements, tax filings, and support for all the metrics presented in their pitch deck. Being well-prepared for financial diligence is a sign of a mature and well-run company.</p><p><b>Key Areas of Focus:</b> Key areas include quality of earnings, accuracy of revenue recognition, proof of key SaaS metrics (MRR, churn), working capital analysis, and verification of tax compliance.</p><p><b>Base Term Example:</b> During financial diligence, an investor\'s accounting firm will conduct a deep dive into a startup\'s books, asking for bank statements to confirm revenue and invoices to verify expenses.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'investor-due-diligence',
+        comparisonSlugs: ['what-is-due-diligence', 'what-is-legal-due-diligence'],
+        tier: 2
     },
     {
         term: 'Financial Instrument',
         definition: 'A real or virtual document representing a legal agreement involving any kind of monetary value. Examples: stocks, bonds, options, futures.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Financial Intermediary',
         definition: 'An entity that acts as the middleman between two parties in a financial transaction, such as a commercial bank, investment bank, mutual fund, or pension fund.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Financial Leverage',
         definition: '<p>Financial Leverage refers to the use of borrowed capital (debt) to finance the purchase of assets, with the expectation that the income or capital gain from the new asset will exceed the cost of borrowing.</p><p><b>For Startups:</b> Startups typically have limited access to debt, so they rely more on equity financing. However, as they mature, they might use venture debt or other loans to finance growth without diluting founder ownership as much as an equity round would. This use of debt is financial leverage.</p><p><b>For Businesses:</b> While leverage can amplify returns on equity, it also increases risk. A highly leveraged company is more vulnerable to downturns, as it must continue to service its debt regardless of its revenue performance.</p><p><b>Calculation:</b> A common measure is the Debt-to-Equity Ratio.</p><p><b>Example:</b> A company takes a large loan to build a new factory. The goal is that the profits from the new factory will be far greater than the interest payments on the loan, thus amplifying the return for shareholders.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        comparisonSlugs: ['what-is-debt-to-equity-ratio', 'what-is-venture-debt'],
+        tier: 2
     },
     {
         term: 'Financial Model',
@@ -1641,17 +1924,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Financial Statement',
         definition: 'Formal records of the financial activities of a business. The three main financial statements are the Balance Sheet, Income Statement, and Cash Flow Statement.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Financial Year (FY)',
         definition: 'The 12-month period for which a company prepares its financial accounts. In India, the FY runs from April 1st to March 31st.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'FinTech',
         definition: 'A portmanteau of "financial technology," it describes new tech that seeks to improve and automate the delivery and use of financial services.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'FinTech Compliance Reporting',
@@ -1666,22 +1952,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Firmware',
         definition: 'A specific class of computer software that provides the low-level control for a device\'s specific hardware.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Fiscal Deficit',
         definition: 'The difference between the government\'s total expenditure and its total receipts (excluding borrowing).',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Fiscal Policy',
         definition: 'The use of government spending and taxation to influence the economy.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Fixed Asset',
         definition: 'A long-term tangible piece of property or equipment that a firm owns and uses in its operations to generate income. Not expected to be consumed or converted into cash within a year.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Fixed Asset Turnover Ratio',
@@ -1691,17 +1981,22 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Fixed Costs',
         definition: '<p>Fixed costs are business expenses that remain constant regardless of the level of goods or services produced. These costs are incurred even if there is no production or sales activity. Examples include rent, salaries of administrative staff, insurance, and software subscriptions.</p><p><b>For Startups:</b> Startups often try to keep their fixed costs as low as possible to reduce their burn rate and extend their runway. A high fixed cost base increases the breakeven point, meaning the company needs to generate more revenue to become profitable.</p><p><b>For SaaS:</b> SaaS companies often have significant fixed costs related to R&D and employee salaries. However, their low variable costs mean that once they cover their fixed costs, they can achieve high-profit margins as they scale.</p><p><b>Example:</b> A startup\'s monthly office rent of ₹1 Lakh is a fixed cost, as it must be paid every month regardless of how much revenue the company generates.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-variable-costs-vs-fixed-costs', 'what-is-operating-leverage'],
+        tier: 1
     },
     {
         term: 'Flat Rate',
         definition: 'A pricing structure that charges a single fixed fee for a service, regardless of usage.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Floating Interest Rate',
         definition: 'An interest rate that fluctuates over time, because it is based on an underlying benchmark interest rate or index that changes periodically.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Forecasting',
@@ -1711,12 +2006,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Foreign Exchange (Forex)',
         definition: 'The market where currencies are traded. It is the largest and most liquid financial market in the world.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Forensic Accounting',
         definition: 'The use of accounting skills to investigate fraud or embezzlement and to analyze financial information for use in legal proceedings.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Form 15G/15H',
@@ -1741,7 +2038,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Forward Contract',
         definition: 'A customized contract between two parties to buy or sell an asset at a specified price on a future date.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Founder Vesting',
@@ -1750,23 +2048,33 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Founder Vesting Schedule',
-        definition: '<p>A founder vesting schedule is a mechanism where founders earn their equity (shares) over a set period of time. This ensures that a founder must contribute to the company for a certain duration to receive their full ownership stake, protecting the company if a co-founder leaves prematurely.</p><p><b>Base Term for Startups:</b> This is a non-negotiable term for investors and a best practice for all co-founded startups. It prevents "dead equity" on the cap table, where a departed founder retains a large stake without contributing to future growth.</p><p><b>Standard Terms:</b> The most common vesting schedule is a 4-year period with a 1-year "cliff." This means no shares are earned for the first year. At the 1-year anniversary, 25% of the shares vest (the cliff). The remaining 75% then vest on a monthly or quarterly basis over the next 3 years.</p><p><b>Base Term Example:</b> A founder with 1 million shares on a 4-year vesting schedule with a 1-year cliff leaves after 18 months. They would be vested in 37.5% of their shares (25% at the 1-year cliff + 12.5% for the next 6 months).</p>',
-        cluster: 'Startup Finance Fundamentals'
+        definition: '<p>A founder vesting schedule is a mechanism where founders earn their equity (shares) over a set period of time. This ensures that a founder must contribute to the company for a certain duration to receive their full ownership stake, protecting the company if a co-founder leaves prematurely.</p><p><b>Base Term for Startups:</b> This is a non-negotiable term for investors and a best practice for all co-founded startups. It prevents "dead equity" on the cap table, where a departed founder retains a large stake without contributing to future growth.</p><p><b>Standard Terms:</b> The most common vesting schedule is a 4-year period with a 1-year "cliff." This means no shares are earned for the first year. At the 1-year anniversary, 25% of the shares vest (the cliff). The remaining 75% then typically vest on a monthly or quarterly basis over the next 3 years.</p><p><b>Base Term Example:</b> A founder with 1 million shares on a 4-year vesting schedule with a 1-year cliff leaves after 18 months. They would be vested in 37.5% of their shares (25% at the 1-year cliff + 12.5% for the next 6 months).</p>',
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Pre-Seed',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-vesting', 'what-is-vesting-cliff', 'what-is-accelerated-vesting'],
+        tier: 1
     },
     {
         term: 'Franchise',
         definition: 'A business model where an individual (franchisee) is granted the right to market a company\'s goods or services under the company\'s name (franchisor).',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Free Cash Flow (FCF)',
         definition: '<p>Free Cash Flow (FCF) is the cash a company generates after accounting for the cash outflows to support its operations and maintain its capital assets. It is a measure of a company\'s financial performance and flexibility, showing how much cash is available to be distributed to investors or reinvested in the business.</p><p><b>For Startups:</b> While most early-stage startups have negative FCF (as they are investing heavily in growth), tracking the path to FCF positivity is a key long-term goal. FCF-positive startups are less reliant on external funding and have more control over their destiny.</p><p><b>For Mature Companies:</b> For public companies, FCF is one of the most important metrics for valuation, as it represents the cash that could be returned to shareholders.</p><p><b>Calculation:</b> FCF = Operating Cash Flow - Capital Expenditures</p><p><b>Example:</b> A company generates ₹50 Lakhs in cash from its operations but spends ₹20 Lakhs on new servers and equipment. Its Free Cash Flow is ₹30 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-cash-flow-from-operating-cfo', 'what-is-capital-expenditure-capex'],
+        tier: 2
     },
     {
         term: 'Freemium',
         definition: 'A business model, especially for software, where a basic version of the product is offered for free, with charges for advanced or premium features.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Fringe Benefits',
@@ -1776,7 +2084,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Full-Stack Developer',
         definition: 'A developer who can work on both the front-end (client-side) and back-end (server-side) of an application.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Fund of Funds',
@@ -1791,19 +2100,22 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Futures Contract',
         definition: 'A legal agreement to buy or sell a particular commodity or financial instrument at a predetermined price at a specified time in the future.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     
     // G
     {
         term: 'GAAP (Generally Accepted Accounting Principles)',
         definition: 'A common set of accounting principles, standards, and procedures that companies must follow when they compile their financial statements.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'General Ledger (GL)',
         definition: 'A master accounting document providing a complete record of all financial transactions over the life of a company.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'General Partner (GP)',
@@ -1813,27 +2125,41 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Gig Economy',
         definition: 'A labor market characterized by the prevalence of short-term contracts or freelance work as opposed to permanent jobs.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Gilt Funds',
         definition: 'Mutual funds that invest in government securities (G-Secs) in India. They are considered low-risk investments.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Gini Coefficient',
         definition: 'A measure of statistical dispersion intended to represent the income or wealth distribution of a nation\'s residents, and is the most commonly used measure of inequality.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Glass Cliff',
         definition: 'A phenomenon in which women or minorities are more likely to be promoted to positions of power when a company is in crisis, making it more likely that they will fail.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
+    },
+    {
+        term: 'Go-to-Market (GTM) Strategy',
+        definition: '<p>A Go-to-Market (GTM) strategy is a company\'s comprehensive plan for launching a new product or service into the market or expanding into a new market segment. It outlines how the company will reach target customers and achieve a competitive advantage.</p><p><b>For Startups:</b> A clear GTM strategy is a critical component of any business plan or pitch deck. It answers the fundamental question: "How will you acquire customers?". It forces founders to think through their target audience, pricing, sales channels, and marketing tactics.</p><p><b>For B2B/SaaS:</b> A B2B GTM strategy might involve a combination of content marketing to generate leads, an SDR team to qualify them, and an Account Executive team to close deals. This contrasts with a Product-Led Growth (PLG) strategy, which is another type of GTM.</p><p><b>Example:</b> A SaaS startup\'s GTM strategy for entering the US market might involve initially targeting small businesses through digital advertising and content marketing, before building out an enterprise sales team to go after larger customers.</p>',
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-product-led-growth-plg', 'what-is-sales-led-growth-slg'],
+        tier: 1
     },
     {
         term: 'Going Concern',
         definition: 'An accounting principle that assumes a company will continue to operate for the foreseeable future, and is not on the verge of liquidation.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Golden Handshake',
@@ -1848,17 +2174,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Goodwill',
         definition: 'An intangible asset that arises when a buyer acquires an existing business. It represents assets that are not separately identifiable, such as brand reputation.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Government Securities (G-Sec)',
         definition: 'A debt instrument issued by a government to borrow money. In India, these are issued by the Central Government or State Governments.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Grace Period',
         definition: 'A set length of time after the due date during which payment may be made without penalty.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Greenfield Investment',
@@ -1873,27 +2202,38 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Gross Domestic Product (GDP)',
         definition: 'The total monetary or market value of all the finished goods and services produced within a country\'s borders in a specific time period.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Gross Margin',
         definition: '<p>Gross Margin is a profitability ratio that measures the percentage of revenue that exceeds the Cost of Goods Sold (COGS). It represents the portion of each sale that the company retains after incurring the direct costs associated with producing the goods or services sold.</p><p><b>For Startups:</b> A healthy gross margin is essential for a startup\'s long-term viability. It indicates how efficiently the company is producing its products or services. A low gross margin may signal issues with pricing, production costs, or scalability.</p><p><b>For SaaS:</b> SaaS companies are known for their high gross margins, often exceeding 80%. This is because the direct costs of providing the software (e.g., hosting, customer support) are relatively low compared to the subscription revenue.</p><p><b>Calculation:</b> Gross Margin = ((Revenue - COGS) / Revenue) * 100. For instance, if a company has revenues of ₹10 Lakhs and COGS of ₹3 Lakhs, its gross margin is 70%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-contribution-margin', 'what-is-cost-of-goods-sold-cogs'],
+        tier: 1
     },
     {
         term: 'Gross Merchandise Value (GMV)',
         definition: '<p>Gross Merchandise Value (GMV) is the total value of all goods and services sold through a particular marketplace or e-commerce platform over a specific period. It\'s a key metric for measuring the overall size and growth of a marketplace business.</p><p><b>For Startups:</b> For marketplace startups (like an e-commerce platform or a service aggregator), GMV is the primary top-line metric to show traction to investors. It represents the total economic activity flowing through the platform, even though the company\'s actual revenue (the "take rate" or commission) is only a fraction of the GMV.</p><p><b>For E-commerce:</b> It\'s crucial to distinguish GMV from revenue. High GMV growth is positive, but it must be accompanied by a healthy take rate and positive unit economics to be sustainable.</p><p><b>Calculation:</b> GMV = Total Number of Items Sold * Average Price of Items</p><p><b>Example:</b> An online marketplace sells 1,000 items in a month at an average price of ₹2,000. Its monthly GMV is ₹20 Lakhs. If the platform\'s commission is 10%, its revenue for the month is ₹2 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-take-rate', 'what-is-revenue'],
+        tier: 2
     },
     {
         term: 'Gross Profit',
         definition: 'The profit a company makes after deducting the costs associated with making and selling its products, or the costs associated with providing its services.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Gross Revenue',
         definition: 'The total amount of sales recognized for a reporting period, prior to any deductions such as sales returns and allowances.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Grossing up of TDS',
@@ -1903,12 +2243,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Growth Hacking',
         definition: 'A marketing technique that uses creativity, analytical thinking, and social metrics to sell products and gain exposure.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Growth Stage',
         definition: 'The stage in a company\'s lifecycle where it is experiencing rapid growth in revenue and customer acquisition, typically after achieving product-market fit.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'GSTR-1',
@@ -1995,12 +2337,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Health Savings Account (HSA)',
         definition: 'A tax-advantaged savings account that can be used for healthcare expenses. It is available to taxpayers in the United States who are enrolled in a high-deductible health plan.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'HealthTech',
         definition: 'The use of technology (databases, applications, mobiles, wearables) to improve the delivery, payment, and/or consumption of care and increase the development and commercialization of medicinal products.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'HealthTech Regulatory Costs',
@@ -2010,7 +2354,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Hedge',
         definition: 'An investment to reduce the risk of adverse price movements in an asset. Normally, a hedge consists of taking an offsetting position in a related security.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Hedge Fund',
@@ -2060,7 +2405,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Human Capital',
         definition: 'The skills, knowledge, and experience possessed by an individual or population, viewed in terms of their value or cost to an organization or country.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Hurdle Rate',
@@ -2082,11 +2428,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Impairment',
         definition: 'A permanent reduction in the value of a company\'s asset, typically a fixed asset or an intangible asset.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Importance of clean MIS for Series B',
-        definition: '<p>By the time a startup is raising a Series B, investors expect a high degree of financial sophistication. They will want to see detailed cohort analysis, accurate unit economics (LTV:CAC), and a predictable financial forecast. A clean, automated Management Information System (MIS) is no longer a nice-to-have; it\'s a prerequisite.</p><p><b>Startup Example:</b> A Series B investor asks for the LTV:CAC ratio broken down by different customer acquisition channels. A startup with a strong MIS can provide this data immediately, demonstrating a deep understanding of its business.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">Virtual CFO service</a> focuses on building these sophisticated reporting systems.</p>',
+        definition: '<p>By the time a startup is raising a Series B, investors expect a high degree of financial sophistication. They will want to see detailed cohort analysis, accurate unit economics (LTV:CAC), and a predictable financial forecast. A clean, automated Management Information System (MIS) is no longer a nice-to-have; it\'s a prerequisite.</p><p><b>Startup Example:</b> A Series B investor asks for the LTV:CAC ratio broken down by different customer acquisition channels. A startup with a strong MIS can provide this data immediately, demonstrating a deep understanding of its business.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">vCFOs</a> handle all investor reporting for our clients.</p>',
         cluster: 'Virtual CFO & Financial Management'
     },
     {
@@ -2102,7 +2449,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Income Statement',
         definition: 'Also known as the Profit and Loss (P&L) statement, it reports a company\'s financial performance over a specific period, showing revenues, expenses, and resulting profit or loss.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Income Tax',
@@ -2127,7 +2475,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Ind AS (Indian Accounting Standards)',
         definition: 'The accounting standards adopted by companies in India and issued under the supervision of the Accounting Standards Board (ASB). Converged with IFRS.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Indemnification clause in SHA',
@@ -2137,7 +2486,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Index Fund',
         definition: 'A type of mutual fund or exchange-traded fund (ETF) with a portfolio constructed to match or track the components of a financial market index, such as the Nifty 50.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Indirect Tax',
@@ -2147,17 +2497,22 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Inflation',
         definition: 'The rate at which the general level of prices for goods and services is rising and, subsequently, purchasing power is falling.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Infrastructure as a Service (IaaS)',
         definition: 'A cloud computing model where a vendor provides users access to computing resources such as servers, storage, and networking.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Initial Coin Offering (ICO)',
         definition: '<p>An Initial Coin Offering (ICO) is a fundraising method used by cryptocurrency and blockchain projects. It is analogous to an Initial Public Offering (IPO) in the traditional finance world. In an ICO, a project sells a new cryptocurrency or "token" to investors in exchange for established cryptocurrencies like Bitcoin or Ethereum, or for fiat currency.</p><p><b>Base Term for Startups:</b> ICOs were a popular way for blockchain startups to raise capital during the crypto boom of 2017-2018. However, they have faced significant regulatory scrutiny globally due to the high incidence of fraud and the sale of unregistered securities.</p><p><b>Regulatory Status:</b> The legal status of ICOs varies widely by country. In many jurisdictions, including India, they are largely unregulated or face strict restrictions.</p><p><b>Base Term Example:</b> A new blockchain project conducts an ICO, selling 1 billion of its new "ProjectCoin" tokens to the public to fund the development of its decentralized application.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-initial-public-offering-ipo'],
+        tier: 3
     },
     {
         term: 'Initial Public Offering (IPO)',
@@ -2192,12 +2547,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'InsurTech',
         definition: 'The use of technology innovations designed to wring savings and efficiency from the current insurance industry model.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Intangible Asset',
         definition: 'An asset that is not physical in nature. Examples include patents, trademarks, copyrights, and goodwill.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Intellectual Property (IP)',
@@ -2222,7 +2579,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Internal Controls',
         definition: 'The mechanisms, rules, and procedures implemented by a company to ensure the integrity of financial and accounting information, promote accountability, and prevent fraud.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Internal Rate of Return (IRR)',
@@ -2232,7 +2590,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Inventory',
         definition: 'The raw materials, work-in-process goods, and completely finished goods that are considered to be the portion of a business\'s assets that are ready or will be ready for sale.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Inventory Turnover',
@@ -2242,7 +2601,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Inventory Turnover Ratio',
         definition: '<p>The Inventory Turnover Ratio is a measure of how many times a company sells and replaces its inventory over a specific period. It is a key indicator of operational efficiency and inventory management effectiveness.</p><p><b>For Startups:</b> For startups that hold physical inventory (e.g., D2C, hardware, manufacturing), a high turnover ratio is generally better, as it indicates strong sales and less cash being tied up in slow-moving stock. A low turnover ratio can signal overstocking or weak sales.</p><p><b>For Retail/Manufacturing:</b> This ratio is a critical KPI. It helps in making decisions about purchasing, production, marketing, and pricing. Comparing the ratio to industry benchmarks can reveal competitive advantages or weaknesses.</p><p><b>Calculation:</b> Inventory Turnover = Cost of Goods Sold / Average Inventory</p><p><b>Example:</b> A company has a COGS of ₹1 Crore for the year and its average inventory value was ₹20 Lakhs. Its inventory turnover ratio is 5, meaning it sold and replaced its entire inventory 5 times during the year.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-cash-conversion-cycle-ccc'],
+        tier: 2
     },
     {
         term: 'Inverted Duty Structure',
@@ -2262,7 +2625,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Invoice',
         definition: 'A commercial document that itemizes and records a transaction between a buyer and a seller.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Invoice Discounting',
@@ -2279,7 +2643,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Job Costing',
         definition: 'A cost accounting method that involves tracking the costs of a specific job or project.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Job Work',
@@ -2289,12 +2654,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Joint Venture',
         definition: 'A business arrangement in which two or more parties agree to pool their resources for the purpose of accomplishing a specific task.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Journal Entry',
         definition: 'A record of a business transaction in the accounting books of a business. A properly documented journal entry consists of the correct date, amounts to be debited and credited, description of the transaction, and a unique reference number.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Junk Bond',
@@ -2306,7 +2673,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Kaizen',
         definition: 'A Japanese business philosophy of continuous improvement of working practices, personal efficiency, etc.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Key Employee',
@@ -2338,17 +2706,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Laissez-faire',
         definition: 'An economic theory from the 18th century that opposed any government intervention in business affairs.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Landed Cost',
         definition: 'The total cost of a product once it has arrived at the buyer\'s door. Includes the original cost of the item, all brokerage and logistics fees, shipping costs, customs duties, taxes, insurance, and any other costs.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Last-In, First-Out (LIFO)',
         definition: 'An inventory valuation method where the most recently produced items are recorded as sold first. Not permitted under Ind AS in India.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Late TDS filing consequences',
@@ -2358,7 +2729,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Lead-to-Customer Conversion Rate',
         definition: '<p>The Lead-to-Customer Conversion Rate is a sales and marketing metric that measures the percentage of leads that ultimately become paying customers. It is a critical indicator of the overall effectiveness of a company\'s entire sales and marketing funnel.</p><p><b>For Startups:</b> This metric provides a high-level view of how well the company is converting interest into revenue. A low conversion rate could signal a problem at any stage of the funnel, from poor lead quality generated by marketing to an ineffective sales process.</p><p><b>For B2B/SaaS:</b> This rate is often broken down into sub-metrics, such as Lead-to-MQL rate, MQL-to-SQL rate, and SQL-to-Customer rate, to pinpoint exactly where in the funnel prospects are dropping off.</p><p><b>Calculation:</b> Lead-to-Customer Rate = (Total Number of New Customers in a Period / Total Number of New Leads in that Period) * 100</p><p><b>Example:</b> If a company generates 1,000 new leads in a quarter and converts 20 of them into customers, its lead-to-customer conversion rate is 2%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-marketing-qualified-lead-mql', 'what-is-sales-qualified-lead-sql'],
+        tier: 2
     },
     {
         term: 'Lead Investor',
@@ -2368,22 +2743,29 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Lean Startup',
         definition: 'A methodology for developing businesses and products that aims to shorten product development cycles by adopting a combination of business-hypothesis-driven experimentation and iterative product releases.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Leasehold',
         definition: 'A form of land tenure where one party buys the right to occupy land or a building for a given length of time.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Ledger',
         definition: 'A book or collection of accounts in which account transactions are recorded. The general ledger is the main accounting record of a company.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Legal Due Diligence',
         definition: '<p>Legal Due Diligence is the process where an investor\'s lawyers review all of a startup\'s legal documents and corporate records to assess any legal risks or liabilities. The goal is to ensure the company has a clean legal structure and there are no hidden "skeletons".</p><p><b>Base Term for Startups:</b> This process is as critical as financial diligence. A major legal issue discovered during diligence can kill a deal. Startups should perform a "legal health check" before starting a fundraise.</p><p><b>Key Areas of Focus:</b> Key areas include reviewing the company\'s incorporation documents, cap table, founder and employee agreements (especially IP assignment clauses), customer contracts, and any pending or potential litigation.</p><p><b>Base Term Example:</b> An investor\'s lawyer discovers during legal diligence that an early employee never signed an IP assignment agreement. The funding deal is put on hold until the startup can get the former employee to sign the document, potentially giving the ex-employee significant leverage.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'investor-due-diligence',
+        comparisonSlugs: ['what-is-due-diligence', 'what-is-financial-due-diligence'],
+        tier: 2
     },
     {
         term: 'Letter of Credit (LC)',
@@ -2403,7 +2785,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Leverage Ratios',
         definition: '<p>Leverage Ratios are financial metrics that measure the amount of capital that comes in the form of debt (loans). They assess a company\'s ability to meet its financial obligations. The most common leverage ratios are the Debt-to-Equity Ratio and the Debt-to-Asset Ratio.</p><p><b>Base Term for Startups:</b> Most early-stage startups have very little debt, so their leverage ratios are low. As they mature, they might take on venture debt, which would increase their financial leverage. Investors look at these ratios to gauge the financial risk of the company.</p><p><b>Base Term for Businesses:</b> While leverage can amplify returns, too much debt increases the risk of bankruptcy if the company cannot make its interest payments.</p><p><b>Base Term Calculation:</b> Debt-to-Equity Ratio = Total Debt / Total Shareholders\' Equity</p><p><b>Base Term Example:</b> A company with ₹2 Crore in debt and ₹4 Crore in equity has a debt-to-equity ratio of 0.5.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        comparisonSlugs: ['what-is-debt-to-equity-ratio', 'what-is-debt-service-coverage-ratio-dscr'],
+        tier: 3
     },
     {
         term: 'Leveraged Buyout (LBO)',
@@ -2413,17 +2798,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Liabilities',
         definition: 'A company\'s legal financial debts or obligations that arise during the course of business operations. Can be current (due within a year) or long-term.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Libor (London Interbank Offered Rate)',
         definition: 'A benchmark interest rate at which major global banks lend to one another. It is being phased out.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Lien',
         definition: 'A legal claim or right against assets that are typically used as collateral to satisfy a debt.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Limited Liability',
@@ -2448,7 +2836,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Liquid Assets',
         definition: 'Cash on hand or an asset that can be readily converted to cash.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Liquidation',
@@ -2468,7 +2857,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Liquidity Ratios',
         definition: '<p>Liquidity Ratios are financial metrics used to determine a company\'s ability to pay off its short-term debt obligations without raising external capital. The main liquidity ratios are the Current Ratio and the Quick Ratio (Acid-Test Ratio).</p><p><b>Base Term for Startups:</b> For startups, which often operate with limited cash reserves, maintaining adequate liquidity is a matter of survival. These ratios help founders and investors assess the short-term financial health and risk of the company.</p><p><b>Base Term for SaaS:</b> A SaaS company with significant deferred revenue (a current liability) might have a lower-looking Current Ratio, but because of its predictable recurring revenue, its actual liquidity position may be very strong.</p><p><b>Base Term Calculation:</b> Current Ratio = Current Assets / Current Liabilities</p><p><b>Base Term Example:</b> A company with ₹50 Lakhs in current assets and ₹25 Lakhs in current liabilities has a Current Ratio of 2.0, which is generally considered healthy.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-current-ratio', 'what-is-acid-test-ratio-quick-ratio'],
+        tier: 2
     },
     {
         term: 'Listing',
@@ -2488,7 +2881,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Logo Retention vs Net Dollar Retention',
         definition: '<p>Logo Retention (or Customer Retention) measures the percentage of customers that are retained over a period. Net Dollar Retention (NDR), on the other hand, measures the percentage of revenue retained from that same group of customers, including expansion, contraction, and churn.</p><p><b>For Startups:</b> While Logo Retention is important, NDR is a far more powerful indicator of product stickiness and customer health. A startup can have a decent Logo Retention but a poor NDR if its customers are constantly downgrading.</p><p><b>For SaaS:</b> The goal for a healthy SaaS business is an NDR of over 100%. This "negative churn" means that the revenue growth from existing customers is outpacing the revenue lost from churning customers, creating a powerful, compounding growth engine.</p><p><b>Example:</b> A company retains 95% of its customers (95% Logo Retention). However, the remaining customers upgrade their plans so much that the revenue from that cohort grows by 10%. The company\'s NDR is 110%, which is a very strong sign.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-net-dollar-retention-ndr', 'what-is-churn-rate'],
+        tier: 1
     },
     {
         term: 'Long-Term Capital Gains (LTCG)',
@@ -2498,7 +2895,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Loss Leader',
         definition: 'A pricing strategy where a product is sold at a price at or below its market cost to stimulate other sales of more profitable goods or services.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Lower Deduction Certificate (Form 13)',
@@ -2508,19 +2906,25 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'LTV:CAC Ratio',
         definition: '<p>The LTV:CAC ratio is a critical SaaS metric that measures the relationship between the Lifetime Value (LTV) of a customer and the Cost of Acquiring (CAC) that customer. It is the ultimate indicator of the long-term profitability and scalability of a SaaS business.</p><p><b>For Startups:</b> Proving a healthy LTV:CAC ratio is essential for raising venture capital. It shows investors that the business has a viable model where each new customer generates more value than they cost to acquire.</p><p><b>For SaaS:</b> A ratio of 3:1 is considered a healthy benchmark. A ratio below 1:1 is unsustainable. A ratio above 5:1 might indicate underinvestment in marketing.</p><p><b>Calculation:</b> LTV:CAC Ratio = Customer Lifetime Value / Customer Acquisition Cost</p><p><b>Example:</b> If a customer\'s LTV is ₹30,000 and the CAC is ₹10,000, the LTV:CAC ratio is 3:1.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-customer-lifetime-value-ltv-or-clv', 'what-is-customer-acquisition-cost-cac', 'what-is-unit-economics'],
+        tier: 1
     },
     
     // M
     {
         term: 'Machine Learning (ML)',
         definition: 'A subset of artificial intelligence (AI) that focuses on building systems that learn, or improve performance, based on the data they consume.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Macroeconomics',
         definition: 'The branch of economics that studies the behavior and performance of an economy as a whole.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Management Buyout (MBO)',
@@ -2535,7 +2939,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Manufacturing',
         definition: 'The process of converting raw materials, components, or parts into finished goods that meet a customer\'s expectations or specifications.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Manufacturing COGS Calculation',
@@ -2545,7 +2950,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Margin Call',
         definition: 'A demand from a broker for an investor to deposit further cash or securities to cover possible losses in a margin account.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Market Capitalization (Market Cap)',
@@ -2555,42 +2961,56 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Market Leader',
         definition: 'A company with the largest market share in a particular industry.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Market Opportunity',
         definition: 'The potential revenue a company could generate if it captured 100% of its target market.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Market Segmentation',
         definition: 'The process of dividing a broad consumer or business market into sub-groups of consumers (segments) based on some type of shared characteristics.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Market Validation',
         definition: '<p>Market validation is the process of testing and confirming that there is a real need and a willing market for your product idea before you build and launch it. It\'s about getting evidence that customers will actually pay for your solution.</p><p><b>Base Term for Startups:</b> This is one of the most critical early steps. It helps startups avoid the number one cause of failure: building a product that nobody wants. Market validation is an ongoing process, not a one-time event.</p><p><b>Methods:</b> Validation techniques include customer interviews, surveys, creating a landing page to collect sign-ups for a waitlist, and launching a Minimum Viable Product (MVP) to get early user feedback.</p><p><b>Base Term Example:</b> Before writing a single line of code, a founder creates a landing page describing their proposed SaaS tool and runs a small ad campaign. If a significant number of visitors sign up for the waitlist, it provides early market validation for the idea.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Pre-Seed',
+        comparisonSlugs: ['what-is-product-market-fit', 'what-is-minimum-viable-product-mvp'],
+        tier: 1
     },
     {
         term: 'Marketing Originated Customer %',
         definition: '<p>The Marketing Originated Customer Percentage is a sales and marketing KPI that measures the proportion of new customers that originated directly from a marketing-led effort or channel. It helps in understanding the impact of the marketing team on new customer acquisition.</p><p><b>For Startups:</b> This metric is crucial for evaluating the effectiveness of a startup\'s marketing engine. A high percentage indicates that the marketing team is successfully driving new business and not just influencing deals sourced by the sales team.</p><p><b>For B2B/SaaS:</b> This is tracked in a CRM by looking at the "lead source" of all new customers who closed in a period. A healthy B2B company might see 20-40% of its new business originating from marketing.</p><p><b>Calculation:</b> % = (New Customers with Marketing as Lead Source / Total New Customers) * 100</p><p><b>Example:</b> If a company acquires 100 new customers in a quarter, and 30 of them originally came from a marketing campaign (e.g., a webinar or an ebook download), the Marketing Originated Customer % is 30%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        tier: 3
     },
     {
         term: 'Marketing Qualified Lead (MQL)',
         definition: '<p>A Marketing Qualified Lead (MQL) is a lead who has shown interest in a company\'s products or services based on their marketing interactions (e.g., downloading an ebook, attending a webinar) and is deemed more likely to become a customer compared to other leads.</p><p><b>For Startups:</b> The MQL concept is crucial for aligning the marketing and sales teams. It defines the "hand-off" point where a lead generated by marketing is considered ready to be passed to the sales team for follow-up.</p><p><b>For B2B/SaaS:</b> The specific criteria for what constitutes an MQL should be clearly defined and agreed upon by both sales and marketing (e.g., a lead from a target industry with a certain company size who requested a demo). This is often managed through lead scoring in a CRM.</p><p><b>Example:</b> A person who downloads a whitepaper from your website might be a lead, but if they also visit the pricing page and have a job title of "Director," they might be classified as an MQL and routed to a sales representative.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-sales-qualified-lead-sql', 'what-is-sales-funnel-stages'],
+        tier: 2
     },
     {
         term: 'Marketplace Reconciliation',
         definition: 'In e-commerce, the process of matching sales data, fees, returns, and payouts from marketplaces like Amazon or Flipkart with a company\'s own accounting records.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Markup',
         definition: 'The amount added to the cost price of goods to cover overhead and profit.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'MAT Credit',
@@ -2620,12 +3040,16 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Microeconomics',
         definition: 'The branch of economics that studies the behavior of individuals and firms in making decisions regarding the allocation of scarce resources.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Middle of Funnel (MOFU)',
         definition: '<p>Middle of Funnel (MOFU) is the consideration stage in the buyer\'s journey, where a lead has identified a problem and is now actively evaluating different solutions and providers. Marketing at this stage is focused on nurturing the lead and building trust.</p><p><b>Base Term for Startups:</b> At the MOFU stage, the goal is to position your startup as the best solution to the prospect\'s problem. This is where you demonstrate your expertise and build a relationship.</p><p><b>Base Term for B2B/SaaS:</b> Common MOFU tactics include detailed case studies, webinars showcasing product features, comparison guides against competitors, and email nurture sequences. The goal is to convert a Marketing Qualified Lead (MQL) into a Sales Qualified Lead (SQL).</p><p><b>Base Term Example:</b> A lead who downloaded a TOFU ebook now receives an invitation to a webinar that shows a live demo of the startup\'s product solving a specific problem. This is a MOFU activity.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-top-of-funnel-tofu', 'what-is-bottom-of-funnel-bofu'],
+        tier: 2
     },
     {
         term: 'Minimum Alternate Tax (MAT)',
@@ -2640,7 +3064,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Minimum Viable Product (MVP)',
         definition: 'A version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'MIS Report',
@@ -2655,32 +3080,43 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Monetary Policy',
         definition: 'The process by which the monetary authority of a country, like the central bank, controls the supply of money, often targeting an inflation rate or interest rate.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Money Market',
         definition: 'A segment of the financial market in which financial instruments with high liquidity and very short maturities are traded.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Monopoly',
         definition: 'A market structure characterized by a single seller, selling a unique product in the market.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Monthly Recurring Revenue (MRR)',
         definition: '<p>Monthly Recurring Revenue (MRR) is a key metric for subscription-based businesses that represents the predictable revenue a company can expect to receive every month. It normalizes revenue from different subscription terms into a consistent monthly figure.</p><p><b>For Startups:</b> For early-stage startups, MRR is the most important metric for tracking growth and momentum. It provides a clear view of the company\'s trajectory and is a primary focus for investors in seed and Series A rounds.</p><p><b>For SaaS:</b> SaaS businesses live and die by their MRR. Growth in MRR is driven by new customer acquisition (New MRR) and expansion from existing customers (Expansion MRR), while it is reduced by churn and downgrades (Churned MRR).</p><p><b>Calculation:</b> MRR = Sum of all monthly recurring fees from active subscriptions. For an annual plan of ₹12,000, the MRR contribution is ₹1,000.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-annual-recurring-revenue-arr', 'what-is-committed-mrr-cmrr'],
+        tier: 1
     },
     {
         term: 'Monthly Active Users (MAU)',
         definition: '<p>Monthly Active Users (MAU) is a metric that measures the total number of unique users who have performed a meaningful action within a product or service during a 30-day period. It is a common measure of a product\'s overall reach and engagement.</p><p><b>For Startups:</b> For consumer apps, social media platforms, and other ad-supported or freemium businesses, MAU is a primary indicator of scale and network effect. A consistently growing MAU is a strong signal of product-market fit and user adoption.</p><p><b>For SaaS:</b> While still relevant, B2B SaaS companies often focus more on metrics like paid seats or active accounts, as these are more directly tied to revenue. However, for product-led growth (PLG) companies, MAU can be a crucial top-of-funnel metric.</p><p><b>Calculation:</b> Count the number of unique users who performed a key action (e.g., logged in, created content) in the last 30 days.</p><p><b>Example:</b> A social media app has 1 million unique users log in and interact with content in a given month. Its MAU for that month is 1 million.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-dau-mau-ratio', 'what-is-activation-rate'],
+        tier: 2
     },
     {
         term: 'Mortgage',
         definition: 'A loan used to purchase or maintain a home, land, or other types of real estate.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'MSME Form 1 Compliance',
@@ -2690,44 +3126,58 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Mutual Fund',
         definition: 'A type of financial vehicle made up of a pool of money collected from many investors to invest in securities like stocks, bonds, money market instruments, and other assets.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     
     // N
     {
         term: 'Naked Option',
         definition: 'An options strategy in which an investor writes (sells) an option without owning the underlying security.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Natural Language Processing (NLP)',
         definition: 'A subfield of AI focused on enabling computers to understand, interpret, and manipulate human language.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Negotiable Instrument',
         definition: 'A document guaranteeing the payment of a specific amount of money, either on demand, or at a set time, with the payer named on the document.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Net Asset Value (NAV)',
         definition: 'The value per share of a mutual fund or an exchange-traded fund (ETF).',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Net Burn vs Gross Burn',
         definition: '<p>Gross Burn is the total amount of cash a startup spends in a month. Net Burn is the true measure of cash depletion, calculated as cash spent minus cash received.</p><p><b>For Startups:</b> This is the most critical operational metric. It directly impacts your runway and survival. While investors look at Gross Burn to understand operational costs, they manage the business based on Net Burn.</p><p><b>For SaaS:</b> In a SaaS context, Net Burn is especially crucial as upfront annual contract payments can temporarily mask a high Gross Burn, giving a false sense of security. Tracking both provides a clearer picture of cash flow health.</p><p><b>Calculation:</b> Net Burn = (Cash at Start of Month - Cash at End of Month)</p><p><b>Example:</b> A startup spends ₹20 Lakhs (Gross Burn) and earns ₹5 Lakhs in a month. Its Net Burn is ₹15 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-burn-rate', 'what-is-runway'],
+        tier: 1
     },
     {
         term: 'Net Dollar Retention (NDR)',
         definition: '<p>Net Dollar Retention (NDR) is a SaaS metric that measures the change in recurring revenue from a cohort of customers over a period, taking into account revenue expansion (upgrades, cross-sells) and revenue churn (downgrades, cancellations). It is also known as Net Revenue Retention (NRR).</p><p><b>For Startups:</b> An NDR over 100% is the "holy grail" for SaaS startups. It means the business would grow even if it didn\'t acquire any new customers, a powerful signal of a sticky product with strong value.</p><p><b>For SaaS:</b> Top-tier public SaaS companies often have NDRs of 120% or more, indicating strong upselling and cross-selling motions.</p><p><b>Calculation:</b> NDR = (Starting MRR + Expansion - Churn) / Starting MRR</p><p><b>Example:</b> A cohort starts with ₹1 Lakh MRR, adds ₹20,000 in expansion, and loses ₹10,000 to churn. The ending MRR is ₹1.1 Lakh. The NDR is 110%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-churn-rate', 'what-is-expansion-revenue', 'what-is-logo-retention-vs-net-dollar-retention'],
+        tier: 1
     },
     {
         term: 'Net Income',
         definition: 'The amount an individual earns after taxes and other deductions are taken out of their gross income. For a company, it is the profit after all expenses have been deducted from revenues.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Net Present Value (NPV)',
@@ -2737,7 +3187,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Net Profit',
         definition: 'The actual profit after working expenses not included in the calculation of gross profit have been paid.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Net Promoter Score (NPS)',
@@ -2752,17 +3203,23 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Net Worth',
         definition: 'The value of the assets a person or corporation owns, minus the liabilities they owe. It is a key measure of a company\'s financial health.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Network Effect',
         definition: 'A phenomenon whereby an increased number of people or participants improves the value of a good or service. The internet and social media platforms are classic examples.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Network Effects',
         definition: '<p>Network Effects occur when a product or service becomes more valuable as more people use it. This creates a powerful competitive advantage and a virtuous cycle of growth.</p><p><b>Base Term for Startups:</b> Startups with built-in network effects are highly attractive to investors because they have the potential for explosive, defensible growth. The challenge is reaching a critical mass of users to kickstart the effect.</p><p><b>Base Term for SaaS/Platforms:</b> Social networks (like Facebook), marketplaces (like Airbnb), and collaboration tools (like Slack) are classic examples. For a marketplace, more sellers attract more buyers, which in turn attracts more sellers.</p><p><b>Base Term Example:</b> The first person with a telephone had no one to call, making it useless. As more people got telephones, the value of the network increased for every single user, demonstrating a powerful network effect.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-defensibility-or-moat'],
+        tier: 2
     },
     {
         term: 'New Market Tax Credit (NMTC)',
@@ -2772,12 +3229,16 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Nifty 50',
         definition: 'The benchmark stock market index for the Indian equity market. It represents the weighted average of 50 of the largest Indian companies listed on the National Stock Exchange.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'No-Shop Clause',
         definition: '<p>A No-Shop Clause is a provision in a term sheet or letter of intent that prohibits a startup from soliciting or negotiating with other potential investors for a specified period after signing the term sheet with a lead investor.</p><p><b>Base Term for Startups:</b> This clause gives the lead investor exclusivity while they conduct their due diligence. It\'s a standard term, but founders should negotiate for the exclusivity period to be as short as possible (e.g., 30-45 days) to avoid being locked into a slow process if the lead investor decides to back out.</p><p><b>For Investors:</b> The no-shop clause is essential for investors. It ensures that they can commit the time and resources to due diligence without the risk of the startup using their term sheet to get a better offer from another firm.</p><p><b>Base Term Example:</b> A startup signs a term sheet with a VC that includes a 45-day no-shop clause. For the next 45 days, the startup is legally obligated to cease all fundraising conversations with other investors.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        tier: 2
     },
     {
         term: 'Nodal Account',
@@ -2792,7 +3253,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Non-Cash Expense',
         definition: '<p>A Non-Cash Expense is an expense that is recorded on a company\'s income statement but does not involve an actual outflow of cash during the period. These expenses reduce a company\'s reported net income but do not impact its cash balance.</p><p><b>For Startups:</b> Understanding non-cash expenses is important for reconciling a company\'s net income (profit) with its cash flow. A company can be profitable but still run out of cash, and vice-versa.</p><p><b>Accounting:</b> The most common non-cash expenses are Depreciation (for tangible assets like computers) and Amortization (for intangible assets like patents). Stock-based compensation is another significant non-cash expense for many startups.</p><p><b>Example:</b> A company records ₹50,000 in depreciation for its office equipment. This reduces its taxable profit, but no cash actually leaves the company\'s bank account for this transaction. This amount is added back to net income when calculating Cash Flow from Operations.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-cash-flow-from-operating-cfo', 'what-is-depreciation'],
+        tier: 2
     },
     {
         term: 'Non-Compete Clause',
@@ -2807,24 +3272,28 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Non-Performing Asset (NPA)',
         definition: 'A loan or advance for which the principal or interest payment remained overdue for a period of 90 days.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Notional Value',
         definition: 'The total value of a leveraged position\'s assets. This term is used for derivatives contracts.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     
     // O
     {
         term: 'Off-Balance-Sheet (OBS) Financing',
         definition: 'An accounting practice where a company does not include a liability on its balance sheet. It is used to keep the debt-to-equity ratio low.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Omnichannel',
         definition: 'A multichannel approach to sales that seeks to provide customers with a seamless shopping experience, whether they\'re shopping online from a desktop or mobile device, by telephone, or in a brick-and-mortar store.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'One Person Company (OPC)',
@@ -2834,7 +3303,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Open-Ended Fund',
         definition: 'A type of mutual fund that does not have restrictions on the amount of shares the fund will issue.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Operating Agreement',
@@ -2854,22 +3324,28 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Operating Expense (OpEx)',
         definition: 'The expenses a business incurs through its normal business operations. Often abbreviated as OpEx, these expenses include rent, equipment, inventory costs, marketing, payroll, etc.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Operating Income',
         definition: 'An accounting figure that measures the amount of profit realized from a business\'s ongoing operations. Calculated as Gross Profit - Operating Expenses.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Operating Lease',
         definition: 'A contract that allows for an asset\'s use but does not convey ownership rights of the asset.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Operating Leverage',
         definition: '<p>Operating Leverage is a measure of the degree to which a company\'s operating income changes in response to a change in its sales. It reflects the proportion of fixed costs to variable costs in a company\'s cost structure.</p><p><b>For Startups:</b> A company with high operating leverage (high fixed costs, low variable costs) can see a massive increase in profitability from a small increase in sales, once its fixed costs are covered. However, it also faces a higher risk, as a drop in sales can lead to significant losses.</p><p><b>For SaaS:</b> SaaS companies are a classic example of high operating leverage. Their costs for R&D and staff are largely fixed, while the cost to serve an additional customer is very low. This is why scaling is so powerful in the SaaS model.</p><p><b>Calculation:</b> Degree of Operating Leverage = Contribution Margin / Operating Income</p><p><b>Example:</b> A SaaS company has high fixed costs. As it adds new customers, most of the new revenue flows directly to the bottom line, demonstrating high operating leverage.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-fixed-costs', 'what-is-variable-costs-vs-fixed-costs'],
+        tier: 2
     },
     {
         term: 'Operating Margin',
@@ -2879,7 +3355,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Opportunity Cost',
         definition: 'The potential benefits an individual, investor, or business misses out on when choosing one alternative over another.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Option Pool',
@@ -2889,7 +3366,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Option Pool Shuffle',
         definition: '<p>The "Option Pool Shuffle" refers to the negotiation during a funding round about when and how the employee stock option pool (ESOP) is increased. Typically, investors will insist that the option pool is increased *before* their investment, as part of the pre-money valuation.</p><p><b>Base Term for Startups:</b> This is a critical point for founders to understand as it directly impacts their dilution. When the option pool is increased pre-money, only the existing shareholders (i.e., the founders) are diluted to create the pool. If it were created post-money, the new investors would also be diluted.</p><p><b>For Founders:</b> Negotiating a smaller option pool or trying to have it created post-money can save founders valuable percentage points of ownership.</p><p><b>Base Term Example:</b> A startup is valued at ₹10 Cr pre-money. The investor wants a 20% option pool. If this is done pre-money, the founders\' stake is valued at ₹8 Cr before the new investment. The investor then invests, diluting the new, lower base.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-pre-money-valuation', 'what-is-dilution'],
+        tier: 2
     },
     {
         term: 'Out-of-the-Money (OTM)',
@@ -2899,7 +3380,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Outsourcing',
         definition: 'The business practice of hiring a party outside a company to perform services or create goods that were traditionally performed in-house.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Outward Supply',
@@ -2909,19 +3391,22 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Overhead',
         definition: 'The ongoing business expenses not directly attributed to creating a product or service. Examples include rent, utilities, and administrative staff salaries.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Over-the-Counter (OTC)',
         definition: 'The trading of securities between two parties directly, without the use of a central exchange.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
 
     // P
     {
         term: 'P&L Statement',
         definition: 'Profit and Loss statement, another name for the Income Statement.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Paid-in Capital',
@@ -2951,7 +3436,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Parity',
         definition: 'The state or condition of being equal, especially regarding status or pay.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Passive Income',
@@ -2966,7 +3452,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Pay-to-Play Provision',
         definition: '<p>A Pay-to-Play provision is a term in a venture financing that requires existing investors to participate in subsequent funding rounds (i.e., "pay") in order to retain their preferential rights (such as liquidation preferences and anti-dilution protection) from the earlier round.</p><p><b>Base Term for Startups:</b> This is a founder-friendly term. It incentivizes investors to continue supporting the company in future rounds, especially in challenging times. If an investor decides not to participate, their preferred shares may be converted to less favorable common shares.</p><p><b>For Investors:</b> This term can be seen as punitive, as it forces them to invest more capital or risk losing the valuable rights they negotiated in the initial investment.</p><p><b>Base Term Example:</b> A startup is raising a difficult "down round". A Pay-to-Play provision in the original term sheet forces an early investor to participate, helping the company get the round closed.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-pro-rata-rights', 'what-is-down-round'],
+        tier: 3
     },
     {
         term: 'Payment Aggregator (PA)',
@@ -2976,7 +3466,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Payment Gateway (PG)',
         definition: 'A merchant service provided by an e-commerce application service provider that authorizes credit card or direct payments processing for e-businesses, online retailers, etc.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Payroll',
@@ -3146,7 +3637,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Perpetuity',
         definition: 'A type of annuity that lasts forever.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Personal Guarantee',
@@ -3156,7 +3648,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Petty Cash',
         definition: 'A small amount of cash on hand that is used for paying minor and incidental expenses.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Phantom Stocks vs. ESOPs',
@@ -3166,7 +3659,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Pipeline Coverage',
         definition: '<p>Pipeline Coverage is a sales metric that measures the ratio of the total value of a sales pipeline to the sales quota for a given period. It indicates whether the sales team has enough opportunities in their pipeline to realistically achieve their target.</p><p><b>For Startups:</b> This is a critical forward-looking metric for sales leaders and founders. Insufficient pipeline coverage is an early warning sign that the team may miss its future revenue goals, prompting a need to increase marketing efforts or lead generation activities.</p><p><b>For Sales Teams:</b> A common rule of thumb is to maintain a pipeline coverage of 3x to 5x the quota. This means if the quarterly quota is ₹1 Crore, the sales team should have ₹3-5 Crore worth of qualified opportunities in their pipeline at the start of the quarter.</p><p><b>Calculation:</b> Pipeline Coverage = Total Value of Sales Pipeline / Sales Quota</p><p><b>Example:</b> A sales team has a quarterly quota of ₹50 Lakhs and a total pipeline value of ₹2 Crore. Their pipeline coverage is 4x.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-sales-pipeline', 'what-is-quota-attainment'],
+        tier: 2
     },
     {
         term: 'Pitch Deck',
@@ -3176,7 +3673,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Pivot',
         definition: 'A significant change in a startup\'s strategy to test a new business model or product hypothesis, usually after receiving feedback from the market.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Place of Supply',
@@ -3186,12 +3684,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Platform as a Service (PaaS)',
         definition: 'A cloud computing model where a third-party provider delivers hardware and software tools to users over the internet.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Portfolio',
         definition: 'A collection of financial investments like stocks, bonds, commodities, cash, and cash equivalents, including closed-end funds and exchange-traded funds (ETFs).',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'POSH Act Compliance for Startups',
@@ -3221,12 +3721,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Premium',
         definition: 'The total cost to buy an option. Also, the amount paid periodically to the insurer by the insured for covering his risk.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Prepaid Expense',
         definition: 'A type of asset on the balance sheet that results from a business making advance payments for goods or services to be received in the future.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Prepaid Payment Instrument (PPI)',
@@ -3246,12 +3748,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Price-to-Sales (P/S) Ratio',
         definition: '<p>The Price-to-Sales (P/S) ratio is a valuation metric that compares a company\'s stock price to its annual revenue per share. It is often used to value companies that are not yet profitable.</p><p><b>Base Term for Startups:</b> For early-stage, high-growth startups (especially in SaaS), the P/S ratio (or more commonly, a multiple of Annual Recurring Revenue - ARR) is a primary method of valuation, as they often have negative earnings.</p><p><b>For SaaS:</b> A fast-growing SaaS company might be valued at a multiple of 10x to 20x its ARR, which is equivalent to its P/S ratio if it were a public company.</p><p><b>Calculation:</b> P/S Ratio = Market Capitalization / Total Revenue</p><p><b>Base Term Example:</b> A SaaS startup with an ARR of ₹10 Crore is raising funds at a valuation of ₹100 Crore. It is being valued at a 10x ARR multiple, which is its effective P/S ratio.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-valuation', 'what-is-annual-recurring-revenue-arr'],
+        tier: 2
     },
     {
         term: 'Principal',
         definition: 'The original sum of money borrowed in a loan, or put into an investment.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Private Equity (PE)',
@@ -3271,17 +3778,25 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Pro Rata Rights',
         definition: '<p>Pro Rata Rights are a clause in a funding term sheet that gives an investor the right, but not the obligation, to participate in a company\'s subsequent funding rounds to maintain their ownership percentage.</p><p><b>Base Term for Startups:</b> For founders, granting pro rata rights is a standard part of venture capital deals. It allows your most supportive early investors to continue investing as you grow. However, it can also make it more complex to bring new investors into later rounds.</p><p><b>For Investors:</b> Pro rata rights are highly valuable. They ensure that if a portfolio company becomes very successful, the early investor is not diluted down to an insignificant stake and can "double down" on their winners.</p><p><b>Base Term Example:</b> An angel investor owns 5% of a startup after the seed round. The startup is now raising a Series A. The investor\'s pro rata right allows them to invest enough new money in the Series A to maintain their 5% ownership stake.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-dilution', 'what-is-pay-to-play-provision'],
+        tier: 2
     },
     {
         term: 'Product-Led Growth (PLG)',
         definition: '<p>Product-Led Growth (PLG) is a go-to-market strategy that relies on the product itself as the primary driver of customer acquisition, conversion, and expansion. In a PLG model, users can often sign up for a free trial or a freemium version of the product and experience its value before ever talking to a salesperson.</p><p><b>For Startups:</b> PLG can be a highly capital-efficient way to scale, as it can lead to a lower Customer Acquisition Cost (CAC) compared to traditional sales-led models. However, it requires a significant investment in product and engineering to create a seamless, self-service user experience.</p><p><b>For SaaS:</b> Many of the most successful modern SaaS companies (like Slack, Zoom, and Dropbox) have used a PLG strategy. The key is to have a product with a short time-to-value and natural network effects or virality.</p><p><b>Example:</b> A user signs up for the free version of a project management tool, invites their team, and after hitting a usage limit, decides to upgrade to a paid plan, all without interacting with a sales representative. This is PLG in action.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-go-to-market-gtm-strategy', 'what-is-sales-led-growth-slg'],
+        tier: 1
     },
     {
         term: 'Product-Market Fit',
         definition: 'The degree to which a product satisfies a strong market demand. Achieving product-market fit is the first key milestone for a startup.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Profit Margin',
@@ -3291,7 +3806,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Profitability Ratios',
         definition: '<p>Profitability Ratios are a class of financial metrics that are used to assess a business\'s ability to generate earnings relative to its revenue, operating costs, balance sheet assets, or shareholders\' equity over time. Key examples include Gross Profit Margin, Operating Profit Margin, and Net Profit Margin.</p><p><b>Base Term for Startups:</b> While early-stage startups are often unprofitable, investors will still scrutinize gross profit margin to ensure the core business model is sound. As the startup matures, the focus shifts towards operating and net profit margins.</p><p><b>Base Term for SaaS:</b> SaaS businesses typically have very high gross profit margins (80%+), but their operating profit margins may be negative for a long time due to heavy investment in R&D and Sales & Marketing.</p><p><b>Base Term Calculation:</b> Net Profit Margin = (Net Income / Revenue) * 100</p><p><b>Base Term Example:</b> A company with ₹1 Crore in revenue and a Net Income of ₹15 Lakhs has a Net Profit Margin of 15%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-gross-margin', 'what-is-operating-margin'],
+        tier: 2
     },
     {
         term: 'Promissory Note',
@@ -3301,7 +3820,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Proof of Concept (PoC)',
         definition: 'Evidence, typically derived from an experiment or pilot project, which demonstrates that a design concept, business proposal, or idea is feasible.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Prospectus',
@@ -3311,7 +3831,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Protective Provisions',
         definition: '<p>Protective Provisions are clauses in a startup\'s charter or financing documents that give preferred shareholders (investors) veto rights over certain major corporate actions, even if they don\'t have a majority of votes on the board.</p><p><b>Base Term for Startups:</b> These are standard in VC deals and are meant to protect the investors\' minority stake. However, founders should carefully review them to ensure they are not overly restrictive and do not impede the company\'s ability to operate.</p><p><b>Common Provisions:</b> Protective provisions typically cover actions like selling the company, issuing new shares that are senior to the investors\' shares, changing the size of the board, or taking on significant debt.</p><p><b>Base Term Example:</b> A term sheet includes a protective provision stating that the company cannot be sold without the approval of a majority of the preferred shareholders, giving the investors a crucial say in any exit scenario.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-shareholders-agreement', 'what-is-board-of-directors-composition'],
+        tier: 2
     },
     {
         term: 'Provident Fund (PF)',
@@ -3321,7 +3845,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Provision',
         definition: 'An amount set aside from profits in the accounts of an organization for a known liability, the timing or exact amount of which is uncertain.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Proxy Voting',
@@ -3348,7 +3873,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Quantitative Easing (QE)',
         definition: 'A monetary policy whereby a central bank buys government bonds or other financial assets in order to inject money into the economy.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Quarterly Return Monthly Payment (QRMP) Scheme',
@@ -3358,7 +3884,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Quota Attainment',
         definition: '<p>Quota Attainment is a sales performance metric that measures the percentage of a sales team or an individual salesperson that has achieved their sales quota within a specific period (e.g., a quarter or a year).</p><p><b>For Startups:</b> This metric is a crucial indicator of the health and predictability of a startup\'s sales function. If only a small percentage of the sales team is hitting their quota, it may indicate an unrealistic quota, a problem with the product, or a need for better sales training.</p><p><b>For Sales Leaders:</b> A common benchmark for a healthy sales team is to have 60-80% of reps achieving their quota. If the percentage is too high (e.g., 100%), it might mean the quotas are too low and the company is leaving growth on the table.</p><p><b>Calculation:</b> Quota Attainment % = (Number of Sales Reps Who Met or Exceeded Quota / Total Number of Sales Reps) * 100</p><p><b>Example:</b> In a sales team of 10 people, 7 of them hit their quarterly quota. The team\'s quota attainment for the quarter is 70%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-sales-pipeline'],
+        tier: 3
     },
     {
         term: 'Quorum',
@@ -3368,14 +3898,16 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Quotation',
         definition: 'A formal statement setting out the estimated cost for a particular job or service.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     
     // R
     {
         term: 'R&D (Research and Development)',
         definition: 'Activities companies undertake to innovate and introduce new products and services.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'RACI Matrix',
@@ -3385,7 +3917,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Real Estate Investment Trust (REIT)',
         definition: 'A company that owns, operates, or finances income-generating real estate. Modeled after mutual funds, REITs pool the capital of numerous investors.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Recapitalization',
@@ -3395,12 +3928,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Recession',
         definition: 'A significant, widespread, and prolonged downturn in economic activity. A common rule of thumb is two consecutive quarters of negative gross domestic product (GDP) growth.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Reconciliation',
         definition: 'An accounting process that compares two sets of records to check that figures are in agreement and are accurate.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Registrar and Transfer Agent (RTA)',
@@ -3430,7 +3965,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Retained Earnings',
         definition: 'The portion of a company\'s net income that is not distributed to shareholders as dividends but is reinvested in the business.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Return on Ad Spend (ROAS)',
@@ -3450,7 +3986,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Return on Equity (ROE)',
         definition: '<p>Return on Equity (ROE) is a financial performance metric that measures the profitability of a corporation in relation to the equity held by its shareholders. It indicates how effectively a company is using the money invested by its shareholders to generate profit.</p><p><b>For Startups:</b> While ROE is a standard metric for mature, profitable companies, it can be less meaningful for early-stage, unprofitable startups, as they will have a negative ROE. However, as a startup approaches profitability, tracking ROE becomes more relevant.</p><p><b>For Investors:</b> Investors use ROE to compare the profitability of different companies within the same industry. A consistently high ROE can be a sign of a strong competitive advantage or "moat".</p><p><b>Calculation:</b> ROE = (Net Income / Average Shareholder\'s Equity) * 100</p><p><b>Example:</b> A company with a net income of ₹20 Lakhs and average shareholder equity of ₹1 Crore has a Return on Equity of 20%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-return-on-assets-roa', 'what-is-return-on-investment-roi'],
+        tier: 2
     },
     {
         term: 'Return on Investment (ROI)',
@@ -3460,17 +4000,23 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Revenue',
         definition: 'The total amount of income generated by the sale of goods or services related to the company\'s primary operations.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Revenue from Operations',
         definition: 'The revenue generated from a company\'s main business activities, such as sales of goods or services.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Revenue Recognition',
         definition: '<p>Revenue Recognition is an accounting principle that specifies how and when revenue is to be recognized. Under the accrual basis of accounting, revenue is recognized when it is earned and realized, not necessarily when the cash is received.</p><p><b>For Startups:</b> Proper revenue recognition is crucial for accurate financial reporting and compliance. It is a key area of scrutiny during due diligence, and getting it wrong can lead to restatement of financials and loss of investor trust.</p><p><b>For SaaS:</b> For SaaS companies, this is particularly important. If a customer pays upfront for a one-year subscription, the revenue must be recognized on a straight-line basis over the 12 months of the contract. The unearned portion is recorded on the balance sheet as "deferred revenue."</p><p><b>Example:</b> A customer pays ₹1,20,000 on January 1st for an annual subscription. The company recognizes ₹10,000 as revenue each month from January to December.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-deferred-revenue', 'what-is-bookings-vs-revenue', 'what-is-accrual-basis-accounting'],
+        tier: 1
     },
     {
         term: 'Reverse Charge Mechanism (RCM)',
@@ -3500,7 +4046,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Right of First Refusal (ROFR)',
         definition: '<p>A Right of First Refusal (ROFR) is a contractual right that gives a specific party (usually the company or its major investors) the option to purchase shares from a selling shareholder before they are offered to any third party. The party with the ROFR must match the terms of the third-party offer.</p><p><b>Base Term for Startups:</b> ROFR is a standard clause in shareholder agreements. It gives the company and its key investors control over who can become a shareholder, preventing shares from being sold to unknown or potentially hostile parties.</p><p><b>Process:</b> A shareholder wanting to sell their shares must first obtain a bona fide offer from an external buyer. They must then present this offer to the ROFR holders, who have a set period (e.g., 30 days) to decide if they want to purchase the shares themselves at the same price and terms.</p><p><b>Base Term Example:</b> A founder wants to sell a portion of their shares. They get an offer from an outside buyer. The ROFR clause forces them to first offer those shares to the company\'s lead investor under the exact same terms.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-tag-along-rights', 'what-is-drag-along-rights'],
+        tier: 2
     },
     {
         term: 'Risk Management',
@@ -3515,7 +4065,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Robo-advisor',
         definition: 'Digital platforms that provide automated, algorithm-driven financial planning services with little to no human supervision.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'ROC Compliance for Board Meetings',
@@ -3535,12 +4086,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Royalty',
         definition: 'A payment made to the legal owner of a property, patent, copyrighted work, or franchise by those who wish to make use of it for the purposes of generating revenue.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Rule of 40',
         definition: '<p>The Rule of 40 is a popular benchmark for SaaS companies that balances growth and profitability. It states that a healthy SaaS company\'s growth rate plus its profit margin should be equal to or greater than 40%.</p><p><b>For Startups:</b> Early-stage startups are expected to be unprofitable, so they must have a very high growth rate to meet the Rule of 40. As the company matures, its growth will slow, and it will need to become more profitable.</p><p><b>For SaaS:</b> This metric forces founders to make strategic trade-offs between investing in growth (which reduces profit) and managing for profitability (which may slow growth).</p><p><b>Calculation:</b> Rule of 40 = Revenue Growth Rate (%) + EBITDA Margin (%)</p><p><b>Example:</b> A company growing at 60% with a -10% EBITDA margin has a Rule of 40 score of 50%, which is considered healthy.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-ebitda', 'what-is-saas-magic-number'],
+        tier: 2
     },
     {
         term: 'Run Rate',
@@ -3550,12 +4106,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Runway',
         definition: '<p>Runway is the amount of time (usually measured in months) that a company can continue to operate before it runs out of cash, assuming its current income and expenses remain constant. It is a critical survival metric for pre-profitable startups.</p><p><b>For Startups:</b> Founders need to constantly monitor their runway to know when they need to start their next fundraising round or take measures to reduce their burn rate. A healthy runway (typically 18-24 months after a funding round) provides the time needed to achieve key milestones.</p><p><b>For SaaS:</b> In SaaS, a significant churn event or a failure to close expected large deals can drastically shorten the runway, making careful cash flow forecasting essential.</p><p><b>Calculation:</b> Runway (in months) = Current Cash Balance / Monthly Net Burn Rate.</p><p><b>Example:</b> If a startup has ₹1 Crore in the bank and a net burn of ₹10 Lakhs per month, its runway is 10 months.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-burn-rate', 'what-is-net-burn-vs-gross-burn'],
+        tier: 1
     },
     {
         term: 'Runway Calculation',
         definition: '<p>Runway is the number of months a startup can survive before running out of money. It\'s the ultimate measure of a pre-profitability startup\'s viability and dictates the timeline for its next fundraising round.</p><p><b>For Startups:</b> For an early-stage startup, a runway of 18-24 months post-funding is considered healthy. This provides enough time to hit significant milestones before needing to raise more capital. A runway under 6 months is a critical danger zone.</p><p><b>For SaaS:</b> SaaS startups must factor in the timing of large annual renewals into their runway calculation. A single large churn event can dramatically shorten the runway unexpectedly.</p><p><b>Calculation:</b> Runway (in months) = Total Cash Balance / Monthly Net Burn</p><p><b>Example:</b> A startup with ₹2 Crore in the bank and a monthly Net Burn of ₹10 Lakhs has a runway of 20 months.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-burn-rate', 'what-is-net-burn-vs-gross-burn'],
+        tier: 1
     },
     
     // S
@@ -3572,67 +4136,102 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Sale and Leaseback',
         definition: 'A transaction in which the owner of an asset sells it and then leases it back from the new owner.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Sales Cycle Length',
         definition: '<p>Sales Cycle Length is the average amount of time it takes to close a deal, from the first point of contact with a prospect to the final signing of the contract. It is a key component of sales efficiency and revenue forecasting.</p><p><b>For Startups:</b> A long sales cycle can be a major drain on a startup\'s resources and cash flow. Shortening the sales cycle is a primary goal for many sales and marketing teams, as it accelerates revenue generation and improves capital efficiency.</p><p><b>For B2B/SaaS:</b> Sales cycles can vary dramatically, from a few days for a self-service product to over a year for a large enterprise deal. Tracking the average sales cycle helps in forecasting future revenue and managing the sales pipeline.</p><p><b>Calculation:</b> Sales Cycle Length = Total number of days to close all won deals / Number of won deals</p><p><b>Example:</b> If a company closed 3 deals that took 30, 60, and 90 days respectively, its average sales cycle length is 60 days.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-sales-velocity', 'what-is-sales-pipeline'],
+        tier: 2
     },
     {
         term: 'Sales Funnel',
         definition: 'A marketing concept that maps the journey a customer goes through when making any kind of purchase.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Sales Funnel Stages',
         definition: '<p>A sales funnel illustrates the journey a potential customer goes through, from initial awareness to making a purchase. The typical stages are Awareness, Interest, Consideration, Intent, Evaluation, and Purchase.</p><p><b>Base Term for Startups:</b> Understanding their sales funnel helps startups pinpoint where they are losing potential customers. By analyzing conversion rates between stages, founders can optimize their marketing and sales strategies to improve overall performance.</p><p><b>Base Term for SaaS:</b> For a PLG SaaS model, the funnel might look like: Website Visitor -> Free Trial Sign-up -> Activated User -> Converted to Paid Customer. Tracking the conversion rates at each stage is essential for growth.</p><p><b>Base Term Calculation:</b> Conversion Rate = (Number of users in Stage 2 / Number of users in Stage 1) * 100</p><p><b>Base Term Example:</b> If 1,000 visitors land on a SaaS pricing page (Interest) and 100 sign up for a demo (Consideration), the conversion rate between these two stages is 10%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-top-of-funnel-tofu', 'what-is-middle-of-funnel-mofu', 'what-is-bottom-of-funnel-bofu'],
+        tier: 2
     },
     {
         term: 'Sales Pipeline',
         definition: '<p>A sales pipeline is a visual representation of the stages a prospect goes through from being a lead to becoming a customer. It provides a systematic way for sales teams to track and manage their opportunities.</p><p><b>For Startups:</b> A well-defined sales pipeline is crucial for forecasting revenue and understanding the health of the sales process. It helps founders identify where deals are getting stuck and what resources are needed to move them forward.</p><p><b>For B2B/SaaS:</b> A typical B2B sales pipeline includes stages like Prospecting, Qualification (MQL/SQL), Demo, Proposal, Negotiation, and Closed-Won/Lost. Each stage will have a probability of closing associated with it, which is used to create a weighted pipeline forecast.</p><p><b>Example:</b> A CRM dashboard showing deals organized into different columns representing the sales stages is a visualization of a sales pipeline.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-sales-funnel', 'what-is-pipeline-coverage'],
+        tier: 2
     },
     {
         term: 'Sales Qualified Lead (SQL)',
         definition: '<p>A Sales Qualified Lead (SQL) is a prospective customer that has been researched and vetted by the sales team and is deemed ready for a direct sales follow-up. An SQL has moved beyond initial interest and has shown a clear intent to purchase.</p><p><b>For Startups:</b> Distinguishing between MQLs and SQLs is key to sales efficiency. It ensures that the sales team spends its valuable time on leads that have a high probability of closing, rather than wasting effort on unqualified prospects.</p><p><b>For B2B/SaaS:</b> The transition from MQL to SQL typically happens after a sales development representative (SDR) has had an initial conversation with the lead and has confirmed their need, budget, authority, and timeline (a framework often called BANT).</p><p><b>Example:</b> After a marketing team passes an MQL to sales, an SDR calls the lead, confirms they have a budget for the solution and are looking to make a decision in the next quarter. The SDR then converts the lead to an SQL and assigns it to an Account Executive.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-marketing-qualified-lead-mql', 'what-is-lead-to-customer-conversion-rate'],
+        tier: 2
     },
     {
         term: 'Sales Velocity',
         definition: '<p>Sales Velocity is a metric that measures how quickly deals are moving through your sales pipeline and generating revenue. It provides a holistic view of sales performance by considering four key factors: number of opportunities, average deal size, win rate, and sales cycle length.</p><p><b>For Startups:</b> Understanding and improving sales velocity is crucial for predictable revenue growth. By analyzing each component, a startup can identify bottlenecks in its sales process and take targeted actions to improve them.</p><p><b>For B2B SaaS:</b> This metric is particularly valuable for B2B companies with a defined sales process. It helps sales leaders forecast revenue more accurately and measure the impact of changes in their strategy.</p><p><b>Calculation:</b> Sales Velocity = (Number of Opportunities * Average Deal Value * Win Rate) / Length of Sales Cycle (in days)</p><p><b>Example:</b> A company with 100 opportunities, a ₹50,000 average deal size, a 20% win rate, and a 60-day sales cycle has a Sales Velocity of ₹16,667 per day.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-sales-cycle-length', 'what-is-sales-pipeline'],
+        tier: 2
     },
     {
         term: 'Sales-Led Growth (SLG)',
         definition: '<p>Sales-Led Growth (SLG) is a traditional go-to-market strategy where the sales team is the primary driver of customer acquisition and revenue growth. In this model, potential customers typically interact with a sales representative before they can access or purchase the product.</p><p><b>For Startups:</b> SLG is common for B2B startups selling high-value, complex products to enterprise customers. It often involves a longer sales cycle, higher Customer Acquisition Costs (CAC), but also leads to larger contract values (ACV).</p><p><b>For B2B SaaS:</b> A typical SLG motion involves Marketing generating leads (MQLs), Sales Development Reps (SDRs) qualifying them into opportunities (SQLs), and Account Executives (AEs) closing the deals. This contrasts with a Product-Led Growth (PLG) model.</p><p><b>Example:</b> A startup selling a complex cybersecurity software to large banks would use a Sales-Led Growth strategy, with a dedicated enterprise sales team building relationships and negotiating contracts.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-go-to-market-gtm-strategy', 'what-is-product-led-growth-plg'],
+        tier: 2
     },
     {
         term: 'Salvage Value',
         definition: 'The estimated resale value of an asset at the end of its useful life. It is subtracted from the cost of a fixed asset to determine the amount of the asset cost that will be depreciated.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'SaaS Magic Number',
         definition: '<p>The SaaS Magic Number is a metric used to measure the efficiency of a company\'s sales and marketing spend. It answers the question: for every rupee spent on S&M, how many rupees of new annual recurring revenue are generated?</p><p><b>For Startups:</b> It helps founders and investors understand if and when to increase sales and marketing spend. A Magic Number above 0.75 generally indicates that the GTM strategy is working and it\'s time to scale investment.</p><p><b>For SaaS:</b> This metric is particularly useful for B2B SaaS companies with a dedicated sales team, as it directly measures the productivity of that investment.</p><p><b>Calculation:</b> Magic Number = (Current Quarter\'s Revenue - Previous Quarter\'s Revenue) * 4 / Previous Quarter\'s S&M Spend</p><p><b>Example:</b> If a company grew revenue by ₹25 Lakhs in a quarter after spending ₹20 Lakhs on S&M, its Magic Number is (25*4)/20 = 5.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-rule-of-40', 'what-is-ltvcac-ratio'],
+        tier: 2
     },
     {
         term: 'SaaS Quick Ratio',
         definition: '<p>The SaaS Quick Ratio is a measure of a company\'s growth efficiency. It compares the revenue gained from new and expanding customers to the revenue lost from churned and downgrading customers.</p><p><b>For Startups:</b> It provides a quick snapshot of a SaaS company\'s health. A high ratio indicates sustainable, efficient growth, which is highly attractive to investors.</p><p><b>For SaaS:</b> A common benchmark is a Quick Ratio of 4 or higher, which means the company is adding at least ₹4 in new revenue for every ₹1 it loses.</p><p><b>Calculation:</b> Quick Ratio = (New MRR + Expansion MRR) / (Churned MRR + Contraction MRR)</p><p><b>Example:</b> A company adds ₹1 Lakh in new MRR and ₹20,000 in expansion, while losing ₹30,000 to churn. Its Quick Ratio is (100k + 20k) / 30k = 4.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-churn-rate', 'what-is-expansion-revenue'],
+        tier: 2
     },
     {
         term: 'Scalability',
         definition: 'The capability of a system, network, or process to handle a growing amount of work, or its potential to be enlarged to accommodate that growth.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Search Engine Optimization (SEO)',
         definition: 'The process of improving the quality and quantity of website traffic to a website or a web page from search engines.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'SEBI (Securities and Exchange Board of India)',
@@ -3642,7 +4241,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Secondary Sale',
         definition: '<p>A secondary sale is a transaction where an existing shareholder of a private company (like a founder, early employee, or early investor) sells their shares to another investor. This is different from a primary issuance, where the company itself sells new shares and receives the capital.</p><p><b>Base Term for Startups:</b> As startups stay private for longer, secondary sales have become more common. They provide a way for founders and early employees to get some personal liquidity before a full exit event like an IPO or acquisition.</p><p><b>For Investors:</b> Later-stage investors often facilitate secondary sales as part of a new funding round to "clean up the cap table" or provide some liquidity to the founders, allowing them to de-risk personally and focus on long-term growth.</p><p><b>Base Term Example:</b> As part of a Series C funding round, a new investor agrees to buy ₹5 Crore worth of shares directly from the company (primary) and also buys an additional ₹2 Crore worth of shares from the founders (secondary).</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'fundraising',
+        tier: 2
     },
     {
         term: 'Section 115BAA',
@@ -3702,7 +4304,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Seed Funding',
         definition: '<p>Seed funding is the first official equity funding stage. It typically follows a pre-seed or angel round and is the first money a startup raises from institutional investors (Venture Capital funds).</p><p><b>For Startups:</b> The goal of a seed round is to achieve product-market fit and build out the initial team. The amount raised is typically designed to provide 18-24 months of runway.</p><p><b>Fundraising:</b> To raise a seed round, a startup usually needs to show early traction in the form of a working product, initial customers, and some revenue. The process involves creating a pitch deck, building a financial model, and pitching to a curated list of seed-stage VCs.</p><p><b>Example:</b> A startup raises a ₹15 Crore seed round to hire its first 10 employees and acquire its first 1,000 paying customers.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-seed-round', 'what-is-pre-money-valuation'],
+        tier: 1
     },
     {
         term: 'Seed Round',
@@ -3712,7 +4318,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Sensex',
         definition: 'The benchmark index of the Bombay Stock Exchange (BSE) in India, comprising 30 of the largest and most actively-traded stocks.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'SGST (State Goods and Services Tax)',
@@ -3737,7 +4344,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Short Selling',
         definition: 'The sale of a security that is not owned by the seller, or that the seller has borrowed. Short selling is motivated by the belief that a security\'s price will decline.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Short-Term Capital Gains (STCG)',
@@ -3747,12 +4355,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Sinking Fund',
         definition: 'A fund containing money set aside or saved to pay off a debt or bond.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'SKU (Stock Keeping Unit)',
         definition: 'A unique code used to identify a specific product. Essential for inventory management in retail, e-commerce, and manufacturing.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Slab Rate',
@@ -3762,22 +4372,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Small and Medium-sized Enterprise (SME)',
         definition: 'A business whose personnel numbers, annual revenue, or assets fall below certain limits. The abbreviation SME is used by international organizations such as the World Bank, the European Union, the United Nations and the World Trade Organization (WTO).',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'SMB (Small and Medium-sized Business)',
         definition: 'Businesses whose revenue, assets, or number of employees fall below certain limits. A key segment for many SaaS and service companies.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Smart Contract',
         definition: 'A self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Socially Responsible Investing (SRI)',
         definition: 'An investment strategy that seeks to consider both financial return and social/environmental good to bring about social change.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Sole Proprietorship',
@@ -3797,7 +4411,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Spread',
         definition: 'The difference between the bid and the ask price of a security or asset.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Stamp Duty',
@@ -3807,22 +4422,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Standard Costing',
         definition: 'The practice of substituting an expected cost for an actual cost in the accounting records, and then periodically recording variances between the two.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Startup',
         definition: 'A young company founded by entrepreneurs to develop a unique product or service and bring it to market, with a business model that is typically not fully proven.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Startup India',
         definition: 'A flagship initiative of the Government of India, intended to build a strong eco-system for nurturing innovation and Startups in the country.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Statutory Audit',
         definition: 'A legally required review of the accuracy of a company\'s or government\'s financial records.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Stock Appreciation Rights (SARs)',
@@ -3832,7 +4451,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Stock Exchange',
         definition: 'A marketplace where securities, commodities, derivatives and other financial instruments are traded. The main stock exchanges in India are the NSE and BSE.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Stock Option',
@@ -3847,7 +4467,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Straight-Line Depreciation',
         definition: 'A method of calculating depreciation by dividing the difference between an asset\'s cost and its expected salvage value by the number of years it is expected to be used.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Strike Price',
@@ -3867,22 +4488,29 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Sunk Cost',
         definition: 'A cost that has already been incurred and cannot be recovered. Sunk costs should be ignored when making future business decisions.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Supply Chain Management (SCM)',
         definition: 'The management of the flow of goods and services, including all processes that transform raw materials into final products.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'SWOT Analysis',
         definition: 'A strategic planning technique used to help a person or organization identify Strengths, Weaknesses, Opportunities, and Threats related to business competition or project planning.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Switching Costs',
         definition: '<p>Switching Costs are the costs that a consumer incurs as a result of changing brands, suppliers, or products. These can be monetary (e.g., new license fees, data migration costs) or non-monetary (e.g., time spent learning a new system, loss of productivity).</p><p><b>Base Term for Startups:</b> Building a product with high switching costs is a powerful way to create customer "stickiness" and reduce churn. It creates a defensible moat against competitors.</p><p><b>Base Term for SaaS:</b> Enterprise SaaS products often have very high switching costs. Once a company has integrated a CRM like Salesforce into all its business processes and trained hundreds of employees on it, the cost and disruption of switching to a new CRM are enormous.</p><p><b>Base Term Example:</b> A design team that has built its entire workflow around Figma faces high switching costs to move to another design tool, as they would have to migrate all their files and retrain the team.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-defensibility-or-moat', 'what-is-churn-rate'],
+        tier: 2
     },
     {
         term: 'Syndicate',
@@ -3892,19 +4520,28 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Systematic Investment Plan (SIP)',
         definition: 'A plan that allows investors to invest a fixed amount of money at regular intervals in a mutual fund scheme.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     
     // T
     {
         term: 'Tag-Along Rights',
         definition: '<p>Tag-Along Rights, also known as co-sale rights, are a provision in a shareholders\' agreement that protects minority shareholders. If a majority shareholder sells their stake, this right allows the minority shareholders to join the deal and sell their shares at the same price and terms.</p><p><b>Base Term for Startups:</b> This right is important for early employees or angel investors. It ensures that if the founders decide to sell their shares and exit, the minority shareholders are not left behind with an illiquid stake in a company now controlled by a new, unknown party.</p><p><b>For Founders:</b> While this is a standard right to grant, founders should ensure it is structured in a way that doesn\'t overly complicate a potential secondary sale of their shares.</p><p><b>Base Term Example:</b> A founder who owns 40% of the company gets an offer to sell their shares to another firm. The tag-along rights allow an early employee with a 2% stake to "tag along" and sell their 2% stake as part of the same transaction.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Seed',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-drag-along-rights', 'what-is-right-of-first-refusal-rofr'],
+        tier: 2
     },
     {
         term: 'Take Rate',
         definition: '<p>Take Rate is a key metric for marketplace businesses (like e-commerce platforms, aggregators, or gig economy platforms). It represents the percentage of Gross Merchandise Value (GMV) that the platform "takes" as its own revenue.</p><p><b>For Startups:</b> The take rate is a direct measure of a marketplace\'s monetization strategy. A higher take rate means the platform is capturing more value from the transactions it facilitates. However, setting it too high can discourage sellers or service providers from using the platform.</p><p><b>For Marketplaces:</b> Optimizing the take rate is a delicate balancing act. It involves demonstrating enough value to both sides of the marketplace (buyers and sellers) to justify the fee. Investors will closely scrutinize the take rate to understand the platform\'s pricing power and long-term profitability.</p><p><b>Calculation:</b> Take Rate = (Platform Revenue / Gross Merchandise Value) * 100</p><p><b>Example:</b> An e-commerce marketplace facilitates ₹1 Crore in sales (GMV) in a month and earns ₹10 Lakhs in commissions and fees. Its take rate is 10%.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-gross-merchandise-value-gmv', 'what-is-revenue'],
+        tier: 2
     },
     {
         term: 'TAN (Tax Deduction and Collection Account Number)',
@@ -3914,12 +4551,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Tangible Asset',
         definition: 'An asset that has a physical form. Tangible assets include things like machinery, buildings, and land.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Target Market',
         definition: 'A particular group of consumers at which a product or service is aimed.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Tariff',
@@ -3969,7 +4608,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Tax Haven',
         definition: 'A country or independent area where taxes are levied at a low rate.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Tax Rebate',
@@ -4049,7 +4689,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Terminal Value in DCF',
         definition: '<p>Terminal Value (TV) is a component of a Discounted Cash Flow (DCF) valuation that represents the estimated value of a business for all the years beyond the explicit forecast period (typically 5-10 years). Since it\'s impossible to forecast cash flows forever, TV is used to capture the value of the company into perpetuity.</p><p><b>For Startups:</b> In a startup valuation, the Terminal Value often accounts for a very large portion (sometimes over 75%) of the total company value. This is because most of a startup\'s value is expected to be realized in the long term, after it has achieved scale.</p><p><b>For Valuation:</b> There are two common methods to calculate TV: the Gordon Growth Model (Perpetuity Growth Method) and the Exit Multiple Method.</p><p><b>Calculation (Gordon Growth):</b> TV = (Final Year\'s Free Cash Flow * (1 + Perpetual Growth Rate)) / (Discount Rate - Perpetual Growth Rate)</p><p><b>Example:</b> A model projects cash flows for 5 years and then calculates a Terminal Value to represent the value of the business from year 6 onwards.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        relatedServiceSlug: 'fundraising',
+        comparisonSlugs: ['what-is-discounted-cash-flow-dcf', 'what-is-discount-rate-in-dcf'],
+        tier: 3
     },
     {
         term: 'Term Loan',
@@ -4064,22 +4708,34 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Three Financial Statements',
         definition: '<p>The three core financial statements provide a complete picture of a company\'s financial health. They are the Income Statement, the Balance Sheet, and the Cash Flow Statement.</p><p><b>For Startups:</b> Investors require all three statements for due diligence. The Income Statement shows profitability, the Balance Sheet provides a snapshot of assets and liabilities, and the Cash Flow Statement reveals how cash is moving through the company—often the most critical of the three for a startup.</p><p><b>For SaaS:</b> Accrual-based accounting is essential. The Balance Sheet will show Deferred Revenue as a liability, and the Cash Flow Statement will show the actual cash collected from customers, which can differ significantly from the revenue recognized on the Income Statement.</p><p><b>Example:</b> A SaaS startup may be profitable on its Income Statement but have negative cash flow because it\'s investing heavily in growth.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-income-statement', 'what-is-balance-sheet', 'what-is-cash-flow-statement'],
+        tier: 1
     },
     {
         term: 'Top Line',
         definition: 'Refers to a company\'s gross sales or revenues. It is called the top line because it is displayed at the top of the income statement.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Top-Down vs Bottom-Up Forecasting',
         definition: '<p>These are two methods for building a financial forecast. A top-down approach starts with the total market size (TAM) and estimates a percentage the company can capture. A bottom-up approach builds the forecast based on internal drivers like sales team capacity, marketing spend, and conversion rates.</p><p><b>For Startups:</b> While a top-down analysis is useful for showing the market potential, investors will only believe a bottom-up forecast. A bottom-up model demonstrates that the founder has a deep, operational understanding of how to achieve their revenue goals.</p><p><b>Example:</b> A top-down forecast might say "We will capture 1% of a ₹1000 Crore market." A bottom-up forecast would say "We will hire 5 salespeople who can each close 10 deals a month at an average contract value of ₹50,000."</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'pitch-deck-financial-modelling',
+        comparisonSlugs: ['what-is-total-addressable-market-tam', 'what-is-financial-model'],
+        tier: 2
     },
     {
         term: 'Top of Funnel (TOFU)',
         definition: '<p>Top of Funnel (TOFU) refers to the initial stage of the buyer\'s journey or sales funnel. At this stage, potential customers are just becoming aware of a problem or a need and are beginning their search for information. Marketing efforts at this stage are focused on attracting a wide audience.</p><p><b>Base Term for Startups:</b> TOFU marketing is about building brand awareness and generating leads. Common tactics include blog posts, social media content, infographics, and educational webinars. The goal is not to sell, but to attract and educate.</p><p><b>Base Term for SaaS/B2B:</b> A typical TOFU goal for a SaaS company is to get a potential customer to download a whitepaper or sign up for a newsletter in exchange for their email address, thus converting an anonymous visitor into a known lead.</p><p><b>Base Term Example:</b> A startup writes a blog post titled "The Ultimate Guide to SaaS Metrics." This content is designed to attract founders who are searching for this topic, bringing them to the top of the startup\'s marketing funnel.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        comparisonSlugs: ['what-is-middle-of-funnel-mofu', 'what-is-bottom-of-funnel-bofu'],
+        tier: 2
     },
     {
         term: 'Total Addressable Market (TAM)',
@@ -4094,7 +4750,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Trade Credit',
         definition: 'An arrangement where a customer can purchase goods on account (without paying cash), paying the supplier at a later date.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Trademark',
@@ -4109,22 +4766,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Treasury Bill (T-Bill)',
         definition: 'A short-term debt obligation backed by the government with a maturity of less than one year.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Trial Balance',
         definition: 'A bookkeeping worksheet in which the balance of all ledgers is compiled into debit and credit account column totals that are equal. It is used to check for arithmetic errors.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Turnkey Solution',
         definition: 'A type of product or service that is designed, supplied, built, or installed fully complete and ready to operate.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Turnover',
         definition: 'The total sales made by a business in a certain period. Also known as revenue or gross income.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     
     // U
@@ -4136,12 +4797,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Unicorn',
         definition: 'A privately held startup company with a value of over $1 billion.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Unit Economics',
         definition: '<p>Unit economics are the direct revenues and costs associated with a particular business model, expressed on a per-unit basis. The "unit" can be a customer, a product, or any other measurable item.</p><p><b>For Startups:</b> Understanding unit economics is fundamental to proving that a business model is viable and scalable. Even if a startup is currently unprofitable overall, it must be able to demonstrate positive unit economics to attract investment.</p><p><b>For SaaS:</b> The most common unit economics for a SaaS business are the Customer Lifetime Value (LTV) and the Customer Acquisition Cost (CAC). A positive unit economic model means that the LTV is significantly greater than the CAC.</p><p><b>Example:</b> A D2C brand\'s unit is a single product sold. Its unit economics would be the selling price minus all variable costs, including the cost of goods, shipping, and marketing per unit.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-ltvcac-ratio', 'what-is-contribution-margin'],
+        tier: 1
     },
     {
         term: 'Unit Economics for Seed Startups',
@@ -4151,7 +4817,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Unrealized Gain/Loss',
         definition: 'A profit or loss that has occurred on paper but the transaction has not been completed, so the gain or loss is not yet actual.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
     {
         term: 'Unsecured Loan',
@@ -4166,22 +4833,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'User Acceptance Testing (UAT)',
         definition: 'The last phase of the software testing process. During UAT, actual software users test the software to make sure it can handle required tasks in real-world scenarios.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'User Experience (UX)',
         definition: 'The overall experience of a person using a product, especially a website or computer application, regarding how easy or pleasing it is to use.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'User Interface (UI)',
         definition: 'The means by which the user and a computer system interact, in particular the use of input devices and software.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 2
     },
     {
         term: 'Utility Token',
         definition: 'A digital token of cryptocurrency that is issued in order to fund development of the cryptocurrency and that can be later used to purchase a good or service offered by the issuer of the cryptocurrency.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'UTGST (Union Territory Goods and Services Tax)',
@@ -4208,12 +4879,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Value Investing',
         definition: 'An investment strategy that involves picking stocks that appear to be trading for less than their intrinsic or book value.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Value Proposition',
         definition: 'A promise of value to be delivered, communicated, and acknowledged. It is also a belief from the customer about how value will be delivered, experienced, and acquired.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 1
     },
     {
         term: 'Vanity Metric',
@@ -4223,12 +4896,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Variable Cost',
         definition: 'A corporate expense that changes in proportion to production output. Variable costs increase or decrease depending on a company\'s production volume.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Variable Costs vs Fixed Costs',
         definition: '<p>Fixed costs are expenses that do not change with the level of production or sales (e.g., rent, salaries). Variable costs are expenses that fluctuate directly with production or sales volume (e.g., raw materials, shipping).</p><p><b>For Startups:</b> Understanding this distinction is key to calculating the contribution margin and breakeven point. A high ratio of variable to fixed costs can mean lower risk but also lower operating leverage.</p><p><b>For SaaS:</b> For a pure SaaS business, variable costs are typically low (e.g., server costs, payment gateway fees), leading to very high gross margins. For a hardware startup, variable costs (cost of goods sold) are much higher.</p><p><b>Example:</b> For a D2C brand, the cost of the product is a variable cost, while the rent for its office is a fixed cost.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'bookkeeping',
+        comparisonSlugs: ['what-is-fixed-costs', 'what-is-contribution-margin', 'what-is-breakeven-analysis'],
+        tier: 1
     },
     {
         term: 'Venture Capital (VC)',
@@ -4248,7 +4926,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Vertical Integration',
         definition: 'A strategy where a company owns or controls its suppliers, distributors, or retail locations to control its value or supply chain.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Vesting',
@@ -4258,7 +4937,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Vesting Cliff',
         definition: '<p>A vesting "cliff" is a period at the beginning of a stock option vesting schedule during which no shares are earned. If an employee leaves the company before the cliff period is over, they forfeit all of their granted options. Once the cliff is passed, a large chunk of the options vests at once.</p><p><b>Base Term for Startups:</b> The cliff is a crucial mechanism to protect startups from "drive-by" equity grants, where an employee joins, receives a large stock option grant, and then leaves after only a few months, taking a chunk of equity with them.</p><p><b>Standard Terms:</b> The most common structure in the startup world is a 1-year cliff on a 4-year vesting schedule. This means the employee earns 0% of their options for the first 12 months. On their one-year anniversary, 25% of their total options vest instantly. The remaining 75% then typically vest monthly over the next 36 months.</p><p><b>Base Term Example:</b> An employee with a 1-year cliff leaves after 11 months. They walk away with zero vested options. If they leave after 13 months, they are vested in 25% plus one month\'s worth of their grant.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'corporate-law',
+        comparisonSlugs: ['what-is-vesting', 'what-is-founder-vesting-schedule'],
+        tier: 1
     },
     {
         term: 'Vesting Schedule',
@@ -4268,7 +4951,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Viral Coefficient (K-factor)',
         definition: '<p>The Viral Coefficient, or K-factor, is a metric that measures the organic, word-of-mouth growth of a product. It represents the number of new users that each existing user successfully invites or refers.</p><p><b>Base Term for Startups:</b> A K-factor greater than 1.0 indicates exponential viral growth, which is the holy grail for consumer apps and product-led startups. It means the user base is growing on its own without paid marketing spend.</p><p><b>Base Term for SaaS/Consumer Tech:</b> This is often engineered into the product through features like "Invite a teammate" or referral programs that reward users for bringing in new customers.</p><p><b>Calculation:</b> K = (Number of invites sent per user) * (Conversion rate of invites)</p><p><b>Base Term Example:</b> If each user of a new app invites 5 friends on average, and 25% of those friends sign up, the K-factor is 5 * 0.25 = 1.25. This means every user brings in 1.25 new users, leading to viral growth.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'Growth',
+        comparisonSlugs: ['what-is-product-led-growth-plg', 'what-is-network-effects'],
+        tier: 2
     },
     {
         term: 'Virtual CFO (vCFO)',
@@ -4278,7 +4964,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Volatility',
         definition: 'A statistical measure of the dispersion of returns for a given security or market index. In most cases, the higher the volatility, the riskier the security.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     
     // W
@@ -4295,7 +4982,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Waterfall Model',
         definition: 'A breakdown of the sequential design process, used in software development processes, in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, deployment and maintenance.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Weighted Average Cost of Capital (WACC)',
@@ -4310,22 +4998,26 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'White Paper',
         definition: 'An authoritative report or guide that informs readers concisely about a complex issue and presents the issuing body\'s philosophy on the matter.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Whitelist',
         definition: 'A list of items or people that are granted access to a certain system or protocol. In crypto, it is often used for presales of tokens.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Wholesale Banking',
         definition: 'The provision of services by banks to larger customers or organizations such as mortgage brokers, large corporations, and other banks.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Wireframe',
         definition: 'A visual guide that represents the skeletal framework of a website or application. It has three main components: information design, navigation design, and interface design.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Withholding Tax',
@@ -4335,12 +5027,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Working Capital',
         definition: '<p>Working capital is a measure of a company\'s short-term liquidity and operational efficiency. It is the difference between a company\'s current assets (like cash, accounts receivable, and inventory) and its current liabilities (like accounts payable and short-term debt).</p><p><b>For Startups:</b> Managing working capital is crucial for survival. A positive working capital means a company can cover its short-term liabilities. A negative working capital can signal a looming cash flow crisis, especially for businesses that hold inventory.</p><p><b>For SaaS:</b> SaaS businesses often have a negative working capital cycle because they collect cash upfront from annual subscriptions (creating deferred revenue, a liability) but have low immediate costs. This is a healthy sign and a major advantage of the SaaS model.</p><p><b>Calculation:</b> Working Capital = Current Assets - Current Liabilities.</p><p><b>Example:</b> A company with ₹50 Lakhs in current assets and ₹30 Lakhs in current liabilities has a working capital of ₹20 Lakhs.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-working-capital-cycle', 'what-is-current-ratio'],
+        tier: 1
     },
     {
         term: 'Working Capital Cycle',
         definition: '<p>The working capital cycle (also known as the cash conversion cycle) is the time it takes for a company to convert its investments in inventory and other resources into cash. It measures the liquidity and operational efficiency of a business.</p><p><b>For Startups:</b> For businesses that hold inventory (like D2C or hardware), managing the working capital cycle is critical. A long cycle can tie up significant capital, even for a profitable business, creating a cash flow crisis.</p><p><b>Calculation:</b> Cycle = Days Inventory Outstanding + Days Sales Outstanding - Days Payable Outstanding</p><p><b>Example:</b> A D2C brand takes 60 days to sell inventory, 3 days to receive payment, and has 30 days to pay its suppliers. Its working capital cycle is 33 days.</p>',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        stageRelevance: 'All Stages',
+        relatedServiceSlug: 'virtual-cfo',
+        comparisonSlugs: ['what-is-working-capital', 'what-is-cash-conversion-cycle-ccc'],
+        tier: 2
     },
     {
         term: 'Workout',
@@ -4350,29 +5050,34 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Write-down',
         definition: 'Reducing the book value of an asset because it is overvalued compared to the market value.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 3
     },
     {
         term: 'Write-off',
         definition: 'Reducing the value of an asset to zero and removing it from the balance sheet entirely.',
-        cluster: 'Accounting & Bookkeeping'
+        cluster: 'Accounting & Bookkeeping',
+        tier: 2
     },
 
     // Y
     {
         term: 'Yield',
         definition: 'The income return on an investment, such as the interest or dividends received from holding a particular security.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Yield Curve',
         definition: 'A line that plots the interest rates, at a set point in time, of bonds having equal credit quality but differing maturity dates.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     {
         term: 'Yield to Maturity (YTM)',
         definition: 'The total return anticipated on a bond if the bond is held until it matures.',
-        cluster: 'Startup Finance Fundamentals'
+        cluster: 'Startup Finance Fundamentals',
+        tier: 3
     },
     
     // Z
@@ -4404,6 +5109,7 @@ export const GLOSSARY_DATA_BY_CLUSTER = ALL_GLOSSARY_TERMS.reduce((acc, item) =>
     acc[cluster].push(item);
     return acc;
 }, {} as Record<string, GlossaryTerm[]>);
+
 
 
 
