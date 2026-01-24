@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Inter', sans-serif;
-}
-
 @layer base {
   :root {
     --background: 30 100% 98%; /* #FFF9F5 */
@@ -83,6 +79,31 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+  
+  .prose {
+    @apply text-foreground/90 max-w-none;
+  }
+  .prose h1, .prose h2, .prose h3 {
+    @apply font-bold text-primary;
+  }
+  .prose h4, .prose h5, .prose h6 {
+    @apply font-semibold text-primary;
+  }
+  .prose a {
+    @apply text-accent hover:underline;
+  }
+  .prose strong {
+    @apply text-foreground font-semibold;
+  }
+  .prose blockquote {
+    @apply border-accent;
+  }
+  .prose ul > li::before {
+    @apply bg-muted-foreground;
   }
 }

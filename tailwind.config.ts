@@ -22,9 +22,8 @@ export default {
         'container-padding': `-${containerPadding}`
       },
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        sans: ['Inter', 'sans-serif'],
+        headline: ['Sora', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
