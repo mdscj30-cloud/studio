@@ -36,7 +36,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Accelerated Depreciation',
-        definition: 'A method of depreciation that allows for larger deductions in the early years of an asset\'s life and smaller deductions in later years.',
+        definition: '<p>Accelerated Depreciation is an accounting method that allows a company to write off a larger portion of a tangible asset\'s cost in the early years of its useful life and smaller amounts in later years. This contrasts with straight-line depreciation, where the cost is spread evenly over the asset\'s life.</p><p><b>For Startups:</b> For a capital-intensive startup (e.g., in manufacturing or hardware), using accelerated depreciation can be a tax planning strategy. By front-loading depreciation expenses, the startup can reduce its taxable income in the initial years, thereby preserving cash when it is most needed. However, this also means lower depreciation expenses and higher taxable income in later years.</p><p><b>Example:</b> A startup buys machinery for ₹10 Lakhs. Using an accelerated method, it might claim ₹4 Lakhs in depreciation in Year 1, as opposed to ₹1 Lakh under a 10-year straight-line method. This significantly lowers its Year 1 taxable profit.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'Growth',
         relatedServiceSlug: 'bookkeeping',
@@ -54,43 +54,43 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Accountant',
-        definition: 'A professional who performs accounting functions such as analysis of financial records, audits, or financial statement analysis.',
+        definition: '<p>An accountant is a professional responsible for interpreting, analyzing, and reporting on a company\'s financial data. While a bookkeeper records daily transactions, an accountant uses that data to create financial statements, manage tax compliance, and provide strategic financial insights. They play a crucial role in ensuring a company\'s financial records are accurate and comply with legal standards.</p><p><b>For Startups:</b> Founders often wear many hats, but being an accountant shouldn\'t be one of them for long. A good accountant provides the financial clarity needed to make informed decisions about pricing, budgeting, and growth. They also ensure the startup is compliant with complex tax laws, which is critical for avoiding penalties and being investor-ready. An accountant acts as a bridge between the raw financial data and the strategic decisions the founder needs to make.</p><p><b>Example:</b> At the end of the quarter, an accountant analyzes the startup\'s financial data to prepare an MIS report for the board, highlighting key trends in revenue, expenses, and profitability.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Accounting',
-        definition: 'The systematic recording, reporting, and analysis of financial transactions of a business.',
+        definition: '<p>Accounting is the high-level process of summarizing, analyzing, and reporting a company\'s financial transactions to provide insights for decision-making. Unlike bookkeeping, which focuses on daily recording, accounting interprets this data to create financial statements like the Income Statement and Balance Sheet.</p><p><b>For Startups:</b> For startups, accounting is not just about compliance; it\'s about storytelling. It translates your business activities into a financial narrative that investors, lenders, and management can understand. Good accounting helps answer critical questions like "Are we profitable?", "What is our burn rate?", and "Can we afford to hire?". It moves beyond just tracking money to providing a strategic overview of financial health.</p><p><b>Example:</b> A bookkeeper records a new annual software subscription payment. The accountant then ensures this payment is recognized as revenue monthly over the year (accrual accounting), providing a true picture of the company\'s performance rather than a one-time cash spike.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Accounting Cycle',
-        definition: 'The collective process of identifying, analyzing, and recording the accounting events of a company. It is a standard 8-step process that begins when a transaction occurs and ends with its inclusion in the financial statements.',
+        definition: '<p>The Accounting Cycle is a standard, eight-step process that a company repeats each accounting period to identify, analyze, and record its financial transactions. It ensures that the financial statements are prepared consistently and accurately. The cycle begins with the initial recording of a transaction and ends with the closing of the books for that period.</p><p><b>For Startups:</b> Understanding the accounting cycle is crucial for implementing a robust financial system. Automating these steps with cloud accounting software is key for startups to maintain accurate records without a large in-house finance team. It provides a reliable rhythm for financial reporting, whether monthly or quarterly, which is essential for monitoring performance and reporting to investors.</p><p><b>The 8 Steps:</b> 1) Identifying Transactions, 2) Recording in a Journal, 3) Posting to the General Ledger, 4) Unadjusted Trial Balance, 5) Adjusting Entries, 6) Adjusted Trial Balance, 7) Financial Statements, 8) Closing Entries.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Accounting Equation',
-        definition: 'The fundamental formula of accounting: Assets = Liabilities + Equity. It forms the foundation of the balance sheet.',
+        definition: '<p>The Accounting Equation is the fundamental principle upon which double-entry bookkeeping and the balance sheet are built. The equation is: <b>Assets = Liabilities + Equity</b>. It signifies that a company\'s total assets are financed by either borrowing money from others (liabilities) or through the funds provided by its owners (equity).</p><p><b>For Startups:</b> For a startup founder, this equation is the bedrock of financial understanding. Every transaction, from buying a laptop to receiving investor funding, must keep this equation in balance. It provides a logical framework for understanding how financial events impact the company\'s overall position. During due diligence, investors will scrutinize the balance sheet to ensure this equation holds true, and any discrepancy is a major red flag.</p><p><b>Example:</b> A startup raises ₹1 Crore in funding. Its Cash (Asset) increases by ₹1 Crore, and its Shareholder\'s Equity also increases by ₹1 Crore, keeping the equation in balance.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Accounting Period',
-        definition: 'The time period over which financial statements are prepared, such as a month, quarter, or year.',
+        definition: '<p>An Accounting Period is a specific span of time over which a company\'s financial statements are prepared. The goal is to provide stakeholders with a regular, consistent look at the company\'s performance. Common accounting periods are a month, a quarter (three months), or a full financial year.</p><p><b>For Startups:</b> While the mandatory accounting period for tax and corporate law compliance in India is the financial year (April 1st to March 31st), most startups operate on a monthly accounting period. This allows founders and investors to track key metrics like Monthly Recurring Revenue (MRR) and burn rate more frequently, enabling faster, more agile decision-making. Monthly financial reports are a standard requirement for venture-backed startups.</p><p><b>Example:</b> A SaaS startup closes its books at the end of each calendar month to generate a P&L statement, which shows its revenue and expenses for that specific month.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Accounting Standard (AS)',
-        definition: 'A set of principles and guidelines for financial accounting and reporting, issued by the Institute of Chartered Accountants of India (ICAI). Applicable to certain classes of companies.',
+        definition: '<p>Accounting Standards (AS) are a set of authoritative principles and guidelines for financial accounting and reporting in India, issued by the Institute of Chartered Accountants of India (ICAI). They dictate how transactions should be recorded, measured, and presented in the financial statements, ensuring consistency and comparability across different companies.</p><p><b>For Startups:</b> While larger or listed companies are required to follow the more complex Indian Accounting Standards (Ind AS), most startups fall under the purview of the simpler Accounting Standards (AS). Adhering to these standards is not optional; it is a legal requirement. Compliance ensures that a startup\'s financial statements are credible and will stand up to the scrutiny of an audit or investor due diligence.</p><p><b>Example:</b> Accounting Standard 9 (AS 9) on Revenue Recognition provides specific rules on when a company can record revenue, which is especially critical for SaaS startups with subscription models.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Accounts Payable (AP)',
-        definition: 'The amount of money a company owes to its suppliers for goods and services purchased on credit.',
+        definition: '<p>Accounts Payable (AP), or "Payables," represents the money a company owes to its suppliers and vendors for goods or services that it has received but not yet paid for. It is recorded as a current liability on the company\'s balance sheet.</p><p><b>For Startups:</b> Managing Accounts Payable is a critical part of working capital management. By negotiating favorable payment terms with suppliers (e.g., paying in 45 or 60 days instead of 30), a startup can effectively use its suppliers\' money as a short-term, interest-free loan. This strategy, known as "stretching payables," can significantly improve a company\'s cash flow. However, paying suppliers too late can damage relationships and disrupt the supply chain.</p><p><b>Example:</b> A D2C startup receives ₹50,000 worth of packaging materials from a supplier on credit. This amount is recorded as an increase in Accounts Payable until the invoice is paid.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -105,7 +105,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Accounts Receivable (AR)',
-        definition: 'The amount of money owed to a company by its customers for goods and services sold on credit.',
+        definition: '<p>Accounts Receivable (AR), or "Receivables," is the money owed to a company by its customers for goods or services that have been delivered but not yet paid for. It is recorded as a current asset on the company\'s balance sheet.</p><p><b>For Startups:</b> Managing Accounts Receivable is vital for cash flow. For B2B startups that sell to large enterprises, payment cycles can be long (60-90 days), tying up significant amounts of cash. A high AR balance means the startup has revenue on paper but not cash in the bank, which can lead to a working capital crisis. Efficiently collecting receivables is a key finance function.</p><p><b>Example:</b> A software development agency completes a project for a client and sends an invoice for ₹5 Lakhs with a 30-day payment term. This ₹5 Lakhs is recorded as Accounts Receivable until the client pays the invoice.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -124,7 +124,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Accrual Basis Accounting',
-        definition: 'An accounting method where revenue or expenses are recorded when a transaction occurs rather than when payment is received or made. This is the standard for most businesses.',
+        definition: '<p>Accrual Basis Accounting is a method where revenue and expenses are recorded when they are earned or incurred, regardless of when cash is actually exchanged. This contrasts with cash-basis accounting, which only records transactions when money changes hands. Accrual accounting provides a more accurate picture of a company\'s financial performance and position over a specific period.</p><p><b>For Startups:</b> In India, it is mandatory for all companies to follow the accrual basis of accounting. It is also the only method accepted by investors. It is crucial for correctly calculating key SaaS metrics like MRR and for managing deferred revenue, which are fundamental to a subscription business model.</p><p><b>Example:</b> A startup signs an annual contract worth ₹1,20,000 in January and receives the full payment upfront. Under accrual accounting, it recognizes only ₹10,000 as revenue each month, even though it received all the cash in January.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'bookkeeping',
@@ -133,25 +133,25 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Accrued Expense',
-        definition: 'An expense that has been incurred but not yet paid. It is recorded as a liability on the balance sheet.',
+        definition: '<p>An Accrued Expense is an expense that a business has incurred during a period but has not yet paid for or received an invoice for. To comply with the accrual accounting principle, these expenses must be recorded in the period they occur, not when they are paid. They are recorded as a current liability on the balance sheet.</p><p><b>For Startups:</b> Accruing for expenses is crucial for an accurate picture of profitability. A common accrued expense for startups is employee salaries. If the accounting period ends on December 31st, but salaries for December are paid on January 5th, the salary expense must be "accrued" and recorded in the December financial statements.</p><p><b>Example:</b> A company receives electricity for the month of March, but the bill doesn\'t arrive until April. The company must estimate the March electricity cost and record it as an accrued expense in its March financial statements.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Accrued Interest',
-        definition: 'Interest that has been earned on a loan or investment but has not yet been paid or received.',
+        definition: '<p>Accrued Interest is the amount of interest that has been earned on a loan or investment but has not yet been paid or received. In accounting, this interest must be recorded in the period it is earned, in line with the accrual principle.</p><p><b>For Startups:</b> For a startup that has taken a loan (like venture debt), the interest expense accrues daily, even if the payment is made monthly or quarterly. The accounting records must reflect this daily accrual to show the true interest liability on the balance sheet at any given point.</p><p><b>Example:</b> A startup has a loan with a monthly interest payment of ₹30,000 due on the 1st of the next month. At the end of the current month, it will record ₹30,000 as an accrued interest expense, even though the cash has not yet been paid.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Accrued Revenue',
-        definition: 'Revenue that has been earned by providing a good or service, but for which no cash has been received.',
+        definition: '<p>Accrued Revenue is revenue that a company has earned by providing goods or services, but for which it has not yet billed the customer or received payment. It is recorded as a current asset (a type of receivable) on the balance sheet to reflect the money the company is entitled to receive.</p><p><b>For Startups:</b> This is common in service-based startups or those working on long-term projects. If a project milestone is completed at the end of a month but the invoice is only sent in the next month, the revenue for that milestone must be "accrued" in the current month to accurately reflect the company\'s performance.</p><p><b>Example:</b> A consulting startup completes a phase of a project worth ₹2 Lakhs in March. They will bill the client in April. They must record ₹2 Lakhs as accrued revenue in their March financial statements to show it was earned in that period.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Accumulated Depreciation',
-        definition: 'The cumulative depreciation of an asset up to a single point in its life. It is a contra-asset account, meaning its natural balance is a credit.',
+        definition: '<p>Accumulated Depreciation is the total amount of depreciation expense that has been recorded for a tangible asset since it was put into use. It is a "contra-asset" account, meaning it has a credit balance and is paired with the asset account on the balance sheet to reduce its value. The net result is the asset\'s "book value".</p><p><b>For Startups:</b> Tracking accumulated depreciation is a fundamental accounting requirement. It provides a way to see how much of an asset\'s value has been "used up" over time. For a startup with significant hardware or equipment, this account is crucial for accurately representing the value of its assets on the balance sheet.</p><p><b>Example:</b> A startup buys a server for ₹5 Lakhs. Each year, it records ₹1 Lakh in depreciation expense. After three years, the Accumulated Depreciation account will have a balance of ₹3 Lakhs, and the server\'s book value will be ₹2 Lakhs (₹5L - ₹3L).</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -206,7 +206,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Amortization',
-        definition: 'The practice of spreading an intangible asset\'s cost over the asset\'s useful life. Similar to depreciation for tangible assets.',
+        definition: '<p>Amortization is an accounting technique used to periodically lower the book value of an intangible asset over a set period of time. It is the equivalent of depreciation for tangible assets. Intangible assets that are amortized include patents, copyrights, trademarks, and goodwill.</p><p><b>For Startups:</b> For a tech startup, the cost of acquiring a patent is a significant intangible asset. Instead of expensing the entire cost at once, it is amortized over the patent\'s legal life. This correctly matches the cost of the asset to the periods in which it generates economic benefits for the company.</p><p><b>Example:</b> A startup acquires a patent for ₹20 Lakhs with a useful life of 10 years. It will record an amortization expense of ₹2 Lakhs each year on its income statement, reducing the patent\'s book value over time.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -322,7 +322,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Assets',
-        definition: 'Economic resources owned by a business that have future economic value. Can be current (cash, inventory) or non-current (property, equipment).',
+        definition: '<p>Assets are economic resources owned by a company that have future economic value. They are a key component of the balance sheet and represent what the company owns. Assets can be broadly classified into two categories: current assets and non-current (or fixed) assets.</p><p><b>For Startups:</b> A startup\'s most valuable assets are often intangible, such as its intellectual property (code, patents), brand reputation, and customer data. Tangible assets might include cash in the bank, laptops, and office furniture. Investors analyze a startup\'s asset base to understand how capital is being deployed and what resources the company has to generate future revenue.</p><p><b>Example:</b> A startup\'s assets might include ₹50 Lakhs in cash, ₹10 Lakhs in accounts receivable (money owed by customers), and ₹20 Lakhs in equipment. Its total assets would be ₹80 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -338,7 +338,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Audit',
-        definition: 'An official inspection of an organization\'s accounts, typically by an independent body, to ensure accuracy and compliance.',
+        definition: '<p>An audit is an official and independent examination of a company\'s financial statements and records to ensure their accuracy and compliance with accounting standards and regulations. Audits can be conducted internally by company employees or externally by a certified public accounting firm.</p><p><b>For Startups:</b> A statutory audit by a Chartered Accountant is mandatory for all private limited companies in India. For a startup, a "clean" audit report (one without any qualifications or adverse remarks) is crucial for building trust with investors. During fundraising, investors will always ask for the latest audited financials as part of their due diligence process. A qualified audit report is a major red flag that can derail a funding round.</p><p><b>Example:</b> A CA firm conducts an annual audit of a startup\'s books, verifying bank statements, invoices, and expense reports to certify that the financial statements present a true and fair view of the company\'s financial position.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -380,13 +380,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Bad Debt',
-        definition: 'A receivable that is no longer collectible because the customer is unable to fulfill their obligation to pay. It is written off as an expense.',
+        definition: '<p>Bad Debt is an accounts receivable that is no longer considered collectible and must be written off as an expense. This occurs when a customer is unable or unwilling to pay the amount they owe, for reasons such as bankruptcy or financial distress.</p><p><b>For Startups:</b> For B2B startups with a small number of large clients, a single bad debt can have a significant impact on cash flow and profitability. It\'s essential to have a clear credit policy to assess the financial health of potential customers before offering them credit. Creating a "provision for doubtful debts" is also a prudent accounting practice to anticipate potential bad debts.</p><p><b>Example:</b> A startup has a receivable of ₹5 Lakhs from a client who has gone out of business. After exhausting all collection efforts, the startup writes off the ₹5 Lakhs as a bad debt expense on its income statement.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Balance Sheet',
-        definition: 'A financial statement that reports a company\'s assets, liabilities, and shareholder equity at a specific point in time. It follows the formula: Assets = Liabilities + Equity.',
+        definition: '<p>The Balance Sheet is one of the three core financial statements, providing a snapshot of a company\'s financial position at a single point in time. It follows the fundamental accounting equation: Assets = Liabilities + Equity. Think of it as a statement of what a company owns (assets) and what it owes (liabilities), with the remainder being the owners\' stake (equity).</p><p><b>For Startups:</b> For an early-stage startup, the Balance Sheet is crucial during fundraising. Investors scrutinize it to understand the company\'s solvency and capital structure. Key items they look for include the amount of cash on hand, the value of intangible assets like IP, and the structure of any debt or convertible notes. A clean, well-organized balance sheet is a sign of good financial governance.</p><p><b>Example:</b> A startup\'s balance sheet on December 31st shows it has ₹50 Lakhs in cash (Asset), owes ₹10 Lakhs to suppliers (Liability), and has received ₹40 Lakhs from investors (Equity), perfectly balancing the equation.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'bookkeeping',
@@ -407,7 +407,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Bank Reconciliation',
-        definition: 'The process of matching the balances in a company\'s accounting records for a cash account to the corresponding information on a bank statement.',
+        definition: '<p>A Bank Reconciliation is a crucial accounting process used to compare the cash balance on a company\'s balance sheet to the corresponding amount on its bank statement. The goal is to identify any differences between the two records and make adjustments to the accounting records as needed. This process helps in ensuring the accuracy of financial records and detecting fraud.</p><p><b>For Startups:</b> Regular bank reconciliation (ideally monthly) is a fundamental financial discipline. It helps a startup ensure that all transactions have been correctly recorded, identify any unauthorized transactions, and maintain an accurate picture of its cash position, which is vital for managing burn rate and runway.</p><p><b>Example:</b> At the end of the month, a startup\'s accountant notices that a payment recorded in the books has not yet cleared the bank. This "outstanding check" is noted as a reconciling item to explain the difference between the book balance and the bank balance.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'bookkeeping',
@@ -443,19 +443,19 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Beta',
-        definition: 'A measure of a stock\'s volatility in relation to the overall market. A beta of 1 indicates the stock moves with the market; a beta > 1 is more volatile.',
+        definition: 'A measure of a stock\'s volatility in relation to the overall market. A beta of 1 indicates the stock moves with the market; a beta &gt; 1 is more volatile.',
         cluster: 'Startup Finance Fundamentals',
         tier: 3
     },
     {
         term: 'Bill of Lading',
-        definition: 'A legal document issued by a carrier to a shipper that details the type, quantity, and destination of the goods being carried.',
+        definition: '<p>A Bill of Lading is a legal document issued by a carrier (e.g., a shipping company) to a shipper that details the type, quantity, and destination of the goods being transported. It serves three main purposes: it is a contract for the carriage of goods, a receipt for the goods shipped, and a document of title to the goods.</p><p><b>For Startups:</b> For D2C or manufacturing startups involved in importing or exporting goods, the Bill of Lading is a critical document. It is required for customs clearance and for claiming ownership of the goods upon arrival. An error in the Bill of Lading can lead to significant delays and costs at the port.</p><p><b>Example:</b> An Indian startup importing raw materials from China will receive a Bill of Lading from the shipping line. They must present this document at the Indian port to clear customs and take possession of their container.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Bill of Materials (BOM)',
-        definition: 'A comprehensive list of raw materials, components, and assemblies required to construct, manufacture, or repair a product. Essential for manufacturing businesses.',
+        definition: '<p>A Bill of Materials (BOM) is a comprehensive list of all the raw materials, components, sub-assemblies, and quantities required to manufacture a finished product. It is a critical document for manufacturing and hardware startups, serving as the recipe for production.</p><p><b>For Startups:</b> A detailed and accurate BOM is essential for several reasons. It is used to calculate the Cost of Goods Sold (COGS), which is crucial for pricing decisions and determining profitability. It also guides the procurement process, ensuring that all necessary components are ordered in the right quantities. An inaccurate BOM can lead to production delays, cost overruns, and incorrect financial reporting.</p><p><b>Example:</b> The BOM for a smartphone would list items like the specific screen, battery, processor chip, memory, and even the screws and adhesive needed for assembly, along with the quantity of each.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -501,27 +501,18 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Book Value',
-        definition: 'The value of an asset according to its balance sheet account balance. For assets, the value is based on the original cost of the asset less any depreciation, amortization, or impairment costs made against the asset.',
+        definition: '<p>Book Value is the value of an asset as it appears on the company\'s balance sheet. For an asset, this is calculated as the original cost of the asset minus its accumulated depreciation. The book value of a company as a whole is its total assets minus its total liabilities, which is also equal to shareholders\' equity.</p><p><b>For Startups:</b> The book value of a high-growth tech startup is often much lower than its market value (or valuation). This is because a startup\'s most valuable assets, like its brand, intellectual property, and growth potential, are not fully captured on the balance sheet. Investors value startups based on future potential, not just their current book value.</p><p><b>Example:</b> A company\'s balance sheet shows total assets of ₹1 Crore and total liabilities of ₹40 Lakhs. Its book value (or shareholders\' equity) is ₹60 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
-        term: 'Bookings vs Revenue',
-        definition: '<p>Bookings and Revenue are two distinct and critical metrics for a SaaS business that are often confused. Bookings represent the total value of all new contracts signed in a period. Revenue, under accrual accounting, is the portion of that booking that is recognized as the service is delivered.</p><p><b>For Startups:</b> Bookings are a forward-looking indicator of growth and sales team performance. Investors will look at bookings growth to gauge future revenue potential. Revenue is a backward-looking measure of what has been earned.</p><p><b>For SaaS:</b> The distinction is vital due to the subscription model. A large annual contract is a booking in one month, but the revenue from it is recognized over the next twelve months.</p><p><b>Example:</b> A SaaS company signs a new 1-year contract worth ₹1,20,000 in January. The booking for January is ₹1,20,000. However, the revenue recognized in January is only ₹10,000. The remaining ₹1,10,000 is recorded as Deferred Revenue on the balance sheet.</p>',
-        cluster: 'Startup Finance Fundamentals',
-        stageRelevance: 'All Stages',
-        relatedServiceSlug: 'virtual-cfo',
-        comparisonSlugs: ['what-is-deferred-revenue', 'what-is-revenue-recognition'],
-        tier: 1
-    },
-    {
         term: 'Bookkeeping',
-        definition: 'The day-to-day process of recording financial transactions, including purchases, sales, receipts, and payments.',
+        definition: '<p>Bookkeeping is the foundational process of recording a company\'s daily financial transactions in a consistent and organized manner. It involves tasks like recording sales invoices, supplier bills, customer payments, and bank transactions. The output of bookkeeping is a clean and accurate general ledger.</p><p><b>For Startups:</b> While founders can manage this with spreadsheets initially, it quickly becomes unmanageable. Proper bookkeeping from day one is non-negotiable for any serious startup. Without it, you cannot generate accurate financial statements, file taxes correctly, or provide investors with the reliable data they need for due diligence. It is the bedrock upon which all financial analysis is built.</p><p><b>Example:</b> A bookkeeper for a startup records a new sales invoice in the accounting software, creating an entry in accounts receivable and revenue. When the customer pays, they record the cash receipt, which closes the receivable.</p>',
         cluster: 'Accounting & Bookkeeping'
     },
     {
         term: 'Book Profit vs. Taxable Profit',
-        definition: '<p>Book profit is the profit calculated as per the company\'s books of accounts (following accounting standards). Taxable profit is the profit calculated as per the provisions of the Income Tax Act. The two are often different due to items like depreciation rates and disallowed expenses.</p><p><b>Startup Example:</b> A startup may book depreciation in its P&L at 20%, but the Income Tax Act may only allow 15%. This difference leads to a variation between book profit and taxable profit.</p><p>Our <a href="/services/bookkeeping">accounting services</a> include preparing a reconciliation of the two.</p>',
+        definition: '<p>Book Profit is the profit calculated as per the company\'s books of accounts, following standard accounting principles. Taxable Profit is the profit calculated according to the specific rules of the Income Tax Act. The two figures are often different because the tax law treats certain incomes and expenses differently than accounting standards do.</p><p><b>For Startups:</b> A common reason for the difference is depreciation. A startup might depreciate its laptops over 3 years in its books, but the Income Tax Act might specify a different rate. Other differences can arise from expenses that are disallowed for tax purposes. A reconciliation between book profit and taxable profit is a mandatory part of the tax filing process.</p><p><b>Example:</b> A startup\'s book profit is ₹10 Lakhs. However, after disallowing certain expenses for tax purposes, its taxable profit is calculated to be ₹12 Lakhs. The company will pay tax on ₹12 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping'
     },
     {
@@ -650,7 +641,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Capital Expenditure (CapEx)',
-        definition: 'Funds used by a company to acquire, upgrade, and maintain physical assets such as property, buildings, an industrial plant, technology, or equipment.',
+        definition: '<p>Capital Expenditure (CapEx) refers to the funds a company uses to acquire, upgrade, and maintain long-term physical assets such as property, buildings, vehicles, or equipment. These are investments in the business that are expected to provide a benefit for more than one year.</p><p><b>For Startups:</b> For software startups, CapEx is usually low (e.g., purchasing laptops). However, for hardware or manufacturing startups, CapEx can be very significant (e.g., buying machinery). CapEx is not expensed immediately on the income statement; instead, the asset is "capitalized" on the balance sheet and then depreciated over its useful life. This is a key distinction from Operating Expenses (OpEx).</p><p><b>Example:</b> A startup spends ₹20 Lakhs on new servers for its data center. This is a capital expenditure. The ₹20 Lakhs will be added to the assets on the balance sheet and then expensed systematically through depreciation over the next few years.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -690,7 +681,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Cash Basis Accounting',
-        definition: 'An accounting method in which revenue is recognized when cash is received, and expenses are recognized when cash is paid out. Simpler but less accurate for most businesses.',
+        definition: '<p>Cash Basis Accounting is a simple accounting method where revenues are recorded only when cash is received, and expenses are recorded only when cash is paid out. It directly tracks the flow of cash in and out of the business.</p><p><b>For Startups:</b> While simple, this method is not permitted for registered companies in India and is not accepted by investors. It provides a poor picture of a company\'s actual performance. For example, a large annual subscription received in January would make January look extremely profitable, while the subsequent 11 months would show no revenue, which is misleading. The accrual method, which spreads the revenue over 12 months, is the required standard.</p><p><b>Example:</b> A consultant completes a project in June but gets paid in August. Under the cash basis, the revenue is recorded in August. Under the accrual basis, it would be recorded in June when it was earned.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'Pre-Seed',
         relatedServiceSlug: 'bookkeeping',
@@ -746,7 +737,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Cash Flow Statement',
-        definition: 'A financial statement that provides aggregate data regarding all cash inflows a company receives from its ongoing operations and external investment sources, as well as all cash outflows.',
+        definition: '<p>The Cash Flow Statement is one of the three core financial statements that summarizes the movement of cash and cash equivalents into and out of a company over a specific period. It is crucial for assessing a company\'s ability to generate cash to pay its debts, fund its operations, and make investments. It is broken down into three sections: Cash Flow from Operating Activities, Investing Activities, and Financing Activities.</p><p><b>For Startups:</b> For a pre-profitable startup, the Cash Flow Statement is often more important than the Income Statement. It shows the company\'s net burn rate and runway, which are critical survival metrics. Investors use it to understand exactly how the company is using its cash.</p><p><b>Example:</b> A startup might have a net loss of ₹10 Lakhs on its Income Statement, but its Cash Flow Statement might show that its cash balance only decreased by ₹5 Lakhs, due to non-cash expenses like depreciation.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'bookkeeping',
@@ -771,7 +762,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Chart of Accounts (COA)',
-        definition: 'A financial organizational tool that provides a complete listing of every account in an accounting system.',
+        definition: '<p>A Chart of Accounts (COA) is a financial organizational tool that provides a complete, structured listing of every account in a company\'s general ledger. It is the backbone of the accounting system. Accounts are typically grouped into categories such as Assets, Liabilities, Equity, Revenue, and Expenses.</p><p><b>For Startups:</b> A well-designed COA is crucial for meaningful financial reporting. Instead of using a generic COA from an accounting software, a startup should customize it to reflect its specific business model. For example, a SaaS startup should have separate revenue accounts for different subscription tiers and separate expense accounts for key costs like server hosting and sales commissions. This allows for more granular analysis of profitability and unit economics.</p><p><b>Example:</b> A D2C startup\'s COA might have specific expense accounts for "Facebook Ads," "Google Ads," and "Influencer Marketing" to track the performance of each channel separately.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -791,7 +782,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Closing Balance',
-        definition: 'The balance of an account at the end of an accounting period.',
+        definition: '<p>The Closing Balance is the amount of money in a company\'s account at the end of an accounting period, such as a day, month, or year. It is the net result of all transactions (debits and credits) that occurred during that period.</p><p><b>For Startups:</b> The closing cash balance at the end of each month is a critical figure for a startup. It is the starting point for the next month\'s cash flow forecast and is used to calculate the net burn rate and runway. An accurate closing balance is essential for effective cash management.</p><p><b>Calculation:</b> Closing Balance = Opening Balance + All Inflows - All Outflows.</p><p><b>Example:</b> A company starts the month with ₹20 Lakhs, receives ₹5 Lakhs in customer payments, and spends ₹10 Lakhs on expenses. Its closing balance for the month is ₹15 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -827,7 +818,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Commission',
-        definition: 'A service charge assessed by a broker or investment advisor in return for providing investment advice or handling the purchase or sale of a security.',
+        definition: '<p>A commission is a fee paid to an agent or employee for transacting a piece of business or performing a service. It is a common form of compensation for sales teams, designed to incentivize performance.</p><p><b>For Startups:</b> For a startup with a sales team, commission is a significant component of the Customer Acquisition Cost (CAC). A well-structured commission plan aligns the interests of the sales team with the company\'s revenue goals. In accounting, commission is recorded as an operating expense.</p><p><b>Tax Impact:</b> In India, payments for commission are subject to Tax Deducted at Source (TDS) under Section 194H of the Income Tax Act if the annual payment exceeds a certain threshold.</p><p><b>Example:</b> A SaaS startup pays its salesperson a 10% commission on the first-year contract value of every new deal they close.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -1064,13 +1055,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Contingent Liability',
-        definition: 'A potential liability that may occur depending on the outcome of an uncertain future event. It is recorded in the footnotes of the financial statements.',
+        definition: '<p>A Contingent Liability is a potential liability that may occur in the future depending on the outcome of an uncertain event. It is not a confirmed debt but a possible one. These are not recorded on the balance sheet itself but must be disclosed in the footnotes of the financial statements.</p><p><b>For Startups:</b> A common contingent liability for a startup is a pending lawsuit. The company doesn\'t know if it will lose the case or how much it might have to pay, but the potential obligation must be disclosed to investors and auditors. Failure to disclose a significant contingent liability is a major governance lapse and can mislead stakeholders about the company\'s true financial risk.</p><p><b>Example:</b> A company is facing a patent infringement lawsuit. Since the outcome is uncertain, it discloses this as a contingent liability in its financial statement footnotes.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Contra Account',
-        definition: 'An account in the general ledger that is used to reduce the value of a related account. An example is the accumulated depreciation account.',
+        definition: '<p>A Contra Account is a general ledger account that is used to reduce the value of a related account. Its natural balance is the opposite of the associated account. Contra accounts provide more detailed information on the balance sheet by showing the original cost and the reduction separately, rather than just a single net value.</p><p><b>For Startups:</b> The most common contra account a startup will encounter is "Accumulated Depreciation." This account is paired with a fixed asset account like "Computers" or "Equipment." It shows the total depreciation expensed for those assets to date. Another example is "Allowance for Doubtful Accounts," which reduces the value of Accounts Receivable.</p><p><b>Example:</b> A company has Equipment worth ₹10 Lakhs. Its Accumulated Depreciation is ₹3 Lakhs. On the balance sheet, both figures are shown, resulting in a net book value of ₹7 Lakhs for the equipment.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -1115,7 +1106,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Cost Accounting',
-        definition: 'An accounting method that aims to capture a company\'s costs of production by assessing the input costs of each step of production as well as fixed costs.',
+        definition: '<p>Cost Accounting is a branch of accounting that focuses on identifying, measuring, and analyzing a company\'s costs related to production and operations. The goal is to provide management with the data needed to control costs, make pricing decisions, and improve efficiency.</p><p><b>For Startups:</b> For manufacturing or hardware startups, cost accounting is essential. It helps determine the precise cost of each unit produced (Cost of Goods Sold), which is vital for setting prices that ensure profitability. It involves tracking direct costs (raw materials, labor) and allocating indirect costs (factory rent, utilities).</p><p><b>Example:</b> A D2C brand uses cost accounting to determine that the total cost to produce one jar of its product, including materials, labor, and factory overhead, is ₹85. This information helps them set a retail price that guarantees a healthy gross margin.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -1129,7 +1120,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Cost of Goods Sold (COGS)',
-        definition: 'The direct costs of producing the goods sold by a company. This includes the cost of materials and labor directly used to create the good.',
+        definition: '<p>Cost of Goods Sold (COGS) represents the direct costs attributable to the production of the goods sold by a company. It includes the cost of the raw materials and the direct labor costs used to create the good. It excludes indirect expenses like distribution costs and sales force costs.</p><p><b>For Startups:</b> Understanding COGS is crucial for calculating gross profit and gross margin, which are key indicators of a startup\'s core profitability. For a D2C or manufacturing startup, accurate COGS calculation is essential for setting prices that ensure each sale is profitable. For a pure SaaS business, COGS is often low and may be referred to as "Cost of Revenue."</p><p><b>Example:</b> For a D2C company selling a shirt, the COGS includes the cost of the fabric, thread, and the wages of the worker who stitched the shirt.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -1160,7 +1151,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Credit Note',
-        definition: 'A document issued by a seller to a buyer, reducing the amount that the buyer owes. Often issued for returns or goods damaged on arrival.',
+        definition: '<p>A Credit Note is a commercial document issued by a seller to a buyer, notifying them that they are being credited a certain amount. It is typically issued to correct a mistake on an invoice, for returned goods, or as a way to cancel all or part of an invoice.</p><p><b>For Startups:</b> In a startup environment, credit notes are common in e-commerce for handling customer returns. In B2B SaaS, they might be issued if a customer downgrades their plan mid-cycle. Proper accounting for credit notes is essential for accurate revenue and accounts receivable reporting. In GST, issuing a credit note is the formal way to reduce your tax liability for a previously issued invoice.</p><p><b>Example:</b> A D2C customer returns a product they purchased for ₹2,000. The startup issues a credit note for ₹2,000 to the customer and processes a refund, while also updating its sales and GST records.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -1182,13 +1173,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Current Assets',
-        definition: 'All the assets of a company that are expected to be sold or used as a result of standard business operations over the next year.',
+        definition: '<p>Current Assets are all the assets of a company that are expected to be converted into cash, sold, or consumed within one year or one operating cycle, whichever is longer. They are a key component of the balance sheet and a measure of a company\'s short-term liquidity.</p><p><b>For Startups:</b> For startups, the most important current assets are typically Cash and Cash Equivalents, Accounts Receivable (money owed by customers), and Inventory (for D2C or hardware startups). Managing these assets effectively is crucial for maintaining a healthy working capital position and ensuring the company can meet its short-term obligations.</p><p><b>Example:</b> A startup\'s current assets might consist of ₹50 Lakhs in its bank account, ₹20 Lakhs in accounts receivable from clients, and ₹15 Lakhs worth of inventory in its warehouse.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Current Liabilities',
-        definition: 'A company\'s short-term financial obligations that are due within one year or within a normal operating cycle.',
+        definition: '<p>Current Liabilities are a company\'s short-term financial obligations that are due to be paid within one year or one operating cycle. These are listed on the balance sheet and are a key factor in assessing a company\'s short-term solvency.</p><p><b>For Startups:</b> A startup must carefully manage its current liabilities to ensure it has enough cash to meet them as they come due. Common current liabilities for a startup include Accounts Payable (money owed to suppliers), short-term loans, accrued expenses (like salaries payable), and deferred revenue (for SaaS companies with annual contracts). A high level of current liabilities compared to current assets can be a sign of liquidity risk.</p><p><b>Example:</b> A startup\'s current liabilities might include ₹30 Lakhs in accounts payable, ₹10 Lakhs in salaries payable for the month, and ₹50 Lakhs in deferred revenue.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -1278,7 +1269,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Debit Note',
-        definition: 'A document issued by a buyer to a seller to request a credit note, typically for returned goods.',
+        definition: '<p>A Debit Note is a commercial document issued by a buyer to a seller, formally notifying the seller that their account is being debited. It is typically used when a buyer returns goods to a seller. It acts as a request for the seller to issue a credit note.</p><p><b>For Startups:</b> For a D2C or manufacturing startup, issuing or receiving debit notes is a common part of managing supplier and customer returns. From an accounting perspective, a debit note from a customer signals a sales return, which reduces revenue. A debit note sent to a supplier reduces accounts payable.</p><p><b>Example:</b> A startup receives a shipment of raw materials that are defective. The startup sends the materials back to the supplier along with a debit note, indicating that it is reducing the amount it owes to the supplier for the returned goods.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -1312,7 +1303,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Deferred Revenue',
-        definition: 'Revenue that has been collected but has not yet been earned. It is a liability on the balance sheet, common in subscription businesses where payment is received upfront for a service to be delivered over time.',
+        definition: '<p>Deferred Revenue (also known as unearned revenue) is a liability on a company\'s balance sheet that represents cash received from customers for products or services that have not yet been delivered. It is a core concept in accrual accounting, particularly for subscription-based businesses.</p><p><b>For Startups:</b> For a SaaS startup, deferred revenue is a crucial metric. When a customer pays upfront for an annual subscription, the entire amount is initially recorded as deferred revenue. As the service is provided each month, a portion of this deferred revenue is converted into recognized revenue on the income statement. A growing deferred revenue balance is a strong indicator of future revenue growth.</p><p><b>Example:</b> A SaaS company receives ₹1,20,000 on January 1st for a one-year contract. The full amount is added to deferred revenue. Each month, it recognizes ₹10,000 as revenue and reduces the deferred revenue balance by the same amount.</p>',
         cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'bookkeeping',
@@ -1451,7 +1442,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Double-Entry Bookkeeping',
-        definition: 'A fundamental accounting principle stating that every financial transaction has equal and opposite effects in at least two different accounts. It is used to satisfy the equation Assets = Liabilities + Equity.',
+        definition: '<p>Double-Entry Bookkeeping is the fundamental system of accounting used by all businesses. It is based on the principle that every financial transaction has equal and opposite effects in at least two different accounts. This system is built upon the accounting equation: Assets = Liabilities + Equity.</p><p><b>For Startups:</b> Adhering to the double-entry system is a legal requirement and the only way to produce accurate, reliable financial statements. It provides a self-checking mechanism; if the books don\'t balance, it means an error has been made. All modern accounting software is built on this principle, making it easier for startups to maintain compliant records.</p><p><b>Example:</b> When a startup buys a laptop for ₹1 Lakh in cash, it records a ₹1 Lakh increase in its Equipment (Asset) account and a ₹1 Lakh decrease in its Cash (Asset) account. The equation remains in balance.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -1604,7 +1595,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Earmarking',
-        definition: 'To set aside funds for a specific purpose, project, or recipient.',
+        definition: '<p>Earmarking is the practice of setting aside funds for a specific purpose, project, or recipient. In government finance, it refers to dedicating tax revenues to a particular expenditure. In corporate accounting, it means designating cash for a specific future use.</p><p><b>For Startups:</b> A startup might earmark a portion of its recent funding round specifically for a new marketing campaign or for hiring key engineering talent. While this is more of a budgeting and internal planning tool, it helps ensure that capital is deployed according to the strategic goals presented to investors.</p><p><b>Example:</b> After raising a seed round, a startup\'s board approves a budget that earmarks ₹50 Lakhs specifically for product development and ₹25 Lakhs for initial customer acquisition efforts over the next six months.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -1702,7 +1693,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Enterprise Resource Planning (ERP)',
-        definition: 'A type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations.',
+        definition: '<p>Enterprise Resource Planning (ERP) is a type of software that organizations use to manage and integrate their core business processes into a single system. An ERP system typically handles accounting, procurement, project management, risk management, compliance, and supply chain operations.</p><p><b>For Startups:</b> While a full-blown ERP system (like SAP or Oracle) is overkill for most startups, the concept is relevant. As a startup scales, it needs an integrated financial stack where its accounting software, CRM, and payroll system can "talk" to each other to provide a unified view of the business. Modern cloud-based solutions like Zoho offer an ERP-like integrated experience tailored for smaller businesses.</p><p><b>Example:</b> A growing e-commerce startup uses an ERP to connect its inventory management system with its accounting software and its sales platform, providing a single source of truth for all its operations.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -1808,9 +1799,10 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         cluster: 'Virtual CFO & Financial Management'
     },
     {
-        term: 'Expense Ratio',
-        definition: 'A measure of the operating costs of an investment fund relative to its assets. A lower expense ratio is generally better.',
-        cluster: 'Virtual CFO & Financial Management'
+        term: 'Expense',
+        definition: '<p>An expense is the cost incurred by a business in the process of generating revenue. Expenses are recorded on the income statement and are subtracted from revenue to determine a company\'s profit or loss. Effectively managing expenses is crucial for a startup\'s profitability and cash flow.</p><p><b>For Startups:</b> Startups must categorize their expenses correctly to understand their cost structure. Major expense categories include Cost of Goods Sold (COGS), Sales & Marketing, Research & Development (R&D), and General & Administrative (G&A). Tracking these categories helps founders identify areas of overspending and manage their burn rate.</p><p><b>Example:</b> A SaaS startup\'s monthly expenses might include ₹5 Lakhs in salaries (an operating expense), ₹2 Lakhs in server costs (a cost of revenue), and ₹1 Lakh on marketing ads (an operating expense).</p>',
+        cluster: 'Accounting & Bookkeeping',
+        tier: 1
     },
     {
         term: 'Export',
@@ -1862,7 +1854,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'FIFO (First-In, First-Out)',
-        definition: 'An inventory valuation method in which the first goods purchased are assumed to be the first ones sold.',
+        definition: '<p>First-In, First-Out (FIFO) is an inventory valuation method that assumes the first items placed in inventory are the first ones sold. It is one of the most common methods for managing inventory and calculating the Cost of Goods Sold (COGS).</p><p><b>For Startups:</b> For D2C or e-commerce startups selling physical products, especially perishable goods, FIFO is the most logical method. It ensures that older inventory is sold first, reducing the risk of spoilage or obsolescence. From an accounting perspective, during periods of rising prices, FIFO results in a lower COGS, a higher gross profit, and a higher taxable income.</p><p><b>Example:</b> A coffee startup buys 100 bags of coffee at ₹500 each, and a month later buys another 100 bags at ₹550. When it sells 120 bags, under FIFO, the COGS will be calculated using the cost of the first 100 bags (at ₹500) and 20 of the second batch (at ₹550).</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -1923,13 +1915,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Financial Statement',
-        definition: 'Formal records of the financial activities of a business. The three main financial statements are the Balance Sheet, Income Statement, and Cash Flow Statement.',
+        definition: '<p>Financial Statements are formal, structured reports that summarize a company\'s financial activities and position. They are prepared based on accounting standards and are used by management, investors, and lenders to make economic decisions. The three core financial statements are the Income Statement (P&L), the Balance Sheet, and the Cash Flow Statement.</p><p><b>For Startups:</b> Accurate and timely financial statements are non-negotiable for any startup seeking funding. They are the primary documents reviewed during investor due diligence and provide the basis for the company\'s valuation. They tell the financial story of the startup, from its profitability and assets to its cash flow.</p><p><b>Example:</b> At the end of each quarter, a startup\'s accountant prepares a set of financial statements for the board of directors to review the company\'s performance against its budget.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Financial Year (FY)',
-        definition: 'The 12-month period for which a company prepares its financial accounts. In India, the FY runs from April 1st to March 31st.',
+        definition: '<p>A Financial Year (FY) is a 12-month period that companies and governments use for accounting and financial reporting purposes. Unlike a calendar year, a financial year can start on any date. In India, the financial year runs from April 1st to March 31st of the following year.</p><p><b>For Startups:</b> All Indian startups must prepare their financial statements and file their tax returns based on the April-to-March financial year. This is a key difference from many other countries (like the US) that primarily use the calendar year. When discussing financials, it\'s important to specify which financial year is being referred to (e.g., "FY 2023-24").</p><p><b>Example:</b> The period from April 1, 2023, to March 31, 2024, is referred to as FY 2023-24. The income earned during this period is assessed for tax in the Assessment Year (AY) 2024-25.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -1969,7 +1961,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Fixed Asset',
-        definition: 'A long-term tangible piece of property or equipment that a firm owns and uses in its operations to generate income. Not expected to be consumed or converted into cash within a year.',
+        definition: '<p>A Fixed Asset is a long-term tangible asset that a company owns and uses in its operations to generate income. These assets are not expected to be consumed or converted into cash within one year. Examples include land, buildings, machinery, vehicles, and computer equipment.</p><p><b>For Startups:</b> The purchase of a fixed asset is recorded as a Capital Expenditure (CapEx), not an operating expense. The asset is recorded on the balance sheet, and its cost is then systematically expensed over its useful life through a process called depreciation. For a startup, managing its fixed assets is important for accurate financial reporting and tax compliance.</p><p><b>Example:</b> A D2C startup purchases a delivery van for ₹8 Lakhs. This van is a fixed asset. It will be recorded on the balance sheet and depreciated over its useful life, for instance, over 8 years.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2048,7 +2040,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Founder Vesting Schedule',
-        definition: '<p>A founder vesting schedule is a mechanism where founders earn their equity (shares) over a set period of time. This ensures that a founder must contribute to the company for a certain duration to receive their full ownership stake, protecting the company if a co-founder leaves prematurely.</p><p><b>Base Term for Startups:</b> This is a non-negotiable term for investors and a best practice for all co-founded startups. It prevents "dead equity" on the cap table, where a departed founder retains a large stake without contributing to future growth.</p><p><b>Standard Terms:</b> The most common vesting schedule is a 4-year period with a 1-year "cliff." This means no shares are earned for the first year. At the 1-year anniversary, 25% of the shares vest (the cliff). The remaining 75% then typically vest on a monthly or quarterly basis over the next 3 years.</p><p><b>Base Term Example:</b> A founder with 1 million shares on a 4-year vesting schedule with a 1-year cliff leaves after 18 months. They would be vested in 37.5% of their shares (25% at the 1-year cliff + 12.5% for the next 6 months).</p>',
+        definition: '<p>A founder vesting schedule is a mechanism where founders earn their equity (shares) over a set period of time. This ensures that a founder must contribute to the company for a certain duration to receive their full ownership stake, protecting the company if a co-founder leaves prematurely.</p><p><b>Base Term for Startups:</b> This is a non-negotiable term for investors and a best practice for all co-founded startups. It prevents "dead equity" on the cap table, where a departed founder retains a large stake without contributing to future growth.</p><p><b>Standard Terms:</b> The most common vesting schedule is a 4-year period with a 1-year "cliff." This means no shares are earned for the first year. At the 1-year anniversary, 25% of the shares vest (the cliff). The remaining 75% then typically vest monthly or quarterly over the next 3 years.</p><p><b>Base Term Example:</b> A founder with 1 million shares on a 4-year vesting schedule with a 1-year cliff leaves after 18 months. They would be vested in 37.5% of their shares (25% at the 1-year cliff + 12.5% for the next 6 months).</p>',
         cluster: 'Startup Finance Fundamentals',
         stageRelevance: 'Pre-Seed',
         relatedServiceSlug: 'corporate-law',
@@ -2113,7 +2105,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'General Ledger (GL)',
-        definition: 'A master accounting document providing a complete record of all financial transactions over the life of a company.',
+        definition: '<p>The General Ledger (GL) is the master accounting document for a company. It provides a complete record of all financial transactions that have occurred during the life of the company. The GL is organized by accounts, and each account has a beginning balance, a list of all transactions for the period, and an ending balance.</p><p><b>For Startups:</b> The GL is the single source of truth for a startup\'s financials. All other financial statements, like the Balance Sheet and Income Statement, are generated from the data in the General Ledger. Maintaining an accurate and up-to-date GL is the primary function of bookkeeping. Cloud accounting software automates the process of posting journal entries to the GL.</p><p><b>Example:</b> If a startup pays rent, the transaction is recorded in the cash account and the rent expense account within the General Ledger.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2173,7 +2165,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Goodwill',
-        definition: 'An intangible asset that arises when a buyer acquires an existing business. It represents assets that are not separately identifiable, such as brand reputation.',
+        definition: '<p>Goodwill is an intangible asset that arises when one company acquires another for a price that is higher than the fair market value of its net identifiable assets (total assets minus total liabilities). The excess amount paid represents non-physical assets like brand reputation, customer loyalty, and intellectual property that are not formally recorded on the balance sheet.</p><p><b>For Startups:</b> When a larger company acquires a startup, it often pays a premium over the startup\'s book value. This premium is recorded as Goodwill on the acquirer\'s balance sheet. For the startup being acquired, this represents the value created through its innovation and market position.</p><p><b>Example:</b> A large tech firm acquires a startup for ₹50 Crores. The startup\'s net assets are valued at ₹10 Crores. The acquiring firm will record ₹40 Crores as Goodwill on its balance sheet.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2225,13 +2217,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Gross Profit',
-        definition: 'The profit a company makes after deducting the costs associated with making and selling its products, or the costs associated with providing its services.',
+        definition: '<p>Gross Profit is the profit a company makes after deducting the direct costs associated with producing and selling its products or services (known as the Cost of Goods Sold or COGS). It is a key measure of a company\'s core profitability and production efficiency before accounting for general operating expenses.</p><p><b>For Startups:</b> For startups, a healthy and growing gross profit is a strong indicator of a viable business model. Investors closely analyze gross profit and gross margin to assess whether the company\'s core offering is profitable and scalable. A business with a low gross profit will struggle to cover its operating costs and achieve overall profitability.</p><p><b>Calculation:</b> Gross Profit = Revenue - Cost of Goods Sold (COGS).</p><p><b>Example:</b> A D2C brand has revenues of ₹50 Lakhs and its COGS (cost of materials and direct labor) is ₹20 Lakhs. Its gross profit is ₹30 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Gross Revenue',
-        definition: 'The total amount of sales recognized for a reporting period, prior to any deductions such as sales returns and allowances.',
+        definition: '<p>Gross Revenue, also known as Gross Sales or the "top line," is the total amount of income generated from all sales activities during a specific period, before any deductions are made. It represents the total value of all invoices issued to customers.</p><p><b>For Startups:</b> While Gross Revenue is an important measure of sales activity, it can be misleading if not viewed in context. It does not account for sales returns, allowances, or discounts. Therefore, most financial analysis focuses on Net Revenue, which provides a more accurate picture of the actual income earned.</p><p><b>Distinction:</b> The key difference is that Gross Revenue is a pre-deduction figure. Net Revenue = Gross Revenue - Sales Returns - Allowances - Discounts.</p><p><b>Example:</b> An e-commerce startup has Gross Revenue of ₹10 Lakhs in a month. However, after accounting for ₹1 Lakh in customer returns and ₹50,000 in discounts, its Net Revenue is ₹8.5 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2374,7 +2366,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Holding Company',
-        definition: 'A company that owns a controlling interest in another company, called the subsidiary.',
+        definition: 'A company that owns a controlling interest in another company, which is called the subsidiary.',
         cluster: 'ROC, Company Law & FEMA'
     },
     {
@@ -2427,13 +2419,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Impairment',
-        definition: 'A permanent reduction in the value of a company\'s asset, typically a fixed asset or an intangible asset.',
+        definition: '<p>An impairment is an accounting principle that describes a permanent reduction in the value of a company\'s asset, typically a fixed asset or an intangible asset like goodwill. If an asset\'s fair market value falls below its carrying value on the balance sheet, the company must record an impairment expense.</p><p><b>For Startups:</b> A common scenario for startups is the impairment of goodwill. If a startup acquires another company, it records goodwill. If the acquired company later underperforms significantly, the acquirer may have to take an impairment charge, which is a non-cash expense that reduces its reported profit.</p><p><b>Example:</b> A company acquires a brand for ₹5 Crores. Two years later, due to market changes, the brand\'s value is assessed to be only ₹2 Crores. The company must record a ₹3 Crore impairment loss on its income statement.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Importance of clean MIS for Series B',
-        definition: '<p>By the time a startup is raising a Series B, investors expect a high degree of financial sophistication. They will want to see detailed cohort analysis, accurate unit economics (LTV:CAC), and a predictable financial forecast. A clean, automated Management Information System (MIS) is no longer a nice-to-have; it\'s a prerequisite.</p><p><b>Startup Example:</b> A Series B investor asks for the LTV:CAC ratio broken down by different customer acquisition channels. A startup with a strong MIS can provide this data immediately, demonstrating a deep understanding of its business.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">vCFOs</a> handle all investor reporting for our clients.</p>',
+        definition: '<p>By the time a startup is raising a Series B, investors expect a high degree of financial sophistication. They will want to see detailed cohort analysis, accurate unit economics (LTV:CAC), and a predictable financial forecast. A clean, automated Management Information System (MIS) is no longer a nice-to-have; it\'s a prerequisite.</p><p><b>Startup Example:</b> A Series B investor asks for the LTV:CAC ratio broken down by different customer acquisition channels. A startup with a strong MIS can provide this data immediately, demonstrating a deep understanding of its business.</p><p>Our <a href="/solutions/virtual-cfo">Virtual CFOs</a> handle all investor reporting for our clients.</p>',
         cluster: 'Virtual CFO & Financial Management'
     },
     {
@@ -2448,7 +2440,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Income Statement',
-        definition: 'Also known as the Profit and Loss (P&L) statement, it reports a company\'s financial performance over a specific period, showing revenues, expenses, and resulting profit or loss.',
+        definition: '<p>The Income Statement, also known as the Profit and Loss (P&L) statement, is one of the three core financial statements. It reports a company\'s financial performance over a specific period (e.g., a month, quarter, or year) by summarizing its revenues, expenses, gains, and losses. The final result is the company\'s net income or net loss for that period.</p><p><b>For Startups:</b> For a startup, the income statement is a crucial tool for understanding profitability. It shows whether the company\'s business model is working. Investors use it to analyze key metrics like gross margin and operating margin, and to track how expenses are scaling relative to revenue growth. A startup can be "pre-revenue," meaning its income statement shows only expenses and a net loss.</p><p><b>Example:</b> A startup\'s monthly P&L shows ₹10 Lakhs in revenue and ₹8 Lakhs in total expenses, resulting in a net income (profit) of ₹2 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -2552,7 +2544,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Intangible Asset',
-        definition: 'An asset that is not physical in nature. Examples include patents, trademarks, copyrights, and goodwill.',
+        definition: '<p>An Intangible Asset is an asset that is not physical in nature but still provides long-term value to a company. Examples include patents, copyrights, trademarks, brand recognition, and goodwill. These assets are recorded on the balance sheet and are "amortized" (expensed) over their useful life.</p><p><b>For Startups:</b> For many tech startups, intangible assets are their most valuable assets. The software code they have written, the brand they have built, and any patents they have filed are the core drivers of their valuation. Correctly accounting for and legally protecting these assets is crucial.</p><p><b>Example:</b> A startup spends ₹10 Lakhs on legal fees to file a patent. This cost is capitalized as an intangible asset on the balance sheet and then amortized over the life of the patent.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2589,7 +2581,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Inventory',
-        definition: 'The raw materials, work-in-process goods, and completely finished goods that are considered to be the portion of a business\'s assets that are ready or will be ready for sale.',
+        definition: '<p>Inventory refers to the goods and materials that a business holds for the ultimate purpose of resale. For a manufacturing company, it includes raw materials, work-in-progress goods, and finished goods. For a D2C brand, it is the stock of products ready to be sold.</p><p><b>For Startups:</b> For startups that sell physical products, inventory is a major current asset on the balance sheet. Managing inventory is a critical balancing act. Holding too much inventory ties up cash and increases storage costs, while holding too little can lead to stockouts and lost sales. Proper inventory management is key to a healthy cash conversion cycle.</p><p><b>Example:</b> An e-commerce startup\'s inventory consists of 500 units of a product that it purchased from a supplier and is holding in a warehouse, ready to be shipped to customers.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -2608,23 +2600,8 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         tier: 2
     },
     {
-        term: 'Inverted Duty Structure',
-        definition: 'A situation in GST where the tax rate on inputs is higher than the tax rate on output supplies, leading to an accumulation of input tax credit.',
-        cluster: 'GST & Indirect Tax'
-    },
-    {
-        term: 'Investment Banker',
-        definition: 'An individual who works in a financial institution and is primarily concerned with raising capital for corporations, governments, or other entities.',
-        cluster: 'Fundraising & Valuation'
-    },
-    {
-        term: 'Investor Reporting for Series A',
-        definition: '<p>After raising a Series A, reporting requirements become more formal. Institutional VCs will expect a monthly MIS pack including detailed financial statements, KPI dashboards, and a budget vs. actuals analysis.</p><p><b>Startup Example:</b> A Series A startup now prepares a monthly board pack that includes their SaaS metrics dashboard, P&L, balance sheet, cash flow statement, and a summary of progress against the goals set during the fundraise.</p><p>Our <a href="/solutions/virtual-cfo-for-saas-startups">vCFOs</a> handle all investor reporting for our clients.</p>',
-        cluster: 'Virtual CFO & Financial Management'
-    },
-    {
         term: 'Invoice',
-        definition: 'A commercial document that itemizes and records a transaction between a buyer and a seller.',
+        definition: '<p>An invoice is a commercial document issued by a seller to a buyer, itemizing a transaction and requesting payment. It indicates the products or services provided, quantities, and agreed-upon prices. An invoice is a legal document that forms the basis of a sale.</p><p><b>For Startups:</b> Proper invoicing is a fundamental business process. For a B2B startup, the invoice creates an Accounts Receivable, initiating the payment collection process. For tax purposes (like GST), a compliant tax invoice with all mandatory details (like GSTIN, HSN code, etc.) is required. Using accounting software to generate and track invoices is essential for maintaining accurate financial records.</p><p><b>Example:</b> A design agency completes a project and sends its client an invoice for ₹1,00,000 plus 18% GST, with a 15-day payment term. This document formally requests payment for the services rendered.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -2642,7 +2619,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     // J
     {
         term: 'Job Costing',
-        definition: 'A cost accounting method that involves tracking the costs of a specific job or project.',
+        definition: '<p>Job Costing is an accounting method used to track the costs of a specific job or project. It is used by companies that produce unique, custom products or provide specific services, such as construction companies, consulting firms, or advertising agencies. It involves accumulating direct costs (materials, labor) and allocating indirect costs (overheads) to each individual job.</p><p><b>For Startups:</b> For a service-based startup, job costing is crucial for determining the profitability of each client project. By accurately tracking the hours spent and other direct costs for a project, the startup can compare this to the project revenue and understand which types of projects are most profitable.</p><p><b>Example:</b> A software development agency uses job costing to track all the developer hours and other costs associated with building a custom app for a client, allowing them to calculate the exact profit margin on that specific project.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -2659,7 +2636,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Journal Entry',
-        definition: 'A record of a business transaction in the accounting books of a business. A properly documented journal entry consists of the correct date, amounts to be debited and credited, description of the transaction, and a unique reference number.',
+        definition: '<p>A Journal Entry is the first step in the accounting cycle, where a business transaction is recorded in the accounting books. Following the double-entry bookkeeping system, every journal entry has at least one debit and one credit, and the total debits must equal the total credits.</p><p><b>For Startups:</b> While modern accounting software automates many journal entries (e.g., from creating an invoice), manual journal entries are still required for things like accrued expenses or correcting errors. Understanding the concept of debits and credits is fundamental to understanding how financial transactions impact the financial statements.</p><p><b>Example:</b> To record the payment of office rent of ₹50,000, an accountant would make a journal entry to debit "Rent Expense" for ₹50,000 and credit "Cash" for ₹50,000. This increases the expense and decreases the cash asset.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2711,13 +2688,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Landed Cost',
-        definition: 'The total cost of a product once it has arrived at the buyer\'s door. Includes the original cost of the item, all brokerage and logistics fees, shipping costs, customs duties, taxes, insurance, and any other costs.',
+        definition: '<p>The Landed Cost is the total cost of a product once it has arrived at the buyer\'s doorstep. It is a critical calculation for businesses that import goods. It includes not only the original cost of the item but also all shipping fees, customs duties, taxes, insurance, and currency conversion fees.</p><p><b>For Startups:</b> For a D2C startup that sources its products from overseas, understanding the true landed cost is essential for accurate pricing and profitability analysis. Simply looking at the supplier\'s price is misleading; the landed cost represents the true Cost of Goods Sold (COGS) for that imported item.</p><p><b>Example:</b> A startup buys a product from China for $10. After adding shipping ($2), customs duty ($1), and insurance ($0.50), the total landed cost is $13.50. This is the figure that should be used to calculate the product\'s gross margin.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Last-In, First-Out (LIFO)',
-        definition: 'An inventory valuation method where the most recently produced items are recorded as sold first. Not permitted under Ind AS in India.',
+        definition: '<p>Last-In, First-Out (LIFO) is an inventory valuation method where it is assumed that the most recently purchased items are the first ones to be sold. During periods of rising prices, LIFO results in a higher Cost of Goods Sold (COGS) and a lower net income compared to the FIFO method.</p><p><b>For Startups:</b> It\'s important for Indian startups to know that the LIFO method is not permitted for financial reporting under Indian Accounting Standards (Ind AS) or for tax purposes in India. Companies in India must use either the FIFO or the weighted-average cost method.</p><p><b>Example:</b> A company buys an item for ₹100 and later buys another for ₹120. When one item is sold, under LIFO, the COGS would be recorded as ₹120. This method is primarily used in the US for tax benefits during inflationary periods.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -2754,7 +2731,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Ledger',
-        definition: 'A book or collection of accounts in which account transactions are recorded. The general ledger is the main accounting record of a company.',
+        definition: '<p>A ledger is a book or a collection of accounts where all financial transactions of a company are recorded and stored. The primary ledger in any accounting system is the General Ledger, which contains a summary of every account on the company\'s Chart of Accounts. There are also subsidiary ledgers that provide more detailed information, such as an Accounts Receivable ledger that lists every customer invoice.</p><p><b>For Startups:</b> Modern cloud accounting software automates the ledger process. When a transaction is entered (e.g., an invoice is created), the software automatically posts the debit and credit to the appropriate accounts in the General Ledger. For a startup, this automation is key to maintaining accurate records efficiently.</p><p><b>Example:</b> A startup\'s General Ledger contains all its accounts: Cash, Accounts Receivable, Sales Revenue, Rent Expense, etc., with a detailed history of all transactions for each.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -2769,7 +2746,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Letter of Credit (LC)',
-        definition: 'A letter from a bank guaranteeing that a buyer\'s payment to a seller will be received on time and for the correct amount.',
+        definition: 'A letter from a bank guaranteeing that the liabilities of a debtor will be met. In other words, if the debtor fails to settle a debt, the bank will cover it.',
         cluster: 'Fundraising & Valuation'
     },
     {
@@ -2797,7 +2774,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Liabilities',
-        definition: 'A company\'s legal financial debts or obligations that arise during the course of business operations. Can be current (due within a year) or long-term.',
+        definition: '<p>Liabilities are a company\'s legal financial debts or obligations that arise from its business operations. They represent what the company owes to others and are reported on the balance sheet. Liabilities are classified as either current (due within one year) or long-term (due after one year).</p><p><b>For Startups:</b> It is crucial for startups to manage their liabilities to maintain solvency and liquidity. Common liabilities for a startup include Accounts Payable (money owed to suppliers), short-term loans, and Deferred Revenue (for subscription businesses that collect cash upfront). A high level of liabilities compared to assets can be a sign of financial risk.</p><p><b>Example:</b> A startup\'s balance sheet shows current liabilities of ₹20 Lakhs (comprising accounts payable and salaries payable) and a long-term loan of ₹50 Lakhs. Its total liabilities are ₹70 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -2835,7 +2812,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Liquid Assets',
-        definition: 'Cash on hand or an asset that can be readily converted to cash.',
+        definition: '<p>Liquid Assets are assets that can be easily and quickly converted into cash with little to no loss in value. The most liquid asset is cash itself. Other examples include cash equivalents (like short-term government bonds) and marketable securities.</p><p><b>For Startups:</b> Maintaining sufficient liquid assets is critical for a startup\'s survival. It ensures the company has the cash needed to cover its short-term obligations, such as payroll and rent. Investors closely monitor a startup\'s liquidity position (often measured by the Current Ratio or Quick Ratio) to assess its short-term financial health and runway.</p><p><b>Example:</b> A startup\'s balance sheet shows it has ₹50 Lakhs in cash and ₹10 Lakhs in a highly liquid mutual fund. It has ₹60 Lakhs in liquid assets to manage its operational needs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -3002,13 +2979,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Marketplace Reconciliation',
-        definition: 'In e-commerce, the process of matching sales data, fees, returns, and payouts from marketplaces like Amazon or Flipkart with a company\'s own accounting records.',
+        definition: '<p>Marketplace Reconciliation is a critical accounting process for e-commerce businesses that sell on platforms like Amazon, Flipkart, or Myntra. It involves matching the sales, fees, returns, and final payout data provided by the marketplace with the company\'s own internal sales records and bank statements.</p><p><b>For Startups:</b> This process is often complex and time-consuming due to the various fees charged by marketplaces (commission, shipping fees, advertising fees, etc.). Without proper reconciliation, a D2C startup cannot have an accurate picture of its channel profitability or ensure it has received the correct payment. Automating this process is key to scaling an e-commerce business effectively.</p><p><b>Example:</b> An accountant reconciles the monthly sales report from Amazon, accounting for all FBA fees and returns, to ensure the final payment received in the bank matches the expected amount.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Markup',
-        definition: 'The amount added to the cost price of goods to cover overhead and profit.',
+        definition: '<p>Markup is the amount a company adds to the cost of a product to determine its selling price. It is typically expressed as a percentage of the cost. Markup is different from gross margin, which is a percentage of the revenue.</p><p><b>For Startups:</b> For D2C and retail startups, setting the right markup is a key pricing decision. The markup needs to be high enough to cover all operating expenses and generate a profit, while still being competitive in the market. A common strategy is to use a "keystone" markup, which means doubling the cost price (a 100% markup).</p><p><b>Calculation:</b> Markup % = ((Selling Price - Cost) / Cost) * 100.</p><p><b>Example:</b> A product costs ₹500 to produce and is sold for ₹800. The markup is ₹300. The markup percentage is (300 / 500) * 100 = 60%.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -3145,7 +3122,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Negotiable Instrument',
-        definition: 'A document guaranteeing the payment of a specific amount of money, either on demand, or at a set time, with the payer named on the document.',
+        definition: '<p>A Negotiable Instrument is a signed document that promises a sum of payment to a specified person or the assignee. The key feature is that the ownership of the instrument can be transferred from one person to another. Common examples in India are cheques, promissory notes, and bills of exchange.</p><p><b>For Startups:</b> While less common in the age of digital payments, startups may still encounter negotiable instruments, particularly post-dated cheques received from customers or given to suppliers. Proper accounting for these instruments is important. For instance, a post-dated cheque received is not considered cash until the date it can be deposited.</p><p><b>Example:</b> A B2B startup accepts a post-dated cheque from a client as a security deposit for a large contract. This is recorded in the books but is not part of the company\'s cash balance until it is successfully encashed.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -3161,7 +3138,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         cluster: 'Startup Finance Fundamentals',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'virtual-cfo',
-        comparisonSlugs: ['what-is-burn-rate', 'what-is-runway'],
+        comparisonSlugs: ['what-is-burn-rate', 'what-is-net-burn-vs-gross-burn'],
         tier: 1
     },
     {
@@ -3175,7 +3152,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Net Income',
-        definition: 'The amount an individual earns after taxes and other deductions are taken out of their gross income. For a company, it is the profit after all expenses have been deducted from revenues.',
+        definition: '<p>Net Income, also known as Net Profit or the "bottom line," is the amount of profit remaining after all of a company\'s expenses, including taxes and interest, have been deducted from its total revenue. It is the final measure of a company\'s profitability for a given period and is found at the bottom of the income statement.</p><p><b>For Startups:</b> Most early-stage startups have a negative net income (a net loss) because their expenses, particularly in R&D and sales & marketing, are higher than their revenues. While not expected to be profitable initially, investors want to see a clear path to future profitability. As a startup matures, achieving positive net income becomes a key milestone.</p><p><b>Calculation:</b> Net Income = Total Revenue - Total Expenses.</p><p><b>Example:</b> A company has revenues of ₹1 Crore, a COGS of ₹30 Lakhs, and operating expenses of ₹50 Lakhs. Its pre-tax profit is ₹20 Lakhs. After paying ₹5 Lakhs in taxes, its Net Income is ₹15 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -3202,7 +3179,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Net Worth',
-        definition: 'The value of the assets a person or corporation owns, minus the liabilities they owe. It is a key measure of a company\'s financial health.',
+        definition: '<p>Net Worth is a measure of a company\'s financial value, calculated as the difference between its total assets and total liabilities. It is also known as Shareholders\' Equity or Book Value. It represents the amount that would be left for shareholders if all of a company\'s assets were liquidated and all of its debts were paid off.</p><p><b>For Startups:</b> For a growing startup, net worth can be a misleading metric. A startup might have a low or even negative net worth on its balance sheet (especially if it has significant debt), but its market valuation could be very high based on its future growth potential. However, a consistently declining net worth due to mounting losses can be a sign of financial distress.</p><p><b>Calculation:</b> Net Worth = Total Assets - Total Liabilities.</p><p><b>Example:</b> A company has assets worth ₹2 Crore and liabilities of ₹1.5 Crore. Its net worth is ₹50 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -3271,7 +3248,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Non-Performing Asset (NPA)',
-        definition: 'A loan or advance for which the principal or interest payment remained overdue for a period of 90 days.',
+        definition: '<p>A Non-Performing Asset (NPA) is a loan or advance for which the principal or interest payment has remained overdue for a period of 90 days or more. It is a key indicator of the health of a bank or lending institution\'s loan portfolio.</p><p><b>For Startups:</b> While typically associated with banks, the concept is relevant for FinTech lending startups. If a startup is in the business of lending, it must have a robust process for monitoring its loan book and classifying overdue loans as NPAs. A high NPA ratio is a major red flag for investors and regulators, indicating poor credit quality and underwriting processes.</p><p><b>Example:</b> A P2P lending platform has a loan where the borrower has not made any payment for over 90 days. The platform must classify this loan as an NPA and make provisions for the potential loss.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -3323,13 +3300,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Operating Expense (OpEx)',
-        definition: 'The expenses a business incurs through its normal business operations. Often abbreviated as OpEx, these expenses include rent, equipment, inventory costs, marketing, payroll, etc.',
+        definition: '<p>An Operating Expense (OpEx) is an expense a business incurs through its normal day-to-day operations. OpEx includes costs that are not directly tied to the production of a product or service (which are covered under COGS). Major categories of OpEx include Sales & Marketing, Research & Development (R&D), and General & Administrative (G&A) expenses.</p><p><b>For Startups:</b> Managing OpEx is crucial for controlling the burn rate. For a tech startup, the largest operating expense is almost always payroll. Other examples include rent, marketing spend, and software subscriptions. Investors closely monitor OpEx to ensure the company is investing efficiently in growth.</p><p><b>Example:</b> A startup\'s monthly OpEx might consist of ₹10 Lakhs in salaries, ₹2 Lakhs in office rent, and ₹3 Lakhs in marketing costs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Operating Income',
-        definition: 'An accounting figure that measures the amount of profit realized from a business\'s ongoing operations. Calculated as Gross Profit - Operating Expenses.',
+        definition: '<p>Operating Income is a measure of a company\'s profitability from its core business operations. It is calculated by subtracting the Cost of Goods Sold (COGS) and all operating expenses from total revenue. It is also known as Earnings Before Interest and Taxes (EBIT).</p><p><b>For Startups:</b> Operating Income is a key indicator of a company\'s operational efficiency and the profitability of its core business model, before factoring in non-operating items like interest income or taxes. A positive and growing operating income shows that the startup\'s fundamental business is healthy and scalable.</p><p><b>Calculation:</b> Operating Income = Gross Profit - Operating Expenses.</p><p><b>Example:</b> A company has a Gross Profit of ₹50 Lakhs and total operating expenses of ₹30 Lakhs. Its Operating Income is ₹20 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -3390,7 +3367,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Overhead',
-        definition: 'The ongoing business expenses not directly attributed to creating a product or service. Examples include rent, utilities, and administrative staff salaries.',
+        definition: '<p>Overhead refers to the ongoing business expenses that are not directly attributable to the creation of a product or service. These are the costs required to keep the business running, regardless of its production level. Overheads are a major component of a company\'s operating expenses.</p><p><b>For Startups:</b> Managing overhead is key to controlling the burn rate. Common overheads for a startup include office rent, utilities, salaries of administrative staff (like HR and finance), software subscriptions, and legal fees. Keeping overheads low is a hallmark of a capital-efficient startup.</p><p><b>In Manufacturing:</b> In a manufacturing context, factory overheads (like factory rent and machinery maintenance) are allocated to the cost of goods sold, while administrative overheads are treated as operating expenses.</p><p><b>Example:</b> A startup\'s monthly office rent of ₹1 Lakh is a primary overhead cost.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -3403,35 +3380,35 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
 
     // P
     {
-        term: 'P&L Statement',
+        term: 'P&amp;L Statement',
         definition: 'Profit and Loss statement, another name for the Income Statement.',
-        cluster: 'Accounting & Bookkeeping',
+        cluster: 'Accounting &amp; Bookkeeping',
         tier: 1
     },
     {
         term: 'Paid-in Capital',
         definition: 'The capital contributed to a company by investors in exchange for stock. It includes both the par value and any amount paid in excess of par.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Paid-up Capital',
         definition: 'The amount of money a company has received from shareholders in exchange for shares of stock.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'PAN (Permanent Account Number)',
         definition: 'A ten-character alphanumeric identifier, issued by the Indian Income Tax Department. It is mandatory for any person who intends to enter into economic or financial transactions where quoting PAN is required.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Participating Preferred Stock',
         definition: 'A type of preferred stock that gives the holder the right to receive their liquidation preference and also participate in the remaining proceeds with common stockholders.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Partnership Deed',
         definition: 'A legal document that outlines the terms and conditions between partners in a partnership.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Parity',
@@ -3442,12 +3419,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Passive Income',
         definition: 'Income that requires minimal labor to earn and maintain. It is often generated from investments, real estate, or royalties.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Patent',
         definition: 'A government authority or license conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Pay-to-Play Provision',
@@ -3461,7 +3438,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Payment Aggregator (PA)',
         definition: 'Entities that facilitate e-commerce sites and merchants to accept various payment instruments from customers for completion of their payment obligations without the need for merchants to create a separate payment integration system of their own. Regulated by RBI.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Payment Gateway (PG)',
@@ -3472,167 +3449,157 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Payroll',
         definition: 'The total amount of wages and salaries paid by a company to its employees. Also refers to the process of calculating and distributing these wages.',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'PE Ratio (Price-to-Earnings Ratio)',
         definition: 'A ratio for valuing a company that measures its current share price relative to its per-share earnings.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Peer-to-Peer (P2P) Lending',
         definition: 'A method of debt financing that enables individuals to borrow and lend money directly between each other without a financial institution. P2P platforms are regulated by the RBI in India.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Penalty for data breaches under DPDP Act',
         definition: '<p>Under India\'s DPDP Act, 2023, penalties for data breaches are significant and can go up to ₹250 crore. The penalty depends on the nature, gravity, and duration of the breach, the type of data involved, and the number of affected users.</p><p><b>Startup Example:</b> A fintech startup with millions of users experiences a data breach. The Data Protection Board could levy a penalty running into several crores, potentially crippling the company.</p><p>We advise on building robust systems as part of our <a href="/solutions/virtual-cfo-for-fintech-startups">FinTech advisory</a>.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for delayed reporting of foreign investment (FC-GPR)',
         definition: '<p>Form FC-GPR must be filed within 30 days of issuing shares to a foreign investor. Delay in filing is a contravention of FEMA and requires compounding with the RBI, which involves paying a penalty. The penalty amount is not fixed and is determined by the RBI.</p><p><b>Startup Example:</b> A startup delays its FC-GPR filing for its seed round. During its Series A due diligence, the new investors flag this as a major compliance lapse, delaying the funding until the compounding process is complete.</p><p>Our <a href="/services/corporate-law">corporate law services</a> ensure timely filings.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for director disqualification',
         definition: '<p>A director can be disqualified for reasons like non-filing of a company\'s financial statements for three consecutive years. A disqualified director cannot be appointed as a director in any other company for a period of 5 years.</p><p><b>Startup Example:</b> A founder of a failed startup that didn\'t complete its filings gets disqualified. They are now legally barred from becoming a director in their new venture for five years, creating a major roadblock.</p><p>Properly winding up old ventures is as important as starting new ones.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for expiry of E-way bill during transit',
         definition: '<p>An E-way bill has a specific validity period based on the distance to be traveled. If the goods are in transit after the E-way bill has expired, it is considered a violation. The goods can be detained, and penalties can be levied.</p><p><b>Startup Example:</b> A truck carrying a startup\'s goods breaks down, and the transit is delayed. If the E-way bill expires during this time and is not extended, the shipment is at risk of being penalized if inspected.</p><p>We advise on proper logistics and <a href="/services/regulatory-compliances">E-way bill management</a>.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for failure to spend CSR amount',
         definition: '<p>If a company fails to spend the required CSR amount, it must transfer the unspent amount to a specified government fund. Failure to do so can result in a penalty of twice the unspent amount or ₹1 crore, whichever is lower, on the company, and penalties on the officers.</p><p><b>Startup Example:</b> A company fails to spend its CSR budget of ₹10 Lakhs and also fails to transfer it. It could face a penalty of up to ₹20 Lakhs.</p><p>We provide comprehensive <a href="/services/regulatory-compliances">compliance management</a> for scaling startups.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for fraudulent claim of ITC',
         definition: '<p>For fraudulent claims of Input Tax Credit (ITC), the penalty can be 100% of the tax amount involved. In serious cases involving large amounts, it can also lead to arrest and prosecution under GST law.</p><p><b>Startup Example:</b> A founder is found to be part of a network using fake invoices to reduce their GST liability. This can lead to criminal proceedings, apart from the financial penalty.</p><p>We strictly advise against any such fraudulent practices.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for incorrect details in TDS returns',
         definition: '<p>Providing incorrect information in a TDS return, such as wrong PAN details, can lead to a penalty ranging from ₹10,000 to ₹1,00,000.</p><p><b>Startup Example:</b> A startup incorrectly enters the PAN of a vendor in its TDS return. It receives a notice from the tax department and may have to pay a penalty if the error is not rectified.</p><p>Our process includes verification of PAN details to avoid such errors.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for incorrect valuation for rights issue',
         definition: '<p>If a company issues shares through a rights issue at a price that is not supported by a proper valuation report (from a registered valuer), it can be challenged by the tax authorities under the Angel Tax provisions if the price is deemed to be above fair market value.</p><p><b>Startup Example:</b> A startup does a rights issue to existing shareholders at a very high price without a valuation report. This could attract scrutiny from the income tax department.</p><p>Our <a href="/services/fundraising">fundraising advisory</a> includes guidance on valuation.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for infringing on a trademark',
         definition: '<p>Trademark infringement can lead to a civil lawsuit where the infringer may have to pay damages to the trademark owner and stop using the mark. In some cases, it can also lead to criminal proceedings with imprisonment and fines.</p><p><b>Startup Example:</b> A new startup uses a brand name that is deceptively similar to an established competitor. The competitor sues them for infringement, forcing the startup to undergo a costly rebranding exercise and pay damages.</p><p>We advise on trademark searches as part of our <a href="/services/business-setup">Business Setup</a> process.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for late filing of Form PAS-3',
         definition: '<p>Late filing of Form PAS-3 attracts an ad-valorem penalty based on the number of days of delay. The penalties can become substantial very quickly, making timely filing crucial after any share allotment.</p><p><b>Startup Example:</b> A startup delays filing its PAS-3 by 90 days after a large funding round. It will face significant additional government fees as penalties.</p><p>We manage all event-based <a href="/services/corporate-law">ROC filings</a> to avoid these costs.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for late filing of MSME Form 1',
         definition: '<p>If a company required to file MSME Form 1 (for overdue payments to MSMEs) fails to do so, it can face a penalty of up to ₹25,000. Additionally, every officer in default can be imprisoned for up to 6 months or fined between ₹25,000 and ₹3 Lakhs.</p><p><b>Startup Example:</b> A startup has overdue payments to an MSME vendor but fails to report it in MSME Form 1. This exposes the founders/directors to severe personal liability and penalties.</p><p>Our <a href="/services/bookkeeping">bookkeeping services</a> help track vendor payments accurately.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for late payment of PF/ESI contributions',
         definition: '<p>Late payment of PF and ESI contributions attracts damages and interest. For PF, damages can range from 5% to 25% per annum depending on the delay. For ESI, interest is charged at 12% per annum.</p><p><b>Startup Example:</b> A startup delays its PF payment by 3 months. It will be liable to pay the contribution plus interest and damages, significantly increasing the cost.</p><p>We ensure timely <a href="/services/regulatory-compliances">payroll compliance</a> to avoid these penalties.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for mismatch in GSTR-1 and GSTR-3B',
         definition: '<p>If the tax liability declared in GSTR-1 (sales) is higher than the tax paid in GSTR-3B, the GST department will issue a notice to recover the difference along with interest. This mismatch is a major red flag for tax authorities.</p><p><b>Startup Example:</b> A startup reports sales of ₹10 Lakhs in GSTR-1 but, due to a calculation error, only pays tax on ₹9 Lakhs in GSTR-3B. They will receive a notice for the ₹1 Lakh shortfall plus interest.</p><p>Our <a href="/services/bookkeeping">reconciliation services</a> prevent such mismatches.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-compliance with Factory Act',
         definition: '<p>For manufacturing startups, non-compliance with the Factory Act, 1948 (related to worker health, safety, and welfare) can lead to fines and imprisonment for the "occupier" of the factory (often the director).</p><p><b>Startup Example:</b> A manufacturing startup fails to provide adequate safety equipment, leading to an accident. The directors can be held personally liable and face criminal proceedings.</p><p>Our advisory for <a href="/industry-finance/finance-for-manufacturing-startups-india">manufacturing startups</a> includes highlighting these critical compliance areas.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-compliance with Form MGT-14',
         definition: '<p>Form MGT-14 is used to file certain special resolutions and other agreements with the ROC. Failure to file this form within 30 days of passing the resolution attracts significant penalties on the company and its officers.</p><p><b>Startup Example:</b> A startup passes a special resolution to adopt a new set of Articles of Association but fails to file Form MGT-14 with the ROC. The resolution is not effective, and the company is in non-compliance.</p><p>We ensure all necessary resolutions are filed with the ROC.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-compliance with Labour Laws',
         definition: '<p>Non-compliance with various labor laws (like minimum wage, working hours, leave policies) can result in penalties, legal disputes with employees, and reputational damage. The penalties vary significantly depending on the specific law and state.</p><p><b>Startup Example:</b> A startup fails to pay overtime wages to its employees as per the law. This can lead to a claim from the employees and penalties from the labor department.</p><p>We advise startups on setting up compliant <a href="/services/corporate-law">HR policies</a>.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-compliance with Secretarial Standards',
         definition: '<p>Companies are required to comply with Secretarial Standards (SS-1 for Board Meetings, SS-2 for General Meetings) issued by the ICSI. Non-compliance can lead to penalties on the company and its officers, as auditors are required to report on it.</p><p><b>Startup Example:</b> A startup\'s board meeting minutes do not contain all the details required by SS-1. The company secretary or auditor will flag this as a non-compliance.</p><p>Our <a href="/services/corporate-law">secretarial services</a> are fully compliant with these standards.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-compliance with medical device rules',
         definition: '<p>The Medical Device Rules, 2017, govern the manufacturing, import, and sale of medical devices in India. Non-compliance with aspects like labeling, quality control, and post-market surveillance can lead to suspension of license, fines, and imprisonment.</p><p><b>Startup Example:</b> A medical device startup fails to report an adverse event associated with its product to the authorities. This can lead to the cancellation of their manufacturing license.</p><p>We guide startups through the <a href="/industry-finance/finance-for-fintech-startups-india">complex regulatory landscape</a>.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-issuance of Form 16/16A',
         definition: '<p>Failure to issue TDS certificates (Form 16 for salary, Form 16A for other payments) by the due date attracts a penalty of ₹100 per day of default for each certificate.</p><p><b>Startup Example:</b> A startup with 20 employees fails to issue Form 16 by the due date of June 15th. It could face a penalty of ₹100 * 20 employees * number of days of delay.</p><p>Our payroll and TDS services ensure all forms are issued on time.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-payment of Advance Tax',
         definition: '<p>Failure to pay advance tax or paying less than the required amount by the due dates attracts penal interest under sections 234B and 234C of the Income Tax Act. Interest is levied at 1% per month on the shortfall.</p><p><b>Startup Example:</b> A startup fails to pay its advance tax installments correctly. At the end of the year, the tax department calculates the shortfall for each quarter and applies interest, leading to a significantly higher total tax outgo.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed-startups">guides</a> emphasize the importance of early tax planning.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for non-payment of Professional Tax',
         definition: '<p>Late payment or non-payment of Professional Tax attracts interest and penalties, which vary by state. The penalties can be a percentage of the tax due or a fixed amount.</p><p><b>Startup Example:</b> A startup in Karnataka fails to pay its professional tax on time. It will be liable for the tax amount plus interest at 1.25% per month and a penalty of up to 150% of the tax due.</p><p>Our services ensure all state-level compliances are met.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for not displaying GSTIN on signboards and invoices',
         definition: '<p>Registered persons under GST are required to display their GST Identification Number (GSTIN) on their name boards at their principal place of business and on all tax invoices. Failure to do so can attract a general penalty of up to ₹25,000.</p><p><b>Startup Example:</b> A newly registered startup forgets to add its GSTIN to its invoices. This is a compliance lapse and can be pointed out during a GST inspection.</p><p>Our <a href="/services/regulatory-compliances">compliance checklist</a> includes these small but important details.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for not obtaining a DIN',
         definition: '<p>An individual cannot be appointed as a director of a company in India without obtaining a Director Identification Number (DIN). Acting as a director without a DIN is a violation of the Companies Act and can lead to penalties.</p><p><b>Startup Example:</b> Founders of a new startup must apply for and obtain DINs as part of the company incorporation process before they can be officially appointed as directors.</p><p>We handle the entire <a href="/services/business-setup">incorporation process</a>, including DIN application.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for not filing DIR-3 KYC',
         definition: '<p>If a director fails to file their DIR-3 KYC form by the due date, their DIN will be marked as "deactivated due to non-filing of DIR-3 KYC". To reactivate it, a fee of ₹5,000 must be paid.</p><p><b>Startup Example:</b> A startup director misses the September 30th deadline. Their DIN is deactivated, preventing them from signing any company forms or resolutions until the ₹5,000 penalty is paid and the form is filed.</p><p>Our compliance reminders prevent such avoidable penalties.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for not filing Form 3CEB',
         definition: '<p>Failure to file the transfer pricing report (Form 3CEB) by the due date can attract a hefty penalty of up to 2% of the value of each international transaction, in addition to penalties for not maintaining proper documentation.</p><p><b>Startup Example:</b> A startup fails to file Form 3CEB for international transactions worth ₹5 Crore. It could face a penalty of up to ₹10 Lakhs.</p><p>Timely and accurate filing is critical, a core part of our <a href="/services/regulatory-compliances">compliance retainers</a>.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for not having a proper refund policy for D2C brands',
         definition: '<p>Under the Consumer Protection (E-Commerce) Rules, all e-commerce entities must have a clear and accessible refund, return, and exchange policy. Not having one, or not adhering to the stated policy, can lead to consumer complaints and penalties from consumer courts.</p><p><b>Startup Example:</b> A D2C brand has a vague refund policy. A customer files a complaint for a refused refund, leading to a consumer court case and negative publicity.</p><p>Our <a href="/services/corporate-law">legal advisory</a> helps draft compliant e-commerce policies.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Penalty for not having a registered office',
         definition: '<p>Every company must have a registered office from the date of incorporation. The company and every officer in default can be fined ₹1,000 for every day the default continues, up to a maximum of ₹1 Lakh.</p><p><b>Startup Example:</b> A startup incorporates but fails to file its registered office address with the ROC within 30 days. It starts incurring a daily penalty until the compliance is met.</p><p>Our <a href="/services/business-setup">Business Setup</a> services ensure all initial filings are completed.</p>',
-        cluster: 'Founder Problems & Penalties'
-    },
-    {
-        term: 'Penalty for not obtaining GST registration when required',
-        definition: '<p>If a business is liable for GST registration but fails to obtain it, it can be liable for a penalty of 100% of the tax due or ₹10,000, whichever is higher. They will also be liable to pay the entire tax liability from the date they were supposed to be registered.</p><p><b>Startup Example:</b> A startup crosses the GST threshold but continues to operate without registration for a year. When caught, they have to pay the entire year\'s GST liability plus a matching penalty.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed-startups">pre-seed guide</a> covers this critical first step.</p>',
-        cluster: 'Founder Problems & Penalties'
-    },
-    {
-        term: 'Pension',
-        definition: 'A retirement fund for an employee paid by the employer.',
-        cluster: 'TDS & Payroll'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Perquisite',
         definition: 'A non-wage benefit provided to an employee, such as a company car or health insurance. Often taxable.',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Perpetuity',
@@ -3643,18 +3610,18 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Personal Guarantee',
         definition: 'An individual\'s legal promise to repay credit issued to a business for which they serve as an executive or partner.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Petty Cash',
-        definition: 'A small amount of cash on hand that is used for paying minor and incidental expenses.',
+        definition: '<p>Petty cash is a small amount of cash kept on hand by a business to pay for minor, incidental expenses where it is not practical to write a cheque or use a credit card. Examples include paying for office supplies, small reimbursements to employees, or courier charges.</p><p><b>For Startups:</b> While most startups aim to be digital-first, having a petty cash fund can be useful for handling small, immediate expenses. It\'s important to have a clear process for managing and reconciling the petty cash fund. One person should be designated as the custodian, and all disbursements should be supported by a voucher or receipt.</p><p><b>Example:</b> A startup maintains a petty cash fund of ₹5,000. An employee buys office stationery for ₹500 and submits the receipt to the petty cash custodian to be reimbursed.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Phantom Stocks vs. ESOPs',
-        definition: '<p>Phantom stocks are a type of employee benefit that mimics the value of company stock but does not grant actual ownership. The employee receives a cash bonus based on the increase in the stock\'s value. ESOPs, on the other hand, grant the right to buy actual shares.</p><p><b>Startup Example:</b> A startup wants to incentivize a key employee without diluting its cap table. It grants them phantom stocks tied to the company\'s valuation, which pays out a cash bonus upon an exit event.</p><p>We help structure various <a href="/services/corporate-law">employee incentive schemes</a>.</p>',
-        cluster: 'ESOP & Employee Structuring'
+        definition: '<p>Phantom stocks are a type of employee benefit that mimics the value of company stock but does not grant actual ownership. The employee receives a cash bonus based on the increase in the stock\'s value. ESOPs, on the other hand, grant the right to buy actual shares.</p><p><b>Startup Example:</b> A startup wants to incentivize a key employee without diluting its cap table. It grants them phantom stocks tied to the company\'s valuation, which pays out a cash bonus upon an exit event.</p><p>This is another tool we explore in our <a href="/services/corporate-law">compensation advisory</a>.</p>',
+        cluster: 'ESOP &amp; Employee Structuring'
     },
     {
         term: 'Pipeline Coverage',
@@ -3668,7 +3635,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Pitch Deck',
         definition: 'A brief presentation, often created using presentation software, used to provide an audience with a quick overview of a business plan. Essential for fundraising.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Pivot',
@@ -3679,7 +3646,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Place of Supply',
         definition: 'A key concept in GST that determines which tax (CGST, SGST, or IGST) should be charged on a transaction.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Platform as a Service (PaaS)',
@@ -3696,27 +3663,27 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'POSH Act Compliance for Startups',
         definition: '<p>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH) is a mandatory compliance for all organizations in India, including startups with 10 or more employees.</p><p><b>Startup Example:</b> A tech startup grows to 12 employees. It is now legally required to constitute an Internal Complaints Committee (ICC), draft a POSH policy, and conduct regular awareness sessions for its employees.</p><p>We assist startups in setting up their <a href="/services/regulatory-compliances">statutory compliances</a>, including POSH.</p>',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Post-money Valuation',
         definition: 'The value of a company after an investment has been made. It is the pre-money valuation plus the amount of new equity injected.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Power of Attorney (PoA)',
         definition: 'A legal document giving one person (the agent or attorney-in-fact) the power to act for another person (the principal).',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Pre-money Valuation',
         definition: 'The value of a company before it receives external financing. Post-money valuation is the pre-money valuation plus the new investment amount.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Preferred Stock',
         definition: 'A class of ownership in a corporation that has a higher claim on its assets and earnings than common stock. Typically issued to investors.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Premium',
@@ -3726,24 +3693,24 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Prepaid Expense',
-        definition: 'A type of asset on the balance sheet that results from a business making advance payments for goods or services to be received in the future.',
+        definition: '<p>A Prepaid Expense is an asset on the balance sheet that results from a business making advance payments for goods or services that will be received in the future. As the goods or services are used over time, the asset is expensed on the income statement.</p><p><b>For Startups:</b> A common prepaid expense for a startup is office rent paid in advance or an annual insurance premium. By recording it as a prepaid asset first, the startup correctly matches the expense to the period in which it is incurred, in line with the accrual accounting principle.</p><p><b>Example:</b> A startup pays its annual office rent of ₹12 Lakhs upfront in January. It records this as a Prepaid Rent asset. Each month, it then records a rent expense of ₹1 Lakh on its P&L and reduces the Prepaid Rent asset by the same amount.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Prepaid Payment Instrument (PPI)',
         definition: 'Instruments that facilitate purchase of goods and services against the value stored on them. Includes digital wallets. Regulated by RBI.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Present Value (PV)',
         definition: 'The current value of a future sum of money or stream of cash flows given a specified rate of return.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Price Elasticity of Demand',
         definition: 'A measure of the relationship between a change in the quantity demanded of a particular good and a change in its price.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Price-to-Sales (P/S) Ratio',
@@ -3763,17 +3730,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Private Equity (PE)',
         definition: 'Investment funds, generally organized as limited partnerships, that buy and restructure companies that are not publicly traded.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Private Limited Company',
         definition: 'A type of privately held small business entity, in which owner liability is limited to their shares, the number of shareholders is limited, and shares are prohibited from being publicly traded.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Pro-forma',
         definition: 'A method of calculating financial results using certain projections or presumptions. A pro-forma financial statement is a forecast.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Pro Rata Rights',
@@ -3801,7 +3768,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Profit Margin',
         definition: 'A ratio of profitability calculated as net income divided by revenue. It represents how many cents of profit has been generated for each dollar of sale.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Profitability Ratios',
@@ -3815,7 +3782,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Promissory Note',
         definition: 'A financial instrument that contains a written promise by one party to pay another party a definite sum of money, either on demand or at a specified future date.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Proof of Concept (PoC)',
@@ -3826,7 +3793,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Prospectus',
         definition: 'A formal legal document that is required by and filed with the Securities and Exchange Commission (or SEBI in India) that provides details about an investment offering for sale to the public.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Protective Provisions',
@@ -3840,35 +3807,35 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Provident Fund (PF)',
         definition: 'A government-managed retirement savings scheme for employees in India. Both employee and employer contribute to the fund.',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Provision',
-        definition: 'An amount set aside from profits in the accounts of an organization for a known liability, the timing or exact amount of which is uncertain.',
+        definition: '<p>A provision in accounting is an amount set aside from profits to cover a probable future liability or a loss, the exact timing or amount of which is uncertain. It is recorded as a liability on the balance sheet. This is different from a contingent liability, which is only disclosed in footnotes.</p><p><b>For Startups:</b> A common provision for startups is a "provision for doubtful debts." If a startup has a large accounts receivable balance and believes some customers may default, it can create a provision to proactively recognize this potential loss, rather than waiting for the debt to become bad. This provides a more conservative and realistic view of the company\'s assets.</p><p><b>Example:</b> A company has ₹10 Lakhs in receivables. Based on historical trends, it expects 2% will not be collected. It creates a provision for doubtful debts of ₹20,000.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Proxy Voting',
         definition: 'A ballot cast by one person on behalf of another. It allows a shareholder who is not able to attend a shareholder meeting to vote their shares.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Public Limited Company',
         definition: 'A company whose securities are traded on a stock exchange and can be bought and sold by anyone.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Put Option',
         definition: 'A financial contract giving the option buyer the right, but not the obligation, to sell a specified amount of an underlying security at a specified price within a specified time.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
 
     // Q
     {
         term: 'Qualified Institutional Buyer (QIB)',
         definition: 'An institutional investor that is deemed to have specialized knowledge and experience in financial matters.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Quantitative Easing (QE)',
@@ -3879,7 +3846,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Quarterly Return Monthly Payment (QRMP) Scheme',
         definition: 'A GST scheme allowing taxpayers with turnover up to ₹5 crore to file returns quarterly while paying tax monthly.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Quota Attainment',
@@ -3887,13 +3854,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         cluster: 'Startup Finance Fundamentals',
         stageRelevance: 'Growth',
         relatedServiceSlug: 'virtual-cfo',
-        comparisonSlugs: ['what-is-sales-pipeline'],
-        tier: 3
+        comparisonSlugs: ['what-is-sales-pipeline', 'what-is-quota-attainment'],
+        tier: 2
     },
     {
         term: 'Quorum',
         definition: 'The minimum number of members of an assembly or society that must be present at any of its meetings to make the proceedings of that meeting valid.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Quotation',
@@ -3904,7 +3871,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     
     // R
     {
-        term: 'R&D (Research and Development)',
+        term: 'R&amp;D (Research and Development)',
         definition: 'Activities companies undertake to innovate and introduce new products and services.',
         cluster: 'Startup Finance Fundamentals',
         tier: 2
@@ -3912,7 +3879,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'RACI Matrix',
         definition: 'A responsibility assignment chart that maps out every task, milestone, or key decision and assigns which roles are Responsible, Accountable, Consulted, and Informed for that item.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Real Estate Investment Trust (REIT)',
@@ -3923,7 +3890,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Recapitalization',
         definition: 'Restructuring a company\'s debt and equity mixture, often to make its capital structure more stable or optimal.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Recession',
@@ -3933,45 +3900,45 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Reconciliation',
-        definition: 'An accounting process that compares two sets of records to check that figures are in agreement and are accurate.',
+        definition: '<p>Reconciliation is a core accounting process that involves comparing two sets of records to ensure they match and are accurate. The goal is to identify and resolve any discrepancies. The most common type is a bank reconciliation, but the process is also used for accounts receivable, accounts payable, and marketplace payouts.</p><p><b>For Startups:</b> Regular reconciliation is a fundamental financial control. It helps prevent errors, detect fraudulent transactions, and ensures that the company\'s financial statements are reliable. For an e-commerce startup, reconciling payments from marketplaces like Amazon or Flipkart is a critical and often complex task to ensure all sales and fees are accounted for correctly.</p><p><b>Example:</b> An accountant performs a monthly bank reconciliation, matching every transaction in the company\'s books to the bank statement to ensure no transactions have been missed or recorded incorrectly.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Registrar and Transfer Agent (RTA)',
         definition: 'An agent who, on behalf of a body corporate, maintains the records of securities holders, handles transfer of securities, and other related matters.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Registrar of Companies (ROC)',
         definition: 'An office under the Indian Ministry of Corporate Affairs responsible for the administration of the Companies Act and regulating companies.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Regulation D',
         definition: 'A regulation by the U.S. SEC that allows companies to raise capital through the sale of equity or debt securities without having to register those securities with the SEC.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Related Party Transaction Compliance',
         definition: '<p>Transactions between a company and its related parties (such as directors, their relatives, or other companies they control) are regulated by Section 188 of the Companies Act.</p><p><b>Startup Example:</b> A startup wants to take an unsecured loan from one of its directors. This is a related party transaction. Depending on the amount, it may require approval from the Board of Directors and, in some cases, a special resolution from shareholders.</p><p>Managing these complexities is part of our <a href="/services/corporate-law">Corporate Law advisory</a>.</p>',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Representations and Warranties',
         definition: '<p>These are statements of fact and promises made by the founders to the investors in a funding agreement. They cover aspects like the company being duly incorporated, owning its IP, and having paid all its taxes. A breach of these can lead to serious legal and financial consequences.</p><p><b>Startup Example:</b> In an SHA, founders warrant that the company has no pending lawsuits. If a major lawsuit was undisclosed, this is a breach of warranty, and the investors can sue the founders for damages.</p><p>Our <a href="/services/investor-due-diligence">due diligence readiness</a> service ensures all representations are accurate.</p>',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Retained Earnings',
-        definition: 'The portion of a company\'s net income that is not distributed to shareholders as dividends but is reinvested in the business.',
+        definition: '<p>Retained Earnings represent the cumulative net income of a company that is retained and reinvested in the business, rather than being distributed to shareholders as dividends. It is a component of Shareholders\' Equity on the balance sheet.</p><p><b>For Startups:</b> For most startups, which are in a high-growth phase and typically unprofitable, the retained earnings balance will be negative. This is referred to as an "accumulated deficit" and is perfectly normal. It reflects the cumulative losses incurred while investing in growth. As the startup becomes profitable, the retained earnings will become positive.</p><p><b>Calculation:</b> Retained Earnings (Ending) = Retained Earnings (Beginning) + Net Income - Dividends.</p><p><b>Example:</b> A company starts the year with ₹50 Lakhs in retained earnings, earns a net income of ₹10 Lakhs, and pays no dividends. Its ending retained earnings are ₹60 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Return on Ad Spend (ROAS)',
         definition: 'A marketing metric that measures the amount of revenue your business earns for each dollar it spends on advertising.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Return on Assets (ROA)',
@@ -3999,20 +3966,20 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Revenue',
-        definition: 'The total amount of income generated by the sale of goods or services related to the company\'s primary operations.',
+        definition: '<p>Revenue is the total income a company generates from its primary business activities, typically the sale of goods and services. It is the "top line" figure on an income statement from which all costs and expenses are subtracted to arrive at net income.</p><p><b>For Startups:</b> Revenue is a primary indicator of traction and product-market fit. Investors will look at both the absolute amount of revenue and, more importantly, its growth rate. For subscription businesses, this is measured as Monthly Recurring Revenue (MRR) or Annual Recurring Revenue (ARR).</p><p><b>Important Distinction:</b> It\'s crucial to distinguish Revenue from Bookings (the value of contracts signed) and Cash Collections. Under accrual accounting, revenue is recognized only when it is earned, not when the cash is received.</p><p><b>Example:</b> A SaaS company sells a one-year subscription for ₹12,000. While the cash collected is ₹12,000, the revenue recognized each month is only ₹1,000.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
     {
         term: 'Revenue from Operations',
-        definition: 'The revenue generated from a company\'s main business activities, such as sales of goods or services.',
+        definition: '<p>Revenue from Operations is a specific line item on the income statement that represents the revenue a company generates from its principal business activities. It excludes any income from non-operating activities, such as interest income from investments or gains from the sale of assets.</p><p><b>For Startups:</b> Focusing on revenue from operations gives a clear picture of the health of the core business model, stripping away any peripheral financial noise. For a SaaS startup, this would be its subscription revenue. For a D2C brand, it would be the revenue from selling its products.</p><p><b>Example:</b> A company has total revenues of ₹1.1 Crore. Of this, ₹1 Crore is from the sale of its software, and ₹10 Lakhs is from interest earned on its bank deposits. Its Revenue from Operations is ₹1 Crore.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Revenue Recognition',
         definition: '<p>Revenue Recognition is an accounting principle that specifies how and when revenue is to be recognized. Under the accrual basis of accounting, revenue is recognized when it is earned and realized, not necessarily when the cash is received.</p><p><b>For Startups:</b> Proper revenue recognition is crucial for accurate financial reporting and compliance. It is a key area of scrutiny during due diligence, and getting it wrong can lead to restatement of financials and loss of investor trust.</p><p><b>For SaaS:</b> For SaaS companies, this is particularly important. If a customer pays upfront for a one-year subscription, the revenue must be recognized on a straight-line basis over the 12 months of the contract. The unearned portion is recorded on the balance sheet as "deferred revenue."</p><p><b>Example:</b> A customer pays ₹1,20,000 on January 1st for an annual subscription. The company recognizes ₹10,000 as revenue each month from January to December.</p>',
-        cluster: 'Startup Finance Fundamentals',
+        cluster: 'Accounting & Bookkeeping',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'bookkeeping',
         comparisonSlugs: ['what-is-deferred-revenue', 'what-is-bookings-vs-revenue', 'what-is-accrual-basis-accounting'],
@@ -4021,27 +3988,27 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Reverse Charge Mechanism (RCM)',
         definition: 'A mechanism under GST where the liability to pay tax is on the recipient of the supply of goods or services instead of the supplier.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Reverse Charge on Import of Services',
         definition: '<p>When a business in India receives services from a person outside India, the liability to pay GST falls on the recipient of the service under the Reverse Charge Mechanism (RCM).</p><p><b>Startup Example:</b> A startup in Bangalore hires a freelance developer from the UK for a project. The startup receives an invoice without GST. However, the Indian startup is liable to pay IGST on the invoice value directly to the government and can later claim it as Input Tax Credit.</p><p>Handling RCM is a key part of our <a href="/services/regulatory-compliances">GST services</a>.</p>',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Reverse Merger',
         definition: 'A way for a private company to go public by acquiring a publicly listed company.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Revolving Line of Credit',
         definition: 'A type of loan issued by a financial institution that provides the borrower with a maximum amount of funds they can use, which they can then repay and borrow again.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Right of First Offer (ROFO) vs ROFR',
         definition: '<p>A Right of First Refusal (ROFR) lets a holder match an offer from a third party. A Right of First Offer (ROFO) requires a selling shareholder to first offer the shares to the holder before seeking third-party offers. ROFR is generally more favorable to the holder.</p><p><b>Startup Example:</b> An SHA has a ROFO clause. If a founder wants to sell their shares, they must first offer them to the other co-founders at a price they determine. If the co-founders refuse, the founder can then sell to a third party at that price or higher.</p><p>These clauses are critical components of a <a href="/services/corporate-law">Shareholders\' Agreement</a>.</p>',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Right of First Refusal (ROFR)',
@@ -4055,12 +4022,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Risk Management',
         definition: 'The process of identifying, assessing, and controlling threats to an organization\'s capital and earnings.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Roadshow',
         definition: 'A series of presentations made in various locations leading up to an IPO, to generate excitement and interest from potential investors.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Robo-advisor',
@@ -4070,22 +4037,22 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'ROC Compliance for Board Meetings',
-        definition: '<p>The Companies Act, 2013 mandates that every company must hold a minimum of four board meetings each year, with a gap of not more than 120 days between two consecutive meetings.</p><p><b>Startup Example:</b> A startup holds a board meeting on Jan 15th. The next board meeting must be held on or before May 15th. Proper minutes for each meeting must be maintained.</p><p>Ensuring this is part of our <a href="/services/corporate-law">Corporate Law & Compliance</a> services.</p>',
-        cluster: 'ROC, Company Law & FEMA'
+        definition: '<p>The Companies Act, 2013 mandates that every company must hold a minimum of four board meetings each year, with a gap of not more than 120 days between two consecutive meetings.</p><p><b>Startup Example:</b> A startup holds a board meeting on Jan 15th. The next board meeting must be held on or before May 15th. Proper minutes for each meeting must be maintained.</p><p>Ensuring this is part of our <a href="/services/corporate-law">Corporate Law &amp; Compliance</a> services.</p>',
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'ROC non-compliance penalties',
         definition: '<p>Failure to comply with the Companies Act, such as late filing of annual returns (AOC-4, MGT-7), not holding board meetings, or not maintaining statutory registers, leads to significant penalties. For late filing of annual returns, the penalty is ₹100 per day per form.</p><p><b>Startup Example:</b> A private limited company fails to file its AOC-4 and MGT-7 for a year. It would face a penalty of ₹100 x 2 forms x 365 days = ₹73,000, plus penalties on the company and its directors.</p><p>We provide comprehensive <a href="/services/corporate-law">ROC compliance services</a> to avoid these steep costs.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Rolling Forecast',
         definition: 'A management tool that adds a new forecasting period to the end of the forecast as each period passes, providing a more up-to-date prediction.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Royalty',
-        definition: 'A payment made to the legal owner of a property, patent, copyrighted work, or franchise by those who wish to make use of it for the purposes of generating revenue.',
+        definition: '<p>A royalty is a payment made to the legal owner of an asset, such as a patent, copyright, or natural resource, for the right to use that asset. It is typically calculated as a percentage of the revenues generated from using the asset.</p><p><b>For Startups:</b> A tech startup might license a piece of technology from a university and pay a royalty on the sales of products that use that technology. In accounting, royalty payments are recorded as an operating expense. Payments for royalties, especially to foreign entities, are subject to Tax Deducted at Source (TDS) in India.</p><p><b>Example:</b> A mobile game developer uses a popular music track in their game and agrees to pay the music label a 5% royalty on all in-game purchases.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -4101,7 +4068,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Run Rate',
         definition: 'A method of forecasting future performance by extrapolating current financial results. For example, if a company has ₹1 crore in revenue in a quarter, its annual run rate is ₹4 crore.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Runway',
@@ -4126,16 +4093,16 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'SAC Code (Services Accounting Code)',
         definition: 'A classification system for services developed by the Service Tax department in India. Used in GST to classify services for taxation purposes.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'SAFE (Simple Agreement for Future Equity)',
         definition: 'An agreement between an investor and a company that provides rights to the investor for future equity in the company, similar to a convertible note but without a maturity date or interest.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Sale and Leaseback',
-        definition: 'A transaction in which the owner of an asset sells it and then leases it back from the new owner.',
+        definition: '<p>A Sale and Leaseback is a financial transaction in which a company sells an asset it owns (like an office building or equipment) and then immediately leases it back from the new owner. This allows the company to convert a fixed asset into cash while still being able to use it.</p><p><b>For Startups:</b> While less common for early-stage tech startups, this can be a financing strategy for more mature, asset-heavy startups (e.g., manufacturing or logistics) that need to unlock capital for growth without taking on traditional debt or diluting equity.</p><p><b>Example:</b> A D2C startup owns its warehouse valued at ₹2 Crores. It sells the warehouse to a real estate investor and then signs a long-term lease to continue using it. The startup receives ₹2 Crores in cash, which it can use to fund its expansion.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -4209,7 +4176,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
         cluster: 'Startup Finance Fundamentals',
         stageRelevance: 'Growth',
         relatedServiceSlug: 'virtual-cfo',
-        comparisonSlugs: ['what-is-rule-of-40', 'what-is-ltvcac-ratio'],
+        comparisonSlugs: ['what-is-rule-of-40', 'what-is-ebitda'],
         tier: 2
     },
     {
@@ -4236,7 +4203,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'SEBI (Securities and Exchange Board of India)',
         definition: 'The regulator for the securities and commodity market in India under the jurisdiction of the Ministry of Finance.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Secondary Sale',
@@ -4249,57 +4216,57 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Section 115BAA',
         definition: '<p>This section of the Income Tax Act gives domestic companies the option to pay tax at a concessional rate of 22% (plus surcharge and cess), provided they do not claim certain specified deductions and exemptions.</p><p><b>Startup Example:</b> A profitable startup evaluates whether to opt for the new 22% tax rate under 115BAA or continue with the old regime and claim benefits like accelerated depreciation. This is a one-time, irreversible decision.</p><p>We help startups make this crucial decision as part of our <a href="/services/regulatory-compliances">tax planning</a>.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Section 194C - TDS on Contracts',
         definition: '<p>A section of the Indian Income Tax Act that mandates deducting tax at source (TDS) on payments made to contractors. The rate is 1% for individuals/HUFs and 2% for others.</p><p><b>Startup Example:</b> A startup pays a web development agency (a company) ₹1,00,000 for building their website. The startup must deduct ₹2,000 (2%) as TDS before making the payment.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> cover all forms of TDS.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Section 194J - TDS on Professional Fees',
         definition: '<p>A section of the Indian Income Tax Act that mandates deducting tax at source (TDS) at 10% on payments made for professional or technical services, if the total payment in a year exceeds ₹30,000.</p><p><b>Startup Example:</b> A startup pays a marketing consultant ₹50,000 for their services. The startup must deduct ₹5,000 (10%) as TDS, pay the consultant ₹45,000, and deposit the ₹5,000 with the government.</p><p>This is a common compliance item handled by our <a href="/services/regulatory-compliances">compliance team</a>.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Section 206AB',
         definition: '<p>This section mandates a higher rate of TDS for payments made to "specified persons" who have not filed their income tax returns for the previous two years and whose aggregate TDS is ₹50,000 or more in each of those years.</p><p><b>Startup Example:</b> A startup needs to pay a vendor who has not filed their ITRs. The startup must check the government\'s compliance portal and, if the vendor is a "specified person," deduct TDS at twice the normal rate.</p><p>This is a critical part of our enhanced <a href="/services/regulatory-compliances">TDS compliance checks</a>.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Section 44ADA of Income Tax Act',
         definition: '<p>A presumptive taxation scheme for small professionals in India. Eligible professionals can declare 50% of their gross receipts as their income, and this is taxed. It simplifies tax compliance as detailed books of accounts are not required.</p><p><b>Startup Example:</b> A freelance consultant with gross annual receipts of ₹40 Lakhs can opt for this scheme. She can declare ₹20 Lakhs (50%) as her taxable income without needing to maintain detailed expense records.</p><p>Our <a href="/services/regulatory-compliances">tax services</a> help freelancers and consultants leverage such schemes.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Section 8 Company',
         definition: 'A type of non-profit organization in India established for promoting commerce, art, science, sports, education, research, social welfare, religion, charity, protection of environment or any such other object.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Section 80-IAC Tax Holiday for Startups',
-        definition: '<p>A tax incentive for eligible startups recognized by the Department for Promotion of Industry and Internal Trade (DPIIT), providing a 100% tax deduction on profits for any 3 consecutive years out of the first 10 years of incorporation.</p><p><b>Startup Example:</b> A recognized startup becomes profitable in its 4th year. It can choose to claim a tax holiday for years 4, 5, and 6, paying zero income tax on its profits for that period.</p><p>We help startups with <a href="/services/business-setup">DPIIT recognition</a> to avail such benefits.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        definition: '<p>A tax incentive for eligible startups recognized by the Department for Promotion of Industry and Internal Trade (DPIIT), providing a 100% tax deduction on profits for any 3 consecutive years out of the first 10 years of incorporation.</p><p><b>Startup Example:</b> A recognized startup becomes profitable in its 4th year. It can choose to claim a tax holiday for years 4, 5, and 6, paying zero income tax on its profits for that period.</p><p>Our <a href="/services/business-setup">DPIIT recognition</a> to avail such benefits.</p>',
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Section 80C',
         definition: 'A section of the Indian Income Tax Act that allows taxpayers to claim deductions for various investments and expenses, such as EPF, PPF, life insurance premiums, etc.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Secured Loan',
         definition: 'A loan in which the borrower pledges some asset (e.g., a car or property) as collateral.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Securities',
         definition: 'Fungible and tradable financial instruments used to raise capital in public and private markets. E.g., stocks, bonds.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Securitization',
         definition: 'The procedure where an issuer designs a marketable financial instrument by merging or pooling various financial assets into one group.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Seed Funding',
@@ -4313,7 +4280,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Seed Round',
         definition: 'The first official equity funding stage for a new company. It is the first money that a business venture raises from investors.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Sensex',
@@ -4324,22 +4291,22 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'SGST (State Goods and Services Tax)',
         definition: 'The component of GST levied by the State Government on intra-state supplies of goods and services.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Share Certificate',
         definition: 'A written document signed on behalf of a corporation that serves as legal proof of ownership of the number of shares indicated.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Shareholders Agreement',
         definition: 'A legal agreement among the shareholders of a company that governs their rights and obligations, and regulates the management and control of the company.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Shell Company',
         definition: 'A company with no active business operations or significant assets. Not to be confused with a shell corporation, which may be a legitimate vehicle for business.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Short Selling',
@@ -4350,7 +4317,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Short-Term Capital Gains (STCG)',
         definition: 'Profit from the sale of an asset held for a short period, typically one year or less in India for securities.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Sinking Fund',
@@ -4360,14 +4327,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'SKU (Stock Keeping Unit)',
-        definition: 'A unique code used to identify a specific product. Essential for inventory management in retail, e-commerce, and manufacturing.',
+        definition: '<p>A Stock Keeping Unit (SKU) is a unique alphanumeric code assigned to each distinct product and service that a company sells. It is used to identify and track inventory items. SKUs are different from universal product codes (UPCs) as they are internal to a specific company.</p><p><b>For Startups:</b> For D2C and e-commerce startups, an effective SKU system is the foundation of efficient inventory management. It allows for accurate tracking of stock levels, sales performance, and profitability for each product variant (e.g., a T-shirt in different sizes and colors will each have a unique SKU).</p><p><b>Example:</b> A shoe company might use the SKU "NK-AJ1-RED-10" to represent a Nike Air Jordan 1 shoe, in red, size 10. This allows for precise tracking of that specific item in their inventory system.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Slab Rate',
         definition: 'The system of charging income tax at different rates based on different income levels. India uses a progressive slab rate system.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Small and Medium-sized Enterprise (SME)',
@@ -4396,17 +4363,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Sole Proprietorship',
         definition: 'An unincorporated business with a single owner who pays personal income tax on profits earned from the business.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Solvency',
         definition: 'The ability of a company to meet its long-term debts and financial obligations.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Spin-off',
         definition: 'The creation of an independent company through the sale or distribution of new shares of an existing business or division of a parent company.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Spread',
@@ -4417,7 +4384,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Stamp Duty',
         definition: 'A tax that is levied on single property purchases or documents. It is a tax placed on legal documents, usually in the transfer of assets or property.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Standard Costing',
@@ -4439,14 +4406,14 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Statutory Audit',
-        definition: 'A legally required review of the accuracy of a company\'s or government\'s financial records.',
+        definition: '<p>A Statutory Audit is a legally required external audit of a company\'s financial statements. In India, it is mandatory for all companies registered under the Companies Act, 2013, to have their accounts audited by an independent Chartered Accountant at the end of each financial year. The purpose is to ensure that the financial statements provide a "true and fair" view of the company\'s financial position and are free from material misstatement.</p><p><b>For Startups:</b> The annual statutory audit is a critical compliance requirement. The audited financials are filed with the Registrar of Companies and are required for tax filings. For a startup looking to raise funds, clean, unqualified audited financials are essential for investor due diligence.</p><p><b>Example:</b> A startup closes its books for FY 2023-24. It then engages a CA firm to conduct a statutory audit before its Annual General Meeting.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Stock Appreciation Rights (SARs)',
         definition: '<p>SARs are a form of bonus compensation where the employee receives a cash payment equal to the appreciation of the company\'s stock price over a specified period. It\'s a way to provide equity-like upside without issuing shares.</p><p><b>Startup Example:</b> An employee is granted 100 SARs when the stock price is ₹50. When they exercise the SARs, the price is ₹250. They receive a cash bonus of (₹250 - ₹50) * 100 = ₹20,000.</p><p>This is another tool we explore in our <a href="/services/corporate-law">compensation advisory</a>.</p>',
-        cluster: 'ESOP & Employee Structuring'
+        cluster: 'ESOP &amp; Employee Structuring'
     },
     {
         term: 'Stock Exchange',
@@ -4457,33 +4424,33 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Stock Option',
         definition: 'A benefit in the form of an option given by a company to an employee to buy stock in the company at a discounted price.',
-        cluster: 'ESOP & Employee Structuring'
+        cluster: 'ESOP &amp; Employee Structuring'
     },
     {
         term: 'Stock Split',
         definition: 'A corporate action in which a company divides its existing shares into multiple shares to boost the liquidity of the shares.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Straight-Line Depreciation',
-        definition: 'A method of calculating depreciation by dividing the difference between an asset\'s cost and its expected salvage value by the number of years it is expected to be used.',
+        definition: '<p>Straight-Line Depreciation is the simplest and most common method of calculating depreciation. It spreads the cost of a tangible asset evenly over its useful life. This method assumes that the asset\'s value declines at a constant rate over time.</p><p><b>For Startups:</b> This is the default depreciation method for most startups due to its simplicity. It is used for assets like computers, office furniture, and vehicles. By expensing a portion of the asset\'s cost each year, the startup accurately reflects the asset\'s diminishing value on its books.</p><p><b>Calculation:</b> Annual Depreciation Expense = (Cost of Asset - Salvage Value) / Useful Life of Asset.</p><p><b>Example:</b> A startup buys office furniture for ₹5 Lakhs with an estimated useful life of 5 years and no salvage value. Using the straight-line method, the annual depreciation expense would be ₹1 Lakh for the next 5 years.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Strike Price',
         definition: 'The price at which a derivative contract can be exercised. The strike price is mostly used for options.',
-        cluster: 'ESOP & Employee Structuring'
+        cluster: 'ESOP &amp; Employee Structuring'
     },
     {
         term: 'Subscription Agreement',
         definition: 'A legal agreement between an investor and a company, where the investor agrees to purchase a certain number of shares at a specific price.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Subsidiary',
         definition: 'A company that is owned or controlled by another company, which is called the parent company or holding company.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Sunk Cost',
@@ -4515,7 +4482,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Syndicate',
         definition: 'A group of individuals or organizations combined or making a joint effort to undertake some specific duty or carry out specific transactions or negotiations.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Systematic Investment Plan (SIP)',
@@ -4546,11 +4513,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'TAN (Tax Deduction and Collection Account Number)',
         definition: 'A 10-digit alphanumeric number required for all persons who are responsible for deducting or collecting tax at source in India.',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Tangible Asset',
-        definition: 'An asset that has a physical form. Tangible assets include things like machinery, buildings, and land.',
+        definition: '<p>A tangible asset is an asset that has a physical form. These are the physical resources a company owns and uses in its operations. Tangible assets can be either current assets (like inventory) or long-term fixed assets (like land, buildings, and machinery).</p><p><b>For Startups:</b> For a hardware or manufacturing startup, tangible assets like machinery and inventory form a significant part of their balance sheet. For a software startup, tangible assets are usually less significant and might just include items like laptops and office furniture. The value of these assets is recorded on the balance sheet and, for long-term assets, is depreciated over time.</p><p><b>Example:</b> A D2C startup\'s tangible assets include its stock of products, the equipment in its packaging facility, and the computers used by its team.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -4563,47 +4530,47 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Tariff',
         definition: 'A tax imposed by a government on goods and services imported from other countries.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Tax Audit',
         definition: 'An examination of your tax returns by the tax authorities to verify that your income and deductions are accurate. In India, it\'s mandatory for businesses exceeding a certain turnover.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Audit Applicability for Series A Startups',
         definition: '<p>Under Section 44AB of the Income Tax Act, a tax audit is mandatory if a business\'s turnover exceeds ₹1 crore (or ₹10 crore if most transactions are digital). Most Series A startups will cross this threshold.</p><p><b>Startup Example:</b> A SaaS startup raises a Series A and its revenue grows to ₹12 crore in the financial year. It is now legally required to have its accounts audited by a CA and file a tax audit report with its income tax return.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> manage the tax audit process seamlessly.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Audit under Section 44AB',
         definition: '<p>A mandatory audit of accounts by a Chartered Accountant for businesses whose total sales, turnover, or gross receipts exceed a certain threshold (e.g., ₹10 crore for most digital businesses) in a financial year.</p><p><b>Startup Example:</b> A bootstrapped SaaS startup crosses ₹10 crore in annual revenue. They are now required to get their accounts audited under Section 44AB and file the tax audit report with their income tax return.</p><p>We facilitate and manage the <a href="/services/regulatory-compliances">tax audit process</a> for our clients.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Avoidance',
         definition: 'The legal usage of the tax regime to one\'s own advantage to reduce the amount of tax that is payable by means that are within the law.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Brackets',
         definition: 'Ranges of income that are subject to a certain income tax rate.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Deducted at Source (TDS)',
         definition: 'A system where tax is deducted at the time of making certain payments like rent, commission, salary, etc. The deductor is responsible for depositing the tax with the government.',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Tax Evasion',
         definition: 'The illegal non-payment or underpayment of tax.',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'Tax Exemption',
         definition: 'A monetary exemption which reduces taxable income. Tax-exempt status can provide complete relief from taxes, reduced rates, or tax on only a portion of items.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Haven',
@@ -4614,77 +4581,77 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Tax Rebate',
         definition: 'A refund on taxes when the tax liability is less than the taxes paid.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Tax Shelter',
         definition: 'A financial arrangement made to avoid or minimize taxes.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Taxability of Drop-shipping transactions',
         definition: '<p>In a drop-shipping model, the tax liability can be complex. Typically, there are two transactions: the sale from the supplier to the retailer, and the sale from the retailer to the end customer. GST must be correctly applied to both legs of the transaction based on the place of supply.</p><p><b>Startup Example:</b> A D2C brand in Delhi gets an order from a customer in Mumbai. It instructs its supplier in Gujarat to ship the product directly to Mumbai. The supplier bills the D2C brand (B2B transaction), and the D2C brand bills the end customer (B2C transaction). Both invoices must have the correct GST applied.</p><p>We help e-commerce businesses navigate these complex <a href="/services/regulatory-compliances">GST scenarios</a>.</p>',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Taxation of Dividends in hands of Shareholders',
         definition: '<p>Since the abolition of Dividend Distribution Tax (DDT), dividends are now taxed in the hands of the shareholders at their applicable income tax slab rates.</p><p><b>Startup Example:</b> A profitable startup declares a dividend. A founder who receives this dividend and is in the 30% tax bracket will have to pay tax on this dividend income accordingly.</p><p>Our <a href="/services/regulatory-compliances">tax advisory services</a> cover personal tax planning for founders.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Taxation of SARs',
         definition: '<p>The cash bonus received from exercising Stock Appreciation Rights (SARs) is fully taxable as a perquisite, which means it is added to the employee\'s salary income and taxed at their applicable slab rate in the year of receipt.</p><p><b>Startup Example:</b> An employee receives a ₹50,000 cash bonus from their SARs. This entire amount is added to their taxable salary for the year.</p><p>Our <a href="/services/regulatory-compliances">payroll services</a> can help manage the taxation of such benefits.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on Cryptocurrency transactions (VDA)',
         definition: '<p>A 1% Tax Deducted at Source (TDS) is applicable under Section 194S of the Income Tax Act on the payment for the transfer of Virtual Digital Assets (VDAs), like cryptocurrency, if the aggregate payment exceeds a certain threshold in a year.</p><p><b>Startup Example:</b> A Web3 startup in India pays ₹1 Lakh in crypto to a freelance developer for their services. The startup is required to deduct 1% TDS (i.e., ₹1,000) before making the payment.</p><p>Navigating VDA taxation is a part of our specialized <a href="/services/regulatory-compliances">tax compliance</a>.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on Insurance Commission (Section 194D)',
         definition: '<p>TDS must be deducted at 5% on insurance commission payments if the total payment to a resident exceeds ₹15,000 in a financial year.</p><p><b>Startup Example:</b> An InsurTech startup that works with individual agents must deduct TDS on the commission it pays out to them, once the annual payment to an agent crosses the threshold.</p><p>Our services are tailored for the <a href="/industry-finance/finance-for-fintech-startups-india">FinTech and InsurTech</a> industries.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on online gaming (Section 194BA)',
         definition: '<p>A new provision requires online gaming platforms to deduct TDS at 30% on the "net winnings" of a user at the time of withdrawal or at the end of the financial year.</p><p><b>Startup Example:</b> A real-money gaming startup must implement a system to track each user\'s net winnings and correctly deduct and deposit TDS before processing any withdrawals. This is a complex technical and compliance challenge.</p><p>We provide specialized advisory for new-age digital businesses.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on Payments to Influencers',
         definition: '<p>Payments made to social media influencers for marketing services are subject to Tax Deducted at Source (TDS).</p><p><b>Startup Example:</b> A startup pays an influencer ₹50,000 for a promotional post. This payment is considered a fee for professional services, and the startup must deduct TDS at 10% under Section 194J before paying the influencer.</p><p>Our <a href="/services/regulatory-compliances">compliance services</a> ensure you handle all TDS obligations correctly.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
-        term: 'TDS on Rent of Plant & Machinery vs Building',
+        term: 'TDS on Rent of Plant &amp; Machinery vs Building',
         definition: '<p>Under Section 194-I, the TDS rate on rent is different for different assets. For rent of plant, machinery, or equipment, the rate is 2%. For rent of land, building, or furniture, the rate is 10%.</p><p><b>Startup Example:</b> A manufacturing startup rents both a factory building and the machinery inside from the same owner under separate agreements. It must deduct TDS at 10% on the building rent and 2% on the machinery rent.</p><p>Our expertise covers the <a href="/industry-finance/finance-for-manufacturing-startups-india">manufacturing sector</a>.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on SaaS Payments',
         definition: '<p>Payments made by an Indian company to a foreign SaaS provider (like AWS, Google Workspace, or HubSpot) can be considered a payment for royalty or technical services.</p><p><b>Startup Example:</b> An Indian startup pays $1,000 to a US-based SaaS company. The startup may be required to deduct TDS under Section 195 of the Income Tax Act. The rate depends on the Double Taxation Avoidance Agreement (DTAA) with the US. Failure to do so can result in disallowance of the expense.</p><p>Our <a href="/solutions/tds-on-foreign-payments-startups">TDS on foreign payments solution</a> helps startups stay compliant.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on Salary vs. TDS on Professional Fees',
         definition: '<p>TDS on salary (Section 192) is deducted based on the employee\'s applicable income tax slab rates after considering their declarations for deductions. TDS on professional fees (Section 194J) is deducted at a flat rate of 10%. Misclassifying an employee as a consultant can lead to incorrect TDS deduction and penalties.</p><p><b>Startup Example:</b> A startup pays a full-time designer ₹80,000/month but treats them as a consultant and deducts 10% TDS. The tax authorities can reclassify this as a salary, leading to penalties for incorrect deduction.</p><p>We provide clarity on <a href="/services/regulatory-compliances">payroll and TDS compliance</a>.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on Sale of Immovable Property (Section 194-IA)',
         definition: '<p>The buyer of an immovable property (other than agricultural land) worth ₹50 Lakhs or more is required to deduct TDS at 1% from the payment made to the seller.</p><p><b>Startup Example:</b> A startup purchases an office space for ₹1 Crore. It must deduct ₹1 Lakh as TDS before paying the seller and deposit this amount with the government.</p><p>We advise on all high-value transactions.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on payments to non-residents (Section 195) deep dive',
         definition: '<p>Section 195 requires anyone making a payment to a non-resident to deduct TDS. The key challenges are determining if the income is taxable in India and what the correct rate is, which depends on the nature of payment and the DTAA with the non-resident\'s country.</p><p><b>Startup Example:</b> A startup pays a US-based marketing consultant. It must determine if this is a "fee for technical services" under the India-US DTAA, obtain the consultant\'s tax residency certificate, and deduct TDS at the applicable treaty rate before making the payment.</p><p>This is a core focus of our <a href="/solutions/tds-on-foreign-payments-startups">solution for foreign payments</a>.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'TDS on Work under Section 194C',
         definition: '<p>"Work" under Section 194C for TDS on contracts has a wide definition. It includes advertising, broadcasting, catering, carriage of goods, and manufacturing or supplying a product according to the customer\'s specification.</p><p><b>Startup Example:</b> A startup pays an agency to run an advertising campaign. This payment falls under the definition of "work" and is subject to TDS under Section 194C.</p><p>Our <a href="/services/regulatory-compliances">TDS services</a> cover all categories of payments.</p>',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Terminal Value in DCF',
@@ -4698,12 +4665,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Term Loan',
         definition: 'A loan from a bank for a specific amount that has a specified repayment schedule and a fixed or floating interest rate.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Term Sheet',
         definition: 'A non-binding agreement setting forth the basic terms and conditions under which an investment will be made. It serves as a template for developing more detailed legal documents.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Three Financial Statements',
@@ -4716,7 +4683,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Top Line',
-        definition: 'Refers to a company\'s gross sales or revenues. It is called the top line because it is displayed at the top of the income statement.',
+        definition: '<p>The "Top Line" refers to a company\'s gross sales or revenue, which is the first line item on an income statement. It represents the total amount of money generated from sales of goods or services before any costs or expenses are deducted.</p><p><b>For Startups:</b> Top-line growth is a primary focus for early-stage startups and their investors. A rapidly growing top line indicates strong market demand and product-market fit. While profitability (the "bottom line") is important in the long run, initial growth is often prioritized to capture market share. In SaaS, the top line is typically measured by Annual Recurring Revenue (ARR).</p><p><b>Example:</b> A company reports a top line of ₹5 Crore for the financial year, indicating its total revenue for that period. All other expenses will be subtracted from this figure to determine the net profit.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -4740,28 +4707,28 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Total Addressable Market (TAM)',
         definition: 'The total revenue opportunity that is available to a product or service if 100% market share was achieved. Investors use it to gauge the potential scale of a startup.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Traction',
         definition: 'A metric that demonstrates a startup has a viable business model and is making progress. Examples include user growth, revenue, and engagement.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Trade Credit',
-        definition: 'An arrangement where a customer can purchase goods on account (without paying cash), paying the supplier at a later date.',
+        definition: '<p>Trade credit is a B2B arrangement where a customer is allowed to purchase goods or services on account and pay the supplier at a later date. It is a common business practice that helps manage cash flow for both the buyer and the seller.</p><p><b>For Startups:</b> For a startup, receiving trade credit from its suppliers (e.g., 30 or 60-day payment terms) is a valuable source of short-term, interest-free financing. It allows the startup to produce and sell its goods before it has to pay for the raw materials. Conversely, when a startup offers trade credit to its own customers, it creates accounts receivable and needs to manage the associated credit risk.</p><p><b>Example:</b> A hardware startup\'s supplier allows it to pay for a shipment of components 60 days after delivery. This 60-day period is the trade credit extended to the startup.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Trademark',
         definition: 'A symbol, word, or words legally registered or established by use as representing a company or product.',
-        cluster: 'ROC, Company Law & FEMA'
+        cluster: 'ROC, Company Law &amp; FEMA'
     },
     {
         term: 'Transfer Pricing for Startups',
         definition: '<p>Transfer Pricing regulations apply when a startup has transactions with its associated enterprises abroad (e.g., a foreign parent or subsidiary company). All such transactions must be at "arm\'s length price," as if they were with an unrelated party, to prevent shifting profits to lower-tax countries.</p><p><b>Startup Example:</b> An Indian subsidiary of a US startup provides development services to its parent company. The price charged must be comparable to what an independent company would charge. If not, the Indian tax authorities can adjust the price and levy taxes and penalties.</p><p>Our <a href="/services/virtual-cfo">Virtual CFOs</a> help scaling startups manage transfer pricing risks.</p>',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Treasury Bill (T-Bill)',
@@ -4771,7 +4738,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Trial Balance',
-        definition: 'A bookkeeping worksheet in which the balance of all ledgers is compiled into debit and credit account column totals that are equal. It is used to check for arithmetic errors.',
+        definition: '<p>A Trial Balance is an internal accounting report that lists all the accounts in a company\'s general ledger and their respective debit or credit balances. The primary purpose of a trial balance is to verify the mathematical equality of debits and credits after posting to the ledger. If the total debits do not equal the total credits, it indicates an error in the bookkeeping process.</p><p><b>For Startups:</b> Preparing a trial balance is a key step in the month-end closing process. It is the step taken just before preparing the main financial statements (Income Statement and Balance Sheet). It ensures the integrity of the data before it is used for reporting and analysis.</p><p><b>Example:</b> At the end of the month, an accountant generates a trial balance. The total of all debit balances is ₹1.5 Crore, and the total of all credit balances is also ₹1.5 Crore, confirming the books are in balance.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -4792,7 +4759,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Underwriter',
         definition: 'A company or other entity that administers the public issuance and distribution of securities from a corporation or other issuing body.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Unicorn',
@@ -4812,23 +4779,23 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Unit Economics for Seed Startups',
         definition: '<p>At the seed stage, you may not be profitable, but you must prove you have profitable unit economics. This means showing that your Customer Lifetime Value (LTV) is significantly higher than your Customer Acquisition Cost (CAC).</p><p><b>Startup Example:</b> A seed-stage D2C brand shows investors that while they are currently burning cash to grow, their LTV:CAC ratio is 3.5:1. This proves that as they scale, the business model will become profitable.</p><p>Analyzing unit economics is a key part of our <a href="/services/virtual-cfo">Virtual CFO</a> engagements.</p>',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Unrealized Gain/Loss',
-        definition: 'A profit or loss that has occurred on paper but the transaction has not been completed, so the gain or loss is not yet actual.',
+        definition: '<p>An Unrealized Gain or Loss is a "paper" profit or loss on an asset that an investor holds but has not yet sold. The gain or loss becomes "realized" only when the asset is sold. For accounting purposes, certain investments must be marked-to-market, meaning their value is updated on the financial statements even if they haven\'t been sold, creating unrealized gains or losses.</p><p><b>For Startups:</b> This concept is relevant for startups that hold investments in other companies or in marketable securities. These changes in value are often recorded in a section of the balance sheet called "Other Comprehensive Income."</p><p><b>Example:</b> A company buys shares in another company for ₹1 Lakh. At the end of the year, the shares are worth ₹1.5 Lakhs. The company has an unrealized gain of ₹50,000.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
     {
         term: 'Unsecured Loan',
         definition: 'A loan that is not protected by any collateral. If the borrower defaults, the lender must initiate a lawsuit to collect the debt.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Up Round',
         definition: 'A round of financing where a company sells shares at a higher valuation than in the previous round.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'User Acceptance Testing (UAT)',
@@ -4857,24 +4824,24 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'UTGST (Union Territory Goods and Services Tax)',
         definition: 'The component of GST levied by the Central Government on intra-Union Territory supplies of goods and services.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     
     // V
     {
         term: 'Valuation',
         definition: 'The process of determining the economic worth of a business or asset. Startups are typically valued based on their growth potential, market size, team, and traction.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Valuation Cap',
         definition: 'A term used in convertible notes or SAFEs that sets the maximum valuation at which the investment can convert into equity.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Value Added Tax (VAT)',
         definition: 'A type of consumption tax that is placed on a product whenever value is added at each stage of the supply chain. Largely replaced by GST in India.',
-        cluster: 'GST & Indirect Tax'
+        cluster: 'GST &amp; Indirect Tax'
     },
     {
         term: 'Value Investing',
@@ -4891,11 +4858,11 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Vanity Metric',
         definition: 'Metrics that look good on the surface but don\'t necessarily translate to any meaningful business results, such as registered users or social media followers.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Variable Cost',
-        definition: 'A corporate expense that changes in proportion to production output. Variable costs increase or decrease depending on a company\'s production volume.',
+        definition: '<p>A Variable Cost is a corporate expense that changes in direct proportion to how much a company produces or sells. Unlike fixed costs, which remain constant, variable costs increase as production volume increases and decrease as production volume decreases.</p><p><b>For Startups:</b> Understanding variable costs is essential for calculating contribution margin and unit economics. For a D2C brand, the cost of raw materials and shipping are classic variable costs. For a SaaS business, variable costs might include server usage costs that scale with the number of users or payment gateway fees that are a percentage of revenue.</p><p><b>Example:</b> An e-commerce company sells a t-shirt. The cost of the cotton, the printing, and the shipping for that single t-shirt are all variable costs. The more t-shirts it sells, the higher its total variable costs will be.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -4911,17 +4878,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Venture Capital (VC)',
         definition: 'A form of private equity financing provided by venture capital firms or funds to startups and emerging companies that have been deemed to have high growth potential.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Venture Capitalist',
         definition: 'A private equity investor that provides capital to companies with high growth potential in exchange for an equity stake.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Venture Debt',
         definition: 'A type of debt financing provided to venture-backed companies. It is less dilutive than equity financing and is often used to extend runway between funding rounds.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Vertical Integration',
@@ -4932,7 +4899,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Vesting',
         definition: 'The process by which an employee or founder earns their equity over time, typically 4 years with a 1-year cliff.',
-        cluster: 'ESOP & Employee Structuring'
+        cluster: 'ESOP &amp; Employee Structuring'
     },
     {
         term: 'Vesting Cliff',
@@ -4946,7 +4913,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Vesting Schedule',
         definition: 'A timeline over which an employee or founder earns the right to their granted equity.',
-        cluster: 'ESOP & Employee Structuring'
+        cluster: 'ESOP &amp; Employee Structuring'
     },
     {
         term: 'Viral Coefficient (K-factor)',
@@ -4959,7 +4926,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Virtual CFO (vCFO)',
         definition: 'An outsourced service provider offering high-level financial expertise and strategic guidance to a company on a part-time or project basis.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Volatility',
@@ -4972,12 +4939,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'W-8 BEN Form',
         definition: 'An IRS form used by foreign individuals to certify their foreign status and claim any applicable tax treaty benefits.',
-        cluster: 'Income Tax & Direct Tax'
+        cluster: 'Income Tax &amp; Direct Tax'
     },
     {
         term: 'Warrants',
         definition: 'A security that entitles the holder to buy the underlying stock of the issuing company at a fixed price called exercise price until the expiry date.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Waterfall Model',
@@ -4988,12 +4955,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Weighted Average Cost of Capital (WACC)',
         definition: 'A calculation of a firm\'s cost of capital in which each category of capital is proportionately weighted.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'What to do when runway is short',
         definition: '<p>When runway is short (e.g., less than 6 months), founders have limited options: drastically cut costs (reduce burn), raise a bridge round (from existing investors), or attempt a quick acquisition. The key is to act decisively and not wait until the last minute.</p><p><b>Startup Example:</b> A startup has 3 months of runway left. The founder immediately cuts all non-essential marketing spend and asks the team to take a temporary pay cut, while simultaneously negotiating a small bridge loan from their lead seed investor to extend the runway by another 6 months.</p><p>Our <a href="/startup-guides/burn-rate-management-for-series-a-startups">burn management guides</a> offer strategies for this scenario.</p>',
-        cluster: 'Founder Problems & Penalties'
+        cluster: 'Founder Problems &amp; Penalties'
     },
     {
         term: 'White Paper',
@@ -5022,7 +4989,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Withholding Tax',
         definition: 'A tax that is deducted at the source of an income payment. In India, TDS is a form of withholding tax.',
-        cluster: 'TDS & Payroll'
+        cluster: 'TDS &amp; Payroll'
     },
     {
         term: 'Working Capital',
@@ -5045,17 +5012,17 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Workout',
         definition: 'A process of negotiation with a lender to restructure debt to avoid foreclosure or bankruptcy.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
     {
         term: 'Write-down',
-        definition: 'Reducing the book value of an asset because it is overvalued compared to the market value.',
+        definition: '<p>A write-down is an accounting action that reduces the book value of an asset because its fair market value has fallen below the carrying value on the balance sheet. It is a way to recognize that an asset has lost some of its value, but has not become completely worthless.</p><p><b>For Startups:</b> A startup might have to write down the value of its inventory if the products have become obsolete or are no longer sellable at their original price. A write-down is recorded as an expense on the income statement, reducing the company\'s profit.</p><p><b>Distinction:</b> A write-down is different from a write-off, which reduces the value of an asset to zero.</p><p><b>Example:</b> A D2C startup has inventory that cost ₹1 Lakh. Due to a change in trends, it can now only be sold for ₹60,000. The company must record a write-down of ₹40,000.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
     {
         term: 'Write-off',
-        definition: 'Reducing the value of an asset to zero and removing it from the balance sheet entirely.',
+        definition: '<p>A write-off is an accounting action that reduces the value of an asset to zero. It is essentially a declaration that the asset has no remaining value. This is most commonly done for accounts receivable that have been deemed uncollectible (bad debt) or for inventory that is completely unsellable.</p><p><b>For Startups:</b> Writing off a bad debt is a common occurrence. It\'s an admission that the startup will not be able to collect the money owed by a customer. The write-off is recorded as an expense on the income statement, which reduces the company\'s profit for the period.</p><p><b>Example:</b> A startup has a receivable of ₹2 Lakhs from a customer who has gone bankrupt. The startup "writes off" this amount, removing it from its accounts receivable and recording a ₹2 Lakh bad debt expense.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 2
     },
@@ -5084,12 +5051,12 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Zero-Based Budgeting',
         definition: 'A method of budgeting in which all expenses must be justified for each new period. Every function within an organization is analyzed for its needs and costs.',
-        cluster: 'Virtual CFO & Financial Management'
+        cluster: 'Virtual CFO &amp; Financial Management'
     },
     {
         term: 'Zero-Coupon Bond',
         definition: 'A debt security that does not pay interest but is traded at a deep discount, rendering profit at maturity when the bond is redeemed for its full face value.',
-        cluster: 'Fundraising & Valuation'
+        cluster: 'Fundraising &amp; Valuation'
     },
 ];
 
@@ -5109,6 +5076,8 @@ export const GLOSSARY_DATA_BY_CLUSTER = ALL_GLOSSARY_TERMS.reduce((acc, item) =>
     acc[cluster].push(item);
     return acc;
 }, {} as Record<string, GlossaryTerm[]>);
+
+
 
 
 
