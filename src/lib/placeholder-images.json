@@ -515,6 +515,12 @@
       "description": "A document with 'GST Registration' written on it, next to a calculator and a pen.",
       "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHU1QlMjByZWdpc3RyYXRpb258ZW58MHx8fHwxNzY5MzU4ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gst registration"
+    },
+    {
+      "id": "blog-gst-2",
+      "description": "A person reviewing a checklist for GST compliance on a clipboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-169544351725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHU1QlMjBjb21wbGlhbmNlfGVufDB8fHx8MTc2OTM1ODg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gst compliance"
     }
   ]
 }
