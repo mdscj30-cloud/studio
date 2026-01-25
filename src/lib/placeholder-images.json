@@ -302,9 +302,9 @@
     },
     {
       "id": "blog-40",
-      "description": "Water flowing through a person's hands into a potted plant, symbolizing careful cash management.",
-      "imageUrl": "https://images.unsplash.com/photo-1759375498334-6327d54b8c5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXNoJTIwbWFuYWdlbWVudHxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cash management"
+      "description": "A person watering a plant carefully, symbolizing financial planning.",
+      "imageUrl": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjkyODA0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial planning"
     },
     {
       "id": "blog-41",
@@ -467,6 +467,54 @@
       "description": "A diagram showing a finance stack evolving from a simple spreadsheet to integrated software.",
       "imageUrl": "https://images.unsplash.com/photo-1744818561373-b21480e1b218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwc3RhY2t8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance stack"
+    },
+    {
+      "id": "case-study-1",
+      "description": "A logistics warehouse with workers moving packages, representing QuantumLeap Logistics.",
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "logistics warehouse"
+    },
+    {
+      "id": "case-study-2",
+      "description": "A person using a laptop with code on the screen, representing the InnovateX SaaS product.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d1469c5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "laptop code"
+    },
+    {
+      "id": "case-study-3",
+      "description": "A doctor looking at a medical scan on a screen, with an AI overlay highlighting areas of interest for MediBot.",
+      "imageUrl": "https://images.unsplash.com/photo-1622953270744-3d9692482a0d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "doctor scan"
+    },
+    {
+      "id": "case-study-4",
+      "description": "A beautifully arranged shot of artisanal food products, representing the Urban Roots D2C brand.",
+      "imageUrl": "https://images.unsplash.com/photo-1606859310434-a8c6b24570de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "artisanal food"
+    },
+    {
+      "id": "team-ca",
+      "description": "A professional Chartered Accountant working in a modern office.",
+      "imageUrl": "https://images.unsplash.com/photo-1628260122582-747f329971a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGFydGVyZWQlMjBhY2NvdW50YW50fGVufDB8fHx8MTc2OTI4NDg0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chartered accountant"
+    },
+    {
+      "id": "team-big4",
+      "description": "A team of consultants in a boardroom, representing Big Four expertise.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0YW50cyUyMGJvYXJkcm9vbXxlbnwwfHx8fDE3NjkyODQ4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "consultants boardroom"
+    },
+    {
+      "id": "team-iit-iim",
+      "description": "Graduates in caps and gowns in front of a prestigious university building.",
+      "imageUrl": "https://images.unsplash.com/photo-1627552245715-7c1303b735c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmFkdWF0ZXN8ZW58MHx8fHwxNzY5Mjg0ODQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "graduates university"
+    },
+    {
+      "id": "blog-gst-1",
+      "description": "A document with 'GST Registration' written on it, next to a calculator and a pen.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHU1QlMjByZWdpc3RyYXRpb258ZW58MHx8fHwxNzY5MzU4ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gst registration"
     }
   ]
 }

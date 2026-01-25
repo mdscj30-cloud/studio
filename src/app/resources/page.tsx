@@ -1,6 +1,6 @@
 
 import { CaseStudiesSection } from '@/components/resources/CaseStudiesSection';
-import { BookOpen, Library, HandCoins, Rocket, ShieldCheck, DollarSign } from 'lucide-react';
+import { BookOpen, Library, HandCoins, Rocket, ShieldCheck, DollarSign, FileText } from 'lucide-react';
 import Link from 'next/link';
 import { BlogSection } from '@/components/resources/BlogSection';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -34,6 +34,12 @@ const topicClusters = [
         description: 'From cap tables to cash flow, get the financial essentials for your startup.',
         icon: DollarSign,
         href: '/resources/blog?category=Startup%20Finance'
+    },
+    {
+        title: 'GST & Indirect Tax',
+        description: 'Understand GST registration, compliance, and reporting for your Indian startup.',
+        icon: FileText,
+        href: '/resources/blog?category=GST%20&%20Indirect%20Tax'
     }
 ];
 
@@ -75,7 +81,7 @@ export default function ResourcesPage() {
                     Dive deep into subjects that matter most for your startup's success.
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {topicClusters.map((cluster) => {
                     const Icon = cluster.icon;
                     return (
