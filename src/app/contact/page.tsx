@@ -2,6 +2,7 @@
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import { LOCATIONS } from '@/lib/constants';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { RequestConsultation } from '@/components/layout/PartnerWithUs';
 
 export const metadata = {
   title: 'Contact Us | Nexa Consultancy',
@@ -76,6 +77,7 @@ export default function ContactPage() {
               </div>
           </div>
       </section>
+      <RequestConsultation />
     </>
   );
 }
