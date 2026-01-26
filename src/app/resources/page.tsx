@@ -1,4 +1,4 @@
-import { Newspaper, Briefcase, Library, ArrowRight } from 'lucide-react';
+import { Newspaper, Briefcase, Library, ArrowRight, NotebookPen } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 
@@ -26,6 +26,12 @@ const resourceLinks = [
         href: '/startup-finance-glossary',
         icon: Library,
     },
+    {
+        title: 'Templates & Checklists',
+        description: 'Downloadable checklists and templates for fundraising, compliance, and financial planning.',
+        href: '/templates',
+        icon: NotebookPen,
+    },
 ]
 
 export default function ResourcesPage() {
@@ -41,7 +47,7 @@ export default function ResourcesPage() {
       </section>
 
       <section className="container py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {resourceLinks.map((link) => {
                 const Icon = link.icon;
                 return (

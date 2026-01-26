@@ -15,6 +15,7 @@ export default function Footer() {
     { href: '/case-studies', label: 'Case Studies' },
     { href: '/startup-finance-glossary', label: 'Glossary' },
     { href: '/tools', label: 'Tools' },
+    { href: '/templates', label: 'Templates' },
   ]
 
   return (
