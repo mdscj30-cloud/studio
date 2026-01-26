@@ -267,11 +267,11 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <ul>
                 <li><strong>Key Personnel:</strong> Founders' resumes and an org chart.</li>
                 <li><strong>Agreements:</strong> Standard employment contract, ESOP plan, and all grant letters.</li>
+                <li><strong>IP:</strong> IP assignment agreements from all employees/contractors.</li>
             </ul>
 
              <h3>4. Legal & Commercial</h3>
             <ul>
-                <li><strong>IP:</strong> IP assignment agreements from all employees/contractors. Trademark/patent filings.</li>
                 <li><strong>Contracts:</strong> All material customer and supplier contracts.</li>
                 <li><strong>Leases:</strong> All property lease agreements.</li>
             </ul>
