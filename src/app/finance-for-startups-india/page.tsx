@@ -1,11 +1,10 @@
 
-import { ArrowRight, CheckCircle, Rocket, Factory, Briefcase, ShieldCheck, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle, Rocket, Factory, Briefcase, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data';
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data';
-import { TARGETED_SERVICES, ALL_CITIES } from '@/lib/location-service-data';
 import { SERVICES } from '@/lib/constants';
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data';
 
@@ -143,37 +142,6 @@ export default function FinanceHubPage() {
                 )
             })}
           </div>
-        </section>
-
-        <section id="city-guides">
-            <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Services by City</h2>
-                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                Find expert financial and compliance services tailored to your startup's location across India.
-                </p>
-            </div>
-            <div className="columns-2 md:columns-3 lg:columns-5 gap-8">
-                {ALL_CITIES.sort().map(city => (
-                    <div key={city} className="mb-8 break-inside-avoid">
-                      <h3 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
-                          <MapPin className="w-5 h-5 text-accent" />
-                          {city}
-                      </h3>
-                      <ul className="space-y-2">
-                          {TARGETED_SERVICES.map(service => {
-                              const slug = `${slugify(service.title)}-${slugify(city)}`;
-                              return (
-                                  <li key={slug}>
-                                      <Link href={`/india-services/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                                          {service.title}
-                                      </Link>
-                                  </li>
-                              )
-                          })}
-                      </ul>
-                    </div>
-                ))}
-            </div>
         </section>
       </div>
     </>

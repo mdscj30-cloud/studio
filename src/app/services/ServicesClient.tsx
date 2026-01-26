@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS, LOCATIONS } from '@/lib/constants';
+import { ALL_CITIES, TARGETED_SERVICES } from '@/lib/location-service-data';
 import { useEffect } from 'react';
 import { getCalApi } from "@calcom/embed-react";
 
@@ -121,6 +122,8 @@ export function ServicesClient() {
       cal("ui", {"styles":{"branding":{"brandColor":"#5A2D82"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, []);
+  
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
   return (
     <>
@@ -266,22 +269,36 @@ export function ServicesClient() {
       </section>
 
       <section className="-mx-container-padding bg-muted/50 py-16 md:py-24">
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary">Serving Startups Across India</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              From the bustling tech parks of Bangalore to the financial hub of Mumbai, we provide expert financial and compliance services to startups in India's most dynamic cities.
-            </p>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-              {LOCATIONS.map(location => (
-                <div key={location.name} className="bg-card p-4 rounded-lg border flex items-center justify-center gap-2">
-                  <MapPin className="w-5 h-5 text-accent" />
-                  <span className="font-semibold">{location.name}</span>
-                </div>
-              ))}
-            </div>
+        <div className="container">
+          <div id="city-guides">
+              <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Services by City</h2>
+                  <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Find expert financial and compliance services tailored to your startup's location across India.
+                  </p>
+              </div>
+              <div className="columns-2 md:columns-3 lg:columns-5 gap-8">
+                  {ALL_CITIES.sort().map(city => (
+                      <div key={city} className="mb-8 break-inside-avoid">
+                        <h3 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
+                            <MapPin className="w-5 h-5 text-accent" />
+                            {city}
+                        </h3>
+                        <ul className="space-y-2">
+                            {TARGETED_SERVICES.map(service => {
+                                const slug = `${slugify(service.title)}-${slugify(city)}`;
+                                return (
+                                    <li key={slug}>
+                                        <Link href={`/india-services/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                                            {service.title}
+                                        </Link>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                      </div>
+                  ))}
+              </div>
           </div>
         </div>
       </section>
