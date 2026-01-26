@@ -1,5 +1,5 @@
 
-import { FileCheck, ClipboardList, HandCoins, BarChart3, LineChart, CheckSquare, BarChart, Rocket, FileText, FileUp, Milestone, UserCheck, Search, ListChecks, ShoppingBag } from 'lucide-react';
+import { FileCheck, ClipboardList, HandCoins, BarChart3, LineChart, CheckSquare, BarChart, Rocket, FileText, FileUp, Milestone, UserCheck, Search, ListChecks, ShoppingBag, Presentation } from 'lucide-react';
 
 export interface TemplateData {
   slug: string;
