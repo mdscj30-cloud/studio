@@ -31,13 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/process',
     '/pricing',
     '/blog',
+    '/case-studies',
     '/startup-finance-glossary',
     '/about',
     '/contact',
     '/terms',
     '/privacy',
   ].map(route => {
-      const hubPages = ['/services', '/finance-for-startups-india', '/blog', '/startup-finance-glossary'];
+      const hubPages = ['/services', '/finance-for-startups-india', '/blog', '/startup-finance-glossary', '/case-studies'];
       const lowPriorityPages = ['/terms', '/privacy'];
        const priority = route === '/' ? 1.0 :
                          hubPages.includes(route) ? 0.9 :
