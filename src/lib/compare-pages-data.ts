@@ -1,5 +1,5 @@
 
-import { Scale, Users, Book, FileText, Handshake, Landmark, Briefcase, GitBranch, Cloud, Server, Package, Anchor, Building, HardHat, HeartPulse, BrainCircuit } from 'lucide-react';
+import { Scale, Users, Book, FileText, Handshake, Landmark, Briefcase, GitBranch, Cloud, Server, Package, Anchor, Building, HeartPulse, BrainCircuit, HandCoins, Rocket, DollarSign } from 'lucide-react';
 
 export interface ComparisonPage {
   slug: string;
@@ -36,6 +36,8 @@ export interface ComparisonPage {
     choiceB: string;
   };
 }
+
+const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 
 export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
@@ -1169,7 +1171,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         'Highly Scalable: You can sell the same product to millions of customers. Revenue is not tied to your time.',
         'Recurring Revenue Potential (SaaS): Subscription models can create a predictable, growing revenue stream.',
         'Build a Valuable Asset: A successful product is a valuable asset that can be sold.',
-        'Higher Long-Term Profit Potential: Can achieve massive operating leverage once fixed costs are covered.'
+        'Higher Long-Term Profit Potential: Can achieve massive operating leverage at scale.'
       ],
       cons: [
         'High Upfront Investment: Requires significant time and capital to build the product before generating revenue.',
@@ -1494,9 +1496,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       ],
       cons: [
         'Not Scalable: Revenue is directly tied to the number of hours you and your team can work.',
-        '"Time for Money" Trap: You are always trading time for money, making it hard to build wealth.',
+        '"Time for Money" Trap: You are always trading your time for money, making it hard to build wealth.',
         'Inconsistent Revenue: Subject to the "feast or famine" cycle of project-based work.',
-        'Hard to Build a Sellable Asset: The business\'s value is tied to you, not a separate asset.'
+        'Client Management Overhead: A significant amount of time is spent managing client relationships and expectations.'
       ]
     },
     itemB: {
