@@ -6,51 +6,14 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data';
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data';
 import { TARGETED_SERVICES, ALL_CITIES } from '@/lib/location-service-data';
+import { SERVICES } from '@/lib/constants';
+import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data';
 
 
 export const metadata = {
   title: 'Finance for Startups in India – End to End | Nexa Consultancy',
   description: 'Your complete guide to startup finance in India. From accounting and GST to fundraising readiness, we cover it all.',
 };
-
-const pillarSections = [
-    {
-        id: 'accounting-for-startups',
-        title: 'Accounting & Bookkeeping',
-        description: 'Accurate books, on time, every time. A rock-solid financial foundation.',
-        serviceSlug: 'bookkeeping',
-    },
-    {
-        id: 'virtual-cfo',
-        title: 'Virtual CFO',
-        description: 'Clarity on numbers, confidence in decisions. Your strategic finance partner.',
-        serviceSlug: 'virtual-cfo',
-    },
-    {
-        id: 'gst-compliance',
-        title: 'GST & Indirect Tax',
-        description: 'Compliant by default, optimized by design. No surprise notices.',
-        serviceSlug: 'regulatory-compliances',
-    },
-    {
-        id: 'direct-tax',
-        title: 'Income Tax & TDS',
-        description: 'No missed deadlines, no unnecessary tax leakage. Direct tax handled.',
-        serviceSlug: 'regulatory-compliances',
-    },
-    {
-        id: 'roc-compliance',
-        title: 'ROC & Corporate Law',
-        description: 'Strong governance, zero penalties. From routine filings to legal agreements.',
-        serviceSlug: 'corporate-law',
-    },
-    {
-        id: 'fundraising-readiness',
-        title: 'Fundraising Readiness',
-        description: 'From pitch deck to term sheet. Approach investors with confidence.',
-        serviceSlug: 'fundraising',
-    },
-];
 
 export default function FinanceHubPage() {
   
@@ -76,18 +39,52 @@ export default function FinanceHubPage() {
               The essential services every startup needs for a strong financial foundation.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pillarSections.map(pillar => (
-              <Link href={`/services/${pillar.serviceSlug}`} key={pillar.id} className="group">
-                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent">
-                  <CardHeader>
-                    <CardTitle className="text-primary group-hover:text-accent transition-colors">{pillar.title}</CardTitle>
-                    <CardDescription className="pt-2">{pillar.description}</CardDescription>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {SERVICES.map(service => (
+              <Link href={`/services/${service.slug}`} key={service.slug} className="group">
+                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                  <CardHeader className="flex-grow">
+                    <div className="flex items-start gap-3 mb-2">
+                        <div className="bg-primary/10 p-2 rounded-full mt-1">
+                            <service.icon className="w-6 h-6 text-primary" />
+                        </div>
+                        <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{service.title}</CardTitle>
+                    </div>
+                    <CardDescription className="pt-2">{service.description}</CardDescription>
                   </CardHeader>
                 </Card>
               </Link>
             ))}
           </div>
+        </section>
+
+        <section id="targeted-solutions">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary">Targeted Financial Solutions</h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                Specific solutions for common startup challenges.
+                </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {PROGRAMMATIC_PAGES_DATA.map(page => {
+                    const Icon = page.Icon;
+                    return (
+                    <Link href={`/solutions/${page.slug}`} key={page.slug} className="group">
+                        <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                        <CardHeader>
+                            <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
+                                <Icon className="w-8 h-8 text-primary" />
+                            </div>
+                            <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                                <p className="text-sm text-muted-foreground">{page.description.substring(0, 100)}...</p>
+                            </CardContent>
+                        </Card>
+                    </Link>
+                    )
+                })}
+            </div>
         </section>
 
         <section id="industry-guides">
