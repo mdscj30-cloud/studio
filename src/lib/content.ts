@@ -1395,7 +1395,7 @@ const DETAILED_BLOG_POSTS = [
   <p>Once you've diligently categorized your costs, you can start to derive powerful strategic insights. This is where the numbers start to tell a story.</p>
   
   <h4>1. What is Your Contribution Margin?</h4>
-  <p>The <a href="/startup-finance-glossary/what-is-contribution-margin">Contribution Margin</a> is your revenue per unit minus your per-unit variable cost. It's the amount of money from each sale that is available to "contribute" to paying down your fixed costs. If your contribution margin is positive, each sale gets you one step closer to profitability. If it's negative, you are literally losing money on every sale you make, and scaling will only accelerate your demise.</p>
+  <p>The <a href="/startup-finance-glossary/what-is-contribution-margin">contribution margin</a> is your revenue per unit minus your per-unit variable cost. It's the amount of money from each sale that is available to "contribute" to paying down your fixed costs. If your contribution margin is positive, each sale gets you one step closer to profitability. If it's negative, you are literally losing money on every sale you make, and scaling will only accelerate your demise.</p>
 
   <h4>2. What is Your Breakeven Point?</h4>
   <p>With your total fixed costs and your contribution margin per unit, you can calculate the exact number of units you need to sell to break even. 
