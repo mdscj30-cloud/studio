@@ -518,9 +518,15 @@
     },
     {
       "id": "blog-gst-2",
-      "description": "A person reviewing a checklist for GST compliance on a clipboard.",
+      "description": "A checklist with items like 'Company PAN', 'Bank Account', and 'Address Proof' for GST registration.",
       "imageUrl": "https://images.unsplash.com/photo-1554224155-169544351725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHU1QlMjBjb21wbGlhbmNlfGVufDB8fHx8MTc2OTM1ODg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gst compliance"
+      "imageHint": "gst checklist"
+    },
+    {
+      "id": "blog-gst-3",
+      "description": "An icon-based image showing a subscription icon with a GST tax symbol overlaid.",
+      "imageUrl": "https://images.unsplash.com/photo-1591522810633-3363f115af87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdWJzY3JpcHRpb24lMjB0YXh8ZW58MHx8fHwxNzY5NDI5Mjk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "subscription tax"
     }
   ]
 }
