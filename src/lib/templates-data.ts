@@ -1,4 +1,5 @@
-import { FileCheck, ClipboardList, HandCoins, BarChart3, LineChart, CheckSquare, BarChart, Rocket, FileText, FileUp, Milestone, UserCheck, Search, ListChecks } from 'lucide-react';
+
+import { FileCheck, ClipboardList, HandCoins, BarChart3, LineChart, CheckSquare, BarChart, Rocket, FileText, FileUp, Milestone, UserCheck, Search, ListChecks, ShoppingBag } from 'lucide-react';
 
 export interface TemplateData {
   slug: string;
@@ -85,14 +86,15 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li>Audited financial statements for all past years.</li>
                 <li>Monthly MIS reports for the last 12-24 months.</li>
                 <li>Detailed, driver-based financial model with projections.</li>
-                <li>Company bank statements for the last 12 months.</li>
+                <li>Cap Table.</li>
+                <li>Bank statements for the last 12 months.</li>
                 <li>Tax filings (GST, TDS, Income Tax returns).</li>
             </ul>
             <h2>Legal & HR Documents</h2>
             <ul>
                 <li>Signed employment contracts for all employees.</li>
                 <li>Signed IP assignment agreements for all employees & contractors.</li>
-                <li>ESOP Plan documents and all grant letters.</li>
+                <li>ESOP plan and grant letters.</li>
                 <li>List of all pending or threatened litigation.</li>
             </ul>
         `
@@ -399,8 +401,8 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         content: `
             <ol>
                 <li><strong>Cover Slide:</strong> Your company name, logo, and a one-line pitch.</li>
-                <li><strong>Problem:</strong> Describe the pain point you are solving in a relatable way.</li>
-                <li><strong>Solution:</strong> Explain your product or service and how it uniquely solves the problem.</li>
+                <li><strong>The Problem:</strong> Describe the pain point you are solving in a relatable way.</li>
+                <li><strong>The Solution:</strong> Explain your product or service and how it uniquely solves the problem.</li>
                 <li><strong>Market Size:</strong> How big is the opportunity? (TAM, SAM, SOM).</li>
                 <li><strong>Product:</strong> Show, don't just tell. Include a demo link or screenshots.</li>
                 <li><strong>Traction:</strong> Your proof. Show growth in users, revenue, or other key metrics.</li>
