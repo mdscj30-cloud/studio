@@ -18,29 +18,61 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'An essential checklist covering annual filings, GST, TDS, and other key compliances for Indian startups.',
         Icon: FileCheck,
         content: `
-            <h2>Annual Compliance</h2>
-            <ul>
-                <li>Hold at least 4 Board Meetings (one per quarter).</li>
-                <li>Hold Annual General Meeting (AGM) within 6 months of financial year end.</li>
-                <li>File Form AOC-4 (Financial Statements) with ROC.</li>
-                <li>File Form MGT-7 (Annual Return) with ROC.</li>
-                <li>Complete Director's KYC (DIR-3 KYC) by Sept 30th.</li>
-                <li>File Income Tax Return (ITR) by due date.</li>
-                <li>Complete Statutory Audit by a Chartered Accountant.</li>
-            </ul>
+            <h2>Annual Compliance Checklist</h2>
+            <p>Ensure your Private Limited Company stays compliant with these mandatory annual filings. Missing these can lead to heavy penalties and director disqualification.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Compliance Task</th>
+                        <th>Due Date</th>
+                        <th>Key Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Board Meetings</strong></td>
+                        <td>Quarterly</td>
+                        <td>Minimum of 4 meetings per year, with a gap of no more than 120 days between two meetings.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Annual General Meeting (AGM)</strong></td>
+                        <td>Within 6 months of FY end</td>
+                        <td>Mandatory annual meeting of shareholders to approve financials and appoint auditors.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ROC Filing: AOC-4</strong></td>
+                        <td>Within 30 days of AGM</td>
+                        <td>Filing of annual financial statements with the Registrar of Companies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ROC Filing: MGT-7</strong></td>
+                        <td>Within 60 days of AGM</td>
+                        <td>Filing of the company's Annual Return with shareholder details.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Director's KYC (DIR-3 KYC)</strong></td>
+                        <td>By Sept 30th annually</td>
+                        <td>Annual KYC update for all directors holding a DIN.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Income Tax Return (ITR)</strong></td>
+                        <td>By Oct 31st annually (if audit is required)</td>
+                        <td>Filing of the company's annual income tax return.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Statutory Audit</strong></td>
+                        <td>Before AGM</td>
+                        <td>Mandatory audit of financial statements by an independent Chartered Accountant.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
             <h2>Monthly/Quarterly Compliance</h2>
+            <p>These are the recurring tasks that form the backbone of your financial operations.</p>
             <ul>
-                <li>File GSTR-1 and GSTR-3B returns.</li>
-                <li>Pay monthly GST liability.</li>
-                <li>Deduct and deposit TDS on applicable payments (salaries, rent, professional fees).</li>
-                <li>File quarterly TDS returns.</li>
-                <li>Pay monthly PF & ESI contributions for employees.</li>
-            </ul>
-             <h2>Event-Based Compliance</h2>
-            <ul>
-                <li>File Form PAS-3 on allotment of new shares.</li>
-                <li>File Form FC-GPR for receipt of foreign investment.</li>
-                <li>File forms for change in Directors or Registered Office.</li>
+                <li><strong>GST Filings:</strong> File GSTR-1 (by 11th) and GSTR-3B (by 20th) every month/quarter.</li>
+                <li><strong>TDS Payments & Filings:</strong> Deposit deducted TDS by the 7th of the next month and file quarterly TDS returns.</li>
+                <li><strong>Payroll Compliance:</strong> Pay PF & ESI contributions for employees by the 15th of the next month.</li>
             </ul>
         `
     },
@@ -49,23 +81,44 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A step-by-step checklist to ensure your monthly and quarterly GST filings are accurate and on time.',
         Icon: ClipboardList,
         content: `
-            <h2>Pre-Filing Checks</h2>
-            <ul>
-                <li>Reconcile sales register with all B2B and B2C invoices issued.</li>
-                <li>Reconcile purchase register with GSTR-2B to ensure all eligible ITC is accounted for.</li>
-                <li>Identify any transactions liable for Reverse Charge Mechanism (RCM).</li>
-                <li>Ensure all export invoices are correctly marked and LUT details are available.</li>
-                <li>Verify all HSN/SAC codes and applicable tax rates.</li>
-            </ul>
-            <h2>Filing Process</h2>
-            <ul>
-                <li>Upload all B2B invoice details in GSTR-1.</li>
-                <li>Report consolidated B2C sales data.</li>
-                <li>Verify and submit GSTR-1.</li>
-                <li>Review auto-populated data in GSTR-3B.</li>
-                <li>Claim eligible ITC as per GSTR-2B and your books.</li>
-                <li>Declare and pay tax liability (including RCM) and file GSTR-3B.</li>
-            </ul>
+            <h2>GST Filing Process: A Step-by-Step Table</h2>
+            <p>Follow this structured process every month to ensure accurate and timely GST filings, which is crucial for maintaining your compliance rating and ensuring smooth cash flow for you and your customers.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Task</th>
+                        <th>Why It's Important</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Sales Reconciliation</td>
+                        <td>Reconcile your internal sales register with all B2B and B2C invoices issued during the month.</td>
+                        <td>Ensures you declare the correct outward supply and tax liability.</td>
+                    </tr>
+                    <tr>
+                        <td>2. ITC Reconciliation</td>
+                        <td>Reconcile your purchase register with the auto-populated GSTR-2B statement on the GST portal.</td>
+                        <td>Ensures you claim the correct Input Tax Credit (ITC) that you are eligible for, optimizing your cash flow.</td>
+                    </tr>
+                    <tr>
+                        <td>3. RCM Identification</td>
+                        <td>Identify any inward supplies on which you are liable to pay tax under the Reverse Charge Mechanism (RCM).</td>
+                        <td>Failure to pay RCM tax is a common compliance lapse that can lead to penalties.</td>
+                    </tr>
+                    <tr>
+                        <td>4. File GSTR-1</td>
+                        <td>Upload details of all your B2B outward supplies and consolidated B2C sales data.</td>
+                        <td>This allows your B2B customers to see the invoices in their GSTR-2B and claim ITC, which is critical for your business relationships.</td>
+                    </tr>
+                    <tr>
+                        <td>5. File GSTR-3B</td>
+                        <td>Declare your summary tax liability, claim eligible ITC, and pay the net GST amount.</td>
+                        <td>This is the final step for paying your tax liability to the government and completing your monthly compliance.</td>
+                    </tr>
+                </tbody>
+            </table>
         `
     },
     {
@@ -73,29 +126,32 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A complete checklist to prepare your startup for investor due diligence and ensure a smooth fundraising process.',
         Icon: HandCoins,
         content: `
-            <h2>Corporate Documents</h2>
+            <h2>Investor Due Diligence Data Room</h2>
+            <p>Prepare a virtual data room with the following documents organized into folders. A well-organized data room signals professionalism and can significantly speed up the funding process.</p>
+            
+            <h3>Folder 1: Corporate & Legal</h3>
             <ul>
-                <li>Certificate of Incorporation, MOA, AOA.</li>
-                <li>Up-to-date and clean Cap Table (preferably on software).</li>
-                <li>All shareholder agreements (SHA) and term sheets.</li>
-                <li>All Board Meeting Minutes and resolutions, signed.</li>
-                <li>All ROC filings (AOC-4, MGT-7, PAS-3, etc.).</li>
+                <li><strong>Incorporation Docs:</strong> Certificate of Incorporation, MOA, AOA.</li>
+                <li><strong>Compliance Certificates:</strong> PAN, TAN, GST, Startup India (DPIIT) certificates.</li>
+                <li><strong>Cap Table:</strong> A clean, up-to-date capitalization table (preferably from software like Carta/Pulley).</li>
+                <li><strong>Agreements:</strong> All signed founder and shareholder agreements (SHA), and historical term sheets.</li>
+                <li><strong>ROC Filings:</strong> Complete history of all filings (AOC-4, MGT-7, etc.).</li>
+                <li><strong>IP Documents:</strong> Trademark, patent, or copyright registration certificates. IP assignment agreements from all employees.</li>
             </ul>
-            <h2>Financial Documents</h2>
+
+            <h3>Folder 2: Financial</h3>
             <ul>
-                <li>Audited financial statements for all past years.</li>
-                <li>Monthly MIS reports for the last 12-24 months.</li>
-                <li>Detailed, driver-based financial model with projections.</li>
-                <li>Cap Table.</li>
-                <li>Bank statements for the last 12 months.</li>
-                <li>Tax filings (GST, TDS, Income Tax returns).</li>
+                <li><strong>Financial Statements:</strong> Audited financials for all past years and monthly MIS reports for the last 24 months.</li>
+                <li><strong>Financial Model:</strong> Your detailed, driver-based financial model with 3-5 year projections.</li>
+                <li><strong>Tax Returns:</strong> All filed Income Tax and GST returns.</li>
+                <li><strong>Bank Statements:</strong> Statements for the last 12-18 months for all company bank accounts.</li>
             </ul>
-            <h2>Legal & HR Documents</h2>
+
+             <h3>Folder 3: Team & Operations</h3>
             <ul>
-                <li>Signed employment contracts for all employees.</li>
-                <li>Signed IP assignment agreements for all employees & contractors.</li>
-                <li>ESOP plan and grant letters.</li>
-                <li>List of all pending or threatened litigation.</li>
+                <li><strong>Team Details:</strong> Founders' resumes and an organizational chart.</li>
+                <li><strong>Contracts:</strong> Standard employment contract template and all key customer/supplier contracts.</li>
+                <li><strong>Policies:</strong> ESOP policy and grant letters.</li>
             </ul>
         `
     },
@@ -104,30 +160,36 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A template outlining the key components of a professional Management Information System (MIS) report for your board and investors.',
         Icon: BarChart,
         content: `
-            <h2>Section 1: Executive Summary</h2>
+            <h2>MIS Report Structure: A Template for Clarity</h2>
+            <p>Your monthly MIS report is the primary tool for communicating your company's performance to your management team, board, and investors. It should be concise, insightful, and data-driven. Here is a best-practice structure.</p>
+            <h3>1. Executive Summary</h3>
+            <p>A brief narrative covering the month's highlights, lowlights, key achievements, and challenges. End with a summary of key action items for the next month.</p>
+            
+            <h3>2. Financial Performance Dashboard</h3>
+            <p>A one-page summary of your core financials.</p>
+            <table>
+                <thead>
+                    <tr><th>Metric</th><th>Current Month</th><th>Previous Month</th><th>vs. Budget</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td>Gross Margin %</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td>EBITDA</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td>Net Burn</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td>Closing Cash</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td>Runway (Months)</td><td>...</td><td>...</td><td>...</td></tr>
+                </tbody>
+            </table>
+
+            <h3>3. KPI Deep Dive</h3>
+            <p>Focus on the key performance indicators specific to your business model.</p>
             <ul>
-                <li>One-paragraph summary of the month's performance.</li>
-                <li>Highlights: Key wins and challenges.</li>
-                <li>Action items from the previous month and their status.</li>
+                <li><strong>For SaaS:</strong> Include charts for MRR Movement (New, Expansion, Churn), LTV:CAC ratio over time, and Net Dollar Retention.</li>
+                <li><strong>For D2C:</strong> Include charts for GMV, AOV, ROAS by channel, and Customer Retention Cohorts.</li>
             </ul>
-            <h2>Section 2: Financial Summary</h2>
-            <ul>
-                <li>P&L Summary (vs. Budget).</li>
-                <li>Cash Flow Summary (Operating, Investing, Financing).</li>
-                <li>Balance Sheet Snapshot.</li>
-                <li>Burn Rate and Runway calculation.</li>
-            </ul>
-             <h2>Section 3: Key Performance Indicators (KPIs)</h2>
-            <ul>
-                <li><strong>For SaaS:</strong> MRR movement (New, Expansion, Churn), LTV:CAC, Churn Rate, Net Dollar Retention.</li>
-                <li><strong>For D2C:</strong> Gross Merchandise Value (GMV), Average Order Value (AOV), Return on Ad Spend (ROAS), Customer Acquisition Cost (CAC).</li>
-            </ul>
-             <h2>Section 4: Departmental Updates</h2>
-            <ul>
-                <li>Sales: Pipeline status, key deals won/lost.</li>
-                <li>Marketing: Key campaign performance, lead generation metrics.</li>
-                <li>Product: Key feature releases, user engagement metrics.</li>
-            </ul>
+            
+            <h3>4. Departmental Highlights (Optional)</h3>
+            <p>A single slide from the head of Sales, Marketing, and Product highlighting their key results and priorities for the next month.</p>
         `
     },
     {
@@ -135,31 +197,46 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A simple structure for a cash flow tracker to help early-stage startups manage their runway and anticipate shortfalls.',
         Icon: LineChart,
         content: `
-            <h2>Weekly Cash Flow Tracker Structure (Example)</h2>
-            <p>Use a simple spreadsheet with the following columns:</p>
-            <h3>Opening Balance</h3>
-            <ul>
-                <li>Cash at the start of the week.</li>
-            </ul>
-            <h3>Cash Inflows</h3>
-            <ul>
-                <li>Customer Payments (List key expected payments).</li>
-                <li>Fundraising / Loans.</li>
-                <li>Other Income.</li>
-            </ul>
-            <h3>Cash Outflows</h3>
-            <ul>
-                <li>Salaries & Payroll.</li>
-                <li>Marketing Spend (e.g., Google Ads, Facebook Ads).</li>
-                <li>Software Subscriptions (e.g., AWS, HubSpot).</li>
-                <li>Rent & Utilities.</li>
-                <li>Supplier/Vendor Payments.</li>
-                <li>Other Expenses.</li>
-            </ul>
-             <h3>Closing Balance</h3>
-            <ul>
-                <li>Calculated as: Opening Balance + Total Inflows - Total Outflows. This becomes the opening balance for the next week.</li>
-            </ul>
+            <h2>13-Week Cash Flow Forecast Template</h2>
+            <p>A rolling 13-week (i.e., one quarter) cash flow forecast is the most critical financial tool for an early-stage startup. It helps you manage your liquidity and anticipate cash crunches before they happen. Use a simple spreadsheet with the following structure.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Cash Flow Item</th>
+                  <th>Week 1</th>
+                  <th>Week 2</th>
+                  <th>...</th>
+                  <th>Week 13</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Opening Cash Balance</strong></td>
+                  <td><strong>(from previous week)</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr><td colspan="5"><strong>Cash Inflows:</strong></td></tr>
+                <tr><td>  Customer Payments</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>  Fundraising / Loans</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td><strong>Total Inflows</strong></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td colspan="5"><strong>Cash Outflows:</strong></td></tr>
+                <tr><td>  Salaries & Payroll</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>  Marketing & Ads</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>  Software/SaaS Subscriptions</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>  Rent & Utilities</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>  Supplier Payments</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td><strong>Total Outflows</strong></td><td></td><td></td><td></td><td></td></tr>
+                <tr>
+                  <td><strong>Closing Cash Balance</strong></td>
+                  <td><strong>(Opening + Inflows - Outflows)</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
         `
     },
      {
@@ -167,35 +244,36 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A comprehensive checklist for setting up your virtual data room for a seamless investor due diligence process.',
         Icon: CheckSquare,
         content: `
-            <h2>Folder 1: Corporate</h2>
+            <h2>Data Room Structure for Investor Due Diligence</h2>
+            <p>A well-organized data room shows professionalism and speeds up the due diligence process. Create these top-level folders and populate them with the required documents.</p>
+            
+            <h3>1. Corporate</h3>
             <ul>
-                <li>Certificate of Incorporation, MOA, AOA.</li>
-                <li>PAN, TAN, GST Certificates.</li>
-                <li>List of all directors and shareholders.</li>
-                <li>Signed Shareholders' Agreements and Term Sheets.</li>
-                <li>Complete ROC filing history.</li>
+                <li><strong>Incorporation:</strong> Certificate of Incorporation, MOA, AOA.</li>
+                <li><strong>Compliance:</strong> PAN, TAN, GST, Startup India certificates.</li>
+                <li><strong>Cap Table:</strong> A clean, up-to-date capitalization table, preferably from software like Carta or Pulley.</li>
+                <li><strong>Agreements:</strong> All signed founder and shareholder agreements (SHA).</li>
+                <li><strong>ROC Filings:</strong> Complete history of key filings like AOC-4 and MGT-7.</li>
             </ul>
-            <h2>Folder 2: Financial</h2>
+
+            <h3>2. Financials</h3>
             <ul>
-                <li>Historical audited financial statements.</li>
-                <li>Monthly financial statements (P&L, Balance Sheet) for last 24 months.</li>
-                <li>Financial model and projections.</li>
-                <li>Cap Table.</li>
-                <li>Bank statements for the last 12 months.</li>
+                <li><strong>Historical Data:</strong> Audited financials for all past years and monthly MIS reports for the last 24 months.</li>
+                <li><strong>Projections:</strong> Your detailed, driver-based financial model.</li>
+                <li><strong>Tax:</strong> Filed Income Tax and GST returns for the last 3 years.</li>
             </ul>
-             <h2>Folder 3: Team & HR</h2>
+
+             <h3>3. Team</h3>
             <ul>
-                <li>Founders' resumes.</li>
-                <li>Organizational chart.</li>
-                <li>Standard employment agreement template.</li>
-                <li>ESOP plan and grant letters.</li>
+                <li><strong>Key Personnel:</strong> Founders' resumes and an org chart.</li>
+                <li><strong>Agreements:</strong> Standard employment contract, ESOP plan, and all grant letters.</li>
             </ul>
-             <h2>Folder 4: Legal & IP</h2>
+
+             <h3>4. Legal & Commercial</h3>
             <ul>
-                <li>All material customer and supplier contracts.</li>
-                <li>Property lease agreements.</li>
-                <li>Trademark and patent filings.</li>
-                <li>IP assignment agreements from all employees/contractors.</li>
+                <li><strong>IP:</strong> IP assignment agreements from all employees/contractors. Trademark/patent filings.</li>
+                <li><strong>Contracts:</strong> All material customer and supplier contracts.</li>
+                <li><strong>Leases:</strong> All property lease agreements.</li>
             </ul>
         `
     },
@@ -204,23 +282,44 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A guide to the essential KPIs and charts to include in your SaaS metrics dashboard for effective performance tracking.',
         Icon: Rocket,
         content: `
-            <h2>Key Metrics to Track</h2>
-            <ul>
-                <li><strong>Monthly Recurring Revenue (MRR):</strong> Your top-line growth metric.</li>
-                <li><strong>MRR Growth Rate (%):</strong> Month-over-month growth of MRR.</li>
-                <li><strong>Customer Churn Rate (%):</strong> Percentage of customers lost each month.</li>
-                <li><strong>Net Dollar Retention (%):</strong> Revenue retained from a cohort, including expansion and churn. Goal > 100%.</li>
-                <li><strong>Customer Lifetime Value (LTV):</strong> Total value of a customer over their life.</li>
-                <li><strong>Customer Acquisition Cost (CAC):</strong> Cost to acquire a new customer.</li>
-                <li><strong>LTV:CAC Ratio:</strong> The golden ratio of SaaS viability. Goal > 3.</li>
-                <li><strong>CAC Payback Period (Months):</strong> Time to recoup the cost of acquiring a customer.</li>
-            </ul>
-            <h2>Recommended Charts</h2>
-            <ul>
-                <li>MRR Movement Waterfall (New + Expansion - Churn).</li>
-                <li>LTV:CAC Ratio over time.</li>
-                <li>Customer Cohort Retention Chart.</li>
-            </ul>
+            <h2>Essential SaaS Metrics for Your Dashboard</h2>
+            <p>Your SaaS dashboard should give you a real-time pulse of your business health. Focus on these core metrics.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>What it Measures</th>
+                        <th>Why It Matters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MRR Growth Rate</strong></td>
+                        <td>The month-over-month percentage growth in your Monthly Recurring Revenue.</td>
+                        <td>The primary indicator of your startup's growth momentum.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Net Dollar Retention (NDR)</strong></td>
+                        <td>Revenue retained from a customer cohort, including expansion and churn.</td>
+                        <td>A score >100% means you grow even without new customers. It's the ultimate sign of a sticky product.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LTV:CAC Ratio</strong></td>
+                        <td>The ratio of Customer Lifetime Value to Customer Acquisition Cost.</td>
+                        <td>Measures the long-term profitability and viability of your go-to-market strategy. Aim for >3.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>CAC Payback Period</strong></td>
+                        <td>The number of months it takes to earn back the cost of acquiring a customer.</td>
+                        <td>A measure of capital efficiency. Aim for <12 months.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer Churn Rate</strong></td>
+                        <td>The percentage of customers who cancel their subscription each month.</td>
+                        <td>The "leaky bucket" problem. High churn makes growth incredibly difficult.</td>
+                    </tr>
+                </tbody>
+            </table>
         `
     },
     {
@@ -228,23 +327,44 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A template of key performance indicators for a Direct-to-Consumer (D2C) e-commerce brand.',
         Icon: ShoppingBag,
         content: `
-             <h2>Key Metrics to Track</h2>
-            <ul>
-                <li><strong>Gross Merchandise Value (GMV):</strong> Total sales value before discounts.</li>
-                <li><strong>Average Order Value (AOV):</strong> Average value of each customer order.</li>
-                <li><strong>Customer Acquisition Cost (CAC):</strong> Cost to acquire a new customer, often by channel.</li>
-                <li><strong>Return on Ad Spend (ROAS):</strong> Revenue generated for every rupee spent on advertising.</li>
-                <li><strong>Gross Margin (%):</strong> Profitability of your products after COGS.</li>
-                <li><strong>Customer Retention Rate (%):</strong> Percentage of customers who make a repeat purchase.</li>
-                <li><strong>Inventory Turnover:</strong> How quickly you sell through your inventory.</li>
-                <li><strong>Contribution Margin per Order:</strong> Profitability of each order after all variable costs.</li>
-            </ul>
-            <h2>Recommended Reports</h2>
-            <ul>
-                <li>Sales by SKU and by Channel.</li>
-                <li>COGS and Gross Margin Analysis per product.</li>
-                <li>Marketing channel performance (CAC and ROAS by channel).</li>
-            </ul>
+            <h2>Essential D2C & E-commerce Metrics</h2>
+            <p>For a D2C brand, profitability and marketing efficiency are paramount. Your KPI dashboard should focus on these core metrics.</p>
+             <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>What It Measures</th>
+                        <th>Why It Matters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gross Margin %</strong></td>
+                        <td>The percentage of revenue left after the Cost of Goods Sold (COGS).</td>
+                        <td>Measures the core profitability of your products.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contribution Margin</strong></td>
+                        <td>The profit left after all variable costs (COGS, shipping, marketing) are deducted.</td>
+                        <td>Tells you the true profitability of each order.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Return on Ad Spend (ROAS)</strong></td>
+                        <td>The revenue generated for every rupee spent on advertising.</td>
+                        <td>The key metric for measuring the effectiveness of your paid marketing campaigns.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Customer Acquisition Cost (CAC)</strong></td>
+                        <td>The total cost to acquire a new customer.</td>
+                        <td>Must be compared against LTV to ensure profitable growth.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Average Order Value (AOV)</strong></td>
+                        <td>The average amount a customer spends in a single transaction.</td>
+                        <td>Increasing AOV is a key lever to improve marketing efficiency.</td>
+                    </tr>
+                </tbody>
+            </table>
         `
     },
     {
@@ -252,17 +372,29 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A straightforward, one-page business plan template for early-stage startups to clarify their vision and strategy.',
         Icon: FileText,
         content: `
-            <ol>
-                <li><strong>Executive Summary:</strong> A one-paragraph elevator pitch of your business.</li>
-                <li><strong>The Problem:</strong> Clearly define the pain point you are solving.</li>
-                <li><strong>The Solution:</strong> Describe your product or service and how it solves the problem uniquely.</li>
-                <li><strong>Target Market:</strong> Who are your ideal customers? How large is the market?</li>
-                <li><strong>Go-to-Market Strategy:</strong> How will you reach and acquire customers?</li>
-                <li><strong>Competitive Landscape:</strong> Who are your main competitors and what is your competitive advantage?</li>
-                <li><strong>The Team:</strong> Why are you and your team the right people to solve this problem?</li>
-                <li><strong>Financial Summary:</strong> High-level financial projections for the next 3 years (Revenue, Key Costs, Profitability).</li>
-                <li><strong>The Ask (if fundraising):</strong> How much capital are you raising and what are the key milestones you will achieve with it?</li>
-            </ol>
+            <h2>One-Page Business Plan Framework</h2>
+            <p>Use this structure to create a concise yet comprehensive business plan. It's perfect for internal clarity and for sharing with early-stage investors or advisors.</p>
+            
+            <h3>1. The Problem</h3>
+            <p>Clearly and concisely describe the pain point your target customer faces. Make it relatable and quantify the problem if possible.</p>
+
+            <h3>2. The Solution</h3>
+            <p>Describe your product or service. How does it solve the problem you just outlined? What is your unique value proposition?</p>
+
+            <h3>3. Target Market (TAM, SAM, SOM)</h3>
+            <p>Define your ideal customer profile (ICP). Estimate the size of your market to show the potential scale of the opportunity.</p>
+
+            <h3>4. Go-to-Market Strategy</h3>
+            <p>How will you reach your target customers? Outline your key marketing and sales channels (e.g., content marketing, paid ads, direct sales).</p>
+            
+            <h3>5. The Team</h3>
+            <p>Introduce the founding team. Highlight relevant experience and explain why you are uniquely qualified to solve this problem.</p>
+            
+            <h3>6. Financial Summary</h3>
+            <p>Provide a high-level 3-year projection of key financial metrics: Revenue, Key Expenses, and Profitability/Burn.</p>
+            
+            <h3>7. The Ask (If applicable)</h3>
+            <p>State how much capital you are raising and what key milestones you will achieve with the funds.</p>
         `
     },
     {
@@ -270,20 +402,44 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A checklist of the most important terms to look for and understand in a venture capital term sheet.',
         Icon: HandCoins,
         content: `
-            <h2>Economic Terms</h2>
-            <ul>
-                <li><strong>Valuation (Pre-money & Post-money):</strong> How much is your company worth?</li>
-                <li><strong>Investment Amount:</strong> How much cash are you receiving?</li>
-                <li><strong>Liquidation Preference:</strong> Who gets paid first in a sale, and how much? (1x non-participating is standard).</li>
-                <li><strong>Option Pool Shuffle:</strong> Is the ESOP pool created from the pre-money or post-money valuation? (Pre-money is standard but dilutes founders more).</li>
-            </ul>
-            <h2>Control Terms</h2>
-            <ul>
-                <li><strong>Board Composition:</strong> Who gets a seat on your board of directors?</li>
-                <li><strong>Protective Provisions:</strong> What major company actions require investor approval? (e.g., selling the company, taking on debt).</li>
-                <li><strong>Pro-Rata Rights:</strong> Do investors have the right to maintain their ownership percentage in future rounds?</li>
-                <li><strong>Drag-Along / Tag-Along Rights:</strong> Rules governing how shares are sold in an acquisition.</li>
-            </ul>
+            <h2>Key Term Sheet Clauses: A Founder's Checklist</h2>
+            <p>A term sheet is a non-binding agreement, but its terms will form the basis of the final legal documents. Understanding these key clauses is critical.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>What it Means</th>
+                        <th>What is Founder-Friendly?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Valuation (Pre-Money)</strong></td>
+                        <td>The value of your company before the investment.</td>
+                        <td>As high as you can justifiably negotiate.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Liquidation Preference</strong></td>
+                        <td>Determines who gets paid first in a sale.</td>
+                        <td><strong>1x, non-participating.</strong> This is the market standard. Avoid participating preferred stock.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Option Pool Shuffle</strong></td>
+                        <td>How the ESOP pool is created.</td>
+                        <td>A smaller pool (10-15%) created from the pre-money valuation is standard.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Board Composition</strong></td>
+                        <td>Who gets seats on your board of directors.</td>
+                        <td>A small, balanced board where founders retain significant influence (e.g., 2 founders, 1 investor).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Protective Provisions</strong></td>
+                        <td>Investor veto rights on major decisions.</td>
+                        <td>A standard, limited set of veto rights that don't impede your ability to run the business day-to-day.</td>
+                    </tr>
+                </tbody>
+            </table>
         `
     },
      {
@@ -291,25 +447,49 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A compliance and administrative checklist for onboarding a new employee in your Indian startup.',
         Icon: UserCheck,
         content: `
-            <h2>Pre-Joining Formalities</h2>
-            <ul>
-                <li>Issue a formal Offer Letter detailing salary, role, and start date.</li>
-                <li>Conduct background verification (if applicable).</li>
-                <li>Request KYC documents (PAN, Aadhaar, bank details, photograph).</li>
-            </ul>
-            <h2>Day 1 Formalities</h2>
-            <ul>
-                <li>Sign the Employment Agreement and IP Assignment Agreement.</li>
-                <li>Collect PF and ESI nomination forms (if applicable).</li>
-                <li>Provide company assets (laptop, email ID).</li>
-                <li>Add employee to payroll software and HR system.</li>
-                <li>Explain company policies (leave, expense, POSH).</li>
-            </ul>
-            <h2>Post-Joining Compliance</h2>
-            <ul>
-                <li>Register the new employee on the PF and ESI portals.</li>
-                <li>Ensure TDS declarations are collected for accurate payroll processing.</li>
-            </ul>
+            <h2>New Employee Onboarding: A Compliance Checklist</h2>
+            <p>A structured onboarding process ensures you meet all legal requirements and sets your new employee up for success.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Task</th>
+                        <th>Responsibility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Pre-Joining</strong></td>
+                        <td>Issue formal Offer Letter with clear salary structure.</td>
+                        <td>HR/Founder</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Pre-Joining</strong></td>
+                        <td>Conduct background verification (if part of your policy).</td>
+                        <td>HR/Third-Party</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Day 1</strong></td>
+                        <td>Sign Employment Agreement & IP Assignment Agreement.</td>
+                        <td>HR/New Hire</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Day 1</strong></td>
+                        <td>Collect KYC (PAN, Aadhaar) and bank details for payroll.</td>
+                        <td>HR/New Hire</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Day 1</strong></td>
+                        <td>Collect PF/ESI nomination forms and TDS investment declarations.</td>
+                        <td>HR/New Hire</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Week 1</strong></td>
+                        <td>Add employee to payroll software and create their PF/ESI account.</td>
+                        <td>Finance/HR</td>
+                    </tr>
+                </tbody>
+            </table>
         `
     },
     {
@@ -317,26 +497,34 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A checklist for finance teams to ensure a timely and accurate month-end financial close process.',
         Icon: Milestone,
         content: `
-            <h2>Data Entry & Reconciliation (Week 1)</h2>
-            <ul>
-                <li>Record all pending invoices and bills.</li>
-                <li>Reconcile all bank accounts and credit card statements.</li>
-                <li>Reconcile payment gateway and marketplace payouts.</li>
-            </ul>
-            <h2>Adjusting Entries (Week 1)</h2>
-            <ul>
-                <li>Record prepaid expense amortization.</li>
-                <li>Record deferred revenue recognition for subscriptions.</li>
-                <li>Accrue for any unbilled expenses (e.g., salaries, rent).</li>
-                <li>Record depreciation on fixed assets.</li>
-            </ul>
-            <h2>Review & Reporting (Week 2)</h2>
-            <ul>
-                <li>Review the Trial Balance to ensure debits equal credits.</li>
-                <li>Generate the P&L, Balance Sheet, and Cash Flow Statement.</li>
-                <li>Prepare the MIS report with KPI dashboards and variance analysis.</li>
-                <li>Circulate final reports to management and board.</li>
-            </ul>
+             <h2>The Month-End Close Process</h2>
+            <p>A disciplined month-end close ensures you have accurate financials to make timely decisions. A best-practice process can be completed within 5-7 business days.</p>
+             <table>
+                <thead>
+                    <tr>
+                        <th>Phase (Timeline)</th>
+                        <th>Key Tasks</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Phase 1: Reconciliation (Days 1-3)</strong></td>
+                        <td>Reconcile all bank accounts, credit cards, and payment gateways. Record all pending invoices and bills.</td>
+                        <td>Ensures all transactions for the month are captured accurately.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phase 2: Adjustments (Days 3-5)</strong></td>
+                        <td>Post adjusting journal entries for prepaid expenses, accrued expenses, deferred revenue, and depreciation.</td>
+                        <td>Ensures revenue and expenses are recognized in the correct period (Accrual Accounting).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phase 3: Review & Reporting (Days 5-7)</strong></td>
+                        <td>Review the trial balance, generate the three financial statements, and prepare the MIS report for management.</td>
+                        <td>Provides management with a clear, accurate picture of the company's performance for the month.</td>
+                    </tr>
+                </tbody>
+            </table>
         `
     },
     {
@@ -344,23 +532,23 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A checklist of key clauses every founders\' shareholders\' agreement should contain to prevent future disputes.',
         Icon: FileUp,
         content: `
-            <h2>Ownership & Equity</h2>
+            <h2>Key Clauses for Your Founders' Agreement</h2>
+            <p>A well-drafted founders' agreement is the most important legal document for an early-stage startup. It's the "pre-nup" for your business partnership and prevents future disputes. Ensure it covers these critical areas.</p>
+            <h3>Equity & Ownership</h3>
             <ul>
-                <li>Clear definition of shareholding percentages for each founder.</li>
-                <li>Vesting Schedule: 4-year vesting with a 1-year cliff is standard.</li>
-                <li>IP Assignment: All intellectual property created by founders related to the business must be assigned to the company.</li>
+                <li><strong>Equity Split:</strong> A clear, unambiguous statement of the shareholding percentage for each co-founder.</li>
+                <li><strong>Vesting Schedule:</strong> A 4-year vesting schedule with a 1-year cliff is essential. This protects the company if a founder leaves early.</li>
+                <li><strong>IP Assignment:</strong> A clause stating that all intellectual property created by the founders related to the business is owned by the company, not the individuals.</li>
             </ul>
-            <h2>Roles & Governance</h2>
+            <h3>Governance & Control</h3>
             <ul>
-                <li>Defined roles and responsibilities for each founder.</li>
-                <li>Board of Directors composition.</li>
-                <li>Decision-Making: Which decisions require a board vote vs. a shareholder vote?</li>
+                <li><strong>Roles and Responsibilities:</strong> Clearly defined roles for each founder (e.g., CEO, CTO) to avoid turf wars.</li>
+                <li><strong>Decision Making:</strong> Define which decisions require a unanimous vote versus a simple majority.</li>
             </ul>
-            <h2>Exit & Contingencies</h2>
+            <h3>Exit & Contingency</h3>
             <ul>
-                <li>Right of First Refusal (ROFR): Obligation to offer shares to other founders before selling to a third party.</li>
-                <li>Founder Departure: What happens to vested and unvested shares if a founder leaves?</li>
-                <li>Deadlock & Dispute Resolution: A clear mechanism to resolve disputes if founders cannot agree.</li>
+                <li><strong>Founder Departure:</strong> What happens to vested and unvested shares if a founder resigns or is terminated? Does the company have a right to buy back the shares?</li>
+                <li><strong>Deadlock Resolution:</strong> A mechanism to resolve disputes if the founders reach a 50/50 impasse.</li>
             </ul>
         `
     },
@@ -369,28 +557,35 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A simple framework to help you structure and build a comprehensive Go-to-Market (GTM) strategy for your new product.',
         Icon: Search,
         content: `
-            <h2>1. Target Audience</h2>
+            <h2>Building Your Go-to-Market Plan</h2>
+            <p>Your GTM strategy is your roadmap for how you will reach and win customers. Use this template to structure your thinking.</p>
+            
+            <h3>1. Target Audience</h3>
             <ul>
-                <li><strong>Ideal Customer Profile (ICP):</strong> Who are you selling to? (Industry, company size, geography).</li>
-                <li><strong>User Persona:</strong> Who is the end-user within that company? What are their pain points?</li>
+                <li><strong>Ideal Customer Profile (ICP):</strong> Describe the company you are selling to. What industry are they in? What is their size? Where are they located?</li>
+                <li><strong>User Persona:</strong> Describe the individual user or buyer. What is their job title? What are their biggest pain points and goals?</li>
             </ul>
-            <h2>2. Value Proposition & Messaging</h2>
+
+            <h3>2. Messaging & Positioning</h3>
             <ul>
-                <li><strong>Value Proposition:</strong> What unique value do you provide to your target market?</li>
-                <li><strong>Key Messaging:</strong> What are the core messages that will resonate with your persona?</li>
+                <li><strong>Value Proposition:</strong> In a single sentence, what is the unique value you provide to your target customer?</li>
+                <li><strong>Positioning Statement:</strong> How do you want to be perceived in the market relative to your competitors?</li>
             </ul>
-            <h2>3. Pricing & Packaging</h2>
+
+            <h3>3. Pricing & Packaging</h3>
             <ul>
-                <li>How will you price your product? (Tiered, usage-based, etc.).</li>
-                <li>What features are included in each package?</li>
+                <li><strong>Pricing Model:</strong> How will you charge? (e.g., Per user, per month, usage-based).</li>
+                <li><strong>Packaging Tiers:</strong> What features are included in your "Basic," "Pro," and "Enterprise" plans?</li>
             </ul>
-            <h2>4. Acquisition Channels</h2>
+            
+            <h3>4. Acquisition Channels</h3>
             <ul>
-                <li>How will you reach your customers? (e.g., Content Marketing/SEO, Paid Ads, Outbound Sales, Partnerships).</li>
+                <li><strong>How will you generate leads and awareness?</strong> For each channel (e.g., SEO, Paid Ads, Content Marketing, Outbound Sales), define your strategy and budget.</li>
             </ul>
-             <h2>5. Goals & Metrics</h2>
+
+            <h3>5. Success Metrics</h3>
             <ul>
-                <li>What are your key success metrics? (e.g., Number of new customers, revenue target, CAC).</li>
+                <li><strong>What are the 3-5 key metrics you will track to measure the success of your GTM plan?</strong> (e.g., Number of new customers, CAC, conversion rate).</li>
             </ul>
         `
     },
@@ -399,19 +594,21 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A 12-slide template outlining the essential components of a compelling and effective startup pitch deck for investors.',
         Icon: Presentation,
         content: `
+            <h2>The Investor Pitch Deck: A 12-Slide Structure</h2>
+            <p>Your pitch deck is your story. Keep it concise, visual, and compelling. Follow this classic, investor-approved structure.</p>
             <ol>
-                <li><strong>Cover Slide:</strong> Your company name, logo, and a one-line pitch.</li>
-                <li><strong>The Problem:</strong> Describe the pain point you are solving in a relatable way.</li>
-                <li><strong>The Solution:</strong> Explain your product or service and how it uniquely solves the problem.</li>
-                <li><strong>Market Size:</strong> How big is the opportunity? (TAM, SAM, SOM).</li>
-                <li><strong>Product:</strong> Show, don't just tell. Include a demo link or screenshots.</li>
-                <li><strong>Traction:</strong> Your proof. Show growth in users, revenue, or other key metrics.</li>
-                <li><strong>Business Model:</strong> How do you make money? What is your pricing?</li>
-                <li><strong>Go-to-Market:</strong> How will you acquire customers efficiently?</li>
-                <li><strong>Competitive Landscape:</strong> Who are your competitors and what is your "unfair advantage"?</li>
-                <li><strong>Team:</strong> Why is your team the right one to win this market?</li>
-                <li><strong>Financials:</strong> High-level summary of your financial projections (3-5 years).</li>
-                <li><strong>The Ask:</strong> How much are you raising and what will you achieve with the capital?</li>
+                <li><strong>Cover:</strong> Your company name, logo, and a powerful one-line pitch.</li>
+                <li><strong>Vision/Mission:</strong> A bold, inspiring statement about the future you are creating.</li>
+                <li><strong>The Problem:</strong> Describe the pain point you are solving. Make it urgent and relatable.</li>
+                <li><strong>The Solution:</strong> Introduce your product or service. Show, don't just tell, with a screenshot or demo.</li>
+                <li><strong>Market Size (TAM):</strong> Show investors the scale of the opportunity. Why is this a huge market?</li>
+                <li><strong>Traction:</strong> This is your proof. A chart showing your growth in users, revenue, or engagement is essential.</li>
+                <li><strong>Business Model:</strong> How do you make money? Clearly explain your pricing and unit economics.</li>
+                <li><strong>Go-to-Market Strategy:</strong> How will you reach and acquire customers efficiently?</li>
+                <li><strong>Competition:</strong> Acknowledge your competitors and explain your unique, defensible advantage.</li>
+                <li><strong>Team:</strong> Introduce your founding team and key advisors. Why are you the ones to win?</li>
+                <li><strong>Financials:</strong> A high-level summary of your financial projections, highlighting key metrics.</li>
+                <li><strong>The Ask:</strong> Clearly state how much you're raising and what milestones you'll achieve with the capital.</li>
             </ol>
         `
     }
