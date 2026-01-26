@@ -1,3 +1,4 @@
+
 import { Anchor, Award, Banknote, BarChart3, Briefcase, Clock, DollarSign, Eye, Factory, FileCheck, Group, HandCoins, Landmark, Lightbulb, Package, Presentation, Rocket, Scale, Search, ShieldCheck, ShoppingBag, TrendingUp, User, Users, Zap, ClipboardList } from 'lucide-react';
 
 export interface WhoWeHelpPage {
@@ -158,102 +159,6 @@ export const WHO_WE_HELP_PAGES: WhoWeHelpPage[] = [
         relatedServices: ['virtual-cfo', 'fundraising'],
         relatedCaseStudies: ['innovatex-saas-go-to-market-strategy', 'quantumleap-logistics-supply-chain-optimization'],
         relatedBlogs: ['mastering-saas-metrics', 'cost-structure-analysis-for-startups', 'forecasting-vs-accounting-key-differences']
-    },
-    {
-        slug: 'saas-startups',
-        title: 'Financial Services for SaaS Startups | Nexa Consultancy',
-        description: 'Expert financial guidance for SaaS startups. We specialize in SaaS metrics, revenue recognition, fundraising, and strategic planning to drive scalable growth.',
-        h1: 'SaaS Startups',
-        Icon: Rocket,
-        intro: {
-            title: 'The Financial Operating System for Your SaaS Business',
-            content: [
-                'The SaaS business model is unique. Your success hinges on a set of specific metrics—MRR, ARR, churn, LTV, CAC, and NDR—that traditional accounting often fails to capture effectively.',
-                'To scale a SaaS business, you need a finance function that speaks your language. A finance partner who understands the nuances of subscription billing, deferred revenue, and the key drivers of a venture-scale valuation.'
-            ]
-        },
-        painPoints: {
-            title: 'The Hidden Complexities of the SaaS Model',
-            points: [
-                { title: 'Inaccurate Revenue Recognition', description: 'Recognizing annual contracts as immediate revenue is a common but fatal accounting error that misrepresents your performance and creates massive compliance risks.', Icon: FileCheck },
-                { title: 'Leaky Bucket Syndrome', description: 'High customer churn can silently kill your growth. Without a deep understanding of your logo and net dollar retention, you can\'t build a sustainable business.', Icon: Zap },
-                { title: 'Unclear Unit Economics', description: 'Are you sure your LTV is greater than your CAC? Without a data-driven model, you could be spending money to acquire unprofitable customers.', Icon: DollarSign }
-            ]
-        },
-        ourSolution: {
-            title: 'A Virtual CFO Fluent in SaaS.',
-            content: [
-                'Our services are tailor-made for SaaS startups. We implement systems to track your key metrics accurately and in real-time. We manage your subscription revenue recognition according to accounting standards, ensuring your books are always clean and investor-ready.',
-                'From building your first financial model for a seed round to preparing a detailed cohort analysis for a Series B, we provide the strategic financial guidance you need to navigate every stage of your SaaS journey.'
-            ]
-        },
-        relatedServices: ['virtual-cfo-for-saas-startups', 'pitch-deck-financial-modelling'],
-        relatedCaseStudies: ['innovatex-saas-go-to-market-strategy'],
-        relatedBlogs: ['mastering-saas-metrics', 'understanding-deferred-revenue', 'the-rule-of-40-for-saas-companies']
-    },
-    {
-        slug: 'ecommerce-and-d2c-brands',
-        title: 'Financial Services for E-commerce & D2C Brands | Nexa Consultancy',
-        description: 'Master your unit economics and cash flow. We offer specialized bookkeeping, GST compliance, and vCFO services for D2C and e-commerce brands in India.',
-        h1: 'E-commerce & D2C Brands',
-        Icon: ShoppingBag,
-        intro: {
-            title: 'The Financial Engine for Your Brand',
-            content: [
-                'Building a successful D2C or e-commerce brand is a battle fought on two fronts: creating a product customers love, and mastering the complex financial logistics of physical goods.',
-                'From managing inventory and navigating multi-state GST to reconciling marketplace payments and calculating true profitability, the financial challenges are immense. A single misstep in managing your cash conversion cycle can bring even a fast-growing brand to a halt.'
-            ]
-        },
-        painPoints: {
-            title: 'The Challenges of Digital Retail',
-            points: [
-                { title: 'Inventory Cash Trap', description: 'Your cash is tied up in inventory. Too much, and you have a liquidity crisis. Too little, and you have stockouts and lost sales.', Icon: Package },
-                { title: 'Margin Mysteries', description: 'Do you know your true profit margin per SKU, after accounting for shipping, payment gateway fees, and marketplace commissions? Many brands don\'t.', Icon: DollarSign },
-                { title: 'GST & Compliance Chaos', description: 'Selling across India means dealing with multi-state GST registrations, e-way bills, and complex marketplace tax reconciliation (TCS). It\'s a compliance minefield.', Icon: FileCheck }
-            ]
-        },
-        ourSolution: {
-            title: 'Clarity and Control for Your E-commerce Finances.',
-            content: [
-                'We provide an end-to-end finance solution for D2C brands. Our services start with robust bookkeeping and inventory management to give you a clear view of your costs. We automate marketplace reconciliation and manage your multi-state GST compliance, freeing you from administrative headaches.',
-                'Our Virtual CFOs work with you to perform deep analysis of your unit economics, optimize your cash flow, and build the financial strategy you need to scale profitably.'
-            ]
-        },
-        relatedServices: ['gst-for-d2c-brands-india', 'bookkeeping'],
-        relatedCaseStudies: ['urban-roots-d2c-profitability-scaling'],
-        relatedBlogs: ['ecommerce-cash-flow-management', 'gst-on-ecommerce-operator-services', 'inventory-turnover-ratio']
-    },
-    {
-        slug: 'tech-startups',
-        title: 'Financial Services for Tech Startups | Nexa Consultancy',
-        description: 'Strategic financial guidance for tech startups. We handle everything from R&D capitalization and IP protection to SaaS metrics and fundraising support.',
-        h1: 'Tech Startups',
-        Icon: Rocket,
-        intro: {
-            title: 'Building the Financial Foundation for Innovation',
-            content: [
-                'As a tech startup, your primary asset is your innovation—your code, your intellectual property, and your team\'s ability to solve a hard problem. Your financial model is different from a traditional business, characterized by high upfront investment in R&D and the potential for exponential, scalable growth.',
-                'Your finance function needs to reflect this reality. It must be forward-looking, adept at managing intangible assets, and capable of telling a compelling growth story to investors who understand the unique economics of technology.'
-            ]
-        },
-        painPoints: {
-            title: 'The Financial Hurdles of Tech Innovation',
-            points: [
-                { title: 'High Upfront R&D Burn', description: 'You spend months or years building your product before generating significant revenue, making burn rate and runway management absolutely critical.', Icon: Zap },
-                { title: 'Complex Revenue Models', description: 'Whether it\'s subscription-based, usage-based, or transactional, tech revenue models require sophisticated accounting and metrics tracking.', Icon: BarChart3 },
-                { title: 'IP & Equity Complexity', description: 'Protecting your intellectual property and managing your cap table (especially ESOPs) are high-stakes legal and financial challenges from day one.', Icon: ShieldCheck }
-            ]
-        },
-        ourSolution: {
-            title: 'A Finance Partner Fluent in Tech.',
-            content: [
-                'We are specialists in the finance of innovation. Our services are designed for tech startups, whether you\'re a SaaS company, a FinTech platform, or a deep-tech venture. We help you build robust financial models that capture your unique business drivers and prepare you for fundraising with a data-driven narrative.',
-                'From managing your cap table to ensuring your R&D spending is optimized, we provide the comprehensive financial oversight you need to turn your technological vision into a commercially successful business.'
-            ]
-        },
-        relatedServices: ['virtual-cfo', 'corporate-law'],
-        relatedCaseStudies: ['innovatex-saas-go-to-market-strategy', 'medibot-regulatory-compliance-and-funding'],
-        relatedBlogs: ['demystifying-cap-tables', 'mastering-saas-metrics', 'understanding-deferred-revenue']
     },
     {
         slug: 'foreign-founders-in-india',
