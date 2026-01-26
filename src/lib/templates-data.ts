@@ -1,5 +1,5 @@
 
-import { FileCheck, ClipboardList, HandCoins, BarChart3, LineChart, CheckSquare, BarChart, Rocket, FileText, FileUp, Milestone, UserCheck, Search, ListChecks, ShoppingBag, Presentation } from 'lucide-react';
+import { FileCheck, ClipboardList, HandCoins, BarChart, LineChart, CheckSquare, Rocket, ShoppingBag, FileText, UserCheck, Milestone, FileUp, Search, Presentation } from 'lucide-react';
 
 export interface TemplateData {
   slug: string;
@@ -143,7 +143,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <ul>
                 <li><strong>Financial Statements:</strong> Audited financials for all past years and monthly MIS reports for the last 24 months.</li>
                 <li><strong>Financial Model:</strong> Your detailed, driver-based financial model with 3-5 year projections.</li>
-                <li><strong>Tax Returns:</strong> All filed Income Tax and GST returns.</li>
+                <li><strong>Tax Returns:</strong> All filed Income Tax and GST returns for the last 3 years.</li>
                 <li><strong>Bank Statements:</strong> Statements for the last 12-18 months for all company bank accounts.</li>
             </ul>
 
