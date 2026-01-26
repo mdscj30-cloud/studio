@@ -8,103 +8,14 @@ import {
   CardTitle,
   CardContent,
   CardDescription,
+  CardFooter,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, MapPin } from 'lucide-react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS, LOCATIONS } from '@/lib/constants';
+import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS, SERVICES } from '@/lib/constants';
 import { ALL_CITIES, TARGETED_SERVICES } from '@/lib/location-service-data';
 import { useEffect } from 'react';
 import { getCalApi } from "@calcom/embed-react";
-
-const serviceSections = [
-  {
-    id: 'virtual-cfo',
-    title: 'Virtual CFO',
-    description: 'Clarity on numbers. Confidence in decisions.',
-    details:
-      'We act as your extended finance leadership—managing daily finance operations while helping you plan for growth, manage cash flow, and handle investor reporting.',
-    idealFor: 'Startups, D2C brands, manufacturing SMEs',
-    handles: [
-      'End-to-end accounting & monthly close',
-      'P&L, Balance Sheet & Cash Flow reporting',
-      'Budgeting, forecasting & variance analysis',
-      '13-week rolling cash flow forecasts',
-      'Monthly investor updates & board-ready slides',
-      'KPI storytelling & narratives',
-    ],
-  },
-  {
-    id: 'bookkeeping',
-    title: 'Bookkeeping',
-    description: 'Accurate books, on time, every time.',
-    details: 'From early-stage to growth-stage companies, our tailored bookkeeping packages are suitable for all. Our experts can manage your complex accounts, ensuring your financials are always clean and audit-ready.',
-    idealFor: 'Any business needing reliable accounting',
-    handles: [
-        'Daily transaction recording',
-        'Bank & credit card reconciliation',
-        'Accounts payable & receivable management',
-        'Month-end closing procedures',
-        'Financial statement preparation',
-    ]
-  },
-  {
-    id: 'business-setup',
-    title: 'Business Setup',
-    description: 'Launch your venture on a solid legal footing.',
-    details: 'We help Indian or foreign individuals and companies set up their business in India, providing end-to-end support with all applicable regulatory registrations and corporate structure decisions.',
-    idealFor: 'New entrepreneurs and foreign companies entering India',
-    handles: [
-        'Entity selection (Pvt Ltd, LLP, etc.)',
-        'Company incorporation & registration',
-        'PAN, TAN, and GST registration',
-        'Bank account opening assistance',
-        'Initial compliance setup',
-    ]
-  },
-  {
-    id: 'gst',
-    title: 'GST & Indirect Tax',
-    description: 'Compliant by default. Optimized by design.',
-    details:
-      'From filings to reconciliations, we manage your GST compliance seamlessly—so there are no last-minute scrambles or surprise notices.',
-    handles: [
-      'GSTR-1 & GSTR-3B filings (Monthly / Quarterly)',
-      'Sales, purchase & ITC reconciliations',
-      'GST liability computation & challans',
-      'ITC optimization & mismatch resolution',
-      'Ongoing GST compliance monitoring',
-    ],
-  },
-  {
-    id: 'income-tax',
-    title: 'Income Tax & TDS',
-    description: 'No missed deadlines. No unnecessary tax leakage.',
-    details:
-      'We ensure your direct tax obligations are handled accurately and on time—while keeping cash planning in mind.',
-    handles: [
-      'Monthly TDS calculations & challans',
-      'Quarterly TDS returns (24Q, 26Q)',
-      'Form 16 / 16A issuance',
-      'Advance tax planning & tracking',
-      'Annual income tax return filing',
-    ],
-  },
-  {
-    id: 'roc',
-    title: 'ROC & Compliance',
-    description: 'Strong governance. Zero penalties.',
-    details:
-      'We manage routine ROC filings, clean up past compliance gaps, and ensure your entity stays compliant year-round.',
-    handles: [
-      'Annual ROC filings (AOC-4, MGT-7 / 7A)',
-      'DIR-3 KYC & event-based filings',
-      'Accounting clean-ups & past filing reviews',
-      'Compliance gap analysis & risk assessment',
-      'Compliance calendars & reminders',
-    ],
-  },
-];
 
 const howItWorks = [
   { title: 'Discovery & compliance assessment' },
@@ -147,84 +58,93 @@ export function ServicesClient() {
 
       <section className="py-16 md:py-24 bg-background">
         <div className="container">
-          <Tabs defaultValue={serviceSections[0].id} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-auto mb-12">
-              {serviceSections.map(service => (
-                <TabsTrigger
-                  key={service.id}
-                  value={service.id}
-                  className="text-xs sm:text-sm"
-                >
-                  {service.title}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-            {serviceSections.map(service => (
-              <TabsContent key={service.id} value={service.id}>
-                <Card className="border-accent bg-muted/20">
-                  <div className="grid md:grid-cols-2">
-                    <div className="p-8">
-                      <h2 className="text-2xl font-bold text-primary mb-2">
-                        {service.title}
-                      </h2>
-                      <p className="text-lg font-semibold text-accent mb-4">
-                        {service.description}
-                      </p>
-                      <p className="text-muted-foreground">{service.details}</p>
-                      {service.idealFor && (
-                        <div className="mt-4 pt-4 border-t">
-                          <p className="text-sm text-muted-foreground">
-                            <span className="font-semibold text-primary">
-                              Ideal for:
-                            </span>{' '}
-                            {service.idealFor}
-                          </p>
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Core Offerings</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              We provide a comprehensive suite of services to manage your startup's financial, tax, and compliance needs end-to-end.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {SERVICES.map((service) => {
+              const Icon = service.icon;
+              return (
+                <Card key={service.slug} className="flex flex-col border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                  <CardHeader>
+                    <div className="flex items-center gap-4 mb-2">
+                        <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
+                            <Icon className="w-8 h-8 text-primary" />
                         </div>
-                      )}
+                        <CardTitle className="text-2xl text-primary">{service.title}</CardTitle>
                     </div>
-                    <div className="bg-muted/50 p-8 rounded-b-lg md:rounded-r-lg md:rounded-bl-none">
-                      <h3 className="font-semibold text-foreground mb-4">
-                        What we handle
-                      </h3>
-                      <ul className="space-y-3 text-sm text-muted-foreground">
-                        {service.handles.map(item => (
-                          <li key={item} className="flex items-start">
-                            <CheckCircle className="w-4 h-4 text-accent mr-3 mt-1 shrink-0" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                  <CardFooter>
+                    <Button asChild variant="link" className="p-0 text-accent font-semibold">
+                      <Link href={`/services/${service.slug}`}>
+                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </CardFooter>
                 </Card>
-              </TabsContent>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted/30 -mx-container-padding">
+        <div className="container">
+           <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-primary">How We Give You Leverage</h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We provide real-life help so you can build your business with confidence.</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+            {REAL_LIFE_HELP_POINTS.map((item) => {
+                const Icon = item.icon;
+                return (
+                    <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
+                        <div className="flex items-center gap-4 mb-3">
+                            <Icon className="w-8 h-8 text-accent shrink-0" />
+                            <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </div>
+                )
+            })}
+            </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              Your Strategic Finance Partner
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              We go beyond compliance to provide the strategic insights that
+              drive growth.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {DIFFERENTIATORS.map(item => (
+              <div key={item.title} className="p-6 bg-card rounded-lg border">
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </div>
             ))}
-          </Tabs>
+          </div>
+        </div>
+      </section>
 
-          <section className="py-16 md:py-24">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                Your Strategic Finance Partner
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                We go beyond compliance to provide the strategic insights that
-                drive growth.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              {DIFFERENTIATORS.map(item => (
-                <div key={item.title} className="p-6 bg-card rounded-lg border">
-                  <h3 className="text-xl font-semibold text-primary mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
+      <div className="py-16 md:py-24 bg-muted/30 -mx-container-padding">
+        <div className="container">
           <div className="grid md:grid-cols-5 gap-12 items-start">
-            <div className="md:col-span-2 bg-muted/50 p-8 rounded-lg">
+            <div className="md:col-span-2 bg-card p-8 rounded-lg">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">
                 How We Work
               </h2>
@@ -244,64 +164,40 @@ export function ServicesClient() {
                 ))}
               </ol>
             </div>
-            <div className="md:col-span-3">
-               <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-primary">How We Give You Leverage</h2>
-                    <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We provide real-life help so you can build your business with confidence.</p>
+            <div className="md:col-span-3" id="city-guides">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-primary">Finance Services by City</h2>
+                    <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Find expert financial and compliance services tailored to your startup's location across India.
+                    </p>
                 </div>
-                <div className="grid grid-cols-1 gap-8">
-                {REAL_LIFE_HELP_POINTS.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                        <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
-                            <div className="flex items-center gap-4 mb-3">
-                                <Icon className="w-8 h-8 text-accent shrink-0" />
-                                <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
-                            </div>
-                            <p className="text-sm text-muted-foreground">{item.description}</p>
+                <div className="columns-2 md:columns-3 lg:columns-4 gap-8">
+                    {ALL_CITIES.sort().map(city => (
+                        <div key={city} className="mb-8 break-inside-avoid">
+                          <h3 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
+                              <MapPin className="w-5 h-5 text-accent" />
+                              {city}
+                          </h3>
+                          <ul className="space-y-2">
+                              {TARGETED_SERVICES.map(service => {
+                                  const slug = `${slugify(service.title)}-${slugify(city)}`;
+                                  return (
+                                      <li key={slug}>
+                                          <Link href={`/india-services/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                                              {service.title}
+                                          </Link>
+                                      </li>
+                                  )
+                              })}
+                          </ul>
                         </div>
-                    )
-                })}
+                    ))}
                 </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="-mx-container-padding bg-muted/50 py-16 md:py-24">
-        <div className="container">
-          <div id="city-guides">
-              <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Services by City</h2>
-                  <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Find expert financial and compliance services tailored to your startup's location across India.
-                  </p>
-              </div>
-              <div className="columns-2 md:columns-3 lg:columns-5 gap-8">
-                  {ALL_CITIES.sort().map(city => (
-                      <div key={city} className="mb-8 break-inside-avoid">
-                        <h3 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
-                            <MapPin className="w-5 h-5 text-accent" />
-                            {city}
-                        </h3>
-                        <ul className="space-y-2">
-                            {TARGETED_SERVICES.map(service => {
-                                const slug = `${slugify(service.title)}-${slugify(city)}`;
-                                return (
-                                    <li key={slug}>
-                                        <Link href={`/india-services/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                                            {service.title}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                      </div>
-                  ))}
-              </div>
-          </div>
-        </div>
-      </section>
+      </div>
+      
 
       <section className="-mx-container-padding bg-background py-16 md:py-24">
         <div className="container mx-auto text-center">
