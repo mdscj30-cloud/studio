@@ -73,21 +73,16 @@ export default function FinanceHubPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {SERVICES.map(service => (
-              <Link href={`/services/${service.slug}`} key={service.slug} className="group">
-                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col text-center">
-                  <CardHeader className="items-center">
-                    <div className="bg-primary/10 p-3 rounded-full w-fit mb-2">
-                        <service.icon className="w-8 h-8 text-primary" />
-                    </div>
-                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{service.title}</CardTitle>
-                    <p className="text-sm text-muted-foreground pt-2">{service.description}</p>
-                  </CardHeader>
-                  <CardContent className="flex-grow" />
-                  <CardFooter className="justify-center pt-4">
-                    <span className="text-sm font-semibold text-accent flex items-center">
+              <Link href={`/services/${service.slug}`} key={service.slug} className="group h-full">
+                <Card className="h-full p-6 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-accent">
+                  <div className="bg-primary/10 p-3 rounded-full w-fit mb-4 group-hover:bg-accent/10 transition-colors">
+                      <service.icon className="w-8 h-8 text-primary group-hover:text-accent transition-colors" />
+                  </div>
+                  <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground mt-2 flex-grow">{service.description}</p>
+                  <div className="mt-4 text-sm font-semibold text-primary group-hover:text-accent flex items-center transition-colors">
                       Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </CardFooter>
+                  </div>
                 </Card>
               </Link>
             ))}
