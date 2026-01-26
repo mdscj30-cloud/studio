@@ -548,7 +548,7 @@ export const PROGRAMMATIC_PAGES_DATA: ProgrammaticPage[] = [
     {
         slug: 'do-startups-need-do-insurance',
         title: 'Do Startups Need D&O Insurance? A Founder\'s Guide | Nexa',
-        description: 'An explanation of Directors and Officers (D&O) liability insurance and why it\'s a critical, often investor-mandated, protection for startup founders and their boards.',
+        description: 'An explanation of Directors & Officers (D&O) liability insurance and why it\'s a critical, often investor-mandated, protection for startup founders and their boards.',
         h1: 'Do Startups Need D&O Insurance?',
         Icon: ShieldCheck,
         problem: {
@@ -648,7 +648,7 @@ export const PROGRAMMATIC_PAGES_DATA: ProgrammaticPage[] = [
         h1: 'Bootstrapping vs. VC Funding: Which Path?',
         Icon: Anchor,
         problem: {
-            title: 'The Ultimate Founder's Crossroad',
+            title: 'The Ultimate Founder\'s Crossroad',
             content: [
                 'The decision to bootstrap or raise venture capital is one of the most fundamental choices a founder will make. It\'s not just a financial decision; it\'s a philosophical one that will define the culture, speed, and ultimate destination of your company.',
                 'Bootstrapping offers freedom and control, forcing a focus on profitability from day one. VC funding provides the fuel for hyper-growth but comes with immense pressure and a loss of autonomy. There is no right answer, only the right answer for you and your vision.'
@@ -657,8 +657,8 @@ export const PROGRAMMATIC_PAGES_DATA: ProgrammaticPage[] = [
         complianceNeed: {
             title: 'A Framework for Your Decision',
             points: [
-                'Choose Bootstrapping if you want to be your own boss, prioritize building a sustainable, profitable business, and are in a market that doesn\'t require massive upfront capital to win.',
-                'Choose Venture Funding if you are tackling a massive, winner-take-all market, need significant capital to build your product or scale your GTM, and are prepared for the high-pressure journey toward a massive exit.',
+                'Choose Bootstrapping if you want to be your own boss, prioritize building a sustainable business, and are in a market that doesn\'t require massive upfront capital to compete.',
+                'Choose Venture Funding if you are tackling a huge market, need significant capital to build your product or scale your GTM, and are prepared for the high-pressure journey toward a massive exit.',
                 'Consider your personal goals. Do you want to build a "lifestyle" business that provides you with a great income and autonomy, or are you aiming for a billion-dollar outcome?',
                 'Evaluate your market. Can you compete effectively against better-funded competitors without raising capital yourself?'
             ]
