@@ -31,9 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Hub pages - High priority
     { url: `${siteUrl}/services`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/finance-for-startups-india`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/resources`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
     { url: `${siteUrl}/process`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
 

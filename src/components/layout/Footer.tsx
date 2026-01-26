@@ -10,6 +10,12 @@ export default function Footer() {
       { href: '/privacy', label: 'Privacy Policy' },
   ];
 
+  const resourceLinks = [
+    { href: '/blog', label: 'Blog' },
+    { href: '/case-studies', label: 'Case Studies' },
+    { href: '/startup-finance-glossary', label: 'Glossary' },
+  ]
+
   return (
     <>
       <section className="bg-muted/50 py-16 md:py-24 -mx-container-padding px-container-padding">
@@ -55,7 +61,7 @@ export default function Footer() {
             <div className='text-left'>
               <h4 className="font-semibold mb-4 text-primary-foreground/90">Menu</h4>
               <ul className="space-y-2">
-                {NAV_LINKS.filter(link => !['Process', 'Portfolio', 'Success Stories'].includes(link.label)).map((link) => (
+                {NAV_LINKS.map((link) => (
                   <li key={link.href}>
                     <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
                       {link.label}
@@ -65,14 +71,13 @@ export default function Footer() {
               </ul>
             </div>
              <div className='text-left'>
-              <h4 className="font-semibold mb-4 text-primary-foreground/90">Locations</h4>
+              <h4 className="font-semibold mb-4 text-primary-foreground/90">Resources</h4>
               <ul className="space-y-2">
-                {LOCATIONS.map((location) => (
-                  <li key={location.name}>
-                    <p className="text-sm text-primary-foreground/80 flex items-center justify-start">
-                      <MapPin className="w-4 h-4 mr-2 inline-block" />
-                      {location.name}
-                    </p>
+                {resourceLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
