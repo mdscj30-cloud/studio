@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/finance-for-startups-india`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/resources`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/tools`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/templates`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/resources/templates`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
@@ -138,7 +138,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const templatesPages: MetadataRoute.Sitemap = TEMPLATES_DATA.map(page => ({
-    url: `${siteUrl}/templates/${page.slug}`,
+    url: `${siteUrl}/resources/templates/${page.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.8,
