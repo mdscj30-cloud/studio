@@ -1,4 +1,5 @@
 
+
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,7 +7,7 @@ import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data';
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data';
 import { SERVICES } from '@/lib/constants';
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Separator } from '@/components/ui/separator';
 
 
 export const metadata = {
@@ -58,93 +59,101 @@ export default function FinanceHubPage() {
           </div>
         </section>
 
+        <Separator />
+
         <section id="specialized-guides">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Specialized Financial Playbooks</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
               Find tailored strategies and solutions for your specific stage, industry, or business challenge.
             </p>
           </div>
 
-          <Tabs defaultValue="stage" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-12 max-w-2xl mx-auto h-auto">
-              <TabsTrigger value="stage" className="py-2">By Startup Stage</TabsTrigger>
-              <TabsTrigger value="industry" className="py-2">By Industry</TabsTrigger>
-              <TabsTrigger value="solution" className="py-2">Decision Guides</TabsTrigger>
-            </TabsList>
+          <div className="space-y-20">
+            <div id="guides-by-stage">
+                <div className="text-center mb-12">
+                    <h3 className="text-2xl font-bold text-primary">Guides by Startup Stage</h3>
+                    <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">Tailored advice for the unique challenges you face at the pre-seed, seed, and growth stages.</p>
+                </div>
+                <div className="grid md:grid-cols-3 gap-8">
+                    {STAGE_PROBLEM_PAGES.map(page => {
+                        const Icon = page.problem.Icon;
+                        return (
+                        <Link href={`/startup-guides/${page.slug}`} key={page.slug} className="group">
+                            <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col text-center">
+                            <CardHeader className="items-center flex-grow">
+                                <div className="bg-primary/10 p-3 rounded-full w-fit mb-2">
+                                    <Icon className="w-8 h-8 text-primary" />
+                                </div>
+                                <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
+                                <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 120)}...</p>
+                            </CardHeader>
+                            <CardContent className="flex justify-center items-end pt-4">
+                                    <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
+                            </CardContent>
+                            </Card>
+                        </Link>
+                        )
+                    })}
+                </div>
+            </div>
 
-            <TabsContent value="stage">
-              <div className="grid md:grid-cols-3 gap-8">
-                {STAGE_PROBLEM_PAGES.map(page => {
-                    const Icon = page.problem.Icon;
-                    return (
-                      <Link href={`/startup-guides/${page.slug}`} key={page.slug} className="group">
-                        <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col text-center">
-                           <CardHeader className="items-center flex-grow">
-                            <div className="bg-primary/10 p-3 rounded-full w-fit mb-2">
-                                <Icon className="w-8 h-8 text-primary" />
-                            </div>
-                            <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
-                             <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 120)}...</p>
-                          </CardHeader>
-                           <CardContent className="flex justify-center items-end pt-4">
+            <div id="guides-by-industry">
+                <div className="text-center mb-12">
+                    <h3 className="text-2xl font-bold text-primary">Guides by Industry</h3>
+                    <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">Deep dives into the financial nuances of SaaS, D2C, FinTech, and Manufacturing startups in India.</p>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {INDUSTRY_FINANCE_PAGES.map(page => {
+                        const Icon = page.Icon;
+                        return (
+                        <Link href={`/industry-finance/${page.slug}`} key={page.slug} className="group">
+                            <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                            <CardHeader className="items-center flex-grow">
+                                <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
+                                    <Icon className="w-8 h-8 text-primary" />
+                                </div>
+                                <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.industry}</CardTitle>
+                                <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 100)}...</p>
+                            </CardHeader>
+                            <CardContent className="flex justify-center items-end pt-4">
+                                    <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
+                            </CardContent>
+                            </Card>
+                        </Link>
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div id="decision-guides">
+                <div className="text-center mb-12">
+                    <h3 className="text-2xl font-bold text-primary">Founder Decision Guides</h3>
+                    <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">Actionable frameworks for the tough questions: when to hire, what to choose, and how to comply.</p>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {PROGRAMMATIC_PAGES_DATA.map(page => {
+                        const Icon = page.Icon;
+                        return (
+                        <Link href={`/solutions/${page.slug}`} key={page.slug} className="group">
+                            <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                            <CardHeader className="items-center flex-grow">
+                                <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
+                                    <Icon className="w-8 h-8 text-primary" />
+                                </div>
+                                <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
+                                <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 100)}...</p>
+                            </CardHeader>
+                            <CardContent className="flex justify-center items-end pt-4">
                                 <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
-                           </CardContent>
-                        </Card>
-                      </Link>
-                    )
-                })}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="industry">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                 {INDUSTRY_FINANCE_PAGES.map(page => {
-                    const Icon = page.Icon;
-                    return (
-                      <Link href={`/industry-finance/${page.slug}`} key={page.slug} className="group">
-                        <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
-                           <CardHeader className="items-center flex-grow">
-                            <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
-                                <Icon className="w-8 h-8 text-primary" />
-                            </div>
-                            <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.industry}</CardTitle>
-                             <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 100)}...</p>
-                          </CardHeader>
-                           <CardContent className="flex justify-center items-end pt-4">
-                                <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
-                           </CardContent>
-                        </Card>
-                      </Link>
-                    )
-                 })}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="solution">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {PROGRAMMATIC_PAGES_DATA.map(page => {
-                    const Icon = page.Icon;
-                    return (
-                    <Link href={`/solutions/${page.slug}`} key={page.slug} className="group">
-                        <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
-                        <CardHeader className="items-center flex-grow">
-                            <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
-                                <Icon className="w-8 h-8 text-primary" />
-                            </div>
-                            <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
-                            <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 100)}...</p>
-                        </CardHeader>
-                        <CardContent className="flex justify-center items-end pt-4">
-                            <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
-                        </CardContent>
-                        </Card>
-                    </Link>
-                    )
-                })}
-              </div>
-            </TabsContent>
-          </Tabs>
+                            </CardContent>
+                            </Card>
+                        </Link>
+                        )
+                    })}
+                </div>
+            </div>
+          </div>
         </section>
       </div>
     </>
