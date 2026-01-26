@@ -17,7 +17,7 @@ const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 const CITIES = {
     tier1: ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", "Pune", "Ahmedabad", "Gurgaon", "Noida"],
     tier2: ["Jaipur", "Lucknow", "Kanpur", "Nagpur", "Indore", "Thane", "Bhopal", "Visakhapatnam", "Pimpri Chinchwad", "Patna", "Vadodara", "Ghaziabad", "Ludhiana", "Agra", "Nashik", "Faridabad", "Meerut", "Rajkot", "Varanasi", "Surat"],
-    tier3: ["Chandigarh", "Coimbatore", "Kochi", "Mysore", "Guwahati", "Bhubaneswar", "Jodhpur", "Dehradun", "Raipur", "Ranchi", "Gwalior", "Jabalpur", "Madurai", "Salem", "Tiruchirappalli", "Jamshedpur", "Udaipur", "Allahabad", "Amritsar", "Vijayawada"],
+    tier3: ["Chandigarh", "Coimbatore", "Kochi", "Mysore", "Guwahati", "Bhubaneswar", "Jodhpur", "Dehradun", "Raipur", "Ranchi", "Gwalior", "Jabalpur", "Madurai", "Salem", "Tiruchirappalli", "Jamshedpur", "Udaipur", "Allahabad", "Amritsar", "Vijayawada", "Trivandrum", "Mangalore", "Aurangabad", "Srinagar", "Shimla", "Puducherry", "Gandhinagar", "Kozhikode", "Thrissur", "Kolhapur"],
 };
 
 export const ALL_CITIES = [...CITIES.tier1, ...CITIES.tier2, ...CITIES.tier3];
