@@ -9,6 +9,7 @@ import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data'
 import { WHO_WE_HELP_PAGES } from '@/lib/who-we-help-data'
 import { PRICING_PAGES_DATA } from '@/lib/pricing-pages-data'
 import { COMPARE_PAGES_DATA } from '@/lib/compare-pages-data'
+import { TOOLS_DATA } from '@/lib/tools-data'
 
 const getGlossaryPriority = (term: GlossaryTerm): number => {
   switch (term.tier) {
@@ -35,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/who-we-help`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/finance-for-startups-india`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/resources`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/tools`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
@@ -126,6 +128,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const toolsPages: MetadataRoute.Sitemap = TOOLS_DATA.map(page => ({
+    url: `${siteUrl}/tools/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
 
   return [
     ...mainPages,
@@ -140,5 +149,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...whoWeHelpPages,
     ...pricingPages,
     ...comparePages,
+    ...toolsPages,
   ];
 }

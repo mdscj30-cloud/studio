@@ -14,6 +14,7 @@ export default function Footer() {
     { href: '/blog', label: 'Blog' },
     { href: '/case-studies', label: 'Case Studies' },
     { href: '/startup-finance-glossary', label: 'Glossary' },
+    { href: '/tools', label: 'Tools' },
   ]
 
   return (
