@@ -1,12 +1,12 @@
 
-import { ArrowRight, CheckCircle, Rocket, Factory, Briefcase, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data';
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data';
 import { SERVICES } from '@/lib/constants';
 import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 
 export const metadata = {
@@ -16,9 +16,6 @@ export const metadata = {
 
 export default function FinanceHubPage() {
   
-  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
-
-
   return (
     <>
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
@@ -41,107 +38,113 @@ export default function FinanceHubPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {SERVICES.map(service => (
               <Link href={`/services/${service.slug}`} key={service.slug} className="group">
-                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
-                  <CardHeader className="flex-grow">
-                    <div className="flex items-start gap-3 mb-2">
-                        <div className="bg-primary/10 p-2 rounded-full mt-1">
-                            <service.icon className="w-6 h-6 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{service.title}</CardTitle>
+                <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col text-center">
+                  <CardHeader className="items-center">
+                    <div className="bg-primary/10 p-3 rounded-full w-fit mb-2">
+                        <service.icon className="w-8 h-8 text-primary" />
                     </div>
-                    <CardDescription className="pt-2">{service.description}</CardDescription>
+                    <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{service.title}</CardTitle>
+                    <p className="text-sm text-muted-foreground pt-2">{service.description}</p>
                   </CardHeader>
+                  <CardContent className="flex-grow" />
+                  <CardFooter className="justify-center pt-4">
+                    <span className="text-sm font-semibold text-accent flex items-center">
+                      Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </CardFooter>
                 </Card>
               </Link>
             ))}
           </div>
         </section>
 
-        <section id="targeted-solutions">
-            <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary">Targeted Financial Solutions</h2>
-                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                Specific solutions for common startup challenges.
-                </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section id="specialized-guides">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Specialized Financial Playbooks</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+              Find tailored strategies and solutions for your specific stage, industry, or business challenge.
+            </p>
+          </div>
+
+          <Tabs defaultValue="stage" className="w-full">
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-12 max-w-2xl mx-auto h-auto">
+              <TabsTrigger value="stage" className="py-2">By Startup Stage</TabsTrigger>
+              <TabsTrigger value="industry" className="py-2">By Industry</TabsTrigger>
+              <TabsTrigger value="solution" className="py-2">By Challenge</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="stage">
+              <div className="grid md:grid-cols-3 gap-8">
+                {STAGE_PROBLEM_PAGES.map(page => {
+                    const Icon = page.problem.Icon;
+                    return (
+                      <Link href={`/startup-guides/${page.slug}`} key={page.slug} className="group">
+                        <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col text-center">
+                           <CardHeader className="items-center flex-grow">
+                            <div className="bg-primary/10 p-3 rounded-full w-fit mb-2">
+                                <Icon className="w-8 h-8 text-primary" />
+                            </div>
+                            <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
+                             <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 120)}...</p>
+                          </CardHeader>
+                           <CardContent className="flex justify-center items-end pt-4">
+                                <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
+                           </CardContent>
+                        </Card>
+                      </Link>
+                    )
+                })}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="industry">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 {INDUSTRY_FINANCE_PAGES.map(page => {
+                    const Icon = page.Icon;
+                    return (
+                      <Link href={`/industry-finance/${page.slug}`} key={page.slug} className="group">
+                        <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
+                           <CardHeader className="items-center flex-grow">
+                            <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
+                                <Icon className="w-8 h-8 text-primary" />
+                            </div>
+                            <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.industry}</CardTitle>
+                             <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 100)}...</p>
+                          </CardHeader>
+                           <CardContent className="flex justify-center items-end pt-4">
+                                <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
+                           </CardContent>
+                        </Card>
+                      </Link>
+                    )
+                 })}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="solution">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {PROGRAMMATIC_PAGES_DATA.map(page => {
                     const Icon = page.Icon;
                     return (
                     <Link href={`/solutions/${page.slug}`} key={page.slug} className="group">
                         <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
-                        <CardHeader>
+                        <CardHeader className="items-center flex-grow">
                             <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
                                 <Icon className="w-8 h-8 text-primary" />
                             </div>
                             <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
+                            <p className="text-sm text-muted-foreground pt-2">{page.description.substring(0, 100)}...</p>
                         </CardHeader>
-                        <CardContent>
-                                <p className="text-sm text-muted-foreground">{page.description.substring(0, 100)}...</p>
-                            </CardContent>
+                        <CardContent className="flex justify-center items-end pt-4">
+                            <span className="text-xs font-semibold text-accent/80 group-hover:text-accent">Read Guide <ArrowRight className="inline-block h-3 w-3" /></span>
+                        </CardContent>
                         </Card>
                     </Link>
                     )
                 })}
-            </div>
-        </section>
-
-        <section id="industry-guides">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Guides by Industry</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Tailored financial strategies and compliance guidance for your specific industry.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-             {INDUSTRY_FINANCE_PAGES.map(page => {
-                const Icon = page.Icon;
-                return (
-                  <Link href={`/industry-finance/${page.slug}`} key={page.slug} className="group">
-                    <Card className="h-full text-center transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
-                      <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
-                            <Icon className="w-8 h-8 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.industry}</CardTitle>
-                      </CardHeader>
-                       <CardContent>
-                            <p className="text-sm text-muted-foreground">{page.description.substring(0, 100)}...</p>
-                        </CardContent>
-                    </Card>
-                  </Link>
-                )
-             })}
-          </div>
-        </section>
-
-        <section id="stage-guides">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Finance Guides by Startup Stage</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Solving the right financial problems at the right time in your startup journey.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {STAGE_PROBLEM_PAGES.map(page => {
-                const Icon = page.problem.Icon;
-                return (
-                  <Link href={`/startup-guides/${page.slug}`} key={page.slug} className="group">
-                    <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-accent flex flex-col">
-                      <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-2">
-                            <Icon className="w-8 h-8 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg text-primary group-hover:text-accent transition-colors">{page.h1}</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sm text-muted-foreground">{page.description.substring(0, 120)}...</p>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                )
-            })}
-          </div>
+              </div>
+            </TabsContent>
+          </Tabs>
         </section>
       </div>
     </>
