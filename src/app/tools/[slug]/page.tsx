@@ -6,6 +6,11 @@ import { ArrowLeft } from 'lucide-react';
 import BurnRateCalculator from '@/components/tools/BurnRateCalculator';
 import SaaSCalculator from '@/components/tools/SaaSCalculator';
 import DueDiligenceChecklist from '@/components/tools/DueDiligenceChecklist';
+import GstCalculator from '@/components/tools/GstCalculator';
+import EsopCalculator from '@/components/tools/EsopCalculator';
+import BreakevenCalculator from '@/components/tools/BreakevenCalculator';
+import WorkingCapitalCalculator from '@/components/tools/WorkingCapitalCalculator';
+import CompoundInterestCalculator from '@/components/tools/CompoundInterestCalculator';
 
 type Props = {
   params: { slug: string };
@@ -36,6 +41,11 @@ const componentMap: Record<string, React.ComponentType> = {
     'BurnRateCalculator': BurnRateCalculator,
     'SaaSCalculator': SaaSCalculator,
     'DueDiligenceChecklist': DueDiligenceChecklist,
+    'GstCalculator': GstCalculator,
+    'EsopCalculator': EsopCalculator,
+    'BreakevenCalculator': BreakevenCalculator,
+    'WorkingCapitalCalculator': WorkingCapitalCalculator,
+    'CompoundInterestCalculator': CompoundInterestCalculator
 }
 
 export default function ToolPage({ params }: Props) {
