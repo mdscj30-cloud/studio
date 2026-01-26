@@ -26,7 +26,6 @@ const decisionGuidesByCategory: Record<string, string[]> = {
     "when-should-a-startup-pivot",
   ],
   "Structuring & Founder Issues": [
-    "pvt-ltd-vs-llp",
     "when-to-create-esop-pool",
     "founder-salary-vs-dividends",
     "do-startups-need-do-insurance",
@@ -34,11 +33,9 @@ const decisionGuidesByCategory: Record<string, string[]> = {
   "Core Accounting & Tax": [
     "should-you-outsource-accounting",
     "when-is-statutory-audit-mandatory",
-    "choosing-zoho-books-vs-tally",
-    "safe-vs-convertible-note-which-to-choose"
   ],
   "Specialized Compliance": [
-    "do-startups-need-gst-registration",
+    "when-to-get-gst-registration",
     "when-roc-compliance-applies",
     "when-to-deduct-tds-for-freelancers",
     "tds-on-foreign-payments-startups",
@@ -48,7 +45,7 @@ const decisionGuidesByCategory: Record<string, string[]> = {
     "virtual-cfo-for-saas-startups",
     "virtual-cfo-for-fintech-startups",
     "gst-compliance-for-export-startups",
-    "saas-monthly-vs-annual-plans-a-saas-pricing-strategy-guide",
+    "saas-monthly-vs-annual-plans",
   ],
 };
 
@@ -106,44 +103,34 @@ export default function FinanceHubPage() {
               Find tailored strategies and solutions for your specific stage or industry.
             </p>
           </div>
-           <div className="grid md:grid-cols-2 gap-12">
+           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
                <div id="guides-by-stage">
                 <h3 className="text-2xl font-bold text-primary mb-6">By Startup Stage</h3>
-                <ul className="space-y-4">
+                <div className="space-y-2">
                   {STAGE_PROBLEM_PAGES.map(page => {
                     const Icon = page.problem.Icon;
                     return (
-                      <li key={page.slug}>
-                        <Link href={`/startup-guides/${page.slug}`} className="group flex items-start gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors">
-                          <div className="bg-primary/10 p-2 rounded-full mt-1"><Icon className="w-5 h-5 text-primary" /></div>
-                          <div>
-                            <p className="font-semibold text-foreground group-hover:text-accent transition-colors">{page.h1}</p>
-                            <p className="text-sm text-muted-foreground">{page.description}</p>
-                          </div>
-                        </Link>
-                      </li>
+                       <Link key={page.slug} href={`/startup-guides/${page.slug}`} className="group flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors border border-transparent hover:border-border">
+                          <div className="bg-primary/10 p-2 rounded-full "><Icon className="w-5 h-5 text-primary" /></div>
+                          <p className="font-semibold text-foreground group-hover:text-accent transition-colors">{page.h1}</p>
+                      </Link>
                     )
                   })}
-                </ul>
+                </div>
                </div>
                <div id="guides-by-industry">
                 <h3 className="text-2xl font-bold text-primary mb-6">By Industry</h3>
-                 <ul className="space-y-4">
+                 <div className="space-y-2">
                   {INDUSTRY_FINANCE_PAGES.map(page => {
                     const Icon = page.Icon;
                     return (
-                      <li key={page.slug}>
-                        <Link href={`/industry-finance/${page.slug}`} className="group flex items-start gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors">
-                          <div className="bg-primary/10 p-2 rounded-full mt-1"><Icon className="w-5 h-5 text-primary" /></div>
-                          <div>
-                            <p className="font-semibold text-foreground group-hover:text-accent transition-colors">{page.h1}</p>
-                            <p className="text-sm text-muted-foreground">{page.description}</p>
-                          </div>
-                        </Link>
-                      </li>
+                      <Link key={page.slug} href={`/industry-finance/${page.slug}`} className="group flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors border border-transparent hover:border-border">
+                          <div className="bg-primary/10 p-2 rounded-full"><Icon className="w-5 h-5 text-primary" /></div>
+                          <p className="font-semibold text-foreground group-hover:text-accent transition-colors">{page.h1}</p>
+                      </Link>
                     )
                   })}
-                </ul>
+                </div>
                </div>
            </div>
         </section>
@@ -165,19 +152,8 @@ export default function FinanceHubPage() {
                     <AccordionContent>
                       <ul className="pt-4 space-y-2">
                         {slugs.map(slug => {
-                          const page = PROGRAMMATIC_PAGES_DATA.find(p => p.slug === slug.replace(/vs/g, 'vs.'));
-                           if (!page) {
-                            const comparePage = PROGRAMMATIC_PAGES_DATA.find(p => p.slug.includes(slug));
-                            if (!comparePage) return null;
-                            return (
-                               <li key={slug}>
-                                <Link href={`/solutions/${comparePage.slug}`} className="group flex items-center gap-3 p-2 rounded-md hover:bg-muted/50 transition-colors">
-                                  <ChevronRight className="w-4 h-4 text-accent/80 shrink-0" />
-                                  <span className="text-muted-foreground group-hover:text-foreground transition-colors">{comparePage.h1}</span>
-                                </Link>
-                              </li>
-                            )
-                          }
+                          const page = PROGRAMMATIC_PAGES_DATA.find(p => p.slug === slug);
+                           if (!page) return null;
                           return (
                             <li key={slug}>
                               <Link href={`/solutions/${slug}`} className="group flex items-center gap-3 p-2 rounded-md hover:bg-muted/50 transition-colors">
