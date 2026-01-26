@@ -1,5 +1,5 @@
 
-import { Briefcase, FileCheck, Landmark, HandCoins, Scale, BookUser, Presentation, Users, DollarSign, Wallet, AlertTriangle, Eye, BarChart, PiggyBank, Anchor, Rocket, Zap, User, Group, TrendingUp } from 'lucide-react';
+import { Briefcase, FileCheck, Landmark, HandCoins, Scale, BookUser, Presentation, Users, DollarSign, Wallet, AlertTriangle, Eye, BarChart, PiggyBank, Anchor, Rocket, Zap, User, Group, TrendingUp, ShieldCheck } from 'lucide-react';
 
 export type ProgrammaticPage = {
   slug: string;
