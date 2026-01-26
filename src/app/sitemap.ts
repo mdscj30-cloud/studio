@@ -14,10 +14,8 @@ const getGlossaryPriority = (term: GlossaryTerm): number => {
       return 0.7; // High priority for top-tier terms
     case 2:
       return 0.6; // Medium priority
-    case 3:
-      return 0.5; // Low priority, but still indexed
     default:
-      return 0.5;
+      return 0.5; // Low priority, but still indexed
   }
 }
 
@@ -25,32 +23,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
 
   const mainPages: MetadataRoute.Sitemap = [
-    '/',
-    '/services',
-    '/finance-for-startups-india',
-    '/process',
-    '/pricing',
-    '/blog',
-    '/case-studies',
-    '/startup-finance-glossary',
-    '/about',
-    '/contact',
-    '/terms',
-    '/privacy',
-  ].map(route => {
-      const hubPages = ['/services', '/finance-for-startups-india', '/blog', '/startup-finance-glossary', '/case-studies'];
-      const lowPriorityPages = ['/terms', '/privacy'];
-       const priority = route === '/' ? 1.0 :
-                         hubPages.includes(route) ? 0.9 :
-                         lowPriorityPages.includes(route) ? 0.3 : // Lowered priority
-                         0.8;
-      return {
-          url: `${siteUrl}${route}`,
-          lastModified: new Date(),
-          changeFrequency: 'monthly',
-          priority: priority,
-      }
-  });
+    // Core pages
+    { url: `${siteUrl}/`, lastModified: new Date(), priority: 1.0, changeFrequency: 'daily' },
+    { url: `${siteUrl}/about`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${siteUrl}/contact`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
+    
+    // Hub pages - High priority
+    { url: `${siteUrl}/services`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/finance-for-startups-india`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${siteUrl}/process`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
+
+    // Legal/Admin pages - Low priority
+    { url: `${siteUrl}/terms`, lastModified: new Date(), priority: 0.3, changeFrequency: 'yearly' },
+    { url: `${siteUrl}/privacy`, lastModified: new Date(), priority: 0.3, changeFrequency: 'yearly' },
+  ];
 
   const servicesPages: MetadataRoute.Sitemap = SERVICES.map(service => ({
     url: `${siteUrl}/services/${service.slug}`,
@@ -74,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const glossaryPages: MetadataRoute.Sitemap = ALL_GLOSSARY_TERMS
-    .filter(term => term.tier !== 3) // Exclude tier 3 from sitemap
+    .filter(term => term.tier !== 3) // Exclude low-value tier 3 terms
     .map(term => ({
       url: `${siteUrl}/startup-finance-glossary/${term.slug}`,
       lastModified: new Date(),
@@ -86,28 +76,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/solutions/${page.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: 0.9,
+    priority: 0.8, // Important landing pages
   }));
 
   const indiaServicesPages: MetadataRoute.Sitemap = LOCATION_SERVICE_PAGES.map(page => ({
     url: `${siteUrl}/india-services/${page.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: 0.9,
+    priority: 0.7, // More specific, so slightly lower priority
   }));
 
   const startupGuidesPages: MetadataRoute.Sitemap = STAGE_PROBLEM_PAGES.map(page => ({
     url: `${siteUrl}/startup-guides/${page.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: 0.9,
+    priority: 0.8,
   }));
 
   const industryFinancePages: MetadataRoute.Sitemap = INDUSTRY_FINANCE_PAGES.map(page => ({
     url: `${siteUrl}/industry-finance/${page.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: 0.9,
+    priority: 0.8,
   }));
 
   return [
