@@ -49,6 +49,7 @@ export const NAV_LINKS = [
   { href: '/who-we-help', label: 'Who We Help' },
   { href: '/finance-for-startups-india', label: 'Startup Finance Guide' },
   { href: '/resources', label: 'Resources' },
+  { href: '/compare', label: 'Compare' },
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/about', label: 'About' },
