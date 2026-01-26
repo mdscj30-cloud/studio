@@ -1,4 +1,4 @@
-import { Newspaper, Briefcase, Library, ArrowRight, NotebookPen, Wrench } from 'lucide-react';
+import { Newspaper, Briefcase, Library, ArrowRight, NotebookPen, Wrench, Scale } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 
@@ -37,6 +37,12 @@ const resourceLinks = [
         description: 'Downloadable checklists and templates for fundraising, compliance, and financial planning.',
         href: '/resources/templates',
         icon: NotebookPen,
+    },
+    {
+        title: 'Compare & Decide',
+        description: 'High-intent, data-driven comparisons to help you choose the right financial services, tools, and strategies for your startup.',
+        href: '/resources/compare',
+        icon: Scale,
     },
 ]
 

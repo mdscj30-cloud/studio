@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/process`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${siteUrl}/compare`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/resources/compare`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
 
     // Legal/Admin pages - Low priority
     { url: `${siteUrl}/terms`, lastModified: new Date(), priority: 0.3, changeFrequency: 'yearly' },
@@ -124,7 +124,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const comparePages: MetadataRoute.Sitemap = COMPARE_PAGES_DATA.map(page => ({
-    url: `${siteUrl}/compare/${page.slug}`,
+    url: `${siteUrl}/resources/compare/${page.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.8,

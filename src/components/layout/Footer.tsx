@@ -16,6 +16,7 @@ export default function Footer() {
     { href: '/startup-finance-glossary', label: 'Glossary' },
     { href: '/tools', label: 'Tools' },
     { href: '/resources/templates', label: 'Templates' },
+    { href: '/resources/compare', label: 'Compare' },
   ]
 
   return (
