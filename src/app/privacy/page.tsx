@@ -66,7 +66,7 @@ export default function PrivacyPolicyPage() {
             <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
             <p>
                 <strong>Nexa Consultancy</strong><br />
-                Email: <a href="mailto:privacy@nconsulting.com">privacy@nconsulting.com</a>
+                Email: <a href="mailto:hello@nexaconsultancy.com">hello@nexaconsultancy.com</a>
             </p>
         </div>
       </div>

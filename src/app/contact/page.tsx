@@ -34,14 +34,14 @@ export default function ContactPage() {
                                 <Phone className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
                                 <div>
                                     <h4 className="font-semibold">Phone</h4>
-                                    <a href="tel:+911234567890" className="text-sm text-foreground/80 hover:text-primary transition-colors">+91 123 456 7890</a>
+                                    <a href="tel:+919131540853" className="text-sm text-foreground/80 hover:text-primary transition-colors">+91 9131540853</a>
                                 </div>
                             </li>
                             <li className="flex items-start">
                                 <Mail className="w-6 h-6 mr-4 mt-1 shrink-0 text-accent" />
                                 <div>
                                     <h4 className="font-semibold">Email</h4>
-                                    <a href="mailto:contact@nconsulting.com" className="text-sm text-foreground/80 hover:text-primary transition-colors">contact@nconsulting.com</a>
+                                    <a href="mailto:hello@nexaconsultancy.com" className="text-sm text-foreground/80 hover:text-primary transition-colors">hello@nexaconsultancy.com</a>
                                 </div>
                             </li>
                              <li className="flex items-start">
