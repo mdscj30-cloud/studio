@@ -7,6 +7,7 @@ import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data'
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data'
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data'
 import { WHO_WE_HELP_PAGES } from '@/lib/who-we-help-data'
+import { PRICING_PAGES_DATA } from '@/lib/pricing-pages-data'
 
 const getGlossaryPriority = (term: GlossaryTerm): number => {
   switch (term.tier) {
@@ -36,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/process`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
 
     // Legal/Admin pages - Low priority
@@ -108,6 +109,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
+  
+  const pricingPages: MetadataRoute.Sitemap = PRICING_PAGES_DATA.map(page => ({
+    url: `${siteUrl}/pricing/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
 
 
   return [
@@ -121,5 +129,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...startupGuidesPages,
     ...industryFinancePages,
     ...whoWeHelpPages,
+    ...pricingPages,
   ];
 }
