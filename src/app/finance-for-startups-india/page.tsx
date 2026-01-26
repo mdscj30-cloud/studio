@@ -54,12 +54,6 @@ const pillarSections = [
 
 export default function FinanceHubPage() {
   
-  const representativeStageGuides = STAGE_PROBLEM_PAGES.filter(p => [
-    'basic-compliance-for-pre-seed-startups', 
-    'fundraising-prep-for-seed-startups',
-    'burn-rate-management-for-series-a-startups'
-  ].includes(p.slug));
-
   const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
 
@@ -133,7 +127,7 @@ export default function FinanceHubPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {representativeStageGuides.map(page => {
+            {STAGE_PROBLEM_PAGES.map(page => {
                 const Icon = page.problem.Icon;
                 return (
                   <Link href={`/startup-guides/${page.slug}`} key={page.slug} className="group">
