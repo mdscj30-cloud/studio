@@ -70,7 +70,7 @@ export default function FinanceHubPage() {
             <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-12 max-w-2xl mx-auto h-auto">
               <TabsTrigger value="stage" className="py-2">By Startup Stage</TabsTrigger>
               <TabsTrigger value="industry" className="py-2">By Industry</TabsTrigger>
-              <TabsTrigger value="solution" className="py-2">By Challenge</TabsTrigger>
+              <TabsTrigger value="solution" className="py-2">Decision Guides</TabsTrigger>
             </TabsList>
 
             <TabsContent value="stage">
