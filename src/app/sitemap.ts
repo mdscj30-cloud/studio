@@ -39,8 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/resources`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/tools`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/resources/templates`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
-    { url: `${siteUrl}/case-studies`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/resources/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/resources/case-studies`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
     { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/process`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
@@ -59,14 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogPages: MetadataRoute.Sitemap = getDetailedBlogPosts().map(post => ({
-    url: `${siteUrl}/blog/${post.slug}`,
+    url: `${siteUrl}/resources/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'weekly',
     priority: 0.7,
   }));
 
   const caseStudyPages: MetadataRoute.Sitemap = getDetailedCaseStudies().map(study => ({
-    url: `${siteUrl}/case-studies/${study.slug}`,
+    url: `${siteUrl}/resources/case-studies/${study.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.7,

@@ -35,7 +35,7 @@ function BlogFilterComponent({ posts, categories }: { posts: Post[], categories:
           variant={!filter ? 'default' : 'outline'}
           asChild
         >
-          <Link href="/blog" onClick={() => handleSetFilter(null)}>All Posts</Link>
+          <Link href="/resources/blog" onClick={() => handleSetFilter(null)}>All Posts</Link>
         </Button>
         {categories.map(category => (
           <Button
@@ -43,14 +43,14 @@ function BlogFilterComponent({ posts, categories }: { posts: Post[], categories:
             variant={filter === category ? 'default' : 'outline'}
             asChild
           >
-            <Link href={`/blog?category=${encodeURIComponent(category)}`} onClick={() => handleSetFilter(category)}>{category}</Link>
+            <Link href={`/resources/blog?category=${encodeURIComponent(category)}`} onClick={() => handleSetFilter(category)}>{category}</Link>
           </Button>
         ))}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredPosts.map((post) => (
-          <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
+          <Link href={`/resources/blog/${post.slug}`} key={post.slug} className="group">
             <Card className="h-full flex flex-col transition-all duration-300 border group-hover:border-accent group-hover:shadow-xl group-hover:scale-105">
               <CardHeader>
                 {post.image && (

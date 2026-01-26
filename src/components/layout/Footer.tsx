@@ -11,8 +11,8 @@ export default function Footer() {
   ];
 
   const resourceLinks = [
-    { href: '/blog', label: 'Blog' },
-    { href: '/case-studies', label: 'Case Studies' },
+    { href: '/resources/blog', label: 'Blog' },
+    { href: '/resources/case-studies', label: 'Case Studies' },
     { href: '/startup-finance-glossary', label: 'Glossary' },
     { href: '/tools', label: 'Tools' },
     { href: '/resources/templates', label: 'Templates' },

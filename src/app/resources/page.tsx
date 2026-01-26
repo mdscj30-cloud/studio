@@ -11,13 +11,13 @@ const resourceLinks = [
     {
         title: 'Nexa Insights Blog',
         description: 'Our expert analysis on startup finance, strategy, and sustainable growth.',
-        href: '/blog',
+        href: '/resources/blog',
         icon: Newspaper,
     },
     {
         title: 'Success Stories',
         description: 'Discover how we\'ve partnered with ambitious founders to navigate challenges and accelerate growth.',
-        href: '/case-studies',
+        href: '/resources/case-studies',
         icon: Briefcase,
     },
     {
