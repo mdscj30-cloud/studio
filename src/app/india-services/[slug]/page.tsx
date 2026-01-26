@@ -1,4 +1,5 @@
 
+
 import { notFound } from 'next/navigation';
 import { LOCATION_SERVICE_PAGES, LocationService } from '@/lib/location-service-data';
 import { SERVICES } from '@/lib/constants';
@@ -171,13 +172,13 @@ export default function LocationServicePage({ params }: Props) {
                     </CardHeader>
                     <CardContent className="space-y-4">
                         {relatedBlog && (
-                            <Link href={`/resources/blog/${relatedBlog.slug}`} className="group block">
+                            <Link href={`/blog/${relatedBlog.slug}`} className="group block">
                                 <p className="font-semibold text-primary group-hover:text-accent transition-colors">Blog Post</p>
                                 <p className="text-sm text-muted-foreground">{relatedBlog.title}</p>
                             </Link>
                         )}
                         {relatedCaseStudy && (
-                            <Link href={`/resources/case-studies/${relatedCaseStudy.slug}`} className="group block">
+                            <Link href={`/case-studies/${relatedCaseStudy.slug}`} className="group block">
                                 <p className="font-semibold text-primary group-hover:text-accent transition-colors">Case Study</p>
                                 <p className="text-sm text-muted-foreground">{relatedCaseStudy.title}</p>
                             </Link>

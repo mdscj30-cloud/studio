@@ -3,6 +3,7 @@
 
 
 
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -54,7 +55,7 @@ export const NAV_LINKS = [
   { href: '/finance-for-startups-india', label: 'Startup Finance Guide' },
   { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/resources/blog', label: 'Blog' },
+  { href: '/blog', label: 'Blog' },
   { href: '/startup-finance-glossary', label: 'Glossary' },
   { href: '/about', label: 'About' },
 ];
@@ -929,5 +930,6 @@ export const CASE_STUDIES = getDetailedCaseStudies().map(study => ({
 }));
 
     
+
 
 
