@@ -1,4 +1,5 @@
 
+
 export function getDetailedBlogPosts() {
     return DETAILED_BLOG_POSTS;
 }
