@@ -1,4 +1,4 @@
-import { Rocket, ShoppingBag, Banknote, Factory, Users, Zap, Briefcase, User, Group, Anchor, Package, Search } from 'lucide-react';
+import { Anchor, Award, Banknote, BarChart3, Briefcase, Clock, DollarSign, Eye, Factory, FileCheck, Group, HandCoins, Landmark, Lightbulb, Package, Presentation, Rocket, Scale, Search, ShieldCheck, ShoppingBag, TrendingUp, User, Users, Zap, ClipboardList } from 'lucide-react';
 
 export interface WhoWeHelpPage {
   slug: string;
@@ -465,7 +465,7 @@ export const WHO_WE_HELP_PAGES: WhoWeHelpPage[] = [
             points: [
                 { title: 'Loss of Financial Control', description: 'With new teams and departments, spending can become decentralized and chaotic. You lack visibility into where money is going, leading to a rapidly accelerating burn rate.', Icon: Zap },
                 { title: 'Breaking Processes', description: 'Your manual expense reimbursement process, ad-hoc vendor payments, and spreadsheet-based budgeting are no longer fit for purpose, leading to errors and inefficiency.', Icon: FileCheck },
-                { title: 'Strategic Uncertainty', description: 'Growth opens up new opportunities, but you lack the financial analysis framework to decide which ones to pursue. You\'re reacting, not planning.', Icon: Lightbulb }
+                { title: 'Strategic Blind Spots', description: 'Growth opens up new opportunities, but you lack the financial analysis framework to decide which ones to pursue. You\'re reacting, not planning.', Icon: Lightbulb }
             ]
         },
         ourSolution: {
