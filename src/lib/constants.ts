@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -52,6 +46,7 @@ import { getDetailedBlogPosts, getDetailedCaseStudies } from '@/lib/content';
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/who-we-help', label: 'Who We Help' },
   { href: '/finance-for-startups-india', label: 'Startup Finance Guide' },
   { href: '/resources', label: 'Resources' },
   { href: '/process', label: 'Process' },
@@ -338,12 +333,12 @@ export const SERVICES = [
 export const PROCESS_STEPS = [
   {
     icon: Phone,
-    title: 'Discovery Call – Compliance Included',
+    title: 'Discovery & compliance assessment',
     description: 'Identify statutory exposure early, covering GST, Income Tax, TDS, ROC, Payroll, and PF/ESI status. Output: Compliance risk assessment & draft filing calendar.',
   },
   {
     icon: ClipboardList,
-    title: 'Finance Scope Definition',
+    title: 'Scope definition & retainer setup',
     description: 'Define a clear scope for monthly bookkeeping, GST/TDS filing, tax support, and ROC compliance to avoid ambiguity. Output: Finance + Compliance RACI matrix.',
   },
   {
@@ -927,10 +922,3 @@ export const CASE_STUDIES = getDetailedCaseStudies().map(study => ({
   image: PlaceHolderImages.find(img => img.id === study.imageId)?.imageUrl || '',
   imageHint: PlaceHolderImages.find(img => img.id === study.imageId)?.imageHint || ''
 }));
-
-    
-
-
-
-
-

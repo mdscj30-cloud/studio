@@ -1,4 +1,3 @@
-
 import { MetadataRoute } from 'next'
 import { getDetailedBlogPosts, getDetailedCaseStudies } from '@/lib/content'
 import { SERVICES } from '@/lib/constants'
@@ -7,6 +6,7 @@ import { PROGRAMMATIC_PAGES_DATA } from '@/lib/programmatic-pages-data'
 import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data'
 import { STAGE_PROBLEM_PAGES } from '@/lib/startup-stage-data'
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data'
+import { WHO_WE_HELP_PAGES } from '@/lib/who-we-help-data'
 
 const getGlossaryPriority = (term: GlossaryTerm): number => {
   switch (term.tier) {
@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Hub pages - High priority
     { url: `${siteUrl}/services`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${siteUrl}/who-we-help`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/finance-for-startups-india`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/resources`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/blog`, lastModified: new Date(), priority: 0.8, changeFrequency: 'weekly' },
@@ -101,6 +102,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const whoWeHelpPages: MetadataRoute.Sitemap = WHO_WE_HELP_PAGES.map(page => ({
+    url: `${siteUrl}/who-we-help/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+
   return [
     ...mainPages,
     ...servicesPages,
@@ -111,5 +120,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...indiaServicesPages,
     ...startupGuidesPages,
     ...industryFinancePages,
+    ...whoWeHelpPages,
   ];
 }
