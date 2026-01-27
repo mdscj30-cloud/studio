@@ -7,12 +7,17 @@ export function RequestConsultation() {
     const scriptId = 'hubspot-form-script';
     // Check if the script is already on the page
     if (document.getElementById(scriptId)) {
-      return;
+      const existingScript = document.getElementById(scriptId) as HTMLScriptElement;
+      if (existingScript.src === 'https://js-na2.hsforms.net/forms/embed/244990625.js') {
+        return;
+      }
+      // If a different hubspot script is loaded, remove it.
+      existingScript.remove();
     }
 
     const script = document.createElement('script');
     script.id = scriptId;
-    script.src = 'https://js-na2.hsforms.net/forms/embed/244739462.js';
+    script.src = 'https://js-na2.hsforms.net/forms/embed/244990625.js';
     script.defer = true;
 
     document.body.appendChild(script);
@@ -39,8 +44,8 @@ export function RequestConsultation() {
                 <div 
                   className="hs-form-frame" 
                   data-region="na2" 
-                  data-portal-id="244739462"
-                  data-form-id="b7a74c65-455d-496d-8874-b19c400a2826"
+                  data-portal-id="244990625"
+                  data-form-id="238fcf1c-3a27-44fc-814e-0ae1e4248355"
                 ></div>
             </div>
         </div>

@@ -1,3 +1,4 @@
+
 import { notFound } from 'next/navigation';
 import { TOOLS_DATA } from '@/lib/tools-data';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ import EsopCalculator from '@/components/tools/EsopCalculator';
 import BreakevenCalculator from '@/components/tools/BreakevenCalculator';
 import WorkingCapitalCalculator from '@/components/tools/WorkingCapitalCalculator';
 import CompoundInterestCalculator from '@/components/tools/CompoundInterestCalculator';
+import { RequestConsultation } from '@/components/layout/PartnerWithUs';
 
 type Props = {
   params: { slug: string };
@@ -82,15 +84,7 @@ export default function ToolPage({ params }: Props) {
         {ToolComponent ? <ToolComponent /> : <p>Tool not found.</p>}
       </div>
       
-       <section className="-mx-container-padding bg-muted/50 py-16 md:py-24 mt-16">
-        <div className="container mx-auto text-center">
-             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Need More Than a Tool?</h2>
-             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">These calculators provide a great starting point. For in-depth strategic financial planning and analysis, partner with our expert Virtual CFOs.</p>
-             <Button size="lg" asChild variant="accent">
-                <Link href="/contact">Request a Consultation</Link>
-             </Button>
-        </div>
-      </section>
+       <RequestConsultation />
     </>
   );
 }

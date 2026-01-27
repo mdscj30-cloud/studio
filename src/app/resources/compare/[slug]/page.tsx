@@ -1,3 +1,4 @@
+
 import { notFound } from 'next/navigation';
 import { COMPARE_PAGES_DATA } from '@/lib/compare-pages-data';
 import { ArrowLeft, Check, X } from 'lucide-react';
@@ -7,6 +8,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Separator } from '@/components/ui/separator';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { RequestConsultation } from '@/components/layout/PartnerWithUs';
 
 
 type Props = {
@@ -178,15 +180,7 @@ export default function CompareDetailPage({ params }: Props) {
         </div>
       </div>
       
-       <section className="-mx-container-padding bg-muted/50 py-16 md:py-24 mt-16">
-        <div className="container mx-auto text-center">
-             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Still Unsure? Let's Talk.</h2>
-             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Every startup is unique. Contact us for a free consultation to discuss your specific needs and find the right solution for you.</p>
-             <Button size="lg" asChild variant="accent">
-                <Link href="/contact">Request a Consultation</Link>
-             </Button>
-        </div>
-      </section>
+       <RequestConsultation />
     </>
   );
 }

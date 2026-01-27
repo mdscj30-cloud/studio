@@ -9,6 +9,7 @@ import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FaqSchema } from '@/components/layout/FaqSchema';
+import { RequestConsultation } from '@/components/layout/PartnerWithUs';
 
 
 type Props = {
@@ -134,15 +135,7 @@ export default function ServiceDetailPage({ params }: Props) {
         </div>
       </div>
 
-      <section className="-mx-container-padding bg-muted/50 py-16 md:py-24">
-        <div className="container mx-auto text-center">
-             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to elevate your strategy with {service.title}?</h2>
-             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Contact us for a confidential, no-obligation discussion about your requirements.</p>
-             <Button size="lg" asChild variant="accent">
-                <Link href="/contact">Request a Consultation</Link>
-             </Button>
-        </div>
-      </section>
+      <RequestConsultation />
     </>
   );
 }
