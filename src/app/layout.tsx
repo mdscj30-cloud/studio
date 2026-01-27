@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Chatbot from '@/components/chatbot/Chatbot';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Nexa Consultancy | Strategic Consulting for Startups',
@@ -26,6 +27,19 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body className="antialiased font-sans bg-background text-foreground">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RCCM4G1Q63"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-RCCM4G1Q63');
+          `}
+        </Script>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
