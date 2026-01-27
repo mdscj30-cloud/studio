@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: 'Nexa Consultancy provides expert consulting on strategy, finance, and operations to help startups scale and succeed.',
   keywords: ['startup consulting', 'strategic advisory', 'financial consulting for startups', 'business strategy', 'Nexa Consultancy', 'Bangalore', 'Mumbai', 'Delhi', 'Indore', 'Jaipur', 'Ahmedabad'],
   manifest: '/manifest.json',
+  icons: {
+    icon: '/Nexalogo.png',
+  },
 };
 
 export default function RootLayout({
