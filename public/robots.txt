@@ -1,15 +1,15 @@
-# Allow specific AI bots full access
-User-agent: ChatGPT-User
-Disallow:
+User-agent: *
+Allow: /
 
 User-agent: Google-Extended
-Disallow:
+Allow: /
 
 User-agent: PerplexityBot
-Disallow:
+Allow: /
 
-# General rule for all other bots
-User-agent: *
+User-agent: ChatGPT-User
+Allow: /
+
 Disallow: /admin/
 
 Sitemap: https://nexaconsultancy.com/sitemap.xml

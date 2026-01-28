@@ -1,11 +1,11 @@
 User-agent: *
-Disallow:
+Allow: /
 
 User-agent: Google-Extended
-Disallow:
-
-User-agent: ChatGPT-User
-Disallow:
+Allow: /
 
 User-agent: PerplexityBot
-Disallow:
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /

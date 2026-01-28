@@ -347,7 +347,7 @@ const DETAILED_BLOG_POSTS = [
   <h3>Cash-Basis Accounting: The Simple View</h3>
   <p><strong>What it is:</strong> This is the "checkbook" method. Revenue is recorded only when you receive cash from a customer. Expenses are recorded only when you actually pay cash out to a supplier.</p>
   <p><strong>Example:</strong> You provide a consulting service in January and send an invoice for ₹1,00,000. The client pays you in March. Under the cash method, you would record the ₹1,00,000 revenue in March, not January.</p>
-  <p><strong>Pros & Cons:</strong> It's simple and easy to track cash flow. However, it provides a very poor and often misleading picture of your company's actual performance and profitability during a period.</p>
+  <p><strong>Pros & Cons:</strong> It's simple and easy to track cash flow. However, it provides a very poor and often misleading picture of your company\'s actual performance and profitability during a period.</p>
   
   <h3>Accrual-Basis Accounting: The True Picture</h3>
   <p><strong>What it is:</strong> This method follows the "matching principle." Revenue is recorded when it is *earned*, regardless of when the cash is received. Expenses are recorded when they are *incurred*, regardless of when the cash is paid.</p>
@@ -935,7 +935,7 @@ const DETAILED_BLOG_POSTS = [
 <article class="prose lg:prose-xl">
     <h2>The Founder's Financial Dashboard: From Daily Pulse to Monthly Strategy</h2>
     <p>In the controlled chaos that defines a startup, the old adage "what gets measured gets managed" is more than a cliché—it's a survival mantra. For a founder, financial statements aren't just historical documents for compliance; they are a real-time dashboard for the health, momentum, and future prospects of the business. But in a world of endless data, what should you look at, and how often? A daily obsession with every metric can lead to analysis paralysis and micromanagement, while a cursory quarterly glance can mean missing a looming cash crisis until it's too late. The key is to establish a disciplined cadence of review, with different levels of detail and focus for different timeframes.</p>
-    <p>This comprehensive guide will help you build a multi-layered financial review framework, ensuring you're tracking the right things at the right time. We'll move from the quick, five-minute daily pulse checks to the deep, strategic monthly and quarterly reviews, empowering you to stay in control without getting lost in the weeds. This rhythm is the foundation of a data-driven culture and the key to navigating the turbulent waters of startup growth.</p>
+    <p>This comprehensive guide will help you build a multi-layered financial review framework, ensuring you're tracking the right things at the right time. We'll move from the quick, five-minute daily checks to the deep, strategic monthly and quarterly reviews, empowering you to stay in control without getting lost in the weeds. This rhythm is the foundation of a data-driven culture and the key to navigating the turbulent waters of startup growth.</p>
 
     <h3>The Daily Pulse Check (5-10 Minutes)</h3>
     <h4>The Objective: Spot Fires Before They Spread</h4>
@@ -1129,7 +1129,7 @@ const DETAILED_BLOG_POSTS = [
     <li><strong>A Detailed Monthly Budget:</strong> Create a simple but detailed annual budget in a spreadsheet. At the end of every single month, perform a "Budget vs. Actuals" analysis to understand where you went off track.</li>
     <li><strong>A Rolling 12-Month Cash Flow Forecast:</strong> This is your most important document. Maintain a spreadsheet that forecasts your cash balance for the next 12 months. Update it every week with your actual cash position and any new information. This is your early warning system.</li>
   </ol>
-  <p>Bootstrapping is a challenging path, but it builds strong, resilient, and truly valuable businesses. By embedding these financial planning principles into your company's DNA, you give yourself the best possible chance of not just surviving, but thriving on your own terms.</p>
+  <p>Bootstrapping is a challenging path, but it builds strong, resilient, and truly valuable businesses. By embedding these financial planning principles into your company\'s DNA, you give yourself the best possible chance of not just surviving, but thriving on your own terms.</p>
 </article>
 `
   },
@@ -1160,7 +1160,7 @@ const DETAILED_BLOG_POSTS = [
   <p>Impeccable accounting, supported by disciplined <a href="/startup-finance-glossary/what-is-bookkeeping">bookkeeping</a>, is the non-negotiable foundation of all financial intelligence. It ensures you are compliant with tax laws (GST, Income Tax), provides the data needed for mandatory audits, gives investors confidence during due diligence, and provides a precise, reliable record of your past performance.</p>
 
   <h3>Forecasting: An Educated and Strategic View of the Future</h3>
-  <p><strong>What it is:</strong> <a href="/startup-finance-glossary/what-is-forecasting">Forecasting</a> (or financial modeling) is the process of using historical data and a set of well-reasoned assumptions to estimate a company's future financial outcomes. It is forward-looking by nature and is both an art and a science.</p>
+  <p><strong>What it is:</strong> <a href="/startup-finance-glossary/what-is-forecasting">Forecasting</a> (or financial modeling) is the process of using historical data and a set of well-reasoned assumptions to estimate a company\'s future financial outcomes. It is forward-looking by nature and is both an art and a science.</p>
   <h4>Key Characteristics of Forecasting:</h4>
   <ul>
       <li><strong>Forward-Looking:</strong> It is a prediction of what might happen in the future.</li>
@@ -1395,7 +1395,7 @@ const DETAILED_BLOG_POSTS = [
   <p>Once you've diligently categorized your costs, you can start to derive powerful strategic insights. This is where the numbers start to tell a story.</p>
   
   <h4>1. What is Your Contribution Margin?</h4>
-  <p>The <a href="/startup-finance-glossary/what-is-contribution-margin">contribution margin</a> is your revenue per unit minus your per-unit variable cost. It's the amount of money from each sale that is available to "contribute" to paying down your fixed costs. If your contribution margin is positive, each sale gets you one step closer to profitability. If it's negative, you are literally losing money on every sale you make, and scaling will only accelerate your demise.</p>
+  <p>The <a href="/startup-finance-glossary/what-is-contribution-margin">contribution margin</a> is your revenue per unit minus your per-unit variable cost. It's the amount of money from each sale that is available to "contribute" towards paying down your fixed costs. If your contribution margin is positive, each sale gets you one step closer to profitability. If it's negative, you are literally losing money on every sale you make, and scaling will only accelerate your demise.</p>
 
   <h4>2. What is Your Breakeven Point?</h4>
   <p>With your total fixed costs and your contribution margin per unit, you can now calculate the exact number of units you need to sell to break even. 
@@ -1403,7 +1403,7 @@ const DETAILED_BLOG_POSTS = [
   This number provides a clear, tangible sales target for your team and a baseline for financial viability.</p>
 
   <h4>3. What is Your Operating Leverage?</h4>
-  <p><a href="/startup-finance-glossary/what-is-operating-leverage">Operating Leverage</a> measures the degree to which your business relies on fixed costs. A business with high operating leverage (high fixed costs, low variable costs, like a SaaS company) will see its profits grow exponentially once it passes the breakeven point because each additional sale has a very high contribution margin. However, it also carries higher risk; if it fails to reach the breakeven point, the losses will be substantial. A business with low operating leverage (e.g., a consulting firm where most costs are variable salaries tied to projects) is less risky but has lower profit potential from pure scaling.</p>
+  <p><a href="/startup-finance-glossary/what-is-operating-leverage">Operating Leverage</a> measures the degree to which a company\'s business relies on fixed costs. A business with high operating leverage (high fixed costs, low variable costs, like a SaaS company) will see its profits grow exponentially once it passes the breakeven point because each additional sale has a very high contribution margin. However, it also carries higher risk; if it fails to reach the breakeven point, the losses will be substantial. A business with low operating leverage (e.g., a consulting firm where most costs are variable salaries tied to projects) is less risky but has lower profit potential from pure scaling.</p>
   
   <h4>4. Where Can You Optimize for Capital Efficiency?</h4>
   <p>A clear cost structure analysis immediately reveals opportunities for optimization and improved <a href="/startup-finance-glossary/what-is-capital-efficiency">capital efficiency</a>.</p>
@@ -1792,3 +1792,4 @@ const DETAILED_CASE_STUDIES = [
 `
   }
 ];
+

@@ -607,7 +607,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Burn Rate for Seed Startups',
-        definition: '<p>For a seed-stage startup, burn rate is not just a metric; it\'s the countdown clock. It dictates the runway and how long the company has to achieve product-market fit before needing to raise the next round.</p><p><b>Startup Example:</b> A seed-funded startup has ₹4 Crores in the bank. Their net burn is ₹20 Lakhs/month. Their runway is 20 months. They know they need to show significant traction and start their Series A fundraising process in about 12-14 months.</p><p>Managing this is the primary focus of our <a href="/startup-guides/burn-rate-management-for-seed-startups">burn rate management guides</a>.</p>',
+        definition: '<p>For a seed-stage startup, burn rate is not just a metric; it\'s the countdown clock. It dictates the runway and how long the company has to achieve product-market fit before needing to raise the next round.</p><p><b>Startup Example:</b> A seed-funded startup has ₹4 Crores in the bank. Their net burn is ₹20 Lakhs/month. Their runway is 20 months. They know they need to show significant traction and start their Series A fundraising process in about 12-14 months.</p><p>Managing this is the primary focus of our <a href="/startup-guides/burn-rate-management-for-seed">burn rate management guides</a>.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 2
     },
@@ -959,13 +959,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Consequences of misclassifying employees as independent contractors',
-        definition: '<p>Misclassifying employees as "consultants" or "freelancers" to avoid payroll taxes (PF, ESI) and other employee benefits is illegal. If caught, the company can be liable for all past unpaid contributions, along with heavy penalties and interest.</p><p><b>Startup Example:</b> A startup has a team of 20 people all on "consultant" agreements. A labor inspection reveals they function as employees. The startup is forced to pay years of back-dated PF contributions plus penalties.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed">compliance guides</a> cover correct employee classification.</p>',
+        definition: '<p>Misclassifying employees as "consultants" or "freelancers" to avoid payroll taxes (PF, ESI) and other employee benefits is illegal. If caught, the company can be liable for all past unpaid contributions, along with heavy penalties and interest.</p><p><b>Startup Example:</b> A startup has a team of 20 people all on "consultant" agreements. A labor inspection reveals they function as employees. The startup is forced to pay years of back-dated PF contributions plus penalties.</p><p>Our <a href="/startup-guides/basic-compliance-for-pre-seed">compliance guides</a> cover correct employee classification.</p>',
         cluster: 'Founder Problems & Penalties',
         tier: 2
     },
     {
         term: 'Consequences of mismatch in E-way bill and actual goods transported',
-        definition: '<p>If there is a major discrepancy between the details in the E-way bill (like quantity or HSN code) and the actual goods being transported, tax officers can detain the vehicle and seize the goods. It can lead to penalties equivalent to 200% of the tax payable.</p><p><b>Startup Example:</b> A D2C brand\'s transport is stopped for inspection. The E-way bill shows 100 units, but the truck is carrying 150 units. The entire consignment can be seized, and a heavy penalty imposed.</p><p>Our <a href="/industry-finance/gst-for-d2c-brands-india">D2C compliance services</a> cover E-way bill generation.</p>',
+        definition: '<p>If there is a major discrepancy between the details in the E-way bill (like quantity or HSN code) and the actual goods being transported, tax officers can detain the vehicle and seize the goods. It can lead to penalties equivalent to 200% of the tax payable.</p><p><b>Startup Example:</b> A D2C brand\'s transport is stopped for inspection. The E-way bill shows 100 units, but the truck is carrying 150 units. The entire consignment can be seized, and a heavy penalty imposed.</p><p>Our <a href="/industry-finance/gst-for-d2c-brands-india">D2C finance services</a> cover E-way bill generation.</p>',
         cluster: 'Founder Problems & Penalties',
         tier: 2
     },
@@ -2507,7 +2507,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'GST Threshold for Early-Stage Startups',
-        definition: '<p>In India, businesses with an annual aggregate turnover exceeding ₹40 Lakhs (for goods) or ₹20 Lakhs (for services) are required to register for GST. However, this threshold does not apply to e-commerce sellers or those making inter-state supplies.</p><p><b>Startup Example:</b> A new consulting startup crosses ₹20 Lakhs in revenue. It is now mandatory for them to obtain GST registration and start filing returns, regardless of whether they are profitable.</p><p>Our <a href="/startup-guides/compliance-for-pre-seed">guides for pre-seed startups</a> cover these initial compliance hurdles.</p>',
+        definition: '<p>In India, businesses with an annual aggregate turnover exceeding ₹40 Lakhs (for goods) or ₹20 Lakhs (for services) are required to register for GST. However, this threshold does not apply to e-commerce sellers or those making inter-state supplies.</p><p><b>Startup Example:</b> A new consulting startup crosses ₹20 Lakhs in revenue. It is now mandatory for them to obtain GST registration and start filing returns, regardless of whether they are profitable.</p><p>Our <a href="/startup-guides/basic-compliance-for-pre-seed">guides for pre-seed startups</a> cover these initial compliance hurdles.</p>',
         cluster: 'GST & Indirect Tax',
         tier: 2
     },
@@ -2649,7 +2649,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Impairment',
-        definition: '<p>An impairment is an accounting principle that describes a permanent reduction in the value of a company\'s asset, typically a fixed asset or an intangible asset like goodwill. If an asset\'s fair market value falls below its carrying value on the balance sheet, the company must record an impairment expense.</p><p><b>For Startups:</b> A common scenario for startups is the impairment of goodwill. If a startup acquires another company, it records goodwill. If the acquired company later underperforms significantly, the acquirer may have to take an impairment charge, which is a non-cash expense that reduces its reported profit.</p><p><b>Example:</b> A company acquires a brand for ₹5 Crores. Two years later, due to market changes, the brand\'s value is assessed to be only ₹2 Crores. The company must record a ₹3 Crore impairment loss on its income statement.</p>',
+        definition: '<p>An impairment is an accounting principle that describes a permanent reduction in the value of a company\'s asset, typically a fixed asset or an intangible asset like goodwill. If an asset\'s fair market value has fallen below its carrying value on the balance sheet, the company must record an impairment expense.</p><p><b>For Startups:</b> A common scenario for startups is the impairment of goodwill. If a startup acquires another company, it records goodwill. If the acquired company later underperforms significantly, the acquirer may have to take an impairment charge, which is a non-cash expense that reduces its reported profit.</p><p><b>Example:</b> A company acquires a brand for ₹5 Crores. Two years later, due to market changes, the brand\'s value is assessed to be only ₹2 Crores. The company must record a ₹3 Crore impairment loss on its income statement.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 3
     },
@@ -3025,7 +3025,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Liabilities',
-        definition: '<p>Liabilities are a company\'s legal financial debts or obligations that arise from its business operations. They represent what the company owes to others and are reported on the balance sheet. Liabilities are classified as either current (due within one year) or long-term (due after one year).</p><p><b>For Startups:</b> It is crucial for startups to manage their liabilities to maintain solvency and liquidity. Common liabilities for a startup include Accounts Payable (money owed to suppliers), short-term loans, and Deferred Revenue (for subscription businesses that collect cash upfront). A high level of liabilities compared to current assets can be a sign of liquidity risk.</p><p><b>Example:</b> A startup\'s balance sheet shows current liabilities of ₹20 Lakhs (comprising accounts payable and salaries payable) and a long-term loan of ₹50 Lakhs. Its total liabilities are ₹70 Lakhs.</p>',
+        definition: '<p>Liabilities are a company\'s legal financial debts or obligations that arise from its business operations. They represent what the company owes to others and are reported on the balance sheet. Liabilities are classified as either current (due within one year) or long-term (due after one year).</p><p><b>For Startups:</b> It is crucial for startups to manage their liabilities to maintain solvency and liquidity. Common liabilities for a startup include Accounts Payable (money owed to suppliers), short-term loans, and Deferred Revenue (for subscription businesses that collect cash upfront). A high level of current liabilities compared to current assets can be a sign of liquidity risk.</p><p><b>Example:</b> A startup\'s balance sheet shows current liabilities of ₹20 Lakhs (comprising accounts payable and salaries payable) and a long-term loan of ₹50 Lakhs. Its total liabilities are ₹70 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -3174,7 +3174,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Management Information System (MIS)',
-        definition: '<p>A Management Information System (MIS) is a set of reports, dashboards, and procedures that gather data from various sources and process it to provide timely and accurate information for management decision-making. An MIS goes beyond standard financial statements to include operational KPIs and trend analysis.</p><p><b>For Startups:</b> A well-designed MIS is the backbone of a data-driven startup culture. It provides founders with a single source of truth to monitor performance against goals. For board meetings and investor updates, a crisp MIS report is essential for communicating the company\'s progress and demonstrating professional management. A virtual CFO is typically responsible for designing and maintaining the MIS.</p><p><b>Example:</b> A SaaS startup\'s monthly MIS report includes its P&L, cash flow summary, key SaaS metrics (MRR, churn, LTV:CAC), and a summary of key sales and marketing activities for the month.</p>',
+        definition: '<p>A Management Information System (MIS) is a set of reports, dashboards, and procedures that gather data from various sources and process it to provide timely and accurate information for management decision-making. An MIS goes beyond standard financial statements to include operational KPIs and trend analysis.</p><p><b>For Startups:</b> For a startup founder, a monthly MIS report is a vital tool. It consolidates all key metrics into a single, easy-to-understand format, providing a clear picture of the company\'s health. This report is also the primary document shared with board members and investors to keep them updated on progress, making it a crucial part of investor relations.</p><p><b>Example:</b> A SaaS startup\'s MIS report might include a P&L summary, a cash flow statement, a SaaS metrics dashboard (MRR, churn, etc.), and a summary of key sales and marketing activities for the month.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 1
     },
@@ -3577,7 +3577,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Operating Cash Flow (OCF)',
-        definition: '<p>Operating Cash Flow (OCF) is a measure of the cash generated by a company\'s normal business operations. It is a key indicator of a company\'s ability to generate sufficient cash to maintain and grow its operations without needing external financing. OCF is found on the Cash Flow Statement and starts with net income, then adds back non-cash expenses like depreciation and adjusts for changes in working capital.</p><p><b>For Startups:</b> For a startup, having a positive OCF is a major milestone. It means the core business is self-sustaining from a cash perspective. Investors closely monitor OCF as it represents the true cash-generating power of the business, unlike net income which can be affected by accounting conventions.</p><p><b>Example:</b> A SaaS startup may have a net loss due to high R&D spending, but if it collects large annual subscriptions upfront, its OCF could be strongly positive, demonstrating a healthy cash flow dynamic.</p>',
+        definition: '<p>Operating Cash Flow (OCF) is a measure of the cash generated by a company\'s normal business operations. It is a key indicator of a company\'s ability to generate sufficient cash to maintain and grow its operations. OCF is found on the Cash Flow Statement and starts with net income, then adds back non-cash expenses like depreciation and adjusts for changes in working capital.</p><p><b>For Startups:</b> For a startup, having a positive OCF is a major milestone. It means the core business is self-sustaining from a cash perspective. Investors closely monitor OCF as it represents the true cash-generating power of the business, unlike net income which can be affected by accounting conventions.</p><p><b>Example:</b> A SaaS startup may have a net loss due to high R&D spending, but if it collects large annual subscriptions upfront, its OCF could be strongly positive, demonstrating a healthy cash flow dynamic.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 1
     },
@@ -3881,7 +3881,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Penalty for non-payment of Advance Tax',
-        definition: '<p>Failure to pay advance tax or paying less than the required amount by the due dates attracts penal interest under sections 234B and 234C of the Income Tax Act. Interest is levied at 1% per month on the shortfall.</p><p><b>Startup Example:</b> A startup fails to pay its advance tax installments correctly. At the end of the year, the tax department calculates the shortfall for each quarter and applies interest, leading to a significantly higher total tax outgo.</p><p>Our <a href="/startup-guides/compliance-for-seed-startups">guides</a> emphasize the importance of early tax planning.</p>',
+        definition: '<p>Failure to pay advance tax or paying less than the required amount by the due dates attracts penal interest under sections 234B and 234C of the Income Tax Act. Interest is levied at 1% per month on the shortfall.</p><p><b>Startup Example:</b> A startup fails to pay its advance tax installments correctly. At the end of the year, the tax department calculates the shortfall for each quarter and applies interest, leading to a significantly higher total tax outgo.</p><p>Our <a href="/startup-guides/basic-compliance-for-pre-seed">guides</a> emphasize the importance of early tax planning.</p>',
         cluster: 'Founder Problems & Penalties',
         tier: 2
     },
@@ -4313,7 +4313,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Return on Capital Employed (ROCE)',
-        definition: '<p>Return on Capital Employed (ROCE) is a financial ratio that measures a company\'s profitability and the efficiency with which its capital is used. It is considered a more comprehensive measure than Return on Equity (ROE) because it includes debt in the denominator, providing a view of how well the company is using all its available capital, not just equity.</p><p><b>For Startups:</b> As a startup begins to use debt financing (like venture debt), ROCE becomes a more important metric than ROE. It helps management and investors understand how effectively the company is deploying both its equity and debt to generate profits. A high ROCE indicates efficient use of capital.</p><p><b>Calculation:</b> ROCE = EBIT / (Total Assets - Current Liabilities).</p><p><b>Example:</b> A company with an EBIT of ₹40 Lakhs and capital employed of ₹2 Crore has a ROCE of 20%.</p>',
+        definition: '<p>Return on Capital Employed (ROCE) is a financial ratio that measures a company\'s profitability and the efficiency with which its capital is used. It is considered a more comprehensive measure than Return on Equity (ROE) because it includes debt in the denominator, providing a view of how well the company is using all its available capital, not just equity.</p><p><b>For Startups:</b> As a startup begins to use debt financing (like venture debt), ROCE becomes a more important metric than ROE. It helps management and investors understand how effectively the company is apying both its equity and debt to generate profits. A high ROCE indicates efficient use of capital.</p><p><b>Calculation:</b> ROCE = EBIT / (Total Assets - Current Liabilities).</p><p><b>Example:</b> A company with an EBIT of ₹40 Lakhs and capital employed of ₹2 Crore has a ROCE of 20%.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 3
     },
@@ -4768,7 +4768,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Solvency',
-        definition: '<p>Solvency is a company\'s ability to meet its long-term financial obligations. It is a measure of a company\'s financial health and its capacity to continue operating indefinitely. A solvent company has a positive net worth, meaning its total assets exceed its total liabilities.</p><p><b>For Startups:</b> While startups often have negative net income, they must remain solvent to survive. Insolvency (the inability to pay debts) can lead to bankruptcy. Investors and lenders closely monitor solvency ratios like the Debt-to-Equity ratio to assess the long-term risk of a business. A virtual CFO helps in managing the capital structure to ensure the company maintains a healthy solvency position as it grows.</p><p><b>Distinction:</b> Solvency is different from liquidity. A company can be illiquid (unable to meet short-term bills) but still be solvent if its long-term asset value is high. Conversely, a liquid company can be technically insolvent if its total liabilities exceed its total assets.</p>',
+        definition: '<p>Solvency is a company\'s ability to meet its long-term financial obligations. It is a measure of a company\'s financial health and its capacity to continue operating indefinitely. A solvent company has a positive net worth, meaning its total assets exceed its total liabilities.</p><p><b>For Startups:</b> While startups often have negative net income, they must remain solvent to survive. Insolvency (the inability to pay debts) can lead to bankruptcy. Investors and lenders closely monitor solvency ratios like the Debt-to-Equity ratio to assess the long-term risk of the business. A virtual CFO helps in managing the capital structure to ensure the company maintains a healthy solvency position as it grows.</p><p><b>Distinction:</b> Solvency is different from liquidity. A company can be illiquid (unable to meet short-term bills) but still be solvent if its long-term asset value is high. Conversely, a liquid company can be technically insolvent if its total liabilities exceed its total assets.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 2
     },
@@ -5555,3 +5555,4 @@ export const GLOSSARY_DATA_BY_CLUSTER = ALL_GLOSSARY_TERMS.reduce((acc, item) =>
 
 
     
+

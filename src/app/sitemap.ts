@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/pricing`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
     { url: `${siteUrl}/process`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
     { url: `${siteUrl}/resources/compare`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
-
+    { url: `${siteUrl}/startup-finance-glossary`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly'},
     // Legal/Admin pages - Low priority
     { url: `${siteUrl}/terms`, lastModified: new Date(), priority: 0.3, changeFrequency: 'yearly' },
     { url: `${siteUrl}/privacy`, lastModified: new Date(), priority: 0.3, changeFrequency: 'yearly' },
