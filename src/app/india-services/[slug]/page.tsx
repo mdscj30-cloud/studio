@@ -1,5 +1,4 @@
 
-
 import { notFound } from 'next/navigation';
 import { LOCATION_SERVICE_PAGES, LocationService } from '@/lib/location-service-data';
 import { SERVICES } from '@/lib/constants';
@@ -102,7 +101,7 @@ export default function LocationServicePage({ params }: Props) {
               {cityData ? (
                 <>
                   <p>{cityData.ecosystem}</p>
-                  <p>{cityData.industries}</p>
+                  <p>Given the dominance of {cityData.industries.toLowerCase()}, having a sharp financial strategy is not just an advantage; it's a necessity. At Nexa Consultancy, we combine deep domain expertise with local market understanding to provide services that are not just compliant, but also strategic.</p>
                 </>
               ) : (
                 <p>
@@ -112,24 +111,19 @@ export default function LocationServicePage({ params }: Props) {
               
               {mainService && (
                 <>
-                  <h3 className="text-2xl font-bold text-primary mt-12 mb-4">Our {mainService.title} Services in {page.city}</h3>
+                  <h3 className="text-2xl font-bold text-primary mt-12 mb-4">Core {mainService.title} for Startups in {page.city}</h3>
+                   <p>{mainService.details}</p>
                    <ul className="space-y-3 !pl-0">
                         {mainService.faqs[0] && (
                             <li className="flex items-start !pl-0">
                                 <CheckCircle className="w-5 h-5 text-accent mr-3 mt-1 shrink-0" />
-                                <span>{mainService.faqs[0].answer.substring(0, 150)}...</span>
+                                <div><strong>{mainService.faqs[0].question}</strong> {mainService.faqs[0].answer}</div>
                             </li>
                         )}
                          {mainService.faqs[1] && (
                             <li className="flex items-start !pl-0">
                                 <CheckCircle className="w-5 h-5 text-accent mr-3 mt-1 shrink-0" />
-                                <span>{mainService.faqs[1].answer.substring(0, 150)}...</span>
-                            </li>
-                        )}
-                        {mainService.faqs[2] && (
-                            <li className="flex items-start !pl-0">
-                                <CheckCircle className="w-5 h-5 text-accent mr-3 mt-1 shrink-0" />
-                                <span>{mainService.faqs[2].answer.substring(0, 150)}...</span>
+                                <div><strong>{mainService.faqs[1].question}</strong> {mainService.faqs[1].answer}</div>
                             </li>
                         )}
                    </ul>

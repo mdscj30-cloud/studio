@@ -82,6 +82,15 @@ export default function ToolPage({ params }: Props) {
 
       <div className="container py-16 md:py-24">
         {ToolComponent ? <ToolComponent /> : <p>Tool not found.</p>}
+        
+        {tool.explanation && (
+            <div className="max-w-4xl mx-auto mt-16">
+                <div
+                    className="prose lg:prose-lg max-w-none"
+                    dangerouslySetInnerHTML={{ __html: tool.explanation }}
+                />
+            </div>
+        )}
       </div>
       
        <RequestConsultation />
