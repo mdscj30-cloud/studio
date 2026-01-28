@@ -1,15 +1,16 @@
 
-import { SERVICES } from '@/lib/constants';
+import { SERVICES, LOCATIONS } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, MapPin } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FaqSchema } from '@/components/layout/FaqSchema';
 import { RequestConsultation } from '@/components/layout/PartnerWithUs';
+import { TARGETED_SERVICES } from '@/lib/location-service-data';
 
 
 type Props = {
@@ -54,6 +55,9 @@ export default function ServiceDetailPage({ params }: Props) {
     { name: 'Services', item: `${siteUrl}/services` },
     { name: service.title, item: `${siteUrl}/services/${service.slug}` },
   ];
+  
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
+  const relevantTargetedServices = TARGETED_SERVICES.filter(ts => ts.slug === service.slug);
 
   return (
     <>
@@ -126,6 +130,30 @@ export default function ServiceDetailPage({ params }: Props) {
                                             </li>
                                         );
                                     })}
+                                </ul>
+                            </CardContent>
+                        </Card>
+                    )}
+                    {relevantTargetedServices.length > 0 && (
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Available In Key Cities</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <ul className="space-y-3">
+                                    {relevantTargetedServices.flatMap(targetedService => 
+                                        LOCATIONS.map(location => {
+                                            const linkSlug = `${slugify(targetedService.title)}-${slugify(location.name)}`;
+                                            return (
+                                                <li key={linkSlug}>
+                                                    <Link href={`/india-services/${linkSlug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm flex items-center gap-2">
+                                                        <MapPin className="w-4 h-4 shrink-0" />
+                                                        <span>{targetedService.title} in <strong>{location.name}</strong></span>
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })
+                                    )}
                                 </ul>
                             </CardContent>
                         </Card>
