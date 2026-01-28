@@ -172,7 +172,7 @@ export function ServicesClient() {
                     </p>
                 </div>
                 <div className="columns-2 md:columns-3 lg:columns-4 gap-8">
-                    {ALL_CITIES.sort().map(city => (
+                    {[...ALL_CITIES].sort().map(city => (
                         <div key={city} className="mb-8 break-inside-avoid">
                           <h3 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
                               <MapPin className="w-5 h-5 text-accent" />
