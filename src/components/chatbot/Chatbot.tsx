@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -84,7 +85,7 @@ export default function Chatbot() {
                     >
                       {message.role === 'model' && (
                         <Avatar className="w-8 h-8">
-                           <AvatarImage src="/Nexa.png" alt="Nexa Consultancy Logo" />
+                           <AvatarImage src="/Nexalogo.png" alt="Nexa Consultancy Logo" />
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                       )}
@@ -108,7 +109,7 @@ export default function Chatbot() {
                   {isLoading && (
                      <div className="flex items-start gap-3 justify-start">
                         <Avatar className="w-8 h-8">
-                           <AvatarImage src="/Nexa.png" alt="Nexa Consultancy Logo" />
+                           <AvatarImage src="/Nexalogo.png" alt="Nexa Consultancy Logo" />
                            <AvatarFallback className="bg-primary text-primary-foreground">N</AvatarFallback>
                         </Avatar>
                         <div className="p-3 rounded-lg bg-muted">

@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { NAV_LINKS, LOCATIONS } from '@/lib/constants';
 import { Linkedin, Twitter, MapPin } from 'lucide-react';
@@ -41,7 +42,7 @@ export default function Footer() {
               <div className="mb-4">
                 <Link href="/" className="flex items-center gap-2">
                   <Image
-                    src="/Nexa.png"
+                    src="/Nexalogo.png"
                     alt="Nexa Consultancy Logo"
                     width={192}
                     height={48}
