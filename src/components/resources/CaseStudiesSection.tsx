@@ -17,7 +17,7 @@ export function CaseStudiesSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {CASE_STUDIES.map((study) => (
-           <Link href={`/case-studies/${study.slug}`} key={study.slug} className="group">
+           <Link href={`/resources/case-studies/${study.slug}`} key={study.slug} className="group">
             <Card className="h-full flex flex-col md:flex-row overflow-hidden transition-all duration-300 border group-hover:border-accent group-hover:shadow-xl group-hover:scale-[1.02]">
                 {study.image && (
                     <div className="md:w-2/5 w-full aspect-video md:aspect-auto relative shrink-0">
