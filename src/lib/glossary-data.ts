@@ -1,3 +1,4 @@
+
 export type GlossaryTerm = {
   term: string;
   definition: string;
@@ -60,7 +61,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Accounting',
-        definition: '<p>Accounting is the high-level process of summarizing, analyzing, and reporting a company\'s financial transactions to provide insights for decision-making. Unlike bookkeeping, which focuses on daily recording, accounting interprets this data to create financial statements like the Income Statement and Balance Sheet.</p><p><b>For Startups:</b> For startups, accounting is not just about compliance; it\'s about storytelling. It translates your business activities into a financial narrative that investors, lenders, and management can understand. Good accounting helps answer critical questions like "Are we profitable?", "What is our burn rate?", and "Can we afford to hire?". It moves beyond just tracking money to providing a strategic overview of financial health.</p><p><b>Example:</b> A bookkeeper records a new annual software subscription payment. The accountant then ensures this payment is recognized as revenue monthly over the year (accrual accounting), providing a true picture of the company\'s performance rather than a one-time cash spike.</p>',
+        definition: '<p>Accounting is the high-level process of summarizing, analyzing, and reporting a company\'s financial transactions to provide insights for decision-making. It transforms raw data from bookkeeping into understandable financial statements like the Income Statement and Balance Sheet.</p><h3>Why it Matters for Startups:</h3><p>For a startup, accounting is not just about compliance; it\'s about telling a coherent financial story. Good accounting answers critical questions like "Are we profitable?", "What is our burn rate?", and "Is our business model viable?". It\'s the language investors speak and the foundation for all strategic financial decisions.</p><h3>Example:</h3><p>A bookkeeper records a new annual software subscription payment as cash received. The accountant then applies the principle of accrual accounting, recognizing only one month\'s worth of revenue on the income statement and recording the rest as deferred revenue on the balance sheet. This provides a true picture of the company\'s monthly performance, rather than showing a misleading one-time cash spike.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -533,7 +534,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Bookkeeping',
-        definition: '<p>Bookkeeping is the foundational process of recording a company\'s daily financial transactions in a consistent and organized manner. It involves tasks like recording sales invoices, supplier bills, customer payments, and bank transactions. The output of bookkeeping is a clean and accurate general ledger.</p><p><b>For Startups:</b> While founders can manage this with spreadsheets initially, it quickly becomes unmanageable. Proper bookkeeping from day one is non-negotiable for any serious startup. Without it, you cannot generate accurate financial statements, file taxes correctly, or provide investors with the reliable data they need for due diligence. It is the bedrock upon which all financial analysis is built.</p><p><b>Example:</b> A bookkeeper for a startup records a new sales invoice in the accounting software, creating an entry in accounts receivable and revenue. When the customer pays, they record the cash receipt, which closes the receivable.</p>',
+        definition: '<p>Bookkeeping is the foundational process of recording a company\'s daily financial transactions in a consistent and organized manner. It involves tasks like recording sales invoices, supplier bills, customer payments, and bank transactions. The output of bookkeeping is a clean and accurate general ledger.</p><h3>Why it Matters for Startups:</h3><p>Without accurate bookkeeping, a startup is flying blind. You cannot generate reliable financial statements, file taxes correctly, or provide investors with the data they need for due diligence. It is the bedrock upon which all financial analysis is built. Investing in professional bookkeeping from day one is one of the best decisions a founder can make.</p><h3>Example:</h3><p>A bookkeeper for a startup records a new sales invoice in Zoho Books, creating an entry that increases Accounts Receivable and Revenue. When the customer pays, they record the cash receipt, which closes the receivable and completes the transaction cycle in the books.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -574,7 +575,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Breakeven Point',
-        definition: '<p>The Breakeven Point is the level of sales at which a company\'s total revenues equal its total costs, resulting in zero profit and zero loss. Any sales above this point contribute to profit, while sales below this point result in a loss. It is a fundamental concept in cost-volume-profit (CVP) analysis.</p><p><b>For Startups:</b> For a startup, identifying the breakeven point is crucial for setting sales targets and making pricing decisions. It answers the critical question: "How much do we need to sell to stop losing money?". This analysis helps founders understand the viability of their business model and plan their path to profitability, which is a key milestone for both the company and its investors.</p><p><b>Calculation:</b> Breakeven Point (in Units) = Total Fixed Costs / (Selling Price per Unit - Variable Cost per Unit).</p><p><b>Example:</b> A company has fixed costs of ₹1 Lakh per month. It sells a product for ₹100 with variable costs of ₹60. The contribution margin is ₹40. The breakeven point is ₹1L / ₹40 = 2,500 units per month.</p>',
+        definition: '<p>The Breakeven Point is the level of sales at which a company\'s total revenues equal its total costs, resulting in zero profit and zero loss. It is a fundamental concept in cost-volume-profit (CVP) analysis.</p><p><b>For Startups:</b> For a startup, identifying the breakeven point is crucial for setting sales targets and making pricing decisions. It answers the critical question: "How much do we need to sell to stop losing money?". This analysis helps founders understand the viability of their business model and plan their path to profitability, which is a key milestone for both the company and its investors.</p><p><b>Calculation:</b> Breakeven Point (in Units) = Total Fixed Costs / (Selling Price per Unit - Variable Cost per Unit).</p><p><b>Example:</b> A company has fixed costs of ₹1 Lakh per month. It sells a product for ₹100 with variable costs of ₹60. The contribution margin is ₹40. The breakeven point is ₹1L / ₹40 = 2,500 units per month.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 1
     },
@@ -746,7 +747,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Cash Flow',
-        definition: '<p>Cash Flow is the net amount of cash and cash equivalents being transferred into and out of a business. It is a critical indicator of a company\'s financial health and its ability to meet short-term obligations. Positive cash flow means a company is bringing in more cash than it is spending, increasing its liquidity. Negative cash flow means it is spending more than it earns.</p><p><b>For Startups:</b> For an early-stage startup, cash flow is often more important than profit. A startup can be profitable on paper but run out of cash if its customers don\'t pay on time. Managing cash flow is the primary focus of a virtual CFO, as it directly impacts the company\'s runway and survival.</p><p><b>Analysis:</b> The Cash Flow Statement is the financial report that details these movements, breaking them down into operating, investing, and financing activities.</p>',
+        definition: '<p>Cash flow is the net amount of cash moving into and out of a business. It\'s a critical indicator of financial health, showing a company\'s ability to meet its short-term obligations like paying salaries and suppliers.</p><h3>Why it Matters for Startups:</h3><p>For an early-stage startup, cash flow is more important than profit. A startup can be profitable on paper but go bankrupt if it runs out of cash. Managing cash flow effectively is the primary focus of a virtual CFO, as it directly impacts the company\'s runway and survival.</p><h3>Example:</h3><p>A startup invoices a client for ₹10 Lakhs. While this counts as revenue, the company\'s cash flow only improves when the client actually pays the invoice. The period in between creates a need for working capital management.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 1
     },
@@ -899,7 +900,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Compliance',
-        definition: 'Adhering to a rule, such as a specification, policy, standard, or law. In business, this refers to following all applicable tax, labor, and corporate laws.',
+        definition: '<p>Compliance is the act of adhering to all applicable laws, regulations, and standards that govern a business. In the context of a startup, this involves a wide range of areas, including tax laws (GST, TDS), corporate laws (Companies Act), labor laws, and any industry-specific regulations.</p><h3>Why it Matters for Startups:</h3><p>For a startup, compliance is not an optional "nice-to-have"; it is a foundational requirement for building a sustainable and fundable business. Non-compliance can lead to severe consequences, including heavy financial penalties, legal disputes, and a loss of investor trust. A clean compliance record is a sign of good governance and operational maturity.</p><h3>Example:</h3><p>A startup diligently files its monthly GST returns, deducts TDS on all applicable payments, and holds regular board meetings as required by the Companies Act. This demonstrates strong compliance and ensures the company is always prepared for an audit or investor due diligence.</p>',
         cluster: 'Startup Finance Fundamentals',
         tier: 1
     },
@@ -1231,7 +1232,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Cost-Plus Pricing',
-        definition: '<p>Cost-Plus Pricing is a straightforward pricing strategy where a company determines the selling price of a product by adding a specific percentage markup to its total cost. This method ensures that all costs are covered and a certain profit margin is achieved on each sale.</p><p><b>For Startups:</b> While simple to implement, cost-plus pricing can be suboptimal. It ignores factors like customer perceived value, market competition, and demand. A startup might be leaving money on the table if customers are willing to pay more, or it might be overpriced if competitors offer similar products for less. It\'s often a starting point before moving to more sophisticated, value-based pricing models.</p><p><b>Example:</b> A D2C brand determines that the total cost to produce and ship a product is ₹500. It decides to apply a 100% markup to achieve a 50% gross margin. The selling price is set at ₹1,000.</p>',
+        definition: '<p>Cost-Plus Pricing is a straightforward pricing strategy where a company determines the selling price of a product by adding a specific percentage markup to its total cost. This method ensures that all costs are covered and a certain profit margin is achieved on each sale.</p><p><b>For Startups:</b> While simple to implement, cost-plus pricing can be suboptimal. It ignores factors like customer perceived value, market competition, and demand. A startup might be leaving money on the table if customers are willing to pay more, or it might be overpriced if competitors offer similar products for less. It\'s often a starting point before moving to more sophisticated, value-based pricing models.</p><p><b>Calculation:</b> Markup % = ((Selling Price - Cost) / Cost) * 100.</p><p><b>Example:</b> A D2C brand determines that the total cost to produce and ship a product is ₹500. It decides to apply a 100% markup to achieve a 50% gross margin. The selling price is set at ₹1,000.</p>',
         cluster: 'Virtual CFO & Financial Management',
         tier: 2
     },
@@ -1878,7 +1879,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Equity',
-        definition: 'The value of an ownership interest in a company, representing the stake held by shareholders. It is the amount of money that would be returned to shareholders if all assets were liquidated and all debts repaid.',
+        definition: '<p>Equity represents the ownership interest in a company. For a startup, it is the most valuable currency. Founders hold equity, and they sell a portion of it to investors in exchange for capital. They also grant equity (in the form of stock options) to employees to attract and retain talent.</p><h3>Why it Matters for Startups:</h3><p>Understanding and managing your equity is paramount. Every time you issue new shares for funding or ESOPs, you are diluting the ownership stake of all existing shareholders. This dilution must be managed carefully to ensure founders and key employees remain motivated throughout the company\'s long journey.</p><h3>Example:</h3><p>Two founders start a company, each owning 50% of the equity. They raise a seed round and sell 20% of their company to an investor. They are now diluted, and each founder owns 40% of the company, with the investor owning 20%.</p>',
         cluster: 'Fundraising & Valuation',
         tier: 1
     },
@@ -2080,7 +2081,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Financial Model',
-        definition: 'A tool, typically built in a spreadsheet, used to forecast a business\'s financial performance. It includes assumptions, calculations, and outputs like projected financial statements.',
+        definition: '<p>A financial model is a tool, usually built in a spreadsheet like Excel or Google Sheets, that forecasts a company\'s future financial performance. It\'s a quantitative representation of your business plan, built on a set of assumptions about your revenue, costs, and growth.</p><h3>Why it Matters for Startups:</h3><p>For a startup, a financial model is essential for both internal planning and fundraising. Internally, it helps you manage your runway, make hiring decisions, and understand the impact of strategic choices. For investors, it\'s a critical part of your pitch. It demonstrates that you understand the key drivers of your business and have a credible plan to use their capital to achieve growth. While investors know the forecast will be wrong, a well-structured model shows you are a thoughtful and data-driven founder.</p><h3>Example:</h3><p>A SaaS startup\'s financial model would have inputs for new customer sign-ups, churn rate, and average revenue per user. These assumptions would drive a 3-5 year projection of the Income Statement, Balance Sheet, and Cash Flow Statement.</p>',
         cluster: 'Fundraising & Valuation',
         tier: 1
     },
@@ -2357,7 +2358,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Goods and Services Tax (GST)',
-        definition: 'An indirect tax used in India on the supply of goods and services. It is a comprehensive, multistage, destination-based tax that has replaced many indirect taxes.',
+        definition: '<p>Goods and Services Tax (GST) is a comprehensive indirect tax levied on the supply of goods and services in India. It replaced multiple previous taxes like VAT, Service Tax, and Excise Duty, creating a unified tax structure.</p><h3>Why it Matters for Startups:</h3><p>Understanding GST is non-negotiable for Indian startups. Compliance involves obtaining a GST registration number (GSTIN), issuing GST-compliant invoices, filing monthly or quarterly returns (GSTR-1, GSTR-3B), and correctly claiming Input Tax Credit (ITC). Failure to comply can result in penalties, interest, and disruption to your business operations.</p><h3>Example:</h3><p>A SaaS startup providing a service for ₹10,000 to a client in the same state would issue an invoice showing a taxable value of ₹10,000, plus 9% CGST (₹900) and 9% SGST (₹900), for a total invoice value of ₹11,800. The startup must then deposit this ₹1,800 with the government.</p>',
         cluster: 'GST & Indirect Tax',
         tier: 1
     },
@@ -2759,7 +2760,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Input Tax Credit (ITC)',
-        definition: 'Under GST, it is the tax that a business pays on a purchase and that it can use to reduce its tax liability when it makes a sale.',
+        definition: '<p>Input Tax Credit (ITC) is the heart of the GST system. It allows a business to reduce the tax it pays on its sales (output tax) by the amount of tax it has already paid on its purchases (input tax). This mechanism prevents the "tax on tax" effect (cascading taxes) that existed in the previous tax regime.</p><h3>Why it Matters for Startups:</h3><p>For a startup, correctly claiming ITC is crucial for managing cash flow. By claiming credit for the GST paid on expenses like office rent, software subscriptions, and professional fees, a startup can significantly lower its net tax liability. To claim ITC, a business must have a valid tax invoice from its supplier, and that supplier must have filed their GST returns correctly.</p><h3>Example:</h3><p>A startup pays ₹1,180 (including ₹180 GST) for a software subscription. It then sells its own service for ₹5,900 (including ₹900 GST). When paying its GST liability, it can use the ₹180 ITC it has already paid, so its net tax payment to the government is only ₹720 (₹900 - ₹180).</p>',
         cluster: 'GST & Indirect Tax',
         tier: 1
     },
@@ -2795,7 +2796,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Intellectual Property (IP)',
-        definition: 'Creations of the mind, such as inventions, literary and artistic works, designs, symbols, names, and images used in commerce. Protecting IP is crucial for startups.',
+        definition: '<p>Intellectual Property (IP) refers to creations of the mind, such as inventions, literary and artistic works, designs, symbols, names, and software code. It is a company\'s most valuable intangible asset.</p><h3>Why it Matters for Startups:</h3><p>For a tech startup, its IP is often its primary source of competitive advantage and value. Protecting this IP through patents, copyrights, and trademarks is crucial. During fundraising, investors conduct rigorous due diligence to ensure that the company, and not its founders or employees, unequivocally owns all of its IP. This is why having strong IP assignment clauses in all employment agreements is non-negotiable.</p><h3>Example:</h3><p>A SaaS company\'s source code is its core IP, protected by copyright. Its brand name and logo are also IP, protected by a trademark.</p>',
         cluster: 'ROC, Company Law & FEMA',
         tier: 1
     },
@@ -2919,7 +2920,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'KYC (Know Your Customer)',
-        definition: 'A mandatory process for financial institutions and FinTech companies to verify the identity of their clients to prevent fraud, money laundering, and terrorist financing.',
+        definition: '<p>Know Your Customer (KYC) is a mandatory process for financial institutions and regulated entities to verify the identity of their clients. The goal is to prevent financial crimes such as money laundering, terrorist financing, and fraud.</p><h3>Why it Matters for Startups:</h3><p>For any startup in the FinTech space (including payments, lending, investments, and crypto), implementing a robust KYC process is a critical regulatory requirement. Failure to do so can lead to severe penalties from regulators like the RBI and SEBI. The process typically involves collecting and verifying official documents like Aadhaar cards, PAN cards, and passports.</p><h3>Example:</h3><p>A new user signing up for a stock trading app must complete their KYC by uploading their PAN and Aadhaar details, which are then verified with government databases before they can start trading. This ensures the platform knows the true identity of its users.</p>',
         cluster: 'ROC, Company Law & FEMA',
         tier: 1
     },
@@ -3025,7 +3026,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Liabilities',
-        definition: '<p>Liabilities are a company\'s legal financial debts or obligations that arise from its business operations. They represent what the company owes to others and are reported on the balance sheet. Liabilities are classified as either current (due within one year) or long-term (due after one year).</p><p><b>For Startups:</b> It is crucial for startups to manage their liabilities to maintain solvency and liquidity. Common liabilities for a startup include Accounts Payable (money owed to suppliers), short-term loans, and Deferred Revenue (for subscription businesses that collect cash upfront). A high level of current liabilities compared to current assets can be a sign of liquidity risk.</p><p><b>Example:</b> A startup\'s balance sheet shows current liabilities of ₹20 Lakhs (comprising accounts payable and salaries payable) and a long-term loan of ₹50 Lakhs. Its total liabilities are ₹70 Lakhs.</p>',
+        definition: '<p>Liabilities are a company\'s legal financial debts or obligations that arise from its business operations. They represent what the company owes to others and are reported on the balance sheet. Liabilities are classified as either current (due within one year) or long-term (due after one year).</p><p><b>For Startups:</b> It is crucial for startups to manage their liabilities to maintain solvency and liquidity. Common liabilities for a startup include Accounts Payable (money owed to suppliers), short-term loans, and Deferred Revenue (for SaaS companies with annual contracts). A high level of current liabilities compared to current assets can be a sign of liquidity risk.</p><p><b>Example:</b> A startup\'s balance sheet shows current liabilities of ₹20 Lakhs (comprising accounts payable and salaries payable) and a long-term loan of ₹50 Lakhs. Its total liabilities are ₹70 Lakhs.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -3079,7 +3080,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Liquidation Preference',
-        definition: 'A clause in a contract that dictates the payout order in case of a corporate liquidation or sale. It gives preferred stockholders the right to be paid before common stockholders.',
+        definition: '<p>A liquidation preference is a clause in a financing agreement that determines the payout order in the event of a company sale or liquidation. It gives preferred stockholders (investors) the right to receive their investment back before common stockholders (founders and employees) get anything.</p><h3>Why it Matters for Startups:</h3><p>This is one of the most critical terms in a venture deal. An aggressive liquidation preference (e.g., "participating preferred" or a multiple greater than 1x) can mean that founders and employees receive little to nothing in a modest exit scenario, even if the company is sold for more than its last valuation.</p><h3>Example:</h3><p>An investor puts in ₹5 Crore for 20% of a company with a "1x non-participating" liquidation preference. If the company is sold for ₹10 Crore, the investor gets their ₹5 Crore back first, and the remaining ₹5 Crore is distributed among the common shareholders. If it\'s sold for ₹50 Crore, the investor can choose to either take their ₹5 Crore back or convert their shares to 20% of the company and receive ₹10 Crore (whichever is greater).</p>',
         cluster: 'Fundraising & Valuation',
         tier: 1
     },
@@ -3699,13 +3700,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Participating Preferred Stock',
         definition: 'A type of preferred stock that gives the holder the right to receive their liquidation preference and also participate in the remaining proceeds with common stockholders.',
-        cluster: 'Fundraising & Valuation',
+        cluster: 'Fundraising &amp; Valuation',
         tier: 2
     },
     {
         term: 'Partnership Deed',
         definition: 'A legal document that outlines the terms and conditions between partners in a partnership.',
-        cluster: 'ROC, Company Law & FEMA',
+        cluster: 'ROC, Company Law &amp; FEMA',
         tier: 3
     },
     {
@@ -3717,13 +3718,13 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Passive Income',
         definition: 'Income that requires minimal labor to earn and maintain. It is often generated from investments, real estate, or royalties.',
-        cluster: 'Income Tax & Direct Tax',
+        cluster: 'Income Tax &amp; Direct Tax',
         tier: 3
     },
     {
         term: 'Patent',
         definition: 'A government authority or license conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.',
-        cluster: 'ROC, Company Law & FEMA',
+        cluster: 'ROC, Company Law &amp; FEMA',
         tier: 2
     },
     {
@@ -3738,7 +3739,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Payment Aggregator (PA)',
         definition: 'Entities that facilitate e-commerce sites and merchants to accept various payment instruments from customers for completion of their payment obligations without the need for merchants to create a separate payment integration system of their own. Regulated by RBI.',
-        cluster: 'ROC, Company Law & FEMA',
+        cluster: 'ROC, Company Law &amp; FEMA',
         tier: 2
     },
     {
@@ -3750,7 +3751,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     {
         term: 'Payroll',
         definition: 'The total amount of wages and salaries paid by a company to its employees. Also refers to the process of calculating and distributing these wages.',
-        cluster: 'TDS & Payroll',
+        cluster: 'TDS &amp; Payroll',
         tier: 2
     },
     {
@@ -3959,7 +3960,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Pipeline Coverage',
-        definition: '<p>Pipeline Coverage is a sales metric that measures the ratio of the total value of a sales pipeline to the sales quota for a given period. It indicates whether the sales team has enough opportunities in their pipeline to realistically achieve their target.</p><p><b>For Startups:</b> This is a critical forward-looking metric for sales leaders and founders. Insufficient pipeline coverage is an early warning sign that the team may miss its future revenue goals, prompting a need to increase marketing efforts or lead generation activities.</p><p><b>For B2B/SaaS:</b> A common rule of thumb is to maintain a pipeline coverage of 3x to 5x the quota. This means if the quarterly quota is ₹1 Crore, the sales team should have ₹3-5 Crore worth of qualified opportunities in their pipeline at the start of the quarter.</p><p><b>Calculation:</b> Pipeline Coverage = Total Value of Sales Pipeline / Sales Quota</p><p><b>Example:</b> A sales team has a quarterly quota of ₹50 Lakhs and a total pipeline value of ₹2 Crore. Their pipeline coverage is 4x.</p>',
+        definition: '<p>Pipeline Coverage is a sales performance metric that measures the ratio of the total value of a sales pipeline to the sales quota for a given period. It indicates whether the sales team has enough opportunities in their pipeline to realistically achieve their target.</p><p><b>For Startups:</b> This is a critical forward-looking metric for sales leaders and founders. Insufficient pipeline coverage is an early warning sign that the team may miss its future revenue goals, prompting a need to increase marketing efforts or lead generation activities.</p><p><b>For B2B/SaaS:</b> A common rule of thumb is to maintain a pipeline coverage of 3x to 5x the quota. This means if the quarterly quota is ₹1 Crore, the sales team should have ₹3-5 Crore worth of qualified opportunities in their pipeline at the start of the quarter.</p><p><b>Calculation:</b> Pipeline Coverage = Total Value of Sales Pipeline / Sales Quota</p><p><b>Example:</b> A sales team has a quarterly quota of ₹50 Lakhs and a total pipeline value of ₹2 Crore. Their pipeline coverage is 4x.</p>',
         cluster: 'Startup Finance Fundamentals',
         stageRelevance: 'Growth',
         relatedServiceSlug: 'virtual-cfo',
@@ -4355,7 +4356,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Reverse Charge Mechanism (RCM)',
-        definition: 'A mechanism under GST where the liability to pay tax is on the recipient of the supply of goods or services instead of the supplier.',
+        definition: '<p>Reverse Charge Mechanism (RCM) is a provision in GST law where the liability to pay GST is shifted from the supplier to the recipient of the goods or services. In normal cases, the supplier collects GST from the buyer and pays it to the government. Under RCM, the buyer pays the GST directly to the government.</p><h3>Why it Matters for Startups:</h3><p>Startups often encounter RCM when they receive legal services from a lawyer or import services from a foreign company (like paying for Google Ads or AWS). In these cases, the startup is responsible for calculating the GST on the transaction, paying it to the government in cash, and then claiming it back as Input Tax Credit. It\'s a critical compliance step that is often missed.</p><h3>Example:</h3><p>A startup in India pays a US-based SaaS company $100 for a software subscription. The startup must calculate the GST on this amount (18% of the Rupee equivalent), pay it to the Indian government, and then claim it as ITC in its next GST return.</p>',
         cluster: 'GST & Indirect Tax',
         tier: 1
     },
@@ -4696,7 +4697,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Shareholders Agreement',
-        definition: 'A legal agreement among the shareholders of a company that governs their rights and obligations, and regulates the management and control of the company.',
+        definition: '<p>A Shareholders\' Agreement (SHA) is a legal contract among the shareholders of a company (including founders and investors). It governs their rights, responsibilities, and the relationship between them. It is one of the most critical documents for a startup.</p><h3>Why it Matters for Startups:</h3><p>An SHA provides a clear rulebook for how the company will be run, preventing future disputes. It covers crucial topics like board composition, investor rights (like pro-rata rights and information rights), restrictions on selling shares (ROFR/Tag-Along), and what happens if a founder leaves. No professional investor will invest in a company without a comprehensive SHA in place.</p><h3>Example:</h3><p>A startup\'s SHA specifies that any decision to sell the company requires the approval of both the founders and the lead investor, ensuring all key parties are aligned on major exit decisions.</p>',
         cluster: 'ROC, Company Law & FEMA',
         tier: 1
     },
@@ -4977,7 +4978,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Tax Deducted at Source (TDS)',
-        definition: 'A system where tax is deducted at the time of making certain payments like rent, commission, salary, etc. The deductor is responsible for depositing the tax with the government.',
+        definition: '<p>Tax Deducted at Source (TDS) is an Indian tax concept where a person (the deductor) making a specified payment (like salary, rent, commission, or professional fees) is responsible for deducting tax at the point of payment, rather than the recipient paying it later. The deducted tax is then deposited with the government.</p><h3>Why it Matters for Startups:</h3><p>TDS compliance is a major responsibility for startups. As a business, you are required to deduct TDS on a wide range of payments you make. Failure to deduct or deposit TDS on time can lead to significant interest, penalties, and disallowance of the expense, increasing your own tax liability.</p><h3>Example:</h3><p>A startup pays a freelance designer ₹50,000 for a project. Since this is a professional fee exceeding the ₹30,000 threshold, the startup must deduct 10% TDS (₹5,000), pay the designer ₹45,000, and deposit the ₹5,000 TDS with the government.</p>',
         cluster: 'TDS & Payroll',
         tier: 1
     },
@@ -5192,7 +5193,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Turnover',
-        definition: 'The total sales made by a business in a certain period. Also known as revenue or gross income.',
+        definition: '<p>Turnover, often used interchangeably with revenue or gross sales, is the total amount of income a company generates from its business activities within a specific period. It\'s the "top-line" figure on the income statement before any costs or expenses are deducted.</p><h3>Why it Matters for Startups:</h3><p>Turnover is a primary measure of a startup\'s size and growth rate. It\'s a key metric for triggering compliance obligations in India. For example, GST registration becomes mandatory once your annual turnover crosses a certain threshold (e.g., ₹20 lakhs for services). Similarly, the requirement for a tax audit is also linked to turnover.</p><h3>Example:</h3><p>A SaaS startup generates ₹25 lakhs in revenue from subscriptions in a financial year. Its turnover is ₹25 lakhs, which means it is now required to register for and comply with GST.</p>',
         cluster: 'Accounting & Bookkeeping',
         tier: 1
     },
@@ -5358,7 +5359,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     },
     {
         term: 'Vesting Cliff',
-        definition: '<p>A vesting "cliff" is a period at the beginning of a stock option vesting schedule during which no shares are earned. If an employee leaves the company before the cliff period is over, they forfeit all of their granted options. Once the cliff is passed, a large chunk of the options vests at once.</p><p><b>Base Term for Startups:</b> The cliff is a crucial mechanism to protect startups from "drive-by" equity grants, where an employee joins, receives a large stock option grant, and then leaves after only a few months, taking a chunk of equity with them.</p><p><b>Standard Terms:</b> The most common structure in the startup world is a 1-year cliff on a 4-year vesting schedule. This means the employee earns 0% of their options for the first 12 months. On their one-year anniversary, 25% of their total options vest instantly. The remaining 75% then typically vest monthly over the next 36 months.</p><p><b>Base Term Example:</b> An employee with a 1-year cliff leaves after 11 months. They walk away with zero vested options. If they leave after 13 months, they are vested in 25% plus one month\'s worth of their grant.</p>',
+        definition: '<p>A vesting "cliff" is a period at the beginning of a stock option vesting schedule during which no shares are earned. If an employee leaves the company before the cliff period is over, they forfeit all of their granted options. Once the cliff is passed, a large chunk of the options vests at once.</p><p><b>Base Term for Startups:</b> The cliff is a crucial mechanism to protect startups from "drive-by" equity grants, where an employee joins, receives a large stock option grant, and then leaves after only a few months, taking a chunk of equity with them.</p><p><b>Standard Terms:</b> The most common structure in the startup world is a 1-year cliff on a 4-year vesting schedule. This means the employee earns 0% of their options for the first 12 months. On their one-year anniversary, 25% of their total options vest instantly. The remaining 75% then typically vest monthly or quarterly over the next 36 months.</p><p><b>Base Term Example:</b> An employee with a 1-year cliff leaves after 11 months. They walk away with zero vested options. If they leave after 13 months, they are vested in 25% plus one month\'s worth of their grant.</p>',
         cluster: 'Startup Finance Fundamentals',
         stageRelevance: 'All Stages',
         relatedServiceSlug: 'corporate-law',
@@ -5555,4 +5556,5 @@ export const GLOSSARY_DATA_BY_CLUSTER = ALL_GLOSSARY_TERMS.reduce((acc, item) =>
 
 
     
+
 

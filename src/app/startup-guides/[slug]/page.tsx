@@ -35,32 +35,50 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-// Dummy content generator for now
-const getProblemContent = (stage: StageProblemPage['stage'], problem: StageProblemPage['problem']) => {
-    switch (problem.id) {
-        case 'compliance':
-            return `For ${stage.name.toLowerCase()}, the immediate challenge is setting up the correct legal and tax structure. Founders are often focused on building their product and can easily overlook critical first steps like company incorporation, GST registration, and setting up payroll. Making mistakes here can lead to penalties and complex cleanup work later on, wasting precious time and money.`;
-        case 'fundraising-prep':
-            return `When you're a ${stage.name.toLowerCase()}, your primary goal is to turn an idea into a compelling story for investors. You need more than just a good idea; you need a professional pitch deck and a believable financial model. Many founders struggle to quantify their vision, making it difficult to convince investors of the potential return.`;
-        case 'burn-rate-management':
-            return `${stage.name} run on a limited amount of capital. Every rupee counts. Without a clear understanding of your monthly burn rate and runway, you risk running out of cash unexpectedly. Managing expenses and forecasting cash flow is not just an accounting task—it's a survival skill.`;
-        default:
-            return 'Content coming soon.';
+const contentMap = {
+    'compliance': {
+        'pre-seed': {
+            problem: "At the pre-seed stage, your focus is entirely on your idea and product. Compliance feels like a distraction. However, choosing the wrong legal structure (e.g., a proprietorship instead of a Pvt Ltd), failing to get basic registrations like PAN/TAN, or neglecting a solid founders' agreement can create foundational cracks that are incredibly expensive and difficult to fix later. These early missteps can scare away your very first angel investors.",
+            solution: "Our 'Business Setup' service is designed as a compliance 'launchpad' for pre-seed startups. We guide you in choosing the right legal entity (almost always a Private Limited Company if you plan to raise funds), handle the entire incorporation process, and secure your essential registrations like PAN, TAN, and Startup India (DPIIT). We also help you draft a robust founders' agreement with proper vesting clauses, ensuring your cap table is clean from day one."
+        },
+        'seed': {
+            problem: "You've raised your seed round and hired your first employees. Congratulations! Your compliance obligations have now multiplied. You're now responsible for monthly payroll compliance (PF, ESI, TDS), professional tax, and adhering to various labor laws. Additionally, your investors expect formal board meetings with proper minutes. Trying to manage this yourself on spreadsheets is no longer viable and exposes you to significant legal and financial risk.",
+            solution: "We act as your outsourced compliance department. Our team handles your entire monthly payroll and TDS compliance process. We manage your secretarial requirements, ensuring board meetings are correctly documented and all ROC filings are made on time. By professionalizing your compliance function post-seed, we help you build a solid, scalable operation that gives your investors confidence and lets you focus on achieving product-market fit."
+        },
+        'series-a': {
+            problem: "At the Series A stage, compliance becomes even more complex. You are likely operating at a scale where a tax audit is mandatory. If you have international customers or use foreign software, you face complex regulations around FEMA and TDS on foreign payments. Your financial statements must be prepared for a higher level of scrutiny, and any non-compliance discovered during Series B due diligence can be a deal-breaker.",
+            solution: "Our services scale with you. We manage the entire statutory and tax audit process, liaising with auditors on your behalf. We provide expert guidance on complex issues like transfer pricing and TDS on foreign remittances. We ensure your financials are always 'due diligence ready,' building a robust compliance framework that can support your journey to becoming a market leader."
+        }
+    },
+    'fundraising-prep': {
+        'pre-seed': {
+            problem: "You have a great idea, but you're struggling to translate it into a narrative that investors will understand and get excited about. Your first pitch deck looks amateur, and building a financial model feels like pure guesswork. You know you need to show more than just a big idea to get that first angel check.",
+            solution: "Our 'Pitch Deck & Financial Modelling' service is tailored for pre-seed founders. We don't just use a template; we work with you to craft a compelling story that highlights your unique insight into the problem. We then build a simple, assumption-driven financial model that shows how you'll use the initial capital to validate your key hypotheses, demonstrating to investors that you are a thoughtful and strategic founder."
+        },
+        'seed': {
+            problem: "You've got some early traction and are preparing to raise a larger seed round from VCs. The bar is higher now. Investors expect to see a clean data room, a detailed financial model based on real metrics, and a deep understanding of your unit economics (LTV:CAC). Presenting a messy or incomplete picture is the fastest way to get a 'no'.",
+            solution: "We prepare you for the rigor of a VC fundraise. Our team helps you assemble a professional virtual data room with all the required legal and financial documents. We build an investor-grade financial model based on your actual traction and help you calculate and present your key SaaS or D2C metrics in a compelling way. We ensure you enter every investor meeting with confidence and a data-backed story."
+        },
+        'series-a': {
+            problem: "You're getting ready for your Series A. The focus now shifts from 'can you build it?' to 'can you scale it efficiently?'. Investors will perform deep diligence on your cohort analysis, net dollar retention, and the capital efficiency of your growth engine. You need to prove you have a repeatable, scalable go-to-market machine, and your financial story needs to reflect that.",
+            solution: "Our Virtual CFO service is your strategic partner for your Series A raise. We conduct deep dives into your unit economics, prepare detailed cohort analyses, and build sophisticated financial models that demonstrate the scalability of your business. We help you craft the financial narrative for your Series A deck and manage the entire, intense due diligence process, positioning you for a successful fundraise at a strong valuation."
+        }
+    },
+    'burn-rate-management': {
+        'pre-seed': {
+            problem: "You've put your own savings or a small friends-and-family round into the business. Every rupee is precious. You're spending money on building the product but have little to no revenue. Without a clear budget and cash flow forecast, you risk running out of money before you've even had a chance to validate your idea.",
+            solution: "We help you instill financial discipline from day one. We build a simple but powerful cash flow forecast that tracks every expense and helps you manage your limited runway. We advise on key early decisions, such as how much to pay yourself as a founder and how to prioritize spending, ensuring you get the most out of every rupee."
+        },
+        'seed': {
+            problem: "You have cash in the bank from your seed round, and the temptation is to spend it quickly to show growth. You've hired a team, and your monthly burn rate is now significant. Without rigorous tracking and a formal budget, your 18-month runway can evaporate in 12 months, putting you in a desperate position for your next fundraise.",
+            solution: "We implement a formal budgeting and reporting process. We work with you to create an annual budget and then track your performance against it with a monthly 'Budget vs. Actuals' analysis. Our runway dashboards and regular cash flow reviews give you a clear, forward-looking view of your burn, enabling you to make data-driven decisions about hiring and spending."
+        },
+        'series-a': {
+            problem: "At Series A, your team is growing rapidly with multiple departments. It's no longer possible for the founder to approve every expense. You need to empower department heads with their own budgets, but you also need to maintain overall financial control. Without a system for this, spending can spiral out of control, and capital efficiency can plummet.",
+            solution: "We help you implement a scalable system for financial planning and analysis (FP&A). We work with you to create departmental budgets and hold monthly review meetings with department heads to ensure accountability. Our analysis helps you understand the ROI of your spending, particularly on sales and marketing, ensuring you are scaling efficiently and maintaining a healthy relationship between growth and burn."
+        }
     }
-}
-
-const getSolutionContent = (stage: StageProblemPage['stage'], problem: StageProblemPage['problem']) => {
-     switch (problem.id) {
-        case 'compliance':
-            return `Nexa Consultancy provides an all-in-one 'Business Setup' package designed for ${stage.name.toLowerCase()}. We handle your company incorporation, PAN/TAN, GST registration, and initial compliance setup, ensuring you start on a solid legal foundation from day one, allowing you to focus completely on your product.`;
-        case 'fundraising-prep':
-            return `Our 'Pitch Deck and Financial Modelling' service is tailored for ${stage.name.toLowerCase()}. We work with you to build a powerful narrative backed by a solid, driver-based financial model. We help you translate your vision into a language that investors understand and trust, dramatically increasing your chances of securing that crucial first check.`;
-        case 'burn-rate-management':
-            return `Our 'Virtual CFO' services for ${stage.name.toLowerCase()} provide you with essential financial discipline. We set up your bookkeeping, create a clear monthly burn report, and provide you with a runway forecast. This gives you the clarity needed to manage your cash effectively and make informed decisions about your spending.`;
-        default:
-            return 'Content coming soon.';
-    }
-}
+};
 
 
 export default function StartupGuidePage({ params }: Props) {
@@ -72,8 +90,10 @@ export default function StartupGuidePage({ params }: Props) {
   }
   
   const Icon = page.problem.Icon;
-  const problemContent = getProblemContent(page.stage, page.problem);
-  const solutionContent = getSolutionContent(page.stage, page.problem);
+  // @ts-ignore
+  const pageContent = contentMap[page.problem.id]?.[page.stage.id];
+  const problemContent = pageContent?.problem || "Content coming soon.";
+  const solutionContent = pageContent?.solution || "Content coming soon.";
 
 
   return (
