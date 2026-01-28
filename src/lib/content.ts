@@ -62,7 +62,7 @@ const DETAILED_BLOG_POSTS = [
   <p>A growing deferred revenue balance is a powerful leading indicator of a SaaS company's health for several reasons:</p>
   <ol>
     <li><strong>Predictor of Future Revenue:</strong> Your deferred revenue balance represents your backlog of contracted but unearned revenue. It provides a strong, predictable base for your future revenue streams. A large and growing deferred revenue balance gives investors confidence that your future revenue is secure.</li>
-    <li><strong>Positive Cash Flow Dynamics:</strong> Collecting cash upfront from annual contracts is a massive advantage for a startup. It improves your <a href="/startup-finance-glossary/what-is-cash-conversion-cycle-ccc">cash conversion cycle</a> (often making it negative) and provides you with non-dilutive working capital. You are essentially using your customers' cash to fund your operations and growth, reducing your reliance on external funding.</li>
+    <li><strong>Positive Cash Flow Dynamics:</strong> Collecting cash upfront from annual contracts is a massive advantage for a startup. It improves your <a href="/startup-finance-glossary/what-is-cash-conversion-cycle">cash conversion cycle</a> (often making it negative) and provides you with non-dilutive working capital. You are essentially using your customers' cash to fund your operations and growth, reducing your reliance on external funding.</li>
     <li><strong>Indicator of Customer Commitment:</strong> When a customer signs an annual contract, it signals a higher level of commitment and a belief in the long-term value of your product. This often correlates with lower churn and higher lifetime value compared to customers on monthly plans.</li>
   </ol>
 
@@ -1020,7 +1020,7 @@ const DETAILED_BLOG_POSTS = [
   <p>Don't wait. Implement a systematic collections process. This should start with automated reminders for upcoming and overdue invoices. For large, overdue accounts, a personal follow-up call from the founder is often necessary. Consider offering a small "2/10, net 30" discount (a 2% discount if paid in 10 days, otherwise due in 30) to incentivize prompt payment.</p>
   
   <h3>Sign 2: You're Constantly "Riding the Payable"</h3>
-  <p>On the flip side of receivables is your own Accounts Payable. Are you consistently paying your own suppliers and vendors late? While strategically managing your <a href="/startup-finance-glossary/what-is-accounts-payable-ap">Accounts Payable</a> is a smart cash management technique (often called "stretching payables"), relying on it as your primary source of short-term financing is a dangerous game.</p>
+  <p>On the flip side of receivables is your own Accounts Payable. Are you consistently paying your own suppliers and vendors late? While strategically managing your <a href="/startup-finance-glossary/what-is-accounts-payable">Accounts Payable</a> is a smart cash management technique (often called "stretching payables"), relying on it as your primary source of short-term financing is a dangerous game.</p>
   <h4>What to look for:</h4>
   <ul>
       <li><strong>Angry Calls from Suppliers:</strong> Are you starting to get frequent, frustrated calls or emails from your vendors? Have any of them threatened to cut off services?</li>
@@ -1043,7 +1043,7 @@ const DETAILED_BLOG_POSTS = [
   <p>Your financial statements hold the clues if you know where to look. Key liquidity ratios, tracked over time, can provide an early warning of a brewing storm.</p>
   <h4>What to look for:</h4>
   <ul>
-      <li><strong>Declining Liquidity Ratios:</strong> Track your <a href="/startup-finance-glossary/what-is-current-ratio">Current Ratio</a> (Current Assets / Current Liabilities) and <a href="/startup-finance-glossary/what-is-acid-test-ratio-quick-ratio">Quick Ratio</a> ((Current Assets - Inventory) / Current Liabilities) month-over-month. A steady decline, especially a Current Ratio falling below 1.5, indicates shrinking liquidity and an increasing inability to cover short-term debts.</li>
+      <li><strong>Declining Liquidity Ratios:</strong> Track your <a href="/startup-finance-glossary/what-is-current-ratio">Current Ratio</a> (Current Assets / Current Liabilities) and <a href="/startup-finance-glossary/what-is-acid-test-ratio">Quick Ratio</a> ((Current Assets - Inventory) / Current Liabilities) month-over-month. A steady decline, especially a Current Ratio falling below 1.5, indicates shrinking liquidity and an increasing inability to cover short-term debts.</li>
       <li><strong>Consistently Negative Operating Cash Flow:</strong> Check your <a href="/startup-finance-glossary/what-is-cash-flow-statement">Cash Flow Statement</a>. Is your cash flow from operations (CFO) consistently negative and is the deficit getting larger? This means your core business is consuming more cash than it generates, a fundamentally unsustainable position without continuous external funding. Profit on your P&L can hide negative CFO due to working capital changes.</li>
   </ul>
   
@@ -1106,7 +1106,7 @@ const DETAILED_BLOG_POSTS = [
       </ul>
     </li>
     <li><strong>Price for Value, Not Just Cost.</strong> Don't fall into the trap of "cost-plus" pricing. Understand the true value and ROI you are providing to your customers and price your product accordingly. Bootstrapped businesses often cannot afford to be the cheapest option in the market; they must be the best value.</li>
-    <li><strong>Be Ruthless with your <a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">Customer Acquisition Cost (CAC)</a>.</strong> You don't have millions to spend on experimental marketing channels. Focus on capital-efficient, high-ROI channels.
+    <li><strong>Be Ruthless with your <a href="/startup-finance-glossary/what-is-customer-acquisition-cost">Customer Acquisition Cost (CAC)</a>.</strong> You don't have millions to spend on experimental marketing channels. Focus on capital-efficient, high-ROI channels.
       <ul>
         <li>Prioritize organic channels like content marketing, SEO, and community building. They take time but build a sustainable, long-term asset.</li>
         <li>If you use paid ads, track your CAC and payback period religiously. Cut any channel or campaign that isn't providing a clear, profitable return within an acceptable timeframe.</li>
@@ -1185,7 +1185,7 @@ const DETAILED_BLOG_POSTS = [
       <li><strong>Forecasting Creates the Plan:</strong> You use that historical data (e.g., past conversion rates, average revenue per user) to build a budget and a forecast for the upcoming periods (month, quarter, year).</li>
       <li><strong>Execution Happens:</strong> You and your team run the business, making decisions based on the plan.</li>
       <li><strong>Accounting Records the Results:</strong> Your accounting system, through diligent bookkeeping, records what actually happened during the period.</li>
-      <li><strong>Analysis Closes the Loop:</strong> This is the most critical step. At the end of the period, you perform a "Budget vs. Actuals" or "Variance" analysis. You compare your forecast to your actual accounting results. Why was revenue 10% higher than expected? Why was marketing spend 15% lower? Understanding the "why" behind these variances provides invaluable insights into your business.</li>
+      <li><strong>Analysis Closes the Loop:</strong> This is the most critical step. At the end of the period, you perform a "Budget vs. Actuals" or "Variance" analysis. You compare your forecast to your actual accounting results. Why was revenue 10% higher than expected? Why was marketing spend 15% lower? Understanding the "why" behind these variances is invaluable insights into your business.</li>
       <li><strong>Refine and Repeat:</strong> You use these new insights to refine your assumptions and create a more accurate, more intelligent forecast for the next period. The cycle begins again.</li>
   </ol>
   
@@ -1243,7 +1243,7 @@ const DETAILED_BLOG_POSTS = [
   </ul>
 
   <h3>4. Cap Table Management Software</h3>
-  <p>If you have any plans to raise funding or issue ESOPs to your team, managing your <a href="/startup-finance-glossary/what-is-capitalization-table-cap-table">cap table</a> on a spreadsheet is a high-risk activity that you should stop immediately. A single formula error can lead to misrepresenting ownership, a mistake that can have major legal and financial consequences and can kill a funding round during due diligence.</p>
+  <p>If you have any plans to raise funding or issue ESOPs to your team, managing your <a href="/startup-finance-glossary/what-is-capitalization-table">cap table</a> on a spreadsheet is a high-risk activity that you should stop immediately. A single formula error can lead to misrepresenting ownership, a mistake that can have major legal and financial consequences and can kill a funding round during due diligence.</p>
   <h4>What to look for:</h4>
   <p>A dedicated platform that acts as the legal single source of truth for your company's ownership. It should help you issue ESOP grants digitally, allow you to model out fundraising scenarios to understand dilution, and provide a professional interface for your investors and employees to view their holdings.</p>
   <h4>Top Picks for Startups:</h4>
@@ -1288,7 +1288,7 @@ const DETAILED_BLOG_POSTS = [
 
   <h3>Mistake 2: The "Handshake" Equity Deal</h3>
   <p><strong>The Trap:</strong> You and your co-founder agree on a 60/40 equity split over a coffee. You promise an early advisor 1% of the company for a few introductions. You tell your first employee you'll "give them some options later."</p>
-  <p><strong>Why it's a Disaster:</strong> Memories fade, relationships change, and verbal promises about equity are a recipe for bitter, company-killing legal disputes. Investors need absolute certainty about who owns what percentage of the company. Any ambiguity on your <a href="/startup-finance-glossary/what-is-capitalization-table-cap-table">cap table</a> can kill a funding round during due diligence.</p>
+  <p><strong>Why it's a Disaster:</strong> Memories fade, relationships change, and verbal promises about equity are a recipe for bitter, company-killing legal disputes. Investors need absolute certainty about who owns what percentage of the company. Any ambiguity on your <a href="/startup-finance-glossary/what-is-capitalization-table">cap table</a> can kill a funding round during due diligence.</p>
   <p><strong>The Fix:</strong> Document everything. From day one.
     <ul>
       <li>Sign a formal <a href="/startup-finance-glossary/what-is-shareholders-agreement">Shareholders' Agreement</a> with your co-founders that clearly outlines equity splits and includes a <a href="/startup-finance-glossary/what-is-founder-vesting-schedule">vesting schedule</a>.</li>
@@ -1314,7 +1314,7 @@ const DETAILED_BLOG_POSTS = [
   <p><strong>Why it's a Disaster:</strong> In India, <a href="/startup-finance-glossary/what-is-compliance">compliance</a> is not optional, and the penalties for non-compliance are severe and accumulate quickly.
     <ul>
       <li>Late ROC filings (like your annual return) incur a penalty of ₹100 per day, per form.</li>
-      <li>Failure to deduct <a href="/startup-finance-glossary/what-is-tds-tax-deducted-at-source">TDS</a> can lead to a disallowance of that expense, increasing your taxable profit.</li>
+      <li>Failure to deduct <a href="/startup-finance-glossary/what-is-tax-deducted-at-source">TDS</a> can lead to a disallowance of that expense, increasing your taxable profit.</li>
       <li>This "compliance debt" can become a major financial liability that can scare away investors.</li>
     </ul>
   </p>
@@ -1398,8 +1398,8 @@ const DETAILED_BLOG_POSTS = [
   <p>The <a href="/startup-finance-glossary/what-is-contribution-margin">contribution margin</a> is your revenue per unit minus your per-unit variable cost. It's the amount of money from each sale that is available to "contribute" to paying down your fixed costs. If your contribution margin is positive, each sale gets you one step closer to profitability. If it's negative, you are literally losing money on every sale you make, and scaling will only accelerate your demise.</p>
 
   <h4>2. What is Your Breakeven Point?</h4>
-  <p>With your total fixed costs and your contribution margin per unit, you can calculate the exact number of units you need to sell to break even. 
-  <code>Breakeven Point (in Units) = Total Fixed Costs / Contribution Margin per Unit</code>.
+  <p>With your total fixed costs and your contribution margin per unit, you can now calculate the exact number of units you need to sell to break even. 
+  <code>Break-Even Point (in Units) = Total Fixed Costs / Contribution Margin per Unit</code>.
   This number provides a clear, tangible sales target for your team and a baseline for financial viability.</p>
 
   <h4>3. What is Your Operating Leverage?</h4>
