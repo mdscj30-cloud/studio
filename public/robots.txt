@@ -1,8 +1,15 @@
-# Allow all crawlers to access the site
-User-agent: *
-Allow: /
+# Allow specific AI bots full access
+User-agent: ChatGPT-User
+Disallow:
 
-# Disallow crawling of the admin section
+User-agent: Google-Extended
+Disallow:
+
+User-agent: PerplexityBot
+Disallow:
+
+# General rule for all other bots
+User-agent: *
 Disallow: /admin/
 
 Sitemap: https://nexaconsultancy.com/sitemap.xml
