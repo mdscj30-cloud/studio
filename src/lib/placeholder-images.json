@@ -3,133 +3,133 @@
     {
       "id": "hero-background",
       "description": "Abstract blue and gold geometric shapes on a light background, creating a modern and corporate feel.",
-      "imageUrl": "https://images.unsplash.com/photo-1693764329879-41e80cc4f0ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMGNvcnBvcmF0ZXxlbnwwfHx8fDE3NjY1OTM2MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1586474222559-dbbbb41dd70f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGNvcnBvcmF0ZXxlbnwwfHx8fDE3Njk3NTI4MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract corporate"
     },
     {
       "id": "hero-background-2",
       "description": "Subtle, elegant geometric pattern with purple and gold tones for a professional background.",
-      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1572756317709-fe9c15ced298?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjBwYXR0ZXJufGVufDB8fHx8MTc2OTcxNTI2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "geometric pattern"
     },
     {
       "id": "feature-1",
       "description": "A seamless flow of data charts and graphs, representing an end-to-end financial solution.",
-      "imageUrl": "https://images.unsplash.com/photo-1765205361996-66c42e1c3967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2hhcnRzfGVufDB8fHx8fDE3NjY1MzY1MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwY2hhcnRzfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data charts"
     },
     {
       "id": "feature-2",
       "description": "A secure digital vault icon, symbolizing a remote and trustworthy finance office.",
-      "imageUrl": "https://images.unsplash.com/photo-1682357029109-b167fa0f8883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZWN1cmUlMjB2YXVsdHxlbnwwfHx8fDE3NjY1NDY2NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1596755000473-29a2968fbafd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2VjdXJlJTIwdmF1bHR8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure vault"
     },
     {
       "id": "feature-3",
       "description": "A person accessing a dashboard on a tablet, demonstrating KPI access from anywhere.",
-      "imageUrl": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXNoYm9hcmQlMjB0YWJsZXR8ZW58MHx8fHwxNzY2NTkzNjA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527698266440-12104e498b76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFzaGJvYXJkJTIwdGFibGV0fGVufDB8fHx8MTc2OTc1MjgzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dashboard tablet"
     },
     {
       "id": "testimonial-futureverse",
       "description": "Portrait of the CEO of FutureVerse.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1605602517229-cdbfc3dfb70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWxlJTIwY2VvfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male ceo"
     },
     {
       "id": "testimonial-quantum-leap",
       "description": "Portrait of the COO of QuantumLeap Logistics.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://picsum.photos/seed/testimonial2/200/200",
       "imageHint": "female coo"
     },
     {
       "id": "testimonial-biogen",
       "description": "Portrait of the Chief Scientist of BioGen Innovations.",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1630959299280-874fe62c7d83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFsZSUyMHNjaWVudGlzdHxlbnwwfHx8fDE3Njk3NTI4MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male scientist"
     },
     {
       "id": "testimonial-travelwise",
       "description": "Portrait of the Founder of TravelWise.",
-      "imageUrl": "https://images.unsplash.com/photo-1681949215173-fe0d15c790c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmZW1hbGUlMjBmb3VuZGVyfGVufDB8fHx8MTc2NjY4NDQzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1681949287382-052ea3954a51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmZW1hbGUlMjBmb3VuZGVyfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "female founder"
     },
     {
       "id": "testimonial-ecosolutions",
       "description": "Portrait of the CEO of EcoSolutions.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmZW1hbGUlMjBjZW98ZW58MHx8fHwxNzY2Njg1NTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1642257859842-c95f9fa8121d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmZW1hbGUlMjBjZW98ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "female ceo"
     },
     {
       "id": "testimonial-artful-living",
       "description": "Portrait of the Founder of Artful Living.",
-      "imageUrl": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://picsum.photos/seed/testimonial6/200/200",
       "imageHint": "male founder"
     },
     {
       "id": "blog-1",
       "description": "A close-up of a laptop screen showing complex financial charts and graphs for a SaaS business.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1723785587499-0da15adeb967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjBjaGFydHN8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial charts"
     },
     {
       "id": "blog-2",
       "description": "A gavel and law books on a desk, symbolizing financial technology regulations.",
-      "imageUrl": "https://images.unsplash.com/photo-1589216532372-1c2a36790049?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXclMjBib29rc3xlbnwwfHx8fDE3Njk2NjEyMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "law books"
     },
     {
       "id": "blog-3",
       "description": "A person using a calculator with stacks of coins and receipts, representing cash flow management.",
-      "imageUrl": "https://images.unsplash.com/photo-1736319861065-d2ee8bb62c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYWxjdWxhdG9yJTIwY29pbnN8ZW58MHx8fHwxNzY2Njg0NDM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1735467547583-d9fc4503f238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FsY3VsYXRvciUyMGNvaW5zfGVufDB8fHx8MTc2OTc1MjgzNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "calculator coins"
     },
     {
       "id": "blog-4",
       "description": "A person presenting a pitch deck to a group of investors in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1733222765056-b0790217baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbnZlc3RvciUyMHByZXNlbnRhdGlvbnxlbnwwfHx8fDE3NjY2ODQ0ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1642052502780-8ee67e3bf930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbnZlc3RvciUyMHByZXNlbnRhdGlvbnxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "investor presentation"
     },
     {
       "id": "blog-5",
       "description": "A diagram showing the structure of a company's capitalization table on a whiteboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1571456610111-72c649ad3521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aGl0ZWJvYXJkJTIwZGlhZ3JhbXxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "whiteboard diagram"
     },
     {
       "id": "blog-6",
       "description": "A magnifying glass hovering over a legal document, symbolizing the due diligence process.",
-      "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1743796055664-3473eedab36e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWduaWZ5aW5nJTIwZ2xhc3N8ZW58MHx8fHwxNzY5NzMyNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "magnifying glass"
     },
     {
       "id": "blog-7",
       "description": "A bustling view of Bangalore's skyline with a focus on modern office buildings, representing the city's startup ecosystem.",
-      "imageUrl": "https://images.unsplash.com/photo-1596796679119-7cf1a9e5448b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxCYW5nYWxvcmUlMjBza3lsaW5lfGVufDB8fHx8MTc2OTA4MDUzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580906185642-01432790adec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCYW5nYWxvcmUlMjBza3lsaW5lfGVufDB8fHx8MTc2OTc1MjgzNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Bangalore skyline"
     },
     {
       "id": "blog-8",
       "description": "The iconic sea link bridge in Mumbai, representing the financial maze and opportunities for D2C startups.",
-      "imageUrl": "https://images.unsplash.com/photo-1601693115878-9223922e4eea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxNdW1iYWklMjBzZWFsaW5rfGVufDB8fHx8MTc2OTA4MDUzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562077790-b946f1c6106e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxNdW1iYWklMjBzZWFsaW5rfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Mumbai sealink"
     },
     {
       "id": "blog-9",
       "description": "A modern office building in Delhi-NCR, reflecting the region's B2B SaaS boom.",
-      "imageUrl": "https://images.unsplash.com/flagged/photo-1576485436509-a7d286952b65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEZWxoaSUyMG9mZmljZXxlbnwwfHx8fDE3NjkwODA1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666718622560-f65665c80c4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8RGVsaGklMjBvZmZpY2V8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Delhi office"
     },
     {
       "id": "blog-10",
       "description": "An automated factory floor, symbolizing the manufacturing prowess of Ahmedabad.",
-      "imageUrl": "https://images.unsplash.com/photo-1582190506824-ef3bd95a956e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjdG9yeSUyMG1hbnVmYWN0dXJpbmd8ZW58MHx8fHwxNzY5MDgwNTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610895953514-4c6f2f2f4393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYWN0b3J5JTIwbWFudWZhY3R1cmluZ3xlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "factory manufacturing"
     },
     {
       "id": "blog-11",
       "description": "A view of Jaipur's iconic Hawa Mahal, representing the blend of culture and emerging tech.",
-      "imageUrl": "https://images.unsplash.com/photo-1712653654273-14f724c63eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxKYWlwdXIlMjBIYXdhTWFoYWx8ZW58MHx8fHwxNzY5MDgwNTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1712653654273-14f724c63eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxKYWlwdXIlMjBIYXdhTWFoYWx8ZW58MHx8fHwxNzY5NzUyODM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Jaipur HawaMahal"
     },
     {
@@ -141,133 +141,133 @@
     {
       "id": "blog-13",
       "description": "A checklist on a desk with a pen and coffee, symbolizing an accounting setup.",
-      "imageUrl": "https://images.unsplash.com/photo-1692158961562-cb06d93fb63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2OTEwNjA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1692158961562-cb06d93fb63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "accounting checklist"
     },
     {
       "id": "blog-14",
       "description": "Two books on a scale, one labeled 'Bookkeeping' and the other 'Accounting'.",
-      "imageUrl": "https://images.unsplash.com/photo-1753955900083-b62ee8d97805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29ra2VlcGluZyUyMGFjY291bnRpbmd8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1675242314995-034d11bac319?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib29ra2VlcGluZyUyMGFjY291bnRpbmd8ZW58MHx8fHwxNzY5NzUyODM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bookkeeping accounting"
     },
     {
       "id": "blog-15",
       "description": "A split image showing cash on one side and a calendar with transactions on the other, representing cash vs accrual.",
-      "imageUrl": "https://images.unsplash.com/photo-1603940516962-4976f0d44a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNoJTIwYWNjcnVhbHxlbnwwfHx8fDE3NjkxMDYwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1710302146407-4a8e2c2b9eb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXNoJTIwYWNjcnVhbHxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cash accrual"
     },
     {
       "id": "blog-16",
       "description": "A clean, modern dashboard on a tablet showing key financial MIS reports like P&L and cash flow.",
-      "imageUrl": "https://images.unsplash.com/photo-1640451859877-1374a1155215?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNpYWwlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651129526361-d31cd025e662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmluYW5jaWFsJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2OTcwMjQ4NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial dashboard"
     },
     {
       "id": "blog-17",
       "description": "A crumbling piggy bank with coins falling out, symbolizing how poor bookkeeping kills value.",
-      "imageUrl": "https://images.unsplash.com/photo-1744818561373-b21480e1b218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb29yJTIwZmluYW5jZXxlbnwwfHx8fDE3NjkxMDYwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1494888427482-242d32babc0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwb29yJTIwZmluYW5jZXxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "poor finance"
     },
     {
       "id": "blog-18",
       "description": "A yearly calendar with key compliance dates like 'GST Filing' and 'ITR Due Date' circled.",
-      "imageUrl": "https://images.unsplash.com/photo-1606482512676-255bf02be7cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wbGlhbmNlJTIwY2FsZW5kYXJ8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606482608486-90b78aac2bea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21wbGlhbmNlJTIwY2FsZW5kYXJ8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "compliance calendar"
     },
     {
       "id": "blog-19",
       "description": "A financial document with several red flags pinned to it, highlighting common accounting errors.",
-      "imageUrl": "https://images.unsplash.com/photo-1649209979970-f01d950cc5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwZXJyb3JzfGVufDB8fHx8MTc2OTEwNjA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1642043175009-5997b3a078d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhY2NvdW50aW5nJTIwZXJyb3JzfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "accounting errors"
     },
     {
       "id": "blog-20",
       "description": "A small plant growing into a large, strong tree, symbolizing a scalable accounting system.",
-      "imageUrl": "https://images.unsplash.com/photo-1764113697577-b5899b9a339d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2FsYWJsZSUyMHN5c3RlbXxlbnwwfHx8fDE3NjkxMDYwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1697752193132-f632affcb3f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzY2FsYWJsZSUyMHN5c3RlbXxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scalable system"
     },
     {
       "id": "blog-21",
       "description": "Logos of popular accounting software like Zoho Books and Tally on a laptop screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb2Z0d2FyZSUyMGNvbXBhcmlzb258ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2Z0d2FyZSUyMGNvbXBhcmlzb258ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "software comparison"
     },
     {
       "id": "blog-22",
       "description": "A person standing at a fork in the road, with one path leading to 'Hire Accountant' and the other to 'DIY'.",
-      "imageUrl": "https://images.unsplash.com/photo-1758520144563-a2a0d43e4af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoaXJpbmclMjBkZWNpc2lvbnxlbnwwfHx8fDE3NjkxMDYwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758520144429-74037f3e6492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaXJpbmclMjBkZWNpc2lvbnxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hiring decision"
     },
     {
       "id": "blog-23",
       "description": "Complex financial charts and graphs with question marks over them, representing challenges for funded startups.",
-      "imageUrl": "https://images.unsplash.com/photo-1642043175009-5997b3a078d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhY2NvdW50aW5nJTIwY2hhbGxlbmdlc3xlbnwwfHx8fDE3NjkxMDYwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1761546571631-a4d61b55cd2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhY2NvdW50aW5nJTIwY2hhbGxlbmdlc3xlbnwwfHx8fDE3Njk3NTI4Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "accounting challenges"
     },
     {
       "id": "blog-24",
       "description": "A magnifying glass closely examining a balance sheet, symbolizing due diligence.",
-      "imageUrl": "https://images.unsplash.com/photo-1768839720567-e8bd39b38396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkdWUlMjBkaWxpZ2VuY2V8ZW58MHx8fHwxNzY5MTA2MDU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1670105751017-99567a886016?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkdWUlMjBkaWxpZ2VuY2V8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "due diligence"
     },
     {
       "id": "blog-25",
       "description": "A hockey stick growth chart made of gold coins, symbolizing how clean books help raise funds.",
-      "imageUrl": "https://images.unsplash.com/photo-1634757439914-23b8acb9d411?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyYWlzZSUyMGZ1bmRpbmd8ZW58MHx8fHwxNzY5MTA2MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1711199637515-dd265816acec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyYWlzZSUyMGZ1bmRpbmd8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "raise funding"
     },
     {
       "id": "blog-26",
       "description": "A person carefully planting seeds in a small pot, representing bootstrapped finance.",
-      "imageUrl": "https://images.unsplash.com/photo-1623460445294-064b6b6c1e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib290c3RyYXBwZWQlMjBmaW5hbmNlfGVufDB8fHx8MTc2OTEwNjA1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614787296891-d1b2b1aced36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib290c3RyYXBwZWQlMjBmaW5hbmNlfGVufDB8fHx8MTc2OTc1MjgzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bootstrapped finance"
     },
     {
       "id": "blog-27",
       "description": "A spreadsheet with several cells highlighted with red warning signs, representing investor red flags.",
-      "imageUrl": "https://images.unsplash.com/photo-1579054060927-7dcdbbe0fca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbnZlc3RvciUyMHJlZCUyMGZsYWdzfGVufDB8fHx8MTc2OTEwNjA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1511975557262-f7d5168d8a1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnZlc3RvciUyMHJlZCUyMGZsYWdzfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "investor red flags"
     },
     {
       "id": "blog-28",
       "description": "A team in a meeting room looking at financial charts on a large screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1758518727734-98f0a55983b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNpYWwlMjByZXZpZXd8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758519289013-9442fb2aeac6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjByZXZpZXd8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial review"
     },
     {
       "id": "blog-29",
       "description": "A piggy bank with visible cracks, symbolizing an impending cash crunch.",
-      "imageUrl": "https://images.unsplash.com/photo-1590625848451-07c54b56a680?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXNoJTIwY3J1bmNofGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1603940516962-4976f0d44a19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXNoJTIwY3J1bmNofGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cash crunch"
     },
     {
       "id": "blog-30",
       "description": "A single person planting a flag on a small hill, representing a bootstrapped startup.",
-      "imageUrl": "https://images.unsplash.com/photo-1581631059833-17c59be479d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib290c3RyYXBwZWQlMjBzdGFydHVwfGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583040059506-de30a2aaf7f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxib290c3RyYXBwZWQlMjBzdGFydHVwfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bootstrapped startup"
     },
     {
       "id": "blog-31",
       "description": "A crystal ball next to an old-fashioned abacus, symbolizing forecasting vs accounting.",
-      "imageUrl": "https://images.unsplash.com/photo-1753955900083-b62ee8d97805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmb3JlY2FzdGluZyUyMGFjY291bnRpbmd8ZW58MHx8fHwxNzY5MjY5MzIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1675242314995-034d11bac319?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb3JlY2FzdGluZyUyMGFjY291bnRpbmd8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "forecasting accounting"
     },
     {
       "id": "blog-32",
       "description": "A toolbox filled with icons representing financial tools like calculators and charts.",
-      "imageUrl": "https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwdG9vbHN8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1746221331496-a87689fc8eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwdG9vbHN8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance tools"
     },
     {
       "id": "blog-33",
       "description": "A person looking at a complex financial chart with a confused expression.",
-      "imageUrl": "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjb25mdXNpb258ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjb25mdXNpb258ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial confusion"
     },
     {
       "id": "blog-34",
       "description": "A pie chart broken into different segments representing various business costs.",
-      "imageUrl": "https://images.unsplash.com/photo-1763621587984-68065752ba6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3N0JTIwYW5hbHlzaXN8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650463404746-fb3dffda2d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29zdCUyMGFuYWx5c2lzfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cost analysis"
     },
     {
@@ -279,37 +279,37 @@
     {
       "id": "blog-36",
       "description": "A scale with 'Revenue' on one side and 'Costs' on the other, perfectly balanced.",
-      "imageUrl": "https://images.unsplash.com/photo-1637933929216-5d06f59ee448?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmVhayUyMGV2ZW58ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637942193293-4bf00eeddbef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmVhayUyMGV2ZW58ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "break even"
     },
     {
       "id": "blog-37",
       "description": "A calendar with certain dates circled for 'Monthly Review' and 'Quarterly Review'.",
-      "imageUrl": "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjByZXZpZXdzfGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611967564293-9cc64a2fd3dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaW5hbmNpYWwlMjByZXZpZXdzfGVufDB8fHx8MTc2OTc1MjgzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial reviews"
     },
     {
       "id": "blog-38",
       "description": "A small paper boat labeled 'Startup' sinking in a puddle.",
-      "imageUrl": "https://images.unsplash.com/photo-1690383921891-3f0a7567d815?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdGFydHVwJTIwZmFpbHVyZXxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508935620299-047e0e35fbe3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RhcnR1cCUyMGZhaWx1cmV8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "startup failure"
     },
     {
       "id": "blog-39",
       "description": "A seesaw balancing a piggy bank (discipline) and a rocket ship (growth).",
-      "imageUrl": "https://images.unsplash.com/photo-1769095206270-09c3d233a2bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBkaXNjaXBsaW5lfGVufDB8fHx8MTc2OTI2OTMyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758599879661-a656f9678ce2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBkaXNjaXBsaW5lfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "growth discipline"
     },
     {
       "id": "blog-40",
       "description": "A person watering a plant carefully, symbolizing financial planning.",
-      "imageUrl": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjkyODA0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3Njk3NTI4MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial planning"
     },
     {
       "id": "blog-41",
       "description": "A simple line graph showing a startup's valuation increasing over time through funding rounds.",
-      "imageUrl": "https://images.unsplash.com/photo-1660970781103-ba6749cb9ce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RhcnR1cCUyMHZhbHVhdGlvbnxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1680735692365-f5821fb2217b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwdmFsdWF0aW9ufGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "startup valuation"
     },
     {
@@ -321,31 +321,31 @@
     {
       "id": "blog-43",
       "description": "A document with the title 'Standard Operating Procedures' being signed.",
-      "imageUrl": "https://images.unsplash.com/photo-1580027609553-d1ee7aa70d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjBTT1B8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599585183326-87b1fff61c33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBTT1B8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial SOP"
     },
     {
       "id": "blog-44",
       "description": "A budget document with a red pen striking through certain high-cost items.",
-      "imageUrl": "https://images.unsplash.com/photo-1693027305183-acba0aea6d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleHBlbnNlJTIwY29udHJvbHxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1768760819947-f6772ae3f433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxleHBlbnNlJTIwY29udHJvbHxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "expense control"
     },
     {
       "id": "blog-45",
       "description": "An open book with the title 'Startup Accounting Myths' on the cover.",
-      "imageUrl": "https://images.unsplash.com/photo-1675242314995-034d11bac319?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwbXl0aHN8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1570973622932-56ababab9abd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhY2NvdW50aW5nJTIwbXl0aHN8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "accounting myths"
     },
     {
       "id": "blog-46",
       "description": "A person neatly organizing files and documents into a box labeled 'Audit Prep'.",
-      "imageUrl": "https://images.unsplash.com/photo-1768839721719-c5ed97c1fd58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBhdWRpdHxlbnwwfHx8fDE3NjkyNjkzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653378972643-5ac307460d36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBhdWRpdHxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial audit"
     },
     {
       "id": "blog-47",
       "description": "A bank vault overflowing with cash, symbolizing the challenge of managing post-fundraise capital.",
-      "imageUrl": "https://images.unsplash.com/photo-1762427354220-ee06e69ee817?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5hZ2luZyUyMGNhc2h8ZW58MHx8fHwxNzY5MjY5MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758686254550-c5d8f4de1b3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW5hZ2luZyUyMGNhc2h8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "managing cash"
     },
     {
@@ -357,25 +357,25 @@
     {
       "id": "blog-49",
       "description": "An hourglass with money slowly flowing from top to bottom, symbolizing deferred revenue being recognized over time.",
-      "imageUrl": "https://images.unsplash.com/photo-1633857816537-95caafa8f794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZWZlcnJlZCUyMHJldmVudWV8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633857816537-95caafa8f794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZWZlcnJlZCUyMHJldmVudWV8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "deferred revenue"
     },
     {
       "id": "blog-50",
       "description": "A calendar with future dates marked with a dollar sign, representing prepaid expenses.",
-      "imageUrl": "https://images.unsplash.com/photo-1763872849312-67984fbf5f68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcmVwYWlkJTIwZXhwZW5zZXN8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650821414390-276561abd95a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmVwYWlkJTIwZXhwZW5zZXN8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "prepaid expenses"
     },
     {
       "id": "blog-51",
       "description": "A set of guardrails along a winding road, symbolizing financial controls.",
-      "imageUrl": "https://images.unsplash.com/photo-1734417795018-a16c7f18076d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBjb250cm9sc3xlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1766503498598-494939f8d3b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBjb250cm9sc3xlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial controls"
     },
     {
       "id": "blog-52",
       "description": "A car dashboard with multiple gauges for KPIs like MRR, Churn, and LTV.",
-      "imageUrl": "https://images.unsplash.com/photo-1758876020300-76a782ca51c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwS1BJc3xlbnwwfHx8fDE3NjkyODAzMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758876020300-76a782ca51c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNlJTIwS1BJc3xlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance KPIs"
     },
     {
@@ -387,61 +387,61 @@
     {
       "id": "blog-54",
       "description": "A pair of scissors trimming a dollar bill, representing cost optimization.",
-      "imageUrl": "https://images.unsplash.com/photo-1764344815160-0e2afc6939a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb3N0JTIwb3B0aW1pemF0aW9ufGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1764344815160-0e2afc6939a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb3N0JTIwb3B0aW1pemF0aW9ufGVufDB8fHx8MTc2OTc1MjgzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cost optimization"
     },
     {
       "id": "blog-55",
       "description": "A circular diagram showing the flow of cash from inventory to sales to receivables and back.",
-      "imageUrl": "https://images.unsplash.com/photo-1650772131759-a9e28f06557f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXNoJTIwY3ljbGV8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651250789595-0f1656600d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNoJTIwY3ljbGV8ZW58MHx8fHwxNzY5NzUyODM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cash cycle"
     },
     {
       "id": "blog-56",
       "description": "A stack of invoices being paid in an organized manner.",
-      "imageUrl": "https://images.unsplash.com/photo-1727329522300-c56e0ebe7437?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2ZW5kb3IlMjBwYXltZW50c3xlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2ZW5kb3IlMjBwYXltZW50c3xlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "vendor payments"
     },
     {
       "id": "blog-57",
       "description": "A small plant growing into a large tree with financial charts on its leaves.",
-      "imageUrl": "https://images.unsplash.com/photo-1614787296891-d1b2b1aced36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY2FsaW5nJTIwZmluYW5jZXxlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618044733300-9472054094ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY2FsaW5nJTIwZmluYW5jZXxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scaling finance"
     },
     {
       "id": "blog-58",
       "description": "A person being added to a company org chart, with dollar signs flowing out.",
-      "imageUrl": "https://images.unsplash.com/photo-1762330464720-d77f2614f1b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaXJpbmclMjBpbXBhY3R8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762330464720-d77f2614f1b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaXJpbmclMjBpbXBhY3R8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hiring impact"
     },
     {
       "id": "blog-59",
       "description": "A rulebook with the title 'Startup Expense Policy'.",
-      "imageUrl": "https://images.unsplash.com/photo-1727072206145-bf6f47befe9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleHBlbnNlJTIwcG9saWN5fGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762463176417-2c5e63767bd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxleHBlbnNlJTIwcG9saWN5fGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "expense policy"
     },
     {
       "id": "blog-60",
       "description": "A person meditating in a zen garden made of coins, symbolizing financial discipline.",
-      "imageUrl": "https://images.unsplash.com/photo-1764231467896-73f0ef4438aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBkaXNjaXBsaW5lfGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1766503498598-494939f8d3b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBkaXNjaXBsaW5lfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial discipline"
     },
     {
       "id": "blog-61",
       "description": "A compass pointing towards a goal labeled 'Financial Plan'.",
-      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3Njk3NTI4MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial planning"
     },
     {
       "id": "blog-62",
       "description": "A tightrope walker balancing over a canyon, representing financial risk.",
-      "imageUrl": "https://images.unsplash.com/photo-1760738999539-ea1257b5da78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjByaXNrfGVufDB8fHx8MTc2OTI4MDMyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554672723-60f4d5d5074f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjByaXNrfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial risk"
     },
     {
       "id": "blog-63",
       "description": "A clear piggy bank, showing the exact amount of cash inside, symbolizing cash flow clarity.",
-      "imageUrl": "https://images.unsplash.com/photo-1593672715438-d88a70629abe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXNoJTIwZmxvd3xlbnwwfHx8fDE3NjkxNzU5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1698584200770-3838c3690a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXNoJTIwZmxvd3xlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cash flow"
     },
     {
@@ -453,79 +453,79 @@
     {
       "id": "blog-65",
       "description": "A checklist with items like 'Clean Cap Table' and 'Financial Model Ready' for fundraising.",
-      "imageUrl": "https://images.unsplash.com/photo-1578091436046-ecd3f4fe6992?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdW5kcmFpc2luZyUyMGNoZWNrbGlzdHxlbnwwfHx8fDE3NjkyODAzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623265300797-4a3541e29a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmdW5kcmFpc2luZyUyMGNoZWNrbGlzdHxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fundraising checklist"
     },
     {
       "id": "blog-66",
       "description": "A person choosing between two paths, one labeled 'Guesswork' and the other 'Forecasting'.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwZm9yZWNhc3Rpbmd8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwZm9yZWNhc3Rpbmd8ZW58MHx8fHwxNzY5NzUyODM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "startup forecasting"
     },
     {
       "id": "blog-67",
       "description": "A diagram showing a finance stack evolving from a simple spreadsheet to integrated software.",
-      "imageUrl": "https://images.unsplash.com/photo-1744818561373-b21480e1b218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwc3RhY2t8ZW58MHx8fHwxNzY5MjgwMzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1608521705033-9953484663b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwc3RhY2t8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance stack"
     },
     {
       "id": "case-study-1",
       "description": "A logistics warehouse with workers moving packages, representing QuantumLeap Logistics.",
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2V8ZW58MHx8fHwxNzY5NzE1MTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "logistics warehouse"
     },
     {
       "id": "case-study-2",
       "description": "A person using a laptop with code on the screen, representing the InnovateX SaaS product.",
-      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d1469c5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1505238680356-667803448bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXB0b3AlMjBjb2RlfGVufDB8fHx8MTc2OTY5ODYzMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "laptop code"
     },
     {
       "id": "case-study-3",
       "description": "A doctor looking at a medical scan on a screen, with an AI overlay highlighting areas of interest for MediBot.",
-      "imageUrl": "https://images.unsplash.com/photo-1622953270744-3d9692482a0d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1691935152212-596d5ee37383?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkb2N0b3IlMjBzY2FufGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "doctor scan"
     },
     {
       "id": "case-study-4",
       "description": "A beautifully arranged shot of artisanal food products, representing the Urban Roots D2C brand.",
-      "imageUrl": "https://images.unsplash.com/photo-1606859310434-a8c6b24570de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1760124056928-a9960b1b1dd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcnRpc2FuYWwlMjBmb29kfGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "artisanal food"
     },
     {
       "id": "team-ca",
       "description": "A professional Chartered Accountant working in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1628260122582-747f329971a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGFydGVyZWQlMjBhY2NvdW50YW50fGVufDB8fHx8MTc2OTI4NDg0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621838422788-71cde6793da2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGFydGVyZWQlMjBhY2NvdW50YW50fGVufDB8fHx8MTc2OTc1MjgzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "chartered accountant"
     },
     {
       "id": "team-big4",
       "description": "A team of consultants in a boardroom, representing Big Four expertise.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0YW50cyUyMGJvYXJkcm9vbXxlbnwwfHx8fDE3NjkyODQ4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/team2/800/600",
       "imageHint": "consultants boardroom"
     },
     {
       "id": "team-iit-iim",
       "description": "Graduates in caps and gowns in front of a prestigious university building.",
-      "imageUrl": "https://images.unsplash.com/photo-1627552245715-7c1303b735c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmFkdWF0ZXN8ZW58MHx8fHwxNzY5Mjg0ODQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653373243111-caceddc86aef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JhZHVhdGVzJTIwdW5pdmVyc2l0eXxlbnwwfHx8fDE3Njk3NTI4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "graduates university"
     },
     {
       "id": "blog-gst-1",
       "description": "A document with 'GST Registration' written on it, next to a calculator and a pen.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHU1QlMjByZWdpc3RyYXRpb258ZW58MHx8fHwxNzY5MzU4ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1523154410-31a6b052652b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnc3QlMjByZWdpc3RyYXRpb258ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gst registration"
     },
     {
       "id": "blog-gst-2",
       "description": "A checklist with items like 'Company PAN', 'Bank Account', and 'Address Proof' for GST registration.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-169544351725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHU1QlMjBjb21wbGlhbmNlfGVufDB8fHx8MTc2OTM1ODg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1705302626169-86b9762762f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnc3QlMjBjaGVja2xpc3R8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gst checklist"
     },
     {
       "id": "blog-gst-3",
       "description": "An icon-based image showing a subscription icon with a GST tax symbol overlaid.",
-      "imageUrl": "https://images.unsplash.com/photo-1591522810633-3363f115af87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdWJzY3JpcHRpb24lMjB0YXh8ZW58MHx8fHwxNzY5NDI5Mjk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591522810633-3363f115af87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdWJzY3JpcHRpb24lMjB0YXh8ZW58MHx8fHwxNzY5NzUyODM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "subscription tax"
     }
   ]
