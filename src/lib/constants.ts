@@ -60,7 +60,7 @@ export const LOCATIONS = [
     { name: 'Mumbai' },
     { name: 'Delhi' },
     { name: 'Hyderabad' },
-    { name: 'Chennai' },
+    { name: 'Indore' },
     { name: 'Kolkata' },
     { name: 'Pune' },
     { name: 'Ahmedabad' },
