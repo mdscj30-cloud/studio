@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import {
   Briefcase,
@@ -58,9 +59,13 @@ export const LOCATIONS = [
     { name: 'Bangalore' },
     { name: 'Mumbai' },
     { name: 'Delhi' },
-    { name: 'Indore' },
-    { name: 'Jaipur' },
+    { name: 'Hyderabad' },
+    { name: 'Chennai' },
+    { name: 'Kolkata' },
+    { name: 'Pune' },
     { name: 'Ahmedabad' },
+    { name: 'Gurgaon' },
+    { name: 'Noida' },
 ];
 
 export const SERVICES = [

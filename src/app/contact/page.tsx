@@ -1,6 +1,8 @@
 
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
+import Link from 'next/link';
 import { LOCATIONS } from '@/lib/constants';
+import { TARGETED_SERVICES } from '@/lib/location-service-data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { RequestConsultation } from '@/components/layout/PartnerWithUs';
 
@@ -10,6 +12,8 @@ export const metadata = {
 };
 
 export default function ContactPage() {
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
+  
   return (
     <>
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
@@ -59,21 +63,34 @@ export default function ContactPage() {
                 <Card>
                     <CardHeader>
                         <CardTitle className="text-2xl text-primary">Our Presence</CardTitle>
-                        <CardDescription>Serving startups from key hubs across India.</CardDescription>
+                        <CardDescription>Explore our core services available in key startup hubs across India.</CardDescription>
                     </CardHeader>
                     <CardContent>
-                        <ul className="grid sm:grid-cols-2 gap-4">
+                        <div className="columns-2 gap-x-8">
                             {LOCATIONS.map(location => (
-                                <li key={location.name} className="flex items-center">
-                                    <MapPin className="w-5 h-5 mr-3 shrink-0 text-accent" />
-                                    <span className='font-medium'>{location.name}</span>
-                                </li>
+                                <div key={location.name} className="mb-6 break-inside-avoid">
+                                    <h4 className="font-semibold flex items-center gap-2 mb-2 text-foreground">
+                                        <MapPin className="w-5 h-5 shrink-0 text-accent" />
+                                        {location.name}
+                                    </h4>
+                                    <ul className="space-y-1.5 pl-7">
+                                        {TARGETED_SERVICES.map(service => {
+                                            const slug = `${slugify(service.title)}-${slugify(location.name)}`;
+                                            return (
+                                                <li key={slug}>
+                                                    <Link href={`/india-services/${slug}`} className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                                                        {service.title}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
                             ))}
-                        </ul>
-                        <p className="text-xs text-muted-foreground mt-4">While we have a presence in these cities, we operate on a remote-first basis to serve clients across India and globally.</p>
+                        </div>
+                        <p className="text-xs text-muted-foreground mt-4">While we have a presence in these key hubs, we operate on a remote-first basis to serve clients across India and globally.</p>
                     </CardContent>
                 </Card>
-
               </div>
           </div>
       </section>
