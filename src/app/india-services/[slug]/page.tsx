@@ -1,6 +1,6 @@
 
 import { notFound } from 'next/navigation';
-import { LOCATION_SERVICE_PAGES, LocationService } from '@/lib/location-service-data';
+import { LOCATION_SERVICE_PAGES, TARGETED_SERVICES } from '@/lib/location-service-data';
 import { SERVICES } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -47,6 +47,7 @@ const serviceToBlogCategory: Record<string, string[]> = {
   'roc-compliance': ['roc, company law & fema', 'due diligence'],
 };
 
+const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
 export default function LocationServicePage({ params }: Props) {
   const page = LOCATION_SERVICE_PAGES.find((p) => p.slug === params.slug);
@@ -69,6 +70,8 @@ export default function LocationServicePage({ params }: Props) {
   const relatedCaseStudy = getDetailedCaseStudies().find(study => 
     study.services.some(s => s.toLowerCase().includes(page.service.title.toLowerCase().replace(' services', '')))
   );
+
+  const otherServicesInCity = TARGETED_SERVICES.filter(s => s.key !== page.service.key);
 
   return (
     <>
@@ -160,6 +163,30 @@ export default function LocationServicePage({ params }: Props) {
                 </CardContent>
               </Card>
 
+              {otherServicesInCity.length > 0 && (
+                <Card>
+                    <CardHeader>
+                        <CardTitle>Other Services in {page.city}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="space-y-3">
+                            {otherServicesInCity.map(service => {
+                                const slug = `${slugify(service.title)}-${slugify(page.city)}`;
+                                const ServiceIcon = service.Icon;
+                                return (
+                                    <li key={slug}>
+                                        <Link href={`/india-services/${slug}`} className="font-semibold text-primary hover:text-accent transition-colors flex items-center gap-2">
+                                            <ServiceIcon className="w-5 h-5 text-accent shrink-0" />
+                                            <span>{service.title}</span>
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </CardContent>
+                </Card>
+              )}
+
               {(relatedBlog || relatedCaseStudy) && (
                  <Card>
                     <CardHeader>
@@ -167,7 +194,7 @@ export default function LocationServicePage({ params }: Props) {
                     </CardHeader>
                     <CardContent className="space-y-4">
                         {relatedBlog && (
-                            <Link href={`/blog/${relatedBlog.slug}`} className="group block">
+                            <Link href={`/resources/blog/${relatedBlog.slug}`} className="group block">
                                 <p className="font-semibold text-primary group-hover:text-accent transition-colors">Blog Post</p>
                                 <p className="text-sm text-muted-foreground">{relatedBlog.title}</p>
                             </Link>
