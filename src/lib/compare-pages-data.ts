@@ -45,7 +45,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'virtual-cfo-vs-in-house-cfo',
     title: 'Virtual CFO vs In-house CFO: Which is Right for Your Startup?',
-    description: 'A detailed comparison of <a href="/services/virtual-cfo">Virtual CFO services</a> and a full-time in-house CFO, covering cost, expertise, and scalability to help you make the right choice.',
+    description: 'A detailed comparison of Virtual CFO services and a full-time in-house CFO, covering cost, expertise, and scalability to help you make the right choice.',
     h1: 'Virtual CFO vs. In-house CFO',
     Icon: Users,
     itemA: {
@@ -213,7 +213,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'outsourced-vs-in-house-accounting',
     title: 'Outsourced vs In-house Accounting: A Startup\'s Dilemma',
-    description: 'A practical comparison between <a href="/pricing/outsourced-accounting-cost">outsourcing your accounting</a> function and building an in-house team, covering cost, expertise, control, and scalability.',
+    description: 'A practical comparison between outsourcing your accounting function and building an in-house team, covering cost, expertise, control, and scalability.',
     h1: 'Outsourced vs. In-house Accounting',
     Icon: Briefcase,
     itemA: {
@@ -271,7 +271,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'gst-consultant-vs-ca',
     title: 'GST Consultant vs CA for Startups',
-    description: 'Do you need a specialized <a href="/india-services/gst-consultant-bangalore">GST consultant</a> or a general CA for your startup\'s GST compliance? This guide compares their roles, expertise, and costs.',
+    description: 'Do you need a specialized GST consultant or a general CA for your startup\'s GST compliance? This guide compares their roles, expertise, and costs.',
     h1: 'GST Consultant vs. CA',
     Icon: Scale,
     itemA: {
@@ -325,7 +325,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'safe-vs-convertible-note',
     title: 'SAFE vs Convertible Note: Key Differences for Founders',
-    description: 'A clear breakdown of two popular early-stage fundraising instruments, <a href="/startup-finance-glossary/what-is-safe">SAFE</a> and <a href="/startup-finance-glossary/what-is-convertible-note">Convertible Note</a>, comparing their terms, complexity, and implications for founders.',
+    description: 'A clear breakdown of two popular early-stage fundraising instruments, SAFE and Convertible Note, comparing their terms, complexity, and implications for founders.',
     h1: 'SAFE vs. Convertible Note',
     Icon: FileText,
     itemA: {
@@ -381,7 +381,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'equity-vs-debt-financing',
     title: 'Equity vs Debt Financing: A Startup Founder\'s Guide',
-    description: 'Understand the fundamental trade-offs between raising capital by selling <a href="/startup-finance-glossary/what-is-equity-financing">equity (ownership)</a> versus taking on <a href="/startup-finance-glossary/what-is-debt-financing">debt (loans)</a>. Learn which is right for your stage.',
+    description: 'Understand the fundamental trade-offs between raising capital by selling equity (ownership) versus taking on debt (loans). Learn which is right for your stage.',
     h1: 'Equity vs. Debt Financing',
     Icon: Handshake,
     itemA: {
@@ -497,7 +497,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'bootstrapping-vs-funding',
     title: 'Bootstrapping vs Funding: The Right Path for Your Startup',
-    description: 'A comparison of building a business with your own revenue (<a href="/startup-finance-glossary/what-is-bootstrapping">bootstrapping</a>) versus raising <a href="/startup-finance-glossary/what-is-venture-capital">venture capital</a>, covering control, growth speed, and long-term outcomes.',
+    description: 'A comparison of building a business with your own revenue (bootstrapping) versus raising venture capital, covering control, growth speed, and long-term outcomes.',
     h1: 'Bootstrapping vs. Funding',
     Icon: Anchor,
     itemA: {
@@ -785,7 +785,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'revenue-based-financing-vs-venture-debt',
     title: 'Revenue-Based Financing vs Venture Debt for Startups',
-    description: 'A look at two non-dilutive funding options for startups. Compare RBF and <a href="/startup-finance-glossary/what-is-venture-debt">venture debt</a> on repayment structure, cost, and use cases.',
+    description: 'A look at two non-dilutive funding options for startups. Compare RBF and venture debt on repayment structure, cost, and use cases.',
     h1: 'Revenue-Based Financing vs. Venture Debt',
     Icon: HandCoins,
     itemA: {
@@ -901,7 +901,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'qrmp-vs-monthly-gst-filing',
     title: 'QRMP vs Monthly GST Filing: Which Scheme for Your Startup?',
-    description: 'A guide to the <a href="/startup-finance-glossary/what-is-qrmp-scheme">QRMP</a> (Quarterly Return Monthly Payment) scheme for GST. Compare it with traditional monthly filings to see if it simplifies compliance for your small business.',
+    description: 'A guide to the QRMP (Quarterly Return Monthly Payment) scheme for GST. Compare it with traditional monthly filings to see if it simplifies compliance for your small business.',
     h1: 'QRMP vs. Monthly GST Filing',
     Icon: FileText,
     itemA: {
@@ -949,7 +949,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     whenToChoose: {
       title: 'When to Choose Which',
       choiceA: 'Choose the Monthly Filing Scheme if you are a B2B business where providing prompt ITC to your customers is important, or if you prefer a regular, monthly compliance rhythm.',
-      choiceB: 'Choose the QRMP Scheme if you are a small, primarily B2C business with a turnover under ₹5 Crore and want to reduce your filing frequency. It is designed to ease the compliance burden for small taxpayers.'
+      choiceB: 'Choose the <a href="/startup-finance-glossary/what-is-qrmp-scheme">QRMP Scheme</a> if you are a small, primarily B2C business with a turnover under ₹5 Crore and want to reduce your filing frequency. It is designed to ease the compliance burden for small taxpayers.'
     },
     relatedServices: ['regulatory-compliances'],
     relatedGlossaryTerms: ['what-is-qrmp-scheme', 'what-is-goods-and-services-tax']
@@ -957,7 +957,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'trademark-vs-copyright',
     title: 'Trademark vs Copyright: What Does Your Startup Need to Protect?',
-    description: 'A clear guide explaining the difference between a <a href="/startup-finance-glossary/what-is-trademark">trademark</a> and a <a href="/startup-finance-glossary/what-is-copyright">copyright</a>, what each one protects, and which registrations are critical for your startup.',
+    description: 'A clear guide explaining the difference between a trademark and a copyright, what each one protects, and which registrations are critical for your startup.',
     h1: 'Trademark vs. Copyright',
     Icon: Scale,
     itemA: {
@@ -1004,8 +1004,8 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     },
     whenToChoose: {
       title: 'When to Choose Which',
-      choiceA: 'You need a Trademark to protect your company name and product name as soon as you start your business. This is fundamental to building a brand.',
-      choiceB: 'You need Copyright to protect the valuable creative assets you produce, most importantly, your software source code. For a tech startup, protecting both your brand (trademark) and your code (copyright) is essential.'
+      choiceA: 'You need a <a href="/startup-finance-glossary/what-is-trademark">Trademark</a> to protect your company name and product name as soon as you start your business. This is fundamental to building a brand.',
+      choiceB: 'You need <a href="/startup-finance-glossary/what-is-copyright">Copyright</a> to protect the valuable creative assets you produce, most importantly, your software source code. For a tech startup, protecting both your brand (trademark) and your code (copyright) is essential.'
     },
     relatedServices: ['corporate-law'],
     relatedGlossaryTerms: ['what-is-trademark', 'what-is-copyright', 'what-is-intellectual-property']
@@ -1013,7 +1013,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
    {
     slug: 'saas-vs-licensed-software',
     title: 'SaaS vs Licensed Software: A Business Model Comparison',
-    description: 'A deep dive into the financial and operational differences between a <a href="/solutions/virtual-cfo-for-saas-startups">SaaS (Subscription)</a> model and a traditional Licensed Software model.',
+    description: 'A deep dive into the financial and operational differences between a SaaS (Subscription) model and a traditional Licensed Software model.',
     h1: 'SaaS vs. Licensed Software',
     Icon: Cloud,
     itemA: {
@@ -1070,7 +1070,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     relatedGlossaryTerms: ['what-is-saas', 'what-is-monthly-recurring-revenue', 'what-is-deferred-revenue']
   },
   {
-    slug: 'cloud-vs-on-premise',
+    slug: 'cloud-vs-on-premise-hosting',
     title: 'Cloud vs On-Premise: Hosting Decision for Startups',
     description: 'A comparison of hosting your software on the cloud (e.g., AWS, Azure) versus on-premise servers, covering cost, scalability, and security.',
     h1: 'Cloud vs. On-Premise Hosting',
@@ -1224,7 +1224,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'Key Differences',
       headers: ['Aspect', 'Service Business', 'Product Business'],
       rows: [
-        { feature: 'Scalability', valueA: 'Low (Linear)', valueB: 'High (Exponential)' },
+        { feature: 'Scalability', valueA: 'Linear', valueB: 'Exponential' },
         { feature: 'Upfront Investment', valueA: 'Low', valueB: 'High' },
         { feature: 'Path to First Revenue', valueA: 'Fast', valueB: 'Slow' },
         { feature: 'Asset Creation', valueA: 'You are the asset', valueB: 'The product is the asset' },
@@ -1414,7 +1414,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'ai-cfo-vs-human-cfo',
     title: 'AI CFO vs Human CFO: The Future of Startup Finance',
-    description: 'A forward-looking comparison between emerging AI-powered finance platforms and the traditional human <a href="/services/virtual-cfo">Virtual CFO</a>, exploring their roles in the future.',
+    description: 'A forward-looking comparison between emerging AI-powered finance platforms and the traditional human Virtual CFO, exploring their roles in the future.',
     h1: 'AI CFO vs. Human CFO',
     Icon: BrainCircuit,
     itemA: {
@@ -1473,7 +1473,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'saas-vs-d2c-business-models',
     title: 'SaaS vs D2C: A Deep Dive into Startup Business Models',
-    description: 'Comparing the financial DNA of <a href="/solutions/virtual-cfo-for-saas-startups">SaaS</a> and <a href="/industry-finance/gst-for-d2c-brands-india">D2C</a> startups, from cost structures and margins to cash flow cycles and scalability.',
+    description: 'Comparing the financial DNA of SaaS and D2C startups, from cost structures and margins to cash flow cycles and scalability.',
     h1: 'SaaS vs. D2C Business Models',
     Icon: Package,
     itemA: {
@@ -1532,7 +1532,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'consulting-vs-saas',
     title: 'Consulting vs SaaS: From Service to Scalable Product',
-    description: 'Many SaaS companies start as consulting gigs. This guide compares the two models and outlines the path to productizing your service.',
+    description: 'A comparison of service-based (consulting) and product-based (SaaS) business models, and the path to productizing your service.',
     h1: 'Consulting vs. SaaS',
     Icon: Briefcase,
     itemA: {
@@ -1590,7 +1590,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     relatedGlossaryTerms: ['what-is-saas', 'what-is-scalability', 'what-is-productize-your-service']
   },
   {
-    slug: 'tech-vs-non-tech-cofounder',
+    slug: 'tech-vs-non-tech-co-founder',
     title: 'Tech vs Non-Tech Co-Founder: The Ideal Startup Founding Team',
     description: 'A look at the classic founding team archetypes. We compare the roles and responsibilities of a technical co-founder and a non-technical (business) co-founder.',
     h1: 'Tech vs. Non-Tech Co-Founder',
@@ -1816,7 +1816,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   },
   {
     slug: 'phantom-stocks-vs-esops',
-    title: 'Phantom Stocks vs. ESOPs: A Comparison for Startups | Nexa',
+    title: 'Phantom Stocks vs. ESOPs: A Comparison for Startups',
     description: 'A guide for founders on choosing between Phantom Stocks and ESOPs to incentivize employees. We compare the impact on dilution, tax, and complexity.',
     h1: 'Phantom Stocks vs. ESOPs',
     Icon: Users,
