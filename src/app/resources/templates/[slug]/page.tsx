@@ -6,6 +6,9 @@ import Link from 'next/link';
 import { ArrowLeft, Download } from 'lucide-react';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { RequestConsultation } from '@/components/layout/PartnerWithUs';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { SERVICES } from '@/lib/constants';
+import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
 
 type Props = {
   params: { slug: string };
@@ -65,19 +68,72 @@ export default function TemplatePage({ params }: Props) {
         </div>
       </section>
 
-      <div className="container py-16 md:py-24">
-        <div
-            className="prose lg:prose-lg max-w-4xl mx-auto prose-ul:list-disc prose-ul:ml-6 prose-li:mb-2 prose-h2:text-2xl prose-h2:text-primary prose-h2:mb-4 prose-h3:text-xl prose-h3:text-primary prose-h3:mb-3"
-            dangerouslySetInnerHTML={{ __html: template.content }}
-        />
+      <div className="container">
+        <div className="grid md:grid-cols-3 gap-12 py-16 md:py-24">
+            <div className="md:col-span-2">
+                <div
+                    className="prose lg:prose-lg max-w-none prose-ul:list-disc prose-ul:ml-6 prose-li:mb-2 prose-h2:text-2xl prose-h2:text-primary prose-h2:mb-4 prose-h3:text-xl prose-h3:text-primary prose-h3:mb-3"
+                    dangerouslySetInnerHTML={{ __html: template.content }}
+                />
 
-        <div className="max-w-4xl mx-auto mt-12 text-center">
-            <Button asChild variant="link" className="text-accent p-0">
-                <Link href="/resources/templates">
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back to All Templates
-                </Link>
-            </Button>
+                <div className="max-w-4xl mx-auto mt-12">
+                    <Button asChild variant="link" className="text-accent p-0">
+                        <Link href="/resources/templates">
+                            <ArrowLeft className="mr-2 h-4 w-4" />
+                            Back to All Templates
+                        </Link>
+                    </Button>
+                </div>
+            </div>
+            <aside className="md:col-span-1">
+                 <div className="sticky top-24 space-y-8">
+                    {template.relatedServices && template.relatedServices.length > 0 && (
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Related Services</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <ul className="space-y-3">
+                                    {template.relatedServices.map(slug => {
+                                        const service = SERVICES.find(s => s.slug === slug);
+                                        if (!service) return null;
+                                        return (
+                                            <li key={slug}>
+                                                <Link href={`/services/${slug}`} className="font-semibold text-primary hover:text-accent transition-colors flex items-center gap-2">
+                                                    <service.icon className="w-5 h-5 text-accent" />
+                                                    {service.title}
+                                                </Link>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </CardContent>
+                        </Card>
+                    )}
+                    {template.relatedGlossaryTerms && template.relatedGlossaryTerms.length > 0 && (
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Related Glossary Terms</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <ul className="space-y-3">
+                                    {template.relatedGlossaryTerms.map(slug => {
+                                        const term = ALL_GLOSSARY_TERMS.find(t => t.slug === slug);
+                                        if (!term) return null;
+                                        return (
+                                            <li key={slug}>
+                                                <Link href={`/startup-finance-glossary/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                                                    {term.term}
+                                                </Link>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </CardContent>
+                        </Card>
+                    )}
+                 </div>
+            </aside>
         </div>
       </div>
       

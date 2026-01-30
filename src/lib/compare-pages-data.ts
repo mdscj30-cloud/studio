@@ -35,6 +35,8 @@ export interface ComparisonPage {
     choiceA: string;
     choiceB: string;
   };
+  relatedServices?: string[];
+  relatedGlossaryTerms?: string[];
 }
 
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
@@ -92,7 +94,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a <a href="/services/virtual-cfo">Virtual CFO</a> when you are an <a href="/who-we-help/pre-seed-startups">early-stage</a> to <a href="/who-we-help/series-a-startups">Series A startup</a> needing high-level strategic guidance without the high fixed cost of an executive hire. It\'s ideal for professionalizing your finance function and preparing for growth.',
       choiceB: 'Choose an In-house CFO when your company has reached a significant scale (typically post-Series B) and complexity, requiring a dedicated, on-site leader to manage a growing finance team and complex daily operations.'
-    }
+    },
+    relatedServices: ['virtual-cfo', 'bookkeeping'],
+    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-burn-rate', 'what-is-runway']
   },
   {
     slug: 'ca-firm-vs-virtual-cfo',
@@ -146,7 +150,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a CA Firm for your mandatory annual statutory audit and tax filings. They are your compliance specialists.',
       choiceB: 'Choose a <a href="/services/virtual-cfo">Virtual CFO</a> when you need more than just compliance. If you\'re raising funds, scaling rapidly, or need a strategic financial partner to help you manage growth, a vCFO is the right choice.'
-    }
+    },
+    relatedServices: ['virtual-cfo', 'regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-statutory-audit', 'what-is-compliance']
   },
   {
     slug: 'zoho-books-vs-tally',
@@ -200,7 +206,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Zoho Books if you are a modern, tech-savvy startup that values remote access, a user-friendly interface, and seamless integrations. It\'s the clear choice for founders who want real-time visibility into their finances.',
       choiceB: 'Choose Tally only if your entire ecosystem, including a very traditional CA, is deeply entrenched in it and refuses to adapt. For most startups, this is not the recommended path.'
-    }
+    },
+    relatedServices: ['bookkeeping'],
+    relatedGlossaryTerms: ['what-is-bookkeeping', 'what-is-accounting-software']
   },
   {
     slug: 'outsourced-vs-in-house-accounting',
@@ -256,7 +264,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Outsourced Accounting when you are an <a href="/who-we-help/pre-seed-startups">early-stage to Series A startup</a>. It\'s the most capital-efficient way to establish a professional finance function from day one.',
       choiceB: 'Consider hiring your first in-house accountant when your transaction volume becomes extremely high and you need a dedicated person for daily operational tasks. Even then, it\'s often best to keep strategic functions like the <a href="/services/virtual-cfo">vCFO</a> outsourced.'
-    }
+    },
+    relatedServices: ['bookkeeping', 'virtual-cfo'],
+    relatedGlossaryTerms: ['what-is-bookkeeping', 'what-is-accountant', 'what-is-capital-efficiency']
   },
   {
     slug: 'gst-consultant-vs-ca',
@@ -308,7 +318,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a specialized GST Consultant if your business has extremely complex GST needs (e.g., multi-state e-commerce with complex returns) and you have other professionals managing your income tax and audit.',
       choiceB: 'For most startups, engaging a full-service CA firm is more efficient. It provides a single point of contact for all financial compliance, ensuring a consistent and holistic strategy. Many modern CA firms have teams that specialize in GST.'
-    }
+    },
+    relatedServices: ['regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-gst-goods-and-services-tax', 'what-is-statutory-audit']
   },
   {
     slug: 'safe-vs-convertible-note',
@@ -362,7 +374,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a <a href="/startup-finance-glossary/what-is-safe-simple-agreement-for-future-equity">SAFE</a> for very early (<a href="/who-we-help/pre-seed-startups">pre-seed</a>) rounds where speed and simplicity are paramount. It\'s ideal for raising money from VCs and sophisticated angels who understand the instrument.',
       choiceB: 'Choose a <a href="/startup-finance-glossary/what-is-convertible-note">Convertible Note</a> when dealing with more traditional investors who may be more comfortable with a debt instrument, or when the terms (like a maturity date) are a key part of the negotiation.'
-    }
+    },
+    relatedServices: ['fundraising', 'corporate-law'],
+    relatedGlossaryTerms: ['what-is-safe-simple-agreement-for-future-equity', 'what-is-convertible-note', 'what-is-valuation-cap']
   },
   {
     slug: 'equity-vs-debt-financing',
@@ -419,7 +433,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Equity Financing when you are an early-stage, high-risk startup with the potential for massive scale. You need capital for growth, not just operations, and can benefit from a strategic investor\'s network.',
       choiceB: 'Choose Debt Financing when you are a more mature, predictable business with positive cash flow that can comfortably service the debt payments. It\'s ideal for financing specific projects or managing working capital without giving up ownership.'
-    }
+    },
+    relatedServices: ['fundraising'],
+    relatedGlossaryTerms: ['what-is-equity-financing', 'what-is-debt-financing', 'what-is-dilution']
   },
   {
     slug: 'llp-vs-private-limited-company',
@@ -474,7 +490,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a <a href="/startup-finance-glossary/what-is-private-limited-company">Private Limited Company</a> if you ever plan to raise equity funding from investors or issue ESOPs to your team. For any high-growth tech startup, this is the default and correct choice.',
       choiceB: 'Choose an <a href="/startup-finance-glossary/what-is-limited-liability-partnership-llp">LLP</a> if you are running a professional service business (like a small consulting or design firm) with no plans for external funding and want to minimize your compliance overhead.'
-    }
+    },
+    relatedServices: ['business-setup', 'regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-private-limited-company', 'what-is-limited-liability-partnership-llp']
   },
   {
     slug: 'bootstrapping-vs-funding',
@@ -531,7 +549,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose <a href="/who-we-help/bootstrapped-startups">Bootstrapping</a> if you want to build a sustainable business you control, prioritize profitability over speed, and are in a market that doesn\'t require massive upfront capital to compete.',
       choiceB: 'Choose <a href="/who-we-help/vc-backed-startups">Venture Funding</a> if you are tackling a huge market, need significant capital to build your product or scale, and are prepared for the high-pressure, high-growth journey towards a massive exit.'
-    }
+    },
+    relatedServices: ['fundraising'],
+    relatedGlossaryTerms: ['what-is-bootstrapping', 'what-is-venture-capital-vc']
   },
   {
     slug: 'hiring-freelancer-vs-full-time-employee',
@@ -588,7 +608,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Hire a Freelancer for specialized, short-term projects with a clearly defined scope, such as designing a logo, writing a series of blog posts, or building a specific software module.',
       choiceB: 'Hire a Full-Time Employee for core, long-term functions that are central to your business, such as your lead software engineer, head of sales, or product manager. '
-    }
+    },
+    relatedServices: ['regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-tds-tax-deducted-at-source', 'what-is-intellectual-property-assignment']
   },
    {
     slug: 'razorpayx-vs-traditional-banking',
@@ -644,7 +666,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose RazorpayX (or a similar fintech platform) if you are a modern startup that values speed, automation, and a seamless user experience. It acts as the financial operating system for your business.',
       choiceB: 'Choose a Traditional Bank if you require access to a physical branch network or specific complex trade finance products. However, for most tech startups, a fintech platform built on top of a traditional bank account offers the best of both worlds.'
-    }
+    },
+    relatedServices: ['bookkeeping'],
+    relatedGlossaryTerms: ['what-is-fintech', 'what-is-bank-reconciliation']
   },
   {
     slug: 'carta-vs-pulley',
@@ -698,7 +722,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Carta if you are a later-stage company, have complex equity needs, or if your investors or law firm strongly insist on it as their standard. It is the safe, established choice.',
       choiceB: 'Choose Pulley if you are an early-stage startup looking for a powerful, easy-to-use, and more affordable solution for core cap table management and scenario modeling.'
-    }
+    },
+    relatedServices: ['corporate-law', 'fundraising'],
+    relatedGlossaryTerms: ['what-is-capitalization-table-cap-table', 'what-is-esop-employee-stock-option-plan']
   },
   {
     slug: 'stripe-vs-razorpay',
@@ -752,7 +778,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Stripe if your primary audience is global, you are selling in multiple currencies, and a world-class developer experience is your top priority.',
       choiceB: 'Choose Razorpay if your primary market is India, you need the widest possible support for local payment methods, and you want an integrated financial suite that goes beyond just payments.'
-    }
+    },
+    relatedServices: ['regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-payment-gateway-pg', 'what-is-fintech']
   },
   {
     slug: 'revenue-based-financing-vs-venture-debt',
@@ -807,7 +835,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Revenue-Based Financing for specific, ROI-positive expenses like digital marketing or inventory, where you can quickly generate revenue to repay the advance. It\'s ideal for bootstrapped or early-stage SaaS/D2C companies.',
       choiceB: 'Choose <a href="/startup-finance-glossary/what-is-venture-debt">Venture Debt</a> to extend your runway between equity rounds (e.g., between a Series A and Series B) or to finance a large capital expenditure without significant dilution. It is best for VC-backed companies with a clear path to their next funding round.'
-    }
+    },
+    relatedServices: ['fundraising'],
+    relatedGlossaryTerms: ['what-is-venture-debt', 'what-is-debt-financing', 'what-is-dilution']
   },
   {
     slug: 'physical-office-vs-remote-first',
@@ -864,7 +894,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a Physical Office if your work requires frequent, hands-on collaboration (e.g., a hardware startup) or if you strongly believe in-person interaction is essential for your company culture.',
       choiceB: 'Choose a Remote-First Model if you want to minimize costs, access a global talent pool, and offer your team maximum flexibility. This is the default for many modern software startups. A hybrid model can also offer a middle ground.'
-    }
+    },
+    relatedServices: ['virtual-cfo'],
+    relatedGlossaryTerms: ['what-is-burn-rate', 'what-is-fixed-costs']
   },
   {
     slug: 'qrmp-vs-monthly-gst-filing',
@@ -918,7 +950,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose the Monthly Filing Scheme if you are a B2B business where providing prompt ITC to your customers is important, or if you prefer a regular, monthly compliance rhythm.',
       choiceB: 'Choose the QRMP Scheme if you are a small, primarily B2C business with a turnover under ₹5 Crore and want to reduce your filing frequency. It is designed to ease the compliance burden for small taxpayers.'
-    }
+    },
+    relatedServices: ['regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-qrmp-quarterly-return-monthly-payment-scheme', 'what-is-gst-goods-and-services-tax']
   },
   {
     slug: 'trademark-vs-copyright',
@@ -972,7 +1006,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'You need a Trademark to protect your company name and product name as soon as you start your business. This is fundamental to building a brand.',
       choiceB: 'You need Copyright to protect the valuable creative assets you produce, most importantly, your software source code. For a tech startup, protecting both your brand (trademark) and your code (copyright) is essential.'
-    }
+    },
+    relatedServices: ['corporate-law'],
+    relatedGlossaryTerms: ['what-is-trademark', 'what-is-copyright', 'what-is-intellectual-property-ip']
   },
    {
     slug: 'saas-vs-licensed-software',
@@ -1029,7 +1065,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose the <a href="/startup-finance-glossary/what-is-saas-software-as-a-service">SaaS model</a> if you want to build a business with predictable recurring revenue, reach a broad customer base, and achieve a high valuation. This is the dominant model for modern software startups.',
       choiceB: 'The Licensed Software model is now largely legacy but may still be relevant for highly specialized, enterprise, or government software where data security concerns require an on-premise installation.'
-    }
+    },
+    relatedServices: ['virtual-cfo-for-saas-startups'],
+    relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-monthly-recurring-revenue-mrr', 'what-is-deferred-revenue']
   },
   {
     slug: 'cloud-vs-on-premise',
@@ -1085,7 +1123,8 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose Cloud Hosting. For over 99% of startups, this is the correct and only logical choice. It provides the speed, flexibility, and scalability needed to innovate and grow.',
       choiceB: 'Consider On-Premise Hosting only if you are in a highly specific niche with extreme security or regulatory requirements that absolutely forbid the use of third-party cloud infrastructure.'
-    }
+    },
+    relatedGlossaryTerms: ['what-is-capital-expenditure-capex', 'what-is-operating-expense-opex']
   },
   {
     slug: 'b2b-vs-b2c-startups',
@@ -1142,7 +1181,8 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose a B2B model if you enjoy solving complex business problems, building relationships, and navigating a consultative sales process. It often involves a more targeted and focused approach.',
       choiceB: 'Choose a B2C model if you are passionate about building a brand that resonates with a mass audience, understand consumer psychology, and excel at large-scale marketing and distribution.'
-    }
+    },
+    relatedGlossaryTerms: ['what-is-b2b-business-to-business', 'what-is-b2c-business-to-consumer', 'what-is-customer-acquisition-cost-cac']
   },
   {
     slug: 'service-vs-product-startup',
@@ -1200,7 +1240,8 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Start a Service Business if you want to generate cash flow quickly, have a specific marketable skill, and prefer working closely with a small number of clients. Many successful product businesses start as service businesses to fund their initial product development.',
       choiceB: 'Start a Product Business if you have a vision for a scalable solution to a major problem, are willing to take on higher upfront risk, and are aiming to build a large, valuable company.'
-    }
+    },
+    relatedGlossaryTerms: ['what-is-scalability', 'what-is-valuation']
   },
   {
     slug: 'angel-investors-vs-vcs',
@@ -1257,7 +1298,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Seek <a href="/startup-finance-glossary/what-is-angel-investor">Angel Investors</a> for your first funding round when you are at the pre-seed or early seed stage. You need a smaller amount of capital to get to product-market fit, and you can benefit from the mentorship of experienced operators.',
       choiceB: 'Approach <a href="/startup-finance-glossary/what-is-venture-capital-vc">Venture Capitalists</a> when you have achieved product-market fit, have strong traction, and need a significant amount of capital to scale your go-to-market engine and become a market leader.'
-    }
+    },
+    relatedServices: ['fundraising'],
+    relatedGlossaryTerms: ['what-is-angel-investor', 'what-is-venture-capital-vc', 'what-is-seed-funding']
   },
   {
     slug: 'health-insurance-vs-term-insurance',
@@ -1310,7 +1353,8 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'You need both. They are not substitutes for each other. Health insurance is a non-negotiable for protecting yourself from the financial shock of a medical emergency. Term insurance is essential if you have financial dependents (like a spouse, children, or parents) or business loans that would fall on your family if you were to pass away. Every founder should have both.',
       choiceB: 'This is not an either/or decision. Both are fundamental components of a founder\'s personal financial and risk management plan.'
-    }
+    },
+    relatedGlossaryTerms: ['what-is-section-80c', 'what-is-key-person-insurance']
   },
   {
     slug: 'direct-vs-regular-mutual-funds',
@@ -1364,7 +1408,8 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'For any investor who is willing to do a little bit of research (or work with a fee-only financial advisor), choosing Direct Plans is always the superior financial decision. The long-term impact on your wealth is too significant to ignore.',
       choiceB: 'Choose a Regular Plan only if you are completely unwilling to do any research and value the convenience of a distributor handling everything for you, and are willing to accept significantly lower long-term returns as a price for that convenience.'
-    }
+    },
+    relatedGlossaryTerms: ['what-is-mutual-fund', 'what-is-compound-interest']
   },
   {
     slug: 'ai-cfo-vs-human-cfo',
@@ -1421,10 +1466,12 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'The Future is Hybrid',
       choiceA: 'The future of startup finance is not an either/or choice. The most effective model is a hybrid one: an AI platform to automate all the data processing and basic reporting, and a human vCFO to interpret that data, provide strategic context, and act as a true partner to the founder. The AI handles the "what," and the human handles the "so what" and "now what."',
       choiceB: 'A Human CFO augmented by AI tools will be the winning combination, providing startups with both real-time data and high-quality strategic guidance.'
-    }
+    },
+    relatedServices: ['virtual-cfo'],
+    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-bookkeeping', 'what-is-forecasting']
   },
   {
-    slug: 'saas-vs-d2c-business-model',
+    slug: 'saas-vs-d2c-business-models',
     title: 'SaaS vs D2C: A Deep Dive into Startup Business Models',
     description: 'Comparing the financial DNA of <a href="/solutions/virtual-cfo-for-saas-startups">SaaS</a> and <a href="/industry-finance/gst-for-d2c-brands-india">D2C</a> startups, from cost structures and margins to cash flow cycles and scalability.',
     h1: 'SaaS vs. D2C Business Models',
@@ -1478,7 +1525,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'Which Model Fits You?',
       choiceA: 'Choose a SaaS model if you are passionate about solving a problem with software, can raise the capital for a long R&D cycle, and are focused on building a highly scalable, recurring revenue business.',
       choiceB: 'Choose a D2C model if you have a passion for creating physical products, understand branding and consumer marketing, and are prepared to manage the operational complexities of inventory and logistics.'
-    }
+    },
+    relatedServices: ['virtual-cfo-for-saas-startups'],
+    relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-d2c-direct-to-consumer', 'what-is-unit-economics']
   },
   {
     slug: 'consulting-vs-saas',
@@ -1496,7 +1545,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       ],
       cons: [
         'Not Scalable: Revenue is directly tied to the number of hours you and your team can work.',
-        '"Time for Money" Trap: You are always trading your time for money, making it hard to build wealth.',
+        '"Time for Money" Trap: You are constantly trading your time for money, making it hard to build wealth.',
         'Inconsistent Revenue: Project-based work can lead to a "feast or famine" cycle.',
         'Client Management Overhead: A significant amount of time is spent managing client relationships and expectations.'
       ]
@@ -1536,7 +1585,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'The Path from Service to Product',
       choiceA: 'Starting with Consulting is a fantastic way to bootstrap the development of a SaaS product. Use the cash flow and deep customer insights from your service work to identify a repeatable problem and fund the creation of your MVP. This de-risks the product development process.',
       choiceB: 'Transition to a SaaS model once you have identified a common, painful problem that you can solve with software. The goal is to "productize your service," turning the custom solutions you built for individual clients into a scalable product that can serve thousands.'
-    }
+    },
+    relatedServices: ['virtual-cfo-for-saas-startups'],
+    relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-scalability', 'what-is-productize-your-service']
   },
   {
     slug: 'tech-vs-non-tech-cofounder',
@@ -1590,7 +1641,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'It\'s Not a Competition, It\'s a Partnership',
       choiceA: 'A startup needs both skillsets to succeed. A technical founder without a business-minded partner may build a great product that no one buys. A non-technical founder without a technical partner will struggle to get a product built at all.',
       choiceB: 'The best advice is to find a co-founder who complements your skills and with whom you share a deep sense of trust and a common vision for the company.'
-    }
+    },
+    relatedServices: ['corporate-law'],
+    relatedGlossaryTerms: ['what-is-shareholders-agreement', 'what-is-founder-vesting']
   },
   {
     slug: 'incubator-vs-accelerator',
@@ -1646,7 +1699,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Choose an <a href="/startup-finance-glossary/what-is-incubator">Incubator</a> when you are at the very beginning of your journey, have a promising idea, and need a supportive environment, mentorship, and basic resources to flesh it out.',
       choiceB: 'Choose an Accelerator when you have an MVP and some early traction, and you are ready for an intense period of rapid growth and fundraising. An accelerator\'s main purpose is to "accelerate" your path to product-market fit and your first institutional funding round.'
-    }
+    },
+    relatedServices: ['fundraising'],
+    relatedGlossaryTerms: ['what-is-incubator', 'what-is-seed-funding', 'what-is-product-market-fit']
   },
   {
     slug: 'founder-salary-vs-dividends',
@@ -1698,7 +1753,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'When to Choose Which',
       choiceA: 'Drawing a reasonable Salary is the standard and necessary practice for any working founder. It provides personal financial stability and is a legitimate business expense.',
       choiceB: 'Consider paying Dividends only after your company is consistently profitable and has sufficient <a href="/startup-finance-glossary/what-is-retained-earnings">retained earnings</a>. It is a way to distribute surplus profits to all shareholders, including yourself, after the company has paid its corporate taxes.'
-    }
+    },
+    relatedServices: ['regulatory-compliances'],
+    relatedGlossaryTerms: ['what-is-dividend', 'what-is-tds-tax-deducted-at-source', 'what-is-direct-tax']
   }
 ]
 .map(page => ({

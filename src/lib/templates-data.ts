@@ -8,6 +8,8 @@ export interface TemplateData {
   h1: string;
   Icon: React.ElementType;
   content: string; 
+  relatedServices?: string[];
+  relatedGlossaryTerms?: string[];
 }
 
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
@@ -74,7 +76,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li><strong><a href="/startup-finance-glossary/what-is-tds-tax-deducted-at-source">TDS</a> Payments & Filings:</strong> Deposit deducted TDS by the 7th of the next month and file quarterly TDS returns.</li>
                 <li><strong>Payroll Compliance:</strong> Pay PF & ESI contributions for employees by the 15th of the next month.</li>
             </ul>
-        `
+        `,
+        relatedServices: ['regulatory-compliances'],
+        relatedGlossaryTerms: ['what-is-compliance', 'what-is-roc-registrar-of-companies', 'what-is-statutory-audit']
     },
     {
         title: 'GST Filing Checklist',
@@ -119,7 +123,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                 </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['regulatory-compliances'],
+        relatedGlossaryTerms: ['what-is-gst-goods-and-services-tax', 'what-is-input-tax-credit-itc', 'what-is-gstr-1', 'what-is-gstr-3b']
     },
     {
         title: 'Fundraising Readiness Checklist',
@@ -153,7 +159,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li><strong>Contracts:</strong> Standard employment contract and all key customer/supplier contracts.</li>
                 <li><strong>Policies:</strong> <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">ESOP</a> policy and grant letters.</li>
             </ul>
-        `
+        `,
+        relatedServices: ['fundraising', 'investor-due-diligence'],
+        relatedGlossaryTerms: ['what-is-due-diligence', 'what-is-data-room', 'what-is-capitalization-table-cap-table']
     },
     {
         title: 'Monthly MIS Report Template',
@@ -190,7 +198,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             
             <h3>4. Departmental Highlights (Optional)</h3>
             <p>A single slide from the head of Sales, Marketing, and Product highlighting their key results and priorities for the next month.</p>
-        `
+        `,
+        relatedServices: ['virtual-cfo'],
+        relatedGlossaryTerms: ['what-is-mis-report', 'what-is-key-performance-indicator-kpi', 'what-is-monthly-recurring-revenue-mrr']
     },
     {
         title: 'Cash Flow Tracker Template',
@@ -237,7 +247,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 </tr>
               </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['virtual-cfo'],
+        relatedGlossaryTerms: ['what-is-cash-flow', 'what-is-cash-flow-statement', 'what-is-runway']
     },
      {
         title: 'Due Diligence Data Room Checklist',
@@ -250,7 +262,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <h3>1. Corporate</h3>
             <ul>
                 <li><strong>Incorporation:</strong> Certificate of Incorporation, MOA, AOA.</li>
-                <li><strong>Compliance:</strong> PAN, TAN, GST, Startup India certificates.</li>
+                <li><strong>Compliance:</strong> PAN, TAN, GST, Startup India (DPIIT) certificates.</li>
                 <li><strong>Cap Table:</strong> A clean, up-to-date capitalization table, preferably from software like Carta or Pulley.</li>
                 <li><strong>Agreements:</strong> All signed founder and <a href="/startup-finance-glossary/what-is-shareholders-agreement">shareholder agreements (SHA)</a>.</li>
                 <li><strong>ROC Filings:</strong> Complete history of key filings like AOC-4 and MGT-7.</li>
@@ -269,7 +281,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li><strong>Agreements:</strong> Standard employment contract, <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">ESOP</a> plan, and all grant letters.</li>
                 <li><strong>IP:</strong> <a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP assignment agreements</a> from all employees/contractors.</li>
             </ul>
-        `
+        `,
+        relatedServices: ['investor-due-diligence', 'fundraising'],
+        relatedGlossaryTerms: ['what-is-data-room', 'what-is-due-diligence', 'what-is-capitalization-table-cap-table']
     },
     {
         title: 'SaaS Metrics Dashboard Template',
@@ -314,7 +328,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                 </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['virtual-cfo-for-saas-startups'],
+        relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-key-performance-indicator-kpi', 'what-is-monthly-recurring-revenue-mrr']
     },
     {
         title: 'D2C KPI Dashboard Template',
@@ -359,7 +375,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                 </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['virtual-cfo'],
+        relatedGlossaryTerms: ['what-is-d2c-direct-to-consumer', 'what-is-key-performance-indicator-kpi', 'what-is-gross-margin']
     },
     {
         title: 'Simple Business Plan Template',
@@ -389,7 +407,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             
             <h3>7. The Ask (If applicable)</h3>
             <p>State how much capital you are raising and what key milestones you will achieve with the funds.</p>
-        `
+        `,
+        relatedServices: ['pitch-deck-financial-modelling'],
+        relatedGlossaryTerms: ['what-is-business-plan', 'what-is-total-addressable-market-tam']
     },
     {
         title: 'Term Sheet Checklist',
@@ -434,7 +454,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                 </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['fundraising', 'corporate-law'],
+        relatedGlossaryTerms: ['what-is-term-sheet', 'what-is-valuation', 'what-is-liquidation-preference']
     },
      {
         title: 'Employee Onboarding Checklist',
@@ -484,7 +506,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                 </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['regulatory-compliances'],
+        relatedGlossaryTerms: ['what-is-payroll', 'what-is-tds-tax-deducted-at-source', 'what-is-employee-provident-fund-epf']
     },
     {
         title: 'Bookkeeping Month-End Close Checklist',
@@ -519,7 +543,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                 </tbody>
             </table>
-        `
+        `,
+        relatedServices: ['bookkeeping', 'virtual-cfo'],
+        relatedGlossaryTerms: ['what-is-bookkeeping', 'what-is-bank-reconciliation', 'what-is-three-financial-statements']
     },
     {
         title: 'Founder Agreement Checklist',
@@ -544,7 +570,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li><strong>Founder Departure:</strong> What happens to vested and unvested shares if a founder resigns or is terminated? Does the company have a right to buy back the shares?</li>
                 <li><strong>Deadlock Resolution:</strong> A mechanism to resolve disputes if the founders reach a 50/50 impasse.</li>
             </ul>
-        `
+        `,
+        relatedServices: ['corporate-law'],
+        relatedGlossaryTerms: ['what-is-shareholders-agreement', 'what-is-founder-vesting', 'what-is-intellectual-property-assignment']
     },
     {
         title: 'Go-to-Market Strategy Template',
@@ -581,7 +609,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <ul>
                 <li><strong>What are the 3-5 key metrics you will track to measure the success of your GTM plan?</strong> (e.g., Number of new customers, <a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">CAC</a>, conversion rate).</li>
             </ul>
-        `
+        `,
+        relatedServices: ['pitch-deck-financial-modelling'],
+        relatedGlossaryTerms: ['what-is-go-to-market-gtm-strategy', 'what-is-target-market', 'what-is-customer-acquisition-cost-cac']
     },
     {
         title: 'Pitch Deck Template',
@@ -604,7 +634,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li><strong>Financials:</strong> A high-level summary of your financial projections, highlighting key metrics.</li>
                 <li><strong>The Ask:</strong> Clearly state how much you're raising and what milestones you'll achieve with the capital.</li>
             </ol>
-        `
+        `,
+        relatedServices: ['pitch-deck-financial-modelling', 'fundraising'],
+        relatedGlossaryTerms: ['what-is-pitch-deck', 'what-is-traction', 'what-is-total-addressable-market-tam']
     }
 ];
 
