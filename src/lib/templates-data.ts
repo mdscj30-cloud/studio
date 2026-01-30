@@ -35,7 +35,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>Minimum of 4 meetings per year, with a gap of no more than 120 days between two meetings.</td>
                     </tr>
                     <tr>
-                        <td><strong>Annual General Meeting (AGM)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-annual-general-meeting-agm">Annual General Meeting (AGM)</a></strong></td>
                         <td>Within 6 months of FY end</td>
                         <td>Mandatory annual meeting of shareholders to approve financials and appoint auditors.</td>
                     </tr>
@@ -50,17 +50,17 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>Filing of the company's Annual Return with shareholder details.</td>
                     </tr>
                     <tr>
-                        <td><strong>Director's KYC (DIR-3 KYC)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-directors-kyc-dir-3-kyc">Director's KYC (DIR-3 KYC)</a></strong></td>
                         <td>By Sept 30th annually</td>
                         <td>Annual KYC update for all directors holding a DIN.</td>
                     </tr>
                     <tr>
-                        <td><strong>Income Tax Return (ITR)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-income-tax-return-itr">Income Tax Return (ITR)</a></strong></td>
                         <td>By Oct 31st annually (if audit is required)</td>
                         <td>Filing of the company's annual income tax return.</td>
                     </tr>
                      <tr>
-                        <td><strong>Statutory Audit</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-statutory-audit">Statutory Audit</a></strong></td>
                         <td>Before AGM</td>
                         <td>Mandatory audit of financial statements by an independent Chartered Accountant.</td>
                     </tr>
@@ -70,8 +70,8 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <h2>Monthly/Quarterly Compliance</h2>
             <p>These are the recurring tasks that form the backbone of your financial operations.</p>
             <ul>
-                <li><strong>GST Filings:</strong> File GSTR-1 (by 11th) and GSTR-3B (by 20th) every month/quarter.</li>
-                <li><strong>TDS Payments & Filings:</strong> Deposit deducted TDS by the 7th of the next month and file quarterly TDS returns.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-gst-goods-and-services-tax">GST</a> Filings:</strong> File GSTR-1 (by 11th) and GSTR-3B (by 20th) every month/quarter.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-tds-tax-deducted-at-source">TDS</a> Payments & Filings:</strong> Deposit deducted TDS by the 7th of the next month and file quarterly TDS returns.</li>
                 <li><strong>Payroll Compliance:</strong> Pay PF & ESI contributions for employees by the 15th of the next month.</li>
             </ul>
         `
@@ -100,11 +100,11 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     <tr>
                         <td>2. ITC Reconciliation</td>
                         <td>Reconcile your purchase register with the auto-populated GSTR-2B statement on the GST portal.</td>
-                        <td>Ensures you claim the correct Input Tax Credit (ITC) that you are eligible for, optimizing your cash flow.</td>
+                        <td>Ensures you claim the correct <a href="/startup-finance-glossary/what-is-input-tax-credit-itc">Input Tax Credit (ITC)</a> that you are eligible for, optimizing your cash flow.</td>
                     </tr>
                     <tr>
                         <td>3. RCM Identification</td>
-                        <td>Identify any inward supplies on which you are liable to pay tax under the Reverse Charge Mechanism (RCM).</td>
+                        <td>Identify any inward supplies on which you are liable to pay tax under the <a href="/startup-finance-glossary/what-is-reverse-charge-mechanism-rcm">Reverse Charge Mechanism (RCM)</a>.</td>
                         <td>Failure to pay RCM tax is a common compliance lapse that can lead to penalties.</td>
                     </tr>
                     <tr>
@@ -127,22 +127,22 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         Icon: HandCoins,
         content: `
             <h2>Investor Due Diligence Data Room</h2>
-            <p>Prepare a virtual data room with the following documents organized into folders. A well-organized data room signals professionalism and can significantly speed up the funding process.</p>
+            <p>Prepare a virtual <a href="/startup-finance-glossary/what-is-data-room">data room</a> with the following documents organized into folders. A well-organized data room signals professionalism and can significantly speed up the funding process.</p>
             
             <h3>Folder 1: Corporate & Legal</h3>
             <ul>
                 <li><strong>Incorporation Docs:</strong> Certificate of Incorporation, MOA, AOA.</li>
                 <li><strong>Compliance Certificates:</strong> PAN, TAN, GST, Startup India (DPIIT) certificates.</li>
-                <li><strong>Cap Table:</strong> A clean, up-to-date capitalization table (preferably from software like Carta/Pulley).</li>
-                <li><strong>Agreements:</strong> All signed founder and shareholder agreements (SHA), and historical term sheets.</li>
+                <li><strong>Cap Table:</strong> A clean, up-to-date <a href="/startup-finance-glossary/what-is-capitalization-table-cap-table">capitalization table</a> (preferably from software like Carta/Pulley).</li>
+                <li><strong>Agreements:</strong> All signed founder and <a href="/startup-finance-glossary/what-is-shareholders-agreement">shareholder agreements (SHA)</a>, and historical term sheets.</li>
                 <li><strong>ROC Filings:</strong> Complete history of all filings (AOC-4, MGT-7, etc.).</li>
-                <li><strong>IP Documents:</strong> Trademark, patent, or copyright registration certificates. IP assignment agreements from all employees.</li>
+                <li><strong>IP Documents:</strong> Trademark, patent, or copyright registration certificates. <a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP assignment agreements</a> from all employees.</li>
             </ul>
 
             <h3>Folder 2: Financial</h3>
             <ul>
-                <li><strong>Financial Statements:</strong> Audited financials for all past years and monthly MIS reports for the last 24 months.</li>
-                <li><strong>Financial Model:</strong> Your detailed, driver-based financial model with 3-5 year projections.</li>
+                <li><strong>Financial Statements:</strong> Audited financials for all past years and monthly <a href="/startup-finance-glossary/what-is-mis-report">MIS reports</a> for the last 24 months.</li>
+                <li><strong>Financial Model:</strong> Your detailed, driver-based <a href="/startup-finance-glossary/what-is-financial-model">financial model</a> with 3-5 year projections.</li>
                 <li><strong>Tax Returns:</strong> All filed Income Tax and GST returns for the last 3 years.</li>
                 <li><strong>Bank Statements:</strong> Statements for the last 12-18 months for all company bank accounts.</li>
             </ul>
@@ -150,8 +150,8 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
              <h3>Folder 3: Team & Operations</h3>
             <ul>
                 <li><strong>Team Details:</strong> Founders' resumes and an organizational chart.</li>
-                <li><strong>Contracts:</strong> Standard employment contract template and all key customer/supplier contracts.</li>
-                <li><strong>Policies:</strong> ESOP policy and grant letters.</li>
+                <li><strong>Contracts:</strong> Standard employment contract and all key customer/supplier contracts.</li>
+                <li><strong>Policies:</strong> <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">ESOP</a> policy and grant letters.</li>
             </ul>
         `
     },
@@ -161,7 +161,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         Icon: BarChart,
         content: `
             <h2>MIS Report Structure: A Template for Clarity</h2>
-            <p>Your monthly MIS report is the primary tool for communicating your company's performance to your management team, board, and investors. It should be concise, insightful, and data-driven. Here is a best-practice structure.</p>
+            <p>Your monthly <a href="/startup-finance-glossary/what-is-mis-report">MIS report</a> is the primary tool for communicating your company's performance to your management team, board, and investors. It should be concise, insightful, and data-driven. Here is a best-practice structure.</p>
             <h3>1. Executive Summary</h3>
             <p>A brief narrative covering the month's highlights, lowlights, key achievements, and challenges. End with a summary of key action items for the next month.</p>
             
@@ -173,18 +173,18 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 </thead>
                 <tbody>
                     <tr><td>Revenue</td><td>...</td><td>...</td><td>...</td></tr>
-                    <tr><td>Gross Margin %</td><td>...</td><td>...</td><td>...</td></tr>
-                    <tr><td>EBITDA</td><td>...</td><td>...</td><td>...</td></tr>
-                    <tr><td>Net Burn</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td><a href="/startup-finance-glossary/what-is-gross-margin">Gross Margin %</a></td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td><a href="/startup-finance-glossary/what-is-ebitda">EBITDA</a></td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td><a href="/startup-finance-glossary/what-is-net-burn-vs-gross-burn">Net Burn</a></td><td>...</td><td>...</td><td>...</td></tr>
                     <tr><td>Closing Cash</td><td>...</td><td>...</td><td>...</td></tr>
-                    <tr><td>Runway (Months)</td><td>...</td><td>...</td><td>...</td></tr>
+                    <tr><td><a href="/startup-finance-glossary/what-is-runway">Runway (Months)</a></td><td>...</td><td>...</td><td>...</td></tr>
                 </tbody>
             </table>
 
             <h3>3. KPI Deep Dive</h3>
-            <p>Focus on the key performance indicators specific to your business model.</p>
+            <p>Focus on the <a href="/startup-finance-glossary/what-is-key-performance-indicator-kpi">key performance indicators</a> specific to your business model.</p>
             <ul>
-                <li><strong>For SaaS:</strong> Include charts for MRR Movement (New, Expansion, Churn), LTV:CAC ratio over time, and Net Dollar Retention.</li>
+                <li><strong>For SaaS:</strong> Include charts for <a href="/startup-finance-glossary/what-is-monthly-recurring-revenue-mrr">MRR</a> Movement (New, Expansion, Churn), <a href="/startup-finance-glossary/what-is-ltvcac-ratio">LTV:CAC ratio</a> over time, and <a href="/startup-finance-glossary/what-is-net-dollar-retention-ndr">Net Dollar Retention</a>.</li>
                 <li><strong>For D2C:</strong> Include charts for GMV, AOV, ROAS by channel, and Customer Retention Cohorts.</li>
             </ul>
             
@@ -198,7 +198,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         Icon: LineChart,
         content: `
             <h2>13-Week Cash Flow Forecast Template</h2>
-            <p>A rolling 13-week (i.e., one quarter) cash flow forecast is the most critical financial tool for an early-stage startup. It helps you manage your liquidity and anticipate cash crunches before they happen. Use a simple spreadsheet with the following structure.</p>
+            <p>A rolling 13-week (i.e., one quarter) <a href="/startup-finance-glossary/what-is-cash-flow">cash flow forecast</a> is the most critical financial tool for an early-stage startup. It helps you manage your liquidity and anticipate cash crunches before they happen. Use a simple spreadsheet with the following structure.</p>
             <table>
               <thead>
                 <tr>
@@ -245,35 +245,29 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         Icon: CheckSquare,
         content: `
             <h2>Data Room Structure for Investor Due Diligence</h2>
-            <p>A well-organized data room shows professionalism and speeds up the due diligence process. Create these top-level folders and populate them with the required documents.</p>
+            <p>A well-organized <a href="/startup-finance-glossary/what-is-data-room">data room</a> shows professionalism and speeds up the <a href="/startup-finance-glossary/what-is-due-diligence">due diligence</a> process. Create these top-level folders and populate them with the required documents.</p>
             
             <h3>1. Corporate</h3>
             <ul>
                 <li><strong>Incorporation:</strong> Certificate of Incorporation, MOA, AOA.</li>
                 <li><strong>Compliance:</strong> PAN, TAN, GST, Startup India certificates.</li>
                 <li><strong>Cap Table:</strong> A clean, up-to-date capitalization table, preferably from software like Carta or Pulley.</li>
-                <li><strong>Agreements:</strong> All signed founder and shareholder agreements (SHA).</li>
+                <li><strong>Agreements:</strong> All signed founder and <a href="/startup-finance-glossary/what-is-shareholders-agreement">shareholder agreements (SHA)</a>.</li>
                 <li><strong>ROC Filings:</strong> Complete history of key filings like AOC-4 and MGT-7.</li>
             </ul>
 
             <h3>2. Financials</h3>
             <ul>
-                <li><strong>Historical Data:</strong> Audited financials for all past years and monthly MIS reports for the last 24 months.</li>
-                <li><strong>Projections:</strong> Your detailed, driver-based financial model.</li>
+                <li><strong>Historical Data:</strong> Audited financials for all past years and monthly <a href="/startup-finance-glossary/what-is-mis-report">MIS reports</a> for the last 24 months.</li>
+                <li><strong>Projections:</strong> Your detailed, driver-based <a href="/startup-finance-glossary/what-is-financial-model">financial model</a>.</li>
                 <li><strong>Tax:</strong> Filed Income Tax and GST returns for the last 3 years.</li>
             </ul>
 
              <h3>3. Team</h3>
             <ul>
                 <li><strong>Key Personnel:</strong> Founders' resumes and an org chart.</li>
-                <li><strong>Agreements:</strong> Standard employment contract, ESOP plan, and all grant letters.</li>
-                <li><strong>IP:</strong> IP assignment agreements from all employees/contractors.</li>
-            </ul>
-
-             <h3>4. Legal & Commercial</h3>
-            <ul>
-                <li><strong>Contracts:</strong> All material customer and supplier contracts.</li>
-                <li><strong>Leases:</strong> All property lease agreements.</li>
+                <li><strong>Agreements:</strong> Standard employment contract, <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">ESOP</a> plan, and all grant letters.</li>
+                <li><strong>IP:</strong> <a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP assignment agreements</a> from all employees/contractors.</li>
             </ul>
         `
     },
@@ -294,27 +288,27 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>MRR Growth Rate</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-monthly-recurring-revenue-mrr">MRR</a> Growth Rate</strong></td>
                         <td>The month-over-month percentage growth in your Monthly Recurring Revenue.</td>
                         <td>The primary indicator of your startup's growth momentum.</td>
                     </tr>
                     <tr>
-                        <td><strong>Net Dollar Retention (NDR)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-net-dollar-retention-ndr">Net Dollar Retention (NDR)</a></strong></td>
                         <td>Revenue retained from a customer cohort, including expansion and churn.</td>
                         <td>A score >100% means you grow even without new customers. It's the ultimate sign of a sticky product.</td>
                     </tr>
                     <tr>
-                        <td><strong>LTV:CAC Ratio</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-ltvcac-ratio">LTV:CAC Ratio</a></strong></td>
                         <td>The ratio of Customer Lifetime Value to Customer Acquisition Cost.</td>
-                        <td>Measures the long-term profitability and viability of your go-to-market strategy. Aim for >3.</td>
+                        <td>Measures the long-term profitability of your go-to-market strategy. Aim for >3.</td>
                     </tr>
                      <tr>
-                        <td><strong>CAC Payback Period</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-cac-payback-period">CAC Payback Period</a></strong></td>
                         <td>The number of months it takes to earn back the cost of acquiring a customer.</td>
                         <td>A measure of capital efficiency. Aim for <12 months.</td>
                     </tr>
                     <tr>
-                        <td><strong>Customer Churn Rate</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-churn-rate">Customer Churn Rate</a></strong></td>
                         <td>The percentage of customers who cancel their subscription each month.</td>
                         <td>The "leaky bucket" problem. High churn makes growth incredibly difficult.</td>
                     </tr>
@@ -339,27 +333,27 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Gross Margin %</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-gross-margin">Gross Margin %</a></strong></td>
                         <td>The percentage of revenue left after the Cost of Goods Sold (COGS).</td>
                         <td>Measures the core profitability of your products.</td>
                     </tr>
                     <tr>
-                        <td><strong>Contribution Margin</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-contribution-margin">Contribution Margin</a></strong></td>
                         <td>The profit left after all variable costs (COGS, shipping, marketing) are deducted.</td>
                         <td>Tells you the true profitability of each order.</td>
                     </tr>
                     <tr>
-                        <td><strong>Return on Ad Spend (ROAS)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-return-on-ad-spend-roas">Return on Ad Spend (ROAS)</a></strong></td>
                         <td>The revenue generated for every rupee spent on advertising.</td>
                         <td>The key metric for measuring the effectiveness of your paid marketing campaigns.</td>
                     </tr>
                      <tr>
-                        <td><strong>Customer Acquisition Cost (CAC)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">Customer Acquisition Cost (CAC)</a></strong></td>
                         <td>The total cost to acquire a new customer.</td>
                         <td>Must be compared against LTV to ensure profitable growth.</td>
                     </tr>
                     <tr>
-                        <td><strong>Average Order Value (AOV)</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-average-order-value-aov">Average Order Value (AOV)</a></strong></td>
                         <td>The average amount a customer spends in a single transaction.</td>
                         <td>Increasing AOV is a key lever to improve marketing efficiency.</td>
                     </tr>
@@ -373,16 +367,16 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         Icon: FileText,
         content: `
             <h2>One-Page Business Plan Framework</h2>
-            <p>Use this structure to create a concise yet comprehensive business plan. It's perfect for internal clarity and for sharing with early-stage investors or advisors.</p>
+            <p>Use this structure to create a concise yet comprehensive <a href="/startup-finance-glossary/what-is-business-plan">business plan</a>. It's perfect for internal clarity and for sharing with early-stage investors or advisors.</p>
             
             <h3>1. The Problem</h3>
             <p>Clearly and concisely describe the pain point your target customer faces. Make it relatable and quantify the problem if possible.</p>
 
             <h3>2. The Solution</h3>
-            <p>Describe your product or service. How does it solve the problem you just outlined? What is your unique value proposition?</p>
+            <p>Describe your product or service. How does it solve the problem you just outlined? What is your unique <a href="/startup-finance-glossary/what-is-value-proposition">value proposition</a>?</p>
 
             <h3>3. Target Market (TAM, SAM, SOM)</h3>
-            <p>Define your ideal customer profile (ICP). Estimate the size of your market to show the potential scale of the opportunity.</p>
+            <p>Define your ideal customer profile (ICP). Estimate the size of your market (<a href="/startup-finance-glossary/what-is-total-addressable-market-tam">TAM</a>) to show the potential scale of the opportunity.</p>
 
             <h3>4. Go-to-Market Strategy</h3>
             <p>How will you reach your target customers? Outline your key marketing and sales channels (e.g., content marketing, paid ads, direct sales).</p>
@@ -402,7 +396,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A checklist of the most important terms to look for and understand in a venture capital term sheet.',
         Icon: HandCoins,
         content: `
-            <h2>Key Term Sheet Clauses: A Founder's Checklist</h2>
+            <h2>Key <a href="/startup-finance-glossary/what-is-term-sheet">Term Sheet</a> Clauses: A Founder's Checklist</h2>
             <p>A term sheet is a non-binding agreement, but its terms will form the basis of the final legal documents. Understanding these key clauses is critical.</p>
             <table>
                 <thead>
@@ -419,14 +413,14 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>As high as you can justifiably negotiate.</td>
                     </tr>
                     <tr>
-                        <td><strong>Liquidation Preference</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-liquidation-preference">Liquidation Preference</a></strong></td>
                         <td>Determines who gets paid first in a sale.</td>
                         <td><strong>1x, non-participating.</strong> This is the market standard. Avoid participating preferred stock.</td>
                     </tr>
                     <tr>
                         <td><strong>Option Pool Shuffle</strong></td>
                         <td>How the ESOP pool is created.</td>
-                        <td>A smaller pool (10-15%) created from the pre-money valuation is standard.</td>
+                        <td>A smaller pool (10-15%) created from the <a href="/startup-finance-glossary/what-is-pre-money-valuation">pre-money valuation</a> is standard.</td>
                     </tr>
                     <tr>
                         <td><strong>Board Composition</strong></td>
@@ -434,7 +428,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>A small, balanced board where founders retain significant influence (e.g., 2 founders, 1 investor).</td>
                     </tr>
                     <tr>
-                        <td><strong>Protective Provisions</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-protective-provisions">Protective Provisions</a></strong></td>
                         <td>Investor veto rights on major decisions.</td>
                         <td>A standard, limited set of veto rights that don't impede your ability to run the business day-to-day.</td>
                     </tr>
@@ -475,12 +469,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                     <tr>
                         <td><strong>Day 1</strong></td>
-                        <td>Collect KYC (PAN, Aadhaar) and bank details for payroll.</td>
+                        <td>Collect KYC (<a href="/startup-finance-glossary/what-is-pan-permanent-account-number">PAN</a>, Aadhaar) and bank details for payroll.</td>
                         <td>HR/New Hire</td>
                     </tr>
                     <tr>
                         <td><strong>Day 1</strong></td>
-                        <td>Collect PF/ESI nomination forms and TDS investment declarations.</td>
+                        <td>Collect <a href="/startup-finance-glossary/what-is-employee-provident-fund-epf">PF</a>/<a href="/startup-finance-glossary/what-is-employees-state-insurance-esi">ESI</a> nomination forms and TDS investment declarations.</td>
                         <td>HR/New Hire</td>
                     </tr>
                     <tr>
@@ -515,12 +509,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                     <tr>
                         <td><strong>Phase 2: Adjustments (Days 3-5)</strong></td>
-                        <td>Post adjusting journal entries for prepaid expenses, accrued expenses, deferred revenue, and depreciation.</td>
+                        <td>Post adjusting journal entries for <a href="/startup-finance-glossary/what-is-prepaid-expense">prepaid expenses</a>, <a href="/startup-finance-glossary/what-is-accrued-expense">accrued expenses</a>, <a href="/startup-finance-glossary/what-is-deferred-revenue">deferred revenue</a>, and depreciation.</td>
                         <td>Ensures revenue and expenses are recognized in the correct period (Accrual Accounting).</td>
                     </tr>
                     <tr>
                         <td><strong>Phase 3: Review & Reporting (Days 5-7)</strong></td>
-                        <td>Review the trial balance, generate the three financial statements, and prepare the MIS report for management.</td>
+                        <td>Review the <a href="/startup-finance-glossary/what-is-trial-balance">trial balance</a>, generate the three financial statements, and prepare the <a href="/startup-finance-glossary/what-is-mis-report">MIS report</a> for management.</td>
                         <td>Provides management with a clear, accurate picture of the company's performance for the month.</td>
                     </tr>
                 </tbody>
@@ -533,12 +527,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         Icon: FileUp,
         content: `
             <h2>Key Clauses for Your Founders' Agreement</h2>
-            <p>A well-drafted founders' agreement is the most important legal document for an early-stage startup. It's the "pre-nup" for your business partnership and prevents future disputes. Ensure it covers these critical areas.</p>
+            <p>A well-drafted <a href="/startup-finance-glossary/what-is-shareholders-agreement">founders' agreement</a> is the most important legal document for an early-stage startup. It's the "pre-nup" for your business partnership and prevents future disputes. Ensure it covers these critical areas.</p>
             <h3>Equity & Ownership</h3>
             <ul>
                 <li><strong>Equity Split:</strong> A clear, unambiguous statement of the shareholding percentage for each co-founder.</li>
-                <li><strong>Vesting Schedule:</strong> A 4-year vesting schedule with a 1-year cliff is essential. This protects the company if a founder leaves early.</li>
-                <li><strong>IP Assignment:</strong> A clause stating that all intellectual property created by the founders related to the business is owned by the company, not the individuals.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-founder-vesting-schedule">Vesting Schedule</a>:</strong> A 4-year vesting schedule with a 1-year cliff is essential. This protects the company if a founder leaves early.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP Assignment</a>:</strong> A clause stating that all intellectual property created by the founders related to the business is owned by the company, not the individuals.</li>
             </ul>
             <h3>Governance & Control</h3>
             <ul>
@@ -557,7 +551,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A simple framework to help you structure and build a comprehensive Go-to-Market (GTM) strategy for your new product.',
         Icon: Search,
         content: `
-            <h2>Building Your Go-to-Market Plan</h2>
+            <h2>Building Your <a href="/startup-finance-glossary/what-is-go-to-market-gtm-strategy">Go-to-Market Plan</a></h2>
             <p>Your GTM strategy is your roadmap for how you will reach and win customers. Use this template to structure your thinking.</p>
             
             <h3>1. Target Audience</h3>
@@ -568,7 +562,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
 
             <h3>2. Messaging & Positioning</h3>
             <ul>
-                <li><strong>Value Proposition:</strong> In a single sentence, what is the unique value you provide to your target customer?</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-value-proposition">Value Proposition</a>:</strong> In a single sentence, what is the unique value you provide to your target customer?</li>
                 <li><strong>Positioning Statement:</strong> How do you want to be perceived in the market relative to your competitors?</li>
             </ul>
 
@@ -585,7 +579,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
 
             <h3>5. Success Metrics</h3>
             <ul>
-                <li><strong>What are the 3-5 key metrics you will track to measure the success of your GTM plan?</strong> (e.g., Number of new customers, CAC, conversion rate).</li>
+                <li><strong>What are the 3-5 key metrics you will track to measure the success of your GTM plan?</strong> (e.g., Number of new customers, <a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">CAC</a>, conversion rate).</li>
             </ul>
         `
     },
@@ -594,16 +588,16 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         description: 'A 12-slide template outlining the essential components of a compelling and effective startup pitch deck for investors.',
         Icon: Presentation,
         content: `
-            <h2>The Investor Pitch Deck: A 12-Slide Structure</h2>
+            <h2>The Investor <a href="/startup-finance-glossary/what-is-pitch-deck">Pitch Deck</a>: A 12-Slide Structure</h2>
             <p>Your pitch deck is your story. Keep it concise, visual, and compelling. Follow this classic, investor-approved structure.</p>
             <ol>
                 <li><strong>Cover:</strong> Your company name, logo, and a powerful one-line pitch.</li>
                 <li><strong>Vision/Mission:</strong> A bold, inspiring statement about the future you are creating.</li>
                 <li><strong>The Problem:</strong> Describe the pain point you are solving. Make it urgent and relatable.</li>
                 <li><strong>The Solution:</strong> Introduce your product or service. Show, don't just tell, with a screenshot or demo.</li>
-                <li><strong>Market Size (TAM):</strong> Show investors the scale of the opportunity. Why is this a huge market?</li>
+                <li><strong>Market Size (<a href="/startup-finance-glossary/what-is-total-addressable-market-tam">TAM</a>):</strong> Show investors the scale of the opportunity. Why is this a huge market?</li>
                 <li><strong>Traction:</strong> This is your proof. A chart showing your growth in users, revenue, or engagement is essential.</li>
-                <li><strong>Business Model:</strong> How do you make money? Clearly explain your pricing and unit economics.</li>
+                <li><strong>Business Model:</strong> How do you make money? Clearly explain your pricing and <a href="/startup-finance-glossary/what-is-unit-economics">unit economics</a>.</li>
                 <li><strong>Go-to-Market Strategy:</strong> How will you reach and acquire customers efficiently?</li>
                 <li><strong>Competition:</strong> Acknowledge your competitors and explain your unique, defensible advantage.</li>
                 <li><strong>Team:</strong> Introduce your founding team and key advisors. Why are you the ones to win?</li>
