@@ -1,6 +1,8 @@
 import { Newspaper, Briefcase, Library, ArrowRight, NotebookPen, Wrench, Scale } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
+import { BlogSection } from '@/components/resources/BlogSection';
+import { CaseStudiesSection } from '@/components/resources/CaseStudiesSection';
 
 export const metadata = {
   title: 'Resources | Nexa Consultancy',
@@ -85,6 +87,13 @@ export default function ResourcesPage() {
                     </Link>
                 );
             })}
+        </div>
+      </section>
+
+       <section className="bg-muted/50 py-16 md:py-24 -mx-container-padding">
+        <div className="container space-y-20">
+            <BlogSection />
+            <CaseStudiesSection />
         </div>
       </section>
     </>
