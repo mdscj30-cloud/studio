@@ -1,5 +1,5 @@
 
-import { Scale, Users, Book, FileText, Handshake, Landmark, Briefcase, GitBranch, Cloud, Server, Package, Anchor, Building, HeartPulse, BrainCircuit, HandCoins, Rocket, DollarSign } from 'lucide-react';
+import { Scale, Users, Book, FileText, Handshake, Landmark, Briefcase, GitBranch, Cloud, Server, Package, Anchor, Building, HeartPulse, BrainCircuit, HandCoins, Rocket, DollarSign, BarChart } from 'lucide-react';
 
 export interface ComparisonPage {
   slug: string;
@@ -96,7 +96,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose an In-house CFO when your company has reached a significant scale (typically post-Series B) and complexity, requiring a dedicated, on-site leader to manage a growing finance team and complex daily operations.'
     },
     relatedServices: ['virtual-cfo', 'bookkeeping'],
-    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-burn-rate', 'what-is-runway']
+    relatedGlossaryTerms: ['what-is-virtual-cfo', 'what-is-burn-rate', 'what-is-runway']
   },
   {
     slug: 'ca-firm-vs-virtual-cfo',
@@ -152,7 +152,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose a <a href="/services/virtual-cfo">Virtual CFO</a> when you need more than just compliance. If you\'re raising funds, scaling rapidly, or need a strategic financial partner to help you manage growth, a vCFO is the right choice.'
     },
     relatedServices: ['virtual-cfo', 'regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-statutory-audit', 'what-is-compliance']
+    relatedGlossaryTerms: ['what-is-virtual-cfo', 'what-is-statutory-audit', 'what-is-compliance']
   },
   {
     slug: 'zoho-books-vs-tally',
@@ -166,7 +166,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         'Cloud-Native: Access your financials from anywhere, on any device.',
         'Modern UI/UX: Intuitive and easy to use, especially for non-accountants.',
         'Strong Integration Ecosystem: Seamlessly connects with Zoho\'s suite (CRM, Payroll, Inventory) and third-party apps.',
-        'Excellent GST Compliance: Built for the Indian <a href="/startup-finance-glossary/what-is-gst-goods-and-services-tax">GST</a> regime with features like e-invoicing and automated reconciliations.'
+        'Excellent GST Compliance: Built for the Indian <a href="/startup-finance-glossary/what-is-goods-and-services-tax">GST</a> regime with features like e-invoicing and automated reconciliations.'
       ],
       cons: [
         'Less Familiar to Traditional Accountants: Some old-school CAs may still prefer Tally.',
@@ -266,7 +266,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Consider hiring your first in-house accountant when your transaction volume becomes extremely high and you need a dedicated person for daily operational tasks. Even then, it\'s often best to keep strategic functions like the <a href="/services/virtual-cfo">vCFO</a> outsourced.'
     },
     relatedServices: ['bookkeeping', 'virtual-cfo'],
-    relatedGlossaryTerms: ['what-is-bookkeeping', 'what-is-accountant', 'what-is-capital-efficiency']
+    relatedGlossaryTerms: ['what-is-bookkeeping', 'what-is-accountant', 'what-is-virtual-cfo']
   },
   {
     slug: 'gst-consultant-vs-ca',
@@ -302,9 +302,9 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       title: 'Service Comparison',
       headers: ['Service', 'GST Consultant', 'Chartered Accountant'],
       rows: [
-        { feature: 'Primary Expertise', valueA: 'Deep <a href="/startup-finance-glossary/what-is-gst-goods-and-services-tax">GST</a> Law', valueB: 'Broad <a href="/startup-finance-glossary/what-is-accounting">Accounting</a> & Tax' },
+        { feature: 'Primary Expertise', valueA: 'Deep <a href="/startup-finance-glossary/what-is-goods-and-services-tax">GST</a> Law', valueB: 'Broad <a href="/startup-finance-glossary/what-is-accounting">Accounting</a> & Tax' },
         { feature: '<a href="/startup-finance-glossary/what-is-statutory-audit">Statutory Audit</a>', valueA: 'No', valueB: 'Yes' },
-        { feature: '<a href="/startup-finance-glossary/what-is-income-tax-return-itr">Income Tax Filing</a>', valueA: 'No', valueB: 'Yes' },
+        { feature: '<a href="/startup-finance-glossary/what-is-income-tax-return">Income Tax Filing</a>', valueA: 'No', valueB: 'Yes' },
         { feature: 'Holistic Tax Planning', valueA: 'Limited', valueB: 'Yes' },
       ]
     },
@@ -320,12 +320,12 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'For most startups, engaging a full-service CA firm is more efficient. It provides a single point of contact for all financial compliance, ensuring a consistent and holistic strategy. Many modern CA firms have teams that specialize in GST.'
     },
     relatedServices: ['regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-gst-goods-and-services-tax', 'what-is-statutory-audit']
+    relatedGlossaryTerms: ['what-is-goods-and-services-tax', 'what-is-statutory-audit']
   },
   {
     slug: 'safe-vs-convertible-note',
     title: 'SAFE vs Convertible Note: Key Differences for Founders',
-    description: 'A clear breakdown of two popular early-stage fundraising instruments, <a href="/startup-finance-glossary/what-is-safe-simple-agreement-for-future-equity">SAFE</a> and <a href="/startup-finance-glossary/what-is-convertible-note">Convertible Note</a>, comparing their terms, complexity, and implications for founders.',
+    description: 'A clear breakdown of two popular early-stage fundraising instruments, <a href="/startup-finance-glossary/what-is-safe">SAFE</a> and <a href="/startup-finance-glossary/what-is-convertible-note">Convertible Note</a>, comparing their terms, complexity, and implications for founders.',
     h1: 'SAFE vs. Convertible Note',
     Icon: FileText,
     itemA: {
@@ -372,11 +372,11 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     },
     whenToChoose: {
       title: 'When to Choose Which',
-      choiceA: 'Choose a <a href="/startup-finance-glossary/what-is-safe-simple-agreement-for-future-equity">SAFE</a> for very early (<a href="/who-we-help/pre-seed-startups">pre-seed</a>) rounds where speed and simplicity are paramount. It\'s ideal for raising money from VCs and sophisticated angels who understand the instrument.',
+      choiceA: 'Choose a <a href="/startup-finance-glossary/what-is-safe">SAFE</a> for very early (<a href="/who-we-help/pre-seed-startups">pre-seed</a>) rounds where speed and simplicity are paramount. It\'s ideal for raising money from VCs and sophisticated angels who understand the instrument.',
       choiceB: 'Choose a <a href="/startup-finance-glossary/what-is-convertible-note">Convertible Note</a> when dealing with more traditional investors who may be more comfortable with a debt instrument, or when the terms (like a maturity date) are a key part of the negotiation.'
     },
     relatedServices: ['fundraising', 'corporate-law'],
-    relatedGlossaryTerms: ['what-is-safe-simple-agreement-for-future-equity', 'what-is-convertible-note', 'what-is-valuation-cap']
+    relatedGlossaryTerms: ['what-is-safe', 'what-is-convertible-note', 'what-is-valuation-cap']
   },
   {
     slug: 'equity-vs-debt-financing',
@@ -447,7 +447,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       name: 'Private Limited Company (Pvt Ltd)',
       pros: [
         'Fundraising-Friendly: The only structure VCs and angel investors will invest in.',
-        'Allows for ESOPs: Can issue <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">stock options</a> to attract and retain talent.',
+        'Allows for ESOPs: Can issue <a href="/startup-finance-glossary/what-is-esop">stock options</a> to attract and retain talent.',
         'Separate Legal Entity: Provides complete separation between founders and the business.',
         'Credibility: Generally perceived as a more credible and stable business structure.'
       ],
@@ -489,15 +489,15 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     whenToChoose: {
       title: 'When to Choose Which',
       choiceA: 'Choose a <a href="/startup-finance-glossary/what-is-private-limited-company">Private Limited Company</a> if you ever plan to raise equity funding from investors or issue ESOPs to your team. For any high-growth tech startup, this is the default and correct choice.',
-      choiceB: 'Choose an <a href="/startup-finance-glossary/what-is-limited-liability-partnership-llp">LLP</a> if you are running a professional service business (like a small consulting or design firm) with no plans for external funding and want to minimize your compliance overhead.'
+      choiceB: 'Choose an <a href="/startup-finance-glossary/what-is-limited-liability-partnership">LLP</a> if you are running a professional service business (like a small consulting or design firm) with no plans for external funding and want to minimize your compliance overhead.'
     },
     relatedServices: ['business-setup', 'regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-private-limited-company', 'what-is-limited-liability-partnership-llp']
+    relatedGlossaryTerms: ['what-is-private-limited-company', 'what-is-limited-liability-partnership']
   },
   {
     slug: 'bootstrapping-vs-funding',
     title: 'Bootstrapping vs Funding: The Right Path for Your Startup',
-    description: 'A comparison of building a business with your own revenue (<a href="/startup-finance-glossary/what-is-bootstrapping">bootstrapping</a>) versus raising <a href="/startup-finance-glossary/what-is-venture-capital-vc">venture capital</a>, covering control, growth speed, and long-term outcomes.',
+    description: 'A comparison of building a business with your own revenue (<a href="/startup-finance-glossary/what-is-bootstrapping">bootstrapping</a>) versus raising <a href="/startup-finance-glossary/what-is-venture-capital">venture capital</a>, covering control, growth speed, and long-term outcomes.',
     h1: 'Bootstrapping vs. Funding',
     Icon: Anchor,
     itemA: {
@@ -551,7 +551,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose <a href="/who-we-help/vc-backed-startups">Venture Funding</a> if you are tackling a huge market, need significant capital to build your product or scale, and are prepared for the high-pressure, high-growth journey towards a massive exit.'
     },
     relatedServices: ['fundraising'],
-    relatedGlossaryTerms: ['what-is-bootstrapping', 'what-is-venture-capital-vc']
+    relatedGlossaryTerms: ['what-is-bootstrapping', 'what-is-venture-capital']
   },
   {
     slug: 'hiring-freelancer-vs-full-time-employee',
@@ -610,7 +610,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Hire a Full-Time Employee for core, long-term functions that are central to your business, such as your lead software engineer, head of sales, or product manager. '
     },
     relatedServices: ['regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-tds-tax-deducted-at-source', 'what-is-intellectual-property-assignment']
+    relatedGlossaryTerms: ['what-is-tax-deducted-at-source', 'what-is-intellectual-property-assignment']
   },
    {
     slug: 'razorpayx-vs-traditional-banking',
@@ -709,7 +709,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         { feature: 'Market Position', valueA: 'Incumbent Leader', valueB: 'Fast-Growing Challenger' },
         { feature: 'Pricing', valueA: 'Premium', valueB: 'More Affordable' },
         { feature: 'User Interface', valueA: 'Comprehensive, can be complex', valueB: 'Modern, simple' },
-        { feature: 'Core Focus', valueA: 'Broad Equity Management', valueB: 'Core <a href="/startup-finance-glossary/what-is-capitalization-table-cap-table">Cap Table</a> & Modeling' },
+        { feature: 'Core Focus', valueA: 'Broad Equity Management', valueB: 'Core <a href="/startup-finance-glossary/what-is-capitalization-table">Cap Table</a> & Modeling' },
       ]
     },
     cost: {
@@ -724,7 +724,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose Pulley if you are an early-stage startup looking for a powerful, easy-to-use, and more affordable solution for core cap table management and scenario modeling.'
     },
     relatedServices: ['corporate-law', 'fundraising'],
-    relatedGlossaryTerms: ['what-is-capitalization-table-cap-table', 'what-is-esop-employee-stock-option-plan']
+    relatedGlossaryTerms: ['what-is-capitalization-table', 'what-is-esop']
   },
   {
     slug: 'stripe-vs-razorpay',
@@ -780,7 +780,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose Razorpay if your primary market is India, you need the widest possible support for local payment methods, and you want an integrated financial suite that goes beyond just payments.'
     },
     relatedServices: ['regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-payment-gateway-pg', 'what-is-fintech']
+    relatedGlossaryTerms: ['what-is-payment-gateway', 'what-is-fintech']
   },
   {
     slug: 'revenue-based-financing-vs-venture-debt',
@@ -901,14 +901,14 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
   {
     slug: 'qrmp-vs-monthly-gst-filing',
     title: 'QRMP vs Monthly GST Filing: Which Scheme for Your Startup?',
-    description: 'A guide to the <a href="/startup-finance-glossary/what-is-qrmp-quarterly-return-monthly-payment-scheme">QRMP</a> (Quarterly Return Monthly Payment) scheme for GST. Compare it with traditional monthly filings to see if it simplifies compliance for your small business.',
+    description: 'A guide to the <a href="/startup-finance-glossary/what-is-qrmp-scheme">QRMP</a> (Quarterly Return Monthly Payment) scheme for GST. Compare it with traditional monthly filings to see if it simplifies compliance for your small business.',
     h1: 'QRMP vs. Monthly GST Filing',
     Icon: FileText,
     itemA: {
       name: 'Monthly Filing Scheme',
       pros: [
         'Real-Time Compliance: Your compliance is always up-to-date.',
-        'Faster ITC for Buyers: Your B2B customers can see invoices in their GSTR-2B every month, allowing them to claim <a href="/startup-finance-glossary/what-is-input-tax-credit-itc">ITC</a> faster.',
+        'Faster ITC for Buyers: Your B2B customers can see invoices in their GSTR-2B every month, allowing them to claim <a href="/startup-finance-glossary/what-is-input-tax-credit">ITC</a> faster.',
         'Simpler for High Volume: For businesses with many transactions, a monthly rhythm can be easier to manage than a quarterly pile-up.',
         'Standard for Large Businesses: The default for businesses with turnover > ₹5 Crore.'
       ],
@@ -937,7 +937,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         { feature: 'Eligibility', valueA: 'All Taxpayers', valueB: 'Turnover up to ₹5 Crore' },
         { feature: 'GSTR-1 & 3B Filing', valueA: 'Monthly', valueB: 'Quarterly' },
         { feature: 'Tax Payment', valueA: 'Monthly', valueB: 'Monthly' },
-        { feature: '<a href="/startup-finance-glossary/what-is-input-tax-credit-itc">ITC</a> for Buyers', valueA: 'Monthly', valueB: 'Quarterly (or Monthly via IFF)' },
+        { feature: '<a href="/startup-finance-glossary/what-is-input-tax-credit">ITC</a> for Buyers', valueA: 'Monthly', valueB: 'Quarterly (or Monthly via IFF)' },
       ]
     },
     cost: {
@@ -952,7 +952,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose the QRMP Scheme if you are a small, primarily B2C business with a turnover under ₹5 Crore and want to reduce your filing frequency. It is designed to ease the compliance burden for small taxpayers.'
     },
     relatedServices: ['regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-qrmp-quarterly-return-monthly-payment-scheme', 'what-is-gst-goods-and-services-tax']
+    relatedGlossaryTerms: ['what-is-qrmp-scheme', 'what-is-goods-and-services-tax']
   },
   {
     slug: 'trademark-vs-copyright',
@@ -1008,7 +1008,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'You need Copyright to protect the valuable creative assets you produce, most importantly, your software source code. For a tech startup, protecting both your brand (trademark) and your code (copyright) is essential.'
     },
     relatedServices: ['corporate-law'],
-    relatedGlossaryTerms: ['what-is-trademark', 'what-is-copyright', 'what-is-intellectual-property-ip']
+    relatedGlossaryTerms: ['what-is-trademark', 'what-is-copyright', 'what-is-intellectual-property']
   },
    {
     slug: 'saas-vs-licensed-software',
@@ -1063,11 +1063,11 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     },
     whenToChoose: {
       title: 'When to Choose Which',
-      choiceA: 'Choose the <a href="/startup-finance-glossary/what-is-saas-software-as-a-service">SaaS model</a> if you want to build a business with predictable recurring revenue, reach a broad customer base, and achieve a high valuation. This is the dominant model for modern software startups.',
+      choiceA: 'Choose the <a href="/startup-finance-glossary/what-is-saas">SaaS model</a> if you want to build a business with predictable recurring revenue, reach a broad customer base, and achieve a high valuation. This is the dominant model for modern software startups.',
       choiceB: 'The Licensed Software model is now largely legacy but may still be relevant for highly specialized, enterprise, or government software where data security concerns require an on-premise installation.'
     },
     relatedServices: ['virtual-cfo-for-saas-startups'],
-    relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-monthly-recurring-revenue-mrr', 'what-is-deferred-revenue']
+    relatedGlossaryTerms: ['what-is-saas', 'what-is-monthly-recurring-revenue', 'what-is-deferred-revenue']
   },
   {
     slug: 'cloud-vs-on-premise',
@@ -1097,7 +1097,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         'Potentially Cheaper at Massive Scale: For very large, stable workloads, owning your own hardware can be cheaper in the long run.'
       ],
       cons: [
-        'High Upfront <a href="/startup-finance-glossary/what-is-capital-expenditure-capex">Capital Expenditure (CapEx)</a>: Requires a massive investment in servers, networking gear, and data center space.',
+        'High Upfront <a href="/startup-finance-glossary/what-is-capital-expenditure">Capital Expenditure (CapEx)</a>: Requires a massive investment in servers, networking gear, and data center space.',
         'Maintenance Overhead: You are responsible for all maintenance, security, and upgrades.',
         'Lack of Scalability: Difficult and slow to scale capacity up or down.',
         'Requires Specialized Staff: You need to hire a team to manage the infrastructure.'
@@ -1124,7 +1124,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceA: 'Choose Cloud Hosting. For over 99% of startups, this is the correct and only logical choice. It provides the speed, flexibility, and scalability needed to innovate and grow.',
       choiceB: 'Consider On-Premise Hosting only if you are in a highly specific niche with extreme security or regulatory requirements that absolutely forbid the use of third-party cloud infrastructure.'
     },
-    relatedGlossaryTerms: ['what-is-capital-expenditure-capex', 'what-is-operating-expense-opex']
+    relatedGlossaryTerms: ['what-is-capital-expenditure', 'what-is-operating-expense']
   },
   {
     slug: 'b2b-vs-b2c-startups',
@@ -1174,7 +1174,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     cost: {
       title: 'Cost Analysis',
       content: [
-        'B2B startups typically have a high <a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">Customer Acquisition Cost (CAC)</a> but also a high <a href="/startup-finance-glossary/what-is-customer-lifetime-value-ltv-or-clv">Lifetime Value (LTV)</a>. B2C startups aim for a very low CAC, as their LTV per customer is also low. Both can be successful, but they require fundamentally different financial models.'
+        'B2B startups typically have a high <a href="/startup-finance-glossary/what-is-customer-acquisition-cost">Customer Acquisition Cost (CAC)</a> but also a high <a href="/startup-finance-glossary/what-is-customer-lifetime-value">Lifetime Value (LTV)</a>. B2C startups aim for a very low CAC, as their LTV per customer is also low. Both can be successful, but they require fundamentally different financial models.'
       ]
     },
     whenToChoose: {
@@ -1182,7 +1182,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceA: 'Choose a B2B model if you enjoy solving complex business problems, building relationships, and navigating a consultative sales process. It often involves a more targeted and focused approach.',
       choiceB: 'Choose a B2C model if you are passionate about building a brand that resonates with a mass audience, understand consumer psychology, and excel at large-scale marketing and distribution.'
     },
-    relatedGlossaryTerms: ['what-is-b2b-business-to-business', 'what-is-b2c-business-to-consumer', 'what-is-customer-acquisition-cost-cac']
+    relatedGlossaryTerms: ['what-is-b2b', 'what-is-b2c', 'what-is-customer-acquisition-cost']
   },
   {
     slug: 'service-vs-product-startup',
@@ -1297,10 +1297,10 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     whenToChoose: {
       title: 'When to Choose Which',
       choiceA: 'Seek <a href="/startup-finance-glossary/what-is-angel-investor">Angel Investors</a> for your first funding round when you are at the pre-seed or early seed stage. You need a smaller amount of capital to get to product-market fit, and you can benefit from the mentorship of experienced operators.',
-      choiceB: 'Approach <a href="/startup-finance-glossary/what-is-venture-capital-vc">Venture Capitalists</a> when you have achieved product-market fit, have strong traction, and need a significant amount of capital to scale your go-to-market engine and become a market leader.'
+      choiceB: 'Approach <a href="/startup-finance-glossary/what-is-venture-capital">Venture Capitalists</a> when you have achieved product-market fit, have strong traction, and need a significant amount of capital to scale your go-to-market engine and become a market leader.'
     },
     relatedServices: ['fundraising'],
-    relatedGlossaryTerms: ['what-is-angel-investor', 'what-is-venture-capital-vc', 'what-is-seed-funding']
+    relatedGlossaryTerms: ['what-is-angel-investor', 'what-is-venture-capital', 'what-is-seed-funding']
   },
   {
     slug: 'health-insurance-vs-term-insurance',
@@ -1468,7 +1468,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'A Human CFO augmented by AI tools will be the winning combination, providing startups with both real-time data and high-quality strategic guidance.'
     },
     relatedServices: ['virtual-cfo'],
-    relatedGlossaryTerms: ['what-is-virtual-cfo-vcfo', 'what-is-bookkeeping', 'what-is-forecasting']
+    relatedGlossaryTerms: ['what-is-virtual-cfo', 'what-is-bookkeeping', 'what-is-forecasting']
   },
   {
     slug: 'saas-vs-d2c-business-models',
@@ -1482,7 +1482,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         'High Gross Margins: Very low variable costs mean gross margins are often 80-90%+',
         'Recurring Revenue: Predictable MRR/ARR provides a stable financial base.',
         'Highly Scalable: Can serve thousands of customers with minimal additional cost.',
-        'Negative <a href="/startup-finance-glossary/what-is-cash-conversion-cycle-ccc">Cash Conversion Cycle</a>: Often gets paid upfront for annual contracts.'
+        'Negative <a href="/startup-finance-glossary/what-is-cash-conversion-cycle">Cash Conversion Cycle</a>: Often gets paid upfront for annual contracts.'
       ],
       cons: [
         'High Upfront R&D Costs: Requires significant investment in product development before generating revenue.',
@@ -1527,7 +1527,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Choose a D2C model if you have a passion for creating physical products, understand branding and consumer marketing, and are prepared to manage the operational complexities of inventory and logistics.'
     },
     relatedServices: ['virtual-cfo-for-saas-startups'],
-    relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-d2c-direct-to-consumer', 'what-is-unit-economics']
+    relatedGlossaryTerms: ['what-is-saas', 'what-is-d2c', 'what-is-unit-economics']
   },
   {
     slug: 'consulting-vs-saas',
@@ -1544,7 +1544,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
         'High Per-Project Value: Can charge significant fees for specialized knowledge.'
       ],
       cons: [
-        'Not Scalable: Revenue is directly tied to the number of hours you and your team can work.',
+        'Not Scalable: Revenue is directly tied to the number of hours you and your team can work. Growth is linear.',
         '"Time for Money" Trap: You are constantly trading your time for money, making it hard to build wealth.',
         'Inconsistent Revenue: Project-based work can lead to a "feast or famine" cycle.',
         'Client Management Overhead: A significant amount of time is spent managing client relationships and expectations.'
@@ -1587,7 +1587,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Transition to a SaaS model once you have identified a common, painful problem that you can solve with software. The goal is to "productize your service," turning the custom solutions you built for individual clients into a scalable product that can serve thousands.'
     },
     relatedServices: ['virtual-cfo-for-saas-startups'],
-    relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-scalability', 'what-is-productize-your-service']
+    relatedGlossaryTerms: ['what-is-saas', 'what-is-scalability', 'what-is-productize-your-service']
   },
   {
     slug: 'tech-vs-non-tech-cofounder',
@@ -1598,7 +1598,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
     itemA: {
       name: 'Technical Co-Founder',
       pros: [
-        'Builds the Product: Can build and iterate on the <a href="/startup-finance-glossary/what-is-minimum-viable-product-mvp">MVP</a> without needing to hire expensive developers.',
+        'Builds the Product: Can build and iterate on the <a href="/startup-finance-glossary/what-is-minimum-viable-product">MVP</a> without needing to hire expensive developers.',
         'Technical Credibility: Lends credibility to the venture, especially when pitching to tech-savvy investors.',
         'Leads the Engineering Team: Can recruit and manage the future engineering team.',
         'Deep Product Understanding: Understands the technical feasibility and complexity of new features.'
@@ -1718,7 +1718,7 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       ],
       cons: [
         'Taxed at Slab Rates: Taxed at the individual\'s marginal income tax rate, which can be as high as 30% + surcharge.',
-        'Attracts Payroll Taxes: Both employer and employee have to contribute to <a href="/startup-finance-glossary/what-is-employee-provident-fund-epf">EPF</a> and ESI (if applicable).'
+        'Attracts Payroll Taxes: Both employer and employee have to contribute to <a href="/startup-finance-glossary/what-is-employee-provident-fund">EPF</a> and ESI (if applicable).'
       ]
     },
     itemB: {
@@ -1755,7 +1755,122 @@ export const COMPARE_PAGES_DATA: ComparisonPage[] = [
       choiceB: 'Consider paying Dividends only after your company is consistently profitable and has sufficient <a href="/startup-finance-glossary/what-is-retained-earnings">retained earnings</a>. It is a way to distribute surplus profits to all shareholders, including yourself, after the company has paid its corporate taxes.'
     },
     relatedServices: ['regulatory-compliances'],
-    relatedGlossaryTerms: ['what-is-dividend', 'what-is-tds-tax-deducted-at-source', 'what-is-direct-tax']
+    relatedGlossaryTerms: ['what-is-dividend', 'what-is-tax-deducted-at-source', 'what-is-direct-tax']
+  },
+  {
+    slug: 'forecasting-vs-accounting',
+    title: 'Forecasting vs. Accounting: A Founder\'s Guide to the Key Differences',
+    description: 'Founders often confuse forecasting with accounting. This guide explains the critical difference between looking backward (accounting) and planning forward (forecasting).',
+    h1: 'Forecasting vs. Accounting',
+    Icon: BarChart,
+    itemA: {
+      name: 'Accounting',
+      pros: [
+        'Historical Record: Provides an accurate, factual record of past financial performance.',
+        'Compliance-Driven: Essential for tax filings, audits, and statutory reporting.',
+        'Objective: Based on verifiable transactions and evidence.',
+        'Source of Truth: The reliable foundation for all financial analysis.'
+      ],
+      cons: [
+        'Backward-Looking: Only tells you what has already happened, not what will happen.',
+        'Not Strategic on its Own: Does not provide a plan for the future.'
+      ]
+    },
+    itemB: {
+      name: 'Forecasting',
+      pros: [
+        'Forward-Looking: Helps you plan for the future and make strategic decisions.',
+        'Manages Runway: The primary tool for calculating and managing your startup\'s cash runway.',
+        'Scenario Planning: Allows you to model the impact of different decisions (e.g., hiring, pricing changes).',
+        'Investor Communication: Essential for communicating your growth plan to investors.'
+      ],
+      cons: [
+        'Inherently Inaccurate: It is a set of predictions about the future, which will always be wrong to some degree.',
+        'Subjective: Built on assumptions that can be biased or overly optimistic.',
+        'Requires Strong Data: A good forecast requires clean historical data from your accounting system.'
+      ]
+    },
+    comparisonTable: {
+      title: 'Key Differences',
+      headers: ['Aspect', 'Accounting', 'Forecasting'],
+      rows: [
+        { feature: 'Perspective', valueA: 'Backward-looking (Historical)', valueB: 'Forward-looking (Predictive)' },
+        { feature: 'Core Purpose', valueA: 'Reporting & Compliance', valueB: 'Planning & Decision-Making' },
+        { feature: 'Key Output', valueA: 'Financial Statements (P&L, B/S)', valueB: 'Financial Model, Budget' },
+        { feature: 'Nature', valueA: 'Objective & Factual', valueB: 'Subjective & Assumption-Based' },
+      ]
+    },
+    cost: {
+      title: 'The Cost of Neglecting Either',
+      content: [
+        'Neglecting accounting leads to compliance penalties and a lack of reliable data. Neglecting forecasting means you are flying blind, unable to manage your cash or make strategic decisions. Both are essential.'
+      ]
+    },
+    whenToChoose: {
+      title: 'They Work Together: The Virtuous Cycle',
+      choiceA: 'You don\'t choose one over the other. Good accounting provides the clean historical data needed to build an intelligent forecast. The forecast sets a plan.',
+      choiceB: 'At the end of each month, you compare your actual accounting results to your forecast (Budget vs. Actuals analysis), learn from the variances, and then create a better, more accurate forecast for the next period.'
+    },
+    relatedServices: ['virtual-cfo', 'bookkeeping'],
+    relatedGlossaryTerms: ['what-is-accounting', 'what-is-forecasting', 'what-is-financial-model']
+  },
+  {
+    slug: 'phantom-stocks-vs-esops',
+    title: 'Phantom Stocks vs. ESOPs: A Comparison for Startups | Nexa',
+    description: 'A guide for founders on choosing between Phantom Stocks and ESOPs to incentivize employees. We compare the impact on dilution, tax, and complexity.',
+    h1: 'Phantom Stocks vs. ESOPs',
+    Icon: Users,
+    itemA: {
+      name: 'ESOPs (Employee Stock Option Plans)',
+      pros: [
+        'Provides True Ownership: Employees become actual shareholders in the company.',
+        'Stronger Retention Tool: Creates a powerful sense of ownership and alignment.',
+        'Favorable Tax Treatment (Capital Gains): The upside upon sale is taxed as capital gains, which is often lower than income tax.',
+        'Industry Standard: The standard and most understood form of equity compensation for VC-backed startups.'
+      ],
+      cons: [
+        'Dilutive to Founders: Creates new shares, which dilutes the ownership of all existing shareholders.',
+        'Complex to Administer: Requires formal valuation, a legal scheme, and cap table management.',
+        'Can Create Many Minority Shareholders: Can complicate future decision-making.'
+      ]
+    },
+    itemB: {
+      name: 'Phantom Stocks (or SARs)',
+      pros: [
+        'Non-Dilutive: Does not grant actual shares, so it doesn\'t dilute the cap table.',
+        'Simpler to Implement: Can be set up with a simpler contractual agreement without the legal formalities of an ESOP scheme.',
+        'Provides Equity-Like Upside: Gives employees a cash bonus tied to the growth in the company\'s value.',
+        'Good for Bootstrapped Companies: A great way to provide incentives without giving away actual ownership.'
+      ],
+      cons: [
+        'Cash Payout Can Strain Finances: The company must have enough cash to pay the bonus upon an exit event.',
+        'Less Favorable Tax Treatment: The cash bonus is taxed as salary income for the employee, which is typically higher than capital gains tax.',
+        'Not "Real" Ownership: May not create the same deep sense of ownership as actual stock options.'
+      ]
+    },
+    comparisonTable: {
+      title: 'Key Differences',
+      headers: ['Aspect', 'ESOPs', 'Phantom Stocks'],
+      rows: [
+        { feature: 'Ownership', valueA: 'Real Equity', valueB: 'Contractual Right to Cash' },
+        { feature: 'Dilution', valueA: 'Yes', valueB: 'No' },
+        { feature: 'Employee Tax (on gain)', valueA: 'Capital Gains', valueB: 'Salary Income' },
+        { feature: 'Complexity', valueA: 'High', valueB: 'Low to Moderate' },
+      ]
+    },
+    cost: {
+      title: 'Cost & Cash Flow Impact',
+      content: [
+        'The cost of ESOPs is dilution. The cost of phantom stock is a future cash liability for the company. Founders need to weigh which "cost" they are more willing to bear.'
+      ]
+    },
+    whenToChoose: {
+      title: 'When to Choose Which',
+      choiceA: 'Choose ESOPs when you are a VC-backed startup and want to create a strong culture of ownership. It is the standard for attracting top talent in the venture ecosystem.',
+      choiceB: 'Choose Phantom Stocks when you are a bootstrapped or profitable company and want to provide a strong financial incentive to key employees without diluting your own ownership stake.'
+    },
+    relatedServices: ['corporate-law', 'virtual-cfo'],
+    relatedGlossaryTerms: ['what-is-esop', 'what-is-dilution', 'what-is-capital-gains-tax']
   }
 ]
 .map(page => ({

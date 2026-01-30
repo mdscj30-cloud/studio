@@ -1,3 +1,4 @@
+
 import { Briefcase, FileCheck, Landmark, HandCoins, Scale, BookUser, Presentation, Users, DollarSign, BarChart3, ShieldCheck } from 'lucide-react';
 
 export interface StartupStage {
@@ -41,7 +42,7 @@ export const FINANCE_PROBLEMS: FinanceProblem[] = [
     name: 'Basic Compliance',
     verb: 'Navigating',
     relatedServiceSlugs: ['regulatory-compliances', 'business-setup'],
-    relatedGlossarySlugs: ['what-is-roc-compliance-for-board-meetings', 'what-is-gst-goods-and-services-tax', 'what-is-tds-tax-deducted-at-source'],
+    relatedGlossarySlugs: ['what-is-roc-compliance-for-board-meetings', 'what-is-goods-and-services-tax', 'what-is-tax-deducted-at-source'],
     Icon: ShieldCheck,
   },
   { 
@@ -57,7 +58,7 @@ export const FINANCE_PROBLEMS: FinanceProblem[] = [
     name: 'Burn Rate Management',
     verb: 'Managing',
     relatedServiceSlugs: ['virtual-cfo', 'bookkeeping'],
-    relatedGlossarySlugs: ['what-is-burn-rate', 'what-is-cash-runway', 'what-is-net-burn-vs-gross-burn'],
+    relatedGlossarySlugs: ['what-is-burn-rate', 'what-is-runway', 'what-is-net-burn-vs-gross-burn'],
     Icon: BarChart3,
   },
   // Future expansion:
@@ -66,7 +67,7 @@ export const FINANCE_PROBLEMS: FinanceProblem[] = [
   //   name: 'ESOP Management',
   //   verb: 'Structuring',
   //   relatedServiceSlugs: ['corporate-law', 'virtual-cfo'],
-  //   relatedGlossarySlugs: ['what-is-esop-employee-stock-option-plan', 'what-is-vesting', 'what-is-valuation-cap'],
+  //   relatedGlossarySlugs: ['what-is-esop', 'what-is-vesting', 'what-is-valuation-cap'],
   //   Icon: Users,
   // },
   // {
@@ -83,7 +84,7 @@ function generateStageProblemPages(): StageProblemPage[] {
     const pages: StageProblemPage[] = [];
     STARTUP_STAGES.forEach(stage => {
         FINANCE_PROBLEMS.forEach(problem => {
-            const slug = `${slugify(problem.name)}-for-${stage.id}`;
+            const slug = `${slugify(problem.name)}-for-${stage.id}-startups`;
             const h1 = `${problem.name} for ${stage.name}`;
             const title = `${problem.verb} ${problem.name} in ${stage.name} | Nexa Consultancy`;
             const description = `Expert guidance on ${problem.name.toLowerCase()} for startups ${stage.description}. Learn how Nexa can help you scale.`;

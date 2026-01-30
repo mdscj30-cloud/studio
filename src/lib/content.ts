@@ -185,7 +185,7 @@ const DETAILED_BLOG_POSTS = [
   <p><strong>Why it's Dangerous:</strong> This leads to inconsistent and unfair reimbursement, potential overspending on non-essential items, and a massive administrative burden at month-end. It also creates compliance issues, as you need proper documentation for all business expenses for tax purposes. Without a policy, it's hard to say "no" to an unreasonable expense claim.</p>
   <p><strong>The Control:</strong>
       <ul>
-          <li><strong>Create a Simple Written Policy:</strong> Draft a one-page <a href="/startup-finance-glossary/what-is-startup-expense-policies-explained">expense policy</a> that clearly outlines what is and isn't a reimbursable expense, and sets reasonable limits for categories like meals, travel, and accommodation.</li>
+          <li><strong>Create a Simple Written Policy:</strong> Draft a one-page <a href="/startup-finance-glossary/what-is-startup-expense-policies">expense policy</a> that clearly outlines what is and isn't a reimbursable expense, and sets reasonable limits for categories like meals, travel, and accommodation.</li>
           <li><strong>Implement an Expense Management Tool:</strong> Ditch the emails and spreadsheets. Use a modern expense management tool (many are free or low-cost) where employees can snap a photo of a receipt with their phone and submit claims instantly. This automates the process and provides a clear audit trail.</li>
           <li><strong>Use Corporate Cards:</strong> For recurring expenses or for key team members, issue corporate cards with pre-set spending limits. This eliminates the need for reimbursements altogether and gives you real-time visibility into spending. Our <a href="/services/virtual-cfo">Virtual CFO services</a> can help set up these systems.</li>
       </ul>
@@ -205,7 +205,7 @@ const DETAILED_BLOG_POSTS = [
   <h3>4. A Rigorous Month-End Close Process</h3>
   <p><strong>The Problem:</strong> The company's books are only "closed" once a year, right before the tax filing deadline. Throughout the year, there's no regular process for reconciling accounts or producing financial statements.</p>
   <p><strong>Why it's Dangerous:</strong> Without a regular, timely close, your financial data is always out of date and unreliable. You are effectively flying blind. You can't track your budget vs. actuals, you don't have an accurate view of your cash flow, and you can't make informed strategic decisions. When an investor asks for your latest numbers, you're left scrambling.</p>
-  <p><strong>The Control:</strong> Implement a formal <a href="/startup-finance-glossary/what-is-monthly-closing-process-explained">month-end close process</a>. This is a checklist of tasks to be completed by your accountant within the first 5-7 business days of the new month. Key tasks include:
+  <p><strong>The Control:</strong> Implement a formal <a href="/startup-finance-glossary/what-is-monthly-closing-process">month-end close process</a>. This is a checklist of tasks to be completed by your accountant within the first 5-7 business days of the new month. Key tasks include:
       <ul>
           <li>Completing bank and credit card reconciliations.</li>
           <li>Recording all accrued expenses and prepaid amortizations.</li>
@@ -977,7 +977,7 @@ const DETAILED_BLOG_POSTS = [
         <li><strong>Budget vs. Actuals Analysis:</strong> This is the cornerstone of financial discipline. Compare every single line item of your P&L against the budget you set. Where did you overspend? Why? Where did you fall short on revenue? Why? Understanding these variances is crucial for accountability and for re-forecasting the rest of the year.</li>
         <li><strong>SaaS/E-commerce Metrics Deep Dive:</strong>
             <ul>
-                <li><strong>For SaaS:</strong> Analyze your MRR movements in detail (New, Expansion, Contraction, Churn). Calculate your <a href="/startup-finance-glossary/what-is-net-dollar-retention-ndr">Net Dollar Retention (NDR)</a>. Review your <a href="/startup-finance-glossary/what-is-ltvcac-ratio">LTV:CAC ratio</a> and CAC Payback Period. Are these metrics improving over time?</li>
+                <li><strong>For SaaS:</strong> Analyze your MRR movements in detail (New, Expansion, Contraction, Churn). Calculate your <a href="/startup-finance-glossary/what-is-net-dollar-retention">Net Dollar Retention (NDR)</a>. Review your <a href="/startup-finance-glossary/what-is-ltvcac-ratio">LTV:CAC ratio</a> and CAC Payback Period. Are these metrics improving over time?</li>
                 <li><strong>For D2C/E-commerce:</strong> Review your gross margin by SKU and by channel. Analyze your Average Order Value (AOV) and Return on Ad Spend (ROAS). Are your marketing efforts profitable?</li>
             </ul>
         </li>
@@ -1291,7 +1291,7 @@ const DETAILED_BLOG_POSTS = [
   <p><strong>Why it's a Disaster:</strong> Memories fade, relationships change, and verbal promises about equity are a recipe for bitter, company-killing legal disputes. Investors need absolute certainty about who owns what percentage of the company. Any ambiguity on your <a href="/startup-finance-glossary/what-is-capitalization-table">cap table</a> can kill a funding round during due diligence.</p>
   <p><strong>The Fix:</strong> Document everything. From day one.
     <ul>
-      <li>Sign a formal <a href="/startup-finance-glossary/what-is-shareholders-agreement">Shareholders' Agreement</a> with your co-founders that clearly outlines equity splits and includes a <a href="/startup-finance-glossary/what-is-founder-vesting-schedule">vesting schedule</a>.</li>
+      <li>Sign a formal <a href="/startup-finance-glossary/what-is-shareholders-agreement">Shareholders' Agreement</a> with your co-founders that clearly outlines equity splits and includes a <a href="/startup-finance-glossary/what-is-founder-vesting">vesting schedule</a>.</li>
       <li>Issue formal advisor agreements with clear equity grants and vesting terms.</li>
       <li>For employees, issue formal offer letters that specify their ESOP grant, and follow up with a formal grant letter once your ESOP scheme is established.</li>
     </ul>
@@ -1369,7 +1369,7 @@ const DETAILED_BLOG_POSTS = [
       <li><strong>Why they matter:</strong> Your total fixed costs determine your <a href="/startup-finance-glossary/what-is-breakeven-point">breakeven point</a>. Every rupee of fixed cost is another rupee of contribution margin you need to generate just to get to zero profit. A high fixed cost base increases the inherent risk of the business, especially for an early-stage startup with unpredictable revenue.</li>
   </ul>
   
-  <h4><a href="/startup-finance-glossary/what-is-variable-costs-vs-fixed-costs">Variable Costs</a>: The Cost of Growth</h4>
+  <h4><a href="/startup-finance-glossary/what-is-variable-costs">Variable Costs</a>: The Cost of Growth</h4>
   <p>Variable costs are expenses that fluctuate in direct proportion to your sales or production volume. The more you sell, the higher your total variable costs will be. These are the costs you incur to generate each new dollar of revenue.</p>
   <ul>
       <li><strong>Key Characteristic:</strong> Volume-based. They are often analyzed on a "per-unit" basis.</li>
@@ -1456,7 +1456,7 @@ const DETAILED_BLOG_POSTS = [
   <p><strong>Strategic Implication:</strong> Your total fixed costs determine your <a href="/startup-finance-glossary/what-is-breakeven-point">breakeven point</a>. Every rupee of fixed cost is another rupee you have to earn from your sales *after* covering the direct costs of those sales. The primary goal for a lean startup is to keep its fixed cost base as low as possible for as long as possible to minimize risk and shorten the path to profitability.</p>
 
   <h3>Variable Costs: The Cost of Growth</h3>
-  <p><strong>Definition:</strong> <a href="/startup-finance-glossary/what-is-variable-costs-vs-fixed-costs">Variable costs</a> are expenses that increase or decrease in direct proportion to your sales or production volume. The more you sell, the higher your total variable costs will be. These are the costs you incur to make and deliver your product to the customer.</p>
+  <p><strong>Definition:</strong> <a href="/startup-finance-glossary/what-is-variable-costs">Variable costs</a> are expenses that increase or decrease in direct proportion to your sales or production volume. The more you sell, the higher your total variable costs will be. These are the costs you incur to make and deliver your product to the customer.</p>
   <h4>Key Characteristics of Variable Costs:</h4>
   <ul>
     <li><strong>Fluctuate with Volume:</strong> They are directly tied to your production or sales activity. If you have zero sales, your variable costs should be close to zero.</li>
@@ -1503,10 +1503,10 @@ const DETAILED_BLOG_POSTS = [
   <p>This analysis calculates the point where your total revenue equals your total costs. At this "break-even point," you are neither making a profit nor a loss. Every single sale beyond this point is a step into profitability. This is not just an academic exercise for a business plan; it is a critical, ongoing strategic tool that should inform your pricing decisions, help you set realistic sales goals, and allow you to understand the fundamental financial viability of your business model. This step-by-step guide will show you exactly how to perform a break-even analysis for your startup, turning a daunting financial question into a clear, actionable number.</p>
 
   <h3>Step 1: Lay the Foundation - Separate Your Costs</h3>
-  <p>Before you can perform the calculation, you need to have a firm grasp of your cost structure. This means meticulously categorizing every single business expense into one of two buckets. If you haven't done this, stop and read our guide on <a href="/startup-finance-glossary/what-is-fixed-vs-variable-costs-explained">Fixed vs. Variable Costs</a> first.</p>
+  <p>Before you can perform the calculation, you need to have a firm grasp of your cost structure. This means meticulously categorizing every single business expense into one of two buckets. If you haven't done this, stop and read our guide on <a href="/startup-finance-glossary/what-is-fixed-vs-variable-costs">Fixed vs. Variable Costs</a> first.</p>
   <ul>
     <li><strong><a href="/startup-finance-glossary/what-is-fixed-costs">Total Fixed Costs:</a></strong> Sum up all your expenses that do not change with your sales volume for a specific period (e.g., one month). This includes salaries of non-sales staff, office rent, software subscriptions, and insurance. This is your baseline monthly burn.</li>
-    <li><strong><a href="/startup-finance-glossary/what-is-variable-costs-vs-fixed-costs">Variable Cost Per Unit:</a></strong> This is the cost directly tied to producing and selling one single unit of your product or service. This includes raw materials, direct labor, packaging, shipping, and payment gateway fees.</li>
+    <li><strong><a href="/startup-finance-glossary/what-is-variable-costs">Variable Cost Per Unit:</a></strong> This is the cost directly tied to producing and selling one single unit of your product or service. This includes raw materials, direct labor, packaging, shipping, and payment gateway fees.</li>
     <li><strong>Selling Price Per Unit:</strong> What price do you charge your customers for a single unit of your product or service? This needs to be a realistic, current price, not an aspirational target.</li>
   </ul>
 
@@ -1792,4 +1792,5 @@ const DETAILED_CASE_STUDIES = [
 `
   }
 ];
+
 

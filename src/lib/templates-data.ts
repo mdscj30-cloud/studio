@@ -1,4 +1,5 @@
 
+
 import { FileCheck, ClipboardList, HandCoins, BarChart, LineChart, CheckSquare, Rocket, ShoppingBag, FileText, UserCheck, Milestone, FileUp, Search, Presentation } from 'lucide-react';
 
 export interface TemplateData {
@@ -37,7 +38,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>Minimum of 4 meetings per year, with a gap of no more than 120 days between two meetings.</td>
                     </tr>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-annual-general-meeting-agm">Annual General Meeting (AGM)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-annual-general-meeting">Annual General Meeting (AGM)</a></strong></td>
                         <td>Within 6 months of FY end</td>
                         <td>Mandatory annual meeting of shareholders to approve financials and appoint auditors.</td>
                     </tr>
@@ -52,12 +53,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>Filing of the company's Annual Return with shareholder details.</td>
                     </tr>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-directors-kyc-dir-3-kyc">Director's KYC (DIR-3 KYC)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-directors-kyc">Director's KYC (DIR-3 KYC)</a></strong></td>
                         <td>By Sept 30th annually</td>
                         <td>Annual KYC update for all directors holding a DIN.</td>
                     </tr>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-income-tax-return-itr">Income Tax Return (ITR)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-income-tax-return">Income Tax Return (ITR)</a></strong></td>
                         <td>By Oct 31st annually (if audit is required)</td>
                         <td>Filing of the company's annual income tax return.</td>
                     </tr>
@@ -72,8 +73,8 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <h2>Monthly/Quarterly Compliance</h2>
             <p>These are the recurring tasks that form the backbone of your financial operations.</p>
             <ul>
-                <li><strong><a href="/startup-finance-glossary/what-is-gst-goods-and-services-tax">GST</a> Filings:</strong> File GSTR-1 (by 11th) and GSTR-3B (by 20th) every month/quarter.</li>
-                <li><strong><a href="/startup-finance-glossary/what-is-tds-tax-deducted-at-source">TDS</a> Payments & Filings:</strong> Deposit deducted TDS by the 7th of the next month and file quarterly TDS returns.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-goods-and-services-tax">GST</a> Filings:</strong> File GSTR-1 (by 11th) and GSTR-3B (by 20th) every month/quarter.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-tax-deducted-at-source">TDS</a> Payments & Filings:</strong> Deposit deducted TDS by the 7th of the next month and file quarterly TDS returns.</li>
                 <li><strong>Payroll Compliance:</strong> Pay PF & ESI contributions for employees by the 15th of the next month.</li>
             </ul>
         `,
@@ -104,11 +105,11 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     <tr>
                         <td>2. ITC Reconciliation</td>
                         <td>Reconcile your purchase register with the auto-populated GSTR-2B statement on the GST portal.</td>
-                        <td>Ensures you claim the correct <a href="/startup-finance-glossary/what-is-input-tax-credit-itc">Input Tax Credit (ITC)</a> that you are eligible for, optimizing your cash flow.</td>
+                        <td>Ensures you claim the correct <a href="/startup-finance-glossary/what-is-input-tax-credit">Input Tax Credit (ITC)</a> that you are eligible for, optimizing your cash flow.</td>
                     </tr>
                     <tr>
                         <td>3. RCM Identification</td>
-                        <td>Identify any inward supplies on which you are liable to pay tax under the <a href="/startup-finance-glossary/what-is-reverse-charge-mechanism-rcm">Reverse Charge Mechanism (RCM)</a>.</td>
+                        <td>Identify any inward supplies on which you are liable to pay tax under the <a href="/startup-finance-glossary/what-is-reverse-charge-mechanism">Reverse Charge Mechanism (RCM)</a>.</td>
                         <td>Failure to pay RCM tax is a common compliance lapse that can lead to penalties.</td>
                     </tr>
                     <tr>
@@ -125,7 +126,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             </table>
         `,
         relatedServices: ['regulatory-compliances'],
-        relatedGlossaryTerms: ['what-is-gst-goods-and-services-tax', 'what-is-input-tax-credit-itc', 'what-is-gstr-1', 'what-is-gstr-3b']
+        relatedGlossaryTerms: ['what-is-goods-and-services-tax', 'what-is-input-tax-credit', 'what-is-gstr-1', 'what-is-gstr-3b']
     },
     {
         title: 'Fundraising Readiness Checklist',
@@ -139,13 +140,13 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <ul>
                 <li><strong>Incorporation Docs:</strong> Certificate of Incorporation, MOA, AOA.</li>
                 <li><strong>Compliance Certificates:</strong> PAN, TAN, GST, Startup India (DPIIT) certificates.</li>
-                <li><strong>Cap Table:</strong> A clean, up-to-date <a href="/startup-finance-glossary/what-is-capitalization-table-cap-table">capitalization table</a> (preferably from software like Carta/Pulley).</li>
+                <li><strong>Cap Table:</strong> A clean, up-to-date <a href="/startup-finance-glossary/what-is-capitalization-table">capitalization table</a> (preferably from software like Carta/Pulley).</li>
                 <li><strong>Agreements:</strong> All signed founder and <a href="/startup-finance-glossary/what-is-shareholders-agreement">shareholder agreements (SHA)</a>, and historical term sheets.</li>
                 <li><strong>ROC Filings:</strong> Complete history of all filings (AOC-4, MGT-7, etc.).</li>
                 <li><strong>IP Documents:</strong> Trademark, patent, or copyright registration certificates. <a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP assignment agreements</a> from all employees.</li>
             </ul>
 
-            <h3>Folder 2: Financial</h3>
+            <h3>Folder 2: Financials</h3>
             <ul>
                 <li><strong>Financial Statements:</strong> Audited financials for all past years and monthly <a href="/startup-finance-glossary/what-is-mis-report">MIS reports</a> for the last 24 months.</li>
                 <li><strong>Financial Model:</strong> Your detailed, driver-based <a href="/startup-finance-glossary/what-is-financial-model">financial model</a> with 3-5 year projections.</li>
@@ -155,13 +156,13 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
 
              <h3>Folder 3: Team & Operations</h3>
             <ul>
-                <li><strong>Team Details:</strong> Founders' resumes and an organizational chart.</li>
+                <li><strong>Team Details:</strong> Founders' resumes and an org chart.</li>
                 <li><strong>Contracts:</strong> Standard employment contract and all key customer/supplier contracts.</li>
-                <li><strong>Policies:</strong> <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">ESOP</a> policy and grant letters.</li>
+                <li><strong>Policies:</strong> <a href="/startup-finance-glossary/what-is-esop">ESOP</a> policy and grant letters.</li>
             </ul>
         `,
         relatedServices: ['fundraising', 'investor-due-diligence'],
-        relatedGlossaryTerms: ['what-is-due-diligence', 'what-is-data-room', 'what-is-capitalization-table-cap-table']
+        relatedGlossaryTerms: ['what-is-due-diligence', 'what-is-data-room', 'what-is-capitalization-table']
     },
     {
         title: 'Monthly MIS Report Template',
@@ -190,9 +191,9 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             </table>
 
             <h3>3. KPI Deep Dive</h3>
-            <p>Focus on the <a href="/startup-finance-glossary/what-is-key-performance-indicator-kpi">key performance indicators</a> specific to your business model.</p>
+            <p>Focus on the <a href="/startup-finance-glossary/what-is-key-performance-indicator">key performance indicators</a> specific to your business model.</p>
             <ul>
-                <li><strong>For SaaS:</strong> Include charts for <a href="/startup-finance-glossary/what-is-monthly-recurring-revenue-mrr">MRR</a> Movement (New, Expansion, Churn), <a href="/startup-finance-glossary/what-is-ltvcac-ratio">LTV:CAC ratio</a> over time, and <a href="/startup-finance-glossary/what-is-net-dollar-retention-ndr">Net Dollar Retention</a>.</li>
+                <li><strong>For SaaS:</strong> Include charts for <a href="/startup-finance-glossary/what-is-monthly-recurring-revenue">MRR</a> Movement (New, Expansion, Churn), <a href="/startup-finance-glossary/what-is-ltvcac-ratio">LTV:CAC ratio</a> over time, and <a href="/startup-finance-glossary/what-is-net-dollar-retention">Net Dollar Retention</a>.</li>
                 <li><strong>For D2C:</strong> Include charts for GMV, AOV, ROAS by channel, and Customer Retention Cohorts.</li>
             </ul>
             
@@ -200,7 +201,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <p>A single slide from the head of Sales, Marketing, and Product highlighting their key results and priorities for the next month.</p>
         `,
         relatedServices: ['virtual-cfo'],
-        relatedGlossaryTerms: ['what-is-mis-report', 'what-is-key-performance-indicator-kpi', 'what-is-monthly-recurring-revenue-mrr']
+        relatedGlossaryTerms: ['what-is-mis-report', 'what-is-key-performance-indicator', 'what-is-monthly-recurring-revenue']
     },
     {
         title: 'Cash Flow Tracker Template',
@@ -261,8 +262,8 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             
             <h3>1. Corporate</h3>
             <ul>
-                <li><strong>Incorporation:</strong> Certificate of Incorporation, MOA, AOA.</li>
-                <li><strong>Compliance:</strong> PAN, TAN, GST, Startup India (DPIIT) certificates.</li>
+                <li><strong>Incorporation Docs:</strong> Certificate of Incorporation, MOA, AOA.</li>
+                <li><strong>Compliance Certificates:</strong> PAN, TAN, GST, Startup India (DPIIT) certificates.</li>
                 <li><strong>Cap Table:</strong> A clean, up-to-date capitalization table, preferably from software like Carta or Pulley.</li>
                 <li><strong>Agreements:</strong> All signed founder and <a href="/startup-finance-glossary/what-is-shareholders-agreement">shareholder agreements (SHA)</a>.</li>
                 <li><strong>ROC Filings:</strong> Complete history of key filings like AOC-4 and MGT-7.</li>
@@ -278,12 +279,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
              <h3>3. Team</h3>
             <ul>
                 <li><strong>Key Personnel:</strong> Founders' resumes and an org chart.</li>
-                <li><strong>Agreements:</strong> Standard employment contract, <a href="/startup-finance-glossary/what-is-esop-employee-stock-option-plan">ESOP</a> plan, and all grant letters.</li>
+                <li><strong>Agreements:</strong> Standard employment contract, <a href="/startup-finance-glossary/what-is-esop">ESOP</a> plan, and all grant letters.</li>
                 <li><strong>IP:</strong> <a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP assignment agreements</a> from all employees/contractors.</li>
             </ul>
         `,
         relatedServices: ['investor-due-diligence', 'fundraising'],
-        relatedGlossaryTerms: ['what-is-data-room', 'what-is-due-diligence', 'what-is-capitalization-table-cap-table']
+        relatedGlossaryTerms: ['what-is-due-diligence', 'what-is-data-room', 'what-is-capitalization-table']
     },
     {
         title: 'SaaS Metrics Dashboard Template',
@@ -302,12 +303,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-monthly-recurring-revenue-mrr">MRR</a> Growth Rate</strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-monthly-recurring-revenue">MRR</a> Growth Rate</strong></td>
                         <td>The month-over-month percentage growth in your Monthly Recurring Revenue.</td>
                         <td>The primary indicator of your startup's growth momentum.</td>
                     </tr>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-net-dollar-retention-ndr">Net Dollar Retention (NDR)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-net-dollar-retention">Net Dollar Retention (NDR)</a></strong></td>
                         <td>Revenue retained from a customer cohort, including expansion and churn.</td>
                         <td>A score >100% means you grow even without new customers. It's the ultimate sign of a sticky product.</td>
                     </tr>
@@ -330,7 +331,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             </table>
         `,
         relatedServices: ['virtual-cfo-for-saas-startups'],
-        relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-key-performance-indicator-kpi', 'what-is-monthly-recurring-revenue-mrr']
+        relatedGlossaryTerms: ['what-is-saas-software-as-a-service', 'what-is-key-performance-indicator', 'what-is-monthly-recurring-revenue']
     },
     {
         title: 'D2C KPI Dashboard Template',
@@ -359,17 +360,17 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                         <td>Tells you the true profitability of each order.</td>
                     </tr>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-return-on-ad-spend-roas">Return on Ad Spend (ROAS)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-return-on-ad-spend">Return on Ad Spend (ROAS)</a></strong></td>
                         <td>The revenue generated for every rupee spent on advertising.</td>
                         <td>The key metric for measuring the effectiveness of your paid marketing campaigns.</td>
                     </tr>
                      <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">Customer Acquisition Cost (CAC)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-customer-acquisition-cost">Customer Acquisition Cost (CAC)</a></strong></td>
                         <td>The total cost to acquire a new customer.</td>
                         <td>Must be compared against LTV to ensure profitable growth.</td>
                     </tr>
                     <tr>
-                        <td><strong><a href="/startup-finance-glossary/what-is-average-order-value-aov">Average Order Value (AOV)</a></strong></td>
+                        <td><strong><a href="/startup-finance-glossary/what-is-average-order-value">Average Order Value (AOV)</a></strong></td>
                         <td>The average amount a customer spends in a single transaction.</td>
                         <td>Increasing AOV is a key lever to improve marketing efficiency.</td>
                     </tr>
@@ -377,7 +378,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             </table>
         `,
         relatedServices: ['virtual-cfo'],
-        relatedGlossaryTerms: ['what-is-d2c-direct-to-consumer', 'what-is-key-performance-indicator-kpi', 'what-is-gross-margin']
+        relatedGlossaryTerms: ['what-is-d2c-direct-to-consumer', 'what-is-key-performance-indicator', 'what-is-gross-margin']
     },
     {
         title: 'Simple Business Plan Template',
@@ -394,13 +395,13 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <p>Describe your product or service. How does it solve the problem you just outlined? What is your unique <a href="/startup-finance-glossary/what-is-value-proposition">value proposition</a>?</p>
 
             <h3>3. Target Market (TAM, SAM, SOM)</h3>
-            <p>Define your ideal customer profile (ICP). Estimate the size of your market (<a href="/startup-finance-glossary/what-is-total-addressable-market-tam">TAM</a>) to show the potential scale of the opportunity.</p>
+            <p>Define your ideal customer profile (ICP). Estimate the size of your market (<a href="/startup-finance-glossary/what-is-total-addressable-market">TAM</a>) to show the potential scale of the opportunity.</p>
 
             <h3>4. Go-to-Market Strategy</h3>
             <p>How will you reach your target customers? Outline your key marketing and sales channels (e.g., content marketing, paid ads, direct sales).</p>
             
             <h3>5. The Team</h3>
-            <p>Introduce the founding team. Highlight relevant experience and explain why you are uniquely qualified to solve this problem.</p>
+            <p>Introduce the founding team. Highlight relevant experience and explain why you are the ones to win.</p>
             
             <h3>6. Financial Summary</h3>
             <p>Provide a high-level 3-year projection of key financial metrics: Revenue, Key Expenses, and Profitability/Burn.</p>
@@ -409,7 +410,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <p>State how much capital you are raising and what key milestones you will achieve with the funds.</p>
         `,
         relatedServices: ['pitch-deck-financial-modelling'],
-        relatedGlossaryTerms: ['what-is-business-plan', 'what-is-total-addressable-market-tam']
+        relatedGlossaryTerms: ['what-is-business-plan', 'what-is-total-addressable-market']
     },
     {
         title: 'Term Sheet Checklist',
@@ -491,12 +492,12 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                     </tr>
                     <tr>
                         <td><strong>Day 1</strong></td>
-                        <td>Collect KYC (<a href="/startup-finance-glossary/what-is-pan-permanent-account-number">PAN</a>, Aadhaar) and bank details for payroll.</td>
+                        <td>Collect KYC (<a href="/startup-finance-glossary/what-is-pan">PAN</a>, Aadhaar) and bank details for payroll.</td>
                         <td>HR/New Hire</td>
                     </tr>
                     <tr>
                         <td><strong>Day 1</strong></td>
-                        <td>Collect <a href="/startup-finance-glossary/what-is-employee-provident-fund-epf">PF</a>/<a href="/startup-finance-glossary/what-is-employees-state-insurance-esi">ESI</a> nomination forms and TDS investment declarations.</td>
+                        <td>Collect <a href="/startup-finance-glossary/what-is-employee-provident-fund">PF</a>/<a href="/startup-finance-glossary/what-is-employees-state-insurance">ESI</a> nomination forms and TDS investment declarations.</td>
                         <td>HR/New Hire</td>
                     </tr>
                     <tr>
@@ -508,7 +509,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             </table>
         `,
         relatedServices: ['regulatory-compliances'],
-        relatedGlossaryTerms: ['what-is-payroll', 'what-is-tds-tax-deducted-at-source', 'what-is-employee-provident-fund-epf']
+        relatedGlossaryTerms: ['what-is-payroll', 'what-is-tax-deducted-at-source', 'what-is-employee-provident-fund']
     },
     {
         title: 'Bookkeeping Month-End Close Checklist',
@@ -557,7 +558,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             <h3>Equity & Ownership</h3>
             <ul>
                 <li><strong>Equity Split:</strong> A clear, unambiguous statement of the shareholding percentage for each co-founder.</li>
-                <li><strong><a href="/startup-finance-glossary/what-is-founder-vesting-schedule">Vesting Schedule</a>:</strong> A 4-year vesting schedule with a 1-year cliff is essential. This protects the company if a founder leaves early.</li>
+                <li><strong><a href="/startup-finance-glossary/what-is-founder-vesting">Vesting Schedule</a>:</strong> A 4-year vesting schedule with a 1-year cliff is essential. This protects the company if a founder leaves early.</li>
                 <li><strong><a href="/startup-finance-glossary/what-is-intellectual-property-assignment">IP Assignment</a>:</strong> A clause stating that all intellectual property created by the founders related to the business is owned by the company, not the individuals.</li>
             </ul>
             <h3>Governance & Control</h3>
@@ -607,11 +608,11 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
 
             <h3>5. Success Metrics</h3>
             <ul>
-                <li><strong>What are the 3-5 key metrics you will track to measure the success of your GTM plan?</strong> (e.g., Number of new customers, <a href="/startup-finance-glossary/what-is-customer-acquisition-cost-cac">CAC</a>, conversion rate).</li>
+                <li><strong>What are the 3-5 key metrics you will track to measure the success of your GTM plan?</strong> (e.g., Number of new customers, <a href="/startup-finance-glossary/what-is-customer-acquisition-cost">CAC</a>, conversion rate).</li>
             </ul>
         `,
         relatedServices: ['pitch-deck-financial-modelling'],
-        relatedGlossaryTerms: ['what-is-go-to-market-gtm-strategy', 'what-is-target-market', 'what-is-customer-acquisition-cost-cac']
+        relatedGlossaryTerms: ['what-is-go-to-market-gtm-strategy', 'what-is-target-market', 'what-is-customer-acquisition-cost']
     },
     {
         title: 'Pitch Deck Template',
@@ -625,7 +626,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
                 <li><strong>Vision/Mission:</strong> A bold, inspiring statement about the future you are creating.</li>
                 <li><strong>The Problem:</strong> Describe the pain point you are solving. Make it urgent and relatable.</li>
                 <li><strong>The Solution:</strong> Introduce your product or service. Show, don't just tell, with a screenshot or demo.</li>
-                <li><strong>Market Size (<a href="/startup-finance-glossary/what-is-total-addressable-market-tam">TAM</a>):</strong> Show investors the scale of the opportunity. Why is this a huge market?</li>
+                <li><strong>Market Size (<a href="/startup-finance-glossary/what-is-total-addressable-market">TAM</a>):</strong> Show investors the scale of the opportunity. Why is this a huge market?</li>
                 <li><strong>Traction:</strong> This is your proof. A chart showing your growth in users, revenue, or engagement is essential.</li>
                 <li><strong>Business Model:</strong> How do you make money? Clearly explain your pricing and <a href="/startup-finance-glossary/what-is-unit-economics">unit economics</a>.</li>
                 <li><strong>Go-to-Market Strategy:</strong> How will you reach and acquire customers efficiently?</li>
@@ -636,7 +637,7 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
             </ol>
         `,
         relatedServices: ['pitch-deck-financial-modelling', 'fundraising'],
-        relatedGlossaryTerms: ['what-is-pitch-deck', 'what-is-traction', 'what-is-total-addressable-market-tam']
+        relatedGlossaryTerms: ['what-is-pitch-deck', 'what-is-traction', 'what-is-total-addressable-market']
     }
 ];
 
