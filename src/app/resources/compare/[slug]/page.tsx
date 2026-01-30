@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${page.title} | Resources | Nexa Consultancy`,
+    title: `${page.h1} | Compare | Nexa Consultancy`,
     description: page.description,
   };
 }

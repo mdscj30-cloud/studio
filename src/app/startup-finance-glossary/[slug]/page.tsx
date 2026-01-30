@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         : { index: true, follow: true };
 
     return {
-        title: `What is ${term.term}? | Nexa Consultancy Glossary`,
+        title: `What is ${term.term}?`,
         description: `Definition of ${term.term}: ${term.definition.replace(/<[^>]+>/g, '').substring(0, 160)}...`,
         robots,
     };
