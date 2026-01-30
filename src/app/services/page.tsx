@@ -1,8 +1,211 @@
-import { ServicesClient } from './ServicesClient';
+
+import Link from 'next/link';
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardDescription,
+  CardFooter,
+} from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, MapPin } from 'lucide-react';
+import { DIFFERENTIATORS, REAL_LIFE_HELP_POINTS, SERVICES } from '@/lib/constants';
+import { ALL_CITIES, TARGETED_SERVICES } from '@/lib/location-service-data';
 import { metadata } from './metadata';
 
 export { metadata };
 
+
+const howItWorks = [
+  { title: 'Discovery & compliance assessment' },
+  { title: 'Scope definition & retainer setup' },
+  { title: 'Finance & compliance onboarding' },
+  { title: 'Monthly execution & filings' },
+  { title: 'Quarterly review & planning' },
+  { title: 'Scale, optimize, or continue' },
+];
+
 export default function ServicesPage() {
-  return <ServicesClient />;
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
+
+  return (
+    <>
+      <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
+        <div className="container mx-auto text-center py-16 md:py-24">
+          <h1 className="text-4xl md:text-5xl font-bold">
+            Finance, Tax & Compliance — Handled End-to-End
+          </h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/80">
+            So You Can Focus on Building & Scaling. We partner with founders and
+            operators to take complete ownership of finance, tax, and
+            compliance.
+          </p>
+          <p className="mt-4 text-base max-w-3xl mx-auto text-primary-foreground/60">
+            Whether you’re an early-stage startup or a growing manufacturing
+            business, we ensure your numbers are clean, compliant, and
+            decision-ready.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Our Core Offerings</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              We provide a comprehensive suite of services to manage your startup's financial, tax, and compliance needs end-to-end.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {SERVICES.map((service) => {
+              const Icon = service.icon;
+              return (
+                <Card key={service.slug} className="flex flex-col border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                  <CardHeader>
+                    <div className="flex items-center gap-4 mb-2">
+                        <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
+                            <Icon className="w-8 h-8 text-primary" />
+                        </div>
+                        <CardTitle className="text-2xl text-primary">{service.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                  <CardFooter>
+                    <Button asChild variant="link" className="p-0 text-accent font-semibold">
+                      <Link href={`/services/${service.slug}`}>
+                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted/30 -mx-container-padding">
+        <div className="container">
+           <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-primary">How We Give You Leverage</h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">We provide real-life help so you can build your business with confidence.</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+            {REAL_LIFE_HELP_POINTS.map((item) => {
+                const Icon = item.icon;
+                return (
+                    <div key={item.title} className="p-6 bg-card rounded-lg border border-transparent hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
+                        <div className="flex items-center gap-4 mb-3">
+                            <Icon className="w-8 h-8 text-accent shrink-0" />
+                            <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </div>
+                )
+            })}
+            </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              Your Strategic Finance Partner
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              We go beyond compliance to provide the strategic insights that
+              drive growth.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {DIFFERENTIATORS.map(item => (
+              <div key={item.title} className="p-6 bg-card rounded-lg border">
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="py-16 md:py-24 bg-muted/30 -mx-container-padding">
+        <div className="container">
+          <div className="grid md:grid-cols-5 gap-12 items-start">
+            <div className="md:col-span-2 bg-card p-8 rounded-lg">
+              <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+                How We Work
+              </h2>
+              <p className="text-center text-muted-foreground mb-8">
+                Structured. Transparent. Founder-friendly.
+              </p>
+              <ol className="relative border-l border-border space-y-8">
+                {howItWorks.map((step, index) => (
+                  <li key={step.title} className="ml-6">
+                    <span className="absolute flex items-center justify-center w-8 h-8 bg-accent rounded-full -left-4 text-accent-foreground font-bold">
+                      {index + 1}
+                    </span>
+                    <h3 className="font-semibold text-foreground pt-1.5">
+                      {step.title}
+                    </h3>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div className="md:col-span-3" id="city-guides">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-primary">Finance Services by City</h2>
+                    <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Find expert financial and compliance services tailored to your startup's location across India.
+                    </p>
+                </div>
+                <div className="columns-2 md:columns-3 lg:columns-4 gap-8">
+                    {[...ALL_CITIES].sort().map(city => (
+                        <div key={city} className="mb-8 break-inside-avoid">
+                          <h3 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
+                              <MapPin className="w-5 h-5 text-accent" />
+                              {city}
+                          </h3>
+                          <ul className="space-y-2">
+                              {TARGETED_SERVICES.map(service => {
+                                  const slug = `${slugify(service.title)}-${slugify(city)}`;
+                                  return (
+                                      <li key={slug}>
+                                          <Link href={`/india-services/${slug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                                              {service.title}
+                                          </Link>
+                                      </li>
+                                  )
+                              })}
+                          </ul>
+                        </div>
+                    ))}
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <section className="-mx-container-padding bg-background py-16 md:py-24">
+        <div className="container mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+            Let’s Simplify Finance & Compliance
+          </h2>
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+            You focus on growth. We’ll handle the rest.
+          </p>
+          <Button size="lg" variant="accent" data-cal-link="chirag-jain/15min" data-cal-config='{"layout":"month_view"}'>
+            Book a Free Discovery Call{' '}
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </div>
+      </section>
+    </>
+  );
 }

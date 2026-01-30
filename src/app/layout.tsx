@@ -6,6 +6,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Chatbot from '@/components/chatbot/Chatbot';
 import Script from 'next/script';
+import { CalComProvider } from '@/components/layout/CalComProvider';
 
 export const metadata: Metadata = {
   title: 'Nexa Consultancy | Strategic Consulting for Startups',
@@ -43,6 +44,7 @@ export default function RootLayout({
             gtag('config', 'G-RCCM4G1Q63');
           `}
         </Script>
+        <CalComProvider />
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
