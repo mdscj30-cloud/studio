@@ -1,5 +1,5 @@
 
-import { SERVICES, LOCATIONS } from '@/lib/constants';
+import { SERVICES } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FaqSchema } from '@/components/layout/FaqSchema';
 import { RequestConsultation } from '@/components/layout/PartnerWithUs';
-import { TARGETED_SERVICES } from '@/lib/location-service-data';
+import { TARGETED_SERVICES, ALL_CITIES } from '@/lib/location-service-data';
 
 
 type Props = {
@@ -137,18 +137,18 @@ export default function ServiceDetailPage({ params }: Props) {
                     {relevantTargetedServices.length > 0 && (
                         <Card>
                             <CardHeader>
-                                <CardTitle>Available In Key Cities</CardTitle>
+                                <CardTitle>Available In All Our Locations</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <ul className="space-y-3">
+                                <ul className="space-y-2 columns-2">
                                     {relevantTargetedServices.flatMap(targetedService => 
-                                        LOCATIONS.map(location => {
-                                            const linkSlug = `${slugify(targetedService.title)}-${slugify(location.name)}`;
+                                        ALL_CITIES.sort().map(city => {
+                                            const linkSlug = `${slugify(targetedService.title)}-${slugify(city)}`;
                                             return (
                                                 <li key={linkSlug}>
                                                     <Link href={`/india-services/${linkSlug}`} className="text-muted-foreground hover:text-accent transition-colors text-sm flex items-center gap-2">
                                                         <MapPin className="w-4 h-4 shrink-0" />
-                                                        <span>{targetedService.title} in <strong>{location.name}</strong></span>
+                                                        <span>{targetedService.title} in <strong>{city}</strong></span>
                                                     </Link>
                                                 </li>
                                             );
