@@ -1,5 +1,6 @@
 import TeamSection from "@/components/about/TeamSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
+import ContentStats from "@/components/about/ContentStats";
 
 export const metadata = {
   title: 'About Us | Nexa Consultancy',
@@ -22,6 +23,7 @@ export default function AboutPage() {
                 <WhyChooseUs />
                 <TeamSection />
             </div>
+            <ContentStats />
         </>
     );
 }
