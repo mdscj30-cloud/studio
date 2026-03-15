@@ -4,8 +4,15 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { ArrowRight, Wrench } from 'lucide-react';
 
 export const metadata = {
-  title: 'Startup Tools & Calculators | Nexa Consultancy',
-  description: 'Free financial tools and calculators for startups, including burn rate calculators, SaaS metrics calculators, and due diligence checklists.',
+  title: 'Free Startup Tools & Calculators',
+  description: 'Free online tools for Indian startups — burn rate calculator, SaaS metrics, ESOP calculator, GST calculator, breakeven analysis, and working capital calculator.',
+  alternates: { canonical: '/tools' },
+  openGraph: {
+    title: 'Free Startup Tools & Calculators | Nexa Consultancy',
+    description: 'Free online calculators for Indian startups — burn rate, SaaS metrics, ESOP, GST, breakeven, and more.',
+    url: '/tools',
+    type: 'website',
+  },
 };
 
 export default function ToolsHubPage() {

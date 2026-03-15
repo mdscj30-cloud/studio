@@ -6,8 +6,15 @@ import { BlogFilter } from '@/components/resources/BlogFilter';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Blog | Nexa Consultancy',
-  description: 'Explore our latest insights, articles, and analysis on startup strategy, finance, and growth.',
+  title: 'Blog — Startup Finance & Compliance Insights',
+  description: 'Expert articles on startup finance, GST, fundraising, CFO strategy, and compliance for Indian founders and operators.',
+  alternates: { canonical: '/resources/blog' },
+  openGraph: {
+    title: 'Blog — Startup Finance & Compliance Insights | Nexa Consultancy',
+    description: 'Expert articles on startup finance, GST, fundraising, CFO strategy, and compliance for Indian founders.',
+    url: '/resources/blog',
+    type: 'website',
+  },
 };
 
 export default function BlogIndexPage() {

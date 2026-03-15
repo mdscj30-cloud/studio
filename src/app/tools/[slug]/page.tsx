@@ -35,8 +35,15 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${tool.title} | Nexa Consultancy`,
+    title: tool.title,
     description: tool.description,
+    alternates: { canonical: `/tools/${tool.slug}` },
+    openGraph: {
+      title: `${tool.title} | Nexa Consultancy`,
+      description: tool.description,
+      url: `/tools/${tool.slug}`,
+      type: 'website',
+    },
   };
 }
 
@@ -51,6 +58,8 @@ const componentMap: Record<string, React.ComponentType> = {
     'CompoundInterestCalculator': CompoundInterestCalculator
 }
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
+
 export default function ToolPage({ params }: Props) {
   const tool = TOOLS_DATA.find((t) => t.slug === params.slug);
 
@@ -62,8 +71,32 @@ export default function ToolPage({ params }: Props) {
   const Icon = tool.Icon;
   const otherTools = TOOLS_DATA.filter(t => t.slug !== tool.slug);
 
+  const toolSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: tool.title,
+    description: tool.description,
+    url: `${siteUrl}/tools/${tool.slug}`,
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'INR',
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'Nexa Consultancy',
+      url: siteUrl,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
+      />
       <section className="-mx-container-padding bg-muted/50 py-12">
         <div className="container mx-auto">
           <Button asChild variant="link" className="p-0 mb-8">

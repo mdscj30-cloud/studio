@@ -35,8 +35,15 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${page.h1} | Nexa Compare`,
+    title: page.h1,
     description: page.description,
+    alternates: { canonical: `/resources/compare/${page.slug}` },
+    openGraph: {
+      title: `${page.h1} | Nexa Consultancy`,
+      description: page.description,
+      url: `/resources/compare/${page.slug}`,
+      type: 'article',
+    },
   };
 }
 
@@ -56,8 +63,39 @@ export default function CompareDetailPage({ params }: Props) {
     { name: page.h1, item: `${siteUrl}/resources/compare/${page.slug}` },
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `What are the pros of ${page.itemA.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: page.itemA.pros.join('. ') },
+      },
+      {
+        '@type': 'Question',
+        name: `What are the pros of ${page.itemB.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: page.itemB.pros.join('. ') },
+      },
+      {
+        '@type': 'Question',
+        name: `When should you choose ${page.itemA.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: page.whenToChoose.choiceA },
+      },
+      {
+        '@type': 'Question',
+        name: `When should you choose ${page.itemB.name}?`,
+        acceptedAnswer: { '@type': 'Answer', text: page.whenToChoose.choiceB },
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} className="py-8" />
       <section className="-mx-container-padding bg-muted/50 py-12">
         <div className="container mx-auto">

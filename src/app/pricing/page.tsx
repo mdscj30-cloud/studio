@@ -6,8 +6,15 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PRICING_PAGES_DATA } from '@/lib/pricing-pages-data';
 
 export const metadata = {
-  title: 'Pricing Plans & Cost Guides | Nexa Consultancy',
-  description: 'Explore transparent pricing for SaaS, E-commerce, FinTech, and HealthTech startups. Understand costs for vCFO, compliance, and accounting services.',
+  title: 'Pricing Plans & Cost Guides',
+  description: 'Explore transparent pricing for SaaS, E-commerce, FinTech, and HealthTech startups in India. Understand costs for vCFO, compliance, and accounting services.',
+  alternates: { canonical: '/pricing' },
+  openGraph: {
+    title: 'Pricing Plans & Cost Guides | Nexa Consultancy',
+    description: 'Transparent pricing for vCFO, compliance, and accounting services for Indian startups.',
+    url: '/pricing',
+    type: 'website',
+  },
 };
 
 export default function PricingPage() {

@@ -5,8 +5,15 @@ import { BlogSection } from '@/components/resources/BlogSection';
 import { CaseStudiesSection } from '@/components/resources/CaseStudiesSection';
 
 export const metadata = {
-  title: 'Resources | Nexa Consultancy',
-  description: 'Explore our comprehensive resources for startups, including expert blog articles, in-depth case studies, and a complete financial glossary.',
+  title: 'Resources',
+  description: 'Explore expert blog articles, in-depth case studies, startup finance templates, and calculators — all built for Indian founders.',
+  alternates: { canonical: '/resources' },
+  openGraph: {
+    title: 'Startup Resources | Nexa Consultancy',
+    description: 'Expert blog articles, case studies, templates, and calculators for Indian startup founders.',
+    url: '/resources',
+    type: 'website',
+  },
 };
 
 const resourceLinks = [

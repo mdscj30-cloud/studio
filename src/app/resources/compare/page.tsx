@@ -4,8 +4,15 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { ArrowRight, Scale } from 'lucide-react';
 
 export const metadata = {
-  title: 'Compare Startup Finance Options | Resources | Nexa Consultancy',
-  description: 'In-depth comparisons of financial services, tools, and strategies to help you make informed decisions for your startup.',
+  title: 'Compare Startup Finance Options',
+  description: 'Side-by-side comparisons of vCFO vs in-house CFO, outsourced vs in-house accounting, and more — helping Indian founders make smarter financial decisions.',
+  alternates: { canonical: '/resources/compare' },
+  openGraph: {
+    title: 'Compare Startup Finance Options | Nexa Consultancy',
+    description: 'Side-by-side comparisons of finance options to help Indian founders make smarter decisions.',
+    url: '/resources/compare',
+    type: 'website',
+  },
 };
 
 export default function CompareHubPage() {

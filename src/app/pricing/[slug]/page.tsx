@@ -34,6 +34,13 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: page.title,
     description: page.description,
+    alternates: { canonical: `/pricing/${page.slug}` },
+    openGraph: {
+      title: `${page.title} | Nexa Consultancy`,
+      description: page.description,
+      url: `/pricing/${page.slug}`,
+      type: 'website',
+    },
   };
 }
 

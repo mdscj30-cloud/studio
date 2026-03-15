@@ -4,8 +4,15 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { ArrowRight, Users } from 'lucide-react';
 
 export const metadata = {
-  title: 'Who We Help | Nexa Consultancy',
-  description: 'Specialized financial and compliance services tailored for every type of founder and startup stage, from bootstrapped to VC-backed.',
+  title: 'Who We Help',
+  description: 'Tailored finance and compliance services for SaaS startups, e-commerce brands, FinTech companies, manufacturing businesses, and every stage from pre-seed to Series B.',
+  alternates: { canonical: '/who-we-help' },
+  openGraph: {
+    title: 'Who We Help | Nexa Consultancy',
+    description: 'Tailored finance and compliance services for every startup type and stage across India.',
+    url: '/who-we-help',
+    type: 'website',
+  },
 };
 
 export default function WhoWeHelpPage() {

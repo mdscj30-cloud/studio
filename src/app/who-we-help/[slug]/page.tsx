@@ -22,7 +22,17 @@ export async function generateMetadata({ params }: Props) {
   if (!page) {
     return { title: 'Not Found' };
   }
-  return { title: page.title, description: page.description };
+  return {
+    title: page.title,
+    description: page.description,
+    alternates: { canonical: `/who-we-help/${page.slug}` },
+    openGraph: {
+      title: `${page.title} | Nexa Consultancy`,
+      description: page.description,
+      url: `/who-we-help/${page.slug}`,
+      type: 'website',
+    },
+  };
 }
 
 export default function WhoWeHelpDetailPage({ params }: Props) {

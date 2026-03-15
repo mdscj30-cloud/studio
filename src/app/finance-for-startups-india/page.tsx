@@ -12,8 +12,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 
 export const metadata = {
-  title: 'Finance for Startups in India – End to End | Nexa Consultancy',
-  description: 'Your complete guide to startup finance in India. From accounting and GST to fundraising readiness, we cover it all.',
+  title: 'Finance for Startups in India — Complete Guide',
+  description: 'The complete guide to startup finance in India — accounting, GST, payroll, MCA compliance, vCFO services, and fundraising readiness, explained for founders.',
+  alternates: { canonical: '/finance-for-startups-india' },
+  openGraph: {
+    title: 'Finance for Startups in India — Complete Guide | Nexa Consultancy',
+    description: 'Everything Indian founders need to know about startup finance — accounting, GST, compliance, and fundraising.',
+    url: '/finance-for-startups-india',
+    type: 'website',
+  },
 };
 
 const decisionGuidesByCategory: Record<string, string[]> = {

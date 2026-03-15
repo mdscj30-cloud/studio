@@ -32,8 +32,15 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${template.title} | Nexa Consultancy`,
+    title: template.title,
     description: template.description,
+    alternates: { canonical: `/resources/templates/${template.slug}` },
+    openGraph: {
+      title: `${template.title} | Nexa Consultancy`,
+      description: template.description,
+      url: `/resources/templates/${template.slug}`,
+      type: 'website',
+    },
   };
 }
 

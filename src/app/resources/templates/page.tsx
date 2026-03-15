@@ -4,8 +4,15 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { ArrowRight, NotebookPen } from 'lucide-react';
 
 export const metadata = {
-  title: 'Startup Templates & Checklists | Nexa Consultancy',
-  description: 'Downloadable templates and checklists for Indian startups covering compliance, fundraising, financial planning, and more.',
+  title: 'Free Startup Templates & Checklists',
+  description: 'Free downloadable templates and checklists for Indian startups — compliance calendars, pitch decks, MIS reports, cap tables, and fundraising documents.',
+  alternates: { canonical: '/resources/templates' },
+  openGraph: {
+    title: 'Free Startup Templates & Checklists | Nexa Consultancy',
+    description: 'Free templates and checklists for compliance, fundraising, and financial planning for Indian startups.',
+    url: '/resources/templates',
+    type: 'website',
+  },
 };
 
 export default function TemplatesHubPage() {

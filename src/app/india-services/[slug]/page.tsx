@@ -34,8 +34,15 @@ export async function generateMetadata({ params }: Props) {
   const description = `Expert ${page.service.title} for startups and growing businesses in ${page.city}. Nexa Consultancy offers tailored financial and compliance solutions.`;
 
   return {
-    title,
+    title: `${page.service.title} in ${page.city}`,
     description,
+    alternates: { canonical: `/india-services/${page.slug}` },
+    openGraph: {
+      title: `${page.service.title} in ${page.city} | Nexa Consultancy`,
+      description,
+      url: `/india-services/${page.slug}`,
+      type: 'website',
+    },
   };
 }
 
@@ -73,8 +80,32 @@ export default function LocationServicePage({ params }: Props) {
 
   const otherServicesInCity = TARGETED_SERVICES.filter(s => s.key !== page.service.key);
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
+
+  const localServiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${page.service.title} in ${page.city}`,
+    description: `Expert ${page.service.title} for startups and growing businesses in ${page.city}.`,
+    url: `${siteUrl}/india-services/${page.slug}`,
+    areaServed: {
+      '@type': 'City',
+      name: page.city,
+      addressCountry: 'IN',
+    },
+    provider: {
+      '@type': 'ProfessionalService',
+      name: 'Nexa Consultancy',
+      url: siteUrl,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localServiceSchema) }}
+      />
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground">
         <div className="container mx-auto py-16 md:py-24">
           <div className="flex items-center gap-4 mb-4">

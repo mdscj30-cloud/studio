@@ -29,8 +29,15 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${study.title} | Nexa Consultancy`,
+    title: study.title,
     description: study.summary,
+    alternates: { canonical: `/resources/case-studies/${study.slug}` },
+    openGraph: {
+      title: `${study.title} | Nexa Consultancy`,
+      description: study.summary,
+      url: `/resources/case-studies/${study.slug}`,
+      type: 'article',
+    },
   };
 }
 
@@ -51,8 +58,29 @@ export default function CaseStudyPage({ params }: Props) {
     { name: study.title, item: `${siteUrl}/resources/case-studies/${study.slug}` },
   ];
 
+  const caseStudySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: study.title,
+    description: study.summary,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Nexa Consultancy',
+      url: siteUrl,
+    },
+    about: {
+      '@type': 'Thing',
+      name: study.industry,
+    },
+    url: `${siteUrl}/resources/case-studies/${study.slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} className="py-8" />
       <section className="-mx-container-padding bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x text-primary-foreground py-16 md:py-24">
         <div className="container max-w-5xl mx-auto">

@@ -5,8 +5,15 @@ import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata = {
-  title: 'Success Stories | Nexa Consultancy',
-  description: 'Explore our in-depth case studies and discover how we\'ve partnered with ambitious founders to navigate challenges and accelerate growth.',
+  title: 'Case Studies — Client Success Stories',
+  description: 'See how Nexa Consultancy helped startups across India solve finance, compliance, and growth challenges. Real results from real founders.',
+  alternates: { canonical: '/resources/case-studies' },
+  openGraph: {
+    title: 'Client Success Stories | Nexa Consultancy',
+    description: 'How Nexa Consultancy helped startups across India solve finance, compliance, and growth challenges.',
+    url: '/resources/case-studies',
+    type: 'website',
+  },
 };
 
 export default function CaseStudiesPage() {
