@@ -4,6 +4,25 @@ import { useEffect } from 'react';
 
 export function RequestConsultation() {
   useEffect(() => {
+    // Track HubSpot form submissions as GA4 conversions
+    const handleHubSpotMessage = (event: MessageEvent) => {
+      if (
+        event.data?.type === 'hsFormCallback' &&
+        event.data?.eventName === 'onFormSubmitted'
+      ) {
+        if (typeof window !== 'undefined' && (window as Window & { gtag?: (...args: unknown[]) => void }).gtag) {
+          (window as Window & { gtag: (...args: unknown[]) => void }).gtag('event', 'form_submission', {
+            event_category: 'conversion',
+            event_label: 'Consultation Request Form',
+          });
+        }
+      }
+    };
+    window.addEventListener('message', handleHubSpotMessage);
+    return () => window.removeEventListener('message', handleHubSpotMessage);
+  }, []);
+
+  useEffect(() => {
     const scriptId = 'hubspot-form-script';
     // Check if the script is already on the page
     if (document.getElementById(scriptId)) {

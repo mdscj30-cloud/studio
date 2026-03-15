@@ -1,6 +1,6 @@
 
 
-import { FileCheck, ClipboardList, HandCoins, BarChart, LineChart, CheckSquare, Rocket, ShoppingBag, FileText, UserCheck, Milestone, FileUp, Search, Presentation } from 'lucide-react';
+import { FileCheck, ClipboardList, HandCoins, BarChart, LineChart, CheckSquare, Rocket, ShoppingBag, FileText, UserCheck, Milestone, FileUp, Search, Presentation, Calculator, IndianRupee, Users, FileSpreadsheet, Building } from 'lucide-react';
 
 export interface TemplateData {
   slug: string;
@@ -638,6 +638,319 @@ const TEMPLATES_RAW: Omit<TemplateData, 'slug' | 'h1'>[] = [
         `,
         relatedServices: ['pitch-deck-financial-modelling', 'fundraising'],
         relatedGlossaryTerms: ['what-is-pitch-deck', 'what-is-traction', 'what-is-total-addressable-market']
+    },
+    {
+        title: 'TDS Compliance Calendar',
+        description: 'A complete monthly and quarterly TDS compliance calendar for Indian startups — deadlines for deduction, payment, and return filing.',
+        Icon: Calculator,
+        content: `
+            <h2>TDS Compliance Calendar for Indian Startups</h2>
+            <p><a href="/startup-finance-glossary/what-is-tds">TDS (Tax Deducted at Source)</a> is one of the most frequent compliance requirements for Indian startups. Missing even a single deadline triggers interest at 1–1.5% per month. Use this calendar as your monthly compliance checklist.</p>
+
+            <h3>Monthly TDS Obligations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deadline</th>
+                        <th>Task</th>
+                        <th>Section</th>
+                        <th>Penalty for Default</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>7th of every month</strong></td>
+                        <td>Deposit TDS deducted in the previous month (Challan 281)</td>
+                        <td>Sec 192–194N</td>
+                        <td>Interest: 1.5% per month from date of deduction</td>
+                    </tr>
+                    <tr>
+                        <td><strong>30th April</strong></td>
+                        <td>Deposit TDS for March (extended deadline)</td>
+                        <td>All sections</td>
+                        <td>Interest: 1.5% per month</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Quarterly TDS Return Filing Deadlines</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Period</th>
+                        <th>Filing Deadline</th>
+                        <th>Late Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Q1</td>
+                        <td>April – June</td>
+                        <td><strong>31st July</strong></td>
+                        <td>₹200/day under Sec 234E</td>
+                    </tr>
+                    <tr>
+                        <td>Q2</td>
+                        <td>July – September</td>
+                        <td><strong>31st October</strong></td>
+                        <td>₹200/day under Sec 234E</td>
+                    </tr>
+                    <tr>
+                        <td>Q3</td>
+                        <td>October – December</td>
+                        <td><strong>31st January</strong></td>
+                        <td>₹200/day under Sec 234E</td>
+                    </tr>
+                    <tr>
+                        <td>Q4</td>
+                        <td>January – March</td>
+                        <td><strong>31st May</strong></td>
+                        <td>₹200/day under Sec 234E</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Key TDS Rates Quick Reference</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment Type</th>
+                        <th>Section</th>
+                        <th>TDS Rate (if PAN provided)</th>
+                        <th>Threshold (per year)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Salary</td><td>192</td><td>As per slab</td><td>Above basic exemption</td></tr>
+                    <tr><td>Professional / Technical Fees</td><td>194J</td><td>10%</td><td>₹30,000</td></tr>
+                    <tr><td>Contractor Payments</td><td>194C</td><td>1% (Individual) / 2% (Company)</td><td>₹30,000 (single) / ₹1 lakh (annual)</td></tr>
+                    <tr><td>Rent (P&M / Land)</td><td>194I</td><td>2% / 10%</td><td>₹2.4 lakhs/year</td></tr>
+                    <tr><td>Interest (Bank)</td><td>194A</td><td>10%</td><td>₹40,000/year</td></tr>
+                    <tr><td>Commission / Brokerage</td><td>194H</td><td>5%</td><td>₹15,000</td></tr>
+                    <tr><td>Payment to Foreign Companies</td><td>195</td><td>Varies (DTAA applicable)</td><td>No threshold</td></tr>
+                </tbody>
+            </table>
+        `,
+        relatedServices: ['regulatory-compliances'],
+        relatedGlossaryTerms: ['what-is-tds', 'what-is-form-16', 'what-is-advance-tax']
+    },
+    {
+        title: 'ESOP Policy Template',
+        description: 'A framework for drafting an ESOP policy for your Indian startup — covering pool size, vesting, exercise, and tax implications.',
+        Icon: Users,
+        content: `
+            <h2>ESOP Policy Framework for Indian Startups</h2>
+            <p>An <a href="/startup-finance-glossary/what-is-esop">ESOP policy</a> is the legal foundation of your employee equity programme. Under Section 62(1)(b) of the Companies Act, a Private Limited Company can issue ESOPs only under a formal, board-approved scheme. This template outlines the essential elements your ESOP policy must cover.</p>
+
+            <h3>1. Scheme Overview</h3>
+            <ul>
+                <li><strong>Scheme Name:</strong> [Company Name] Employee Stock Option Plan 20XX</li>
+                <li><strong>Total Pool Size:</strong> [X]% of fully diluted share capital (typically 10–15%)</li>
+                <li><strong>Eligibility:</strong> Permanent employees and directors (excluding promoter directors holding >10%)</li>
+                <li><strong>Administering Committee:</strong> Compensation Committee / Board of Directors</li>
+            </ul>
+
+            <h3>2. Vesting Schedule</h3>
+            <table>
+                <thead>
+                    <tr><th>Period</th><th>Cumulative Vesting</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Year 1 (Cliff)</td><td>25% vests at 12-month anniversary</td></tr>
+                    <tr><td>Year 2</td><td>Additional 25% (monthly over 12 months)</td></tr>
+                    <tr><td>Year 3</td><td>Additional 25% (monthly over 12 months)</td></tr>
+                    <tr><td>Year 4</td><td>Final 25% (monthly over 12 months)</td></tr>
+                </tbody>
+            </table>
+
+            <h3>3. Key Terms</h3>
+            <ul>
+                <li><strong>Grant Date:</strong> The date on which options are formally granted (requires board resolution)</li>
+                <li><strong>Exercise Price:</strong> Fair Market Value (FMV) at the time of grant (for unlisted companies, determined by a registered valuer)</li>
+                <li><strong>Exercise Period:</strong> Vested options must be exercised within [3–5 years] of vesting or they lapse</li>
+                <li><strong>Lock-in:</strong> Shares acquired on exercise are locked in for [1 year] from the date of exercise</li>
+            </ul>
+
+            <h3>4. Tax Implications</h3>
+            <ul>
+                <li><strong>At Grant:</strong> No tax liability</li>
+                <li><strong>At Exercise:</strong> Perquisite tax — difference between FMV and exercise price taxed at employee's income tax slab. Employer must deduct TDS.</li>
+                <li><strong>At Sale:</strong> Capital gains tax — STCG at slab rate (held &lt; 24 months for unlisted shares); LTCG at 20% with indexation (held ≥ 24 months).</li>
+            </ul>
+
+            <h3>5. Leaver Provisions</h3>
+            <ul>
+                <li><strong>Good Leaver (resignation after 2 years, retirement, death, disability):</strong> Retains vested options; unvested options lapse.</li>
+                <li><strong>Bad Leaver (termination for cause, resignation before cliff):</strong> All options (vested and unvested) lapse.</li>
+            </ul>
+        `,
+        relatedServices: ['corporate-law'],
+        relatedGlossaryTerms: ['what-is-esop', 'what-is-vesting-schedule', 'what-is-esop-pool', 'what-is-perquisite-tax-on-esop']
+    },
+    {
+        title: 'Salary Structure & CTC Breakup Template',
+        description: 'A tax-optimised salary structure template for Indian startups — showing how to split CTC into components that minimise employee tax.',
+        Icon: IndianRupee,
+        content: `
+            <h2>Tax-Optimised Salary Structure for Indian Startups</h2>
+            <p>How you structure an employee's <a href="/startup-finance-glossary/what-is-cost-to-company">CTC</a> significantly affects their take-home pay and your company's compliance burden. A well-designed salary structure maximises tax exemptions legally. Here is a model structure for a ₹12 LPA (₹1 lakh/month) CTC employee.</p>
+
+            <h3>Sample Salary Breakup — ₹12 LPA CTC</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Monthly (₹)</th>
+                        <th>Annual (₹)</th>
+                        <th>Tax Treatment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Basic Salary</strong></td><td>40,000</td><td>4,80,000</td><td>Fully taxable</td></tr>
+                    <tr><td><strong>HRA</strong> (50% of Basic, metro)</td><td>20,000</td><td>2,40,000</td><td>Partially exempt (for rent-paying employees)</td></tr>
+                    <tr><td><strong>Special Allowance</strong></td><td>18,300</td><td>2,19,600</td><td>Fully taxable</td></tr>
+                    <tr><td><strong>Leave Travel Allowance (LTA)</strong></td><td>2,500</td><td>30,000</td><td>Exempt for domestic travel (twice in 4 years)</td></tr>
+                    <tr><td><strong>Mobile Reimbursement</strong></td><td>1,500</td><td>18,000</td><td>Exempt against bills</td></tr>
+                    <tr><td><strong>Employee PF (12% of Basic)</strong></td><td>4,800</td><td>57,600</td><td>Deductible under Sec 80C for employee</td></tr>
+                    <tr><td><strong>Employer PF (12% of Basic)</strong></td><td>4,800</td><td>57,600</td><td>Cost to company; not taxed on employee</td></tr>
+                    <tr><td><strong>Gratuity Provision</strong></td><td>1,923</td><td>23,077</td><td>Exempt on actual receipt after 5 years</td></tr>
+                    <tr><td><strong>ESI (if applicable)</strong></td><td>—</td><td>—</td><td>Not applicable above ₹21,000/month gross</td></tr>
+                    <tr><td><strong>Total CTC</strong></td><td><strong>93,823</strong></td><td><strong>11,25,877</strong></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Key Structuring Principles</h3>
+            <ul>
+                <li><strong>Keep Basic at 40–50% of CTC:</strong> Lower basic = lower PF contributions (reduces cost for both employer and employee) but may not suit senior employees who rely on PF for retirement savings.</li>
+                <li><strong>Maximise reimbursements:</strong> Fuel, meal vouchers, books, and mobile reimbursements are exempt against actual bills — effectively tax-free salary components.</li>
+                <li><strong>Use the New Tax Regime carefully:</strong> Under the New Tax Regime (default from FY 2024-25), most exemptions (HRA, LTA, Sec 80C) are not available. Employees should compare both regimes at the start of the year.</li>
+                <li><strong>NPS contribution by employer:</strong> Employer NPS contributions (up to 10% of basic) are additionally deductible for the employer and exempt for the employee — a powerful retention tool for senior hires.</li>
+            </ul>
+        `,
+        relatedServices: ['regulatory-compliances', 'virtual-cfo'],
+        relatedGlossaryTerms: ['what-is-cost-to-company', 'what-is-payroll', 'what-is-tds', 'what-is-employee-provident-fund']
+    },
+    {
+        title: 'Financial Model Template (3-Year)',
+        description: 'A 3-year financial model framework for Indian startups covering revenue drivers, cost structure, and cash flow projections for fundraising.',
+        Icon: FileSpreadsheet,
+        content: `
+            <h2>3-Year Financial Model Structure for Startups</h2>
+            <p>A <a href="/startup-finance-glossary/what-is-financial-model">financial model</a> is your quantified business plan. Investors use it to stress-test your assumptions and evaluate capital efficiency. This template outlines the standard structure for a fundraising-ready financial model.</p>
+
+            <h3>Tab 1: Assumptions Dashboard</h3>
+            <p>Centralise all key inputs here so the model can be updated by changing a single cell. Key assumptions to document:</p>
+            <ul>
+                <li><strong>Revenue drivers:</strong> Pricing per plan/product, conversion rates, growth rates per channel, seasonality factors</li>
+                <li><strong>Headcount plan:</strong> Hiring timeline, salary bands per role, annual increments</li>
+                <li><strong>COGS drivers:</strong> % of revenue for hosting, support, COGS per unit</li>
+                <li><strong>Working capital assumptions:</strong> Debtor days, creditor days, inventory turns (if applicable)</li>
+                <li><strong>Funding assumptions:</strong> Amount and timing of future raises, interest rates on debt</li>
+            </ul>
+
+            <h3>Tab 2: Revenue Model</h3>
+            <table>
+                <thead>
+                    <tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Opening customers</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>New customers added</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>Churned customers</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>Closing customers</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td>ARPU (₹/month)</td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td><strong>MRR</strong></td><td>—</td><td>—</td><td>—</td></tr>
+                    <tr><td><strong>ARR</strong></td><td>—</td><td>—</td><td>—</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Tab 3: P&L Summary</h3>
+            <table>
+                <thead>
+                    <tr><th>Line Item</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Total Revenue</td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) COGS</td><td></td><td></td><td></td></tr>
+                    <tr><td><strong>Gross Profit</strong></td><td></td><td></td><td></td></tr>
+                    <tr><td><strong>Gross Margin %</strong></td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) Sales & Marketing</td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) Technology / R&D</td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) General & Administrative</td><td></td><td></td><td></td></tr>
+                    <tr><td><strong>EBITDA</strong></td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) Depreciation & Amortisation</td><td></td><td></td><td></td></tr>
+                    <tr><td><strong>EBIT</strong></td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) Interest</td><td></td><td></td><td></td></tr>
+                    <tr><td><strong>PBT (Profit Before Tax)</strong></td><td></td><td></td><td></td></tr>
+                    <tr><td>(–) Tax</td><td></td><td></td><td></td></tr>
+                    <tr><td><strong>PAT (Net Profit)</strong></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Tab 4: Cash Flow & Funding Requirement</h3>
+            <ul>
+                <li>Opening Cash Balance → Operating Cash Flow → Investing Cash Flow → Financing Cash Flow → Closing Cash Balance</li>
+                <li>Highlight the months where cash goes negative — this is your <strong>funding requirement timeline</strong></li>
+                <li>Show clearly: how much capital is needed, when it is needed, and what milestones it funds</li>
+            </ul>
+        `,
+        relatedServices: ['pitch-deck-financial-modelling', 'virtual-cfo'],
+        relatedGlossaryTerms: ['what-is-financial-model', 'what-is-annual-recurring-revenue', 'what-is-ebitda', 'what-is-runway']
+    },
+    {
+        title: 'Startup India DPIIT Registration Checklist',
+        description: 'A step-by-step checklist for getting your startup recognised under the Startup India scheme for tax exemptions and benefits.',
+        Icon: Building,
+        content: `
+            <h2>Startup India (DPIIT) Recognition — Step-by-Step Checklist</h2>
+            <p><a href="/startup-finance-glossary/what-is-startup-india-dpiit-recognition">DPIIT recognition</a> unlocks significant benefits including a 3-year income tax holiday (Section 80IAC), angel tax exemption (Section 56(2)(viib)), and self-certification of 9 labour laws. Registration is free and typically takes 2–5 business days.</p>
+
+            <h3>Eligibility Criteria — Confirm All Four</h3>
+            <ul>
+                <li>✅ Incorporated as a Pvt Ltd, LLP, or Registered Partnership</li>
+                <li>✅ Incorporated less than <strong>10 years ago</strong></li>
+                <li>✅ Annual turnover in any financial year has not exceeded <strong>₹100 Crore</strong></li>
+                <li>✅ Working towards <strong>innovation, development, or improvement</strong> of products/services, or is a scalable business model with high employment/wealth creation potential</li>
+            </ul>
+
+            <h3>Documents Required</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document</th>
+                        <th>Where to Get It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Certificate of Incorporation</td><td>MCA portal</td></tr>
+                    <tr><td>PAN of the company</td><td>Income Tax portal</td></tr>
+                    <tr><td>Proof of concept / Pitch deck / Product demo link</td><td>Prepare internally</td></tr>
+                    <tr><td>Brief description of innovation / business model (up to 500 words)</td><td>Prepare internally</td></tr>
+                    <tr><td>Awards / patents / media coverage (optional but strengthens application)</td><td>Collect if available</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Registration Steps</h3>
+            <ol>
+                <li>Go to <strong>startupindia.gov.in</strong> → Login with DPIIT credentials (create account if new)</li>
+                <li>Select "Apply for Startup Recognition"</li>
+                <li>Fill in company details: CIN, date of incorporation, sector, stage</li>
+                <li>Upload Certificate of Incorporation and PAN</li>
+                <li>Describe your innovation — be specific about what problem you solve and how it is novel</li>
+                <li>Submit — you will receive a DPIIT recognition number within 2–5 working days</li>
+            </ol>
+
+            <h3>Key Benefits After Recognition</h3>
+            <ul>
+                <li><strong>Section 80IAC Tax Holiday:</strong> Apply separately to DIPP/CBDT for 3-year income tax exemption (requires profitability, so applies when you turn profitable)</li>
+                <li><strong>Angel Tax Exemption:</strong> Investments at a premium above fair market value are not treated as income (Section 56(2)(viib) exemption)</li>
+                <li><strong>Fast-Track Patent:</strong> 80% rebate on patent fees and fast-track examination</li>
+                <li><strong>Labour Self-Certification:</strong> Self-certify compliance under 9 labour laws for 3 years from incorporation</li>
+            </ul>
+        `,
+        relatedServices: ['business-setup', 'regulatory-compliances'],
+        relatedGlossaryTerms: ['what-is-startup-india-dpiit-recognition', 'what-is-private-limited-company', 'what-is-angel-investor']
     }
 ];
 
