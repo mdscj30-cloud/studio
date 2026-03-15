@@ -70,7 +70,7 @@ const contentTypes = [
   {
     name: 'Who We Help Guides',
     count: WHO_WE_HELP_PAGES.length,
-    Icon: Briefcase,
+    Icon: Users,
   },
   {
     name: 'Startup Stage Guides',
