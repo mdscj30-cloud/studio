@@ -1,5 +1,5 @@
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/Header';
@@ -9,6 +9,12 @@ import Script from 'next/script';
 import { CalComProvider } from '@/components/layout/CalComProvider';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nexaconsultancy.com';
+
+export const viewport: Viewport = {
+  themeColor: '#5A2D82',
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
