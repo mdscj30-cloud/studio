@@ -94,7 +94,7 @@ const totalPageCount = contentTypes.reduce((sum, item) => sum + item.count, 0);
 
 export default function ContentStats() {
   return (
-    <section className="py-16 md:py-24 bg-muted/50 -mx-container-padding">
+    <section className="py-16 md:py-24 bg-muted/50 -mx-container-padding px-8">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
