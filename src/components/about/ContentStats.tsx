@@ -14,8 +14,7 @@ import {
   Factory,
 } from 'lucide-react';
 import { ALL_GLOSSARY_TERMS } from '@/lib/glossary-data';
-import { BLOG_POSTS } from '@/lib/constants';
-import { CASE_STUDIES } from '@/lib/constants';
+import { BLOG_POSTS, CASE_STUDIES } from '@/lib/constants';
 import { COMPARE_PAGES_DATA } from '@/lib/compare-pages-data';
 import { INDUSTRY_FINANCE_PAGES } from '@/lib/industry-finance-data';
 import { LOCATION_SERVICE_PAGES } from '@/lib/location-service-data';
