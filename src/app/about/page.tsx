@@ -4,8 +4,14 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import ContentStats from "@/components/about/ContentStats";
 
 export const metadata = {
-  title: 'About Us | Nexa Consultancy',
-  description: 'Learn about our firm\'s professional ethics, structured approach, and commitment to client partnerships.',
+  title: 'About Us',
+  description: 'Learn about Nexa Consultancy\'s professional ethics, structured approach, and commitment to helping startups across India succeed.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Us | Nexa Consultancy',
+    description: 'Learn about Nexa Consultancy\'s professional ethics, structured approach, and commitment to helping startups across India succeed.',
+    url: '/about',
+  },
 };
 
 export default function AboutPage() {

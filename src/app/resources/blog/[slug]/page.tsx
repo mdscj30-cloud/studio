@@ -31,8 +31,17 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return {
-    title: `${post.title} | Nexa Blog`,
+    title: post.title,
     description: post.summary,
+    alternates: { canonical: `/resources/blog/${post.slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.summary,
+      url: `/resources/blog/${post.slug}`,
+      type: 'article',
+      publishedTime: post.date,
+      authors: [post.author],
+    },
   };
 }
 
@@ -54,8 +63,30 @@ export default function BlogPostPage({ params }: Props) {
     { name: post.title, item: `${siteUrl}/resources/blog/${post.slug}` },
   ];
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.summary,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Nexa Consultancy',
+      url: siteUrl,
+    },
+    datePublished: post.date,
+    url: `${siteUrl}/resources/blog/${post.slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Breadcrumbs items={breadcrumbItems} className="py-8" />
       <section className="-mx-container-padding bg-muted/50 py-12 md:py-20">
         <div className="container max-w-4xl mx-auto">

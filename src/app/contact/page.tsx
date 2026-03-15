@@ -7,8 +7,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { RequestConsultation } from '@/components/layout/PartnerWithUs';
 
 export const metadata = {
-  title: 'Contact Us | Nexa Consultancy',
-  description: 'Request a consultation to discuss how Nexa Consultancy can help your startup achieve its goals in Bangalore, Mumbai, Delhi, and across India.',
+  title: 'Contact Us',
+  description: 'Request a consultation to discuss how Nexa Consultancy can help your startup with finance, tax, and compliance in Bangalore, Mumbai, Delhi, and across India.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact Us | Nexa Consultancy',
+    description: 'Request a consultation to discuss how Nexa Consultancy can help your startup with finance, tax, and compliance across India.',
+    url: '/contact',
+  },
 };
 
 export default function ContactPage() {
