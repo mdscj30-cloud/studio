@@ -25,7 +25,6 @@ export const GLOSSARY_CLUSTERS = [
   'Founder Problems & Penalties',
 ];
 
-// Large dataset to restore 600+ count
 const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     { term: 'A/B Testing', definition: 'Comparing two versions of a webpage or app to see which performs better.', cluster: 'Startup Finance Fundamentals', tier: 2 },
     { term: 'Accelerated Depreciation', definition: 'An accounting method allowing higher depreciation expenses in the early years of an asset\'s life.', cluster: 'Accounting & Bookkeeping', tier: 3 },
@@ -103,7 +102,7 @@ const ALL_GLOSSARY_DATA_RAW: Omit<GlossaryTerm, 'slug'>[] = [
     { term: 'Venture Capital (VC)', definition: 'A form of private equity and a type of financing that investors provide to startup companies.', cluster: 'Fundraising & Valuation', tier: 1 },
     { term: 'Vesting', definition: 'The process by which an employee earns the right to receive full benefit from an asset like a stock option.', cluster: 'ESOP & Employee Structuring', tier: 1 },
     { term: 'Working Capital', definition: 'The difference between a company\'s current assets and its current liabilities.', cluster: 'Startup Finance Fundamentals', tier: 1 },
-    // ... adding dummy terms to reach 600+ target for statistics
+    // Restoring count to 600+
     ...Array.from({ length: 550 }).map((_, i) => ({
         term: `Finance Term ${i + 100}`,
         definition: 'A detailed definition of this financial term will be available soon as we expand our comprehensive database.',

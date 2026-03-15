@@ -1,3 +1,4 @@
+
 import {
   Library,
   Newspaper,
@@ -105,19 +106,19 @@ export default function ContentStats() {
           </p>
         </div>
         
-        <Card className="max-w-sm mx-auto mb-12 text-center shadow-lg">
+        <Card className="max-w-sm mx-auto mb-12 text-center shadow-lg border-primary/20">
           <CardHeader>
-            <CardTitle className="text-lg font-semibold text-primary">Total Content Pages</CardTitle>
+            <CardTitle className="text-lg font-semibold text-primary uppercase tracking-wider">Total Content Pages</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-6xl font-bold text-accent">{totalPageCount.toLocaleString('en-IN')}</p>
+            <p className="text-7xl font-bold text-accent drop-shadow-sm">{totalPageCount.toLocaleString('en-IN')}</p>
           </CardContent>
         </Card>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {contentTypes.map(({ name, count, Icon }) => (
-            <Card key={name} className="flex flex-col items-center justify-center p-4 text-center">
-              <Icon className="w-8 h-8 text-primary mb-2" />
+            <Card key={name} className="flex flex-col items-center justify-center p-4 text-center hover:border-accent/50 transition-colors group">
+              <Icon className="w-8 h-8 text-primary mb-2 group-hover:text-accent transition-colors" />
               <p className="text-2xl font-bold text-foreground">{count.toLocaleString('en-IN')}</p>
               <p className="text-sm font-medium text-muted-foreground">{name}</p>
             </Card>
